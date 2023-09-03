@@ -25,8 +25,8 @@
 
   #### Migrating
 
-  1. Rename `--hover-light-bg-color` by `--button-bg-hover`
-  2. Rename `--active-light-bg-color` by `--button-bg-active`
+  1. Replace `--hover-light-bg-color` and `--hover-dark-bg-color` with `--button-bg-hover`
+  2. Replace `--active-light-bg-color` and `--active-dark-bg-color` with `--button-bg-active`
   3. For change background color on dark mode you can use the folloing:
 
   ```css
