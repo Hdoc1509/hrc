@@ -1,0 +1,30 @@
+{
+  "name": "@hdoc/react-components",
+  "private": true,
+  "scripts": {
+    "clean": "npkill",
+    "lint": "eslint --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "pkgs:build": "nx run-many -t build --projects='@hdoc/react-*'",
+    "pkgs:release": "changeset version",
+    "pkgs:publish": "pnpm run pkgs:build && changeset publish"
+  },
+  "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
+  "packageManager": "pnpm@8.6.12",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "2.26.2",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "npkill": "0.11.3",
+    "nx": "16.7.4",
+    "prettier": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
