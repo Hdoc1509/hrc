@@ -1,5 +1,11 @@
 # @hdoc/react-material-icons
 
+## 1.1.2
+
+### Patch Changes
+
+- a53c519: Add missing package description
+
 ## 1.1.1
 
 ### Patch Changes
