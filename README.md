@@ -11,7 +11,7 @@ Simple and extensible components for your React app.
 
 ## Contribution
 
-See [Contributing guide](CONTIBUTING.md)
+See [Contributing guide](CONTRIBUTING.md)
 
 ## License
 
