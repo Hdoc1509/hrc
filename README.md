@@ -11,8 +11,8 @@ Simple and extensible components for your React app.
 
 ## Contribution
 
-See [Contributing guide](https://github.com/Hdoc1509/dev-challenges/blob/main/CONTRIBUTING.md)
+See [Contributing guide](CONTIBUTING.md)
 
 ## License
 
-[MIT](https://github.com/Hdoc1509/dev-challenges/blob/main/LICENSE.md)
+[MIT](LICENSE.txt)
