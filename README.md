@@ -15,4 +15,4 @@ See [Contributing guide](CONTIBUTING.md)
 
 ## License
 
-[MIT](LICENSE.txt)
+[MIT](LICENSE)
