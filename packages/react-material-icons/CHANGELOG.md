@@ -1,5 +1,11 @@
 # @hdoc/react-material-icons
 
+## 1.1.3
+
+### Patch Changes
+
+- c7d8b1d: Update repository-related metadata
+
 ## 1.1.2
 
 ### Patch Changes
