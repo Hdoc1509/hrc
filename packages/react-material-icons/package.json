@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hdoc1509/dev-challenges.git",
+    "url": "git+https://github.com/Hdoc1509/react-components.git",
     "directory": "packages/react-material-icons"
   },
   "bugs": {
-    "url": "https://github.com/Hdoc1509/dev-challenges/issues"
+    "url": "https://github.com/Hdoc1509/react-components/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/dev-challenges/tree/master/packages/react-material-icons/#readme",
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/react-material-icons#readme",
   "peerDependencies": {
     "@material-design-icons/font": "^0.14.10",
     "react": "^18.2.0",
