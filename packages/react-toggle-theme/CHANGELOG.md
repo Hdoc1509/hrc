@@ -1,5 +1,11 @@
 # @hdoc/react-toggle-theme
 
+## 2.0.2
+
+### Patch Changes
+
+- 40934ce: Update repository-related metadata
+
 ## 2.0.1
 
 ### Patch Changes
