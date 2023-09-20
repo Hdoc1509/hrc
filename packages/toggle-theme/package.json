@@ -32,12 +32,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hdoc1509/react-components.git",
-    "directory": "packages/react-toggle-theme"
+    "directory": "packages/toggle-theme"
   },
   "bugs": {
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/react-toggle-theme#readme",
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/toggle-theme#readme",
   "peerdependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
