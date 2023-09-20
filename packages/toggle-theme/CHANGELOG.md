@@ -1,5 +1,11 @@
 # @hdoc/react-toggle-theme
 
+## 2.0.3
+
+### Patch Changes
+
+- 0bf661f: Rename package directory to `toggle-theme`
+
 ## 2.0.2
 
 ### Patch Changes
