@@ -24,12 +24,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hdoc1509/react-components.git",
-    "directory": "packages/react-material-icons"
+    "directory": "packages/material-icons"
   },
   "bugs": {
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/react-material-icons#readme",
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/material-icons#readme",
   "peerDependencies": {
     "@material-design-icons/font": "^0.14.10",
     "react": "^18.2.0",
