@@ -1,5 +1,11 @@
 # @hdoc/react-material-icons
 
+## 1.1.4
+
+### Patch Changes
+
+- 25edf03: Rename package directory to `material-icons`
+
 ## 1.1.3
 
 ### Patch Changes
