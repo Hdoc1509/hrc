@@ -1,5 +1,18 @@
 # @hdoc/react-toggle-theme
 
+## 2.1.0
+
+### Minor Changes
+
+- f3d6186: Update compatible versions of peerDependencies
+
+  - `react`: `^17.0.0 || ^18.0.0`
+  - `react-dom`: `^17.0.0 || ^18.0.0`
+
+### Patch Changes
+
+- a89f1b0: Correct misspelling for peerDependencies field
+
 ## 2.0.3
 
 ### Patch Changes
