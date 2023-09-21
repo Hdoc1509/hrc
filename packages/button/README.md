@@ -30,7 +30,6 @@ Then, in your `App.jsx` or another file:
 
 ```jsx
 import { Button } from "@hdoc/react-button";
-```
 
 function App() {
   return (

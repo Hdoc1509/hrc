@@ -38,7 +38,6 @@ Then, in your `App.jsx` or another file:
 
 ```jsx
 import { <%= ComponentName %> } from "<%= PackageName %>";
-```
 
 function App() {
   return (
