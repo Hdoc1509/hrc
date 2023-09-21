@@ -1,0 +1,8 @@
+.btn {
+  &--small {
+    --button-padding-y: 6px;
+  }
+  &--large {
+    --button-padding-y: 12px;
+  }
+}

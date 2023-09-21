@@ -1,0 +1,14 @@
+.button--text {
+  --button-bg: transparent;
+  --button-text: #3d5afe;
+  --button-shadow: none;
+
+  &:hover,
+  &:focus {
+    --button-bg: #2962ff1a;
+  }
+
+  &:disabled {
+    --button-bg: transparent;
+  }
+}
