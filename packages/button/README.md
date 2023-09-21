@@ -135,27 +135,9 @@ The secondary styles for the button
 
 ---
 
-`.button--error`
+`.button--danger`
 
-The error styles for the button
-
----
-
-`.button--warning`
-
-The warning styles for the button
-
----
-
-`.button--info`
-
-The info styles for the button
-
----
-
-`.button--success`
-
-The success styles for the button
+The danger styles for the button
 
 ---
 
@@ -165,21 +147,9 @@ The small styles for the button
 
 ---
 
-`.button--medium`
-
-The medium styles for the button
-
----
-
 `.button--large`
 
 The large styles for the button
-
----
-
-`.button--disabled`
-
-The disabled styles for the button
 
 ## Customization
 
