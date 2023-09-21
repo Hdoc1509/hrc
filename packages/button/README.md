@@ -43,6 +43,30 @@ function App() {
 
 ## Props
 
+`variant`
+
+The variant of the button.
+
+Type: `'outline' | 'text'`
+
+---
+
+`disableShadow`
+
+Whether the shadow is disabled.
+
+Type: `boolean`
+
+---
+
+`disabled`
+
+Whether the button is disabled.
+
+Type: `boolean`
+
+---
+
 `startIcon`
 
 The name of the icon to display on the left.
@@ -59,27 +83,19 @@ Type: `string`
 
 ---
 
-`color`
+`iconStyle`
 
-The color of the button.
+The style of the icon.
 
-Type: `'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'`
+Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 
 ---
 
-`className`
+`text`
 
-Additional class names for extending styles.
+The text of the button.
 
 Type: `string`
-
----
-
-`disabled`
-
-Whether the button is disabled.
-
-Type: `boolean`
 
 ---
 
@@ -90,6 +106,20 @@ Size for the button.
 Type: `'small' | 'medium' | 'large'`
 
 ---
+
+`color`
+
+The color of the button.
+
+Type: `'default' | primary' | 'secondary' | 'danger'`
+
+---
+
+`className`
+
+Additional class names for extending styles.
+
+Type: `string`
 
 ## CSS classes
 
