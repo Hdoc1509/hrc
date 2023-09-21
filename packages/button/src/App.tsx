@@ -12,6 +12,10 @@ function App() {
   return (
     <>
       <button onClick={toggleError}>toggle error</button>
+      {/* TODO: Use grid to display the buttons and its styles */}
+      <div style={styles}>
+        <Button size="large" disabled={error} />
+      </div>
       <div style={styles}>
         <Button size="large" color="secondary" disabled={error} />
       </div>
