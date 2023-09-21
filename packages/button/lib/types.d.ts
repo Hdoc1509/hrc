@@ -1,19 +1,18 @@
-import type { ComponentProps } from "react";
 import { Icon } from "@hdoc/react-material-icons";
+import type { ComponentProps } from "react";
+import type { Simplify } from "type-fest";
 
 type IconProps = ComponentProps<typeof Icon>;
 
-export type ButtonProps = {
-  variant?: "outline" | "text";
-  disableShadow?: boolean;
-  disabled?: boolean;
-  startIcon?: IconProps["name"];
-  endIcon?: IconProps["name"];
-  iconStyle?: IconProps["variant"];
-  text?: string;
-  size?: "small" | "medium" | "large";
-  color?: "default" | "primary" | "secondary" | "danger";
-  // color?: "primary" | "secondary" | "error" | "warning" | "info" | "success";
-  className?: string;
-
-};
+export type ButtonProps = Simplify<
+  {
+    variant?: "outline" | "text";
+    disableShadow?: boolean;
+    startIcon?: IconProps["name"];
+    endIcon?: IconProps["name"];
+    iconStyle?: IconProps["variant"];
+    text?: string;
+    size?: "small" | "large";
+    color?: "primary" | "secondary" | "danger";
+  } & ComponentProps<"button">
+>;

@@ -1,22 +1,7 @@
 import clsx from "clsx";
-import { ComponentProps } from "react";
 import { Icon } from "@hdoc/react-material-icons";
-import type { Simplify } from "type-fest";
+import type { ButtonProps } from "./types"
 import "./css/styles.scss";
-
-type IconProps = ComponentProps<typeof Icon>;
-
-type Props = Simplify<
-  {
-    variant?: "outline" | "text";
-    disableShadow?: boolean;
-    startIcon?: IconProps["name"];
-    endIcon?: IconProps["name"];
-    iconStyle?: IconProps["variant"];
-    size?: "small" | "large";
-    color?: "primary" | "secondary" | "danger";
-  } & ComponentProps<"button">
->;
 
 export const Button = ({
   variant,
@@ -28,7 +13,7 @@ export const Button = ({
   color,
   className,
   ...restProps
-}: Props) => {
+}: ButtonProps) => {
   const buttonClass = clsx(
     "button",
     {
