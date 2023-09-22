@@ -1,5 +1,15 @@
 # @hdoc/react-material-icons
 
+## 1.2.0
+
+### Minor Changes
+
+- 03519f3: Update compatible versions of peerDependencies
+
+  - `react`: `^17.0.0 || ^18.0.0`
+  - `react-dom`: `^17.0.0 || ^18.0.0`
+  - `@material-design-icons/font`: `^0.14.0`
+
 ## 1.1.4
 
 ### Patch Changes
