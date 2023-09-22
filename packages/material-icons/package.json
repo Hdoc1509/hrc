@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/material-icons#readme",
   "peerDependencies": {
-    "@material-design-icons/font": "^0.14.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@material-design-icons/font": "^0.14.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@material-design-icons/font": "0.14.10",
