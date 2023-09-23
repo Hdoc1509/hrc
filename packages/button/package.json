@@ -33,6 +33,12 @@
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/button#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-button",
+    "button"
+  ],
   "peerDependencies": {
     "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "^0.14.10",
