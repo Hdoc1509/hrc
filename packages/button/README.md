@@ -67,7 +67,7 @@ Type: `boolean`
 
 ---
 
-`startIcon`
+`iconStart`
 
 The name of the icon to display on the left.
 
@@ -75,7 +75,7 @@ Type: `string`
 
 ---
 
-`endIcon`
+`iconEnd`
 
 The name of the icon to display on the right.
 

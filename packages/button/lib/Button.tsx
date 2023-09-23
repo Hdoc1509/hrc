@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import { Icon } from "@hdoc/react-material-icons";
-import type { ButtonProps } from "./types"
+import type { ButtonProps } from "./types";
 import "./css/styles.scss";
 
 export const Button = ({
   variant,
   disableShadow = false,
-  startIcon,
-  endIcon,
+  iconStart,
+  iconEnd,
   iconStyle,
   size,
   color,
@@ -27,9 +27,9 @@ export const Button = ({
 
   return (
     <button {...restProps} className={buttonClass}>
-      {startIcon && <Icon name={startIcon} variant={iconStyle} size="small" />}
+      {iconStart && <Icon name={iconStart} variant={iconStyle} size="small" />}
       Default
-      {endIcon && <Icon name={endIcon} variant={iconStyle} size="small" />}
+      {iconEnd && <Icon name={iconEnd} variant={iconStyle} size="small" />}
     </button>
   );
 };

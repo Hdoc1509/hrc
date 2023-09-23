@@ -8,8 +8,8 @@ export type ButtonProps = Simplify<
   {
     variant?: "outline" | "text";
     disableShadow?: boolean;
-    startIcon?: IconProps["name"];
-    endIcon?: IconProps["name"];
+    iconStart?: IconProps["name"];
+    iconEnd?: IconProps["name"];
     iconStyle?: IconProps["variant"];
     text?: string;
     size?: "small" | "large";
