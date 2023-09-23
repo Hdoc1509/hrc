@@ -123,33 +123,51 @@ Type: `string`
 
 ## CSS classes
 
-`.button--primary`
+`.button`
 
-The primary styles for the button
-
----
-
-`.button--secondary`
-
-The secondary styles for the button
-
----
-
-`.button--danger`
-
-The danger styles for the button
+The base styles for the button
 
 ---
 
 `.button--small`
 
-The small styles for the button
+Styles for small variant
 
 ---
 
 `.button--large`
 
-The large styles for the button
+Styles for large variant
+
+---
+
+`.button--outline`
+
+Styles for outline variant
+
+---
+
+`.button--text`
+
+Styles for text variant
+
+---
+
+`.button--primary`
+
+Styles for the primary variant
+
+---
+
+`.button--secondary`
+
+Styles for the secondary variant
+
+---
+
+`.button--danger`
+
+Styles for the danger variant
 
 ## Customization
 
@@ -158,11 +176,11 @@ You can customize the color of the button by using the following CSS custom prop
 ```css
 .any-parent-of-button-component,
 .class-that-i-use-for-extending-styles {
-  --button-color: black; /* default color */
-  --button-color-error: red;
-  --button-color-warning: orange;
-  --button-color-info: blue;
-  --button-color-success: green;
-  --button-color-disabled: gray;
+  --button-bg: lightgray;
+  --button-bg-hover: darkgray;
+  --button-bg-disabled: gray;
+  --button-text: black;
+  --button-text-disabled: white;
+  --button-shadow: 0 0 0 1px black;
 }
 ```
