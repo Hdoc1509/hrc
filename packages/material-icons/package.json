@@ -30,6 +30,15 @@
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/material-icons#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "material",
+    "material-design",
+    "material-icons",
+    "material-ui",
+    "icons"
+  ],
   "peerDependencies": {
     "@material-design-icons/font": "^0.14.0",
     "react": "^17.0.0 || ^18.0.0",
