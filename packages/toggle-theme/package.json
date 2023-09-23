@@ -6,11 +6,6 @@
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
   "description": "A react button component for toggle the theme",
-  "keywords": [
-    "theme-toggle",
-    "theme",
-    "react"
-  ],
   "main": "dist/react-toggle-theme.js",
   "types": "dist/main.d.ts",
   "engines": {
@@ -38,6 +33,14 @@
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/toggle-theme#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "theme",
+    "theme-toggle",
+    "dark",
+    "light"
+  ],
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
