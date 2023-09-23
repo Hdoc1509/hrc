@@ -27,12 +27,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hdoc1509/react-components.git",
-    "directory": "packages/react-button"
+    "directory": "packages/button"
   },
   "bugs": {
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/react-button#readme",
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/button#readme",
   "peerDependencies": {
     "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "^0.14.10",
