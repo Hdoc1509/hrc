@@ -12,6 +12,7 @@ export const Button = ({
   size,
   color,
   className,
+  text,
   ...restProps
 }: ButtonProps) => {
   const buttonClass = clsx(
@@ -28,7 +29,7 @@ export const Button = ({
   return (
     <button {...restProps} className={buttonClass}>
       {iconStart && <Icon name={iconStart} variant={iconStyle} size="small" />}
-      Default
+      {text ?? "Default"}
       {iconEnd && <Icon name={iconEnd} variant={iconStyle} size="small" />}
     </button>
   );
