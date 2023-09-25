@@ -1,8 +1,8 @@
 $default-bg: #e0e0e0;
 $default-bg-hover: #c7c7c7;
 $default-bg-disabled: #e0e0e0;
-$default-text: #3f3f3f;
-$default-text-disabled: #9e9e9e;
+$default-color: #3f3f3f;
+$default-color-disabled: #9e9e9e;
 $default-shadow: 0 2px 3px 0 #33333333;
 
 .button {
@@ -21,7 +21,7 @@ $default-shadow: 0 2px 3px 0 #33333333;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: var(--button-text, $default-text);
+  color: var(--button-color, $default-color);
 
   transition: background-color 0.1s ease;
 
@@ -32,7 +32,7 @@ $default-shadow: 0 2px 3px 0 #33333333;
 
   &:disabled {
     background-color: var(--button-bg-disabled, $default-bg-disabled);
-    color: var(--button-text-disabled, $default-text-disabled);
+    color: var(--button-color-disabled, $default-color-disabled);
     --button-shadow: none;
   }
 

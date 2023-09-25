@@ -59,8 +59,8 @@ You can customize the color of the button by using the following CSS custom prop
   --button-bg: lightgray;
   --button-bg-hover: darkgray;
   --button-bg-disabled: gray;
-  --button-text: black;
-  --button-text-disabled: white;
+  --button-color: black;
+  --button-color-disabled: white;
   --button-shadow: 0 0 0 1px black;
 }
 ```
