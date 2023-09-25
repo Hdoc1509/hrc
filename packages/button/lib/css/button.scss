@@ -5,7 +5,7 @@ $default-text: #3f3f3f;
 $default-text-disabled: #9e9e9e;
 $default-shadow: 0 2px 3px 0 #33333333;
 
-@mixin button($only-icon: false) {
+.button {
   --button-padding-y: 8px;
 
   display: inline-flex;
@@ -16,11 +16,7 @@ $default-shadow: 0 2px 3px 0 #33333333;
   border-radius: 6px;
   box-shadow: var(--button-shadow, $default-shadow);
   background-color: var(--button-bg, $default-bg);
-  @if $only-icon {
-    padding: var(--button-padding-y);
-  } @else {
-    padding: var(--button-padding-y) calc(var(--button-padding-y) * 2);
-  }
+  padding: var(--button-padding-y) calc(var(--button-padding-y) * 2);
 
   font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
@@ -40,6 +36,10 @@ $default-shadow: 0 2px 3px 0 #33333333;
     --button-shadow: none;
   }
 
+  &--icon {
+    padding: var(--button-padding-y);
+  }
+
   &--no-shadow {
     --button-shadow: none;
   }
@@ -50,12 +50,4 @@ $default-shadow: 0 2px 3px 0 #33333333;
   &--large {
     --button-padding-y: 12px;
   }
-}
-
-.button {
-  @include button;
-}
-
-.button-icon {
-  @include button(true);
 }

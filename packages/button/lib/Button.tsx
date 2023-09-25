@@ -46,7 +46,7 @@ export const ButtonIcon = ({
   ...restProps
 }: ButtonIconProps) => {
   const buttonClass = clsx(
-    "button-icon",
+    ["button", "button--icon"],
     {
       [`button--${variant}`]: variant,
       ["button--no-shadow"]: disableShadow,
