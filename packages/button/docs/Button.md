@@ -1,5 +1,11 @@
 # Button API
 
+## Import
+
+```jsx
+import { Button } from "@hdoc/react-button";
+```
+
 ## Props
 
 All props are optional unless otherwise specified.

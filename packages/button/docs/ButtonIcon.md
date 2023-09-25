@@ -1,5 +1,11 @@
 # ButtonIcon API
 
+## Import
+
+```jsx
+import { ButtonIcon } from "@hdoc/react-button";
+```
+
 ## Props
 
 All props are optional unless otherwise specified.
