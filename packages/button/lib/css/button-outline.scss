@@ -1,7 +1,0 @@
-.button--outline {
-  --button-bg: transparent;
-  --button-bg-hover: var(--button-outline-bg-hover, #c7c7c73a);
-  --button-color: var(--button-outline-color);
-  --button-shadow: none;
-  outline: solid 1px var(--button-outline-color, #c7c7c7);
-}

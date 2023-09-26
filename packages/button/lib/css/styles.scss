@@ -1,6 +1,2 @@
 @import "button.scss";
-@import "colors.scss";
-@import "button-outline.scss";
-@import "button-text.scss";
-// TODO: merge button-outline and button-text into one file
-//   Those files share the same code except for a single property
+@import "variants.scss";

@@ -2,11 +2,7 @@
   &--primary {
     --button-bg: var(--button-bg-primary, #2962ff);
     --button-bg-hover: var(--button-bg-hover-primary, #0039cb);
-    --button-bg-disabled: var(--button-bg-disabled-primary, #5c87ff);
     --button-color: var(--button-color-primary, #fff);
-    --button-color-disabled: var(--button-color-disabled-primary, #fff);
-    --button-text-color: var(--button-text-primary, #2962ff);
-    --button-text-bg-hover: var(--button-text-bg-hover-primary, #2962ff1a);
     --button-outline-color: var(--button-outline-color-primary, #2962ff);
     --button-outline-bg-hover: var(
       --button-outline-bg-hover-primary,
@@ -17,11 +13,7 @@
   &--secondary {
     --button-bg: var(--button-bg-secondary, #455a64);
     --button-bg-hover: var(--button-bg-hover-secondary, #1c313a);
-    --button-bg-disabled: var(--button-bg-disabled-secondary, #648391);
-    --button-color: var(--button-text-secondary, #fff);
-    --button-color-disabled: var(--button-text-disabled-secondary, #fff);
-    --button-text-color: var(--button-text-primary, #455a64);
-    --button-text-bg-hover: var(--button-text-bg-hover-secondary, #455a641a);
+    --button-color: var(--button-color-secondary, #fff);
     --button-outline-color: var(--button-outline-color-secondary, #455a64);
     --button-outline-bg-hover: var(
       --button-outline-bg-hover-secondary,
@@ -32,12 +24,20 @@
   &--danger {
     --button-bg: var(--button-bg-danger, #d32f2f);
     --button-bg-hover: var(--button-bg-hover-danger, #9a0007);
-    --button-bg-disabled: var(--button-bg-disabled-danger, #dc5959);
-    --button-color: var(--button-text-danger, #fff);
-    --button-color-disabled: var(--button-text-disabled-danger, #fff);
-    --button-text-color: var(--button-text-primary, #d32f2f);
-    --button-text-bg-hover: var(--button-text-bg-hover-primary, #d32f2f1a);
+    --button-color: var(--button-color-danger, #fff);
     --button-outline-color: var(--button-outline-color-danger, #d32f2f);
     --button-outline-bg-hover: var(--button-outline-bg-hover-danger, #d32f2f1a);
+  }
+
+  &--outline,
+  &--text {
+    --button-bg: transparent;
+    --button-bg-hover: var(--button-outline-bg-hover, #c7c7c73a);
+    --button-bg-disabled: transparent;
+    --button-color: var(--button-outline-color);
+    --button-shadow: none;
+  }
+  &--outline {
+    outline: solid 1px var(--button-outline-color, #c7c7c7);
   }
 }
