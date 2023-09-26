@@ -1,32 +1,26 @@
 .button {
   &--primary {
-    --button-bg: var(--button-bg-primary, #2962ff);
-    --button-bg-hover: var(--button-bg-hover-primary, #0039cb);
-    --button-color: var(--button-color-primary, #fff);
-    --button-outline-color: var(--button-outline-color-primary, #2962ff);
-    --button-outline-bg-hover: var(
-      --button-outline-bg-hover-primary,
-      #2962ff1a
-    );
+    --button-bg: var(--primary, #2962ff);
+    --button-bg-hover: var(--primary-hover, #0039cb);
+    --button-color: var(--primary-text, #fff);
+    --button-outline-color: var(--primary, #2962ff);
+    --button-outline-bg-hover: var(--primary-transparent, #2962ff1a);
   }
 
   &--secondary {
-    --button-bg: var(--button-bg-secondary, #455a64);
-    --button-bg-hover: var(--button-bg-hover-secondary, #1c313a);
-    --button-color: var(--button-color-secondary, #fff);
-    --button-outline-color: var(--button-outline-color-secondary, #455a64);
-    --button-outline-bg-hover: var(
-      --button-outline-bg-hover-secondary,
-      #455a641a
-    );
+    --button-bg: var(--secondary, #455a64);
+    --button-bg-hover: var(--secondary-hover, #1c313a);
+    --button-color: var(--secondary-text, #fff);
+    --button-outline-color: var(--secondary, #455a64);
+    --button-outline-bg-hover: var(--secondary-transparent, #455a641a);
   }
 
   &--danger {
-    --button-bg: var(--button-bg-danger, #d32f2f);
-    --button-bg-hover: var(--button-bg-hover-danger, #9a0007);
-    --button-color: var(--button-color-danger, #fff);
-    --button-outline-color: var(--button-outline-color-danger, #d32f2f);
-    --button-outline-bg-hover: var(--button-outline-bg-hover-danger, #d32f2f1a);
+    --button-bg: var(--danger, #d32f2f);
+    --button-bg-hover: var(--danger-hover, #9a0007);
+    --button-color: var(--danger-text, #fff);
+    --button-outline-color: var(--danger, #d32f2f);
+    --button-outline-bg-hover: var(--danger-transparent, #d32f2f1a);
   }
 
   &--outline,
