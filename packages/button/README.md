@@ -53,6 +53,7 @@ See documentation below for reference to all of the props and classes available 
 
 You can customize the color of the button by using the following CSS custom properties:
 
+<!-- TODO: Update css custom properties -->
 ```css
 .any-parent-of-button-component,
 .class-that-i-use-for-extending-styles {

@@ -31,6 +31,7 @@ $default-shadow: 0 2px 3px 0 #33333333;
   }
 
   &:disabled {
+    // TODO: implement disabled correctly for rest of variants
     background-color: var(--button-bg-disabled, $default-bg-disabled);
     color: var(--button-color-disabled, $default-color-disabled);
     --button-shadow: none;
