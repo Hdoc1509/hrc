@@ -62,7 +62,7 @@ Type: `'small' | 'large'`
 
 The color of the button.
 
-Type: `'default' | primary' | 'secondary' | 'danger'`
+Type: `'primary' | 'secondary' | 'danger'`
 
 ---
 
@@ -74,7 +74,7 @@ Type: `string`
 
 ## CSS classes
 
-`.button-icon`
+`.button--icon`
 
 The base styles for the button
 
