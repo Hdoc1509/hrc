@@ -76,7 +76,7 @@ Type: `'small' | 'large'`
 
 `color`
 
-The color of the button.
+The color variant of the button.
 
 Type: `'primary' | 'secondary' | 'danger'`
 
