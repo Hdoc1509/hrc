@@ -18,3 +18,10 @@
   --color-error: #d93025;
   --color-disabled: #5f6368;
 }
+
+.my-class-for-extend {
+  --primary: #0070f3;
+  --primary-hover: #0055cc;
+  --primary-contrast: #fff;
+  --primary-transparent: #0070f31a;
+}

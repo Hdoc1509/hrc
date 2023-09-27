@@ -7,7 +7,7 @@ import react from "@vitejs/plugin-react-swc";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig({
-  plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
+  plugins: [react(), libInjectCss(), dts({ include: ["lib"], copyDtsFiles: true })],
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
@@ -15,7 +15,7 @@ export default defineConfig({
     },
     copyPublicDir: false,
     rollupOptions: {
-      external: ["react", "react/jsx-runtime"],
+      external: ["react", "react/jsx-runtime", "@hdoc/react-material-icons"],
     },
   },
 });

@@ -8,7 +8,7 @@
   <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc%2Freact-button">
 </p>
 
-A simple button component for your React app
+Simple button components for your React app
 
 ## Installation
 
@@ -29,145 +29,25 @@ Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material
 Then, in your `App.jsx` or another file:
 
 ```jsx
-import { Button } from "@hdoc/react-button";
+import { Button, ButtonIcon } from "@hdoc/react-button";
 
 function App() {
   return (
     <>
       ...
       <Button size="large" color="primary" />
+      <ButtonIcon icon="favorite" color="danger" />
     </>
   );
 }
 ```
 
-## Props
+## API
 
-`variant`
+See documentation below for reference to all of the props and classes available for the following components:
 
-The variant of the button.
-
-Type: `'outline' | 'text'`
-
----
-
-`disableShadow`
-
-Whether the shadow is disabled.
-
-Type: `boolean`
-
----
-
-`disabled`
-
-Whether the button is disabled.
-
-Type: `boolean`
-
----
-
-`iconStart`
-
-The name of the icon to display on the left.
-
-Type: `string`
-
----
-
-`iconEnd`
-
-The name of the icon to display on the right.
-
-Type: `string`
-
----
-
-`iconStyle`
-
-The style of the icon.
-
-Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
-
----
-
-`text`
-
-The text of the button.
-
-Type: `string`
-
----
-
-`size`
-
-Size for the button.
-
-Type: `'small' | 'medium' | 'large'`
-
----
-
-`color`
-
-The color of the button.
-
-Type: `'default' | primary' | 'secondary' | 'danger'`
-
----
-
-`className`
-
-Additional class names for extending styles.
-
-Type: `string`
-
-## CSS classes
-
-`.button`
-
-The base styles for the button
-
----
-
-`.button--small`
-
-Styles for small variant
-
----
-
-`.button--large`
-
-Styles for large variant
-
----
-
-`.button--outline`
-
-Styles for outline variant
-
----
-
-`.button--text`
-
-Styles for text variant
-
----
-
-`.button--primary`
-
-Styles for the primary variant
-
----
-
-`.button--secondary`
-
-Styles for the secondary variant
-
----
-
-`.button--danger`
-
-Styles for the danger variant
+- [`<Button />`](docs/Button.md)
+- [`<ButtonIcon />`](docs/ButtonIcon.md)
 
 ## Customization
 
@@ -176,11 +56,22 @@ You can customize the color of the button by using the following CSS custom prop
 ```css
 .any-parent-of-button-component,
 .class-that-i-use-for-extending-styles {
+  /* NORMAL BUTTON */
   --button-bg: lightgray;
   --button-bg-hover: darkgray;
   --button-bg-disabled: gray;
-  --button-text: black;
-  --button-text-disabled: white;
+  --button-color: black;
+  --button-color-disabled: white;
   --button-shadow: 0 0 0 1px black;
+
+  /* COLOR VARIANTS: primary | secondary | danger */
+  --primary: blue; /* background and outline color */
+  --primary-hover: darkblue;
+  --primary-text: white;
+  --primary-transparent: rgba(0, 0, 255, 0.1);
+
+  /* OUTLINE AND TEXT VARIANTS */
+  --button-outline-color: white; /* border and font color */
+  --button-outline-bg-hover: black;
 }
 ```

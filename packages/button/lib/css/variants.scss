@@ -1,0 +1,48 @@
+@use "abstracts/colors" as *;
+
+.button {
+  &--primary {
+    --button-bg: var(--primary, #{$primary});
+    --button-bg-hover: var(--primary-hover, #{$primary-hover});
+    --button-color: var(--primary-text, #{$primary-text});
+    --button-outline-color: var(--primary, #{$primary});
+    --button-outline-bg-hover: var(
+      --primary-transparent,
+      #{$primary-transparent}
+    );
+  }
+
+  &--secondary {
+    --button-bg: var(--secondary, #{$secondary});
+    --button-bg-hover: var(--secondary-hover, #{$secondary-hover});
+    --button-color: var(--secondary-text, #{$secondary-text});
+    --button-outline-color: var(--secondary, #{$secondary});
+    --button-outline-bg-hover: var(
+      --secondary-transparent,
+      #{$secondary-transparent}
+    );
+  }
+
+  &--danger {
+    --button-bg: var(--danger, #{$danger});
+    --button-bg-hover: var(--danger-hover, #{$danger-hover});
+    --button-color: var(--danger-text, #{$danger-text});
+    --button-outline-color: var(--danger, #{$danger});
+    --button-outline-bg-hover: var(
+      --danger-transparent,
+      #{$danger-transparent}
+    );
+  }
+
+  &--outline,
+  &--text {
+    --button-bg: transparent;
+    --button-bg-hover: var(--button-outline-bg-hover, #c7c7c73a);
+    --button-bg-disabled: transparent;
+    --button-color: var(--button-outline-color);
+    --button-shadow: none;
+  }
+  &--outline {
+    outline: solid 1px var(--button-outline-color, #{$default-bg-hover});
+  }
+}

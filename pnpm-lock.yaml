@@ -55,6 +55,10 @@ importers:
         version: 5.1.6
 
   packages/button:
+    dependencies:
+      type-fest:
+        specifier: 4.3.1
+        version: 4.3.1
     devDependencies:
       '@hdoc/react-material-icons':
         specifier: workspace:*
@@ -77,9 +81,6 @@ importers:
       sass:
         specifier: 1.65.0
         version: 1.65.0
-      type-fest:
-        specifier: 4.3.1
-        version: 4.3.1
       typescript:
         specifier: 5.0.2
         version: 5.0.2
@@ -4385,7 +4386,7 @@ packages:
   /type-fest@4.3.1:
     resolution: {integrity: sha512-pphNW/msgOUSkJbH58x8sqpq8uQj6b0ZKGxEsLKMUnGorRcDjrUaLS+39+/ub41JNTwrrMyJcUB8+YZs3mbwqw==}
     engines: {node: '>=16'}
-    dev: true
+    dev: false
 
   /typed-array-buffer@1.0.0:
     resolution: {integrity: sha512-Y8KTSIglk9OZEr8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}

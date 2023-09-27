@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
-  "description": "A simple button component for your React app",
+  "description": "Simple button components for your React app",
   "main": "dist/react-button.js",
   "types": "dist/main.d.ts",
   "files": [
@@ -33,6 +33,15 @@
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/button#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-button",
+    "button"
+  ],
+  "dependencies": {
+    "type-fest": "4.3.1"
+  },
   "peerDependencies": {
     "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "^0.14.10",
@@ -47,7 +56,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.65.0",
-    "type-fest": "4.3.1",
     "typescript": "5.0.2",
     "vite": "4.4.5",
     "vite-plugin-dts": "3.5.1",
