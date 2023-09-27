@@ -10,8 +10,7 @@ export type ButtonProps = Simplify<
     disableShadow?: boolean;
     iconStart?: IconProps["name"];
     iconEnd?: IconProps["name"];
-    // TODO: rename to iconVariant
-    iconStyle?: IconProps["variant"];
+    iconVariant?: IconProps["variant"];
     text?: string;
     size?: "small" | "large";
     color?: "primary" | "secondary" | "danger";
@@ -21,6 +20,5 @@ export type ButtonProps = Simplify<
 export type ButtonIconProps = Simplify<
   {
     icon: IconProps["name"];
-    iconVariant?: IconProps["variant"];
   } & Omit<ButtonProps, "iconStart" | "iconEnd" | "text">
 >;

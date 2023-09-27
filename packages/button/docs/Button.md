@@ -50,9 +50,9 @@ Type: `string`
 
 ---
 
-`iconStyle`
+`iconVariant`
 
-The style of the icon.
+The variant of the icon.
 
 Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 

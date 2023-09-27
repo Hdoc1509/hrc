@@ -8,7 +8,7 @@ export const Button = ({
   disableShadow = false,
   iconStart,
   iconEnd,
-  iconStyle,
+  iconVariant,
   size,
   color,
   className,
@@ -28,9 +28,11 @@ export const Button = ({
 
   return (
     <button {...restProps} className={buttonClass}>
-      {iconStart && <Icon name={iconStart} variant={iconStyle} size="small" />}
+      {iconStart && (
+        <Icon name={iconStart} variant={iconVariant} size="small" />
+      )}
       {text ?? "Default"}
-      {iconEnd && <Icon name={iconEnd} variant={iconStyle} size="small" />}
+      {iconEnd && <Icon name={iconEnd} variant={iconVariant} size="small" />}
     </button>
   );
 };
