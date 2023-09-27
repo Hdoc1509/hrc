@@ -1,26 +1,37 @@
+@use "abstracts/colors" as *;
+
 .button {
   &--primary {
-    --button-bg: var(--primary, #2962ff);
-    --button-bg-hover: var(--primary-hover, #0039cb);
-    --button-color: var(--primary-text, #fff);
-    --button-outline-color: var(--primary, #2962ff);
-    --button-outline-bg-hover: var(--primary-transparent, #2962ff1a);
+    --button-bg: var(--primary, #{$primary});
+    --button-bg-hover: var(--primary-hover, #{$primary-hover});
+    --button-color: var(--primary-text, #{$primary-text});
+    --button-outline-color: var(--primary, #{$primary});
+    --button-outline-bg-hover: var(
+      --primary-transparent,
+      #{$primary-transparent}
+    );
   }
 
   &--secondary {
-    --button-bg: var(--secondary, #455a64);
-    --button-bg-hover: var(--secondary-hover, #1c313a);
-    --button-color: var(--secondary-text, #fff);
-    --button-outline-color: var(--secondary, #455a64);
-    --button-outline-bg-hover: var(--secondary-transparent, #455a641a);
+    --button-bg: var(--secondary, #{$secondary});
+    --button-bg-hover: var(--secondary-hover, #{$secondary-hover});
+    --button-color: var(--secondary-text, #{$secondary-text});
+    --button-outline-color: var(--secondary, #{$secondary});
+    --button-outline-bg-hover: var(
+      --secondary-transparent,
+      #{$secondary-transparent}
+    );
   }
 
   &--danger {
-    --button-bg: var(--danger, #d32f2f);
-    --button-bg-hover: var(--danger-hover, #9a0007);
-    --button-color: var(--danger-text, #fff);
-    --button-outline-color: var(--danger, #d32f2f);
-    --button-outline-bg-hover: var(--danger-transparent, #d32f2f1a);
+    --button-bg: var(--danger, #{$danger});
+    --button-bg-hover: var(--danger-hover, #{$danger-hover});
+    --button-color: var(--danger-text, #{$danger-text});
+    --button-outline-color: var(--danger, #{$danger});
+    --button-outline-bg-hover: var(
+      --danger-transparent,
+      #{$danger-transparent}
+    );
   }
 
   &--outline,
@@ -32,6 +43,6 @@
     --button-shadow: none;
   }
   &--outline {
-    outline: solid 1px var(--button-outline-color, #c7c7c7);
+    outline: solid 1px var(--button-outline-color, #{$default-bg-hover});
   }
 }

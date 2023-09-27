@@ -22,14 +22,17 @@
 
   &:hover,
   &:focus {
-    background-color: var(--button-bg-hover, $default-bg-hover);
+    --button-bg: var(--button-bg-hover, #{$default-bg-hover});
   }
 
   &:disabled {
     --button-shadow: none;
-    --button-outline-color: var(--button-outline-color-disabled, #c7c7c7);
-    background-color: var(--button-bg-disabled, $default-bg-disabled);
-    color: var(--button-color-disabled, $default-color-disabled);
+    --button-outline-color: var(
+      --button-outline-color-disabled,
+      #{$default-bg-hover}
+    );
+    --button-bg: var(--button-bg-disabled, #{$default-bg-disabled});
+    --button-color: var(--button-color-disabled, #{$default-color-disabled});
   }
 
   &--icon {
