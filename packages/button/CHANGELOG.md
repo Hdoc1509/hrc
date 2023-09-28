@@ -1,5 +1,13 @@
 # @hdoc/react-button
 
+## 1.0.0
+
+### Major Changes
+
+- ca31df2: First release
+
+  Added screenshot of button examples
+
 ## 0.3.0
 
 ### Minor Changes
