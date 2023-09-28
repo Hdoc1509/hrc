@@ -10,6 +10,8 @@
 
 Simple button components for your React app
 
+![button-examples](docs/button-examples.png)
+
 ## Installation
 
 ```bash
