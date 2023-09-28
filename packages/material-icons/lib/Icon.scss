@@ -3,14 +3,15 @@
   width: 1em;
   height: 1em;
   overflow: hidden;
+  font-size: var(--icon-size, 24px) !important;
 }
 
 .material-icons {
   &--small {
-    font-size: 18px !important;
+    --icon-size: var(--icon-small, 18px);
   }
   &--large {
-    font-size: 36px !important;
+    --icon-size: var(--icon-large, 36px);
   }
 
   &--error {

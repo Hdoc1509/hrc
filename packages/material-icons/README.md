@@ -188,12 +188,24 @@ Styles for the success color variant
 You can customize the color of the icon by using the following CSS custom properties:
 
 ```css
-.any-parent-of-icon-component {
+.any-parent-of-icon-component,
+.class-for-extending-styles {
   --icon-color: black; /* default color */
   --icon-color-error: red;
   --icon-color-warning: orange;
   --icon-color-info: blue;
   --icon-color-success: green;
   --icon-color-disabled: gray;
+}
+```
+
+You can customize the size of the icon by using the following CSS custom properties:
+
+```css
+.any-parent-of-icon-component,
+.class-for-extending-styles {
+  --icon-size: 24px; /* default size */
+  --icon-small: 18px;
+  --icon-large: 36px;
 }
 ```
