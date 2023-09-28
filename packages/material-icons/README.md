@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       ...
-      <Icon name="shopping_cart" size="large" variant="oulined" />
+      <Icon name="shopping_cart" size="large" variant="outlined" />
     </>
   );
 }
