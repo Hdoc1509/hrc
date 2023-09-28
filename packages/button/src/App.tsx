@@ -13,9 +13,9 @@ function App() {
     <>
       <Button onClick={toggleError} text="Toggle error" />
       <div style={styles}>
-        <Button size="large" disabled={error} text="p" />
-        <Button size="large" disabled={error} text="p" variant="outline" />
-        <Button size="large" disabled={error} text="p" variant="text" />
+        <Button size="large" disabled={error} />
+        <Button size="large" disabled={error} variant="outline" />
+        <Button size="large" disabled={error} variant="text" />
       </div>
       <div style={styles}>
         <Button size="large" color="primary" disabled={error} />
