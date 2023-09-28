@@ -25,3 +25,7 @@
   --primary-contrast: #fff;
   --primary-transparent: #0070f31a;
 }
+
+.button {
+  margin: 8px;
+}

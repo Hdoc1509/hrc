@@ -11,8 +11,7 @@ function App() {
 
   return (
     <>
-      <button onClick={toggleError}>toggle error</button>
-      {/* TODO: Use grid to display the buttons and its styles */}
+      <Button onClick={toggleError} text="Toggle error" />
       <div style={styles}>
         <Button size="large" disabled={error} text="p" />
         <Button size="large" disabled={error} text="p" variant="outline" />
@@ -20,20 +19,40 @@ function App() {
       </div>
       <div style={styles}>
         <Button size="large" color="primary" disabled={error} />
-        <Button size="large" color="primary" disabled={error} variant="outline" />
+        <Button
+          size="large"
+          color="primary"
+          disabled={error}
+          variant="outline"
+        />
         <Button size="large" color="primary" disabled={error} variant="text" />
       </div>
       <div style={styles}>
         <Button size="large" color="secondary" disabled={error} />
-        <Button size="large" color="secondary" disabled={error} variant="outline" />
-        <Button size="large" color="secondary" disabled={error} variant="text" />
+        <Button
+          size="large"
+          color="secondary"
+          disabled={error}
+          variant="outline"
+        />
+        <Button
+          size="large"
+          color="secondary"
+          disabled={error}
+          variant="text"
+        />
       </div>
       <div style={styles}>
-        {/* TODO: Combine color and text variants correctly */}
         <Button size="large" color="danger" disabled={error} />
-        <Button size="large" color="danger" disabled={error} variant="outline" />
+        <Button
+          size="large"
+          color="danger"
+          disabled={error}
+          variant="outline"
+        />
         <Button size="large" color="danger" disabled={error} variant="text" />
       </div>
+      <ButtonIcon icon="check" color="secondary" size="small" />
       <ButtonIcon icon="delete" color="danger" />
       <ButtonIcon icon="error" color="primary" size="large" />
     </>
