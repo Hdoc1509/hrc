@@ -81,7 +81,7 @@ Type: `boolean`
 
 Font size for the icon.
 
-Type: `'small' | 'medium' | 'large'`
+Type: `'small' | 'large'`
 
 ---
 
