@@ -1,5 +1,16 @@
 # @hdoc/react-material-icons
 
+## 1.3.0
+
+### Minor Changes
+
+- 4fe9cdd: Add support for customize icon sizes
+
+### Patch Changes
+
+- e40686c: Add missing keywords field
+- 84dc172: Improve display of css classes
+
 ## 1.2.0
 
 ### Minor Changes
