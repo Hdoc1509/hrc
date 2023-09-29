@@ -34,7 +34,7 @@ export const <%= ComponentName %> = ({
       {startIcon && (
         <Icon name={startIcon} className="input-icon input-icon--start" />
       )}
-      <% ComponentName %>
+      <%= ComponentName %>
       {endIcon && (
         <Icon name={endIcon} className="input-icon input-icon--end" />
       )}
