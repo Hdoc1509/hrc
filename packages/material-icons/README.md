@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       ...
-      <Icon name="shopping_cart" size="large" variant="oulined" />
+      <Icon name="shopping_cart" size="large" variant="outlined" />
     </>
   );
 }
@@ -43,7 +43,9 @@ function App() {
 
 ## Props
 
-`name`
+All props are optional unless otherwise specified.
+
+`name` (required)
 
 The name of the icon.
 
@@ -79,7 +81,7 @@ Type: `boolean`
 
 Font size for the icon.
 
-Type: `'small' | 'medium' | 'large'`
+Type: `'small' | 'large'`
 
 ---
 
@@ -89,26 +91,95 @@ Variant of the icon.
 
 Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 
-## CSS
+## CSS classes
 
-The following class names are used for styling with CSS:
+`.material-icons`
 
-| Class                             | Prop                 |
-| --------------------------------- | -------------------- |
-| `.material-icons--primary` (\*)   | `color="primary"`    |
-| `.material-icons--secondary` (\*) | `color="secondary"`  |
-| `.material-icons--error`          | `color="error"`      |
-| `.material-icons--warning`        | `color="warning"`    |
-| `.material-icons--info`           | `color="info"`       |
-| `.material-icons--success`        | `color="success"`    |
-| `.material-icons--small`          | `size="small"`       |
-| `.material-icons--medium`         | `size="medium"`      |
-| `.material-icons--large`          | `size="large"`       |
-| `.material-icons--disabled`       | `disabled=true`      |
-| `.material-icons-outlined`        | `variant="outlined"` |
-| `.material-icons-round`           | `variant="round"`    |
-| `.material-icons-sharp`           | `variant="sharp"`    |
-| `.material-icons-two-tone`        | `variant="two-tone"` |
+The base styles for the icon
+
+---
+
+`.material-icons-outlined`
+
+Styles for the outlined variant
+
+---
+
+`.material-icons-round`
+
+Styles for the round variant
+
+---
+
+`.material-icons-sharp`
+
+Styles for the sharp variant
+
+---
+
+`.material-icons-two-tone`
+
+Styles for the two-tone variant
+
+---
+
+`.material-icons--small`
+
+Styles for the small size
+
+---
+
+`.material-icons--medium`
+
+Styles for the medium size
+
+---
+
+`.material-icons--large`
+
+Styles for the large size
+
+---
+
+`.material-icons--disabled`
+
+Styles for the disabled state
+
+---
+
+`.material-icons--primary` (\*)
+
+Styles for the primary color variant
+
+---
+
+`.material-icons--secondary` (\*)
+
+Styles for the secondary color variant
+
+---
+
+`.material-icons--error`
+
+Styles for the error color variant
+
+---
+
+`.material-icons--warning`
+
+Styles for the warning color variant
+
+---
+
+`.material-icons--info`
+
+Styles for the info color variant
+
+---
+
+`.material-icons--success`
+
+Styles for the success color variant
 
 **(\*): Class names those has no built-in styles.**
 
@@ -117,12 +188,24 @@ The following class names are used for styling with CSS:
 You can customize the color of the icon by using the following CSS custom properties:
 
 ```css
-.any-parent-of-icon-component {
+.any-parent-of-icon-component,
+.class-for-extending-styles {
   --icon-color: black; /* default color */
   --icon-color-error: red;
   --icon-color-warning: orange;
   --icon-color-info: blue;
   --icon-color-success: green;
   --icon-color-disabled: gray;
+}
+```
+
+You can customize the size of the icon by using the following CSS custom properties:
+
+```css
+.any-parent-of-icon-component,
+.class-for-extending-styles {
+  --icon-size: 24px; /* default size */
+  --icon-small: 18px;
+  --icon-large: 36px;
 }
 ```

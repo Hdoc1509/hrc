@@ -4,7 +4,7 @@ import "./Icon.scss";
 
 type IconProps = {
   variant?: "outlined" | "round" | "sharp" | "two-tone";
-  size?: "small" | "medium" | "large";
+  size?: "small" | "large";
   name: IconName;
   color?: "primary" | "secondary" | "error" | "warning" | "info" | "success";
   className?: string;
@@ -13,7 +13,7 @@ type IconProps = {
 
 export const Icon = ({
   variant,
-  size = "medium",
+  size,
   name,
   color,
   className,
