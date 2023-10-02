@@ -91,6 +91,28 @@ Variant of the icon.
 
 Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 
+## Customization
+
+You can customize the color and size of the icon by using the following CSS custom properties:
+
+```css
+.any-parent-of,
+.class-for-extend-styles {
+  --icon-color: black; /* default color */
+  --icon-color-primary: lightblue;
+  --icon-color-secondary: lightpink;
+  --icon-color-error: red;
+  --icon-color-warning: orange;
+  --icon-color-info: blue;
+  --icon-color-success: green;
+  --icon-color-disabled: gray;
+
+  --icon-size: 24px; /* default size */
+  --icon-small: 18px;
+  --icon-large: 36px;
+}
+```
+
 ## CSS classes
 
 `.material-icons`
@@ -180,25 +202,3 @@ Styles for the info color variant
 `.material-icons--success`
 
 Styles for the success color variant
-
-## Customization
-
-You can customize the color and size of the icon by using the following CSS custom properties:
-
-```css
-.any-parent-of,
-.class-for-extend-styles {
-  --icon-color: black; /* default color */
-  --icon-color-primary: lightblue;
-  --icon-color-secondary: lightpink;
-  --icon-color-error: red;
-  --icon-color-warning: orange;
-  --icon-color-info: blue;
-  --icon-color-success: green;
-  --icon-color-disabled: gray;
-
-  --icon-size: 24px; /* default size */
-  --icon-small: 18px;
-  --icon-large: 36px;
-}
-```
