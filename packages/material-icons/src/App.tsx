@@ -3,13 +3,13 @@ import { Icon } from "../lib/main";
 import { useState } from "react";
 
 function App() {
-  const [error, setError] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
 
-  const toggleError = () => setError(!error);
+  const toggleError = () => setIsDisabled(!isDisabled);
 
   return (
     <>
-      <button onClick={toggleError}>toggle error</button>
+      <button onClick={toggleError}>Toggle disabled</button>
       <div className="icon-container">
         <Icon name="error" variant="outlined" size="large" />
       </div>
@@ -19,9 +19,12 @@ function App() {
           variant="outlined"
           size="large"
           color="error"
-          disabled={error}
+          disabled={isDisabled}
         />
       </div>
+      <Icon name="info" color="primary" />
+      <Icon name="work" color="secondary" />
+      <Icon name="sell" color="success" />
     </>
   );
 }

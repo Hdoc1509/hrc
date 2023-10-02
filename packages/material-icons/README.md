@@ -24,11 +24,11 @@ Import `@material-design-icons/font` in your entry file (example: src/main.jsx i
 import "@material-design-icons/font";
 ```
 
-Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
+> :information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
 
 Then, in your `App.jsx` or another file:
 
-```jsx
+```js
 import { Icon } from "@hdoc/react-material-icons";
 
 function App() {
@@ -147,13 +147,13 @@ Styles for the disabled state
 
 ---
 
-`.material-icons--primary` (\*)
+`.material-icons--primary`
 
 Styles for the primary color variant
 
 ---
 
-`.material-icons--secondary` (\*)
+`.material-icons--secondary`
 
 Styles for the secondary color variant
 
@@ -181,29 +181,22 @@ Styles for the info color variant
 
 Styles for the success color variant
 
-**(\*): Class names those has no built-in styles.**
-
 ## Customization
 
-You can customize the color of the icon by using the following CSS custom properties:
+You can customize the color and size of the icon by using the following CSS custom properties:
 
 ```css
-.any-parent-of-icon-component,
-.class-for-extending-styles {
+.any-parent-of,
+.class-for-extend-styles {
   --icon-color: black; /* default color */
+  --icon-color-primary: lightblue;
+  --icon-color-secondary: lightpink;
   --icon-color-error: red;
   --icon-color-warning: orange;
   --icon-color-info: blue;
   --icon-color-success: green;
   --icon-color-disabled: gray;
-}
-```
 
-You can customize the size of the icon by using the following CSS custom properties:
-
-```css
-.any-parent-of-icon-component,
-.class-for-extending-styles {
   --icon-size: 24px; /* default size */
   --icon-small: 18px;
   --icon-large: 36px;

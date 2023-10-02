@@ -14,6 +14,14 @@
     --icon-size: var(--icon-large, 36px);
   }
 
+  &--primary {
+    --icon-color: var(--icon-color-primary, #2962ff);
+  }
+
+  &--secondary {
+    --icon-color: var(--icon-color-secondary, #455a64);
+  }
+
   &--error {
     --icon-color: var(--icon-color-error, #f44336);
   }
