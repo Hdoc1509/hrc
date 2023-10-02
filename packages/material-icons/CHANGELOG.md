@@ -1,5 +1,11 @@
 # @hdoc/react-material-icons
 
+## 1.4.0
+
+### Minor Changes
+
+- d1e29c9: Use `clsx` as dependency
+
 ## 1.3.0
 
 ### Minor Changes
