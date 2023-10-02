@@ -18,7 +18,7 @@ Simple input component for your React app
 npm install @hdoc/react-input
 ```
 
-## Usage
+### Icons
 
 If you intend to use icons, install the following packages:
 
@@ -34,9 +34,11 @@ import "@material-design-icons/font";
 
 > :information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
 
-Then, in your `App.jsx` or another file:
+## Usage
 
-```jsx
+In your `App.jsx` or another file:
+
+```js
 import { Input } from "@hdoc/react-input";
 
 function App() {
@@ -163,7 +165,8 @@ body.dark,
   --label-text-focus: lightblue;
 
   /* ERROR VARIANT */
-  --error: #f44336; /* auto-used by input, label and helper text */
+  /* auto-used by input, label and helper text */
+  --error: #f44336;
 }
 ```
 
