@@ -1,0 +1,21 @@
+@use "abstratcs/colors" as *;
+
+.input-wrapper > .input-icon {
+  position: absolute;
+
+  inset-block: 0;
+  margin: auto;
+
+  &--start {
+    left: 12px;
+  }
+
+  &--end {
+    right: 12px;
+  }
+
+  .input-label:focus-within &,
+  .input-label--error & {
+    --icon-color: inherit;
+  }
+}

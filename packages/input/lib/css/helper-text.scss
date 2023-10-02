@@ -1,0 +1,11 @@
+@use "abstratcs/colors" as *;
+
+.input-helper {
+  font-size: 10px;
+  color: var(--input-helper-text, $input-border-color);
+
+  .input-label:focus-within > &,
+  .input-label--error > & {
+    color: inherit;
+  }
+}

@@ -1,0 +1,31 @@
+@use "abstratcs/colors" as *;
+
+.input-label {
+  --input-border-color-hover: var(--label-text, #{$label-text});
+  --input-border-color-focus: var(--label-text-focus, #{$label-text-focus});
+
+  display: inline-block;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--label-text, $label-text);
+
+  &:hover {
+    --label-text: var(--label-text-hover, #{$label-text});
+  }
+
+  &:focus-within {
+    --label-text: var(--label-text-focus, #{$label-text-focus});
+  }
+
+  &--error {
+    --label-text: var(--error, #{$error});
+    --label-text-hover: var(--error, #{$error});
+    --label-text-focus: var(--error, #{$error});
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+}

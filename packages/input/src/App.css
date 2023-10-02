@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.input-wrapper > .input--focused {
+  --input-border-color: var(--input-border-color-focus) !important;
+  outline: 1px solid var(--input-border-color);
+}
+
+.input-label--focused {
+  --label-text: var(--label-text-focus, #2962ff) !important;
+}
+.input-label--focused > .input-helper {
+  color: inherit;
+}
