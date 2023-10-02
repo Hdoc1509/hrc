@@ -27,12 +27,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hdoc1509/react-components.git",
-    "directory": "packages/react-input"
+    "directory": "packages/input"
   },
   "bugs": {
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/react-input#readme",
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/input#readme",
   "peerDependencies": {
     "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "^0.14.0",

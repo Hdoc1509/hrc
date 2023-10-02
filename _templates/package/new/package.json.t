@@ -31,12 +31,12 @@ to: packages/<%= name %>/package.json
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hdoc1509/react-components.git",
-    "directory": "packages/react-<%= name %>"
+    "directory": "packages/<%= name %>"
   },
   "bugs": {
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/react-<%= name %>#readme",
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/<%= name %>#readme",
   "peerDependencies": {
     "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "^0.14.10",
