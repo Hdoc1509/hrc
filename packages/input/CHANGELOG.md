@@ -1,5 +1,11 @@
 # @hdoc/react-input
 
+## 0.3.0
+
+### Minor Changes
+
+- 666bf69: Use exact version of `@hdoc/react-material-icons`
+
 ## 0.2.0
 
 ### Minor Changes
