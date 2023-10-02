@@ -1,5 +1,11 @@
 # @hdoc/react-material-icons
 
+## 1.5.0
+
+### Minor Changes
+
+- 44d7bff: Add built-in styles for primary and secondary color variants
+
 ## 1.4.0
 
 ### Minor Changes

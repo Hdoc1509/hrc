@@ -1,5 +1,12 @@
 # @hdoc/react-button
 
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies [44d7bff]
+  - @hdoc/react-material-icons@1.5.0
+
 ## 1.1.0
 
 ### Minor Changes

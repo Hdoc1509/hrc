@@ -1,5 +1,12 @@
 # @hdoc/react-input
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies [44d7bff]
+  - @hdoc/react-material-icons@1.5.0
+
 ## 0.3.0
 
 ### Minor Changes
