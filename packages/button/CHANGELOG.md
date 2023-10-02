@@ -1,5 +1,11 @@
 # @hdoc/react-button
 
+## 1.1.0
+
+### Minor Changes
+
+- b96af43: Use exact version of `@hdoc/react-material-icons`
+
 ## 1.0.0
 
 ### Major Changes

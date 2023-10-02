@@ -97,7 +97,7 @@ importers:
   packages/input:
     dependencies:
       '@hdoc/react-material-icons':
-        specifier: workspace:*
+        specifier: workspace:^1.4.0
         version: link:../material-icons
       clsx:
         specifier: ^2.0.0
