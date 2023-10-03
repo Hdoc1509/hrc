@@ -53,13 +53,5 @@
     "@material-design-icons/font": "^0.14.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@hdoc/react-material-icons": {
-      "optional": true
-    },
-    "@material-design-icons/font": {
-      "optional": true
-    }
   }
 }

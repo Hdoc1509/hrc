@@ -15,18 +15,12 @@ Simple input component for your React app
 ## Installation
 
 ```bash
-npm install @hdoc/react-input
+npm install @hdoc/react-input @hdoc/react-material-icons @material-design-icons/font
 ```
 
-### Icons
+## Usage
 
-If you intend to use icons, install the following packages:
-
-```bash
-npm install @hdoc/react-material-icons @material-design-icons/font
-```
-
-Then import `@material-design-icons/font` in your entry file (example: src/main.jsx in Vite):
+Import `@material-design-icons/font` in your entry file (example: src/main.jsx in Vite):
 
 ```js
 import "@material-design-icons/font";
@@ -34,9 +28,7 @@ import "@material-design-icons/font";
 
 > :information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
 
-## Usage
-
-In your `App.jsx` or another file:
+Then, in your `App.jsx` or another file:
 
 ```js
 import { Input } from "@hdoc/react-input";
