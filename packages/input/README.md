@@ -194,7 +194,7 @@ The small styles for the input
 
 ---
 
-`.input-fullwidth`
+`.input--fullwidth`
 
 The full width styles for the input
 
