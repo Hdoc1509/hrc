@@ -1,5 +1,16 @@
 # @hdoc/react-input
 
+## 0.3.2
+
+### Patch Changes
+
+- e6436e0: Remove optional use of some peer dependencies:
+
+  - `@hdoc/react-material-icons`
+  - `@material-design-icons/font`
+
+  These will be used as normal peer dependencies.
+
 ## 0.3.1
 
 ### Patch Changes
