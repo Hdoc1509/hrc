@@ -14,7 +14,7 @@ export const Button = ({
   className,
   text,
   ...restProps
-}: ButtonProps) => {
+}: ButtonProps): JSX.Element => {
   const buttonClass = clsx(
     "button",
     {
@@ -46,7 +46,7 @@ export const ButtonIcon = ({
   icon,
   iconVariant,
   ...restProps
-}: ButtonIconProps) => {
+}: ButtonIconProps): JSX.Element => {
   const buttonClass = clsx(
     ["button", "button--icon"],
     {
