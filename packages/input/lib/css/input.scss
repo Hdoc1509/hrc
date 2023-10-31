@@ -1,3 +1,4 @@
+@use "@mono/ui/scss/colors" as mono_colors;
 @use "abstratcs/colors" as *;
 
 .input-wrapper {
@@ -39,7 +40,7 @@
   &--error,
   &--error:hover,
   &--error:focus {
-    --input-border-color: var(--error, #{$error});
+    --input-border-color: var(--error, #{mono_colors.$error});
   }
 
   &:disabled {

@@ -1,3 +1,4 @@
+@use "@mono/ui/scss/colors" as mono_colors;
 @use "abstratcs/colors" as *;
 
 .input-label {
@@ -20,9 +21,9 @@
   }
 
   &--error {
-    --label-text: var(--error, #{$error});
-    --label-text-hover: var(--error, #{$error});
-    --label-text-focus: var(--error, #{$error});
+    --label-text: var(--error, #{mono_colors.$error});
+    --label-text-hover: var(--error, #{mono_colors.$error});
+    --label-text-focus: var(--error, #{mono_colors.$error});
   }
 
   &--fullwidth {

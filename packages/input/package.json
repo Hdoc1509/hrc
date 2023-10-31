@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/input#readme",
   "dependencies": {
+    "@mono/ui": "workspace:*",
     "clsx": "^2.0.0",
     "type-fest": "^4.3.1"
   },
