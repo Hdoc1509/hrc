@@ -146,12 +146,15 @@ body.dark,
   /* auto-setted by --label-text-focus */
   --input-border-color-focus: lightblue;
   --input-border-color-disabled: rgba(0, 0, 0, 0.26);
+  --input-font-weight: 600;
   --input-text: #000;
   --input-helper-text: #828282;
 
   --placeholder-color: #636363;
   --placeholder-disabled: #434343;
 
+  --label-font-family: "Roboto";
+  --label-font-weight: 600;
   --label-text: #828282;
   --label-text-hover: #000;
   --label-text-focus: lightblue;
