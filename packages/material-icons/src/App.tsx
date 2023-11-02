@@ -24,6 +24,9 @@ function App() {
       </div>
       <Icon name="info" color="primary" />
       <Icon name="work" color="secondary" />
+      <Icon name="delete" color="error" />
+      <Icon name="warning" color="warning" />
+      <Icon name="note" color="info" />
       <Icon name="sell" color="success" />
     </>
   );

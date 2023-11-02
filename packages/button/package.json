@@ -40,8 +40,8 @@
     "button"
   ],
   "dependencies": {
-    "type-fest": "4.3.1",
-    "clsx": "2.0.0"
+    "clsx": "2.0.0",
+    "type-fest": "4.3.1"
   },
   "peerDependencies": {
     "@hdoc/react-material-icons": "workspace:^1.5.0",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "0.14.10",
+    "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

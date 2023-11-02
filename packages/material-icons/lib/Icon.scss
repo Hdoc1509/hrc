@@ -1,3 +1,5 @@
+@use "@mono/ui/scss/colors" as *;
+
 [class*="material-icons"] {
   color: var(--icon-color, inherit);
   width: 1em;
@@ -15,27 +17,27 @@
   }
 
   &--primary {
-    --icon-color: var(--icon-color-primary, #2962ff);
+    --icon-color: var(--icon-color-primary, #{$primary});
   }
 
   &--secondary {
-    --icon-color: var(--icon-color-secondary, #455a64);
+    --icon-color: var(--icon-color-secondary, #{$secondary});
   }
 
   &--error {
-    --icon-color: var(--icon-color-error, #f44336);
+    --icon-color: var(--icon-color-error, #{$error});
   }
 
   &--warning {
-    --icon-color: var(--icon-color-warning, #ffa726);
+    --icon-color: var(--icon-color-warning, #{$warning});
   }
 
   &--info {
-    --icon-color: var(--icon-color-info, #29b6f6);
+    --icon-color: var(--icon-color-info, #{$info});
   }
 
   &--success {
-    --icon-color: var(--icon-color-success, #66bb6a);
+    --icon-color: var(--icon-color-success, #{$success});
   }
 
   &--disabled {
