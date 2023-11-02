@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Button onClick={toggleError} text="Toggle error" />
+      <Button className="button-error" onClick={toggleError} text="Toggle error" />
       <div style={styles}>
         <Button size="large" disabled={error} />
         <Button size="large" disabled={error} variant="outline" />

@@ -29,3 +29,7 @@
 .button {
   margin: 8px;
 }
+.button-error {
+  --button-radius: 10px;
+  --button-padding: 16px;
+}
