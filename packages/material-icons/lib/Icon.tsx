@@ -2,7 +2,7 @@ import type { MaterialIcon as IconName } from "@material-design-icons/font";
 import { clsx } from "clsx";
 import "./Icon.scss";
 
-type IconProps = {
+export type IconProps = {
   variant?: "outlined" | "round" | "sharp" | "two-tone";
   size?: "small" | "large";
   name: IconName;
