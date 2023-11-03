@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  --icon-size: 72px;
 }
 
 .icon-container {
@@ -12,4 +14,8 @@
 .my-container-with-custom-color {
   --icon-color-error: salmon;
   --icon-color-disabled: gray;
+
+}
+.my-container-with-custom-color > [class*="material-icons"] {
+  margin-bottom: 30px;
 }

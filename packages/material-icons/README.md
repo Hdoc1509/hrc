@@ -10,6 +10,8 @@
 
 Simple component for material design icons in your React app.
 
+![icon-examples](docs/icon-examples.png)
+
 ## Installation
 
 ```bash
@@ -43,9 +45,9 @@ function App() {
 
 ## Props
 
-All props are optional unless otherwise specified.
+**All props are optional unless otherwise specified.**
 
-`name` (required)
+`name` **(required)**
 
 The name of the icon.
 
