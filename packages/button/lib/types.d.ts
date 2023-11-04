@@ -14,6 +14,7 @@ export type ButtonProps = Simplify<
     text?: string;
     size?: "small" | "large";
     color?: "primary" | "secondary" | "danger";
+    roundedSide?: "top" | "bottom" | "left" | "right";
   } & ComponentProps<"button">
 >;
 

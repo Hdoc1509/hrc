@@ -1,3 +1,4 @@
+@use "@mono/ui/scss/mixins" as *;
 @use "abstracts/colors" as *;
 
 .button {
@@ -51,5 +52,18 @@
   }
   &--large {
     --button-padding-y: 12px;
+  }
+
+  &--top-rounded {
+    @include border-top-rounded(var(--button-radius, 6px));
+  }
+  &--bottom-rounded {
+    @include border-bottom-rounded(var(--button-radius, 6px));
+  }
+  &--left-rounded {
+    @include border-left-rounded(var(--button-radius, 6px));
+  }
+  &--right-rounded {
+    @include border-right-rounded(var(--button-radius, 6px));
   }
 }

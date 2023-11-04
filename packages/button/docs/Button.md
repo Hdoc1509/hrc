@@ -82,6 +82,14 @@ Type: `'primary' | 'secondary' | 'danger'`
 
 ---
 
+`roundedSide`
+
+The side of the button to round.
+
+Type: `'top' | 'bottom' | 'left' | 'right'`
+
+---
+
 `className`
 
 Additional class names for extending styles.

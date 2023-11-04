@@ -13,6 +13,7 @@ export const Button = ({
   color,
   className,
   text,
+  roundedSide,
   ...restProps
 }: ButtonProps): JSX.Element => {
   const buttonClass = clsx(
@@ -22,6 +23,7 @@ export const Button = ({
       ["button--no-shadow"]: disableShadow,
       [`button--${size}`]: size,
       [`button--${color}`]: color,
+      [`button--${roundedSide}-rounded`]: roundedSide,
     },
     className,
   );
@@ -45,6 +47,7 @@ export const ButtonIcon = ({
   className,
   icon,
   iconVariant,
+  roundedSide,
   ...restProps
 }: ButtonIconProps): JSX.Element => {
   const buttonClass = clsx(
@@ -53,6 +56,7 @@ export const ButtonIcon = ({
       [`button--${variant}`]: variant,
       ["button--no-shadow"]: disableShadow,
       [`button--${color}`]: color,
+      [`button--${roundedSide}-rounded`]: roundedSide,
     },
     className,
   );
