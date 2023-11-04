@@ -11,7 +11,11 @@ function App() {
 
   return (
     <>
-      <Button className="button-error" onClick={toggleError} text="Toggle error" />
+      <Button
+        className="button-error"
+        onClick={toggleError}
+        text="Toggle error"
+      />
       <div style={styles}>
         <Button size="large" disabled={error} />
         <Button size="large" disabled={error} variant="outline" />
@@ -51,6 +55,12 @@ function App() {
           variant="outline"
         />
         <Button size="large" color="danger" disabled={error} variant="text" />
+      </div>
+      <div className="rounded-variants">
+        <Button text="Top rounded" roundedSide="top" color="primary" />
+        <Button text="Bottom rounded" roundedSide="bottom" color="primary" />
+        <Button text="Left rounded" roundedSide="left" color="primary" />
+        <Button text="Right rounded" roundedSide="right" color="primary" />
       </div>
       <ButtonIcon icon="check" color="secondary" size="small" />
       <ButtonIcon icon="delete" color="danger" />
