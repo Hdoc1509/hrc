@@ -38,7 +38,10 @@
   &--outline,
   &--text {
     --button-bg: transparent;
-    --button-bg-hover: var(--button-outline-bg-hover, #c7c7c73a);
+    --button-bg-hover: var(
+      --button-outline-bg-hover,
+      #{$default-bg-hover-outline}
+    );
     --button-bg-disabled: transparent;
     --button-color: var(--button-outline-color);
     --button-shadow: none;

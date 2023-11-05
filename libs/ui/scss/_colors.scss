@@ -1,17 +1,17 @@
 $primary: #2962ff;
 $primary-hover: #0039cb;
 $primary-text: #fff;
-$primary-transparent: #2962ff1a;
+$primary-transparent: rgba($primary, 15%);
 
 $secondary: #455a64;
 $secondary-hover: #1c313a;
 $secondary-text: #fff;
-$secondary-transparent: #455a641a;
+$secondary-transparent: rgba($secondary, 15%);
 
 $danger: #d32f2f;
 $danger-hover: #9a0007;
 $danger-text: #fff;
-$danger-transparent: #d32f2f1a;
+$danger-transparent: rgba($danger, 15%);
 
 $error: $danger;
 
