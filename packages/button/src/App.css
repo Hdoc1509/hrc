@@ -35,6 +35,5 @@
 }
 
 .rounded-variants {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  --button-radius: 10px;
 }
