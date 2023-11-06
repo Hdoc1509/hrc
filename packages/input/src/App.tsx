@@ -11,35 +11,48 @@ const focusedProps = {
   labelClassName: "input-label--focused",
 };
 
+const helperText = "Helper text";
+
 function App() {
   return (
     <>
       <button onClick={toggleTheme}>toggle theme</button>
       <div className="input-grid">
-        <Input label="Small" size="small" />
-        <Input label="Normal" />
-        <Input label="Focused" {...focusedProps} />
-        <Input label="Disabled" disabled />
+        <Input
+          label="Small"
+          size="small"
+          helperText={helperText}
+          iconStart="people"
+        />
+        <Input label="Normal" helperText={helperText} iconStart="people" />
+        <Input
+          label="Focused"
+          helperText={helperText}
+          iconEnd="phone"
+          {...focusedProps}
+        />
+        <Input
+          label="Disabled"
+          disabled
+          helperText={helperText}
+          iconEnd="phone"
+        />
       </div>
       <div className="input-grid">
-        <Input size="small" iconStart="people" />
-        <Input iconEnd="people" />
-        <Input iconEnd="people" {...focusedProps} />
-        <Input iconEnd="people" disabled />
-      </div>
-      <div className="input-grid">
-        <Input size="small" error />
-        <Input error />
-        <Input error {...focusedProps} />
-        <Input error disabled />
-      </div>
-      <div className="input-grid">
-        <Input size="small" helperText="Helper text" />
-        <Input helperText="Helper text" />
-        <Input helperText="Helper text" {...focusedProps} />
-        <Input helperText="Helper text" disabled />
+        <Input size="small" iconStart="lock" error />
+        <Input iconStart="lock" error />
+        <Input iconEnd="account_circle" error {...focusedProps} />
+        <Input iconEnd="account_circle" error disabled />
       </div>
       <Input label="Full width" fullWidth />
+      <br />
+      <br />
+      <Input
+        label="Full width"
+        iconStart="question_answer"
+        fullWidth
+        {...focusedProps}
+      />
     </>
   );
 }
