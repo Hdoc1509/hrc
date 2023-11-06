@@ -13,9 +13,4 @@
   &--end {
     right: 12px;
   }
-
-  .input-label:focus-within &,
-  .input-label--error & {
-    --icon-color: inherit;
-  }
 }
