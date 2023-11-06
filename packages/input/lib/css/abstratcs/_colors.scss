@@ -1,5 +1,3 @@
-@use "@mono/ui/scss/colors" as mono_colors;
-
 $input-bg: #fff;
 $input-bg-disabled: #f2f2f2;
 $input-border-color: #828282;
@@ -7,4 +5,3 @@ $input-border-color-disabled: #e0e0e0;
 $placeholder-disabled: #959595;
 
 $label-text: #333;
-$label-text-focus: mono_colors.$primary;

@@ -3,7 +3,7 @@
 
 .input-label {
   --input-border-color-hover: var(--label-text, #{$label-text});
-  --input-border-color-focus: var(--label-text-focus, #{$label-text-focus});
+  --input-border-color-focus: var(--label-text-focus, #{mono_colors.$primary});
 
   display: inline-block;
 
@@ -17,7 +17,7 @@
   }
 
   &:focus-within {
-    --label-text: var(--label-text-focus, #{$label-text-focus});
+    --label-text: var(--label-text-focus, #{mono_colors.$primary});
   }
 
   &--error {
