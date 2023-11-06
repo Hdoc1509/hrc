@@ -13,7 +13,7 @@ export type ButtonProps = Simplify<
     iconVariant?: IconProps["variant"];
     text?: string;
     size?: "small" | "large";
-    color?: "primary" | "secondary" | "danger";
+    color?: "primary" | "secondary" | "danger" | "info" | "warning" | "success";
     roundedSide?: "top" | "bottom" | "left" | "right";
   } & ComponentProps<"button">
 >;

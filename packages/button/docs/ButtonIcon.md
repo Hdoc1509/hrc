@@ -62,7 +62,7 @@ Type: `'small' | 'large'`
 
 The color variant of the button.
 
-Type: `'primary' | 'secondary' | 'danger'`
+Type: `'primary' | 'secondary' | 'danger' | 'info' | 'warning' | 'success'`
 
 ---
 
