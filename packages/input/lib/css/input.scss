@@ -40,17 +40,24 @@
   &--fullwidth {
     width: 100%;
   }
+
+  &--textarea {
+    padding: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .input-wrapper > .input {
   width: 100%;
   flex-shrink: 1;
+  box-sizing: border-box;
 
   background-color: inherit;
   border: none;
   outline: none;
   padding: 0;
-  resize: none;
+  margin: 0;
+  resize: vertical;
 
   color: var(--input-text, #000);
   font-family: inherit;
@@ -60,5 +67,10 @@
 
   &::placeholder {
     color: var(--placeholder-color, $input-border-color);
+  }
+
+  &--textarea {
+    min-height: 36px;
+    padding: 8px 12px;
   }
 }
