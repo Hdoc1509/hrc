@@ -28,14 +28,13 @@ export const Input = ({
     },
     labelClassName,
   );
-  const inputClass = clsx(
-    "input",
+  const inputWrapperClass = clsx(
+    "input-wrapper",
     {
-      "input--error": error,
-      [`input--${size}`]: size,
-      "input-with-icon-start": iconStart,
-      "input-with-icon-end": iconEnd,
-      "input--fullwidth": fullWidth,
+      "input-wrapper--error": error,
+      disabled: disabled,
+      [`input-wrapper--${size}`]: size,
+      "input-wrapper--fullwidth": fullWidth,
     },
     className,
   );
@@ -43,17 +42,17 @@ export const Input = ({
   return (
     <label className={labelClass}>
       {label ?? "Label"}
-      <div className="input-wrapper">
+      <div className={inputWrapperClass}>
         {iconStart && (
           <Icon
             name={iconStart}
             variant={iconVariant}
-            className="input-icon input-icon--start"
+            className="input-icon"
             disabled={disabled}
           />
         )}
         <input
-          className={inputClass}
+          className="input"
           placeholder={placeholder}
           disabled={disabled}
           {...restProps}
@@ -62,7 +61,7 @@ export const Input = ({
           <Icon
             name={iconEnd}
             variant={iconVariant}
-            className="input-icon input-icon--end"
+            className="input-icon"
             disabled={disabled}
           />
         )}
