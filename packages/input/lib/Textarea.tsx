@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import { TextareaProps } from "./types";
 import "./css/styles.scss";
+import { autosizeTextarea } from "./utils";
 
 export const Textarea = ({
   label = "Label",
@@ -12,6 +13,7 @@ export const Textarea = ({
   fullWidth,
   placeholder = "Placeholder",
   required,
+  onChange,
   ...restProps
 }: TextareaProps): JSX.Element => {
   const labelClass = clsx(
@@ -41,6 +43,10 @@ export const Textarea = ({
           placeholder={placeholder}
           disabled={disabled}
           required={required}
+          onChange={(e) => {
+            autosizeTextarea(e.currentTarget);
+            onChange?.(e);
+          }}
           {...restProps}
         />
       </div>
