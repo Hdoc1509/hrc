@@ -18,12 +18,7 @@ function App() {
     <>
       <button onClick={toggleTheme}>toggle theme</button>
       <div className="input-grid">
-        <Input
-          label="Small"
-          size="small"
-          helperText={helperText}
-          iconStart="people"
-        />
+        <Input label="Small" size="small" helperText={helperText} />
         <Input label="Normal" helperText={helperText} iconStart="people" />
         <Input
           label="Focused"
@@ -36,10 +31,11 @@ function App() {
           disabled
           helperText={helperText}
           iconEnd="phone"
+          required
         />
       </div>
       <div className="input-grid">
-        <Input size="small" iconStart="lock" error />
+        <Input size="small" error />
         <Input iconStart="lock" error />
         <Input iconEnd="account_circle" error {...focusedProps} />
         <Input iconEnd="account_circle" error disabled />

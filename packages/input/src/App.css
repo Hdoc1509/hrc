@@ -12,14 +12,12 @@
   margin-block: 1rem;
 }
 
-.input-wrapper > .input--focused {
-  --input-border-color: var(--input-border-color-focus) !important;
+.input--focused {
   outline: 1px solid var(--input-border-color);
 }
 
-.input-label--focused {
-  --label-text: var(--label-text-focus, #2962ff) !important;
-}
-.input-label--focused > .input-helper {
-  color: inherit;
+.input-label--focused:not(.input-label--error) {
+  --label-text: #2962ff;
+  --input-border-color: #2962ff ;
+  --input-helper-text: #2962ff;
 }
