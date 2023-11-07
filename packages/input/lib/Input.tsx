@@ -3,10 +3,8 @@ import { Icon } from "@hdoc/react-material-icons";
 import type { InputProps } from "./types";
 import "./css/styles.scss";
 
-// TODO:
-//   add star char if required
 export const Input = ({
-  label,
+  label = "Label",
   labelClassName,
   className,
   disabled,
@@ -18,6 +16,7 @@ export const Input = ({
   iconStart,
   iconEnd,
   iconVariant,
+  required,
   ...restProps
 }: InputProps): JSX.Element => {
   const labelClass = clsx(
@@ -41,7 +40,7 @@ export const Input = ({
 
   return (
     <label className={labelClass}>
-      {label ?? "Label"}
+      {required ? `${label} *` : label}
       <div className={inputWrapperClass}>
         {iconStart && (
           <Icon
@@ -55,6 +54,7 @@ export const Input = ({
           className="input"
           placeholder={placeholder}
           disabled={disabled}
+          required={required}
           {...restProps}
         />
         {iconEnd && (
