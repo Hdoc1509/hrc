@@ -1,4 +1,4 @@
-import { Input } from "../lib/main";
+import { Input, Textarea } from "../lib/main";
 import "./App.css";
 
 const toggleTheme = () => {
@@ -40,15 +40,13 @@ function App() {
         <Input iconEnd="account_circle" error {...focusedProps} />
         <Input iconEnd="account_circle" error disabled />
       </div>
-      <Input label="Full width" fullWidth />
-      <br />
-      <br />
-      <Input
-        label="Full width"
-        iconStart="question_answer"
-        fullWidth
-        {...focusedProps}
-      />
+      <Input label="Full width" iconStart="question_answer" fullWidth />
+      <div className="input-grid">
+        <Textarea label="Textarea" helperText={helperText} />
+        <Textarea label="Textarea focused" {...focusedProps} />
+        <Textarea label="Textarea error" helperText={helperText} error />
+        <Textarea label="Textarea error focused" error {...focusedProps} />
+      </div>
     </>
   );
 }

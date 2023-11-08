@@ -26,7 +26,7 @@ Import `@material-design-icons/font` in your entry file (example: src/main.jsx i
 import "@material-design-icons/font";
 ```
 
-> :information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
+:information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
 
 Then, in your `App.jsx` or another file:
 
@@ -66,9 +66,7 @@ body.dark,
   --input-bg: #ffffff;
   --input-bg-disabled: #aaa;
   --input-border-color: #888;
-  /* auto-setted by --label-text */
   --input-border-color-hover: #444;
-  /* auto-setted by --label-text-focus */
   --input-border-color-focus: lightblue;
   --input-border-color-disabled: rgba(0, 0, 0, 0.26);
   --input-font-weight: 600;
