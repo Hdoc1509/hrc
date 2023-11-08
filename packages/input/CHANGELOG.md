@@ -1,5 +1,27 @@
 # @hdoc/react-input
 
+## 0.4.0
+
+### Minor Changes
+
+- 24fb0a9: Add css custom properties for change font family and font weight:
+
+  - `--input-font-weight`
+  - `--label-font-family`
+  - `--label-font-weight`
+
+- 57a7f1b: Auto resize `<Textarea />` component to fit its content
+- 0c98cbe: Use colors from `@mono/ui`
+- 09dab8b: Add an asterisk char to label when input is required
+- 2fb6172: Add `<Textarea />` component
+- 8a4b8f9: Remove css rules for handle colors of icons
+
+### Patch Changes
+
+- Updated dependencies [eb576d8]
+- Updated dependencies [baa67cc]
+  - @hdoc/react-material-icons@1.6.0
+
 ## 0.3.2
 
 ### Patch Changes
