@@ -2,21 +2,62 @@
 @use "abstratcs/colors" as *;
 
 .input-wrapper {
-  position: relative;
-}
+  display: flex;
+  gap: 14px;
 
-.input-wrapper > .input {
   width: 200px;
-  min-width: 200px;
 
   background-color: var(--input-bg, transparent);
   border: 1px solid var(--input-border-color, $input-border-color);
   border-radius: 8px;
   box-sizing: border-box;
   outline: none;
-  padding: 18px 12px;
-  margin: 2px 0;
-  resize: none;
+  padding: 16px 12px;
+
+  &:focus-within {
+    outline: 1px solid;
+  }
+
+  &--error,
+  &--error:hover,
+  &--error:focus {
+    --input-border-color: var(--error, #{mono_colors.$error});
+  }
+
+  &.disabled {
+    --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
+    --input-bg: var(--input-bg-disabled, #{$input-bg-disabled});
+    --input-border-color: var(
+      --input-border-color-disabled,
+      #{$input-border-color-disabled}
+    );
+  }
+
+  &--small {
+    padding-block: 10px;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &--textarea {
+    padding: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.input-wrapper > .input {
+  width: 100%;
+  flex-shrink: 1;
+  box-sizing: border-box;
+
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  resize: vertical;
 
   color: var(--input-text, #000);
   font-family: inherit;
@@ -28,43 +69,8 @@
     color: var(--placeholder-color, $input-border-color);
   }
 
-  &:hover {
-    --input-border-color: var(--input-border-color-hover);
-  }
-
-  &:focus {
-    --input-border-color: var(--input-border-color-focus);
-    outline: 1px solid var(--input-border-color);
-  }
-
-  &--error,
-  &--error:hover,
-  &--error:focus {
-    --input-border-color: var(--error, #{mono_colors.$error});
-  }
-
-  &:disabled {
-    --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
-    --input-bg: var(--input-bg-disabled, #{$input-bg-disabled});
-    --input-border-color: var(
-      --input-border-color-disabled,
-      #{$input-border-color-disabled}
-    );
-  }
-
-  &-with-icon-start {
-    padding-left: 44px;
-  }
-
-  &-with-icon-end {
-    padding-right: 44px;
-  }
-
-  &--small {
-    padding-block: 10px;
-  }
-
-  &--fullwidth {
-    width: 100%;
+  &--textarea {
+    min-height: 36px;
+    padding: 8px 12px;
   }
 }

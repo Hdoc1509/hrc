@@ -1,9 +1,9 @@
 import { clsx } from "clsx";
-import { Icon } from "@hdoc/react-material-icons";
-import type { InputProps } from "./types";
+import { TextareaProps } from "./types";
 import "./css/styles.scss";
+import { autosizeTextarea } from "./utils";
 
-export const Input = ({
+export const Textarea = ({
   label = "Label",
   labelClassName,
   className,
@@ -11,14 +11,11 @@ export const Input = ({
   error,
   helperText,
   fullWidth,
-  size,
   placeholder = "Placeholder",
-  iconStart,
-  iconEnd,
-  iconVariant,
   required,
+  onChange,
   ...restProps
-}: InputProps): JSX.Element => {
+}: TextareaProps): JSX.Element => {
   const labelClass = clsx(
     "input-label",
     {
@@ -28,11 +25,10 @@ export const Input = ({
     labelClassName,
   );
   const inputWrapperClass = clsx(
-    "input-wrapper",
+    ["input-wrapper", "input-wrapper--textarea"],
     {
       "input-wrapper--error": error,
       disabled: disabled,
-      [`input-wrapper--${size}`]: size,
       "input-wrapper--fullwidth": fullWidth,
     },
     className,
@@ -42,29 +38,17 @@ export const Input = ({
     <label className={labelClass}>
       {required ? `${label} *` : label}
       <div className={inputWrapperClass}>
-        {iconStart && (
-          <Icon
-            name={iconStart}
-            variant={iconVariant}
-            className="input-icon"
-            disabled={disabled}
-          />
-        )}
-        <input
-          className="input"
+        <textarea
+          className="input input--textarea"
           placeholder={placeholder}
           disabled={disabled}
           required={required}
+          onChange={(e) => {
+            autosizeTextarea(e.currentTarget);
+            onChange?.(e);
+          }}
           {...restProps}
         />
-        {iconEnd && (
-          <Icon
-            name={iconEnd}
-            variant={iconVariant}
-            className="input-icon"
-            disabled={disabled}
-          />
-        )}
       </div>
       {helperText && <span className="input-helper">{helperText}</span>}
     </label>
