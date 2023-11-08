@@ -108,9 +108,6 @@ importers:
       '@hdoc/react-material-icons':
         specifier: workspace:^1.5.0
         version: link:../material-icons
-      '@mono/ui':
-        specifier: workspace:*
-        version: link:../../libs/ui
       clsx:
         specifier: ^2.0.0
         version: 2.0.0
@@ -121,6 +118,9 @@ importers:
       '@material-design-icons/font':
         specifier: 0.14.10
         version: 0.14.10
+      '@mono/ui':
+        specifier: workspace:*
+        version: link:../../libs/ui
       '@vitejs/plugin-react-swc':
         specifier: 3.3.2
         version: 3.3.2(vite@4.4.5)
