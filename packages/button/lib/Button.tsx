@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { Icon } from "@hdoc/react-material-icons";
 import type { ButtonProps } from "./types";
-import "./css/styles.scss";
 
 export const Button = ({
   variant,
