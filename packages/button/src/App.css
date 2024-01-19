@@ -5,35 +5,45 @@
   text-align: center;
 }
 
-[data-theme="light"] .button {
-  --color-primary: #0070f3;
-  --color-secondary: #fafafa;
-  --color-error: #ff3860;
-  --color-disabled: #eaeaea;
-}
-
 [data-theme="dark"] .button {
-  --color-primary: #1a73e8;
-  --color-secondary: #202124;
-  --color-error: #d93025;
-  --color-disabled: #5f6368;
+  --error: #d93025;
+  --button-color-disabled: #5f6368;
 }
 
-.my-class-for-extend {
-  --primary: #0070f3;
-  --primary-hover: #0055cc;
-  --primary-contrast: #fff;
-  --primary-transparent: #0070f31a;
+.App {
+  display: grid;
+  gap: 1.5rem;
 }
 
-.button {
-  margin: 8px;
-}
 .button-error {
   --button-radius: 10px;
   --button-padding: 16px;
+  margin-inline: auto;
+}
+
+.button-examples {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: inherit;
+
+  .last-row {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: inherit;
+  }
 }
 
 .rounded-variants {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: inherit;
   --button-radius: 10px;
+}
+
+.button-icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: inherit;
 }

@@ -6,31 +6,25 @@ import "./App.css";
 function App() {
   const [error, setError] = useState(false);
 
-  const styles = { marginBlock: "1rem" };
-
   const toggleError = () => setError(!error);
 
   return (
-    <>
+    <div className="App">
       <Button
         className="button-error"
         onClick={toggleError}
         text="Toggle error"
       />
-      <div style={styles}>
+      <div className="button-examples">
         <ButtonExample disabled={error} />
         <ButtonExample disabled={error} color="primary" />
-      </div>
-      <div style={styles}>
         <ButtonExample disabled={error} color="secondary" />
         <ButtonExample disabled={error} color="danger" />
-      </div>
-      <div style={styles}>
         <ButtonExample disabled={error} color="info" />
         <ButtonExample disabled={error} color="warning" />
-      </div>
-      <div style={styles}>
-        <ButtonExample disabled={error} color="success" />
+        <div className="last-row">
+          <ButtonExample disabled={error} color="success" />
+        </div>
       </div>
       <div className="rounded-variants">
         <Button
@@ -38,33 +32,49 @@ function App() {
           roundedSide="top"
           color="primary"
           size="large"
+          disabled={error}
         />
         <Button
           text="Bottom rounded"
           roundedSide="bottom"
           color="info"
           size="large"
+          disabled={error}
         />
         <Button
           text="Left rounded"
           roundedSide="left"
           color="warning"
           size="large"
+          disabled={error}
         />
         <Button
           text="Right rounded"
           roundedSide="right"
           color="success"
           size="large"
+          disabled={error}
         />
       </div>
-      <ButtonIcon icon="check" color="primary" size="small" />
-      <ButtonIcon icon="delete" color="secondary" />
-      <ButtonIcon icon="error" color="danger" size="large" />
-      <ButtonIcon icon="map" color="info" size="large" />
-      <ButtonIcon icon="settings" color="warning" />
-      <ButtonIcon icon="search" color="success" size="small" />
-    </>
+      <div className="button-icons">
+        <ButtonIcon
+          icon="check"
+          color="primary"
+          size="small"
+          disabled={error}
+        />
+        <ButtonIcon icon="delete" color="secondary" disabled={error} />
+        <ButtonIcon icon="error" color="danger" size="large" disabled={error} />
+        <ButtonIcon icon="map" color="info" size="large" disabled={error} />
+        <ButtonIcon icon="settings" color="warning" disabled={error} />
+        <ButtonIcon
+          icon="search"
+          color="success"
+          size="small"
+          disabled={error}
+        />
+      </div>
+    </div>
   );
 }
 
