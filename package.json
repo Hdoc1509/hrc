@@ -5,9 +5,8 @@
     "clean": "npkill",
     "lint": "eslint --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "gen": "hygen package new",
-    "pkg:build": "nx build @hdoc/react-$PKG_NAME",
     "pkg:release": "changeset version",
-    "pkg:publish": "pnpm run pkg:build && changeset publish"
+    "pkg:publish": "nx run-many -t build && changeset publish"
   },
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
   "packageManager": "pnpm@8.6.12",
