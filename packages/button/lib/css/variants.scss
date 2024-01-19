@@ -37,10 +37,7 @@
     --button-bg-hover: var(--info-hover, #{$info-hover});
     --button-color: var(--info-text, #{$info-text});
     --button-outline-color: var(--info, #{$info});
-    --button-outline-bg-hover: var(
-      --info-transparent,
-      #{$info-transparent}
-    );
+    --button-outline-bg-hover: var(--info-transparent, #{$info-transparent});
   }
   &--warning {
     --button-bg: var(--warning, #{$warning});
@@ -75,6 +72,6 @@
     --button-shadow: none;
   }
   &--outline {
-    outline: solid 1px var(--button-outline-color, #{$default-bg-hover});
+    outline: solid 1px currentColor;
   }
 }
