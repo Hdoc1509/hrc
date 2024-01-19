@@ -1,5 +1,4 @@
-import { Button } from "../lib/main";
-import { ButtonProps } from "../lib/types";
+import { Button, type ButtonProps } from "../lib/Button";
 
 type Props = Pick<ButtonProps, "disabled" | "color">;
 

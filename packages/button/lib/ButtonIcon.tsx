@@ -1,6 +1,13 @@
-import { clsx } from "clsx";
-import { Icon } from "@hdoc/react-material-icons";
-import type { ButtonIconProps } from "./types";
+import clsx from "clsx";
+import { Icon, type IconProps } from "@hdoc/react-material-icons";
+import type { Simplify } from "type-fest";
+import type { ButtonProps } from "./Button";
+
+type Props = Simplify<
+  {
+    icon: IconProps["name"];
+  } & Omit<ButtonProps, "iconStart" | "iconEnd" | "text">
+>;
 
 export const ButtonIcon = ({
   disableShadow,
@@ -12,7 +19,7 @@ export const ButtonIcon = ({
   iconVariant,
   roundedSide,
   ...restProps
-}: ButtonIconProps): JSX.Element => {
+}: Props): JSX.Element => {
   const buttonClass = clsx(
     ["button", "button--icon"],
     {
