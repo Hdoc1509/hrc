@@ -64,6 +64,7 @@ You can customize the color of the button by using the following CSS custom prop
   --button-color-disabled: white;
 
   --button-font-family: "Arial";
+  --button-font-size: 1rem;
   --button-font-weight: bold;
 
   --button-padding: 10px;

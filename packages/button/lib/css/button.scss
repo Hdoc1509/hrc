@@ -14,7 +14,7 @@
   padding: var(--button-padding, 8px 16px);
 
   font-family: var(--button-font-family, sans-serif);
-  font-size: 14px;
+  font-size: var(--button-font-size, 14px);
   font-weight: var(--button-font-weight, 500);
   color: var(--button-color, $default-color);
 
