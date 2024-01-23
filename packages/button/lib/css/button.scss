@@ -4,8 +4,8 @@
 .button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
+  justify-content: var(--button-justify-content, center);
+  gap: var(--button-gap, 8px);
 
   border: none;
   border-radius: var(--button-radius, 6px);

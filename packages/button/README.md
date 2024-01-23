@@ -56,6 +56,9 @@ You can customize the color of the button by using the following CSS custom prop
 .any-parent-of-button,
 .class-to-extend-styles {
   /* NORMAL BUTTON */
+  --button-justify-content: flex-start;
+  --button-gap: 10px;
+
   --button-bg: lightgray;
   --button-bg-hover: darkgray;
   --button-bg-disabled: gray;
