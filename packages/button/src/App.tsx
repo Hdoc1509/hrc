@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Icon } from "@hdoc/react-material-icons";
 import { Button, ButtonIcon } from "../lib/main";
 import { ButtonExample } from "./Examples";
+import { ErrorIcon } from "./ErrorIcon";
 import "./App.css";
 
 function App() {
@@ -13,7 +15,14 @@ function App() {
       <Button
         className="button-error"
         onClick={toggleError}
-        text="Toggle error"
+        text="Toggle error - svg"
+        iconEnd={<ErrorIcon />}
+      />
+      <Button
+        className="button-error"
+        onClick={toggleError}
+        text="Toggle error - @hdoc/react-material-icons"
+        iconEnd={<Icon name="error_outline" />}
       />
       <div className="button-examples">
         <ButtonExample disabled={error} />
@@ -57,22 +66,24 @@ function App() {
         />
       </div>
       <div className="button-icons">
-        <ButtonIcon
-          icon="check"
-          color="primary"
-          size="small"
-          disabled={error}
-        />
-        <ButtonIcon icon="delete" color="secondary" disabled={error} />
-        <ButtonIcon icon="error" color="danger" size="large" disabled={error} />
-        <ButtonIcon icon="map" color="info" size="large" disabled={error} />
-        <ButtonIcon icon="settings" color="warning" disabled={error} />
-        <ButtonIcon
-          icon="search"
-          color="success"
-          size="small"
-          disabled={error}
-        />
+        <ButtonIcon color="primary" disabled={error}>
+          <Icon name="check" size="small" />
+        </ButtonIcon>
+        <ButtonIcon color="secondary" disabled={error}>
+          <Icon name="delete" />
+        </ButtonIcon>
+        <ButtonIcon color="danger" disabled={error}>
+          <Icon name="error" size="large" />
+        </ButtonIcon>
+        <ButtonIcon color="info" disabled={error}>
+          <Icon name="map" size="large" />
+        </ButtonIcon>
+        <ButtonIcon color="warning" disabled={error}>
+          <Icon name="settings" />
+        </ButtonIcon>
+        <ButtonIcon color="success" disabled={error}>
+          <Icon name="search" size="small" />
+        </ButtonIcon>
       </div>
     </div>
   );

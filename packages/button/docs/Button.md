@@ -8,7 +8,9 @@ import { Button } from "@hdoc/react-button";
 
 ## Props
 
-All props are optional unless otherwise specified.
+**All props are optional unless otherwise specified.**
+
+**Additionally, it can receive all attributes of a `button` element.**
 
 `variant`
 
@@ -26,35 +28,19 @@ Type: `boolean`
 
 ---
 
-`disabled`
-
-Whether the button is disabled.
-
-Type: `boolean`
-
----
-
 `iconStart`
 
-The name of the icon to display on the left.
+Icon placed before the text
 
-Type: `string`
+Type: `ReactNode`
 
 ---
 
 `iconEnd`
 
-The name of the icon to display on the right.
+Icon placed after the text
 
-Type: `string`
-
----
-
-`iconVariant`
-
-The variant of the icon.
-
-Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
+Type: `ReactNode`
 
 ---
 

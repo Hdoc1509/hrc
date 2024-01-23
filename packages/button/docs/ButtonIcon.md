@@ -8,21 +8,15 @@ import { ButtonIcon } from "@hdoc/react-button";
 
 ## Props
 
-All props are optional unless otherwise specified.
+**All props are optional unless otherwise specified.**
 
-`icon` (required)
+**Additionally, it can receive all attributes of a `button` element**
 
-The name of the icon to display.
+`children` **(required)**
 
-Type: `string`
+Icon to display.
 
----
-
-`iconVariant`
-
-The variant of the icon.
-
-Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
+Type: `ReactNode`
 
 ---
 
@@ -37,14 +31,6 @@ Type: `'outline' | 'text'`
 `disableShadow`
 
 Whether the shadow is disabled.
-
-Type: `boolean`
-
----
-
-`disabled`
-
-Whether the button is disabled.
 
 Type: `boolean`
 

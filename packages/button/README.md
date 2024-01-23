@@ -15,30 +15,27 @@ Simple button components for your React app
 ## Installation
 
 ```bash
-npm install @hdoc/react-button @hdoc/react-material-icons @material-design-icons/font
+npm install @hdoc/react-button
 ```
 
 ## Usage
 
-Import `@material-design-icons/font` in your entry file (example: src/main.jsx in Vite):
-
-```js
-import "@material-design-icons/font";
-```
-
-Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
-
-Then, in your `App.jsx` or another file:
-
 ```jsx
+import { DeleteIcon, FavoriteIcon } from "third-party-package";
 import { Button, ButtonIcon } from "@hdoc/react-button";
 
 function App() {
   return (
     <>
-      ...
-      <Button size="large" color="primary" />
-      <ButtonIcon icon="favorite" color="danger" />
+      <Button
+        text="delete"
+        size="large"
+        color="primary"
+        iconEnd={<DeleteIcon />}
+      />
+      <ButtonIcon color="danger">
+        <FavoriteIcon />
+      </ButtonIcon
     </>
   );
 }
