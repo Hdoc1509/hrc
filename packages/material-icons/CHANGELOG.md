@@ -1,5 +1,12 @@
 # @hdoc/react-material-icons
 
+## 1.6.0
+
+### Minor Changes
+
+- eb576d8: Export type `IconProps`
+- baa67cc: Use colors from internal lib `@mono/ui`
+
 ## 1.5.0
 
 ### Minor Changes

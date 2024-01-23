@@ -1,7 +1,7 @@
 {
   "name": "@hdoc/react-button",
   "private": false,
-  "version": "1.1.1",
+  "version": "1.2.0",
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
@@ -44,7 +44,7 @@
     "type-fest": "4.3.1"
   },
   "peerDependencies": {
-    "@hdoc/react-material-icons": "workspace:^1.5.0",
+    "@hdoc/react-material-icons": "workspace:^1.6.0",
     "@material-design-icons/font": "^0.14.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
