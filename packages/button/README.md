@@ -20,7 +20,7 @@ npm install @hdoc/react-button
 
 ## Usage
 
-```jsx
+```js
 import { DeleteIcon, FavoriteIcon } from "third-party-package";
 import { Button, ButtonIcon } from "@hdoc/react-button";
 
@@ -53,16 +53,19 @@ See documentation below for reference to all of the props and classes available 
 You can customize the color of the button by using the following CSS custom properties:
 
 ```css
-.any-parent-of-button-component,
-.class-that-i-use-for-extending-styles {
+.any-parent-of-button,
+.class-to-extend-styles {
   /* NORMAL BUTTON */
   --button-bg: lightgray;
   --button-bg-hover: darkgray;
   --button-bg-disabled: gray;
+
   --button-color: black;
   --button-color-disabled: white;
+
   --button-font-family: "Arial";
   --button-font-weight: bold;
+
   --button-padding: 10px;
   --button-radius: 10px;
   --button-shadow: 0 0 0 1px black;
