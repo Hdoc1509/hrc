@@ -119,3 +119,21 @@ Styles for the secondary variant
 `.button--error`
 
 Styles for the error variant
+
+---
+
+`.button--info`
+
+Styles for the info variant
+
+---
+
+`.button--warning`
+
+Styles for the warning variant
+
+---
+
+`.button--success`
+
+Styles for the success variant
