@@ -22,15 +22,12 @@
       #{$secondary-transparent}
     );
   }
-  &--danger {
-    --button-bg: var(--danger, #{$danger});
-    --button-bg-hover: var(--danger-hover, #{$danger-hover});
-    --button-color: var(--danger-text, #{$danger-text});
-    --button-outline-color: var(--danger, #{$danger});
-    --button-outline-bg-hover: var(
-      --danger-transparent,
-      #{$danger-transparent}
-    );
+  &--error {
+    --button-bg: var(--error, #{$error});
+    --button-bg-hover: var(--error-hover, #{$error-hover});
+    --button-color: var(--error-text, #{$error-text});
+    --button-outline-color: var(--error, #{$error});
+    --button-outline-bg-hover: var(--error-transparent, #{$error-transparent});
   }
   &--info {
     --button-bg: var(--info, #{$info});

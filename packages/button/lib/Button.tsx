@@ -10,7 +10,7 @@ export type ButtonProps = Simplify<
     iconEnd?: ReactNode;
     text?: string;
     size?: "small" | "large";
-    color?: "primary" | "secondary" | "danger" | "info" | "warning" | "success";
+    color?: "primary" | "secondary" | "error" | "info" | "warning" | "success";
     roundedSide?: "top" | "bottom" | "left" | "right";
   } & ComponentProps<"button">
 >;

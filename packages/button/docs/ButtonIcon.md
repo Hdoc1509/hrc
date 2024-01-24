@@ -48,7 +48,7 @@ Type: `'small' | 'large'`
 
 The color variant of the button.
 
-Type: `'primary' | 'secondary' | 'danger' | 'info' | 'warning' | 'success'`
+Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
 
 ---
 
@@ -116,6 +116,6 @@ Styles for the secondary variant
 
 ---
 
-`.button--danger`
+`.button--error`
 
-Styles for the danger variant
+Styles for the error variant

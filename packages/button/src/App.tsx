@@ -28,7 +28,7 @@ function App() {
         <ButtonExample disabled={error} />
         <ButtonExample disabled={error} color="primary" />
         <ButtonExample disabled={error} color="secondary" />
-        <ButtonExample disabled={error} color="danger" />
+        <ButtonExample disabled={error} color="error" />
         <ButtonExample disabled={error} color="info" />
         <ButtonExample disabled={error} color="warning" />
         <div className="last-row">
@@ -72,7 +72,7 @@ function App() {
         <ButtonIcon color="secondary" disabled={error}>
           <Icon name="delete" />
         </ButtonIcon>
-        <ButtonIcon color="danger" disabled={error}>
+        <ButtonIcon color="error" disabled={error}>
           <Icon name="error" size="large" />
         </ButtonIcon>
         <ButtonIcon color="info" disabled={error}>

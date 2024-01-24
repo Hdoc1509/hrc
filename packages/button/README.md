@@ -74,7 +74,7 @@ You can customize the color of the button by using the following CSS custom prop
   --button-radius: 10px;
   --button-shadow: 0 0 0 1px black;
 
-  /* COLOR VARIANTS: primary | secondary | danger | info | warning | success */
+  /* COLOR VARIANTS: primary | secondary | error | info | warning | success */
   --primary: blue; /* background and outline color */
   --primary-hover: darkblue;
   --primary-text: white;
