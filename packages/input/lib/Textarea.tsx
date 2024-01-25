@@ -5,7 +5,8 @@ import type { InputProps } from "./Input";
 import type { ComponentProps } from "react";
 
 type Props = Simplify<
-  Omit<InputProps, "size"> & Omit<ComponentProps<"textarea">, "color" | "cols">
+  Omit<InputProps, "size" | "min" | "max"> &
+    Omit<ComponentProps<"textarea">, "color" | "cols">
 >;
 
 export const Textarea = ({
