@@ -1,4 +1,4 @@
-@use "@mono/ui/scss/colors" as mono_colors;
+@use "@mono/ui/scss/colors" as *;
 @use "abstratcs/colors" as *;
 
 .input-label {
@@ -17,17 +17,14 @@
   }
 
   &:focus-within {
-    --label-text: var(--label-text-focus, #{mono_colors.$primary});
-    --input-border-color: var(
-      --input-border-color-focus,
-      #{mono_colors.$primary}
-    );
+    --label-text: var(--label-text-focus, #{$primary});
+    --input-border-color: var(--input-border-color-focus, #{$primary});
   }
 
   &--error {
-    --label-text: var(--error, #{mono_colors.$error});
-    --label-text-hover: var(--error, #{mono_colors.$error});
-    --label-text-focus: var(--error, #{mono_colors.$error});
+    --label-text: var(--error, #{$error});
+    --label-text-hover: var(--error, #{$error});
+    --label-text-focus: var(--error, #{$error});
   }
 
   &--fullwidth {

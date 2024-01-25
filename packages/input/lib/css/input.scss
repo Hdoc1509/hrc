@@ -1,7 +1,8 @@
-@use "@mono/ui/scss/colors" as mono_colors;
+@use "@mono/ui/scss/colors" as *;
 @use "abstratcs/colors" as *;
 
 .input-wrapper {
+  // TODO: add more css custom properties
   display: flex;
   gap: 14px;
 
@@ -21,7 +22,7 @@
   &--error,
   &--error:hover,
   &--error:focus {
-    --input-border-color: var(--error, #{mono_colors.$error});
+    --input-border-color: var(--error, #{$error});
   }
 
   &.disabled {
