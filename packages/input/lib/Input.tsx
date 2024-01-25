@@ -1,6 +1,5 @@
 import { clsx } from "clsx";
 import type { InputProps } from "./types";
-import "./css/styles.scss";
 
 export const Input = ({
   label = "Label",

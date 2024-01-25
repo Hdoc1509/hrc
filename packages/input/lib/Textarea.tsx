@@ -1,7 +1,6 @@
 import { clsx } from "clsx";
-import { TextareaProps } from "./types";
-import "./css/styles.scss";
 import { autosizeTextarea } from "./utils";
+import { TextareaProps } from "./types";
 
 export const Textarea = ({
   label = "Label",
