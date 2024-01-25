@@ -8,8 +8,9 @@ import { Input } from "@hdoc/react-input";
 
 ## Props
 
-**All props are optional unless otherwise specified.
-Additionally it can receive all attribues of an `input` element.**
+**All props are optional unless otherwise specified.**
+
+**Additionally, it can receive all attribues of an `input` element.**
 
 `size`
 
@@ -37,25 +38,17 @@ Type: `boolean`
 
 `iconStart`
 
-The name of the icon to display on the left.
+Icon placed to the left of the input.
 
-Type: `string`
+Type: `ReactNode`
 
 ---
 
 `iconEnd`
 
-The name of the icon to display on the right.
+Icon placed to the right of the input.
 
-Type: `string`
-
----
-
-`iconVariant`
-
-The variant of the icon.
-
-Type: `'filled' | 'outlined' | 'sharp' | 'two-tone'`
+Type: `ReactNode`
 
 ---
 

@@ -1,8 +1,5 @@
-import type { ComponentProps } from "react";
+import type { ComponentProps, ReactNode } from "react";
 import type { Simplify } from "type-fest";
-import { Icon } from "@hdoc/react-material-icons";
-
-type IconProps = ComponentProps<typeof Icon>;
 
 type SharedProps = Partial<{
   label: string;
@@ -11,9 +8,8 @@ type SharedProps = Partial<{
   helperText: string;
   fullWidth: boolean;
   size: "small";
-  iconStart: IconProps["name"];
-  iconEnd: IconProps["name"];
-  iconVariant: IconProps["variant"];
+  iconStart: ReactNode;
+  iconEnd: ReactNode;
 }>;
 
 export type InputProps = Simplify<
@@ -21,6 +17,5 @@ export type InputProps = Simplify<
 >;
 
 export type TextareaProps = Simplify<
-  Omit<SharedProps, "iconStart" | "iconEnd" | "iconVariant" | "size"> &
-    Omit<ComponentProps<"textarea">, "color" | "cols">
+  Omit<SharedProps, "size"> & Omit<ComponentProps<"textarea">, "color" | "cols">
 >;

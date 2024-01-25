@@ -15,29 +15,19 @@ Simple input components for your React app
 ## Installation
 
 ```bash
-npm install @hdoc/react-input @hdoc/react-material-icons @material-design-icons/font
+npm install @hdoc/react-input
 ```
 
 ## Usage
 
-Import `@material-design-icons/font` in your entry file (example: src/main.jsx in Vite):
-
 ```js
-import "@material-design-icons/font";
-```
-
-:information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
-
-Then, in your `App.jsx` or another file:
-
-```js
+import { EmailIcon } from "third-party-package";
 import { Input, Textarea } from "@hdoc/react-input";
 
 function App() {
   return (
     <>
-      ...
-      <Input label="Email" type="email" iconEnd="email" />
+      <Input label="Email" type="email" iconEnd={<EmailIcon />} />
       <Textarea label="Message" />
     </>
   );
@@ -65,10 +55,12 @@ body.dark,
   /* NORMAL INPUT */
   --input-bg: #ffffff;
   --input-bg-disabled: #aaa;
+
   --input-border-color: #888;
   --input-border-color-hover: #444;
   --input-border-color-focus: lightblue;
   --input-border-color-disabled: rgba(0, 0, 0, 0.26);
+
   --input-font-weight: 600;
   --input-text: #000;
   --input-helper-text: #828282;

@@ -1,5 +1,4 @@
 import { clsx } from "clsx";
-import { Icon } from "@hdoc/react-material-icons";
 import type { InputProps } from "./types";
 import "./css/styles.scss";
 
@@ -15,7 +14,6 @@ export const Input = ({
   placeholder = "Placeholder",
   iconStart,
   iconEnd,
-  iconVariant,
   required,
   ...restProps
 }: InputProps): JSX.Element => {
@@ -31,7 +29,7 @@ export const Input = ({
     "input-wrapper",
     {
       "input-wrapper--error": error,
-      disabled: disabled,
+      disabled,
       [`input-wrapper--${size}`]: size,
       "input-wrapper--fullwidth": fullWidth,
     },
@@ -42,14 +40,7 @@ export const Input = ({
     <label className={labelClass}>
       {required ? `${label} *` : label}
       <div className={inputWrapperClass}>
-        {iconStart && (
-          <Icon
-            name={iconStart}
-            variant={iconVariant}
-            className="input-icon"
-            disabled={disabled}
-          />
-        )}
+        {iconStart}
         <input
           className="input"
           placeholder={placeholder}
@@ -57,14 +48,7 @@ export const Input = ({
           required={required}
           {...restProps}
         />
-        {iconEnd && (
-          <Icon
-            name={iconEnd}
-            variant={iconVariant}
-            className="input-icon"
-            disabled={disabled}
-          />
-        )}
+        {iconEnd}
       </div>
       {helperText && <span className="input-helper">{helperText}</span>}
     </label>
