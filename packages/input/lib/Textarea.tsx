@@ -1,6 +1,12 @@
 import { clsx } from "clsx";
 import { autosizeTextarea } from "./utils";
-import { TextareaProps } from "./types";
+import { Simplify } from "type-fest";
+import type { InputProps } from "./Input";
+import type { ComponentProps } from "react";
+
+type Props = Simplify<
+  Omit<InputProps, "size"> & Omit<ComponentProps<"textarea">, "color" | "cols">
+>;
 
 export const Textarea = ({
   label = "Label",
@@ -14,7 +20,7 @@ export const Textarea = ({
   required,
   onChange,
   ...restProps
-}: TextareaProps): JSX.Element => {
+}: Props): JSX.Element => {
   const labelClass = clsx(
     "input-label",
     {

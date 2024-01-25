@@ -1,5 +1,20 @@
 import { clsx } from "clsx";
-import type { InputProps } from "./types";
+import { ComponentProps, ReactNode } from "react";
+import { Simplify } from "type-fest";
+
+export type InputProps = Simplify<
+  Partial<{
+    label: string;
+    labelClassName: string;
+    error: boolean;
+    helperText: string;
+    fullWidth: boolean;
+    size: "small";
+    iconStart: ReactNode;
+    iconEnd: ReactNode;
+  }> &
+    Omit<ComponentProps<"input">, "size" | "color">
+>;
 
 export const Input = ({
   label = "Label",
