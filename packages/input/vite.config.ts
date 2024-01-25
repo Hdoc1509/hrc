@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     react(),
     libInjectCss(),
-    dts({ include: ["lib"], copyDtsFiles: true }),
+    dts({ include: ["lib"], exclude: ["lib/utils.ts"] }),
   ],
   build: {
     lib: {
