@@ -35,7 +35,7 @@ function App() {
           label="Disabled"
           disabled
           helperText={helperText}
-          iconEnd={<Icon name="phone" />}
+          iconEnd={<Icon name="phone" disabled />}
           required
         />
       </div>
@@ -47,7 +47,11 @@ function App() {
           {...focusedProps}
           error
         />
-        <Input iconEnd={<Icon name="account_circle" />} error disabled />
+        <Input
+          iconEnd={<Icon name="account_circle" disabled />}
+          error
+          disabled
+        />
       </div>
       <Input
         label="Full width"
