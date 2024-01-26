@@ -17,27 +17,27 @@
   }
 
   &--primary {
-    --icon-color: var(--icon-color-primary, #{$primary});
+    --icon-color: var(--primary, #{$primary});
   }
 
   &--secondary {
-    --icon-color: var(--icon-color-secondary, #{$secondary});
+    --icon-color: var(--secondary, #{$secondary});
   }
 
   &--error {
-    --icon-color: var(--icon-color-error, #{$error});
+    --icon-color: var(--error, #{$error});
   }
 
   &--warning {
-    --icon-color: var(--icon-color-warning, #{$warning});
+    --icon-color: var(--warning, #{$warning});
   }
 
   &--info {
-    --icon-color: var(--icon-color-info, #{$info});
+    --icon-color: var(--info, #{$info});
   }
 
   &--success {
-    --icon-color: var(--icon-color-success, #{$success});
+    --icon-color: var(--success, #{$success});
   }
 
   &--disabled {

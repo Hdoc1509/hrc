@@ -98,20 +98,22 @@ Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 You can customize the color and size of the icon by using the following CSS custom properties:
 
 ```css
-.any-parent-of,
-.class-for-extend-styles {
+.any-parent,
+.class-to-extend-styles {
   --icon-color: black; /* default color */
-  --icon-color-primary: lightblue;
-  --icon-color-secondary: lightpink;
-  --icon-color-error: red;
-  --icon-color-warning: orange;
-  --icon-color-info: blue;
-  --icon-color-success: green;
   --icon-color-disabled: gray;
 
   --icon-size: 24px; /* default size */
   --icon-small: 18px;
   --icon-large: 36px;
+
+  /* COLOR VARIANTS */
+  --primary: lightblue;
+  --secondary: lightpink;
+  --error: red;
+  --warning: orange;
+  --info: blue;
+  --success: green;
 }
 ```
 

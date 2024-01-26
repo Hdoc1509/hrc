@@ -12,10 +12,7 @@
 }
 
 .my-container-with-custom-color {
-  --icon-color-error: salmon;
+  --error: salmon;
   --icon-color-disabled: gray;
-
-}
-.my-container-with-custom-color > [class*="material-icons"] {
   margin-bottom: 30px;
 }
