@@ -12,57 +12,85 @@ const focusedProps = {
   labelClassName: "input-label--focused",
 };
 
-const helperText = "Helper text";
+const sharedProps = {
+  helperText: "Helper text",
+  placeholder: "Placeholder",
+};
 
 function App() {
   return (
     <>
       <button onClick={toggleTheme}>toggle theme</button>
       <div className="input-grid">
-        <Input label="Small" size="small" helperText={helperText} />
+        <Input label="Small" size="small" {...sharedProps} />
         <Input
           label="Normal"
-          helperText={helperText}
           iconStart={<Icon name="people" />}
+          {...sharedProps}
         />
         <Input
           label="Focused"
-          helperText={helperText}
           iconEnd={<Icon name="phone" />}
+          {...sharedProps}
           {...focusedProps}
         />
         <Input
           label="Disabled"
           disabled
-          helperText={helperText}
           iconEnd={<Icon name="phone" disabled />}
           required
+          {...sharedProps}
         />
       </div>
       <div className="input-grid">
-        <Input size="small" error />
-        <Input iconStart={<Icon name="lock" />} error />
         <Input
+          label="Error"
+          size="small"
+          placeholder={sharedProps.placeholder}
+          error
+        />
+        <Input
+          label="Error"
+          iconStart={<Icon name="lock" />}
+          placeholder={sharedProps.placeholder}
+          error
+        />
+        <Input
+          label="Error focused"
           iconEnd={<Icon name="account_circle" />}
+          placeholder={sharedProps.placeholder}
           {...focusedProps}
           error
         />
         <Input
+          label="Error disabled"
           iconEnd={<Icon name="account_circle" disabled />}
+          placeholder={sharedProps.placeholder}
           error
           disabled
+          required
         />
       </div>
       <Input
         label="Full width"
         iconStart={<Icon name="question_answer" />}
+        placeholder={sharedProps.placeholder}
         fullWidth
       />
       <div className="input-grid">
-        <Textarea label="Textarea" helperText={helperText} />
-        <Textarea label="Textarea focused" {...focusedProps} />
-        <Textarea label="Textarea error" helperText={helperText} error />
-        <Textarea label="Textarea error focused" error {...focusedProps} />
+        <Textarea label="Textarea" {...sharedProps} />
+        <Textarea
+          label="Textarea focused"
+          placeholder={sharedProps.placeholder}
+          {...focusedProps}
+        />
+        <Textarea label="Textarea error" {...sharedProps} error />
+        <Textarea
+          label="Textarea error focused"
+          placeholder={sharedProps.placeholder}
+          error
+          {...focusedProps}
+        />
       </div>
     </>
   );

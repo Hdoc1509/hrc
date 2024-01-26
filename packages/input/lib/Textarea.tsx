@@ -10,14 +10,14 @@ type Props = Simplify<
 >;
 
 export const Textarea = ({
-  label = "Label",
+  label,
   labelClassName,
   className,
   disabled,
   error,
   helperText,
   fullWidth,
-  placeholder = "Placeholder",
+  placeholder,
   required,
   onChange,
   ...restProps
@@ -34,7 +34,7 @@ export const Textarea = ({
     ["input-wrapper", "input-wrapper--textarea"],
     {
       "input-wrapper--error": error,
-      disabled: disabled,
+      disabled,
       "input-wrapper--fullwidth": fullWidth,
     },
     className,

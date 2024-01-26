@@ -17,7 +17,7 @@ export type InputProps = Simplify<
 >;
 
 export const Input = ({
-  label = "Label",
+  label,
   labelClassName,
   className,
   disabled,
@@ -25,7 +25,7 @@ export const Input = ({
   helperText,
   fullWidth,
   size,
-  placeholder = "Placeholder",
+  placeholder,
   iconStart,
   iconEnd,
   required,
