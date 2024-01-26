@@ -69,8 +69,6 @@
   }
 
   &--textarea {
-    // TODO: Remove min-height
-    min-height: 36px;
     padding: var(--textarea-padding, 8px 12px);
   }
 }
