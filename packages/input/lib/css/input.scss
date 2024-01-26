@@ -2,18 +2,16 @@
 @use "abstratcs/colors" as *;
 
 .input-wrapper {
-  // TODO: add more css custom properties
   display: flex;
-  gap: 14px;
+  gap: var(--input-gap, 14px);
 
   width: 200px;
-
   background-color: var(--input-bg, transparent);
   border: 1px solid var(--input-border-color, $input-border-color);
-  border-radius: 8px;
+  border-radius: var(--input-radius, 8px);
   box-sizing: border-box;
   outline: none;
-  padding: 16px 12px;
+  padding: var(--input-padding, 16px 12px);
 
   &:focus-within {
     outline: 1px solid;
@@ -62,7 +60,7 @@
 
   color: var(--input-text, #000);
   font-family: inherit;
-  font-size: 14px;
+  font-size: var(--input-font-size, 14px);
   font-weight: var(--input-font-weight, 500);
   line-height: 20px;
 
@@ -71,8 +69,9 @@
   }
 
   &--textarea {
+    // TODO: Remove min-height
     min-height: 36px;
-    padding: 8px 12px;
+    padding: var(--textarea-padding, 8px 12px);
   }
 }
 

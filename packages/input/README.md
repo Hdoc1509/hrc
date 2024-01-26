@@ -53,22 +53,29 @@ body.dark,
 .any-parent-of-input,
 .class-to-extend-styles {
   /* NORMAL INPUT */
+  --input-gap: 8px;
   --input-bg: #ffffff;
   --input-bg-disabled: #aaa;
+  --input-radius: 4px;
+  --input-padding: 8px 12px;
 
   --input-border-color: #888;
   --input-border-color-hover: #444;
   --input-border-color-focus: lightblue;
   --input-border-color-disabled: rgba(0, 0, 0, 0.26);
 
+  --input-font-size: 16px;
   --input-font-weight: 600;
   --input-text: #000;
   --input-helper-text: #828282;
+
+  --textarea-padding: 10px 14px;
 
   --placeholder-color: #636363;
   --placeholder-disabled: #434343;
 
   --label-font-family: "Roboto";
+  --label-font-size: 14px;
   --label-font-weight: 600;
   --label-text: #828282;
   --label-text-hover: #000;
