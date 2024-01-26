@@ -20,7 +20,7 @@ Changed way of handling icons
 3. Remove `icon` from `<ButtonIcon />` and use `children`
 
 ```js
-// before
+// BEFORE
 function App() {
   return (
     <>
@@ -30,7 +30,7 @@ function App() {
   );
 }
 
-// now
+// NOW
 import { SearchIcon, DeleteIcon } from "third-party-package";
 
 function App() {

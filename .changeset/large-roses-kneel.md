@@ -4,16 +4,18 @@
 
 Rename color`danger` to `error`
 
+#### Migrating
+
 1. Rename `color` prop from `danger` to `error`
 
 ```js
 function App() {
   return (
     <>
-      {/* Before */}
+      {/* BEFORE */}
       <Button text="Delete" color="danger" />
 
-      {/* Now */}
+      {/* NOW */}
       <Button text="Delete" color="error" />
     </>
   );

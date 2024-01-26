@@ -13,11 +13,13 @@ that only accepts patch upgrades, i.e. `^0.3.0` or `~0.3.0`, in your `package.js
   - `iconEnd` -> type: `ReactNode`
   - removed `iconVariant`
 
+#### Migrating
+
 1. Change values of `iconStart` and `iconEnd` from `string` to `ReactNode`.
 2. Remove every `iconVariant`
 
 ```js
-// before
+// BEFORE
 function App() {
   return (
     <>
@@ -26,7 +28,7 @@ function App() {
   );
 }
 
-// now
+// NOW
 import { LockIcon } from `third-party-package`;
 
 function App() {
