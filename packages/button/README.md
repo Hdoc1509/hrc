@@ -10,7 +10,7 @@
 
 Simple button components for your React app
 
-![button-examples](docs/button-examples.png)
+![Buttons screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/5d5af760-6839-4713-9cab-b4503cb72c7d)
 
 ## Installation
 

@@ -10,7 +10,7 @@
 
 Simple component for material design icons in your React app.
 
-![icon-examples](docs/icon-examples.png)
+![Material Icons screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/7dcb5bfd-d939-4ff8-8dec-130a5c34b8ec)
 
 ## Installation
 
