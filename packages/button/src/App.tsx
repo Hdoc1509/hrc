@@ -15,15 +15,17 @@ function App() {
       <Button
         className="button-error"
         onClick={toggleError}
-        text="Toggle error - svg"
         iconEnd={<ErrorIcon />}
-      />
+      >
+        Toggle error - svg
+      </Button>
       <Button
         className="button-error"
         onClick={toggleError}
-        text="Toggle error - @hdoc/react-material-icons"
         iconEnd={<Icon name="error_outline" />}
-      />
+      >
+        Toggle error - @hdoc/react-material-icons
+      </Button>
       <div className="button-examples">
         <ButtonExample disabled={error} />
         <ButtonExample disabled={error} color="primary" />
@@ -36,34 +38,28 @@ function App() {
         </div>
       </div>
       <div className="rounded-variants">
+        <Button roundedSide="top" color="primary" size="large" disabled={error}>
+          Top rounded
+        </Button>
+        <Button roundedSide="bottom" color="info" size="large" disabled={error}>
+          Bottom rounded
+        </Button>
         <Button
-          text="Top rounded"
-          roundedSide="top"
-          color="primary"
-          size="large"
-          disabled={error}
-        />
-        <Button
-          text="Bottom rounded"
-          roundedSide="bottom"
-          color="info"
-          size="large"
-          disabled={error}
-        />
-        <Button
-          text="Left rounded"
           roundedSide="left"
           color="warning"
           size="large"
           disabled={error}
-        />
+        >
+          Left rounded
+        </Button>
         <Button
-          text="Right rounded"
           roundedSide="right"
           color="success"
           size="large"
           disabled={error}
-        />
+        >
+          Right rounded
+        </Button>
       </div>
       <div className="button-icons">
         <ButtonIcon color="primary" disabled={error}>

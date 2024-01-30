@@ -8,7 +8,6 @@ export type ButtonProps = Simplify<
     disableShadow?: boolean;
     iconStart?: ReactNode;
     iconEnd?: ReactNode;
-    text?: string;
     size?: "small" | "large";
     color?: "primary" | "secondary" | "error" | "info" | "warning" | "success";
     roundedSide?: "top" | "bottom" | "left" | "right";
@@ -23,7 +22,7 @@ export const Button = ({
   size,
   color,
   className,
-  text,
+  children,
   roundedSide,
   ...restProps
 }: ButtonProps): JSX.Element => {
@@ -42,7 +41,7 @@ export const Button = ({
   return (
     <button {...restProps} className={buttonClass}>
       {iconStart}
-      {text ?? "Default"}
+      {children ?? "Default"}
       {iconEnd}
     </button>
   );
