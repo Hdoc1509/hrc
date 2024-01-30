@@ -16,7 +16,7 @@
   font-family: var(--button-font-family, sans-serif);
   font-size: var(--button-font-size, 14px);
   font-weight: var(--button-font-weight, 500);
-  color: var(--button-color, $default-color);
+  color: var(--button-text, $default-text);
 
   transition: background-color 0.2s ease;
 
@@ -32,7 +32,7 @@
       #{$default-bg-hover}
     );
     --button-bg: var(--button-bg-disabled, #{$default-bg-disabled});
-    --button-color: var(--button-color-disabled, #{$default-color-disabled});
+    --button-text: var(--button-text-disabled, #{$default-text-disabled});
   }
 
   &--icon {

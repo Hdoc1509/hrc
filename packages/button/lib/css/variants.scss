@@ -5,7 +5,7 @@
   &--primary {
     --button-bg: var(--primary, #{$primary});
     --button-bg-hover: var(--primary-hover, #{$primary-hover});
-    --button-color: var(--primary-text, #{$primary-text});
+    --button-text: var(--primary-text, #{$primary-text});
     --button-outline-color: var(--primary, #{$primary});
     --button-outline-bg-hover: var(
       --primary-transparent,
@@ -15,7 +15,7 @@
   &--secondary {
     --button-bg: var(--secondary, #{$secondary});
     --button-bg-hover: var(--secondary-hover, #{$secondary-hover});
-    --button-color: var(--secondary-text, #{$secondary-text});
+    --button-text: var(--secondary-text, #{$secondary-text});
     --button-outline-color: var(--secondary, #{$secondary});
     --button-outline-bg-hover: var(
       --secondary-transparent,
@@ -25,21 +25,21 @@
   &--error {
     --button-bg: var(--error, #{$error});
     --button-bg-hover: var(--error-hover, #{$error-hover});
-    --button-color: var(--error-text, #{$error-text});
+    --button-text: var(--error-text, #{$error-text});
     --button-outline-color: var(--error, #{$error});
     --button-outline-bg-hover: var(--error-transparent, #{$error-transparent});
   }
   &--info {
     --button-bg: var(--info, #{$info});
     --button-bg-hover: var(--info-hover, #{$info-hover});
-    --button-color: var(--info-text, #{$info-text});
+    --button-text: var(--info-text, #{$info-text});
     --button-outline-color: var(--info, #{$info});
     --button-outline-bg-hover: var(--info-transparent, #{$info-transparent});
   }
   &--warning {
     --button-bg: var(--warning, #{$warning});
     --button-bg-hover: var(--warning-hover, #{$warning-hover});
-    --button-color: var(--warning-text, #{$warning-text});
+    --button-text: var(--warning-text, #{$warning-text});
     --button-outline-color: var(--warning, #{$warning});
     --button-outline-bg-hover: var(
       --warning-transparent,
@@ -49,7 +49,7 @@
   &--success {
     --button-bg: var(--success, #{$success});
     --button-bg-hover: var(--success-hover, #{$success-hover});
-    --button-color: var(--success-text, #{$success-text});
+    --button-text: var(--success-text, #{$success-text});
     --button-outline-color: var(--success, #{$success});
     --button-outline-bg-hover: var(
       --success-transparent,
@@ -65,7 +65,7 @@
       #{$default-bg-hover-outline}
     );
     --button-bg-disabled: transparent;
-    --button-color: var(--button-outline-color);
+    --button-text: var(--button-outline-color);
     --button-shadow: none;
   }
   &--outline {
