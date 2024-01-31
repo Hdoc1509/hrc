@@ -1,5 +1,154 @@
 # @hdoc/react-button
 
+## 2.0.0
+
+### Major Changes
+
+- 954c62c: Remove `text` prop and use `children` instead
+
+  - `<Button />` affected props:
+    - removed `text`
+
+  #### Migrating
+
+  ```js
+  // BEFORE
+  function App() {
+    return (
+      <>
+        <Button text="Save" />
+      </>
+    );
+  }
+
+  // NOW
+  function App() {
+    return (
+      <>
+        <Button>Save</Button>
+      </>
+    );
+  }
+  ```
+
+  #### Why
+
+  The `text` prop has been removed from the `Button` component and replaced with
+  `children`. This makes the `Button` component similar to a normal HTML `button`
+  element.
+
+- ca6955c: Rename color`danger` to `error`
+
+  #### Migrating
+
+  1. Rename `color` prop from `danger` to `error`
+
+  ```js
+  function App() {
+    return (
+      <>
+        {/* BEFORE */}
+        <Button text="Delete" color="danger" />
+
+        {/* NOW */}
+        <Button text="Delete" color="error" />
+      </>
+    );
+  }
+  ```
+
+  2. Rename css custom properties of `--danger` to `--error`
+
+  ```css
+  .my-selector {
+    /* before */
+    --danger: red;
+    --danger-hover: darkred;
+    --danger-text: white;
+    --danger-transparent: rgba(255, 0, 0, 0.5);
+
+    /* now */
+    --error: red;
+    --error-hover: darkred;
+    --error-text: white;
+    --error-transparent: rgba(255, 0, 0, 0.5);
+  }
+  ```
+
+- 2a65b92: Changed way of handling icons
+
+  - `<Button />` affected props:
+    - `iconStart` -> type: `ReactNode`
+    - `iconEnd` -> type: `ReactNode`
+    - removed `iconVariant`
+  - `<ButtonIcon />` affected props:
+    - accepts `children`
+    - removed `icon`
+    - removed `iconVariant`
+
+  #### Migrating
+
+  1. Change values of `iconStart` and `iconEnd` from `string` to `ReactNode`:
+  2. Remove every `iconVariant`
+  3. Remove `icon` from `<ButtonIcon />` and use `children`
+
+  ```js
+  // BEFORE
+  function App() {
+    return (
+      <>
+        <Button text="Search" iconStart="search" />
+        <ButtonIcon icon="delete" />
+      </>
+    );
+  }
+
+  // NOW
+  import { SearchIcon, DeleteIcon } from "third-party-package";
+
+  function App() {
+    return (
+      <>
+        <Button text="Search" iconStart={<SearchIcon />} />
+        <ButtonIcon>
+          <DeleteIcon />
+        </ButtonIcon>
+      </>
+    );
+  }
+  ```
+
+- a7573a3: Rename css custom property for change text color
+
+  #### Migrating
+
+  Rename css custom property from `--button-color` to `--button-text`:
+
+  ```css
+  .my-selector {
+    /* BEFORE */
+    --button-color: gray;
+
+    /* NOW */
+    --button-text: gray;
+  }
+  ```
+
+### Minor Changes
+
+- 397a62d: Use `currentColor` for set outline color
+- 3ce7270: Add custom property for change font size:
+
+  - `--button-font-size`
+
+- 6636873: Add custom properties for change flexbox layout:
+
+  - `--button-jsutify-content`
+  - `--button-gap`
+
+- daaf12b: Remove `@hdoc/react-material-icons` from peer dependencies
+- e50505e: Update compatible versions of peer dependencies
+
 ## 1.2.0
 
 ### Minor Changes

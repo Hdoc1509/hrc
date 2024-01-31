@@ -1,5 +1,11 @@
 # @hdoc/react-toggle-theme
 
+## 2.1.2
+
+### Patch Changes
+
+- 9c81ea5: Add demo gif
+
 ## 2.1.1
 
 ### Patch Changes
