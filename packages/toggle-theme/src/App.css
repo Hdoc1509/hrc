@@ -1,14 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 /* Example for overide default colors */
 .theme-button {
   --button-bg-hover: transparent;
   --button-bg-active: #e6e6e6;
+  --icon-size: 256px;
 }
 
 body[data-theme="dark"] .theme-button {
