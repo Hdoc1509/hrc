@@ -10,7 +10,7 @@
 
 Simple button component for toggle between `light` and `dark` theme in your React app.
 
-[Theme Button gif](https://github.com/Hdoc1509/react-components/assets/72316111/53cf9717-472c-41f5-95df-260d3dda009a)
+![Theme Button gif](https://github.com/Hdoc1509/react-components/assets/72316111/53cf9717-472c-41f5-95df-260d3dda009a)
 
 ## Installation
 
@@ -31,13 +31,12 @@ First, import `load-theme.js` in your `index.html`:
 
 Then, in your `App.jsx` or another file:
 
-```jsx
+```js
 import { ThemeButton } from "@hdoc/react-toggle-theme";
 
 function App() {
   return (
     <>
-      ...
       <ThemeButton
         lightElement={<span>Light</span>}
         darkElement={<span>Dark</span>}
