@@ -1,5 +1,11 @@
 # @hdoc/react-toggle-theme
 
+## 2.1.3
+
+### Patch Changes
+
+- 677f6e9: Use correct syntax for add demo gif
+
 ## 2.1.2
 
 ### Patch Changes

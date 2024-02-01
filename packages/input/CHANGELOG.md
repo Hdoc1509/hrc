@@ -1,5 +1,11 @@
 # @hdoc/react-input
 
+## 0.5.1
+
+### Patch Changes
+
+- de9c24b: Add missing package keywords
+
 ## 0.5.0
 
 ### Minor Changes
