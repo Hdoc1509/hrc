@@ -33,6 +33,14 @@
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/input#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-input",
+    "react-textarea",
+    "input",
+    "textarea"
+  ],
   "dependencies": {
     "clsx": "^2.0.0",
     "type-fest": "^4.3.1"
