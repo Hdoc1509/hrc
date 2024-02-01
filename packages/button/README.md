@@ -27,12 +27,9 @@ import { Button, ButtonIcon } from "@hdoc/react-button";
 function App() {
   return (
     <>
-      <Button
-        text="delete"
-        size="large"
-        color="primary"
-        iconEnd={<DeleteIcon />}
-      />
+      <Button size="large" color="primary" iconEnd={<DeleteIcon />}>
+        Delete
+      </Button>
       <ButtonIcon color="danger">
         <FavoriteIcon />
       </ButtonIcon
@@ -63,8 +60,8 @@ You can customize the color of the button by using the following CSS custom prop
   --button-bg-hover: darkgray;
   --button-bg-disabled: gray;
 
-  --button-color: black;
-  --button-color-disabled: white;
+  --button-text: black;
+  --button-text-disabled: gray;
 
   --button-font-family: "Arial";
   --button-font-size: 1rem;

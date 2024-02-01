@@ -2,7 +2,7 @@
 
 ## Import
 
-```jsx
+```js
 import { Button } from "@hdoc/react-button";
 ```
 
@@ -41,14 +41,6 @@ Type: `ReactNode`
 Icon placed after the text
 
 Type: `ReactNode`
-
----
-
-`text`
-
-The text of the button.
-
-Type: `string`
 
 ---
 
