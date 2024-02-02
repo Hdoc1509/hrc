@@ -36,14 +36,18 @@ function App() {
 
 ## API
 
-See documentation below for reference to all of the props and classes available for the following components:
+See documentation below for reference to all of the props, classes and CSS
+custom properties available for the following components:
 
 - [`<Input />`](docs/Input.md)
 - [`<Textarea />`](docs/Textarea.md)
 
-## Customization
+## General Customization
 
-You can customize the input, label and helper text by using the following CSS custom properties:
+You can customize the label, placeholder and helper text for any of the
+previously mentioned components.
+
+### CSS Custom Properties
 
 ```css
 /* YOU CAN USE ANY SELECTOR YOU WANT */
@@ -52,23 +56,6 @@ You can customize the input, label and helper text by using the following CSS cu
 body.dark,
 .any-parent-of-input,
 .class-to-extend-styles {
-  /* NORMAL INPUT */
-  --input-gap: 8px;
-  --input-bg: #ffffff;
-  --input-bg-disabled: #aaa;
-  --input-radius: 4px;
-  --input-padding: 8px 12px;
-
-  --input-border-color: #888;
-  --input-border-color-hover: #444;
-  --input-border-color-focus: lightblue;
-  --input-border-color-disabled: rgba(0, 0, 0, 0.26);
-
-  --input-font-size: 16px;
-  --input-font-weight: 600;
-  --input-text: #000;
-  --input-helper-text: #828282;
-
   --textarea-padding: 10px 14px;
 
   --placeholder-color: #636363;
@@ -78,11 +65,37 @@ body.dark,
   --label-font-size: 14px;
   --label-font-weight: 600;
   --label-text: #828282;
-  --label-text-hover: #000;
   --label-text-focus: lightblue;
+
+  /* NOTE: ↓ This should be passed to .label */
+  --helper-text-color: #828282;
 
   /* ERROR VARIANT */
   /* auto-used by input, label and helper text */
   --error: #f44336;
 }
 ```
+
+### CSS Classes
+
+`.label`
+
+The styles for the label
+
+---
+
+`.label--error`
+
+The error styles for the label
+
+---
+
+`.label--fullwidth`
+
+The full width styles for the label
+
+---
+
+`.helper-text`
+
+The styles for the helper text

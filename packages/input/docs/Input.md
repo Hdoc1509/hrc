@@ -82,17 +82,44 @@ The helper text of the input.
 
 Type: `string`
 
+## CSS Custom Properties
+
+```css
+/* YOU CAN USE ANY SELECTOR */
+:root,
+[data-theme="custom-theme"],
+body.dark,
+.any-parent-of-input,
+.class-to-extend-styles {
+  /* NORMAL INPUT */
+  --input-gap: 8px;
+
+  --input-bg: #ffffff;
+  --input-bg-disabled: #aaa;
+
+  --input-radius: 4px;
+  --input-padding: 8px 12px;
+
+  --input-border-color: #888;
+  --input-border-color-hover: #444;
+  --input-border-color-focus: lightblue;
+  --input-border-color-disabled: rgba(0, 0, 0, 0.26);
+
+  --input-font-size: 16px;
+  --input-font-weight: 600;
+  --input-text: #000;
+
+  /* ERROR VARIANT */
+  --error: #f44336;
+}
+```
+
 ## CSS Clasess
-
-`.input`
-
-The base styles for the input
-
----
 
 `.input-wrapper`
 
-The styles for the wrapper of the input. This is the direct parent of `.input`.
+The styles for the wrapper of the input. This is the direct parent of inner
+`input` element.
 
 :warning: **Classnames passed with `className` prop will be applied to this wrapper.**
 
@@ -116,24 +143,6 @@ The full width styles for the input wrapper
 
 ---
 
-`.input-label`
+`.input-wrapper > input`
 
-The styles for the label of the input
-
----
-
-`.input-label--error`
-
-The error styles for the label of the input
-
----
-
-`.input-label--fullwidth`
-
-The full width styles for the label of the input
-
----
-
-`.input-helper-text`
-
-The styles for the helper text of the input
+The base styles for the inner `input` element

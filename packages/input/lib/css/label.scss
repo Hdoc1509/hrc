@@ -1,7 +1,7 @@
 @use "@mono/ui/scss/colors" as *;
 @use "abstratcs/colors" as *;
 
-.input-label {
+.label {
   display: inline-flex;
   flex-direction: column;
   gap: 4px;
@@ -11,19 +11,13 @@
   font-weight: var(--label-font-weight, 400);
   color: var(--label-text, $label-text);
 
-  &:hover {
-    --label-text: var(--label-text-hover, #{$label-text});
-    --input-border-color: var(--input-border-color-hover, #{$label-text});
-  }
 
   &:focus-within {
     --label-text: var(--label-text-focus, #{$primary});
-    --input-border-color: var(--input-border-color-focus, #{$primary});
   }
 
   &--error {
     --label-text: var(--error, #{$error});
-    --label-text-hover: var(--error, #{$error});
     --label-text-focus: var(--error, #{$error});
   }
 

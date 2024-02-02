@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "type-fest";
+import "./Input.scss";
 
 export type InputProps = Simplify<
   Partial<{
@@ -32,10 +33,10 @@ export const Input = ({
   ...restProps
 }: InputProps): JSX.Element => {
   const labelClass = clsx(
-    "input-label",
+    "label",
     {
-      "input-label--error": error,
-      "input-label--fullwidth": fullWidth,
+      "label--error": error,
+      "label--fullwidth": fullWidth,
     },
     labelClassName,
   );
@@ -56,7 +57,6 @@ export const Input = ({
       <div className={inputWrapperClass}>
         {iconStart}
         <input
-          className="input"
           placeholder={placeholder}
           disabled={disabled}
           required={required}
@@ -64,7 +64,7 @@ export const Input = ({
         />
         {iconEnd}
       </div>
-      {helperText && <span className="input-helper">{helperText}</span>}
+      {helperText && <span className="helper-text">{helperText}</span>}
     </label>
   );
 };

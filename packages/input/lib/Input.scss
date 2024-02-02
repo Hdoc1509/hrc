@@ -1,0 +1,75 @@
+@use "@mono/ui/scss/colors" as *;
+@use "css/abstratcs/colors" as *;
+
+.input-wrapper {
+  display: flex;
+  gap: var(--input-gap, 14px);
+
+  width: 200px;
+  background-color: var(--input-bg, transparent);
+  border: 1px solid var(--input-border-color, $input-border-color);
+  border-radius: var(--input-radius, 8px);
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  padding: var(--input-padding, 16px 12px);
+
+  &:hover {
+    --input-border-color: var(--input-border-color-hover, #{$label-text});
+  }
+
+  &:focus-within {
+    --input-border-color: var(--input-border-color-focus, #{$primary});
+    outline-color: var(--input-border-color-focus, #{$primary});
+  }
+
+  &--error,
+  &--error:hover,
+  &--error:focus-within {
+    --input-border-color: var(--error, #{$error});
+  }
+  &--error:focus-within {
+    outline-color: var(--error, #{$error});
+  }
+
+  &.disabled {
+    --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
+    --input-bg: var(--input-bg-disabled, #{$input-bg-disabled});
+    --input-border-color: var(
+      --input-border-color-disabled,
+      #{$input-border-color-disabled}
+    );
+  }
+
+  &--small {
+    padding-block: 10px;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  > input {
+    min-width: 0;
+    box-sizing: border-box;
+
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    color: var(--input-text, #000);
+    font-family: inherit;
+    font-size: var(--input-font-size, 14px);
+    font-weight: var(--input-font-weight, 500);
+    line-height: 20px;
+
+    &::placeholder {
+      color: var(--placeholder-color, $input-border-color);
+    }
+  }
+
+  > :not(input) {
+    flex-shrink: 0;
+  }
+}
