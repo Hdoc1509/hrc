@@ -26,7 +26,6 @@ export const Input = ({
   helperText,
   fullWidth,
   size,
-  placeholder,
   iconStart,
   iconEnd,
   required,
@@ -56,13 +55,7 @@ export const Input = ({
       {required ? `${label} *` : label}
       <div className={inputWrapperClass}>
         {iconStart}
-        <input
-          placeholder={placeholder}
-          disabled={disabled}
-          required={required}
-          {...restProps}
-          // TODO: Receive placeholder from restProps
-        />
+        <input disabled={disabled} required={required} {...restProps} />
         {iconEnd}
       </div>
       {helperText && <span className="helper-text">{helperText}</span>}
