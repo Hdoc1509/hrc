@@ -10,11 +10,11 @@
 
 ### Minor Changes
 
-- 49d9902: Changed way of handling icons
+**This release contains backwards-incompatible changes**. To avoid picking up
+releases like this, you should set a exact version or use a version range syntax
+that only accepts patch upgrades, i.e. `^0.4.0` or `~0.4.0`, in your `package.json`
 
-  **This release contains backwards-incompatible changes**. To avoid picking up
-  releases like this, you should set a exact version or use a version range syntax
-  that only accepts patch upgrades, i.e. `^0.3.0` or `~0.3.0`, in your `package.json`
+- 49d9902: Changed way of handling icons
 
   - `<Input />` affected props:
     - `iconStart` -> type: `ReactNode`
