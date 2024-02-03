@@ -3,39 +3,40 @@ import { autosizeTextarea } from "./utils";
 import { Simplify } from "type-fest";
 import type { InputProps } from "./Input";
 import type { ComponentProps } from "react";
+import "./Textarea.scss";
 
 type Props = Simplify<
-  Omit<InputProps, "size" | "min" | "max"> &
-    Omit<ComponentProps<"textarea">, "color" | "cols">
+  Pick<
+    InputProps,
+    "label" | "labelClassName" | "error" | "helperText" | "fullWidth"
+  > &
+    Omit<ComponentProps<"textarea">, "size" | "color">
 >;
 
 export const Textarea = ({
   label,
   labelClassName,
   className,
-  disabled,
   error,
   helperText,
   fullWidth,
-  placeholder,
   required,
   onChange,
   ...restProps
 }: Props): JSX.Element => {
   const labelClass = clsx(
-    "input-label",
+    "label",
     {
-      "input-label--error": error,
-      "input-label--fullwidth": fullWidth,
+      "label--error": error,
+      "label--fullwidth": fullWidth,
     },
     labelClassName,
   );
-  const inputWrapperClass = clsx(
-    ["input-wrapper", "input-wrapper--textarea"],
+  const textareaClass = clsx(
+    "textarea",
     {
-      "input-wrapper--error": error,
-      disabled,
-      "input-wrapper--fullwidth": fullWidth,
+      "textarea--error": error,
+      "textarea--fullwidth": fullWidth,
     },
     className,
   );
@@ -43,20 +44,16 @@ export const Textarea = ({
   return (
     <label className={labelClass}>
       {required ? `${label} *` : label}
-      <div className={inputWrapperClass}>
-        <textarea
-          className="input input--textarea"
-          placeholder={placeholder}
-          disabled={disabled}
-          required={required}
-          onChange={(e) => {
-            autosizeTextarea(e.currentTarget);
-            onChange?.(e);
-          }}
-          {...restProps}
-        />
-      </div>
-      {helperText && <span className="input-helper">{helperText}</span>}
+      <textarea
+        className={textareaClass}
+        required={required}
+        onChange={(e) => {
+          autosizeTextarea(e.currentTarget);
+          onChange?.(e);
+        }}
+        {...restProps}
+      />
+      {helperText && <span className="helper-text">{helperText}</span>}
     </label>
   );
 };

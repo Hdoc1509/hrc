@@ -1,0 +1,57 @@
+@use "@mono/ui/scss/colors" as *;
+@use "css/abstratcs/colors" as *;
+
+.textarea {
+  width: 200px;
+  background-color: var(--textarea-bg, transparent);
+  border: 1px solid var(--textarea-border-color, $input-border-color);
+  border-radius: var(--textarea-radius, 8px);
+  border-bottom-right-radius: 0;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  padding: var(--textarea-padding, 8px 12px);
+
+  color: var(--textarea-text, #000);
+  font-family: inherit;
+  font-size: var(--textarea-font-size, 14px);
+  font-weight: var(--textarea-font-weight, 500);
+  line-height: 20px;
+
+  resize: vertical;
+
+  &:hover {
+    --textarea-border-color: var(--textarea-border-color-hover, #{$label-text});
+  }
+
+  &:focus {
+    --textarea-border-color: var(--textarea-border-color-focus, #{$primary});
+    outline-color: var(--textarea-border-color-focus, #{$primary});
+  }
+
+  &--error,
+  &--error:hover,
+  &--error:focus {
+    --textarea-border-color: var(--error, #{$error});
+  }
+  &--error:focus {
+    outline-color: var(--error, #{$error});
+  }
+
+  &:disabled {
+    --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
+    --textarea-bg: var(--textarea-bg-disabled, #{$input-bg-disabled});
+    --textarea-border-color: var(
+      --textarea-border-color-disabled,
+      #{$input-border-color-disabled}
+    );
+    resize: none;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &::placeholder {
+    color: var(--placeholder-color, $input-border-color);
+  }
+}

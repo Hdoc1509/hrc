@@ -61,6 +61,7 @@ export const Input = ({
           disabled={disabled}
           required={required}
           {...restProps}
+          // TODO: Receive placeholder from restProps
         />
         {iconEnd}
       </div>

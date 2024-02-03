@@ -12,12 +12,17 @@
   margin-block: 1rem;
 }
 
-.input--focused {
-  outline: 1px solid var(--input-border-color);
+.input-wrapper.focused {
+  outline-color: var(--input-border-color);
+}
+.textarea.focused {
+  outline-color: var(--textarea-border-color);
 }
 
-.input-label--focused:not(.input-label--error) {
-  --label-text: #2962ff;
-  --input-border-color: #2962ff ;
-  --input-helper-text: #2962ff;
+.label.focused:not(.label--error) {
+  --primary: #2962ff;
+  --label-text: var(--primary);
+  --input-border-color: var(--primary);
+  --textarea-border-color: var(--primary);
+  --helper-text-color: var(--primary);
 }

@@ -13,7 +13,7 @@ Additionally it can receive all attribues of a `textarea` element.**
 
 `error`
 
-Whether the input has an error.
+Whether the textarea has an error.
 
 Type: `boolean`
 
@@ -21,7 +21,8 @@ Type: `boolean`
 
 `fullWidth`
 
-Whether the input is full width, i.e., it takes up the full width of the parent.
+Whether the textarea is full width, i.e., it takes up the full width of the
+parent.
 
 Type: `boolean`
 
@@ -29,7 +30,7 @@ Type: `boolean`
 
 `className`
 
-Additional class names for extending styles of input.
+Additional class names for extending styles of textarea.
 
 Type: `string`
 
@@ -37,7 +38,7 @@ Type: `string`
 
 `label`
 
-The label of the input.
+The label of the textarea.
 
 Type: `string`
 
@@ -53,68 +54,54 @@ Type: `string`
 
 `helperText`
 
-The helper text of the input.
+The helper text of the textarea.
 
 Type: `string`
 
+## CSS Custom Properties
+
+```css
+/* YOU CAN USE ANY SELECTOR */
+:root,
+[data-theme="custom-theme"],
+body.dark,
+.any-parent-of-textarea,
+.class-to-extend-styles {
+  /* NORMAL TEXTAREA */
+  --textarea-bg: #ffffff;
+  --textarea-bg-disabled: #aaa;
+
+  --textarea-radius: 4px;
+  --textarea-padding: 6px;
+
+  --textarea-border-color: #888;
+  --textarea-border-color-hover: #444;
+  --textarea-border-color-focus: lightblue;
+  --textarea-border-color-disabled: rgba(0, 0, 0, 0.26);
+
+  --textarea-font-size: 16px;
+  --textarea-font-weight: 600;
+  --textarea-text: #000;
+
+  /* ERROR VARIANT */
+  --error: #f44336;
+}
+```
+
 ## CSS Clasess
 
-`.input`
-
-The base styles for the input
-
----
-
-`.input--textarea`
+`.textarea`
 
 The base styles for the textarea
 
 ---
 
-`.input-wrapper`
+`.textarea--error`
 
-The styles for the wrapper of the textarea. This is the direct parent of `.input--textarea`.
-
-:warning: **Classnames passed with `className` prop will be applied to this wrapper.**
+The error styles for the textarea
 
 ---
 
-`.input-wrapper--textarea`
+`.textarea--fullwidth`
 
-The styles for the wrapper to fit the textarea
-
----
-
-`.input-wrapper--error`
-
-The error styles for the input wrapper
-
----
-
-`.input-wrapper--fullwidth`
-
-The full width styles for the input wrapper
-
----
-
-`.input-label`
-
-The styles for the label of the input
-
----
-
-`.input-label--error`
-
-The error styles for the label of the input
-
----
-
-`.input-label--fullwidth`
-
-The full width styles for the label of the input
-
----
-
-`.input-helper-text`
-
-The styles for the helper text of the input
+The full width styles for the textarea

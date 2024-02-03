@@ -8,8 +8,8 @@ const toggleTheme = () => {
 };
 
 const focusedProps = {
-  className: "input--focused",
-  labelClassName: "input-label--focused",
+  className: "focused",
+  labelClassName: "focused",
 };
 
 const sharedProps = {
