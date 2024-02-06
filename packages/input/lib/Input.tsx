@@ -43,7 +43,7 @@ export const Input = ({
     "input-wrapper",
     {
       "input-wrapper--error": error,
-      disabled,
+      "input-wrapper--disabled": disabled,
       [`input-wrapper--${size}`]: size,
       "input-wrapper--fullwidth": fullWidth,
     },
