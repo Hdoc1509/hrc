@@ -11,14 +11,24 @@
   font-weight: var(--label-font-weight, 400);
   color: var(--label-text, $label-text);
 
-
-  &:focus-within {
+  &:focus-within:not(&--checkbox) {
     --label-text: var(--label-text-focus, #{$primary});
+  }
+
+  &--checkbox {
+    --label-font-size: 1rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
   }
 
   &--error {
     --label-text: var(--error, #{$error});
     --label-text-focus: var(--error, #{$error});
+  }
+
+  &--disabled {
+    --label-text: var(--label-text-disabled, rgba(0, 0, 0, 0.4));
   }
 
   &--fullwidth {

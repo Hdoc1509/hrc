@@ -20,9 +20,17 @@
 }
 
 .label.focused:not(.label--error) {
-  --primary: #2962ff;
   --label-text: var(--primary);
   --input-border-color: var(--primary);
   --textarea-border-color: var(--primary);
   --helper-text-color: var(--primary);
+}
+
+.my-checkbox-label {
+  --label-font-size: 1.25rem;
+}
+
+.my-checkbox {
+  --checkbox-color: darkred;
+  --checkbox-bg-hover: lightblue;
 }

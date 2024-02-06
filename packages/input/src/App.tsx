@@ -1,5 +1,5 @@
 import { Icon } from "@hdoc/react-material-icons";
-import { Input, Textarea } from "../lib/main";
+import { Input, Textarea, Checkbox } from "../lib/main";
 import "./App.css";
 
 const toggleTheme = () => {
@@ -91,6 +91,25 @@ function App() {
           error
           {...focusedProps}
         />
+      </div>
+      <div className="input-grid">
+        <Checkbox label="Small checkbox" size="small" />
+        <Checkbox
+          className="my-checkbox"
+          label="Checkbox checked"
+          color="primary"
+          icon={<Icon name="check_box_outline_blank" />}
+          iconChecked={<Icon name="check_box" />}
+          defaultChecked
+        />
+        <Checkbox
+          label="Bigger checkbox"
+          labelClassName="my-checkbox-label"
+          icon={<Icon name="thumb_up" variant="outlined" />}
+          iconChecked={<Icon name="thumb_up" />}
+          size="large"
+        />
+        <Checkbox label="Disabled checkbox" disabled />
       </div>
     </>
   );

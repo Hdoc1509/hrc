@@ -6,6 +6,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --primary: #2962ff;
 }
 
 [data-theme="light"] {
@@ -37,11 +38,6 @@ body {
 
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {

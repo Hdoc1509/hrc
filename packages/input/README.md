@@ -10,7 +10,7 @@
 
 Simple input components for your React app
 
-![Inputs screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/f3922dfb-c8c1-4688-a98a-c2d22d2da83a)
+![Inputs screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/0e1b1880-8af4-4467-913a-8ee923e7bf97)
 
 ## Installation
 
@@ -21,14 +21,20 @@ npm install @hdoc/react-input
 ## Usage
 
 ```js
-import { EmailIcon } from "third-party-package";
-import { Input, Textarea } from "@hdoc/react-input";
+import { EmailIcon, StarIcon, StarBorderIcon } from "third-party-package";
+import { Input, Textarea, Checkbox } from "@hdoc/react-input";
 
 function App() {
   return (
     <>
       <Input label="Email" type="email" iconEnd={<EmailIcon />} />
       <Textarea label="Message" />
+      <Checkbox
+        label="Favorite"
+        icon={<StarBorderICon />}
+        iconChecked={<StarIcon />}
+        color="warning"
+      />
     </>
   );
 }
@@ -41,6 +47,7 @@ custom properties available for the following components:
 
 - [`<Input />`](docs/Input.md)
 - [`<Textarea />`](docs/Textarea.md)
+- [`<Checkbox />`](docs/Checkbox.md)
 
 ## General Customization
 
@@ -54,10 +61,8 @@ previously mentioned components.
 :root,
 [data-theme="my-custom-theme"],
 body.dark,
-.any-parent-of-input,
+.any-parent,
 .class-to-extend-styles {
-  --textarea-padding: 10px 14px;
-
   --placeholder-color: #636363;
   --placeholder-disabled: #434343;
 
@@ -67,11 +72,10 @@ body.dark,
   --label-text: #828282;
   --label-text-focus: lightblue;
 
-  /* NOTE: ↓ This should be passed to .label */
+  /* ↓ This should be passed to .label */
   --helper-text-color: #828282;
 
-  /* ERROR VARIANT */
-  /* auto-used by input, label and helper text */
+  /* ERROR VARIANT, for label and helper text */
   --error: #f44336;
 }
 ```

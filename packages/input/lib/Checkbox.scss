@@ -1,0 +1,85 @@
+@use "@mono/ui/scss/colors" as *;
+
+.checkbox-wrapper {
+  display: grid;
+  place-items: center;
+
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  padding: var(--checkbox-padding, 0.5rem);
+
+  font-size: var(--checkbox-size, 1rem);
+  color: var(--checkbox-color, #333);
+
+  &:hover:not(&--disabled) {
+    background-color: var(--checkbox-bg-hover, rgb(0, 0, 0, 0.1));
+  }
+
+  &--disabled {
+    color: var(--checkbox-color-disabled, rgba(0, 0, 0, 0.4));
+  }
+
+  &--primary {
+    --checkbox-checked-color: var(--primary, #{$primary});
+  }
+  &--secondary {
+    --checkbox-checked-color: var(--secondary, #{$secondary});
+  }
+  &--error {
+    --checkbox-checked-color: var(--error, #{$error});
+  }
+  &--info {
+    --checkbox-checked-color: var(--info, #{$info});
+  }
+  &--warning {
+    --checkbox-checked-color: var(--warning, #{$warning});
+  }
+  &--success {
+    --checkbox-checked-color: var(--success, #{$success});
+  }
+
+  &--small {
+    --checkbox-size: 0.75rem;
+  }
+  &--large {
+    --checkbox-size: 1.25rem;
+  }
+
+  > input {
+    grid-area: 1 / 1;
+    margin: 0;
+    opacity: 0;
+
+    &:checked + .checkbox {
+      --__icon-display: none;
+      --__icon-checked-display: inline;
+    }
+  }
+
+  > .checkbox {
+    grid-area: 1 / 1;
+    display: flex;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+
+    > :first-child {
+      display: var(--__icon-display, inline);
+    }
+    > :last-child {
+      display: var(--__icon-checked-display, none);
+      color: var(--checkbox-checked-color, currentColor);
+    }
+
+    > * {
+      font-size: 1.5em !important;
+    }
+
+    > svg {
+      fill: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+  }
+}

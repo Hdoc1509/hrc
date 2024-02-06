@@ -38,8 +38,10 @@
     "react-component",
     "react-input",
     "react-textarea",
+    "react-checkbox",
     "input",
-    "textarea"
+    "textarea",
+    "checkbox"
   ],
   "dependencies": {
     "clsx": "^2.0.0",
