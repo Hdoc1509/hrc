@@ -27,7 +27,7 @@ export const Checkbox = ({
   disabled,
   required,
   ...restProps
-}: Props) => {
+}: Props): JSX.Element => {
   const labelClass = clsx(
     ["label", "label--checkbox"],
     {
