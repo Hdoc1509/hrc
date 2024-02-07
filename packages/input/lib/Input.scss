@@ -13,7 +13,7 @@
   outline: 1px solid transparent;
   padding: var(--input-padding, 16px 12px);
 
-  &:hover:not(&--disabled) {
+  &:hover:not(&--disabled):not(:focus-within) {
     --input-border-color: var(--input-border-color-hover, #{$label-text});
   }
 
