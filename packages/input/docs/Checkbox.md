@@ -94,3 +94,78 @@ body.dark,
   --success: green;
 }
 ```
+
+## CSS Classes
+
+`.checkbox-wrapper`
+
+The styles for the wrapper of the checkbox. This is the direct parent of inner
+`input` and `.checkbox` elements.
+
+:warning: **Classname passed with `className` prop will be applied to this wrapper.**
+
+---
+
+`.checkbox-wrapper--disabled`
+
+The disabled styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--primary`
+
+The primary styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--secondary`
+
+The secondary styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--error`
+
+The error styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--info`
+
+The info styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--warning`
+
+The warning styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--success`
+
+The success styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--small`
+
+The small styles for the checkbox.
+
+---
+
+`.checkbox-wrapper--large`
+
+The large styles for the checkbox.
+
+---
+
+`.checkbox-wrapper > input`
+
+The base styles for the inner `input` element.
+
+---
+
+`.checkbox-wrapper > .checkbox`
+
+The base styles for the inner `.checkbox` element.
