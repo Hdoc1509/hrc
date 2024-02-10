@@ -131,6 +131,12 @@ The error styles for the input wrapper
 
 ---
 
+`.input-wrapper--disabled`
+
+The disabled styles for the input wrapper
+
+---
+
 `.input-wrapper--small`
 
 The small styles for the input wrapper
