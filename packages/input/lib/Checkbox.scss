@@ -17,10 +17,6 @@
     background-color: var(--checkbox-bg-hover, rgb(0, 0, 0, 0.1));
   }
 
-  &--disabled {
-    color: var(--checkbox-color-disabled, rgba(0, 0, 0, 0.4));
-  }
-
   &--primary {
     --checkbox-checked-color: var(--primary, #{$primary});
   }
@@ -38,6 +34,14 @@
   }
   &--success {
     --checkbox-checked-color: var(--success, #{$success});
+  }
+
+  &--disabled {
+    --checkbox-checked-color: var(
+      --checkbox-color-disabled,
+      rgba(0, 0, 0, 0.4)
+    );
+    color: var(--checkbox-color-disabled, rgba(0, 0, 0, 0.4));
   }
 
   &--small {
