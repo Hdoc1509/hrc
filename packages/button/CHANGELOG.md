@@ -151,7 +151,7 @@
 - f9bb762: Add css custom properties for change radius and padding
 
   - `--button-radius`
-  - `--button-paddding`
+  - `--button-padding`
 
 ### Patch Changes
 
