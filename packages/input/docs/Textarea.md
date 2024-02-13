@@ -8,8 +8,9 @@ import { Textarea } from "@hdoc/react-input";
 
 ## Props
 
-**All props are optional unless otherwise specified.
-Additionally it can receive all attribues of a `textarea` element.**
+**All props are optional unless otherwise specified.**
+
+**Additionally it can receive all attribues of a `textarea` element.**
 
 `error`
 
