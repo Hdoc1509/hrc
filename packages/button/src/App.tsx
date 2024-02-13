@@ -60,6 +60,18 @@ function App() {
         >
           Right rounded
         </Button>
+        <Button color="success" size="large" disabled={error} fullRounded>
+          Full rounded
+        </Button>
+        <Button color="warning" size="large" disabled={error} fullRounded>
+          Full rounded
+        </Button>
+        <Button color="info" size="large" disabled={error} fullRounded>
+          Full rounded
+        </Button>
+        <Button color="primary" size="large" disabled={error} fullRounded>
+          Full rounded
+        </Button>
       </div>
       <div className="button-icons">
         <ButtonIcon color="primary" disabled={error}>
@@ -71,13 +83,46 @@ function App() {
         <ButtonIcon color="error" disabled={error}>
           <Icon name="error" size="large" />
         </ButtonIcon>
-        <ButtonIcon color="info" disabled={error}>
+        <ButtonIcon color="info" disabled={error} variant="outline">
           <Icon name="map" size="large" />
         </ButtonIcon>
-        <ButtonIcon color="warning" disabled={error}>
+        <ButtonIcon color="warning" disabled={error} variant="outline">
           <Icon name="settings" />
         </ButtonIcon>
-        <ButtonIcon color="success" disabled={error}>
+        <ButtonIcon color="success" disabled={error} variant="outline">
+          <Icon name="search" size="small" />
+        </ButtonIcon>
+        <ButtonIcon
+          color="primary"
+          disabled={error}
+          variant="outline"
+          fullRounded
+        >
+          <Icon name="check" size="small" />
+        </ButtonIcon>
+        <ButtonIcon
+          color="secondary"
+          disabled={error}
+          variant="outline"
+          fullRounded
+        >
+          <Icon name="delete" />
+        </ButtonIcon>
+        <ButtonIcon
+          color="error"
+          disabled={error}
+          variant="outline"
+          fullRounded
+        >
+          <Icon name="error" size="large" />
+        </ButtonIcon>
+        <ButtonIcon color="info" disabled={error} fullRounded>
+          <Icon name="map" size="large" />
+        </ButtonIcon>
+        <ButtonIcon color="warning" disabled={error} fullRounded>
+          <Icon name="settings" />
+        </ButtonIcon>
+        <ButtonIcon color="success" disabled={error} fullRounded>
           <Icon name="search" size="small" />
         </ButtonIcon>
       </div>

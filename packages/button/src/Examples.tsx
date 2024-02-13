@@ -6,13 +6,12 @@ export const ButtonExample = ({ disabled, color }: Props) => {
   return (
     <>
       <Button size="large" color={color} disabled={disabled} />
-      <Button
-        size="large"
-        color={color}
-        disabled={disabled}
-        variant="outline"
-      />
-      <Button size="large" color={color} disabled={disabled} variant="text" />
+      <Button size="large" color={color} disabled={disabled} variant="outline">
+        Outline
+      </Button>
+      <Button size="large" color={color} disabled={disabled} variant="text">
+        Text
+      </Button>
     </>
   );
 };
