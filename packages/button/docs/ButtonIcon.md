@@ -2,7 +2,7 @@
 
 ## Import
 
-```jsx
+```js
 import { ButtonIcon } from "@hdoc/react-button";
 ```
 
@@ -65,75 +65,3 @@ Type: `'top' | 'bottom' | 'left' | 'right'`
 Additional class names for extending styles.
 
 Type: `string`
-
-## CSS classes
-
-`.button`
-
-The base styles for the button
-
----
-
-`.button--icon`
-
-Stylize the button to fit an icon
-
----
-
-`.button--small`
-
-Styles for small variant
-
----
-
-`.button--large`
-
-Styles for large variant
-
----
-
-`.button--outline`
-
-Styles for outline variant
-
----
-
-`.button--text`
-
-Styles for text variant
-
----
-
-`.button--primary`
-
-Styles for the primary variant
-
----
-
-`.button--secondary`
-
-Styles for the secondary variant
-
----
-
-`.button--error`
-
-Styles for the error variant
-
----
-
-`.button--info`
-
-Styles for the info variant
-
----
-
-`.button--warning`
-
-Styles for the warning variant
-
----
-
-`.button--success`
-
-Styles for the success variant

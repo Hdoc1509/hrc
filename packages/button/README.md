@@ -40,14 +40,18 @@ function App() {
 
 ## API
 
-See documentation below for reference to all of the props and classes available for the following components:
+See documentation below for reference to all of the props available for the
+button components:
 
 - [`<Button />`](docs/Button.md)
 - [`<ButtonIcon />`](docs/ButtonIcon.md)
 
-## Customization
+## General Customization
 
-You can customize the color of the button by using the following CSS custom properties:
+### CSS Custom Properties
+
+You can customize any of the button components by using the following CSS
+custom properties:
 
 ```css
 .any-parent-of-button,
@@ -82,3 +86,75 @@ You can customize the color of the button by using the following CSS custom prop
   --button-outline-bg-hover: black;
 }
 ```
+
+### CSS Classes
+
+`.button`
+
+The base styles for the button
+
+---
+
+`.button--icon`
+
+Stylize the button to fit an icon. Used for `<ButtonIcon />`
+
+---
+
+`.button--small`
+
+Styles for small variant
+
+---
+
+`.button--large`
+
+Styles for large variant
+
+---
+
+`.button--outline`
+
+Styles for outline variant
+
+---
+
+`.button--text`
+
+Styles for text variant
+
+---
+
+`.button--primary`
+
+Styles for the primary variant
+
+---
+
+`.button--secondary`
+
+Styles for the secondary variant
+
+---
+
+`.button--error`
+
+Styles for the error variant
+
+---
+
+`.button--info`
+
+Styles for the info variant
+
+---
+
+`.button--warning`
+
+Styles for the warning variant
+
+---
+
+`.button--success`
+
+Styles for the success variant
