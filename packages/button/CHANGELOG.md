@@ -17,21 +17,12 @@
 
   #### Migrating
 
-  ```js
-  // BEFORE
+  ```diff
   function App() {
     return (
       <>
-        <Button text="Save" />
-      </>
-    );
-  }
-
-  // NOW
-  function App() {
-    return (
-      <>
-        <Button>Save</Button>
+  -     <Button text="Save" />
+  +     <Button>Save</Button>
       </>
     );
   }
@@ -49,15 +40,12 @@
 
   1. Rename `color` prop from `danger` to `error`
 
-  ```js
+  ```diff
   function App() {
     return (
       <>
-        {/* BEFORE */}
-        <Button text="Delete" color="danger" />
-
-        {/* NOW */}
-        <Button text="Delete" color="error" />
+  -     <Button text="Delete" color="danger" />
+  +     <Button text="Delete" color="error" />
       </>
     );
   }
@@ -65,19 +53,16 @@
 
   2. Rename css custom properties of `--danger` to `--error`
 
-  ```css
+  ```diff
   .my-selector {
-    /* before */
-    --danger: red;
-    --danger-hover: darkred;
-    --danger-text: white;
-    --danger-transparent: rgba(255, 0, 0, 0.5);
-
-    /* now */
-    --error: red;
-    --error-hover: darkred;
-    --error-text: white;
-    --error-transparent: rgba(255, 0, 0, 0.5);
+  - --danger: red;
+  - --danger-hover: darkred;
+  - --danger-text: white;
+  - --danger-transparent: rgba(255, 0, 0, 0.5);
+  + --error: red;
+  + --error-hover: darkred;
+  + --error-text: white;
+  + --error-transparent: rgba(255, 0, 0, 0.5);
   }
   ```
 
@@ -98,27 +83,18 @@
   2. Remove every `iconVariant`
   3. Remove `icon` from `<ButtonIcon />` and use `children`
 
-  ```js
-  // BEFORE
-  function App() {
-    return (
-      <>
-        <Button text="Search" iconStart="search" />
-        <ButtonIcon icon="delete" />
-      </>
-    );
-  }
-
-  // NOW
-  import { SearchIcon, DeleteIcon } from "third-party-package";
+  ```diff
+  + import { SearchIcon, DeleteIcon } from "third-party-package";
 
   function App() {
     return (
       <>
-        <Button text="Search" iconStart={<SearchIcon />} />
-        <ButtonIcon>
-          <DeleteIcon />
-        </ButtonIcon>
+  -     <Button text="Search" iconStart="search" />
+  +     <Button text="Search" iconStart={<SearchIcon />} />
+  -     <ButtonIcon icon="delete" />
+  +     <ButtonIcon>
+  +       <DeleteIcon />
+  +     </ButtonIcon>
       </>
     );
   }
@@ -130,13 +106,10 @@
 
   Rename css custom property from `--button-color` to `--button-text`:
 
-  ```css
+  ```diff
   .my-selector {
-    /* BEFORE */
-    --button-color: gray;
-
-    /* NOW */
-    --button-text: gray;
+  - --button-color: gray;
+  + --button-text: gray;
   }
   ```
 

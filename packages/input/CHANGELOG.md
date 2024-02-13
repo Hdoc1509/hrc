@@ -26,23 +26,14 @@ that only accepts patch upgrades, i.e. `^0.4.0` or `~0.4.0`, in your `package.js
   1. Change values of `iconStart` and `iconEnd` from `string` to `ReactNode`.
   2. Remove every `iconVariant`
 
-  ```js
-  // BEFORE
-  function App() {
-    return (
-      <>
-        <Input placeholder="Password" iconStart="lock" />
-      </>
-    );
-  }
-
-  // NOW
-  import { LockIcon } from `third-party-package`;
+  ```diff
+  + import { LockIcon } from `third-party-package`;
 
   function App() {
     return (
       <>
-        <Input placeholder="Password" iconStart={<LockIcon />} />
+  -     <Input placeholder="Password" iconStart="lock" />
+  +     <Input placeholder="Password" iconStart={<LockIcon />} />
       </>
     );
   }
