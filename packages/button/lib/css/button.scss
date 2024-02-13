@@ -62,4 +62,7 @@
   &--right-rounded {
     @include border-right-rounded(var(--button-radius, 6px));
   }
+  &--full-rounded {
+    border-radius: 9999px;
+  }
 }

@@ -12,6 +12,7 @@ export const ButtonIcon = ({
   variant,
   className,
   roundedSide,
+  fullRounded,
   children,
   ...restProps
 }: PropsWithChildren<Props>): JSX.Element => {
@@ -23,6 +24,7 @@ export const ButtonIcon = ({
       [`button--${size}`]: size,
       [`button--${color}`]: color,
       [`button--${roundedSide}-rounded`]: roundedSide,
+      "button--full-rounded": fullRounded,
     },
     className,
   );

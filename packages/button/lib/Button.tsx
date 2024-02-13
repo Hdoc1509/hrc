@@ -11,6 +11,7 @@ export type ButtonProps = Simplify<
     size?: "small" | "large";
     color?: "primary" | "secondary" | "error" | "info" | "warning" | "success";
     roundedSide?: "top" | "bottom" | "left" | "right";
+    fullRounded?: boolean;
   } & ComponentProps<"button">
 >;
 
@@ -24,6 +25,7 @@ export const Button = ({
   className,
   children,
   roundedSide,
+  fullRounded,
   ...restProps
 }: ButtonProps): JSX.Element => {
   const buttonClass = clsx(
@@ -34,6 +36,7 @@ export const Button = ({
       [`button--${size}`]: size,
       [`button--${color}`]: color,
       [`button--${roundedSide}-rounded`]: roundedSide,
+      "button--full-rounded": fullRounded,
     },
     className,
   );
