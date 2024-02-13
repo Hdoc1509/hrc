@@ -149,7 +149,7 @@
 
 - 6636873: Add custom properties for change flexbox layout:
 
-  - `--button-jsutify-content`
+  - `--button-justify-content`
   - `--button-gap`
 
 - daaf12b: Remove `@hdoc/react-material-icons` from peer dependencies
