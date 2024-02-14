@@ -28,9 +28,19 @@
 
 .my-checkbox-label {
   --label-font-size: 1.25rem;
+  --checkbox-color: var(--primary);
 }
 
 .my-checkbox {
-  --checkbox-color: darkred;
   --checkbox-bg-hover: lightblue;
+}
+
+.colored-checkboxes {
+  --checkbox-size: 1.25rem;
+}
+.colored-checkboxes .label {
+  --label-font-size: 1.25rem;
+}
+.colored-checkboxes .label:nth-child(5) {
+  grid-column: 2 / 3;
 }

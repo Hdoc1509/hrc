@@ -10,7 +10,7 @@
 
 Simple input components for your React app
 
-![Inputs screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/0e1b1880-8af4-4467-913a-8ee923e7bf97)
+![Inputs screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/b611760d-755e-4923-ba6c-3c52ceb32b2c)
 
 ## Installation
 
