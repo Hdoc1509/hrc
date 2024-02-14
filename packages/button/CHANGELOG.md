@@ -1,5 +1,11 @@
 # @hdoc/react-button
 
+## 2.1.0
+
+### Minor Changes
+
+- da462a8: Add full rounded style
+
 ## 2.0.1
 
 ### Patch Changes

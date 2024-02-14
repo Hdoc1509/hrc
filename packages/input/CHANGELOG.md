@@ -1,5 +1,59 @@
 # @hdoc/react-input
 
+## 0.6.0
+
+**This release contains backwards-incompatible changes**. To avoid picking up
+releases like this, you should set a exact version or use a version range syntax
+that only accepts patch upgrades, i.e. `^0.5.0` or `~0.5.0`, in your
+`package.json`
+
+### Minor Changes
+
+- 9def6d9: Add `<Checkbox />` component
+- 9b487bc: Use independent classes for `<Textarea />` component
+
+  Migrating
+
+  - If you were using css selectors, you should rename them as follows:
+    - `.input--textarea` -> `.textarea`
+    - `.input-wrapper--error` -> `.textarea--error`
+    - `.input-wrapper--fullwidth` -> `.textarea--fullwidth`
+  - The following selectors were removed:
+    - `.input--textarea`
+    - `.input-wrapper--textarea`
+    - `.input-wrapper--textarea--error`
+    - `.input-wrapper--textarea--fullwidth`
+  - The following css custom properties were added:
+    - `--textarea-bg`
+    - `--textarea-bg-disabled`
+    - `--textarea-radius`
+    - `--textarea-padding`
+    - `--textarea-border-color`
+    - `--textarea-border-color-hover`
+    - `--textarea-border-color-focus`
+    - `--textarea-border-color-disabled`
+    - `--textarea-font-size`
+    - `--textarea-font-weight`
+    - `--textarea-text`
+
+- b12cf3e: Use independent classes for `<Input />` component
+
+  Migrating
+
+  - If you were using css selectors, you should rename them as follows:
+    - `.input` to `.input-wrapper > input`
+    - `.input-label` to `.label`
+    - `.input-helper` to `.helper-text`
+  - The following css custom properties were removed:
+    - `--label-text-hover`
+  - The following css custom properties were renamed:
+    - `--input-helper-text` to `--helper-text-color`
+
+### Patch Changes
+
+- 323fc85: Prevent input to take hover styles when focus
+- adb088d: Use correct classname for disabled variant of input component
+
 ## 0.5.1
 
 ### Patch Changes
