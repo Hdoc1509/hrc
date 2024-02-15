@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
   "description": "Simple button components for your React app",
-  "main": "dist/react-button.js",
+  "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"

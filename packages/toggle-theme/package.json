@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
   "description": "A react button component for toggle the theme",
-  "main": "dist/react-toggle-theme.js",
+  "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "engines": {
     "node": ">=13.2.0"
