@@ -13,7 +13,9 @@ export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
   build: {
     lib: {
-      entry: "lib/main.ts",
+      entry: {
+        main: "lib/main.ts"
+      },
       formats: ["es"],
     },
     copyPublicDir: false,

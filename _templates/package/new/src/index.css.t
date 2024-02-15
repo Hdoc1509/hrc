@@ -33,7 +33,12 @@ body {
   color: var(--color-text);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+button {
+  display: block;
+  position: relative;
+
+  inset: 0;
+  margin-block: 2rem;
+  margin-inline: auto;
+  padding: 8px;
 }

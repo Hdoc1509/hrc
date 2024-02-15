@@ -7,14 +7,10 @@ to: packages/<%= name %>/lib/<%= h.changeCase.title(name) %>.tsx
   ComponentCamel = h.changeCase.camel(name)
 -%>
 import { clsx } from "clsx";
-import { Icon } from "@hdoc/react-material-icons";
-import type { <%= ComponentName %>Props } from "./types";
-import "./css/styles.scss";
+import type { Simplify } from "type-fest";
 
 export const <%= ComponentName %> = ({
-  size = "medium",
-  startIcon,
-  endIcon,
+  size,
   color,
   className,
   disabled,
@@ -30,14 +26,8 @@ export const <%= ComponentName %> = ({
   );
 
   return (
-    <span className={<%= ComponentCamel %>Class}>
-      {startIcon && (
-        <Icon name={startIcon} className="input-icon input-icon--start" />
-      )}
+    <div className={<%= ComponentCamel %>Class}>
       <%= ComponentName %>
-      {endIcon && (
-        <Icon name={endIcon} className="input-icon input-icon--end" />
-      )}
-    </span>
+    </div>
   );
 };

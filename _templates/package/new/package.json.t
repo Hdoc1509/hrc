@@ -10,7 +10,7 @@ to: packages/<%= name %>/package.json
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
   "description": "<%= description %>",
-  "main": "dist/react-<%= name %>.js",
+  "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"
@@ -38,13 +38,13 @@ to: packages/<%= name %>/package.json
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/<%= name %>#readme",
   "peerDependencies": {
-    "@hdoc/react-material-icons": "workspace:*",
-    "@material-design-icons/font": "^0.14.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@hdoc/react-material-icons": "workspace:*",
     "@material-design-icons/font": "0.14.10",
+    "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",
     "clsx": "2.0.0",
     "react": "18.2.0",
