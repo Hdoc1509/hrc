@@ -119,25 +119,25 @@ Styles for large variant
 
 ---
 
-`.button-top-rounded`
+`.button--top-rounded`
 
 Styles for top-rounded variant
 
 ---
 
-`.button-bottom-rounded`
+`.button--bottom-rounded`
 
 Styles for bottom-rounded variant
 
 ---
 
-`.button-left-rounded`
+`.button--left-rounded`
 
 Styles for left-rounded variant
 
 ---
 
-`.button-right-rounded`
+`.button--right-rounded`
 
 Styles for right-rounded variant
 
