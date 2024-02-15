@@ -1,5 +1,11 @@
 # @hdoc/react-material-icons
 
+## 2.0.1
+
+### Patch Changes
+
+- 1144baf: Rename entry file
+
 ## 2.0.0
 
 ### Major Changes

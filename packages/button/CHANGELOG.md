@@ -1,5 +1,11 @@
 # @hdoc/react-button
 
+## 2.1.1
+
+### Patch Changes
+
+- 1144baf: Rename entry file
+
 ## 2.1.0
 
 ### Minor Changes

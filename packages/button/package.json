@@ -1,7 +1,7 @@
 {
   "name": "@hdoc/react-button",
   "private": false,
-  "version": "2.1.0",
+  "version": "2.1.1",
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",

@@ -1,5 +1,11 @@
 # @hdoc/react-toggle-theme
 
+## 2.1.4
+
+### Patch Changes
+
+- 1144baf: Rename entry file
+
 ## 2.1.3
 
 ### Patch Changes
