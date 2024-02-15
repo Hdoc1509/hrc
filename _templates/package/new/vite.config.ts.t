@@ -19,7 +19,7 @@ export default defineConfig({
     },
     copyPublicDir: false,
     rollupOptions: {
-      external: ["react", "react/jsx-runtime", "@hdoc/react-material-icons"],
+      external: ["react", "react/jsx-runtime"],
     },
   },
 });
