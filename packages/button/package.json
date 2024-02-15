@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc/react-button",
+  "name": "@hdoc-react/button",
   "private": false,
   "version": "2.1.1",
   "type": "module",
@@ -16,6 +16,9 @@
   ],
   "enginges": {
     "node": ">=13.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "prepublishOnly": "pnpm run build ",
   "scripts": {
