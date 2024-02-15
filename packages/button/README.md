@@ -101,6 +101,12 @@ Stylize the button to fit an icon. Used for `<ButtonIcon />`
 
 ---
 
+`.button--no-shadow`
+
+Styles for no shadow variant
+
+---
+
 `.button--small`
 
 Styles for small variant
@@ -110,6 +116,36 @@ Styles for small variant
 `.button--large`
 
 Styles for large variant
+
+---
+
+`.button-top-rounded`
+
+Styles for top-rounded variant
+
+---
+
+`.button-bottom-rounded`
+
+Styles for bottom-rounded variant
+
+---
+
+`.button-left-rounded`
+
+Styles for left-rounded variant
+
+---
+
+`.button-right-rounded`
+
+Styles for right-rounded variant
+
+---
+
+`.button--full-rounded`
+
+Styles for full-rounded variant
 
 ---
 
