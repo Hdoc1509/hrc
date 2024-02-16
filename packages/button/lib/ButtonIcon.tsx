@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import type { Simplify } from "type-fest";
 import type { ButtonProps } from "./Button";
-import { PropsWithChildren } from "react";
 
 type Props = Simplify<Omit<ButtonProps, "iconStart" | "iconEnd" | "text">>;
 
@@ -15,7 +14,7 @@ export const ButtonIcon = ({
   fullRounded,
   children,
   ...restProps
-}: PropsWithChildren<Props>): JSX.Element => {
+}: Props): JSX.Element => {
   const buttonClass = clsx(
     ["button", "button--icon"],
     {
