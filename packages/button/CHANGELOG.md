@@ -1,5 +1,11 @@
 # @hdoc/react-button
 
+## 2.1.2
+
+### Patch Changes
+
+- 7712ede: Update package scope
+
 ## 2.1.1
 
 ### Patch Changes
