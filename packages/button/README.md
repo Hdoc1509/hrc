@@ -1,11 +1,11 @@
-# @hdoc/react-button
+# @hdoc-react/button
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hdoc/react-button">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc%2Freact-button">
+  <a href="https://www.npmjs.com/package/@hdoc-react/button">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Fbutton">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc%2Freact-button">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc%2Freact-button">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Fbutton">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Fbutton">
 </p>
 
 Simple button components for your React app
@@ -15,14 +15,14 @@ Simple button components for your React app
 ## Installation
 
 ```bash
-npm install @hdoc/react-button
+npm install @hdoc-react/button
 ```
 
 ## Usage
 
 ```js
 import { DeleteIcon, FavoriteIcon } from "third-party-package";
-import { Button, ButtonIcon } from "@hdoc/react-button";
+import { Button, ButtonIcon } from "@hdoc-react/button";
 
 function App() {
   return (

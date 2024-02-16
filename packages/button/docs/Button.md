@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { Button } from "@hdoc/react-button";
+import { Button } from "@hdoc-react/button";
 ```
 
 ## Props
