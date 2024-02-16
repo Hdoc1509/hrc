@@ -12,7 +12,6 @@ export const ButtonIcon = ({
   className,
   roundedSide,
   fullRounded,
-  children,
   ...restProps
 }: Props): JSX.Element => {
   const buttonClass = clsx(
@@ -28,9 +27,5 @@ export const ButtonIcon = ({
     className,
   );
 
-  return (
-    <button {...restProps} className={buttonClass}>
-      {children}
-    </button>
-  );
+  return <button {...restProps} className={buttonClass} />;
 };
