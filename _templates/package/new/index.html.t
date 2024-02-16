@@ -8,7 +8,7 @@ to: packages/<%= name %>/index.html
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@hdoc/react-<%= name %></title>
+    <title>@hdoc-react/<%= name %></title>
   </head>
   <body>
     <div id="root"></div>

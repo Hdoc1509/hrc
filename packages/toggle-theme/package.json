@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc/react-toggle-theme",
+  "name": "@hdoc-react/toggle-theme",
   "private": false,
   "version": "2.1.4",
   "type": "module",
@@ -17,6 +17,9 @@
   "sideEffects": [
     "**/*.css"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "prepublishOnly": "pnpm run build",
   "scripts": {
     "dev": "vite",

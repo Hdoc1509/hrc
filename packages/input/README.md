@@ -1,11 +1,11 @@
-# @hdoc/react-input
+# @hdoc-react/input
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hdoc/react-input">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc%2Freact-input">
+  <a href="https://www.npmjs.com/package/@hdoc-react/input">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Finput">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc%2Freact-input">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc%2Freact-input">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Finput">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Finput">
 </p>
 
 Simple input components for your React app
@@ -15,14 +15,14 @@ Simple input components for your React app
 ## Installation
 
 ```bash
-npm install @hdoc/react-input
+npm install @hdoc-react/input
 ```
 
 ## Usage
 
 ```js
 import { EmailIcon, StarIcon, StarBorderIcon } from "third-party-package";
-import { Input, Textarea, Checkbox } from "@hdoc/react-input";
+import { Input, Textarea, Checkbox } from "@hdoc-react/input";
 
 function App() {
   return (
@@ -111,9 +111,9 @@ only using a few components, you can reduce the build size by importing only
 the components you need:
 
 ```diff
-- import { Input, Textarea } from "@hdoc/react-input";
-+ import { Input } from "@hdoc/react-input/dist/Input";
-+ import { Textarea } from "@hdoc/react-input/dist/Textarea";
+- import { Input, Textarea } from "@hdoc-react/input";
++ import { Input } from "@hdoc-react/input/dist/Input";
++ import { Textarea } from "@hdoc-react/input/dist/Textarea";
 ```
 
 Or, you can use `babel-plugin-import` to automatically import the components:
@@ -126,7 +126,7 @@ Or, you can use `babel-plugin-import` to automatically import the components:
     [
       "import",
       {
-        libraryName: "@hdoc/react-input",
+        libraryName: "@hdoc-react/input",
         libraryDirectory: "dist",
         camel2DashComponentName: false,
         transformToDefaultImport: false,
@@ -139,5 +139,5 @@ Or, you can use `babel-plugin-import` to automatically import the components:
 Additionally, you will need to import the global CSS in your entry file:
 
 ```js
-import "@hdoc/react-input/dist/main.css";
+import "@hdoc-react/input/dist/main.css";
 ```

@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { Checkbox } from "@hdoc/react-input";
+import { Checkbox } from "@hdoc-react/input";
 ```
 
 ## Props

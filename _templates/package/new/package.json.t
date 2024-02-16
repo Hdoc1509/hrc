@@ -3,7 +3,7 @@ to: packages/<%= name %>/package.json
 ---
 
 {
-  "name": "@hdoc/react-<%= name %>",
+  "name": "@hdoc-react/<%= name %>",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -18,6 +18,9 @@ to: packages/<%= name %>/package.json
   "sideEffets": [
     "**/*.css"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "enginges": {
     "node": ">=13.2.0"
   },

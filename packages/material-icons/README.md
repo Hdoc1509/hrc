@@ -1,11 +1,11 @@
-# @hdoc/react-material-icons
+# @hdoc-react/material-icons
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hdoc/react-material-icons">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc%2Freact-material-icons">
+  <a href="https://www.npmjs.com/package/@hdoc-react/material-icons">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Fmaterial-icons">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc%2Freact-material-icons">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc%2Freact-material-icons">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Fmaterial-icons">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Fmaterial-icons">
 </p>
 
 Simple component for material design icons in your React app.
@@ -15,7 +15,7 @@ Simple component for material design icons in your React app.
 ## Installation
 
 ```bash
-npm install @hdoc/react-material-icons @material-design-icons/font
+npm install @hdoc-react/material-icons @material-design-icons/font
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ import "@material-design-icons/font";
 Then, in your `App.jsx` or another file:
 
 ```js
-import { Icon } from "@hdoc/react-material-icons";
+import { Icon } from "@hdoc-react/material-icons";
 
 function App() {
   return (

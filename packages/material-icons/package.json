@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc/react-material-icons",
+  "name": "@hdoc-react/material-icons",
   "private": false,
   "version": "2.0.1",
   "type": "module",
@@ -14,6 +14,9 @@
   "sideEffets": [
     "**/*.css"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "prepublishOnly": "pnpm run build ",
   "scripts": {
     "dev": "vite",
