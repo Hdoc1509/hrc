@@ -2,10 +2,10 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@hdoc-react/toggle-theme">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc%2Freact-toggle-theme">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Ftoggle-theme">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc%2Freact-toggle-theme">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc%2Freact-toggle-theme">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Ftoggle-theme">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Ftoggle-theme">
 </p>
 
 Simple button component for toggle between `light` and `dark` theme in your React app.
