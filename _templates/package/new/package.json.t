@@ -45,7 +45,7 @@ to: packages/<%= name %>/package.json
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@hdoc/react-material-icons": "workspace:*",
+    "@hdoc-react/material-icons": "workspace:*",
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",

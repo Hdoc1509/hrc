@@ -69,7 +69,7 @@ importers:
         specifier: 4.3.1
         version: 4.3.1
     devDependencies:
-      '@hdoc/react-material-icons':
+      '@hdoc-react/material-icons':
         specifier: workspace:*
         version: link:../material-icons
       '@material-design-icons/font':
@@ -112,7 +112,7 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1
     devDependencies:
-      '@hdoc/react-material-icons':
+      '@hdoc-react/material-icons':
         specifier: workspace:*
         version: link:../material-icons
       '@material-design-icons/font':
@@ -188,7 +188,7 @@ importers:
 
   packages/toggle-theme:
     devDependencies:
-      '@hdoc/react-material-icons':
+      '@hdoc-react/material-icons':
         specifier: workspace:*
         version: link:../material-icons
       '@material-design-icons/font':

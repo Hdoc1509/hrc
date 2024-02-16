@@ -1,5 +1,5 @@
 import { ThemeButton } from "../lib/ThemeButton";
-import { Icon } from "@hdoc/react-material-icons";
+import { Icon } from "@hdoc-react/material-icons";
 import "./App.css";
 
 function App() {

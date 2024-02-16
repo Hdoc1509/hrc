@@ -55,7 +55,7 @@
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@hdoc/react-material-icons": "workspace:*",
+    "@hdoc-react/material-icons": "workspace:*",
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",

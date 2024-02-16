@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Icon } from "@hdoc/react-material-icons";
+import { Icon } from "@hdoc-react/material-icons";
 import { Button, ButtonIcon } from "../lib/main";
 import { ButtonExample } from "./Examples";
 import { ErrorIcon } from "./ErrorIcon";
