@@ -8,9 +8,14 @@
   <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Ftoggle-theme">
 </p>
 
-Simple button component for toggle between `light` and `dark` theme in your React app.
+Simple button component for toggle between `light` and `dark` theme in your
+React app.
 
 ![Theme Button gif](https://github.com/Hdoc1509/react-components/assets/72316111/53cf9717-472c-41f5-95df-260d3dda009a)
+
+- It saves the theme in `localStorage` with the key `theme`.
+- If there is no theme in `localStorage`, the default is the user's preferred
+theme.
 
 ## Installation
 
