@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     libInjectCss(),
-    dts({ include: ["lib/main.ts", "lib/ThemeButton.tsx"] }),
+    dts({ include: "lib/{main.ts,ThemeButton.tsx}" }),
   ],
   build: {
     lib: {
