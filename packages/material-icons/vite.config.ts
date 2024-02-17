@@ -6,7 +6,11 @@ import react from "@vitejs/plugin-react-swc";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig({
-  plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
+  plugins: [
+    react(),
+    libInjectCss(),
+    dts({ include: ["lib"], rollupTypes: true }),
+  ],
   build: {
     lib: {
       entry: { main: "lib/main.ts" },

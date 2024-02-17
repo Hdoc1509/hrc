@@ -5,7 +5,11 @@ import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-  plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
+  plugins: [
+    react(),
+    libInjectCss(),
+    dts({ include: ["lib"], rollupTypes: true }),
+  ],
   build: {
     lib: {
       entry: { main: "lib/main.ts" },
