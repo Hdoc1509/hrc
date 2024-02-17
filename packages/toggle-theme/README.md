@@ -50,13 +50,39 @@ function App() {
 Finally, you will need to add your styles manually:
 
 ```css
-/* For light theme: */
-[data-theme="light"] { ... }
-[data-theme="light"] .my-class { ... }
+body {
+  background-color: var(--color-bg, #fff);
+  color: var(--color-text, #000);
+}
 
-/* For dark theme: */
-[data-theme="dark"] { ... }
-[data-theme="dark"] .my-class { ... }
+.my-class {
+  color: var(--my-color-text, #000);
+}
+
+/* FOR LIGHT THEME: */
+/* This is usually unnecessary. */
+[data-theme="light"] {
+  --color-bg: #fff;
+  --color-text: #000;
+  --my-color-text: #000;
+}
+[data-theme="light"] .my-class {
+  --my-color-text: #000;
+  /* or */
+  color: #000;
+}
+
+/* FOR DARK THEME: */
+[data-theme="dark"] {
+  --color-bg: #242424;
+  --color-text: #fff;
+  --my-color-text: #fff;
+}
+[data-theme="dark"] .my-class {
+  --my-color-text: #fff;
+  /* or */
+  color: #fff;
+}
 ```
 
 ## Props
