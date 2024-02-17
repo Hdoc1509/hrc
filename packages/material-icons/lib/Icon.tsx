@@ -20,11 +20,11 @@ export const Icon = ({
   disabled,
 }: IconProps): JSX.Element => {
   const iconClass = clsx(
-    variant == null ? "material-icons" : `material-icons-${variant}`,
+    variant ? `material-icons-${variant}` : "material-icons",
     {
       [`material-icons--${size}`]: size,
       [`material-icons--${color}`]: color,
-      ["material-icons--disabled"]: disabled,
+      "material-icons--disabled": disabled,
     },
     className,
   );
