@@ -1,6 +1,6 @@
 # @hdoc-react/type-utils
 
-Type utilities for packages of @hdoc-react
+Type utilities used by [component packages](https://github.com/Hdoc1509/react-components#packages) of [@hdoc-react/components](https://github.com/Hdoc1509/react-components)
 
 ## Installation
 
