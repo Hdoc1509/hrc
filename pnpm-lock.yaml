@@ -62,12 +62,12 @@ importers:
 
   packages/button:
     dependencies:
+      '@hdoc-react/type-utils':
+        specifier: workspace:^0.0.0
+        version: link:../type-utils
       clsx:
         specifier: 2.0.0
         version: 2.0.0
-      type-fest:
-        specifier: 4.3.1
-        version: 4.3.1
     devDependencies:
       '@hdoc-react/material-icons':
         specifier: workspace:*
@@ -105,12 +105,12 @@ importers:
 
   packages/input:
     dependencies:
+      '@hdoc-react/type-utils':
+        specifier: workspace:^0.0.0
+        version: link:../type-utils
       clsx:
         specifier: ^2.0.0
         version: 2.0.0
-      type-fest:
-        specifier: ^4.3.1
-        version: 4.3.1
     devDependencies:
       '@hdoc-react/material-icons':
         specifier: workspace:*
@@ -4534,11 +4534,6 @@ packages:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
     dev: true
-
-  /type-fest@4.3.1:
-    resolution: {integrity: sha512-pphNW/msgOUSkJbH58x8sqpq8uQj6b0ZKGxEsLKMUnGorRcDjrUaLS+39+/ub41JNTwrrMyJcUB8+YZs3mbwqw==}
-    engines: {node: '>=16'}
-    dev: false
 
   /typed-array-buffer@1.0.0:
     resolution: {integrity: sha512-Y8KTSIglk9OZEr8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}

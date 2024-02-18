@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import { autosizeTextarea } from "./utils";
-import { Simplify } from "type-fest";
+import { Simplify } from "@hdoc-react/type-utils";
 import type { InputProps } from "./Input";
 import type { ComponentProps } from "react";
 import "./Textarea.scss";

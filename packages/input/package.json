@@ -47,8 +47,8 @@
     "checkbox"
   ],
   "dependencies": {
-    "clsx": "^2.0.0",
-    "type-fest": "^4.3.1"
+    "@hdoc-react/type-utils": "workspace:^0.0.0",
+    "clsx": "^2.0.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",

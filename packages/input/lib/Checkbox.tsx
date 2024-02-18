@@ -2,7 +2,7 @@ import { clsx } from "clsx";
 import { ComponentProps, ReactNode } from "react";
 import { InputProps } from "./Input";
 import { CheckboxIcon, CheckboxIconChecked } from "./Icons";
-import { Simplify } from "type-fest";
+import { Simplify } from "@hdoc-react/type-utils";
 import "./Checkbox.scss";
 
 type Props = Simplify<

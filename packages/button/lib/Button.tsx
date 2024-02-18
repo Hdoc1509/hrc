@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import type { Simplify } from "type-fest";
+import type { Simplify } from "@hdoc-react/type-utils";
 import type { ComponentProps, ReactNode } from "react";
 
 export type ButtonProps = Simplify<

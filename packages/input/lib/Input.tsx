@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import { ComponentProps, ReactNode } from "react";
-import { Simplify } from "type-fest";
+import { Simplify } from "@hdoc-react/type-utils";
 import "./Input.scss";
 
 export type InputProps = Simplify<
