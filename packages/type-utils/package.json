@@ -1,0 +1,38 @@
+{
+  "name": "@hdoc-react/type-utils",
+  "private": false,
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
+  "description": "Type utilities for packages of @hdoc-react",
+  "types": "./index.d.ts",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hdoc1509/react-components.git",
+    "directory": "packages/type-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/Hdoc1509/react-components/issues"
+  },
+  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/type-utils#readme",
+  "keywords": [
+    "typescript",
+    "ts",
+    "types",
+    "uttility",
+    "util",
+    "utilities"
+  ],
+  "peerDependencies": {
+    "typescript": "*"
+  }
+}
