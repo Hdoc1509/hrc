@@ -2,7 +2,7 @@
 to: packages/<%= name %>/README.md
 ---
 <%
-  ComponentName = h.changeCase.title(name)
+  ComponentName = h.changeCase.pascal(name)
   ComponentKebab = h.changeCase.param(name)
   PackageName = `@hdoc-react/${name}`
 -%>

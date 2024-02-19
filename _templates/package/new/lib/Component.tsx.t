@@ -2,7 +2,7 @@
 to: packages/<%= name %>/lib/<%= h.changeCase.title(name) %>.tsx
 ---
 <%
-  ComponentName = h.changeCase.title(name)
+  ComponentName = h.changeCase.pascal(name)
   ComponentKebab = h.changeCase.param(name)
   ComponentCamel = h.changeCase.camel(name)
 -%>

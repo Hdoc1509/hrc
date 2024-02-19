@@ -1,6 +1,6 @@
 ---
 to: packages/<%= name %>/lib/main.ts
 ---
-<% ComponentTitle = h.changeCase.title(name) -%>
+<% ComponentName = h.changeCase.pascal(name) -%>
 import "./css/main.scss";
-export { <%= ComponentTitle %> } from './<%= ComponentTitle %>';
+export { <%= ComponentName %> } from './<%= ComponentName %>';

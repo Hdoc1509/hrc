@@ -2,7 +2,7 @@
 to: packages/<%= name %>/src/App.tsx
 ---
 <%
-  ComponentName = h.changeCase.title(name)
+  ComponentName = h.changeCase.pascal(name)
   ComponentKebab = h.changeCase.param(name)
 -%>
 import { useState } from "react";
