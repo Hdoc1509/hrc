@@ -7,7 +7,6 @@ to: packages/<%= name %>/lib/<%= h.changeCase.title(name) %>.tsx
   ComponentCamel = h.changeCase.camel(name)
 -%>
 import { clsx } from "clsx";
-import type { Simplify } from "type-fest";
 
 export const <%= ComponentName %> = ({
   size,
