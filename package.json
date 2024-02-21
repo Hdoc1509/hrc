@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc/react-components",
+  "name": "@hdoc-react/components",
   "private": true,
   "scripts": {
     "clean": "npkill",
