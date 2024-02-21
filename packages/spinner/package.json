@@ -36,6 +36,12 @@
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/spinner#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-spinner",
+    "spinner"
+  ],
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
