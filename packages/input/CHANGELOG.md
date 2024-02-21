@@ -1,5 +1,17 @@
 # @hdoc/react-input
 
+## 0.7.0
+
+### Minor Changes
+
+- cd02bc3: Replace dependency `type-fest` by `@hdoc-react/type-utils`
+
+### Patch Changes
+
+- fa6906b: Prevent input from take wrong hover styles when it is error variant
+- Updated dependencies [fcaf74b]
+  - @hdoc-react/type-utils@1.0.0
+
 ## 0.6.0
 
 **This release contains backwards-incompatible changes**. To avoid picking up

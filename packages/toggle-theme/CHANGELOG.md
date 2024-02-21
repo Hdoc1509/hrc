@@ -1,5 +1,11 @@
 # @hdoc/react-toggle-theme
 
+## 2.1.5
+
+### Patch Changes
+
+- 1e423d5: Explain how the theme is set
+
 ## 2.1.4
 
 ### Patch Changes

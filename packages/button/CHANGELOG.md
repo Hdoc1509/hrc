@@ -1,5 +1,19 @@
 # @hdoc/react-button
 
+## 2.2.0
+
+### Minor Changes
+
+- 1baa1c4: Simplify usage of `children` for `<ButtonIcon />` component
+- e3ade7e: Remove unnecessary import of `React.PropsWithChildren`
+- cd02bc3: Replace dependency `type-fest` by `@hdoc-react/type-utils`
+- 6f23307: Merge generated declaration files
+
+### Patch Changes
+
+- Updated dependencies [fcaf74b]
+  - @hdoc-react/type-utils@1.0.0
+
 ## 2.1.2
 
 ### Patch Changes

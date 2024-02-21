@@ -1,5 +1,12 @@
 # @hdoc/react-material-icons
 
+## 2.1.0
+
+### Minor Changes
+
+- 82a5c0b: Prevent icon from highlighting
+- 6f23307: Merge generated declaration files
+
 ## 2.0.1
 
 ### Patch Changes
