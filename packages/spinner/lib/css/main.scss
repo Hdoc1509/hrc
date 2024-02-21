@@ -1,0 +1,37 @@
+@use "@mono/ui/scss/colors" as *;
+@use "variables" as *;
+
+.spinner {
+  &--small {
+    --spinner-size: #{$size-small};
+  }
+  &--large {
+    --spinner-size: #{$size-large};
+  }
+
+  &--slow {
+    --spinner-animation-duration: #{$speed-slow};
+  }
+  &--fast {
+    --spinner-animation-duration: #{$speed-fast};
+  }
+
+  &--primary {
+    --spinner-color: var(--primary, #{$primary});
+  }
+  &--secondary {
+    --spinner-color: var(--secondary, #{$secondary});
+  }
+  &--error {
+    --spinner-color: var(--error, #{$error});
+  }
+  &--warning {
+    --spinner-color: var(--warning, #{$warning});
+  }
+  &--info {
+    --spinner-color: var(--info, #{$info});
+  }
+  &--success {
+    --spinner-color: var(--success, #{$success});
+  }
+}

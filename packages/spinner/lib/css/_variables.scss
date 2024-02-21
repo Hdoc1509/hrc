@@ -1,0 +1,11 @@
+$size: 40px;
+$size-small: $size * 0.75;
+$size-large: $size * 1.25;
+$spinner-size: var(--spinner-size, $size);
+
+$speed: 1.2s;
+$speed-slow: $speed * 1.25;
+$speed-fast: $speed * 0.75;
+$spinner-speed: var(--spinner-animation-duration, $speed);
+
+$spinner-color: var(--spinner-color, currentcolor);

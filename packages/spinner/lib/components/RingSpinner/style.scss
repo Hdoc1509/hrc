@@ -1,0 +1,42 @@
+// Taken and adapted from https://loading.io/css/
+@use "../../css/variables" as *;
+
+$delta: -0.125;
+
+.ring-spinner {
+  display: inline-block;
+  position: relative;
+  width: $spinner-size;
+  aspect-ratio: 1;
+
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+
+    width: calc($spinner-size * 0.8);
+    aspect-ratio: 1;
+    margin: calc($spinner-size * 0.1);
+    border: calc($spinner-size * 0.1) solid;
+    border-radius: 50%;
+    border-color: $spinner-color transparent transparent transparent;
+
+    animation: ring-spinner $spinner-speed cubic-bezier(0.5, 0, 0.5, 1) infinite;
+
+    &:nth-child(1) {
+      animation-delay: calc($delta * 3 * $spinner-speed);
+    }
+    &:nth-child(2) {
+      animation-delay: calc($delta * 2 * $spinner-speed);
+    }
+    &:nth-child(3) {
+      animation-delay: calc($delta * 1 * $spinner-speed);
+    }
+  }
+}
+
+@keyframes ring-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

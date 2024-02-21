@@ -186,6 +186,39 @@ importers:
         specifier: 1.2.0
         version: 1.2.0(vite@4.4.5)
 
+  packages/spinner:
+    devDependencies:
+      '@mono/ui':
+        specifier: workspace:*
+        version: link:../../libs/ui
+      '@vitejs/plugin-react-swc':
+        specifier: 3.3.2
+        version: 3.3.2(vite@4.4.5)
+      clsx:
+        specifier: 2.0.0
+        version: 2.0.0
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      sass:
+        specifier: 1.65.0
+        version: 1.65.0
+      typescript:
+        specifier: 5.0.2
+        version: 5.0.2
+      vite:
+        specifier: 4.4.5
+        version: 4.4.5(sass@1.65.0)
+      vite-plugin-dts:
+        specifier: 3.5.1
+        version: 3.5.1(typescript@5.0.2)(vite@4.4.5)
+      vite-plugin-lib-inject-css:
+        specifier: 1.2.0
+        version: 1.2.0(vite@4.4.5)
+
   packages/toggle-theme:
     devDependencies:
       '@hdoc-react/material-icons':
@@ -766,12 +799,42 @@ packages:
     resolution: {integrity: sha512-s9L+2pgNPSNlmvVf17ST7A5D9QnU2bikHfL/08Huf4Q0haw+DkaZCyiLLXyaECnD1Kyzl66a6WqPeqfGtgj4sQ==}
     dev: true
 
+  /@microsoft/api-extractor-model@7.28.0:
+    resolution: {integrity: sha512-QIMtUVm1tqiKG+M6ciFgRShcDoovyltaeg+CbyOnyr7SMrp6gg0ojK5/nToMqR9kAvsTS4QVgW4Twl50EoAjcw==}
+    dependencies:
+      '@microsoft/tsdoc': 0.14.2
+      '@microsoft/tsdoc-config': 0.16.2
+      '@rushstack/node-core-library': 3.60.0
+    transitivePeerDependencies:
+      - '@types/node'
+    dev: true
+
   /@microsoft/api-extractor-model@7.28.0(@types/node@20.5.0):
     resolution: {integrity: sha512-QIMtUVm1tqiKG+M6ciFgRShcDoovyltaeg+CbyOnyr7SMrp6gg0ojK5/nToMqR9kAvsTS4QVgW4Twl50EoAjcw==}
     dependencies:
       '@microsoft/tsdoc': 0.14.2
       '@microsoft/tsdoc-config': 0.16.2
       '@rushstack/node-core-library': 3.60.0(@types/node@20.5.0)
+    transitivePeerDependencies:
+      - '@types/node'
+    dev: true
+
+  /@microsoft/api-extractor@7.37.0:
+    resolution: {integrity: sha512-df/wffWpDhYRw7kzdxeHGsCpim+dC8aFiZlsJb4uFvVPWhBZpDzOhQxSUTFx3Df1ORY+/JjuPR3fDE9Hq+PHzQ==}
+    hasBin: true
+    dependencies:
+      '@microsoft/api-extractor-model': 7.28.0
+      '@microsoft/tsdoc': 0.14.2
+      '@microsoft/tsdoc-config': 0.16.2
+      '@rushstack/node-core-library': 3.60.0
+      '@rushstack/rig-package': 0.5.0
+      '@rushstack/ts-command-line': 4.16.0
+      colors: 1.2.5
+      lodash: 4.17.21
+      resolve: 1.22.6
+      semver: 7.5.4
+      source-map: 0.6.1
+      typescript: 5.0.4
     transitivePeerDependencies:
       - '@types/node'
     dev: true
@@ -960,6 +1023,23 @@ packages:
       '@types/estree': 1.0.1
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /@rushstack/node-core-library@3.60.0:
+    resolution: {integrity: sha512-PcyrqhILvzU+65wMFybQ2VeGNnU5JzhDq2OvUi3j6jPUxyllM7b2hrRUwCuVaYboewYzIbpzXFzgxe2K7ii1nw==}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+    dependencies:
+      colors: 1.2.5
+      fs-extra: 7.0.1
+      import-lazy: 4.0.0
+      jju: 1.4.0
+      resolve: 1.22.6
+      semver: 7.5.4
+      z-schema: 5.0.5
     dev: true
 
   /@rushstack/node-core-library@3.60.0(@types/node@20.5.0):
@@ -1318,7 +1398,7 @@ packages:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.86
-      vite: 4.4.5(@types/node@20.5.0)(sass@1.65.0)
+      vite: 4.4.5(sass@1.65.0)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1822,7 +1902,6 @@ packages:
   /clsx@2.0.0:
     resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
     engines: {node: '>=6'}
-    dev: false
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -4693,6 +4772,30 @@ packages:
       - supports-color
     dev: true
 
+  /vite-plugin-dts@3.5.1(typescript@5.0.2)(vite@4.4.5):
+    resolution: {integrity: sha512-wrrIvRTWq9xL0HKOUvJyJ+wivEoLsZ2GU2I2000v5tAAUtu9gE+5OUmUJ9yNkmyYz3tSPedkkiXHeb5jnnSXhg==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      typescript: '*'
+      vite: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+    dependencies:
+      '@microsoft/api-extractor': 7.37.0
+      '@rollup/pluginutils': 5.0.4
+      '@vue/language-core': 1.8.13(typescript@5.0.2)
+      debug: 4.3.4
+      kolorist: 1.8.0
+      typescript: 5.0.2
+      vite: 4.4.5(sass@1.65.0)
+      vue-tsc: 1.8.13(typescript@5.0.2)
+    transitivePeerDependencies:
+      - '@types/node'
+      - rollup
+      - supports-color
+    dev: true
+
   /vite-plugin-lib-inject-css@1.2.0(vite@4.4.5):
     resolution: {integrity: sha512-mELCOWG0f0auFkDGQHAL7Ks9oQ6RhB0xHlZ6GA0mTLMkkQcHCrZ8mkJFoH+ryZTNqxNLlYTLqbrnPClOO0Fq/Q==}
     peerDependencies:
@@ -4700,7 +4803,7 @@ packages:
     dependencies:
       magic-string: 0.30.3
       picocolors: 1.0.0
-      vite: 4.4.5(@types/node@20.5.0)(sass@1.65.0)
+      vite: 4.4.5(sass@1.65.0)
     dev: true
 
   /vite@4.4.5(@types/node@20.5.0)(sass@1.65.0):
@@ -4773,6 +4876,42 @@ packages:
       postcss: 8.4.30
       rollup: 3.29.2
       sass: 1.66.1
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
+  /vite@4.4.5(sass@1.65.0):
+    resolution: {integrity: sha512-4m5kEtAWHYr0O1Fu7rZp64CfO1PsRGZlD3TAB32UmQlpd7qg15VF7ROqGN5CyqN7HFuwr7ICNM2+fDWRqFEKaA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.18.20
+      postcss: 8.4.30
+      rollup: 3.29.2
+      sass: 1.65.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
