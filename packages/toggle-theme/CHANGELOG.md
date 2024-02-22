@@ -1,4 +1,4 @@
-# @hdoc/react-toggle-theme
+# @hdoc-react/toggle-theme
 
 ## 2.1.5
 

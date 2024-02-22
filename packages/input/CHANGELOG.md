@@ -1,4 +1,4 @@
-# @hdoc/react-input
+# @hdoc-react/input
 
 ## 0.7.0
 

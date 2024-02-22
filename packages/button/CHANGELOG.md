@@ -1,4 +1,4 @@
-# @hdoc/react-button
+# @hdoc-react/button
 
 ## 2.2.0
 

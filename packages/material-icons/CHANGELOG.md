@@ -1,4 +1,4 @@
-# @hdoc/react-material-icons
+# @hdoc-react/material-icons
 
 ## 2.1.0
 
