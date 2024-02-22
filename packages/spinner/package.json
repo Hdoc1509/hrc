@@ -42,6 +42,9 @@
     "react-spinner",
     "spinner"
   ],
+  "dependencies": {
+    "clsx": "2.0.0"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -49,7 +52,6 @@
   "devDependencies": {
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",
-    "clsx": "2.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.65.0",

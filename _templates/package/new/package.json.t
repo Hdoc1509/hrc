@@ -40,6 +40,9 @@ to: packages/<%= name %>/package.json
     "url": "https://github.com/Hdoc1509/react-components/issues"
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/<%= name %>#readme",
+  "dependencies": {
+    "clsx": "2.0.0"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -49,7 +52,6 @@ to: packages/<%= name %>/package.json
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",
-    "clsx": "2.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.65.0",
