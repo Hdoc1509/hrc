@@ -1,5 +1,11 @@
 # @hdoc-react/button
 
+## 2.3.0
+
+### Minor Changes
+
+- 2be9f53: Update compatible version of dependencies
+
 ## 2.2.0
 
 ### Minor Changes

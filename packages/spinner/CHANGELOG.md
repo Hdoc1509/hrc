@@ -1,5 +1,11 @@
 # @hdoc-react/spinner
 
+## 0.2.0
+
+### Minor Changes
+
+- 2be9f53: Update compatible version of dependencies
+
 ## 0.1.1
 
 ### Patch Changes
