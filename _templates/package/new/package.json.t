@@ -41,7 +41,7 @@ to: packages/<%= name %>/package.json
   },
   "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/<%= name %>#readme",
   "dependencies": {
-    "clsx": "2.0.0"
+    "clsx": "^2.0.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
