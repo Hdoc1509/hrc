@@ -7,7 +7,8 @@
   "description": "Type utilities used by component packages of @hdoc-react/components",
   "types": "./index.d.ts",
   "files": [
-    "src"
+    "src",
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
