@@ -1,5 +1,12 @@
 # @hdoc-react/input
 
+## 0.7.1
+
+### Patch Changes
+
+- Updated dependencies [7e2bf19]
+  - @hdoc-react/type-utils@1.0.1
+
 ## 0.7.0
 
 ### Minor Changes

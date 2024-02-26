@@ -1,5 +1,12 @@
 # @hdoc-react/button
 
+## 2.3.1
+
+### Patch Changes
+
+- Updated dependencies [7e2bf19]
+  - @hdoc-react/type-utils@1.0.1
+
 ## 2.3.0
 
 ### Minor Changes

@@ -1,7 +1,7 @@
 {
   "name": "@hdoc-react/button",
   "private": false,
-  "version": "2.3.0",
+  "version": "2.3.1",
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
@@ -43,7 +43,7 @@
     "button"
   ],
   "dependencies": {
-    "@hdoc-react/type-utils": "workspace:^1.0.0",
+    "@hdoc-react/type-utils": "workspace:^1.0.1",
     "clsx": "^2.0.0"
   },
   "peerDependencies": {

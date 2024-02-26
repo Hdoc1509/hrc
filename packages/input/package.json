@@ -1,7 +1,7 @@
 {
   "name": "@hdoc-react/input",
   "private": false,
-  "version": "0.7.0",
+  "version": "0.7.1",
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
@@ -47,7 +47,7 @@
     "checkbox"
   ],
   "dependencies": {
-    "@hdoc-react/type-utils": "workspace:^1.0.0",
+    "@hdoc-react/type-utils": "workspace:^1.0.1",
     "clsx": "^2.0.0"
   },
   "peerDependencies": {
