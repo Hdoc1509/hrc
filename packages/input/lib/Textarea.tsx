@@ -43,7 +43,7 @@ export const Textarea = ({
 
   return (
     <label className={labelClass}>
-      {required ? `${label} *` : label}
+      {required && label ? `${label} *` : label}
       <textarea
         className={textareaClass}
         required={required}

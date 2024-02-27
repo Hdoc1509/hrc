@@ -59,7 +59,7 @@ export const Checkbox = ({
           {iconChecked ?? <CheckboxIconChecked />}
         </span>
       </div>
-      {required ? `${label} *` : label}
+      {required && label ? `${label} *` : label}
     </label>
   );
 };

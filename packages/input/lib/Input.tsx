@@ -52,7 +52,7 @@ export const Input = ({
 
   return (
     <label className={labelClass}>
-      {required ? `${label} *` : label}
+      {required && label ? `${label} *` : label}
       <div className={inputWrapperClass}>
         {iconStart}
         <input disabled={disabled} required={required} {...restProps} />
