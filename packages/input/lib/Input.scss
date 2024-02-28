@@ -13,7 +13,7 @@
   outline: 1px solid transparent;
   padding: var(--input-padding, 16px 12px);
 
-  &:hover:not(&--disabled):not(:focus-within):not(&--error) {
+  &:hover {
     --input-border-color: var(--input-border-color-hover, #{$label-text});
   }
 
@@ -23,7 +23,7 @@
   }
 
   &--error,
-  &--error:hover:not(&--disabled),
+  &--error:hover,
   &--error:focus-within {
     --input-border-color: var(--error, #{$error});
   }
@@ -31,7 +31,7 @@
     outline-color: var(--error, #{$error});
   }
 
-  &--disabled {
+  &--disabled.input-wrapper {
     --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
     --input-bg: var(--input-bg-disabled, #{$input-bg-disabled});
     --input-border-color: var(
