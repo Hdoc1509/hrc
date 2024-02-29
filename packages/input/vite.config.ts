@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [
     react(),
     libInjectCss(),
-    dts({ include: ["lib"], exclude: ["lib/{utils.ts,Icons.tsx}"] }),
+    dts({
+      include: ["lib"],
+      exclude: ["lib/utils.ts", "lib/Icons.tsx", "lib/Label.tsx"],
+    }),
   ],
   build: {
     lib: {

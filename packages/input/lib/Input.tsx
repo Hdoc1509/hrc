@@ -1,4 +1,5 @@
 import { clsx } from "clsx";
+import { Label } from "./Label";
 import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "@hdoc-react/type-utils";
 import "./Input.scss";
@@ -31,14 +32,6 @@ export const Input = ({
   required,
   ...restProps
 }: InputProps): JSX.Element => {
-  const labelClass = clsx(
-    "label",
-    {
-      "label--error": error,
-      "label--fullwidth": fullWidth,
-    },
-    labelClassName,
-  );
   const inputWrapperClass = clsx(
     "input-wrapper",
     {
@@ -51,7 +44,7 @@ export const Input = ({
   );
 
   return (
-    <label className={labelClass}>
+    <Label error={error} fullwidth={fullWidth} className={labelClassName}>
       {required && label ? `${label} *` : label}
       <div className={inputWrapperClass}>
         {iconStart}
@@ -59,6 +52,6 @@ export const Input = ({
         {iconEnd}
       </div>
       {helperText && <span className="helper-text">{helperText}</span>}
-    </label>
+    </Label>
   );
 };

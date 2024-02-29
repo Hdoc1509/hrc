@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import { autosizeTextarea } from "./utils";
+import { Label } from "./Label";
 import { Simplify } from "@hdoc-react/type-utils";
 import type { InputProps } from "./Input";
 import type { ComponentProps } from "react";
@@ -24,14 +25,6 @@ export const Textarea = ({
   onChange,
   ...restProps
 }: Props): JSX.Element => {
-  const labelClass = clsx(
-    "label",
-    {
-      "label--error": error,
-      "label--fullwidth": fullWidth,
-    },
-    labelClassName,
-  );
   const textareaClass = clsx(
     "textarea",
     {
@@ -42,7 +35,7 @@ export const Textarea = ({
   );
 
   return (
-    <label className={labelClass}>
+    <Label error={error} fullwidth={fullWidth} className={labelClassName}>
       {required && label ? `${label} *` : label}
       <textarea
         className={textareaClass}
@@ -54,6 +47,6 @@ export const Textarea = ({
         {...restProps}
       />
       {helperText && <span className="helper-text">{helperText}</span>}
-    </label>
+    </Label>
   );
 };

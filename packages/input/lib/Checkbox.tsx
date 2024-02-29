@@ -1,8 +1,9 @@
 import { clsx } from "clsx";
-import { ComponentProps, ReactNode } from "react";
-import { InputProps } from "./Input";
+import { Label } from "./Label";
 import { CheckboxIcon, CheckboxIconChecked } from "./Icons";
+import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "@hdoc-react/type-utils";
+import { InputProps } from "./Input";
 import "./Checkbox.scss";
 
 type Props = Simplify<
@@ -28,13 +29,6 @@ export const Checkbox = ({
   required,
   ...restProps
 }: Props): JSX.Element => {
-  const labelClass = clsx(
-    ["label", "label--checkbox"],
-    {
-      "label--disabled": disabled,
-    },
-    labelClassName,
-  );
   const wrapperClass = clsx(
     "checkbox-wrapper",
     {
@@ -46,7 +40,7 @@ export const Checkbox = ({
   );
 
   return (
-    <label className={labelClass}>
+    <Label disabled={disabled} className={labelClassName} checkbox>
       <div className={wrapperClass}>
         <input
           type="checkbox"
@@ -60,6 +54,6 @@ export const Checkbox = ({
         </span>
       </div>
       {required && label ? `${label} *` : label}
-    </label>
+    </Label>
   );
 };
