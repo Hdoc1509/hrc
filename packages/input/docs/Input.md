@@ -108,6 +108,7 @@ body.dark,
   --input-font-size: 16px;
   --input-font-weight: 600;
   --input-text: #000;
+  --input-text-disabled: #888;
 
   /* ERROR VARIANT */
   --error: #f44336;

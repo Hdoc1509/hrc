@@ -39,6 +39,7 @@
 
   &:disabled {
     --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
+    --textarea-text: var(--textarea-text-disabled, #{$input-border-color});
     --textarea-bg: var(--textarea-bg-disabled, #{$input-bg-disabled});
     --textarea-border-color: var(
       --textarea-border-color-disabled,

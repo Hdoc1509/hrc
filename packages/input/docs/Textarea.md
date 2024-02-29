@@ -83,6 +83,7 @@ body.dark,
   --textarea-font-size: 16px;
   --textarea-font-weight: 600;
   --textarea-text: #000;
+  --textarea-text-disabled: #888;
 
   /* ERROR VARIANT */
   --error: #f44336;

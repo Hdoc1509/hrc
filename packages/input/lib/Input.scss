@@ -33,6 +33,7 @@
 
   &--disabled.input-wrapper {
     --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
+    --input-text: var(--input-text-disabled, #{$input-border-color});
     --input-bg: var(--input-bg-disabled, #{$input-bg-disabled});
     --input-border-color: var(
       --input-border-color-disabled,
