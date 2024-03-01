@@ -33,12 +33,12 @@ export const Input = ({
   ...restProps
 }: InputProps): JSX.Element => {
   const inputWrapperClass = clsx(
-    "input-wrapper",
+    "input",
     {
-      "input-wrapper--error": error,
-      "input-wrapper--disabled": disabled,
-      [`input-wrapper--${size}`]: size,
-      "input-wrapper--fullwidth": fullWidth,
+      "input--error": error,
+      "input--disabled": disabled,
+      [`input--${size}`]: size,
+      "input--fullwidth": fullWidth,
     },
     className,
   );
@@ -48,7 +48,12 @@ export const Input = ({
       {required && label ? `${label} *` : label}
       <div className={inputWrapperClass}>
         {iconStart}
-        <input disabled={disabled} required={required} {...restProps} />
+        <input
+          className="input__inner"
+          disabled={disabled}
+          required={required}
+          {...restProps}
+        />
         {iconEnd}
       </div>
       {helperText && <span className="helper-text">{helperText}</span>}

@@ -117,39 +117,39 @@ body.dark,
 
 ## CSS Clasess
 
-`.input-wrapper`
+`.input`
 
-The styles for the wrapper of the input. This is the direct parent of inner
-`input` element.
+The styles for the wrapper of the input. This is the direct parent of
+`.input__inner` element.
 
 :warning: **Classnames passed with `className` prop will be applied to this wrapper.**
 
 ---
 
-`.input-wrapper--error`
+`.input--error`
 
 The error styles for the input wrapper
 
 ---
 
-`.input-wrapper--disabled`
+`.input--disabled`
 
 The disabled styles for the input wrapper
 
 ---
 
-`.input-wrapper--small`
+`.input--small`
 
 The small styles for the input wrapper
 
 ---
 
-`.input-wrapper--fullwidth`
+`.input--fullwidth`
 
 The full width styles for the input wrapper
 
 ---
 
-`.input-wrapper > input`
+`.input__inner`
 
-The base styles for the inner `input` element
+The base styles for the `.input__inner` element, i.e., the `input` html element.

@@ -1,7 +1,7 @@
 @use "@mono/ui/scss/colors" as *;
 @use "css/abstratcs/colors" as *;
 
-.input-wrapper {
+.input {
   display: flex;
   gap: var(--input-gap, 14px);
 
@@ -31,7 +31,7 @@
     outline-color: var(--error, #{$error});
   }
 
-  &--disabled.input-wrapper {
+  &--disabled.input {
     --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
     --input-text: var(--input-text-disabled, #{$input-border-color});
     --input-bg: var(--input-bg-disabled, #{$input-bg-disabled});
@@ -49,7 +49,7 @@
     width: 100%;
   }
 
-  > input {
+  .input__inner {
     width: 100%;
     // flex-shrink: 1;
     box-sizing: border-box;
