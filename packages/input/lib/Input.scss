@@ -5,6 +5,7 @@
   display: flex;
   gap: var(--input-gap, 14px);
 
+  // TODO: Remove fixed width
   width: 200px;
   background-color: var(--input-bg, transparent);
   border: 1px solid var(--input-border-color, $input-border-color);
@@ -12,6 +13,9 @@
   box-sizing: border-box;
   outline: 1px solid transparent;
   padding: var(--input-padding, 16px 12px);
+
+  font-size: var(--input-font-size, 14px);
+  font-weight: var(--input-font-weight, 500);
 
   &:hover {
     --input-border-color: var(--input-border-color-hover, #{$label-text});
@@ -61,10 +65,7 @@
     margin: 0;
 
     color: var(--input-text, #000);
-    font-family: inherit;
-    font-size: var(--input-font-size, 14px);
-    font-weight: var(--input-font-weight, 500);
-    line-height: 20px;
+    font: inherit;
 
     &::placeholder {
       color: var(--placeholder-color, $input-border-color);
