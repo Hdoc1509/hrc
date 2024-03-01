@@ -106,9 +106,10 @@ The styles for the helper text
 
 ## Reducing Build Size
 
-The default entry point includes CSS for all of the components. If you are
-only using a few components, you can reduce the build size by importing only
-the components you need:
+The default entry point includes CSS for all of the components. You have two
+options to reduce the build size:
+
+### Option 1: Use path imports
 
 ```diff
 - import { Input, Textarea } from "@hdoc-react/input";
@@ -116,28 +117,16 @@ the components you need:
 + import { Textarea } from "@hdoc-react/input/dist/Textarea";
 ```
 
-Or, you can use `babel-plugin-import` to automatically import the components:
+### Option 2: Use `babel-plugin-import`
+
+Install the plugin with `npm install -D babel-plugin-import`
+
+Create a `.babelrc.js` file in your project root with the following content:
 
 ```js
-// config for babel
-{
-  ...otherConfig,
-  plugins: [
-    [
-      "import",
-      {
-        libraryName: "@hdoc-react/input",
-        libraryDirectory: "dist",
-        camel2DashComponentName: false,
-        transformToDefaultImport: false,
-      },
-    ],
-  ]
-}
-```
+import inputConfig from "@hdoc-react/input/config/babel-import.js";
 
-Additionally, you will need to import the global CSS in your entry file:
+const plugins = [...otherPlugins, inputConfig];
 
-```js
-import "@hdoc-react/input/dist/main.css";
+module.exports = { plugins };
 ```
