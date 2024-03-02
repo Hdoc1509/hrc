@@ -12,7 +12,7 @@
   font-size: var(--checkbox-size, 1rem);
   color: var(--checkbox-color, #333);
 
-  &:hover:not(&--disabled),
+  &:hover,
   &:focus-within {
     background-color: var(--checkbox-bg-hover, rgb(0, 0, 0, 0.1));
   }
@@ -37,6 +37,7 @@
   }
 
   &--disabled {
+    --checkbox-bg-hover: transparent;
     --checkbox-checked-color: var(
       --checkbox-color-disabled,
       rgba(0, 0, 0, 0.4)
