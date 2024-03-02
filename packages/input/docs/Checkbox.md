@@ -99,8 +99,8 @@ body.dark,
 
 `.checkbox`
 
-The styles for the wrapper of the checkbox. This is the direct parent of inner
-`input` and `.checkbox` elements.
+The styles for the wrapper of the checkbox. This is the direct parent of
+`.checkbox__inner` and `.checkbox__icon` elements.
 
 :warning: **Classname passed with `className` prop will be applied to this wrapper.**
 
