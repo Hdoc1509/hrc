@@ -37,7 +37,7 @@
   }
 
   &--disabled {
-    --checkbox-bg-hover: transparent;
+    pointer-events: none;
     --checkbox-checked-color: var(
       --checkbox-color-disabled,
       rgba(0, 0, 0, 0.4)
