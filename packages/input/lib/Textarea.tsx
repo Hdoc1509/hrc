@@ -1,10 +1,16 @@
 import { clsx } from "clsx";
-import { autosizeTextarea } from "./utils";
 import { Label } from "./Label";
 import { Simplify } from "@hdoc-react/type-utils";
 import type { InputProps } from "./Input";
 import type { ComponentProps } from "react";
 import "./Textarea.scss";
+
+const autosizeTextarea = (textarea: HTMLTextAreaElement) => {
+  textarea.style.height = "auto";
+  textarea.style.height = `${textarea.scrollHeight + 2}px`;
+  // NOTE: ↓ This for automatically taking into consideration the border
+  // textarea.style.height = `${textarea.scrollHeight + Number(getComputedStyle(textarea).borderWidth.slice(0, -2)) * 2}px`
+};
 
 type Props = Simplify<
   Pick<

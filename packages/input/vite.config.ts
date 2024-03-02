@@ -10,7 +10,7 @@ export default defineConfig({
     libInjectCss(),
     dts({
       include: ["lib"],
-      exclude: ["lib/utils.ts", "lib/Icons.tsx", "lib/Label.tsx"],
+      exclude: ["lib/Icons.tsx", "lib/Label.tsx"],
     }),
   ],
   build: {
