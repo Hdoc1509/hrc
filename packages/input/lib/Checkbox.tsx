@@ -30,11 +30,11 @@ export const Checkbox = ({
   ...restProps
 }: Props): JSX.Element => {
   const wrapperClass = clsx(
-    "checkbox-wrapper",
+    "checkbox",
     {
-      [`checkbox-wrapper--${size}`]: size,
-      "checkbox-wrapper--disabled": disabled,
-      [`checkbox-wrapper--${color}`]: color,
+      [`checkbox--${size}`]: size,
+      "checkbox--disabled": disabled,
+      [`checkbox--${color}`]: color,
     },
     className,
   );
@@ -43,12 +43,13 @@ export const Checkbox = ({
     <Label disabled={disabled} className={labelClassName} checkbox>
       <div className={wrapperClass}>
         <input
+          className="checkbox__inner"
           type="checkbox"
           disabled={disabled}
           required={required}
           {...restProps}
         />
-        <span className="checkbox">
+        <span className="checkbox__icon">
           {icon ?? <CheckboxIcon />}
           {iconChecked ?? <CheckboxIconChecked />}
         </span>

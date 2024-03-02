@@ -10,7 +10,7 @@ import { Checkbox } from "@hdoc-react/input";
 
 **All props are optional unless otherwise specified.**
 
-**Additionally it can receive all attributes of an `input` element expect the
+**Additionally it can receive all attributes of an `input` element except the
 `type` attribute.**
 
 `icon`
@@ -97,7 +97,7 @@ body.dark,
 
 ## CSS Classes
 
-`.checkbox-wrapper`
+`.checkbox`
 
 The styles for the wrapper of the checkbox. This is the direct parent of inner
 `input` and `.checkbox` elements.
@@ -106,66 +106,67 @@ The styles for the wrapper of the checkbox. This is the direct parent of inner
 
 ---
 
-`.checkbox-wrapper--disabled`
+`.checkbox--disabled`
 
 The disabled styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--primary`
+`.checkbox--primary`
 
 The primary styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--secondary`
+`.checkbox--secondary`
 
 The secondary styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--error`
+`.checkbox--error`
 
 The error styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--info`
+`.checkbox--info`
 
 The info styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--warning`
+`.checkbox--warning`
 
 The warning styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--success`
+`.checkbox--success`
 
 The success styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--small`
+`.checkbox--small`
 
 The small styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper--large`
+`.checkbox--large`
 
 The large styles for the checkbox.
 
 ---
 
-`.checkbox-wrapper > input`
+`.checkbox__inner`
 
-The base styles for the inner `input` element.
+The base styles for the `input__inner` element, i.e., the `input` html element.
 
 ---
 
-`.checkbox-wrapper > .checkbox`
+`.checkbox__icon`
 
-The base styles for the inner `.checkbox` element.
+The base styles for the `.checkbox__icon` element. It is responsible for
+rendering the icons when the checkbox is checked or not.

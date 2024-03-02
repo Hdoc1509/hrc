@@ -1,8 +1,8 @@
 @use "@mono/ui/scss/colors" as *;
 
-.checkbox-wrapper {
+.checkbox {
   display: grid;
-  place-items: center;
+  place-items: center; /* Is this necessary? */
 
   width: 1.5em;
   height: 1.5em;
@@ -51,18 +51,18 @@
     --checkbox-size: 1.25rem;
   }
 
-  > input {
+  &__inner {
     grid-area: 1 / 1;
     margin: 0;
     opacity: 0;
 
-    &:checked + .checkbox {
+    &:checked + .checkbox__icon {
       --__icon-display: none;
       --__icon-checked-display: inline;
     }
   }
 
-  > .checkbox {
+  &__icon {
     grid-area: 1 / 1;
     display: flex;
     padding: 0 !important;
