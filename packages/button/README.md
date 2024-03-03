@@ -30,7 +30,7 @@ function App() {
       <Button size="large" color="primary" iconEnd={<DeleteIcon />}>
         Delete
       </Button>
-      <ButtonIcon color="danger">
+      <ButtonIcon color="error">
         <FavoriteIcon />
       </ButtonIcon
     </>
