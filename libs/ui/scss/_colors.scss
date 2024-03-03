@@ -27,3 +27,42 @@ $warning: #f57c00;
 $warning-hover: #f55300;
 $warning-text: #fff;
 $warning-transparent: rgba($warning, 15%);
+
+$colors: (
+  primary: (
+    main: $primary,
+    hover: $primary-hover,
+    text: $primary-text,
+    transparent: $primary-transparent,
+  ),
+  secondary: (
+    main: $secondary,
+    hover: $secondary-hover,
+    text: $secondary-text,
+    transparent: $secondary-transparent,
+  ),
+  error: (
+    main: $error,
+    hover: $error-hover,
+    text: $error-text,
+    transparent: $error-transparent,
+  ),
+  info: (
+    main: $info,
+    hover: $info-hover,
+    text: $info-text,
+    transparent: $info-transparent,
+  ),
+  warning: (
+    main: $warning,
+    hover: $warning-hover,
+    text: $warning-text,
+    transparent: $warning-transparent,
+  ),
+  success: (
+    main: $success,
+    hover: $success-hover,
+    text: $success-text,
+    transparent: $success-transparent,
+  ),
+);
