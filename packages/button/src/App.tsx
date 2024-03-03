@@ -24,7 +24,7 @@ function App() {
         onClick={toggleError}
         iconEnd={<Icon name="error_outline" />}
       >
-        Toggle error - @hdoc/react-material-icons
+        Toggle error - @hdoc-react/material-icons
       </Button>
       <div className="button-examples">
         <ButtonExample disabled={error} />
@@ -74,31 +74,42 @@ function App() {
         </Button>
       </div>
       <div className="button-icons">
-        <ButtonIcon color="primary" disabled={error}>
-          <Icon name="check" size="small" />
+        <ButtonIcon color="primary" size="small" disabled={error}>
+          <Icon name="check" />
         </ButtonIcon>
         <ButtonIcon color="secondary" disabled={error}>
           <Icon name="delete" />
         </ButtonIcon>
-        <ButtonIcon color="error" disabled={error}>
-          <Icon name="error" size="large" />
+        <ButtonIcon color="error" size="large" disabled={error}>
+          <Icon name="error" />
         </ButtonIcon>
-        <ButtonIcon color="info" disabled={error} variant="outline">
-          <Icon name="map" size="large" />
+        <ButtonIcon
+          color="info"
+          size="large"
+          disabled={error}
+          variant="outline"
+        >
+          <Icon name="map" />
         </ButtonIcon>
         <ButtonIcon color="warning" disabled={error} variant="outline">
           <Icon name="settings" />
         </ButtonIcon>
-        <ButtonIcon color="success" disabled={error} variant="outline">
-          <Icon name="search" size="small" />
+        <ButtonIcon
+          color="success"
+          size="small"
+          disabled={error}
+          variant="outline"
+        >
+          <Icon name="search" />
         </ButtonIcon>
         <ButtonIcon
           color="primary"
           disabled={error}
           variant="outline"
+          size="small"
           fullRounded
         >
-          <Icon name="check" size="small" />
+          <Icon name="check" />
         </ButtonIcon>
         <ButtonIcon
           color="secondary"
@@ -112,18 +123,19 @@ function App() {
           color="error"
           disabled={error}
           variant="outline"
+          size="large"
           fullRounded
         >
-          <Icon name="error" size="large" />
+          <Icon name="error" />
         </ButtonIcon>
-        <ButtonIcon color="info" disabled={error} fullRounded>
-          <Icon name="map" size="large" />
+        <ButtonIcon color="info" size="large" disabled={error} fullRounded>
+          <Icon name="map" />
         </ButtonIcon>
         <ButtonIcon color="warning" disabled={error} fullRounded>
           <Icon name="settings" />
         </ButtonIcon>
-        <ButtonIcon color="success" disabled={error} fullRounded>
-          <Icon name="search" size="small" />
+        <ButtonIcon color="success" size="small" disabled={error} fullRounded>
+          <Icon name="search" />
         </ButtonIcon>
       </div>
     </div>
