@@ -1,3 +1,3 @@
 import "./scss/main.scss";
-export { Button } from "./Button";
-export { ButtonIcon } from "./ButtonIcon";
+export { Button } from "./components/Button";
+export { ButtonIcon } from "./components/ButtonIcon";
