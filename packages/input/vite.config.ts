@@ -1,6 +1,7 @@
 // https://vitejs.dev/config/
 import { defineConfig } from "vite";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
+import { resolve } from "path";
 import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react-swc";
 
@@ -30,6 +31,11 @@ export default defineConfig({
         assetFileNames: "[name][extname]",
         entryFileNames: "[name].js",
       },
+    },
+  },
+  resolve: {
+    alias: {
+      "@scss": resolve(__dirname, "lib/scss"),
     },
   },
 });
