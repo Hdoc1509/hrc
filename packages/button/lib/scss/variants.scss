@@ -1,6 +1,6 @@
 @use "@mono/ui/scss/colors" as *;
 @use "utils";
-@use "abstracts/colors" as *;
+@use "colors" as *;
 
 .button {
   @each $color, $_ in $colors {
