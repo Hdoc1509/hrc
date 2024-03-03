@@ -1,9 +1,9 @@
 import { clsx } from "clsx";
-import { Label } from "./Label";
+import { Label } from "../Label";
 import { Simplify } from "@hdoc-react/type-utils";
-import type { InputProps } from "./Input";
+import type { InputProps } from "../Input";
 import type { ComponentProps } from "react";
-import "./Textarea.scss";
+import "./style.scss";
 
 const autosizeTextarea = (textarea: HTMLTextAreaElement) => {
   textarea.style.height = "auto";

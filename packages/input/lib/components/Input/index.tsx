@@ -1,8 +1,8 @@
 import { clsx } from "clsx";
-import { Label } from "./Label";
+import { Label } from "../Label";
 import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "@hdoc-react/type-utils";
-import "./Input.scss";
+import "./style.scss";
 
 export type InputProps = Simplify<
   Partial<{

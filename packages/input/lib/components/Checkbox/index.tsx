@@ -1,10 +1,10 @@
 import { clsx } from "clsx";
-import { Label } from "./Label";
-import { CheckboxIcon, CheckboxIconChecked } from "./Icons";
+import { Label } from "../Label";
+import { CheckboxIcon, CheckboxIconChecked } from "../Icons";
 import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "@hdoc-react/type-utils";
-import { InputProps } from "./Input";
-import "./Checkbox.scss";
+import { InputProps } from "../Input";
+import "./style.scss";
 
 type Props = Simplify<
   Partial<{

@@ -1,6 +1,6 @@
 // https://vitejs.dev/config/
 import { defineConfig } from "vite";
-import { libInjectCss } from "vite-plugin-lib-inject-css";
+import { libInjectCss, scanEntries } from "vite-plugin-lib-inject-css";
 import { resolve } from "path";
 import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react-swc";
@@ -11,16 +11,14 @@ export default defineConfig({
     libInjectCss(),
     dts({
       include: ["lib"],
-      exclude: ["lib/Icons.tsx", "lib/Label.tsx"],
+      exclude: ["lib/components/Icons.tsx", "lib/components/Label/index.tsx"],
     }),
   ],
   build: {
     lib: {
       entry: {
         main: "lib/main.ts",
-        Checkbox: "lib/Checkbox.tsx",
-        Input: "lib/Input.tsx",
-        Textarea: "lib/Textarea.tsx",
+        ...scanEntries("lib/components"),
       },
       formats: ["es"],
     },
@@ -28,7 +26,7 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react/jsx-runtime", "clsx"],
       output: {
-        assetFileNames: "[name][extname]",
+        assetFileNames: "css/[name][extname]",
         entryFileNames: "[name].js",
       },
     },

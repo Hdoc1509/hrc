@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import { PropsWithChildren } from "react";
-import "./Label.scss";
+import "./style.scss";
 
 type Props = {
   className?: string;
