@@ -5,7 +5,6 @@
   display: flex;
   gap: var(--input-gap, 14px);
 
-  // TODO: Remove fixed width
   width: 200px;
   background-color: var(--input-bg, transparent);
   border: 1px solid var(--input-border-color, $input-border-color);
@@ -75,5 +74,11 @@
 
   > :not(input) {
     flex-shrink: 0;
+  }
+
+  > svg {
+    font-size: 1.71rem;
+    width: 1em;
+    height: 1em;
   }
 }
