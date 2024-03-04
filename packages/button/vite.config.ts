@@ -15,6 +15,10 @@ export default defineConfig({
     copyPublicDir: false,
     rollupOptions: {
       external: ["react", "react/jsx-runtime", "clsx"],
+      output: {
+        assetFileNames: "css/[name][extname]",
+        entryFileNames: "[name].js",
+      },
     },
   },
   resolve: {
