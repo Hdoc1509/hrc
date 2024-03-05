@@ -1,0 +1,15 @@
+{
+  "name": "@hdoc-react/vite-config",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsc --watch --project tsconfig.json"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  }
+}
