@@ -22,7 +22,7 @@ const config = {
   alias: (dirname: string) => ({
     "@scss": resolve(dirname, "lib/scss"),
   }),
-  entries: (dirname: string) => ({
+  entries: (dirname: string): { main: string; [key: string]: string } => ({
     main: "lib/main.ts",
     ...scanEntries(`${dirname}/lib/components`),
   }),

@@ -14,6 +14,7 @@ declare const config: {
         "@scss": string;
     };
     entries: (dirname: string) => {
+        [key: string]: string;
         main: string;
     };
 };
