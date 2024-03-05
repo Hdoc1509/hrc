@@ -1,12 +1,11 @@
 import { scanEntries } from "vite-plugin-lib-inject-css";
 import { resolve } from "path";
 const config = {
-    rollupOptions: ({ clsx, external } = {}) => ({
+    rollupOptions: ({ extraDeps } = {}) => ({
         external: [
             "react",
             "react/jsx-runtime",
-            ...(clsx ? ["clsx"] : []),
-            ...(external || []),
+            ...(extraDeps ? [extraDeps].flat() : []),
         ],
         output: {
             assetFileNames: "css/[name][extname]",

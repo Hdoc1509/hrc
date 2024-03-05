@@ -2,17 +2,18 @@ import { scanEntries } from "vite-plugin-lib-inject-css";
 import { resolve } from "path";
 
 type RollupOptions = {
-  clsx?: boolean;
-  external?: string[];
+  /** Set extra external dependencies
+   * It already includes `react` and `react/jsx-runtime`
+   */
+  extraDeps?: string | string[];
 };
 
 const config = {
-  rollupOptions: ({ clsx, external }: RollupOptions = {}) => ({
+  rollupOptions: ({ extraDeps }: RollupOptions = {}) => ({
     external: [
       "react",
       "react/jsx-runtime",
-      ...(clsx ? ["clsx"] : []),
-      ...(external || []),
+      ...(extraDeps ? [extraDeps].flat() : []),
     ],
     output: {
       assetFileNames: "css/[name][extname]",

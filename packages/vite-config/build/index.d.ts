@@ -1,9 +1,11 @@
 type RollupOptions = {
-    clsx?: boolean;
-    external?: string[];
+    /** Set extra external dependencies
+     * It already includes `react` and `react/jsx-runtime`
+     */
+    extraDeps?: string | string[];
 };
 declare const config: {
-    rollupOptions: ({ clsx, external }?: RollupOptions) => {
+    rollupOptions: ({ extraDeps }?: RollupOptions) => {
         external: string[];
         output: {
             assetFileNames: string;
