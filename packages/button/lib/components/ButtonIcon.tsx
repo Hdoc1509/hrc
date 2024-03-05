@@ -2,7 +2,7 @@ import clsx from "clsx";
 import type { Simplify } from "@hdoc-react/type-utils";
 import type { ButtonProps } from "./Button";
 
-type Props = Simplify<Omit<ButtonProps, "iconStart" | "iconEnd" | "text">>;
+type Props = Simplify<Omit<ButtonProps, "iconStart" | "iconEnd">>;
 
 export const ButtonIcon = ({
   disableShadow,
