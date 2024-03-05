@@ -1,6 +1,6 @@
 import clsx from "clsx";
+import { Button, ButtonProps } from "../Button";
 import type { Simplify } from "@hdoc-react/type-utils";
-import { Button, ButtonProps } from "./Button";
 
 type Props = Simplify<Omit<ButtonProps, "iconStart" | "iconEnd">>;
 
@@ -11,8 +11,8 @@ export const ButtonIcon = ({ className, ...restProps }: Props): JSX.Element => {
     <Button
       {...restProps}
       className={buttonClass}
-      iconEnd={null}
       iconStart={null}
+      iconEnd={null}
     />
   );
 };
