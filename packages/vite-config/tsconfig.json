@@ -3,6 +3,7 @@
     "moduleResolution": "Bundler",
     "target": "ESNext",
     "declaration": true,
+    "outDir": "build"
   },
   "include": ["index.ts"]
 }
