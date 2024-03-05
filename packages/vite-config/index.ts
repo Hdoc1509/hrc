@@ -1,3 +1,4 @@
+import { scanEntries } from "vite-plugin-lib-inject-css";
 import { resolve } from "path";
 
 type RollupOptions = {
@@ -20,6 +21,10 @@ const config = {
   }),
   alias: (dirname: string) => ({
     "@scss": resolve(dirname, "lib/scss"),
+  }),
+  entries: (dirname: string) => ({
+    main: "lib/main.ts",
+    ...scanEntries(`${dirname}/lib/components`),
   }),
 };
 

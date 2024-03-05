@@ -13,5 +13,8 @@ declare const config: {
     alias: (dirname: string) => {
         "@scss": string;
     };
+    entries: (dirname: string) => {
+        main: string;
+    };
 };
 export default config;

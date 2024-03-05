@@ -10,6 +10,7 @@
     "dev": "tsc --watch --project tsconfig.json"
   },
   "peerDependencies": {
-    "typescript": "*"
+    "typescript": "*",
+    "vite-plugin-lib-inject-css": "^1.2.0"
   }
 }
