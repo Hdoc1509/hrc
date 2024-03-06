@@ -14,7 +14,7 @@
   border: none;
   border-radius: $button-radius;
   box-shadow: $button-shadow;
-  background-color: var(--button-bg, $default-bg);
+  background-color: var(--button-bg, $button-bg);
   padding: var(
     --button-padding,
     var(--__padding-y) calc(var(--__padding-y) * 2)
@@ -23,23 +23,23 @@
   font-family: var(--button-font-family, sans-serif);
   font-size: var(--button-font-size, 14px);
   font-weight: var(--button-font-weight, 500);
-  color: var(--button-text, $default-text);
+  color: var(--button-text, $button-text);
 
   transition: background-color 0.2s ease;
 
   &:hover,
   &:focus {
-    --button-bg: var(--button-bg-hover, #{$default-bg-hover});
+    --button-bg: var(--button-bg-hover, #{$button-bg-hover});
   }
 
   &:disabled {
     --button-shadow: none;
     --button-outline-color: var(
       --button-outline-color-disabled,
-      #{$default-bg-hover}
+      #{$button-bg-hover}
     );
-    --button-bg: var(--button-bg-disabled, #{$default-bg-disabled});
-    --button-text: var(--button-text-disabled, #{$default-text-disabled});
+    --button-bg: var(--button-bg-disabled, #{$button-bg-disabled});
+    --button-text: var(--button-text-disabled, #{$button-text-disabled});
   }
 
   &--no-shadow {
@@ -76,7 +76,7 @@
     --button-bg: transparent;
     --button-bg-hover: var(
       --button-outline-bg-hover,
-      #{$default-bg-hover-outline}
+      #{$button-bg-hover-outline}
     );
     --button-bg-disabled: transparent;
     --button-text: var(--button-outline-color);
