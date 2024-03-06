@@ -1,5 +1,6 @@
 @use "@mono/ui/scss/mixins" as *;
 @use "@mono/ui/scss/colors" as *;
+@use "@scss/variables" as *;
 @use "@scss/colors" as *;
 @use "@scss/mixins";
 
@@ -11,8 +12,8 @@
   gap: var(--button-gap, 8px);
 
   border: none;
-  border-radius: var(--button-radius, 6px);
-  box-shadow: var(--button-shadow, $default-shadow);
+  border-radius: $button-radius;
+  box-shadow: $button-shadow;
   background-color: var(--button-bg, $default-bg);
   padding: var(
     --button-padding,
@@ -53,16 +54,16 @@
   }
 
   &--top-rounded {
-    @include border-top-rounded(var(--button-radius, 6px));
+    @include border-top-rounded($button-radius);
   }
   &--bottom-rounded {
-    @include border-bottom-rounded(var(--button-radius, 6px));
+    @include border-bottom-rounded($button-radius);
   }
   &--left-rounded {
-    @include border-left-rounded(var(--button-radius, 6px));
+    @include border-left-rounded($button-radius);
   }
   &--right-rounded {
-    @include border-right-rounded(var(--button-radius, 6px));
+    @include border-right-rounded($button-radius);
   }
   &--full-rounded {
     border-radius: 9999px;
