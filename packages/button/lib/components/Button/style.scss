@@ -1,8 +1,6 @@
 @use "@mono/ui/scss/mixins" as *;
 @use "@mono/ui/scss/colors" as *;
-@use "@scss/variables" as *;
-@use "@scss/colors" as *;
-@use "@scss/mixins";
+@use "@scss" as *;
 
 .button {
   --__padding-y: 8px;
@@ -69,7 +67,7 @@
     border-radius: 9999px;
   }
 
-  @include mixins.color-variant($colors);
+  @include color-variant($colors);
 
   &--outline,
   &--text {
