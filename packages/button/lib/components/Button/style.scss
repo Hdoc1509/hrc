@@ -1,5 +1,4 @@
-@use "@mono/ui/scss/mixins" as *;
-@use "@mono/ui/scss/colors" as *;
+@use "@mono/ui/scss" as *;
 @use "@scss" as *;
 
 .button {
@@ -51,18 +50,7 @@
     --__padding-y: 12px;
   }
 
-  &--top-rounded {
-    @include border-top-rounded($button-radius);
-  }
-  &--bottom-rounded {
-    @include border-bottom-rounded($button-radius);
-  }
-  &--left-rounded {
-    @include border-left-rounded($button-radius);
-  }
-  &--right-rounded {
-    @include border-right-rounded($button-radius);
-  }
+  @include border-rounded-variants($button-radius);
   &--full-rounded {
     border-radius: 9999px;
   }
