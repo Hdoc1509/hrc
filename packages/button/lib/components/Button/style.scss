@@ -68,9 +68,7 @@
     border-radius: 9999px;
   }
 
-  @each $color, $_ in $colors {
-    @include mixins.color-variant($color);
-  }
+  @include mixins.color-variant($colors);
 
   &--outline,
   &--text {
