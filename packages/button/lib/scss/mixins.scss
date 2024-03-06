@@ -1,22 +1,19 @@
 @mixin color-variant($colors) {
   @each $color, $_ in $colors {
     &--#{$color} {
-      --button-bg: var(--#{$color}, #{map-get(map-get($colors, $color), main)});
+      --button-bg: var(--#{$color}, #{map-get($colors, $color, main)});
       --button-bg-hover: var(
         --#{$color}-hover,
-        #{map-get(map-get($colors, $color), hover)}
+        #{map-get($colors, $color, hover)}
       );
-      --button-text: var(
-        --#{$color}-text,
-        #{map-get(map-get($colors, $color), text)}
-      );
+      --button-text: var(--#{$color}-text, #{map-get($colors, $color, text)});
       --button-outline-color: var(
         --#{$color},
-        #{map-get(map-get($colors, $color), main)}
+        #{map-get($colors, $color, main)}
       );
       --button-outline-bg-hover: var(
         --#{$color}-transparent,
-        #{map-get(map-get($colors, $color), transparent)}
+        #{map-get($colors, $color, transparent)}
       );
     }
   }
