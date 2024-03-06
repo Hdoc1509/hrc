@@ -1,5 +1,7 @@
 @use "@mono/ui/scss/mixins" as *;
-@use "colors" as *;
+@use "@mono/ui/scss/colors" as *;
+@use "@scss/colors" as *;
+@use "@scss/utils";
 
 .button {
   --__padding-y: 8px;
@@ -39,17 +41,6 @@
     --button-text: var(--button-text-disabled, #{$default-text-disabled});
   }
 
-  &--icon {
-    padding: var(--button-padding, 8px);
-
-    &.button--small {
-      --button-padding: 6px;
-    }
-    &.button--large {
-      --button-padding: 12px;
-    }
-  }
-
   &--no-shadow {
     --button-shadow: none;
   }
@@ -75,5 +66,24 @@
   }
   &--full-rounded {
     border-radius: 9999px;
+  }
+
+  @each $color, $_ in $colors {
+    @include utils.color-variant($color);
+  }
+
+  &--outline,
+  &--text {
+    --button-bg: transparent;
+    --button-bg-hover: var(
+      --button-outline-bg-hover,
+      #{$default-bg-hover-outline}
+    );
+    --button-bg-disabled: transparent;
+    --button-text: var(--button-outline-color);
+    --button-shadow: none;
+  }
+  &--outline {
+    outline: solid 1px currentColor;
   }
 }
