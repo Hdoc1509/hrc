@@ -10,6 +10,20 @@
 @mixin border-bottom-rounded($radius) {
   border-radius: 0 0 $radius $radius;
 }
+@mixin border-rounded-variants($radius) {
+  &--top-rounded {
+    @include border-top-rounded($radius);
+  }
+  &--bottom-rounded {
+    @include border-bottom-rounded($radius);
+  }
+  &--left-rounded {
+    @include border-left-rounded($radius);
+  }
+  &--right-rounded {
+    @include border-right-rounded($radius);
+  }
+}
 
 @mixin debug {
   background: rgb(255 0 0 / 50%) !important;
