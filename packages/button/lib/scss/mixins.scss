@@ -1,4 +1,4 @@
-@mixin color-variant($colors) {
+@mixin color-variants($colors) {
   @each $color, $_ in $colors {
     &--#{$color} {
       --button-bg: var(--#{$color}, #{map-get($colors, $color, main)});

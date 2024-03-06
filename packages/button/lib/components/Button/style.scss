@@ -67,7 +67,7 @@
     border-radius: 9999px;
   }
 
-  @include color-variant($colors);
+  @include color-variants($colors);
 
   &--outline,
   &--text {
