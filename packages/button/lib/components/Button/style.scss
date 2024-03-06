@@ -1,7 +1,7 @@
 @use "@mono/ui/scss/mixins" as *;
 @use "@mono/ui/scss/colors" as *;
 @use "@scss/colors" as *;
-@use "@scss/utils";
+@use "@scss/mixins";
 
 .button {
   --__padding-y: 8px;
@@ -69,7 +69,7 @@
   }
 
   @each $color, $_ in $colors {
-    @include utils.color-variant($color);
+    @include mixins.color-variant($color);
   }
 
   &--outline,
