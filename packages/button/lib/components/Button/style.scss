@@ -72,5 +72,6 @@
   }
   &--outline {
     outline: solid 1px currentColor;
+    outline-offset: -1px;
   }
 }
