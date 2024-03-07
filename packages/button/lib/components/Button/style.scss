@@ -29,6 +29,8 @@
     --button-bg: var(--button-bg-hover, #{$button-bg-hover});
   }
 
+  @include color-variants($colors);
+
   &:disabled {
     --button-shadow: none;
     --button-outline-color: var(
@@ -54,8 +56,6 @@
   &--full-rounded {
     border-radius: 9999px;
   }
-
-  @include color-variants($colors);
 
   &--outline,
   &--text {
