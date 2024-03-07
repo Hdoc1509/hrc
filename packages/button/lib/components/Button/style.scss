@@ -32,6 +32,7 @@
   @include color-variants($colors);
 
   &:disabled {
+    pointer-events: none;
     --button-shadow: none;
     --button-outline-color: var(
       --button-outline-color-disabled,
