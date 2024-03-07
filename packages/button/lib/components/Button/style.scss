@@ -74,4 +74,9 @@
     outline: solid 1px currentColor;
     outline-offset: -1px;
   }
+
+  > svg {
+    width: 1.6em;
+    height: 1.6em;
+  }
 }
