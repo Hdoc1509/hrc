@@ -22,7 +22,7 @@ npm install @hdoc-react/button
 
 ```js
 import { DeleteIcon, FavoriteIcon } from "third-party-package";
-import { Button, ButtonIcon } from "@hdoc-react/button";
+import { Button, ButtonIcon, ButtonGroup } from "@hdoc-react/button";
 
 function App() {
   return (
@@ -33,6 +33,14 @@ function App() {
       <ButtonIcon color="error">
         <FavoriteIcon />
       </ButtonIcon
+      <ButtonGroup>
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+        <ButtonIcon>
+          <SearchIcon />
+        </ButtonIcon>
+      </ButtonGroup>
     </>
   );
 }
@@ -45,6 +53,7 @@ button components:
 
 - [`<Button />`](docs/Button.md)
 - [`<ButtonIcon />`](docs/ButtonIcon.md)
+- [`<ButtonGroup />`](docs/ButtonGroup.md)
 
 ## General Customization
 

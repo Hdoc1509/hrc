@@ -1,0 +1,82 @@
+@use "@mono/ui/scss" as *;
+@use "@scss" as *;
+
+$divider-color: var(--button-divider-color, var(--button-bg-hover));
+
+.button-group {
+  display: inline-flex;
+
+  border-radius: $button-radius;
+  box-shadow: $button-shadow;
+
+  &.button--disabled > * {
+    --button-divider-color: var(--button-outline-color);
+  }
+
+  &--small > * {
+    --__padding-y: 6px;
+  }
+  &--large > * {
+    --__padding-y: 12px;
+  }
+
+  > * {
+    border-radius: 0;
+    border: 1px solid var(--button-bg);
+    --button-shadow: none;
+
+    &:first-child {
+      @include border-left-rounded($button-radius);
+    }
+    &:last-child {
+      @include border-right-rounded($button-radius);
+    }
+
+    & + * {
+      border-left-color: $divider-color;
+    }
+  }
+
+  &.button--outline {
+    outline-color: var(--button-text);
+    outline-offset: -1px;
+  }
+  &.button--text > * {
+    border-color: transparent;
+  }
+  &.button--outline,
+  &.button--text {
+    > * + * {
+      border-left-color: currentcolor;
+    }
+  }
+
+  &--column {
+    flex-direction: column;
+
+    > * + * {
+      border-top: 1px solid $divider-color;
+    }
+
+    > :first-child {
+      @include border-top-rounded($button-radius);
+    }
+    > :last-child {
+      @include border-bottom-rounded($button-radius);
+    }
+
+    &.button--disabled > * {
+      border-left-color: var(--button-bg);
+    }
+
+    &.button--outline,
+    &.button--text {
+      > * {
+        border-color: transparent;
+      }
+      > * + * {
+        border-top-color: currentcolor;
+      }
+    }
+  }
+}
