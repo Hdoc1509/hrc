@@ -21,32 +21,6 @@
   margin-inline: auto;
 }
 
-.button-icons {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: inherit;
-}
-
-.group-examples {
-  display: flex;
-  gap: inherit;
-  --icon-size: 1.15em;
-
-  .group-row {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  .group-column {
-    display: flex;
-    gap: inherit;
-  }
-  .group-row:last-child {
-    justify-content: center;
-  }
-}
-
 .debug {
   border: 1px solid red;
   padding-block: 16px;
