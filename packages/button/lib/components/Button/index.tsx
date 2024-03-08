@@ -18,7 +18,7 @@ export type ButtonProps = Simplify<
 
 export const Button = ({
   variant,
-  disableShadow = false,
+  disableShadow,
   iconStart,
   iconEnd,
   size,
