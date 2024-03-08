@@ -1,7 +1,27 @@
 import { Icon } from "@hdoc-react/material-icons";
 import { Button, ButtonGroup, ButtonIcon } from "../../lib/main";
 import { DemoComponentTitle } from "./Demo";
-import { EqualSignIcon, DivideIcon } from "./Icons";
+import { DivideIcon, CloseIcon } from "./Icons";
+
+const IconExample = () => {
+  return (
+    <>
+      <ButtonIcon>
+        <Icon name="add" />
+      </ButtonIcon>
+      <ButtonIcon>
+        <Icon name="remove" />
+      </ButtonIcon>
+      <ButtonIcon>
+        <DivideIcon />
+      </ButtonIcon>
+      <ButtonIcon>
+        <CloseIcon />
+      </ButtonIcon>
+      <Button>Clear</Button>
+    </>
+  );
+};
 
 const GroupExample = () => {
   return (
@@ -64,24 +84,16 @@ export const ButtonGroupDemo = () => {
         <ColorExample direction="column" color="error" />
         <ColorExample direction="column" color="warning" />
       </div>
-      <div className="docs-demo">
+      <div className="docs-demo docs-demo--row">
         <h3>With icons</h3>
         <ButtonGroup color="success">
-          <ButtonIcon>
-            <Icon name="add" />
-          </ButtonIcon>
-          <ButtonIcon>
-            <Icon name="remove" />
-          </ButtonIcon>
-          <ButtonIcon>
-            <Icon name="clear" />
-          </ButtonIcon>
-          <ButtonIcon>
-            <DivideIcon />
-          </ButtonIcon>
-          <ButtonIcon>
-            <EqualSignIcon />
-          </ButtonIcon>
+          <IconExample />
+        </ButtonGroup>
+        <ButtonGroup color="success" variant="outline">
+          <IconExample />
+        </ButtonGroup>
+        <ButtonGroup color="success" variant="text">
+          <IconExample />
         </ButtonGroup>
       </div>
     </div>
