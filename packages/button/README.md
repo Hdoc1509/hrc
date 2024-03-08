@@ -21,7 +21,7 @@ npm install @hdoc-react/button
 ## Usage
 
 ```js
-import { DeleteIcon, FavoriteIcon } from "third-party-package";
+import { DeleteIcon, FavoriteIcon, SearchIcon } from "third-party-package";
 import { Button, ButtonIcon, ButtonGroup } from "@hdoc-react/button";
 
 function App() {
