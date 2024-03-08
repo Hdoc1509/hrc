@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -12,7 +12,7 @@
 
 .App {
   display: grid;
-  gap: 1.5rem;
+  gap: 16px;
 }
 
 .button-error {
@@ -21,29 +21,66 @@
   margin-inline: auto;
 }
 
-.button-examples {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: inherit;
-
-  .last-row {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: center;
-    gap: inherit;
-  }
-}
-
-.rounded-variants {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: inherit;
-  --button-radius: 10px;
-}
-
 .button-icons {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: inherit;
+}
+
+.group-examples {
+  display: flex;
+  gap: inherit;
+  --icon-size: 1.15em;
+
+  .group-row {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .group-column {
+    display: flex;
+    gap: inherit;
+  }
+  .group-row:last-child {
+    justify-content: center;
+  }
+}
+
+.docs-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+
+  h2,
+  h3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .button-default {
+    --demo-columns: 3;
+  }
+  .button-rounded {
+    --demo-columns: 5;
+  }
+  .button-icons {
+    --demo-columns: 9;
+  }
+}
+.docs-demo--row {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.docs-demo__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--demo-columns, 6), 1fr);
+  gap: inherit;
+
+  h3 {
+    grid-column: 1 / -1;
+  }
 }

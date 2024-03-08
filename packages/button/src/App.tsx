@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Icon } from "@hdoc-react/material-icons";
 import { Button } from "../lib/main";
-import { ColorExamples } from "./components/Examples";
-import { ErrorIcon } from "./components/ErrorIcon";
-import { RoundedVariants } from "./components/RoundedVariants";
-import { IconExamples } from "./components/IconExamples";
+import { ErrorOutlineIcon } from "./components/Icons";
+import { Demo } from "./components/Demo";
+import { ButtonDemo } from "./components/ButtonDemo";
+import { ButtonIconDemo } from "./components/ButtonIconDemo";
+import { ButtonGroupDemo } from "./components/ButtonGroupDemo";
 import "./App.css";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Button
         className="button-error"
         onClick={toggleError}
-        iconEnd={<ErrorIcon />}
+        iconEnd={<ErrorOutlineIcon />}
       >
         Toggle error - svg
       </Button>
@@ -28,9 +29,10 @@ function App() {
       >
         Toggle error - @hdoc-react/material-icons
       </Button>
-      <ColorExamples error={error} />
-      <RoundedVariants error={error} />
-      <IconExamples error={error} />
+      <Demo />
+      <ButtonDemo />
+      <ButtonIconDemo />
+      <ButtonGroupDemo />
     </div>
   );
 }
