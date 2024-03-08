@@ -1,7 +1,7 @@
 import { Icon } from "@hdoc-react/material-icons";
 import { ButtonIcon } from "../../lib/main";
-import { DemoComponentTitle } from "./Demo";
 import { DeleteIcon, SearchIcon } from "./Icons";
+import { DemoDocs } from "./DemoDocs";
 
 const ColorExample = (props: React.ComponentProps<typeof ButtonIcon>) => {
   return (
@@ -14,15 +14,15 @@ const ColorExample = (props: React.ComponentProps<typeof ButtonIcon>) => {
 };
 export const ButtonIconDemo = () => {
   return (
-    <div className="docs-demo">
-      <DemoComponentTitle name="ButtonIcon" />
-      <div className="docs-demo__grid button-default">
+    <DemoDocs>
+      <DemoDocs.TitleComponent name="ButtonIcon" />
+      <DemoDocs layout="row">
         <h3>Default</h3>
         <ColorExample>
           <Icon name="people" />
         </ColorExample>
-      </div>
-      <div className="docs-demo__grid button-icons">
+      </DemoDocs>
+      <DemoDocs layout="grid" cols={9}>
         <h3>Colors</h3>
         <ColorExample color="primary">
           <SearchIcon />
@@ -42,8 +42,8 @@ export const ButtonIconDemo = () => {
         <ColorExample color="success">
           <Icon name="check" />
         </ColorExample>
-      </div>
-      <div className="docs-demo docs-demo--row button--info">
+      </DemoDocs>
+      <DemoDocs layout="row" className="button--info">
         <h3>Sizes</h3>
         <ButtonIcon size="small">
           <Icon name="air" />
@@ -54,8 +54,8 @@ export const ButtonIconDemo = () => {
         <ButtonIcon size="large">
           <Icon name="air" />
         </ButtonIcon>
-      </div>
-      <div className="docs-demo__grid button--success button-rounded">
+      </DemoDocs>
+      <DemoDocs layout="grid" cols={5} className="button--success">
         <h3>Rounded</h3>
         <ButtonIcon roundedSide="top">
           <Icon name="adb" />
@@ -72,7 +72,7 @@ export const ButtonIconDemo = () => {
         <ButtonIcon fullRounded>
           <Icon name="adb" />
         </ButtonIcon>
-      </div>
-    </div>
+      </DemoDocs>
+    </DemoDocs>
   );
 };

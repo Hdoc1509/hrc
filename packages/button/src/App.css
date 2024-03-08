@@ -47,44 +47,6 @@
   }
 }
 
-.docs-demo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 16px;
-  padding: 8px;
-
-  h2,
-  h3 {
-    width: 100%;
-    margin: 0;
-  }
-
-  .button-default {
-    --demo-columns: 3;
-  }
-  .button-rounded {
-    --demo-columns: 5;
-  }
-  .button-icons {
-    --demo-columns: 9;
-  }
-}
-.docs-demo--row {
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.docs-demo__grid {
-  display: grid;
-  grid-template-columns: repeat(var(--demo-columns, 6), 1fr);
-  gap: inherit;
-
-  h3 {
-    grid-column: 1 / -1;
-  }
-}
-
 .debug {
   border: 1px solid red;
   padding-block: 16px;

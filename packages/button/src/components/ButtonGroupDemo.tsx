@@ -1,7 +1,7 @@
 import { Icon } from "@hdoc-react/material-icons";
 import { Button, ButtonGroup, ButtonIcon } from "../../lib/main";
-import { DemoComponentTitle } from "./Demo";
 import { DivideIcon, CloseIcon } from "./Icons";
+import { DemoDocs } from "./DemoDocs";
 
 const IconExample = () => {
   return (
@@ -51,13 +51,13 @@ const ColorExample = (props: React.ComponentProps<typeof ButtonGroup>) => {
 };
 export const ButtonGroupDemo = () => {
   return (
-    <div className="docs-demo">
-      <DemoComponentTitle name="ButtonGroup" />
-      <div className="docs-demo docs-demo--row">
+    <DemoDocs>
+      <DemoDocs.TitleComponent name="ButtonGroup" />
+      <DemoDocs layout="row">
         <h3>Default</h3>
         <ColorExample />
-      </div>
-      <div className="docs-demo docs-demo--row">
+      </DemoDocs>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <ColorExample color="primary" />
         <ColorExample color="secondary" />
@@ -65,8 +65,8 @@ export const ButtonGroupDemo = () => {
         <ColorExample color="info" />
         <ColorExample color="warning" />
         <ColorExample color="success" />
-      </div>
-      <div className="docs-demo docs-demo--row button--primary">
+      </DemoDocs>
+      <DemoDocs layout="row" className="button--primary">
         <h3>Sizes</h3>
         <ButtonGroup size="small">
           <GroupExample />
@@ -77,14 +77,14 @@ export const ButtonGroupDemo = () => {
         <ButtonGroup size="large">
           <GroupExample />
         </ButtonGroup>
-      </div>
-      <div className="docs-demo docs-demo--row">
+      </DemoDocs>
+      <DemoDocs layout="row">
         <h3>Column</h3>
         <ColorExample direction="column" color="secondary" />
         <ColorExample direction="column" color="error" />
         <ColorExample direction="column" color="warning" />
-      </div>
-      <div className="docs-demo docs-demo--row">
+      </DemoDocs>
+      <DemoDocs layout="row">
         <h3>With icons</h3>
         <ButtonGroup color="success">
           <IconExample />
@@ -95,7 +95,7 @@ export const ButtonGroupDemo = () => {
         <ButtonGroup color="success" variant="text">
           <IconExample />
         </ButtonGroup>
-      </div>
-    </div>
+      </DemoDocs>
+    </DemoDocs>
   );
 };

@@ -1,5 +1,6 @@
 import { Button, ButtonGroup, ButtonIcon } from "../../lib/main";
 import { DeleteIcon, FavoriteIcon, SearchIcon } from "./Icons";
+import { DemoDocs } from "./DemoDocs";
 
 export const DemoComponentTitle = ({ name }: { name: string }) => {
   return <h2>&lt;{name} /&gt; Demo</h2>;
@@ -8,7 +9,7 @@ export const DemoComponentTitle = ({ name }: { name: string }) => {
 export const Demo = () => {
   return (
     <>
-      <div className="docs-demo docs-demo--row">
+      <DemoDocs layout="row">
         <h2>Docs Demo</h2>
         <Button size="large" color="primary" iconEnd={<DeleteIcon />}>
           Delete
@@ -24,7 +25,7 @@ export const Demo = () => {
             <SearchIcon />
           </ButtonIcon>
         </ButtonGroup>
-      </div>
+      </DemoDocs>
     </>
   );
 };
