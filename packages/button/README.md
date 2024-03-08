@@ -50,8 +50,8 @@ function App() {
 
 ## API
 
-See documentation below for reference to all of the props available for the
-button components:
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for the following components:
 
 - [`<Button />`](docs/Button.md)
 - [`<ButtonIcon />`](docs/ButtonIcon.md)
