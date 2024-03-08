@@ -22,7 +22,7 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
 
   > * {
     border-radius: 0;
-    border: 1px solid var(--button-bg);
+    border: 1px solid var(--button-bg, $button-bg);
     --button-shadow: none;
 
     &:first-child {
