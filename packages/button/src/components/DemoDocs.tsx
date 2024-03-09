@@ -11,7 +11,7 @@ type Props = (
     }
   | {
       layout: "grid";
-      cols?: 3 | 4 | 5 | 6 | 7 | 8 | 9;
+      cols?: number;
     }
 ) & {
   className?: string;
@@ -29,11 +29,21 @@ export const DemoDocs = ({
     {
       [`demo-docs--${layout}`]: layout,
     },
-    "cols" in props && `demo-docs--columns-${props.cols}`,
     className,
   );
 
-  return <section className={sectionClassName}>{children}</section>;
+  return (
+    <section
+      style={
+        {
+          "--demo-columns": "cols" in props ? props.cols : "",
+        } as React.CSSProperties
+      }
+      className={sectionClassName}
+    >
+      {children}
+    </section>
+  );
 };
 
 DemoDocs.TitleComponent = TitleComponent;

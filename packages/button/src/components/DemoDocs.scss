@@ -25,10 +25,4 @@
       grid-column: 1 / -1;
     }
   }
-
-  @for $i from 3 through 9 {
-    &--columns-#{$i} {
-      --demo-columns: #{$i};
-    }
-  }
 }
