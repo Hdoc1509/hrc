@@ -1,6 +1,6 @@
 import { Icon } from "@hdoc-react/material-icons";
 import { Button, ButtonGroup, ButtonIcon } from "../../lib/main";
-import { DivideIcon, CloseIcon } from "./Icons";
+import { DivideIcon } from "./Icons";
 import { DemoDocs } from "./DemoDocs";
 
 const IconExample = () => {
@@ -15,9 +15,6 @@ const IconExample = () => {
       <ButtonIcon>
         <DivideIcon />
       </ButtonIcon>
-      <ButtonIcon>
-        <CloseIcon />
-      </ButtonIcon>
       <Button>Clear</Button>
     </>
   );
@@ -29,7 +26,6 @@ const GroupExample = () => {
       <Button>One</Button>
       <Button>Two</Button>
       <Button>Three</Button>
-      <Button>Four</Button>
     </>
   );
 };
@@ -57,7 +53,7 @@ export const ButtonGroupDemo = () => {
         <h3>Default</h3>
         <ColorExample />
       </DemoDocs>
-      <DemoDocs layout="row">
+      <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>
         <ColorExample color="primary" />
         <ColorExample color="secondary" />
@@ -82,7 +78,6 @@ export const ButtonGroupDemo = () => {
         <h3>Column</h3>
         <ColorExample direction="column" color="secondary" />
         <ColorExample direction="column" color="error" />
-        <ColorExample direction="column" color="warning" />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>With icons</h3>
