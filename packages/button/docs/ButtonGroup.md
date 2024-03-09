@@ -54,9 +54,7 @@ Type: `'outline' | 'text'`
 
 `disabled`
 
-Whether the buttons in the group has disabled variant. This not disable the
-buttons in the group.
-
+Whether the buttons in the group are disabled.
 Type: `boolean`
 
 ---
