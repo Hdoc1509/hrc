@@ -194,15 +194,17 @@ export default function ButtonGroupColors() {
 ```js
 import * as React from "react";
 import { Button, ButtonIcon, ButtonGroup } from "@hdoc-react/button";
+import { DivideIcon } from "thrid-party-package";
+import { Icon } from "@hdoc-react/material-icons";
 
 const Group = () => {
   return (
     <>
       <ButtonIcon>
-        <AddIcon />
+        <Icon name="add" />
       </ButtonIcon>
       <ButtonIcon>
-        <RemoveIcon />
+        <Icon name="remove" />
       </ButtonIcon>
       <ButtonIcon>
         <DivideIcon />

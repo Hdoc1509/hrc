@@ -138,27 +138,35 @@ export default function ButtonRounded() {
 ```js
 import * as React from "react";
 import { Button } from "@hdoc-react/button";
-import { DeleteIcon, CloseIcon, FavoriteIcon } from "third-party-package";
+import { Icon } from "@hdoc-react/material-icons";
 
 export default function ButtonWithIcons() {
   return (
     <>
-      <Button color="error" iconStart={<DeleteIcon />}>
+      <Button color="error" iconStart={<Icon name="delete" />}>
         Delete
       </Button>
-      <Button color="error" iconEnd={<DeleteIcon />}>
+      <Button color="error" iconEnd={<Icon name="delete" />}>
         Delete
       </Button>
-      <Button color="error" variant="outline" iconStart={<CloseIcon />}>
+      <Button color="error" variant="outline" iconStart={<Icon name="close" />}>
         Close
       </Button>
-      <Button color="error" variant="outline" iconEnd={<CloseIcon />}>
+      <Button color="error" variant="outline" iconEnd={<Icon name="close" />}>
         Close
       </Button>
-      <Button color="error" variant="outline" iconStart={<FavoriteIcon />}>
+      <Button
+        color="error"
+        variant="outline"
+        iconStart={<Icon name="favorite" />}
+      >
         Favorite
       </Button>
-      <Button color="error" variant="outline" iconEnd={<FavoriteIcon />}>
+      <Button
+        color="error"
+        variant="outline"
+        iconEnd={<Icon name="favorite" />}
+      >
         Favorite
       </Button>
     </>

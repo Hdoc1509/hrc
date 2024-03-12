@@ -16,19 +16,19 @@ import { ButtonIcon } from "@hdoc-react/button";
 ```js
 import * as React from "react";
 import { ButtonIcon } from "@hdoc-react/button";
-import { PeopleIcon } from "third-party-package";
+import { Icon } from "@hdoc-react/material-icons";
 
 export default function ButtonIconDefault() {
   return (
     <>
       <ButtonIcon>
-        <PeopleIcon />
+        <Icon name="people" />
       </ButtonIcon>
       <ButtonIcon variant="outline">
-        <PeopleIcon />
+        <Icon name="people" />
       </ButtonIcon>
       <ButtonIcon variant="text">
-        <PeopleIcon />
+        <Icon name="people" />
       </ButtonIcon>
     </>
   );
@@ -47,22 +47,15 @@ export default function ButtonIconDefault() {
 ```js
 import * as React from "react";
 import { ButtonIcon } from "@hdoc-react/button";
-import {
-  SearchIcon,
-  SettingsIcon,
-  DeleteIcon,
-  MapIcon,
-  WarningIcon,
-  CheckIcon,
-} from "third-party-package";
+import { Icon } from "@hdoc-react/material-icons";
 
 const Icons = {
-  primary: <SearchIcon />,
-  secondary: <SettingsIcon />,
-  error: <DeleteIcon />,
-  info: <MapIcon />,
-  warning: <WarningIcon />,
-  success: <CheckIcon />,
+  primary: <Icon name="search" />,
+  secondary: <Icon name="settings" />,
+  error: <Icon name="delete" />,
+  info: <Icon name="map" />,
+  warning: <Icon name="warning" />,
+  success: <Icon name="check" />,
 };
 
 return (
@@ -104,19 +97,19 @@ return (
 ```js
 import * as React from "react";
 import { ButtonIcon } from "@hdoc-react/button";
-import { AirIcon, AndroidIcon } from "third-party-package";
+import { Icon } from "@hdoc-react/material-icons";
 
 export default function ButtonIconSizes() {
   return (
     <>
       <ButtonIcon color="info" size="small">
-        <AirIcon />
+        <Icon name="air" />
       </ButtonIcon>
       <ButtonIcon color="info">
-        <AirIcon />
+        <Icon name="air" />
       </ButtonIcon>
       <ButtonIcon color="info" size="large">
-        <AirIcon />
+        <Icon name="air" />
       </ButtonIcon>
     </>
   );
@@ -135,25 +128,25 @@ export default function ButtonIconSizes() {
 ```js
 import * as React from "react";
 import { ButtonIcon } from "@hdoc-react/button";
-import { AndroidIcon } from "third-party-package";
+import { Icon } from "@hdoc-react/material-icons";
 
 export default function ButtonIconRounded() {
   return (
     <>
       <ButtonIcon color="success" roundedSide="top">
-        <AndroidIcon />
+        <Icon name="adb" />
       </ButtonIcon>
       <ButtonIcon color="success" roundedSide="bottom">
-        <AndroidIcon />
+        <Icon name="adb" />
       </ButtonIcon>
       <ButtonIcon color="success" roundedSide="left">
-        <AndroidIcon />
+        <Icon name="adb" />
       </ButtonIcon>
       <ButtonIcon color="success" roundedSide="right">
-        <AndroidIcon />
+        <Icon name="adb" />
       </ButtonIcon>
       <ButtonIcon color="success" fullRounded>
-        <AndroidIcon />
+        <Icon name="adb" />
       </ButtonIcon>
     </>
   );
