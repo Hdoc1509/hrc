@@ -14,17 +14,25 @@ import { ButtonIcon } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <ButtonIcon>
-    <PeopleIcon />
-  </ButtonIcon>
-  <ButtonIcon variant="outline">
-    <PeopleIcon />
-  </ButtonIcon>
-  <Button variant="text">
-    <PeopleIcon />
-  </Button>
-</>
+import * as React from "react";
+import { ButtonIcon } from "@hdoc-react/button";
+import { PeopleIcon } from "third-party-package";
+
+export default function ButtonIconDefault() {
+  return (
+    <>
+      <ButtonIcon>
+        <PeopleIcon />
+      </ButtonIcon>
+      <ButtonIcon variant="outline">
+        <PeopleIcon />
+      </ButtonIcon>
+      <ButtonIcon variant="text">
+        <PeopleIcon />
+      </ButtonIcon>
+    </>
+  );
+}
 ```
 
 </details>
@@ -37,67 +45,51 @@ import { ButtonIcon } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <ButtonIcon color="primary">
-    <SearchIcon />
-  </ButtonIcon>
-  <ButtonIcon color="primary" variant="outline">
-    <SearchIcon />
-  </ButtonIcon>
-  <ButtonIcon color="primary" variant="text">
-    <SearchIcon />
-  </ButtonIcon>
+import * as React from "react";
+import { ButtonIcon } from "@hdoc-react/button";
+import {
+  SearchIcon,
+  SettingsIcon,
+  DeleteIcon,
+  MapIcon,
+  WarningIcon,
+  CheckIcon,
+} from "third-party-package";
 
-  <ButtonIcon color="secondary">
-    <SettingsIcon />
-  </ButtonIcon>
-  <ButtonIcon color="secondary" variant="outline">
-    <SettingsIcon />
-  </ButtonIcon>
-  <ButtonIcon color="secondary" variant="text">
-    <SettingsIcon />
-  </ButtonIcon>
+const Icons = {
+  primary: <SearchIcon />,
+  secondary: <SettingsIcon />,
+  error: <DeleteIcon />,
+  info: <MapIcon />,
+  warning: <WarningIcon />,
+  success: <CheckIcon />,
+};
 
-  <ButtonIcon color="error">
-    <DeleteIcon />
-  </ButtonIcon>
-  <ButtonIcon color="error" variant="outline">
-    <DeleteIcon />
-  </ButtonIcon>
-  <ButtonIcon color="error" variant="text">
-    <DeleteIcon />
-  </ButtonIcon>
-
-  <ButtonIcon color="info">
-    <MapIcon />
-  </ButtonIcon>
-  <ButtonIcon color="info" variant="outline">
-    <MapIcon />
-  </ButtonIcon>
-  <ButtonIcon color="info" variant="text">
-    <MapIcon />
-  </ButtonIcon>
-
-  <ButtonIcon color="warning">
-    <WarningIcon />
-  </ButtonIcon>
-  <ButtonIcon color="warning" variant="outline">
-    <WarningIcon />
-  </ButtonIcon>
-  <ButtonIcon color="warning" variant="text">
-    <WarningIcon />
-  </ButtonIcon>
-
-  <ButtonIcon color="success">
-    <CheckIcon />
-  </ButtonIcon>
-  <ButtonIcon color="success" variant="outline">
-    <CheckIcon />
-  </ButtonIcon>
-  <ButtonIcon color="success" variant="text">
-    <CheckIcon />
-  </ButtonIcon>
-</>
+return (
+  <>
+    {Object.keys(Icons).map((color) => (
+      <>
+        <ButtonIcon key={`button-icon-${color}-default`} color={color}>
+          {Icons[color]}
+        </ButtonIcon>
+        <ButtonIcon
+          key={`button-icon-${color}-outline`}
+          color={color}
+          variant="outline"
+        >
+          {Icons[color]}
+        </ButtonIcon>
+        <ButtonIcon
+          key={`button-icon-${color}-text`}
+          color={color}
+          variant="text"
+        >
+          {Icons[color]}
+        </ButtonIcon>
+      </>
+    ))}
+  </>
+);
 ```
 
 </details>
@@ -110,17 +102,25 @@ import { ButtonIcon } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <ButtonIcon color="info" size="small">
-    <AirIcon />
-  </ButtonIcon>
-  <ButtonIcon color="info">
-    <AirIcon />
-  </ButtonIcon>
-  <ButtonIcon color="info" size="large">
-    <AirIcon />
-  </ButtonIcon>
-</>
+import * as React from "react";
+import { ButtonIcon } from "@hdoc-react/button";
+import { AirIcon, AndroidIcon } from "third-party-package";
+
+export default function ButtonIconSizes() {
+  return (
+    <>
+      <ButtonIcon color="info" size="small">
+        <AirIcon />
+      </ButtonIcon>
+      <ButtonIcon color="info">
+        <AirIcon />
+      </ButtonIcon>
+      <ButtonIcon color="info" size="large">
+        <AirIcon />
+      </ButtonIcon>
+    </>
+  );
+}
 ```
 
 </details>
@@ -133,23 +133,31 @@ import { ButtonIcon } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <ButtonIcon color="success" roundedSide="top">
-    <AndroidIcon />
-  </ButtonIcon>
-  <ButtonIcon color="success" roundedSide="bottom">
-    <AndroidIcon />
-  </ButtonIcon>
-  <ButtonIcon color="success" roundedSide="left">
-    <AndroidIcon />
-  </ButtonIcon>
-  <ButtonIcon color="success" roundedSide="right">
-    <AndroidIcon />
-  </ButtonIcon>
-  <ButtonIcon color="success" fullRounded>
-    <AndroidIcon />
-  </ButtonIcon>
-</>
+import * as React from "react";
+import { ButtonIcon } from "@hdoc-react/button";
+import { AndroidIcon } from "third-party-package";
+
+export default function ButtonIconRounded() {
+  return (
+    <>
+      <ButtonIcon color="success" roundedSide="top">
+        <AndroidIcon />
+      </ButtonIcon>
+      <ButtonIcon color="success" roundedSide="bottom">
+        <AndroidIcon />
+      </ButtonIcon>
+      <ButtonIcon color="success" roundedSide="left">
+        <AndroidIcon />
+      </ButtonIcon>
+      <ButtonIcon color="success" roundedSide="right">
+        <AndroidIcon />
+      </ButtonIcon>
+      <ButtonIcon color="success" fullRounded>
+        <AndroidIcon />
+      </ButtonIcon>
+    </>
+  );
+}
 ```
 
 </details>
