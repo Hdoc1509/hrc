@@ -290,9 +290,10 @@ Whether the buttons in the group are in a column direction.
 
 Type: `boolean`
 
-## CSS Custom Properties
+## CSS Variables
 
-It can use the same properties as the `<Button />` component.
+You can customize the style of `<ButtonGroup />` component by using the
+following CSS variables (custom properties):
 
 ```css
 .any-parent-of-group,
@@ -308,6 +309,9 @@ It can use the same properties as the `<Button />` component.
   --button-text: black;
 }
 ```
+
+Additionally, it can use the same [CSS Variables of `<Button />`](./Button.md#css-variables)
+to customize the styles of the buttons.
 
 ## CSS Classes
 
