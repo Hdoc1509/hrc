@@ -29,6 +29,14 @@ Type: `boolean`
 
 ---
 
+`autosize`
+
+Whether the textarea should autosize to fit the content.
+
+Type: `boolean`
+
+---
+
 `className`
 
 Additional class names for extending styles of textarea.

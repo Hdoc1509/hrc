@@ -82,6 +82,7 @@ function App() {
         <Textarea
           label="Textarea focused"
           placeholder={sharedProps.placeholder}
+          autosize
           {...focusedProps}
         />
         <Textarea label="Textarea error" {...sharedProps} error />

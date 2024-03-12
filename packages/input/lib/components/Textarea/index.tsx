@@ -17,7 +17,9 @@ type Props = Simplify<
     InputProps,
     "label" | "labelClassName" | "error" | "helperText" | "fullWidth"
   > &
-    Omit<ComponentProps<"textarea">, "size" | "color">
+    Omit<ComponentProps<"textarea">, "size" | "color"> & {
+      autosize?: boolean;
+    }
 >;
 
 export const Textarea = ({
@@ -28,6 +30,7 @@ export const Textarea = ({
   helperText,
   fullWidth,
   required,
+  autosize,
   onChange,
   ...restProps
 }: Props): JSX.Element => {
@@ -47,7 +50,7 @@ export const Textarea = ({
         className={textareaClass}
         required={required}
         onChange={(e) => {
-          autosizeTextarea(e.currentTarget);
+          autosize && autosizeTextarea(e.currentTarget);
           onChange?.(e);
         }}
         {...restProps}
