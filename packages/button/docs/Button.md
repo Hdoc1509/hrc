@@ -14,11 +14,18 @@ import { Button } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <Button />
-  <Button variant="outline" />
-  <Button variant="text" />
-</>
+import * as React from "react";
+import { Button } from "@hdoc-react/button";
+
+export default function ButtonDefault() {
+  return (
+    <>
+      <Button />
+      <Button variant="outline" />
+      <Button variant="text" />
+    </>
+  );
+}
 ```
 
 </details>
@@ -31,31 +38,28 @@ import { Button } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <Button color="primary" />
-  <Button color="primary" variant="outline" />
-  <Button color="primary" variant="text" />
+import * as React from "react";
+import { Button } from "@hdoc-react/button";
 
-  <Button color="secondary" />
-  <Button color="secondary" variant="outline" />
-  <Button color="secondary" variant="text" />
+const colors = ["primary", "secondary", "error", "info", "warning", "success"];
 
-  <Button color="error" />
-  <Button color="error" variant="outline" />
-  <Button color="error" variant="text" />
-
-  <Button color="info" />
-  <Button color="info" variant="outline" />
-  <Button color="info" variant="text" />
-
-  <Button color="warning" />
-  <Button color="warning" variant="outline" />
-  <Button color="warning" variant="text" />
-
-  <Button color="success" />
-  <Button color="success" variant="outline" />
-  <Button color="success" variant="text" />
-</>
+export default function ButtonColors() {
+  return (
+    <>
+      {colors.map((color) => (
+        <>
+          <Button key={`button-${color}-default`} color={color} />
+          <Button
+            key={`button-${color}-outline`}
+            color={color}
+            variant="outline"
+          />
+          <Button key={`button-${color}-text`} color={color} variant="text" />
+        </>
+      ))}
+    </>
+  );
+}
 ```
 
 </details>
@@ -68,15 +72,22 @@ import { Button } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <Button color="primary" size="small">
-    Small
-  </Button>
-  <Button color="primary" />
-  <Button color="primary" size="large">
-    Large
-  </Button>
-</>
+import * as React from "react";
+import { Button } from "@hdoc-react/button";
+
+export default function ButtonSizes() {
+  return (
+    <>
+      <Button color="primary" size="small">
+        Small
+      </Button>
+      <Button color="primary" />
+      <Button color="primary" size="large">
+        Large
+      </Button>
+    </>
+  );
+}
 ```
 
 </details>
@@ -89,23 +100,30 @@ import { Button } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <Button color="secondary" roundedSide="top">
-    Top rounded
-  </Button>
-  <Button color="secondary" roundedSide="bottom">
-    Bottom rounded
-  </Button>
-  <Button color="secondary" roundedSide="left">
-    Left rounded
-  </Button>
-  <Button color="secondary" roundedSide="right">
-    Right rounded
-  </Button>
-  <Button color="secondary" fullRounded>
-    Full rounded
-  </Button>
-</>
+import * as React from "react";
+import { Button } from "@hdoc-react/button";
+
+export default function ButtonRounded() {
+  return (
+    <>
+      <Button color="secondary" roundedSide="top">
+        Top rounded
+      </Button>
+      <Button color="secondary" roundedSide="bottom">
+        Bottom rounded
+      </Button>
+      <Button color="secondary" roundedSide="left">
+        Left rounded
+      </Button>
+      <Button color="secondary" roundedSide="right">
+        Right rounded
+      </Button>
+      <Button color="secondary" fullRounded>
+        Full rounded
+      </Button>
+    </>
+  );
+}
 ```
 
 </details>
@@ -118,26 +136,34 @@ import { Button } from "@hdoc-react/button";
   <summary>Show code</summary>
 
 ```js
-<>
-  <Button color="error" iconStart={<DeleteIcon />}>
-    Delete
-  </Button>
-  <Button color="error" iconEnd={<DeleteIcon />}>
-    Delete
-  </Button>
-  <Button color="error" variant="outline" iconStart={<CloseIcon />}>
-    Close
-  </Button>
-  <Button color="error" variant="outline" iconEnd={<CloseIcon />}>
-    Close
-  </Button>
-  <Button color="error" variant="outline" iconStart={<FavoriteIcon />}>
-    Favorite
-  </Button>
-  <Button color="error" variant="outline" iconEnd={<FavoriteIcon />}>
-    Favorite
-  </Button>
-</>
+import * as React from "react";
+import { Button } from "@hdoc-react/button";
+import { DeleteIcon, CloseIcon, FavoriteIcon } from "third-party-package";
+
+export default function ButtonWithIcons() {
+  return (
+    <>
+      <Button color="error" iconStart={<DeleteIcon />}>
+        Delete
+      </Button>
+      <Button color="error" iconEnd={<DeleteIcon />}>
+        Delete
+      </Button>
+      <Button color="error" variant="outline" iconStart={<CloseIcon />}>
+        Close
+      </Button>
+      <Button color="error" variant="outline" iconEnd={<CloseIcon />}>
+        Close
+      </Button>
+      <Button color="error" variant="outline" iconStart={<FavoriteIcon />}>
+        Favorite
+      </Button>
+      <Button color="error" variant="outline" iconEnd={<FavoriteIcon />}>
+        Favorite
+      </Button>
+    </>
+  );
+}
 ```
 
 </details>
