@@ -6,6 +6,231 @@
 import { ButtonGroup } from "@hdoc-react/button";
 ```
 
+## Default button group
+
+![button-group-default](https://github.com/Hdoc1509/react-components/assets/72316111/9fdedccb-66f7-43b4-8647-da699ee14f8e)
+
+<details>
+  <summary>Show code</summary>
+
+```js
+import * as React from "react";
+import { Button, ButtonGroup } from "@hdoc-react/button";
+
+export default function ButtonGroupDefault() {
+  return (
+    <>
+      <ButtonGroup>
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+
+      <ButtonGroup variant="outline">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+
+      <ButtonGroup variant="text">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+    </>
+  );
+}
+```
+
+</details>
+
+## Colors
+
+![button-group-colors](https://github.com/Hdoc1509/react-components/assets/72316111/325879a8-f684-4198-89a5-22422b59bd79)
+
+<details>
+  <summary>Show code</summary>
+
+```js
+import * as React from "react";
+import { Button, ButtonGroup } from "@hdoc-react/button";
+
+const colors = ["primary", "secondary", "error", "info", "warning", "success"];
+
+export default function ButtonGroupColors() {
+  return (
+    <>
+      {colors.map((color) => (
+        <>
+          <ButtonGroup key={`button-group-${color}-default`} color={color}>
+            <Button>One</Button>
+            <Button>Two</Button>
+            <Button>Three</Button>
+          </ButtonGroup>
+          <ButtonGroup
+            key={`button-group-${color}-outline`}
+            color={color}
+            variant="outline"
+          >
+            <Button>One</Button>
+            <Button>Two</Button>
+            <Button>Three</Button>
+          </ButtonGroup>
+          <ButtonGroup
+            key={`button-group-${color}-text`}
+            color={color}
+            variant="text"
+          >
+            <Button>One</Button>
+            <Button>Two</Button>
+            <Button>Three</Button>
+          </ButtonGroup>
+        </>
+      ))}
+    </>
+  );
+}
+```
+
+</details>
+
+## Sizes
+
+![button-group-sizes](https://github.com/Hdoc1509/react-components/assets/72316111/7d5d02b9-b10a-49df-aa27-983f53c8627e)
+
+<details>
+  <summary>Show code</summary>
+
+```js
+import * as React from "react";
+import { Button, ButtonGroup } from "@hdoc-react/button";
+
+export default function ButtonGroupSizes() {
+  return (
+    <>
+      <ButtonGroup size="small" color="primary">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+      <ButtonGroup color="primary">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+      <ButtonGroup size="large" color="primary">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+    </>
+  );
+}
+```
+
+</details>
+
+## Column
+
+![button-group-column](https://github.com/Hdoc1509/react-components/assets/72316111/cdca20d0-77b7-4e1e-bafe-fbd4f7e0ec24)
+
+<details>
+  <summary>Show code</summary>
+
+```js
+import * as React from "react";
+import { Button, ButtonGroup } from "@hdoc-react/button";
+
+export default function ButtonGroupColors() {
+  return (
+    <>
+      {["secondary", "error"].map((color) => (
+        <>
+          <ButtonGroup
+            key={`button-group-column-${color}-default`}
+            color={color}
+            direction="column"
+          >
+            <Button>One</Button>
+            <Button>Two</Button>
+            <Button>Three</Button>
+          </ButtonGroup>
+          <ButtonGroup
+            key={`button-group-column-${color}-outline`}
+            color={color}
+            variant="outline"
+            direction="column"
+          >
+            <Button>One</Button>
+            <Button>Two</Button>
+            <Button>Three</Button>
+          </ButtonGroup>
+          <ButtonGroup
+            key={`button-group-column-${color}-text`}
+            color={color}
+            variant="text"
+            direction="column"
+          >
+            <Button>One</Button>
+            <Button>Two</Button>
+            <Button>Three</Button>
+          </ButtonGroup>
+        </>
+      ))}
+    </>
+  );
+}
+```
+
+</details>
+
+## With icons
+
+![button-group-with-icons](https://github.com/Hdoc1509/react-components/assets/72316111/e827f84e-58af-4350-92c7-62772d3b92cc)
+
+<details>
+  <summary>Show code</summary>
+
+```js
+import * as React from "react";
+import { Button, ButtonIcon, ButtonGroup } from "@hdoc-react/button";
+
+const Group = () => {
+  return (
+    <>
+      <ButtonIcon>
+        <AddIcon />
+      </ButtonIcon>
+      <ButtonIcon>
+        <RemoveIcon />
+      </ButtonIcon>
+      <ButtonIcon>
+        <DivideIcon />
+      </ButtonIcon>
+      <Button>Clear</Button>
+    </>
+  );
+};
+
+export default function ButtonGroupWithIcons() {
+  return (
+    <>
+      <ButtonGroup color="success">
+        <Group />
+      </ButtonGroup>
+      <ButtonGroup color="success" variant="outline">
+        <Group />
+      </ButtonGroup>
+      <ButtonGroup color="success" variant="text">
+        <Group />
+      </ButtonGroup>
+    </>
+  );
+}
+```
+
+</details>
+
 ## Props
 
 **All props are optional unless otherwise specified.**
