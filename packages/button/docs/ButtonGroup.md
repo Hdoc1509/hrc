@@ -237,7 +237,7 @@ export default function ButtonGroupWithIcons() {
 
 **Additionally, it can receive all attributes of a `div` element.**
 
-`children`
+**`children`**
 
 The children of the button group. These should be `<Button />` or `<ButtonIcon />`.
 
@@ -245,7 +245,7 @@ Type: `ReactNode`
 
 ---
 
-`disableShadow`
+**`disableShadow`**
 
 Whether the shadow is disabled.
 
@@ -253,7 +253,7 @@ Type: `boolean`
 
 ---
 
-`size`
+**`size`**
 
 Size for the buttons in the group.
 
@@ -261,7 +261,7 @@ Type: `'small' | 'large'`
 
 ---
 
-`color`
+**`color`**
 
 The color variant of the buttons in the group.
 
@@ -269,7 +269,7 @@ Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
 
 ---
 
-`variant`
+**`variant`**
 
 The variant of the buttons in the group.
 
@@ -277,14 +277,15 @@ Type: `'outline' | 'text'`
 
 ---
 
-`disabled`
+**`disabled`**
 
 Whether the buttons in the group are disabled.
+
 Type: `boolean`
 
 ---
 
-`column`
+**`column`**
 
 Whether the buttons in the group are in a column direction.
 
@@ -315,25 +316,25 @@ to customize the styles of the buttons.
 
 ## CSS Classes
 
-`.button-group`
+**`.button-group`**
 
 The base styles for the button group
 
 ---
 
-`.button-group--small`
+**`.button-group--small`**
 
 Styles for small variant
 
 ---
 
-`.button-group--large`
+**`.button-group--large`**
 
 Styles for large variant
 
 ---
 
-`.button-group--column`
+**`.button-group--column`**
 
 Styles for column direction
 
@@ -343,8 +344,8 @@ The `<ButtonGroup />` component uses the following
 [CSS Clasess of `<Button />`](./Button.md#css-classes) to set the styles of the
 group:
 
-- `.button--no-shadow`
-- `.button--disabled`
+- **`.button--no-shadow`**
+- **`.button--disabled`**
 
 ---
 
@@ -352,11 +353,11 @@ The `<ButtonGroup />` component uses the following
 [CSS classes of `<Button />`](./Button.md#css-classes) to set the styles of the
 buttons.
 
-- `.button--outline`
-- `.button--text`
-- `.button--primary`
-- `.button--secondary`
-- `.button--error`
-- `.button--info`
-- `.button--warning`
-- `.button--success`
+- **`.button--outline`**
+- **`.button--text`**
+- **`.button--primary`**
+- **`.button--secondary`**
+- **`.button--error`**
+- **`.button--info`**
+- **`.button--warning`**
+- **`.button--success`**
