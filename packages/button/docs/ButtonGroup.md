@@ -339,16 +339,24 @@ Styles for column direction
 
 ---
 
-The button group uses the same CSS classes as the `<Button />` component for
-setting the buttons styles:
+The `<ButtonGroup />` component uses the following
+[CSS Clasess of `<Button />`](./Button.md#css-classes) to set the styles of the
+group:
+
+- `.button--no-shadow`
+- `.button--disabled`
+
+---
+
+The `<ButtonGroup />` component uses the following
+[CSS classes of `<Button />`](./Button.md#css-classes) to set the styles of the
+buttons.
 
 - `.button--outline`
 - `.button--text`
-- `.button--no-shadow`
 - `.button--primary`
 - `.button--secondary`
 - `.button--error`
 - `.button--info`
 - `.button--warning`
 - `.button--success`
-- `.button--disabled`
