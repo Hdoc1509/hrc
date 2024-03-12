@@ -8,7 +8,7 @@ type Props = Simplify<
     ButtonProps,
     "disableShadow" | "size" | "color" | "variant" | "disabled"
   > & {
-    direction?: "column";
+    column?: boolean;
   } & React.ComponentProps<"div">
 >;
 
@@ -19,7 +19,7 @@ export const ButtonGroup = ({
   variant,
   className,
   children,
-  direction,
+  column,
   disabled,
   ...restProps
 }: Props) => {
@@ -27,7 +27,7 @@ export const ButtonGroup = ({
     "button-group",
     {
       [`button-group--${size}`]: size,
-      "button-group--column": direction,
+      "button-group--column": column,
       [`button--${variant}`]: variant,
       "button--no-shadow": disableShadow,
       [`button--${color}`]: color,

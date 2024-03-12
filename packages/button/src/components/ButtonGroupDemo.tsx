@@ -76,8 +76,8 @@ export const ButtonGroupDemo = () => {
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Column</h3>
-        <ColorExample direction="column" color="secondary" />
-        <ColorExample direction="column" color="error" />
+        <ColorExample color="secondary" column />
+        <ColorExample color="error" column />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>With icons</h3>

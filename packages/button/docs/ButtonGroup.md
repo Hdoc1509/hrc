@@ -149,7 +149,7 @@ export default function ButtonGroupColors() {
           <ButtonGroup
             key={`button-group-column-${color}-default`}
             color={color}
-            direction="column"
+            column
           >
             <Button>One</Button>
             <Button>Two</Button>
@@ -159,7 +159,7 @@ export default function ButtonGroupColors() {
             key={`button-group-column-${color}-outline`}
             color={color}
             variant="outline"
-            direction="column"
+            column
           >
             <Button>One</Button>
             <Button>Two</Button>
@@ -169,7 +169,7 @@ export default function ButtonGroupColors() {
             key={`button-group-column-${color}-text`}
             color={color}
             variant="text"
-            direction="column"
+            column
           >
             <Button>One</Button>
             <Button>Two</Button>
@@ -284,11 +284,11 @@ Type: `boolean`
 
 ---
 
-`direction`
+`column`
 
-The direction of the buttons in the group.
+Whether the buttons in the group are in a column direction.
 
-Type: `'column'`
+Type: `boolean`
 
 ## CSS Custom Properties
 
