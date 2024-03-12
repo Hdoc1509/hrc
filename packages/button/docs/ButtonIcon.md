@@ -181,8 +181,10 @@ Type: `ReactNode`
 
 ## CSS Classes
 
-**It uses the same [CSS Classes of `<Button/>`](./Button.md#css-classes)**
-
 **`button--icon`**
 
 Stylize the button to fit an icon.
+
+---
+
+Additionally, the `<ButtonIcon />` component uses the same [CSS Classes of `<Button/>`](./Button.md#css-classes)
