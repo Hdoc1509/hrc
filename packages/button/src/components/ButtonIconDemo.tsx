@@ -21,6 +21,9 @@ export const ButtonIconDemo = () => {
         <ColorExample>
           <Icon name="people" />
         </ColorExample>
+        <ButtonIcon disabled>
+          <Icon name="people" />
+        </ButtonIcon>
       </DemoDocs>
       <DemoDocs layout="grid" cols={9}>
         <h3>Colors</h3>

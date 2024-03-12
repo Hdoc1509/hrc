@@ -21,9 +21,10 @@ export const ButtonDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="Button" />
-      <DemoDocs layout="grid" cols={3}>
+      <DemoDocs layout="grid" cols={4}>
         <h3>Default</h3>
         <ColorExample />
+        <Button disabled>Disabled</Button>
       </DemoDocs>
       <DemoDocs layout="grid">
         <h3>Colors</h3>

@@ -49,9 +49,12 @@ export const ButtonGroupDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="ButtonGroup" />
-      <DemoDocs layout="row">
+      <DemoDocs layout="grid" cols={2}>
         <h3>Default</h3>
         <ColorExample />
+        <ButtonGroup disabled>
+          <GroupExample />
+        </ButtonGroup>
       </DemoDocs>
       <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>

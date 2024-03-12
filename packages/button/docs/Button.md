@@ -8,7 +8,7 @@ import { Button } from "@hdoc-react/button";
 
 ## Default button
 
-![button-default](https://github.com/Hdoc1509/react-components/assets/72316111/05034baf-ced2-4977-9135-5558380b2942)
+![button-default](https://github.com/Hdoc1509/react-components/assets/72316111/4330ca24-691e-43c1-aa51-3473a60038c6)
 
 <details>
   <summary>Show code</summary>
@@ -23,6 +23,7 @@ export default function ButtonDefault() {
       <Button />
       <Button variant="outline" />
       <Button variant="text" />
+      <Button disabled>Disabled</Button>
     </>
   );
 }

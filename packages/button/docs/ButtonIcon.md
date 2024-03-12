@@ -8,7 +8,7 @@ import { ButtonIcon } from "@hdoc-react/button";
 
 ## Default button
 
-![button-icon-default](https://github.com/Hdoc1509/react-components/assets/72316111/6a22efd6-dd76-4ea1-8499-96e8ee3a2812)
+![button-icon-default](https://github.com/Hdoc1509/react-components/assets/72316111/b899316a-f201-43b6-b59e-1847aaa9c8a5)
 
 <details>
   <summary>Show code</summary>
@@ -28,6 +28,9 @@ export default function ButtonIconDefault() {
         <Icon name="people" />
       </ButtonIcon>
       <ButtonIcon variant="text">
+        <Icon name="people" />
+      </ButtonIcon>
+      <ButtonIcon disabled>
         <Icon name="people" />
       </ButtonIcon>
     </>

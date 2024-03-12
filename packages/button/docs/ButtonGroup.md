@@ -8,7 +8,7 @@ import { ButtonGroup } from "@hdoc-react/button";
 
 ## Default button group
 
-![button-group-default](https://github.com/Hdoc1509/react-components/assets/72316111/9fdedccb-66f7-43b4-8647-da699ee14f8e)
+![button-group-default](https://github.com/Hdoc1509/react-components/assets/72316111/812746aa-f16c-40ad-8575-6844cb4d9182)
 
 <details>
   <summary>Show code</summary>
@@ -33,6 +33,12 @@ export default function ButtonGroupDefault() {
       </ButtonGroup>
 
       <ButtonGroup variant="text">
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+      </ButtonGroup>
+
+      <ButtonGroup disabled>
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
