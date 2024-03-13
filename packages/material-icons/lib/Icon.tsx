@@ -29,5 +29,9 @@ export const Icon = ({
     className,
   );
 
-  return <span className={iconClass}>{name}</span>;
+  return (
+    <span className={iconClass} aria-hidden="true">
+      {name}
+    </span>
+  );
 };
