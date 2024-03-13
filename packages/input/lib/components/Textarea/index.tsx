@@ -47,13 +47,13 @@ export const Textarea = ({
     <Label error={error} fullwidth={fullWidth} className={labelClassName}>
       {required && label ? `${label} *` : label}
       <textarea
+        {...restProps}
         className={textareaClass}
         required={required}
         onChange={(e) => {
           autosize && autosizeTextarea(e.currentTarget);
           onChange?.(e);
         }}
-        {...restProps}
       />
       {helperText && <span className="helper-text">{helperText}</span>}
     </Label>

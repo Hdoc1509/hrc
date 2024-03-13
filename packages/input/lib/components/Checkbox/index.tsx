@@ -43,11 +43,11 @@ export const Checkbox = ({
     <Label disabled={disabled} className={labelClassName} checkbox>
       <div className={wrapperClass}>
         <input
+          {...restProps}
           className="checkbox__inner"
           type="checkbox"
           disabled={disabled}
           required={required}
-          {...restProps}
         />
         <span className="checkbox__icon">
           {icon ?? <CheckboxIcon />}

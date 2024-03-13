@@ -49,10 +49,10 @@ export const Input = ({
       <div className={inputWrapperClass}>
         {iconStart}
         <input
+          {...restProps}
           className="input__inner"
           disabled={disabled}
           required={required}
-          {...restProps}
         />
         {iconEnd}
       </div>
