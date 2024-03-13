@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, ButtonIcon } from "../../lib/main";
+import { Button, ButtonGroup, ButtonIcon } from "@lib/main";
 import { DeleteIcon, FavoriteIcon, SearchIcon } from "./Icons";
 import { DemoDocs } from "./DemoDocs";
 

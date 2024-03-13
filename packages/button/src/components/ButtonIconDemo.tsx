@@ -1,5 +1,5 @@
 import { Icon } from "@hdoc-react/material-icons";
-import { ButtonIcon } from "../../lib/main";
+import { ButtonIcon } from "@lib/main";
 import { DeleteIcon, SearchIcon } from "./Icons";
 import { DemoDocs } from "./DemoDocs";
 

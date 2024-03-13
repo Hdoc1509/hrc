@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Icon } from "@hdoc-react/material-icons";
-import { Button } from "../lib/main";
+import { Button } from "@lib/main";
 import { ErrorOutlineIcon } from "./components/Icons";
 import { Demo } from "./components/Demo";
 import { ButtonDemo } from "./components/ButtonDemo";

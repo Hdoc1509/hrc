@@ -1,5 +1,5 @@
 import { Icon } from "@hdoc-react/material-icons";
-import { Button, ButtonGroup, ButtonIcon } from "../../lib/main";
+import { Button, ButtonGroup, ButtonIcon } from "@lib/main";
 import { DivideIcon } from "./Icons";
 import { DemoDocs } from "./DemoDocs";
 
