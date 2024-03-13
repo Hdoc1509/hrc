@@ -154,12 +154,6 @@ Styles for the small size
 
 ---
 
-`.material-icons--medium`
-
-Styles for the medium size
-
----
-
 `.material-icons--large`
 
 Styles for the large size
