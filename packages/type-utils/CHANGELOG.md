@@ -1,5 +1,15 @@
 # @hdoc-react/type-utils
 
+## 1.1.0
+
+### Minor Changes
+
+- f431f53: Add types for common props
+
+### Patch Changes
+
+- 5aac604: Correct misspelling on keyword
+
 ## 1.0.1
 
 ### Patch Changes

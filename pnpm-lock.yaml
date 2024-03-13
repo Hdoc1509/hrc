@@ -63,7 +63,7 @@ importers:
   packages/button:
     dependencies:
       '@hdoc-react/type-utils':
-        specifier: workspace:^1.0.1
+        specifier: workspace:^1.1.0
         version: link:../type-utils
       clsx:
         specifier: ^2.0.0
@@ -109,7 +109,7 @@ importers:
   packages/input:
     dependencies:
       '@hdoc-react/type-utils':
-        specifier: workspace:^1.0.1
+        specifier: workspace:^1.1.0
         version: link:../type-utils
       clsx:
         specifier: ^2.0.0

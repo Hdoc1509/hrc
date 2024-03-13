@@ -1,7 +1,7 @@
 {
   "name": "@hdoc-react/type-utils",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
   "description": "Type utilities used by component packages of @hdoc-react/components",

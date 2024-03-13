@@ -1,5 +1,70 @@
 # @hdoc-react/input
 
+## 0.8.0
+
+**This release contains backwards-incompatible changes**. To avoid picking up
+releases like this, you should set a exact version or use a version range syntax
+that only accepts patch upgrades, i.e. `^0.7.0` or `~0.7.0`, in your
+`package.json`
+
+### Minor Changes
+
+- 91798d8: Add css variables for change text color when disabled:
+
+  - `--input-text-disabled`
+  - `--textarea-text-disabled`
+
+- 97e71b3: Spread rest of props before set necessary props
+- cbb5776: Rename css class selectors used by checkbox component
+
+  #### Migrating
+
+  If you were using css selectors, you should rename them as follows:
+
+  - `.chekbox-wrapper` -> `.checkbox`
+  - `.checkbox-wrapper--disabled` -> `.checkbox--disabled`
+  - `.checkbox-wrapper--primary` -> `.checkbox--primary`
+  - `.checkbox-wrapper--secondary` -> `.checkbox--secondary`
+  - `.checkbox-wrapper--error` -> `.checkbox--error`
+  - `.checkbox-wrapper--info` -> `.checkbox--info`
+  - `.checkbox-wrapper--warning` -> `.checkbox--warning`
+  - `.checkbox-wrapper--success` -> `.checkbox--success`
+  - `.checkbox-wrapper--small` -> `.checkbox--small`
+  - `.checkbox-wrapper--large` -> `.checkbox--large`
+  - `.checkbox-wrapper > input` -> `.checkbox__inner`
+  - `.checkbox-wrapper > .checkbox` -> `.checkbox__icon`
+
+- 3d6e243: Handle svg icons for input component
+- 8af444c: Set pointer events none for input and checkbox when disabled
+- e8c1feb: Set full width to inner input of input component
+- a8db43b: Rename class selector of input wrapper
+
+  #### Migrating
+
+  If you were using css selectors, you should rename them as follows:
+
+  - `.input-wapper` -> `.input`
+  - `.input-wrapper--error` -> `.input--error`
+  - `.input-wrapper--disabled` -> `.input--disabled`
+  - `.input-wrapper--small` -> `.input--small`
+  - `.input-wrapper--fullwidth` -> `.input--fullwidth`
+  - `.input-wrapper > input` -> `.input__inner`
+
+- fea264c: Handle svg icons color for `<Input />`
+- da1d234: Use `Size` and `Color` types from `@hdoc-react/type-utils`
+- 25021e1: Add prop `autosize` to `<Textarea />`
+
+### Patch Changes
+
+- 9d99787: Show required symbol only when the label is set
+
+  This will prevent from showing `undefined *` when required is set but no label
+  is set
+
+- Updated dependencies [f431f53]
+- Updated dependencies [5aac604]
+  - @hdoc-react/type-utils@1.1.0
+
 ## 0.7.1
 
 ### Patch Changes
@@ -31,7 +96,7 @@ that only accepts patch upgrades, i.e. `^0.5.0` or `~0.5.0`, in your
 - 9def6d9: Add `<Checkbox />` component
 - 9b487bc: Use independent classes for `<Textarea />` component
 
-  Migrating
+  #### Migrating
 
   - If you were using css selectors, you should rename them as follows:
     - `.input--textarea` -> `.textarea`
@@ -57,7 +122,7 @@ that only accepts patch upgrades, i.e. `^0.5.0` or `~0.5.0`, in your
 
 - b12cf3e: Use independent classes for `<Input />` component
 
-  Migrating
+  #### Migrating
 
   - If you were using css selectors, you should rename them as follows:
     - `.input` to `.input-wrapper > input`

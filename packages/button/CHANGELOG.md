@@ -1,5 +1,21 @@
 # @hdoc-react/button
 
+## 2.4.0
+
+### Minor Changes
+
+- 3faca31: Handle svg icons color
+- 8ef1f4f: Add `<ButtonGroup />` component
+- a5d80fa: Handle svg icons size
+- da1d234: Use `Size` and `Color` types from `@hdoc-react/type-utils`
+
+### Patch Changes
+
+- 6844207: Handle sizes for <ButtonIcon /> correctly
+- Updated dependencies [f431f53]
+- Updated dependencies [5aac604]
+  - @hdoc-react/type-utils@1.1.0
+
 ## 2.3.1
 
 ### Patch Changes

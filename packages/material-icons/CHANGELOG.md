@@ -1,5 +1,12 @@
 # @hdoc-react/material-icons
 
+## 2.2.0
+
+### Minor Changes
+
+- c98e1f7: Add `inherit` size variant
+- 246fc0e: Set `aria-hidden` attribute
+
 ## 2.1.0
 
 ### Minor Changes
