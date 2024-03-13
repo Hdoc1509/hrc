@@ -18,7 +18,6 @@ export const ButtonGroup = ({
   color,
   variant,
   className,
-  children,
   column,
   disabled,
   ...restProps
@@ -36,9 +35,5 @@ export const ButtonGroup = ({
     className,
   );
 
-  return (
-    <div {...restProps} role="group" className={buttonGroupClass}>
-      {children}
-    </div>
-  );
+  return <div {...restProps} role="group" className={buttonGroupClass} />;
 };
