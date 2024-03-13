@@ -14,6 +14,7 @@ declare const config: {
     };
     alias: (dirname: string) => {
         "@scss": string;
+        "@lib": string;
     };
     entries: (dirname: string) => {
         [key: string]: string;

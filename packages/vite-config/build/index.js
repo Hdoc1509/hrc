@@ -14,6 +14,7 @@ const config = {
     }),
     alias: (dirname) => ({
         "@scss": resolve(dirname, "lib/scss"),
+        "@lib": resolve(dirname, "lib"),
     }),
     entries: (dirname) => ({
         main: "lib/main.ts",
