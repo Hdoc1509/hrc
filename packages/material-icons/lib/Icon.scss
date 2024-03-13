@@ -1,5 +1,13 @@
 @use "@mono/ui/scss/colors" as *;
 
+@mixin color-variants($colors) {
+  @each $color, $_ in $colors {
+    &--#{$color} {
+      --icon-color: var(--#{$color}, #{map-get($colors, $color, main)});
+    }
+  }
+}
+
 [class*="material-icons"] {
   color: var(--icon-color, inherit);
   width: 1em;
@@ -20,29 +28,7 @@
     --icon-size: var(--icon-large, 36px);
   }
 
-  &--primary {
-    --icon-color: var(--primary, #{$primary});
-  }
-
-  &--secondary {
-    --icon-color: var(--secondary, #{$secondary});
-  }
-
-  &--error {
-    --icon-color: var(--error, #{$error});
-  }
-
-  &--warning {
-    --icon-color: var(--warning, #{$warning});
-  }
-
-  &--info {
-    --icon-color: var(--info, #{$info});
-  }
-
-  &--success {
-    --icon-color: var(--success, #{$success});
-  }
+  @include color-variants($colors);
 
   &--disabled {
     --icon-color: var(--icon-color-disabled, rgba(0, 0, 0, 0.26));
