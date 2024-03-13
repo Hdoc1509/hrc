@@ -45,6 +45,10 @@ function App() {
       <Icon name="logout" color="error" />
       <Icon name="schedule" color="primary" />
       <Icon name="language" color="secondary" />
+      <br />
+      <div className="inherit-size">
+        <Icon name="people" color="info" size="inherit" />
+      </div>
     </>
   );
 }

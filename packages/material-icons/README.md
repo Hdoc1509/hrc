@@ -36,7 +36,6 @@ import { Icon } from "@hdoc-react/material-icons";
 function App() {
   return (
     <>
-      ...
       <Icon name="shopping_cart" size="large" variant="outlined" />
     </>
   );
@@ -83,7 +82,7 @@ Type: `boolean`
 
 Font size for the icon.
 
-Type: `'small' | 'large'`
+Type: `'small' | 'large' | 'inherit'`
 
 ---
 
@@ -164,6 +163,12 @@ Styles for the medium size
 `.material-icons--large`
 
 Styles for the large size
+
+---
+
+`.material-icons--inherit`
+
+Styles for the inherit size, i.e., the font size is inherited from the parent element
 
 ---
 

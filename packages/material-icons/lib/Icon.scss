@@ -27,6 +27,9 @@
   &--large {
     --icon-size: var(--icon-large, 36px);
   }
+  &--inherit {
+    --icon-size: 1em;
+  }
 
   @include color-variants(mono.$colors);
 

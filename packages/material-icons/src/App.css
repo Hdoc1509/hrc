@@ -16,3 +16,7 @@
   --icon-color-disabled: gray;
   margin-bottom: 30px;
 }
+
+.inherit-size {
+  font-size: 10rem;
+}
