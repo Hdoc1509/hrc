@@ -32,3 +32,11 @@ type FlattenedType = Simplify<MyType & AnotherType>;
 
 - [`Simplify`](./src/simplify.d.ts) - Use to flatten the type output to improve
   type hints shown in editors.
+
+### Common Props
+
+These are [`common props`](./src/common-props.d.ts) that can be used in any
+component.
+
+- `Color` - Color variants
+- `Size` - Size variants
