@@ -1,11 +1,11 @@
-import type { MaterialIcon as IconName } from "@material-design-icons/font";
+import { MaterialIcon } from "@material-design-icons/font";
 import { clsx } from "clsx";
 import "./Icon.scss";
 
 export type IconProps = {
   variant?: "outlined" | "round" | "sharp" | "two-tone";
   size?: "small" | "large";
-  name: IconName;
+  name: MaterialIcon;
   color?: "primary" | "secondary" | "error" | "warning" | "info" | "success";
   className?: string;
   disabled?: boolean;
