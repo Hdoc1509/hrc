@@ -1,4 +1,4 @@
-@use "@mono/ui/scss/colors" as *;
+@use "@mono/ui/scss" as mono;
 
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {
@@ -28,7 +28,7 @@
     --icon-size: var(--icon-large, 36px);
   }
 
-  @include color-variants($colors);
+  @include color-variants(mono.$colors);
 
   &--disabled {
     --icon-color: var(--icon-color-disabled, rgba(0, 0, 0, 0.26));
