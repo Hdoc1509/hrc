@@ -39,7 +39,6 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
 
   &.button--outline {
     outline-color: var(--button-text);
-    outline-offset: -1px;
   }
   &.button--text > * {
     border-color: transparent;
