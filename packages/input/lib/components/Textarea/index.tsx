@@ -1,8 +1,7 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
 import { Simplify } from "@hdoc-react/type-utils";
-import type { InputProps } from "../Input";
-import type { ComponentProps } from "react";
+import { InputProps } from "../Input";
 import "./style.scss";
 
 const autosizeTextarea = (textarea: HTMLTextAreaElement) => {
@@ -19,7 +18,7 @@ type Props = Simplify<
     InputProps,
     "label" | "labelClassName" | "error" | "helperText" | "fullWidth"
   > &
-    Omit<ComponentProps<"textarea">, "size" | "color">
+    Omit<React.ComponentProps<"textarea">, "size" | "color">
 >;
 
 export const Textarea = ({

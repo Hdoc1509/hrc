@@ -1,20 +1,18 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
 import { CheckboxIcon, CheckboxIconChecked } from "../Icons";
-import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "@hdoc-react/type-utils";
 import { InputProps } from "../Input";
 import "./style.scss";
 
 type Props = Simplify<
-  Partial<{
-    icon: ReactNode;
-    iconChecked: ReactNode;
-    size: "small" | "large";
-    color: "primary" | "secondary" | "info" | "success" | "warning" | "error";
-  }> &
-    Pick<InputProps, "label" | "labelClassName"> &
-    Omit<ComponentProps<"input">, "size" | "color" | "type">
+  {
+    icon?: React.ReactNode;
+    iconChecked?: React.ReactNode;
+    size?: "small" | "large";
+    color?: "primary" | "secondary" | "info" | "success" | "warning" | "error";
+  } & Pick<InputProps, "label" | "labelClassName"> &
+    Omit<React.ComponentProps<"input">, "size" | "color" | "type">
 >;
 
 export const Checkbox = ({

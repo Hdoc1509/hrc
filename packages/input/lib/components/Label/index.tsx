@@ -1,5 +1,4 @@
 import { clsx } from "clsx";
-import { PropsWithChildren } from "react";
 import "./style.scss";
 
 type Props = {
@@ -17,7 +16,7 @@ export const Label = ({
   checkbox,
   disabled,
   children,
-}: PropsWithChildren<Props>) => {
+}: React.PropsWithChildren<Props>) => {
   const labelClass = clsx(
     "label",
     {

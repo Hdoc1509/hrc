@@ -1,10 +1,10 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import { Theme, getTheme, toggleTheme } from "./utils";
 import "./ThemeButton.scss";
 
 type ThemeButtonProps = {
-  lightElement: ReactNode;
-  darkElement: ReactNode;
+  lightElement: React.ReactNode;
+  darkElement: React.ReactNode;
   fullRounded?: boolean;
 };
 

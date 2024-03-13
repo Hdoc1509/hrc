@@ -1,6 +1,5 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
-import { ComponentProps, ReactNode } from "react";
 import { Simplify } from "@hdoc-react/type-utils";
 import "./style.scss";
 
@@ -12,10 +11,10 @@ export type InputProps = Simplify<
     helperText: string;
     fullWidth: boolean;
     size: "small";
-    iconStart: ReactNode;
-    iconEnd: ReactNode;
+    iconStart: React.ReactNode;
+    iconEnd: React.ReactNode;
   }> &
-    Omit<ComponentProps<"input">, "size" | "color">
+    Omit<React.ComponentProps<"input">, "size" | "color">
 >;
 
 export const Input = ({
