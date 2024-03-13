@@ -16,10 +16,9 @@ type Props = Simplify<
   Pick<
     InputProps,
     "label" | "labelClassName" | "error" | "helperText" | "fullWidth"
-  > &
-    Omit<ComponentProps<"textarea">, "size" | "color"> & {
-      autosize?: boolean;
-    }
+  > & {
+    autosize?: boolean;
+  } & Omit<ComponentProps<"textarea">, "size" | "color">
 >;
 
 export const Textarea = ({
