@@ -118,6 +118,9 @@ importers:
       '@hdoc-react/material-icons':
         specifier: workspace:*
         version: link:../material-icons
+      '@hdoc-react/vite-config':
+        specifier: workspace:*
+        version: link:../vite-config
       '@material-design-icons/font':
         specifier: 0.14.10
         version: 0.14.10
@@ -195,6 +198,9 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
     devDependencies:
+      '@hdoc-react/vite-config':
+        specifier: workspace:*
+        version: link:../vite-config
       '@mono/ui':
         specifier: workspace:*
         version: link:../../libs/ui

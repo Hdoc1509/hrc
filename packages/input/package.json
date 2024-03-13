@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@hdoc-react/material-icons": "workspace:*",
+    "@hdoc-react/vite-config": "workspace:*",
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",

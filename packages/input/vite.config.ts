@@ -1,7 +1,7 @@
 // https://vitejs.dev/config/
 import { defineConfig } from "vite";
-import { libInjectCss, scanEntries } from "vite-plugin-lib-inject-css";
-import { resolve } from "path";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
+import config from "@hdoc-react/vite-config";
 import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react-swc";
 
@@ -16,24 +16,13 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: {
-        main: "lib/main.ts",
-        ...scanEntries("lib/components"),
-      },
+      entry: config.entries(__dirname),
       formats: ["es"],
     },
     copyPublicDir: false,
-    rollupOptions: {
-      external: ["react", "react/jsx-runtime", "clsx"],
-      output: {
-        assetFileNames: "css/[name][extname]",
-        entryFileNames: "[name].js",
-      },
-    },
+    rollupOptions: config.rollupOptions({ extraDeps: "clsx" }),
   },
   resolve: {
-    alias: {
-      "@scss": resolve(__dirname, "lib/scss"),
-    },
+    alias: config.alias(__dirname),
   },
 });
