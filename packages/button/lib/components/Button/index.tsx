@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Simplify } from "@hdoc-react/type-utils";
+import { Simplify, Size, Color } from "@hdoc-react/type-utils";
 import "./style.scss";
 
 export type ButtonProps = Simplify<
@@ -8,8 +8,8 @@ export type ButtonProps = Simplify<
     disableShadow?: boolean;
     iconStart?: React.ReactNode;
     iconEnd?: React.ReactNode;
-    size?: "small" | "large";
-    color?: "primary" | "secondary" | "error" | "info" | "warning" | "success";
+    size?: Size;
+    color?: Color;
     roundedSide?: "top" | "bottom" | "left" | "right";
     fullRounded?: boolean;
   } & React.ComponentProps<"button">

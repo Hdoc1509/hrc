@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
 import { CheckboxIcon, CheckboxIconChecked } from "../Icons";
-import { Simplify } from "@hdoc-react/type-utils";
+import { Color, Simplify, Size } from "@hdoc-react/type-utils";
 import { InputProps } from "../Input";
 import "./style.scss";
 
@@ -9,8 +9,8 @@ type Props = Simplify<
   {
     icon?: React.ReactNode;
     iconChecked?: React.ReactNode;
-    size?: "small" | "large";
-    color?: "primary" | "secondary" | "info" | "success" | "warning" | "error";
+    size?: Size;
+    color?: Color;
   } & Pick<InputProps, "label" | "labelClassName"> &
     Omit<React.ComponentProps<"input">, "size" | "color" | "type">
 >;
