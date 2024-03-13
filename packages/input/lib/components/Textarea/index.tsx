@@ -13,12 +13,13 @@ const autosizeTextarea = (textarea: HTMLTextAreaElement) => {
 };
 
 type Props = Simplify<
-  Pick<
+  {
+    autosize?: boolean;
+  } & Pick<
     InputProps,
     "label" | "labelClassName" | "error" | "helperText" | "fullWidth"
-  > & {
-    autosize?: boolean;
-  } & Omit<ComponentProps<"textarea">, "size" | "color">
+  > &
+    Omit<ComponentProps<"textarea">, "size" | "color">
 >;
 
 export const Textarea = ({
