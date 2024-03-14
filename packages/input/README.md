@@ -1,11 +1,11 @@
-# @hdoc-react/input
+# @hrc/input
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hdoc-react/input">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Finput">
+  <a href="https://www.npmjs.com/package/@hrc/input">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2Finput">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Finput">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Finput">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2Finput">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Finput">
 </p>
 
 Simple input components for your React app
@@ -15,14 +15,14 @@ Simple input components for your React app
 ## Installation
 
 ```bash
-npm install @hdoc-react/input
+npm install @hrc/input
 ```
 
 ## Usage
 
 ```js
 import { EmailIcon, StarIcon, StarBorderIcon } from "third-party-package";
-import { Input, Textarea, Checkbox } from "@hdoc-react/input";
+import { Input, Textarea, Checkbox } from "@hrc/input";
 
 function App() {
   return (
@@ -112,9 +112,9 @@ options to reduce the build size:
 ### Option 1: Use path imports
 
 ```diff
-- import { Input, Textarea } from "@hdoc-react/input";
-+ import { Input } from "@hdoc-react/input/dist/Input";
-+ import { Textarea } from "@hdoc-react/input/dist/Textarea";
+- import { Input, Textarea } from "@hrc/input";
++ import { Input } from "@hrc/input/dist/Input";
++ import { Textarea } from "@hrc/input/dist/Textarea";
 ```
 
 ### Option 2: Use `babel-plugin-import`
@@ -124,7 +124,7 @@ Install the plugin with `npm install -D babel-plugin-import`
 Create a `.babelrc.js` file in your project root with the following content:
 
 ```js
-import inputConfig from "@hdoc-react/input/config/babel-import.js";
+import inputConfig from "@hrc/input/config/babel-import.js";
 
 const plugins = [...otherPlugins, inputConfig];
 

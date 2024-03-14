@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc-react/button",
+  "name": "@hrc/button",
   "private": false,
   "version": "2.4.0",
   "type": "module",
@@ -43,7 +43,7 @@
     "button"
   ],
   "dependencies": {
-    "@hdoc-react/type-utils": "workspace:^1.1.0",
+    "@hrc/type-utils": "workspace:^1.1.0",
     "clsx": "^2.0.0"
   },
   "peerDependencies": {
@@ -51,8 +51,8 @@
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@hdoc-react/material-icons": "workspace:*",
-    "@hdoc-react/vite-config": "workspace:*",
+    "@hrc/material-icons": "workspace:*",
+    "@hrc/vite-config": "workspace:*",
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",

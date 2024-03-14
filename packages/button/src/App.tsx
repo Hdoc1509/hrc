@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Icon } from "@hdoc-react/material-icons";
+import { Icon } from "@hrc/material-icons";
 import { Button } from "@lib/main";
 import { ErrorOutlineIcon } from "./components/Icons";
 import { Demo } from "./components/Demo";
@@ -27,7 +27,7 @@ function App() {
         onClick={toggleError}
         iconEnd={<Icon name="error_outline" />}
       >
-        Toggle error - @hdoc-react/material-icons
+        Toggle error - @hrc/material-icons
       </Button>
       <Demo />
       <ButtonDemo />

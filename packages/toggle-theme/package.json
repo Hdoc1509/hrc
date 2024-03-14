@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc-react/toggle-theme",
+  "name": "@hrc/toggle-theme",
   "private": false,
   "version": "2.1.5",
   "type": "module",
@@ -49,7 +49,7 @@
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@hdoc-react/material-icons": "workspace:*",
+    "@hrc/material-icons": "workspace:*",
     "@material-design-icons/font": "^0.14.11",
     "@vitejs/plugin-react-swc": "3.3.2",
     "react": "18.2.0",

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Simplify } from "@hdoc-react/type-utils";
+import { Simplify } from "@hrc/type-utils";
 import { ButtonProps } from "../Button";
 import "./style.scss";
 

@@ -62,17 +62,17 @@ importers:
 
   packages/button:
     dependencies:
-      '@hdoc-react/type-utils':
+      '@hrc/type-utils':
         specifier: workspace:^1.1.0
         version: link:../type-utils
       clsx:
         specifier: ^2.0.0
         version: 2.0.0
     devDependencies:
-      '@hdoc-react/material-icons':
+      '@hrc/material-icons':
         specifier: workspace:*
         version: link:../material-icons
-      '@hdoc-react/vite-config':
+      '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
       '@material-design-icons/font':
@@ -108,17 +108,17 @@ importers:
 
   packages/input:
     dependencies:
-      '@hdoc-react/type-utils':
+      '@hrc/type-utils':
         specifier: workspace:^1.1.0
         version: link:../type-utils
       clsx:
         specifier: ^2.0.0
         version: 2.0.0
     devDependencies:
-      '@hdoc-react/material-icons':
+      '@hrc/material-icons':
         specifier: workspace:*
         version: link:../material-icons
-      '@hdoc-react/vite-config':
+      '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
       '@material-design-icons/font':
@@ -198,7 +198,7 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
     devDependencies:
-      '@hdoc-react/vite-config':
+      '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
       '@mono/ui':
@@ -231,7 +231,7 @@ importers:
 
   packages/toggle-theme:
     devDependencies:
-      '@hdoc-react/material-icons':
+      '@hrc/material-icons':
         specifier: workspace:*
         version: link:../material-icons
       '@material-design-icons/font':

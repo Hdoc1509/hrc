@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Simplify, Size, Color } from "@hdoc-react/type-utils";
+import { Simplify, Size, Color } from "@hrc/type-utils";
 import "./style.scss";
 
 export type ButtonProps = Simplify<

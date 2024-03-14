@@ -4,16 +4,16 @@ to: packages/<%= name %>/README.md
 <%
   ComponentName = h.changeCase.pascal(name)
   ComponentKebab = h.changeCase.param(name)
-  PackageName = `@hdoc-react/${name}`
+  PackageName = `@hrc/${name}`
 -%>
 # <%= PackageName %>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/<%= PackageName %>">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2F<%= name %>">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2F<%= name %>">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2F<%= name %>">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2F<%= name %>">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2F<%= name %>">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2F<%= name %>">
 </p>
 
 <%= description %>

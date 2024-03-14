@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
 import { CheckboxIcon, CheckboxIconChecked } from "../Icons";
-import { Color, Simplify, Size } from "@hdoc-react/type-utils";
+import { Color, Simplify, Size } from "@hrc/type-utils";
 import { InputProps } from "../Input";
 import "./style.scss";
 

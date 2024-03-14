@@ -1,4 +1,4 @@
-# @hdoc-react/type-utils
+# @hrc/type-utils
 
 ## 1.1.0
 

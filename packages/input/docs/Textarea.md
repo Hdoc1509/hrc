@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { Textarea } from "@hdoc-react/input";
+import { Textarea } from "@hrc/input";
 ```
 
 ## Props

@@ -1,11 +1,11 @@
-# @hdoc-react/spinner
+# @hrc/spinner
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hdoc-react/spinner">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Fspinner">
+  <a href="https://www.npmjs.com/package/@hrc/spinner">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2Fspinner">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Fspinner">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Fspinner">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2Fspinner">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Fspinner">
 </p>
 
 Simple spinner component for your React app
@@ -15,13 +15,13 @@ Simple spinner component for your React app
 ## Installation
 
 ```bash
-npm install @hdoc-react/spinner
+npm install @hrc/spinner
 ```
 
 ## Usage
 
 ```js
-import { RingSpinner } from "@hdoc-react/spinner";
+import { RingSpinner } from "@hrc/spinner";
 
 function App() {
   return (

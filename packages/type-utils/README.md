@@ -1,17 +1,17 @@
-# @hdoc-react/type-utils
+# @hrc/type-utils
 
-Type utilities used by [component packages](https://github.com/Hdoc1509/react-components#packages) of [@hdoc-react/components](https://github.com/Hdoc1509/react-components)
+Type utilities used by [component packages](https://github.com/Hdoc1509/react-components#packages) of [@hrc/components](https://github.com/Hdoc1509/react-components)
 
 ## Installation
 
 ```bash
-npm install @hdoc-react/type-utils
+npm install @hrc/type-utils
 ```
 
 ## Usage
 
 ```ts
-import type { Simplify } from "@hdoc-react/type-utils";
+import type { Simplify } from "@hrc/type-utils";
 
 type MyType = {
   a: number;

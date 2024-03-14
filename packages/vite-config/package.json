@@ -1,5 +1,5 @@
 {
-  "name": "@hdoc-react/vite-config",
+  "name": "@hrc/vite-config",
   "private": true,
   "version": "0.0.0",
   "type": "module",

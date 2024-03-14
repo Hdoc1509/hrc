@@ -3,7 +3,7 @@ to: packages/<%= name %>/package.json
 ---
 
 {
-  "name": "@hdoc-react/<%= name %>",
+  "name": "@hrc/<%= name %>",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -48,7 +48,7 @@ to: packages/<%= name %>/package.json
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@hdoc-react/material-icons": "workspace:*",
+    "@hrc/material-icons": "workspace:*",
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",

@@ -1,11 +1,11 @@
-# @hdoc-react/toggle-theme
+# @hrc/toggle-theme
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hdoc-react/toggle-theme">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hdoc-react%2Ftoggle-theme">
+  <a href="https://www.npmjs.com/package/@hrc/toggle-theme">
+    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2Ftoggle-theme">
   </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hdoc-react%2Ftoggle-theme">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hdoc-react%2Ftoggle-theme">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2Ftoggle-theme">
+  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Ftoggle-theme">
 </p>
 
 Simple button component for toggle between `light` and `dark` theme in your
@@ -20,7 +20,7 @@ theme.
 ## Installation
 
 ```bash
-npm install @hdoc-react/toggle-theme
+npm install @hrc/toggle-theme
 ```
 
 ## Usage
@@ -30,14 +30,14 @@ First, import `load-theme.js` in your `index.html`:
 ```html
 <script
   type="module"
-  src="/path/to/@hdoc-react/toggle-theme/dist/load-theme.js"
+  src="/path/to/@hrc/toggle-theme/dist/load-theme.js"
 ></script>
 ```
 
 Then, in your `App.jsx` or another file:
 
 ```js
-import { ThemeButton } from "@hdoc-react/toggle-theme";
+import { ThemeButton } from "@hrc/toggle-theme";
 
 function App() {
   return (

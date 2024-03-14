@@ -1,4 +1,4 @@
-# @hdoc-react/input
+# @hrc/input
 
 ## 0.8.0
 

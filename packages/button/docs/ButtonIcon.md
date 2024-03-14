@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { ButtonIcon } from "@hdoc-react/button";
+import { ButtonIcon } from "@hrc/button";
 ```
 
 ## Default button
@@ -15,8 +15,8 @@ import { ButtonIcon } from "@hdoc-react/button";
 
 ```js
 import * as React from "react";
-import { ButtonIcon } from "@hdoc-react/button";
-import { Icon } from "@hdoc-react/material-icons";
+import { ButtonIcon } from "@hrc/button";
+import { Icon } from "@hrc/material-icons";
 
 export default function ButtonIconDefault() {
   return (
@@ -49,8 +49,8 @@ export default function ButtonIconDefault() {
 
 ```js
 import * as React from "react";
-import { ButtonIcon } from "@hdoc-react/button";
-import { Icon } from "@hdoc-react/material-icons";
+import { ButtonIcon } from "@hrc/button";
+import { Icon } from "@hrc/material-icons";
 
 const Icons = {
   primary: <Icon name="search" />,
@@ -99,8 +99,8 @@ return (
 
 ```js
 import * as React from "react";
-import { ButtonIcon } from "@hdoc-react/button";
-import { Icon } from "@hdoc-react/material-icons";
+import { ButtonIcon } from "@hrc/button";
+import { Icon } from "@hrc/material-icons";
 
 export default function ButtonIconSizes() {
   return (
@@ -130,8 +130,8 @@ export default function ButtonIconSizes() {
 
 ```js
 import * as React from "react";
-import { ButtonIcon } from "@hdoc-react/button";
-import { Icon } from "@hdoc-react/material-icons";
+import { ButtonIcon } from "@hrc/button";
+import { Icon } from "@hrc/material-icons";
 
 export default function ButtonIconRounded() {
   return (

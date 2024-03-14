@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { Input } from "@hdoc-react/input";
+import { Input } from "@hrc/input";
 ```
 
 ## Props

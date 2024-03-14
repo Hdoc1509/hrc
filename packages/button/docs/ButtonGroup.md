@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { ButtonGroup } from "@hdoc-react/button";
+import { ButtonGroup } from "@hrc/button";
 ```
 
 ## Default button group
@@ -15,7 +15,7 @@ import { ButtonGroup } from "@hdoc-react/button";
 
 ```js
 import * as React from "react";
-import { Button, ButtonGroup } from "@hdoc-react/button";
+import { Button, ButtonGroup } from "@hrc/button";
 
 export default function ButtonGroupDefault() {
   return (
@@ -59,7 +59,7 @@ export default function ButtonGroupDefault() {
 
 ```js
 import * as React from "react";
-import { Button, ButtonGroup } from "@hdoc-react/button";
+import { Button, ButtonGroup } from "@hrc/button";
 
 const colors = ["primary", "secondary", "error", "info", "warning", "success"];
 
@@ -109,7 +109,7 @@ export default function ButtonGroupColors() {
 
 ```js
 import * as React from "react";
-import { Button, ButtonGroup } from "@hdoc-react/button";
+import { Button, ButtonGroup } from "@hrc/button";
 
 export default function ButtonGroupSizes() {
   return (
@@ -145,7 +145,7 @@ export default function ButtonGroupSizes() {
 
 ```js
 import * as React from "react";
-import { Button, ButtonGroup } from "@hdoc-react/button";
+import { Button, ButtonGroup } from "@hrc/button";
 
 export default function ButtonGroupColors() {
   return (
@@ -199,9 +199,9 @@ export default function ButtonGroupColors() {
 
 ```js
 import * as React from "react";
-import { Button, ButtonIcon, ButtonGroup } from "@hdoc-react/button";
+import { Button, ButtonIcon, ButtonGroup } from "@hrc/button";
 import { DivideIcon } from "thrid-party-package";
-import { Icon } from "@hdoc-react/material-icons";
+import { Icon } from "@hrc/material-icons";
 
 const Group = () => {
   return (

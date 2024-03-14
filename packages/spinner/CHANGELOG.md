@@ -1,4 +1,4 @@
-# @hdoc-react/spinner
+# @hrc/spinner
 
 ## 0.2.0
 

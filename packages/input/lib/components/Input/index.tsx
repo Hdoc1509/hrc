@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
-import { Simplify } from "@hdoc-react/type-utils";
+import { Simplify } from "@hrc/type-utils";
 import "./style.scss";
 
 export type InputProps = Simplify<

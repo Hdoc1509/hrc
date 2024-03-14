@@ -3,7 +3,7 @@
 ## Import
 
 ```js
-import { Button } from "@hdoc-react/button";
+import { Button } from "@hrc/button";
 ```
 
 ## Default button
@@ -15,7 +15,7 @@ import { Button } from "@hdoc-react/button";
 
 ```js
 import * as React from "react";
-import { Button } from "@hdoc-react/button";
+import { Button } from "@hrc/button";
 
 export default function ButtonDefault() {
   return (
@@ -40,7 +40,7 @@ export default function ButtonDefault() {
 
 ```js
 import * as React from "react";
-import { Button } from "@hdoc-react/button";
+import { Button } from "@hrc/button";
 
 const colors = ["primary", "secondary", "error", "info", "warning", "success"];
 
@@ -74,7 +74,7 @@ export default function ButtonColors() {
 
 ```js
 import * as React from "react";
-import { Button } from "@hdoc-react/button";
+import { Button } from "@hrc/button";
 
 export default function ButtonSizes() {
   return (
@@ -102,7 +102,7 @@ export default function ButtonSizes() {
 
 ```js
 import * as React from "react";
-import { Button } from "@hdoc-react/button";
+import { Button } from "@hrc/button";
 
 export default function ButtonRounded() {
   return (
@@ -138,8 +138,8 @@ export default function ButtonRounded() {
 
 ```js
 import * as React from "react";
-import { Button } from "@hdoc-react/button";
-import { Icon } from "@hdoc-react/material-icons";
+import { Button } from "@hrc/button";
+import { Icon } from "@hrc/material-icons";
 
 export default function ButtonWithIcons() {
   return (
