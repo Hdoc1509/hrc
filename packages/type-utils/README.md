@@ -1,6 +1,7 @@
 # @hrc/type-utils
 
-Type utilities used by [component packages](https://github.com/Hdoc1509/react-components#packages) of [@hrc/components](https://github.com/Hdoc1509/react-components)
+Type utilities used by [component packages](https://github.com/Hdoc1509/hrc#packages)
+of [@hrc/monorepo](https://github.com/Hdoc1509/hrc)
 
 ## Installation
 

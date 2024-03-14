@@ -33,13 +33,13 @@ to: packages/<%= name %>/package.json
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hdoc1509/react-components.git",
+    "url": "git+https://github.com/Hdoc1509/hrc.git",
     "directory": "packages/<%= name %>"
   },
   "bugs": {
-    "url": "https://github.com/Hdoc1509/react-components/issues"
+    "url": "https://github.com/Hdoc1509/hrc/issues"
   },
-  "homepage": "https://github.com/Hdoc1509/react-components/tree/master/packages/<%= name %>#readme",
+  "homepage": "https://github.com/Hdoc1509/hrc/tree/master/packages/<%= name %>#readme",
   "dependencies": {
     "clsx": "^2.0.0"
   },
