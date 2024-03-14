@@ -8,8 +8,7 @@
   <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Ftoggle-theme">
 </p>
 
-Simple button component for toggle between `light` and `dark` theme in your
-React app.
+Simple component for toggle between `light` and `dark` theme in your React app.
 
 ![Theme Button gif](https://github.com/Hdoc1509/react-components/assets/72316111/53cf9717-472c-41f5-95df-260d3dda009a)
 

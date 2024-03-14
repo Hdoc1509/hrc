@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
-  "description": "A react component for material icons",
+  "description": "Simple component for Material Desing Icons font in your React app",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
