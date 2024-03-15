@@ -14,7 +14,7 @@ Simple component for toggle between `light` and `dark` theme in your React app.
 
 - It saves the theme in `localStorage` with the key `theme`.
 - If there is no theme in `localStorage`, the default is the user's preferred
-theme.
+  theme.
 
 ## Installation
 
@@ -55,35 +55,35 @@ Finally, you will need to add your styles manually:
 
 ```css
 body {
-  background-color: var(--color-bg, #fff);
-  color: var(--color-text, #000);
+  background-color: var(--bg-color, #fff);
+  color: var(--text-color, #000);
 }
 
 .my-class {
-  color: var(--my-color-text, #000);
+  color: var(--my-text-color, #000);
 }
 
 /* FOR LIGHT THEME: */
 /* This is usually unnecessary. */
 [data-theme="light"] {
-  --color-bg: #fff;
-  --color-text: #000;
-  --my-color-text: #000;
+  --bg-color: #fff;
+  --text-color: #000;
+  --my-text-color: #000;
 }
 [data-theme="light"] .my-class {
-  --my-color-text: #000;
+  --my-text-color: #000;
   /* or */
   color: #000;
 }
 
 /* FOR DARK THEME: */
 [data-theme="dark"] {
-  --color-bg: #242424;
-  --color-text: #fff;
-  --my-color-text: #fff;
+  --bg-color: #242424;
+  --text-color: #fff;
+  --my-text-color: #fff;
 }
 [data-theme="dark"] .my-class {
-  --my-color-text: #fff;
+  --my-text-color: #fff;
   /* or */
   color: #fff;
 }
