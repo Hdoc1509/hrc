@@ -2,12 +2,12 @@
 
 ## Repo Setup
 
-To develop locally, fork the @hrc/monorepo repository and clone it in your local
+To develop locally, fork the `@hrc/monorepo` repository and clone it in your local
 machine:
 
 ```bash
 # I recommend set `react-components` as the target directory.
-git clone https://github.com/Hdoc1509/hrc.git --depth=1 [react-components]
+git clone https://github.com/Hdoc1509/hrc.git --depth=1 react-components
 ```
 
 The repo is a monorepo using [`pnpm workspaces`](https://pnpm.io/workspaces),
