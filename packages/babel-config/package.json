@@ -1,0 +1,48 @@
+{
+  "name": "@hrc/babel-config",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
+  "description": "Bebel config for packages of @hrc/monorepo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=13.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsc --watch --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hdoc1509/hrc.git",
+    "directory": "packages/type-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/Hdoc1509/hrc/issues"
+  },
+  "homepage": "https://github.com/Hdoc1509/hrc/tree/master/packages/babel-config#readme",
+  "keywords": [
+    "babel",
+    "config",
+    "babel-config",
+    "hrc",
+    "hrc-config",
+    "react",
+    "react-config"
+  ],
+  "devDependencies": {
+    "typescript": "5.0.2"
+  },
+  "peerDependencies": {
+    "babel-plugin-import": "^1.13.0"
+  }
+}

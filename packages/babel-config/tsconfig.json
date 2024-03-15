@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "target": "ESNext",
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "include": ["index.ts"]
+}
