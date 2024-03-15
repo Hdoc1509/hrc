@@ -21,7 +21,7 @@ export const ButtonGroup = ({
   column,
   disabled,
   ...restProps
-}: Props) => {
+}: Props): JSX.Element => {
   const buttonGroupClass = clsx(
     "button-group",
     {
