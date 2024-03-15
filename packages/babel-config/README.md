@@ -1,6 +1,6 @@
 # @hrc/babel-config
 
-Create babel config for [component packages](https://github.com/Hdoc1509/hrc#packages)
+Create Babel config for [component packages](https://github.com/Hdoc1509/hrc#packages)
 of [@hrc/monorepo](https://github.com/Hdoc1509/hrc)
 
 ## Installation
