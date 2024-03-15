@@ -24,7 +24,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hdoc1509/hrc.git",
-    "directory": "packages/type-utils"
+    "directory": "packages/babel-config"
   },
   "bugs": {
     "url": "https://github.com/Hdoc1509/hrc/issues"
