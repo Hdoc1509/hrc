@@ -11,6 +11,8 @@ Simple and extensible components for your React app.
 | [@hrc/material-icons](packages/material-icons) | [![npm](https://img.shields.io/npm/v/%40hrc%2Fmaterial-icons?label=%20)](packages/material-icons/CHANGELOG.md) |
 | [@hrc/toggle-theme](packages/toggle-theme)     | [![npm](https://img.shields.io/npm/v/%40hrc%2Ftoggle-theme?label=%20)](packages/toggle-theme/CHANGELOG.md)     |
 | [@hrc/spinner](packages/spinner)               | [![npm](https://img.shields.io/npm/v/%40hrc%2Fspinner?label=%20)](packages/spinner/CHANGELOG.md)               |
+| [@hrc/type-utils](packages/type-utils)         | [![npm](https://img.shields.io/npm/v/%40hrc%2Ftype-utils?label=%20)](packages/type-utils/CHANGELOG.md)         |
+| [@hrc/babel-config](packages/babel-config)     | [![npm](https://img.shields.io/npm/v/%40hrc%2Fbabel-config?label=%20)](packages/babel-config/CHANGELOG.md)     |
 
 ## Contribution
 
