@@ -1,4 +1,4 @@
-import { scanEntries } from "vite-plugin-lib-inject-css";
+import { scanEntries } from "./scan";
 import { resolve } from "path";
 
 type RollupOptions = {
