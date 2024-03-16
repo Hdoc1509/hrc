@@ -279,7 +279,7 @@ importers:
         version: 5.1.6
 
   packages/vite-config:
-    dependencies:
+    devDependencies:
       typescript:
         specifier: '*'
         version: 5.1.6
