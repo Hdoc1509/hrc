@@ -104,18 +104,18 @@ module.exports = { plugins };
 
 #### Automatic Setup with [`@hrc/babel-config`](https://www.npmjs.com/package/@hrc/babel-config)
 
-1. Install the package with the following command:
+Install the package with the following command:
 
-   ```bash
-   npm install -D @hrc/babel-config
-   ```
+```bash
+npm install -D @hrc/babel-config
+```
 
-1. Write the following code in your `.babelrc.js` file:
+Then, write the following code in your `.babelrc.js` file:
 
-   ```js
-   import hrcConfig from "@hrc/babel-config";
+```js
+import hrcConfig from "@hrc/babel-config";
 
-   const plugins = [...otherPlugins, ...hrcConfig("button")];
+const plugins = [...otherPlugins, ...hrcConfig("button")];
 
-   module.exports = { plugins };
-   ```
+module.exports = { plugins };
+```
