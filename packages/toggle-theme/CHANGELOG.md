@@ -1,5 +1,12 @@
 # @hrc/toggle-theme
 
+## 2.1.6
+
+### Patch Changes
+
+- f67ca70: Update repo url
+- 09e3078: Improve package description
+
 ## 2.1.5
 
 ### Patch Changes

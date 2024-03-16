@@ -1,5 +1,13 @@
 # @hrc/input
 
+## 0.8.1
+
+### Patch Changes
+
+- f67ca70: Update repo url
+- Updated dependencies [f67ca70]
+  - @hrc/type-utils@1.1.1
+
 ## 0.8.0
 
 **This release contains backwards-incompatible changes**. To avoid picking up

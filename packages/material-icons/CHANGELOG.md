@@ -1,5 +1,12 @@
 # @hrc/material-icons
 
+## 2.2.1
+
+### Patch Changes
+
+- f67ca70: Update repo url
+- 09e3078: Improve package description
+
 ## 2.2.0
 
 ### Minor Changes

@@ -1,5 +1,17 @@
 # @hrc/button
 
+## 2.5.0
+
+### Minor Changes
+
+- a55ee83: Add explicite return type to `<ButtonGroup />`
+
+### Patch Changes
+
+- f67ca70: Update repo url
+- Updated dependencies [f67ca70]
+  - @hrc/type-utils@1.1.1
+
 ## 2.4.0
 
 ### Minor Changes

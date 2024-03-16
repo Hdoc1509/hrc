@@ -1,5 +1,11 @@
 # @hrc/spinner
 
+## 0.2.1
+
+### Patch Changes
+
+- f67ca70: Update repo url
+
 ## 0.2.0
 
 ### Minor Changes

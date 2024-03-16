@@ -1,5 +1,11 @@
 # @hrc/type-utils
 
+## 1.1.1
+
+### Patch Changes
+
+- f67ca70: Update repo url
+
 ## 1.1.0
 
 ### Minor Changes
