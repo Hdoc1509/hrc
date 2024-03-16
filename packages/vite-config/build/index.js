@@ -1,4 +1,4 @@
-import { scanEntries } from "./scan";
+import { scanEntries } from "./scan.js";
 import { resolve } from "path";
 const config = {
     rollupOptions: ({ extraDeps } = {}) => ({
