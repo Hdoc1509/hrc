@@ -58,6 +58,6 @@ to: packages/<%= name %>/package.json
     "typescript": "5.0.2",
     "vite": "4.4.5",
     "vite-plugin-dts": "3.5.1",
-    "vite-plugin-lib-inject-css": "1.2.0"
+    "vite-plugin-lib-inject-css": "2.0.0"
   }
 }
