@@ -102,7 +102,7 @@ const plugins = [
 module.exports = { plugins };
 ```
 
-#### Automatic Setup with `@hrc/babel-config`
+#### Automatic Setup with [`@hrc/babel-config`](https://www.npmjs.com/package/@hrc/babel-config)
 
 1. Install the package with the following command:
 
