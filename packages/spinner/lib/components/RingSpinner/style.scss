@@ -4,9 +4,6 @@
 $delta: -0.125;
 
 .ring-spinner {
-  --_size: #{$spinner-size};
-  --_speed: #{$spinner-speed};
-
   display: inline-block;
   position: relative;
   width: var(--_size);

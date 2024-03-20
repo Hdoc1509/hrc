@@ -1,2 +1,1 @@
-import "./scss/main.scss";
-export { RingSpinner } from './components/RingSpinner';
+export { RingSpinner } from "./components/RingSpinner";
