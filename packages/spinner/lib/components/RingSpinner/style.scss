@@ -4,9 +4,12 @@
 $delta: -0.125;
 
 .ring-spinner {
+  --_size: #{$spinner-size};
+  --_speed: #{$spinner-speed};
+
   display: inline-block;
   position: relative;
-  width: $spinner-size;
+  width: var(--_size);
   aspect-ratio: 1;
 
   div {
@@ -14,23 +17,23 @@ $delta: -0.125;
     display: block;
     position: absolute;
 
-    width: calc($spinner-size * 0.8);
+    width: calc(var(--_size) * 0.8);
     aspect-ratio: 1;
-    margin: calc($spinner-size * 0.1);
-    border: calc($spinner-size * 0.1) solid;
+    margin: calc(var(--_size) * 0.1);
+    border: calc(var(--_size) * 0.1) solid;
     border-radius: 50%;
     border-color: $spinner-color transparent transparent transparent;
 
-    animation: ring-spinner $spinner-speed cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation: ring-spinner var(--_speed) cubic-bezier(0.5, 0, 0.5, 1) infinite;
 
     &:nth-child(1) {
-      animation-delay: calc($delta * 3 * $spinner-speed);
+      animation-delay: calc($delta * 3 * var(--_speed));
     }
     &:nth-child(2) {
-      animation-delay: calc($delta * 2 * $spinner-speed);
+      animation-delay: calc($delta * 2 * var(--_speed));
     }
     &:nth-child(3) {
-      animation-delay: calc($delta * 1 * $spinner-speed);
+      animation-delay: calc($delta * 1 * var(--_speed));
     }
   }
 }
