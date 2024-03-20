@@ -1,6 +1,14 @@
 @use "@mono/ui/scss/colors" as *;
 @use "@scss/variables" as *;
 
+@mixin color-variants($colors) {
+  @each $color, $_ in $colors {
+    &--#{$color} {
+      --_color: var(--#{$color}, #{map-get($colors, $color, main)});
+    }
+  }
+}
+
 .spinner {
   --_size: #{$spinner-size};
   --_speed: #{$spinner-speed};
@@ -20,23 +28,5 @@
     --_speed: #{$speed-fast};
   }
 
-  // TODO: Use mixin to generate colors
-  &--primary {
-    --_color: var(--primary, #{$primary});
-  }
-  &--secondary {
-    --_color: var(--secondary, #{$secondary});
-  }
-  &--error {
-    --_color: var(--error, #{$error});
-  }
-  &--warning {
-    --_color: var(--warning, #{$warning});
-  }
-  &--info {
-    --_color: var(--info, #{$info});
-  }
-  &--success {
-    --_color: var(--success, #{$success});
-  }
+  @include color-variants($colors);
 }
