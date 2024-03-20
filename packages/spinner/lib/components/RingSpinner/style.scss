@@ -20,9 +20,9 @@ $delta: -0.125;
     width: calc(var(--_size) * 0.8);
     aspect-ratio: 1;
     margin: calc(var(--_size) * 0.1);
-    border: calc(var(--_size) * 0.1) solid;
+    border: calc(var(--_size) * 0.1) solid transparent;
     border-radius: 50%;
-    border-color: $spinner-color transparent transparent transparent;
+    border-top-color: #{$spinner-color};
 
     animation: ring-spinner var(--_speed) cubic-bezier(0.5, 0, 0.5, 1) infinite;
 
