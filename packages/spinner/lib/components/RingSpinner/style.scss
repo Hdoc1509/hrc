@@ -1,6 +1,4 @@
 // Taken and adapted from https://loading.io/css/
-@use "@scss/variables" as *;
-
 $delta: -0.125;
 
 .ring-spinner {
@@ -19,7 +17,7 @@ $delta: -0.125;
     margin: calc(var(--_size) * 0.1);
     border: calc(var(--_size) * 0.1) solid transparent;
     border-radius: 50%;
-    border-top-color: #{$spinner-color};
+    border-top-color: var(--_color);
 
     animation: ring-spinner var(--_speed) cubic-bezier(0.5, 0, 0.5, 1) infinite;
 

@@ -4,6 +4,7 @@
 .spinner {
   --_size: #{$spinner-size};
   --_speed: #{$spinner-speed};
+  --_color: #{$spinner-color};
 
   &--small {
     --_size: #{$size-small};
@@ -21,21 +22,21 @@
 
   // TODO: Use mixin to generate colors
   &--primary {
-    --spinner-color: var(--primary, #{$primary});
+    --_color: var(--primary, #{$primary});
   }
   &--secondary {
-    --spinner-color: var(--secondary, #{$secondary});
+    --_color: var(--secondary, #{$secondary});
   }
   &--error {
-    --spinner-color: var(--error, #{$error});
+    --_color: var(--error, #{$error});
   }
   &--warning {
-    --spinner-color: var(--warning, #{$warning});
+    --_color: var(--warning, #{$warning});
   }
   &--info {
-    --spinner-color: var(--info, #{$info});
+    --_color: var(--info, #{$info});
   }
   &--success {
-    --spinner-color: var(--success, #{$success});
+    --_color: var(--success, #{$success});
   }
 }
