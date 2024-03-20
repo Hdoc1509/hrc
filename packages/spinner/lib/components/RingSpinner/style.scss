@@ -12,9 +12,8 @@ $delta: -0.125;
     display: block;
     position: absolute;
 
-    width: calc(var(--_size) * 0.8);
+    width: var(--_size);
     aspect-ratio: 1;
-    margin: calc(var(--_size) * 0.1);
     border: calc(var(--_size) * 0.1) solid transparent;
     border-radius: 50%;
     border-top-color: var(--_color);
