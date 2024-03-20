@@ -1,14 +1,14 @@
 import clsx from "clsx";
 import "./style.scss";
 
-export type Spinner = {
+export type SpinnerProps = {
   color?: "primary" | "secondary" | "error" | "warning" | "info" | "success";
   size?: "small" | "large";
   speed?: "slow" | "fast";
   className?: string;
 };
 
-type Props = Spinner & { name: string };
+type Props = SpinnerProps & { name: string };
 
 export const SpinnerBase = ({
   color,
