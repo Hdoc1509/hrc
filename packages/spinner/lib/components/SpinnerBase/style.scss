@@ -1,4 +1,4 @@
-@use "@mono/ui/scss/colors" as *;
+@use "@mono/ui/scss" as mono;
 @use "@scss/variables" as *;
 
 @mixin color-variants($colors) {
@@ -28,5 +28,5 @@
     --_speed: #{$speed-fast};
   }
 
-  @include color-variants($colors);
+  @include color-variants(mono.$colors);
 }
