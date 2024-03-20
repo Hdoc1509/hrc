@@ -1,0 +1,41 @@
+@use "@mono/ui/scss/colors" as *;
+@use "@scss/variables" as *;
+
+.spinner {
+  --_size: #{$spinner-size};
+  --_speed: #{$spinner-speed};
+
+  &--small {
+    --_size: #{$size-small};
+  }
+  &--large {
+    --_size: #{$size-large};
+  }
+
+  &--slow {
+    --_speed: #{$speed-slow};
+  }
+  &--fast {
+    --_speed: #{$speed-fast};
+  }
+
+  // TODO: Use mixin to generate colors
+  &--primary {
+    --spinner-color: var(--primary, #{$primary});
+  }
+  &--secondary {
+    --spinner-color: var(--secondary, #{$secondary});
+  }
+  &--error {
+    --spinner-color: var(--error, #{$error});
+  }
+  &--warning {
+    --spinner-color: var(--warning, #{$warning});
+  }
+  &--info {
+    --spinner-color: var(--info, #{$info});
+  }
+  &--success {
+    --spinner-color: var(--success, #{$success});
+  }
+}
