@@ -1,0 +1,20 @@
+// Taken and adapted from https://github.com/twbs/bootstrap/blob/v5.3.3/scss/_spinners.scss
+
+.border-spinner {
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: var(--_size);
+  aspect-ratio: 1;
+  border: calc(var(--_size) * 0.1) solid var(--_color);
+  border-radius: 50%;
+  border-right-color: transparent;
+
+  animation: border-spinner calc(var(--_speed) / 1.25) linear infinite;
+}
+
+@keyframes border-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
