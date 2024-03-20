@@ -1,4 +1,4 @@
-import { RingSpinner } from "../lib/main";
+import { RingSpinner } from "@lib/main";
 import "./App.css";
 
 function App() {

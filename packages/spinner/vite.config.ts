@@ -15,4 +15,7 @@ export default defineConfig({
     copyPublicDir: false,
     rollupOptions: config.rollupOptions({ extraDeps: "clsx" }),
   },
+  resolve: {
+    alias: config.alias(__dirname),
+  },
 });
