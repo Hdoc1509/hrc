@@ -1,0 +1,20 @@
+// Taken and adapted from https://github.com/loadingio/css-spinner
+.dual-ring-spinner:after {
+  content: " ";
+  display: block;
+
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: calc(var(--_size) * 0.1) solid transparent;
+  border-block-color: var(--_color);
+
+  animation: dual-ring-spinner var(--_speed) linear infinite;
+}
+
+@keyframes dual-ring-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
