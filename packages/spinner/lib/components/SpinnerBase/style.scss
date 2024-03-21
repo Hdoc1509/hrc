@@ -27,12 +27,6 @@
     --_size: #{$size-large};
   }
 
-  &--slow {
-    --_speed: #{$speed-slow};
-  }
-  &--fast {
-    --_speed: #{$speed-fast};
-  }
-
+  @include speed-variants();
   @include color-variants(mono.$colors);
 }

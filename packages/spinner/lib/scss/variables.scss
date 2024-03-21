@@ -9,3 +9,12 @@ $speed-fast: $speed * 0.75;
 $spinner-speed: var(--spinner-animation-duration, $speed);
 
 $spinner-color: var(--spinner-color, currentcolor);
+
+@mixin speed-variants() {
+  &--slow {
+    --_speed: #{$speed-slow};
+  }
+  &--fast {
+    --_speed: #{$speed-fast};
+  }
+}

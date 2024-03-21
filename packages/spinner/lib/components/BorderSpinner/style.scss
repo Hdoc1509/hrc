@@ -12,11 +12,8 @@
 
   animation: border-spinner var(--_speed) linear infinite;
 
-  &.spinner--slow {
-    --_speed: #{$speed-slow};
-  }
-  &.spinner--fast {
-    --_speed: #{$speed-fast};
+  &.spinner {
+    @include speed-variants();
   }
 }
 
