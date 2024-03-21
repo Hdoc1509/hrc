@@ -14,6 +14,12 @@
   --_speed: #{$spinner-speed};
   --_color: #{$spinner-color};
 
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: var(--_size);
+  aspect-ratio: 1;
+
   &--small {
     --_size: #{$size-small};
   }

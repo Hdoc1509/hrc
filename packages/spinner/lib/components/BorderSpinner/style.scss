@@ -1,11 +1,6 @@
 // Taken and adapted from https://github.com/twbs/bootstrap
 
 .border-spinner {
-  display: inline-block;
-
-  box-sizing: border-box;
-  width: var(--_size);
-  aspect-ratio: 1;
   border: calc(var(--_size) * 0.1) solid var(--_color);
   border-radius: 50%;
   border-right-color: transparent;
