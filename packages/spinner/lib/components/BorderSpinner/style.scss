@@ -1,11 +1,16 @@
-// Taken and adapted from https://github.com/twbs/bootstrap
+@use "@scss/variables" as * with (
+  $speed: 1s
+);
 
+// Taken and adapted from https://github.com/twbs/bootstrap
 .border-spinner {
+  --_speed: #{$spinner-speed};
+
   border: calc(var(--_size) * 0.1) solid var(--_color);
   border-radius: 50%;
   border-right-color: transparent;
 
-  animation: border-spinner calc(var(--_speed) / 1.25) linear infinite;
+  animation: border-spinner var(--_speed) linear infinite;
 }
 
 @keyframes border-spinner {
