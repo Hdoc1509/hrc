@@ -1,7 +1,7 @@
+import { DemoDocs } from "@hrc/docs"
 import { Icon } from "@hrc/material-icons";
 import { Button, ButtonGroup, ButtonIcon } from "@lib/main";
 import { DivideIcon } from "./Icons";
-import { DemoDocs } from "./DemoDocs";
 
 const IconExample = () => {
   return (
