@@ -1,0 +1,33 @@
+// Taken and adapted from https://github.com/loadingio/css-spinner
+@use "@scss/variables" as * with (
+  $speed: 2.4s
+);
+
+.circle-spinner {
+  --_speed: #{$spinner-speed};
+
+  border-radius: 50%;
+  background-color: var(--_color);
+  animation: circle-spinner var(--_speed) linear infinite;
+
+  &.spinner {
+    @include speed-variants();
+  }
+}
+
+@keyframes circle-spinner {
+  0%,
+  100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}

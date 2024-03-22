@@ -1,4 +1,9 @@
-import { BorderSpinner, DualRingSpinner, RingSpinner } from "@lib/main";
+import {
+  BorderSpinner,
+  CircleSpinner,
+  DualRingSpinner,
+  RingSpinner,
+} from "@lib/main";
 import "./App.css";
 
 function App() {
@@ -31,6 +36,15 @@ function App() {
         <DualRingSpinner color="warning" />
         <DualRingSpinner color="info" />
         <DualRingSpinner color="success" />
+      </section>
+      <section>
+        <CircleSpinner />
+        <CircleSpinner color="primary" />
+        <CircleSpinner color="secondary" />
+        <CircleSpinner color="error" />
+        <CircleSpinner color="warning" />
+        <CircleSpinner color="info" />
+        <CircleSpinner color="success" />
       </section>
     </>
   );
