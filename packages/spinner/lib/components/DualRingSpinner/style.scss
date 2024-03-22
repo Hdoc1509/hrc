@@ -1,13 +1,7 @@
 // Taken and adapted from https://github.com/loadingio/css-spinner
-.dual-ring-spinner:after {
-  content: " ";
-  display: block;
-
-  box-sizing: border-box;
-  width: 100%;
-  aspect-ratio: 1;
-  border-radius: 50%;
+.dual-ring-spinner {
   border: calc(var(--_size) * 0.1) solid transparent;
+  border-radius: 50%;
   border-block-color: var(--_color);
 
   animation: dual-ring-spinner var(--_speed) linear infinite;
