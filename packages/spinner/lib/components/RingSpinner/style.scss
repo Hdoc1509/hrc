@@ -24,7 +24,7 @@ $delta: -0.125;
       animation-delay: calc($delta * 2 * var(--_speed));
     }
     &:nth-child(3) {
-      animation-delay: calc($delta * 1 * var(--_speed));
+      animation-delay: calc($delta * var(--_speed));
     }
   }
 }
