@@ -6,10 +6,9 @@ $delta: -0.125;
 
   div {
     box-sizing: border-box;
-    display: block;
     position: absolute;
 
-    width: var(--_size);
+    width: 100%;
     aspect-ratio: 1;
     border: calc(var(--_size) * 0.1) solid transparent;
     border-radius: 50%;
