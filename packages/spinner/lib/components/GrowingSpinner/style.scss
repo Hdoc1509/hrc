@@ -1,0 +1,26 @@
+// Taken and adapted from https://github.com/twbs/bootstrap
+@use "@scss/variables" as * with (
+  $speed: 1s
+);
+.growing-spinner {
+  --_speed: #{$spinner-speed};
+
+  background-color: var(--_color);
+  border-radius: 50%;
+  opacity: 0;
+  animation: growing-spinner var(--_speed) linear infinite;
+
+  &.spinner {
+    @include speed-variants();
+  }
+}
+
+@keyframes growing-spinner {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
