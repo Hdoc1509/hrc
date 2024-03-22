@@ -1,0 +1,28 @@
+.demo-docs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+
+  h2,
+  h3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  &--row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(var(--demo-columns, 6), 1fr);
+
+    h3 {
+      grid-column: 1 / -1;
+    }
+  }
+}
