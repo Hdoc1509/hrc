@@ -222,6 +222,9 @@ importers:
 
   packages/spinner:
     dependencies:
+      '@hrc/docs':
+        specifier: workspace:*
+        version: link:../docs
       '@types/react':
         specifier: ^17.0.0 || ^18.0.0
         version: 18.2.20

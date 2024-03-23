@@ -43,6 +43,7 @@
     "spinner"
   ],
   "dependencies": {
+    "@hrc/docs": "workspace:*",
     "clsx": "^2.0.0"
   },
   "peerDependencies": {
