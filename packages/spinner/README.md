@@ -8,9 +8,11 @@
   <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Fspinner">
 </p>
 
-Simple spinner component for your React app
+Simple spinner components for your React app
 
-![demo](https://github.com/Hdoc1509/react-components/assets/72316111/c95fda1c-1ade-4b94-8929-bfeb5a9782a0)
+![spinner-demo](https://github.com/Hdoc1509/hrc/assets/72316111/39e458d8-d9d4-426b-aecb-a5d05fb554a2)
+
+> Demo generated with code from [Usage](#usage) section
 
 ## Installation
 
@@ -26,13 +28,30 @@ import { RingSpinner } from "@hrc/spinner";
 function App() {
   return (
     <>
-      <RingSpinner />
+      <RingSpinner size="large" color="primary" />
+      <DualRingSpinner color="error" />
+      <GrowingSpinner />
     </>
   );
 }
 ```
 
+## API
+
+See documentation below for reference to CSS classes and some details available
+for the following components:
+
+- [`<BorderSpinner />`](./docs/BorderSpinner.md)
+- [`<CircleSpinner />`](./docs/CircleSpinner.md)
+- [`<DualRingSpinner />`](./docs/DualRingSpinner.md)
+- [`<GrowingSpinner />`](./docs/GrowingSpinner.md)
+- [`<RingSpinner />`](./docs/RingSpinner.md)
+
 ## Props
+
+**All props are optional otherwise specified**
+
+**All components receive the following props**
 
 `size`
 
@@ -66,7 +85,7 @@ Type: `string`
 
 ---
 
-## Customization
+## General Customization
 
 ## CSS Custom Properties
 
@@ -91,7 +110,7 @@ You can customize the spinner by using the following CSS custom properties:
 
 ## CSS classes
 
-`.ring-spinner`
+`.spinner`
 
 The base styles for the spinner
 
@@ -154,3 +173,68 @@ The info styles for the spinner
 `.spinner--success`
 
 The success styles for the spinner
+
+## Reducing bundle size
+
+The default entry point includes CSS for all components. You have two options to
+reduce the build size:
+
+### Option 1: Use path imports
+
+```diff
+- import { RingSpinner, CircleSpinner } from "@hrc/spinner";
++ import { RingSpinner } from "@hrc/spinner/dist/RingSpinner";
++ import { CircleSpinner } from "@hrc/spinner/dist/CircleSpinner";
+```
+
+### Options 2: Use [`babel`](https://babeljs.io/) with [`babel-plugin-import`](https://github.com/umijs/babel-plugin-import)
+
+1. [Setup `babel`](https://babeljs.io/setup) in your project.
+
+1. Install the plugin with the following command:
+
+   ```bash
+   npm install -D babel-plugin-import
+   ```
+
+1. Create a `.babelrc.js` file in the root directory of your project.
+
+#### Manual Setup
+
+```js
+const plugins = [
+  ...otherPlugins,
+  [
+    "import",
+    {
+      libraryName: "@hrc/spinner",
+      libraryDirectory: "dist",
+      camel2DashComponentName: false,
+      transformToDefaultImport: false,
+    },
+    "@hrc/spinner",
+  ],
+];
+
+module.exports = { plugins };
+```
+
+#### Automatic Setup with [`@hrc/babel-config`](https://www.npmjs.com/package/@hrc/babel-config)
+
+Install the package with the following command:
+
+```bash
+npm install -D @hrc/babel-config
+```
+
+Then, write the following code in your `.babelrc.js` file:
+
+```js
+import hrcConfig from "@hrc/babel-config";
+
+const plugins = [...otherPlugins, ...hrcConfig("spinner")];
+
+module.exports = { plugins };
+```
+
+<!-- TODO: Add info from which projects the spinners are taken and adapted from -->
