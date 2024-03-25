@@ -1,6 +1,6 @@
 type Package = (typeof SUPPORTED_PACKAGES)[number];
 
-const SUPPORTED_PACKAGES = ["button", "input"] as const;
+const SUPPORTED_PACKAGES = ["button", "input", "spinner"] as const;
 const packagesList = SUPPORTED_PACKAGES.map((pkg) => `@hrc/${pkg}`).join(", ");
 
 const logPrefix = "\n[@hrc/babel-config]";

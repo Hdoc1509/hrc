@@ -22,7 +22,7 @@ const plugins = [...otherPlugins, ...hrcConfig("input")];
 // multiple packages
 const plugins = [...otherPlugins, ...hrcConfig(["button", "input"])];
 
-// all packages
+// all supported packages
 const plugins = [...otherPlugins, ...hrcConfig("all")];
 
 module.exports = { plugins };
@@ -32,3 +32,4 @@ module.exports = { plugins };
 
 - [`@hrc/button`](https://www.npmjs.com/package/@hrc/button)
 - [`@hrc/input`](https://www.npmjs.com/package/@hrc/input)
+- [`@hrc/spinner`](https://www.npmjs.com/package/@hrc/spinner)
