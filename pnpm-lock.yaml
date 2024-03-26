@@ -320,6 +320,21 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.21.2
         version: 0.21.2(astro@4.5.9)
+      '@hrc/button':
+        specifier: workspace:*
+        version: link:../packages/button
+      '@hrc/input':
+        specifier: workspace:*
+        version: link:../packages/input
+      '@hrc/material-icons':
+        specifier: workspace:*
+        version: link:../packages/material-icons
+      '@hrc/spinner':
+        specifier: workspace:*
+        version: link:../packages/spinner
+      '@hrc/toggle-theme':
+        specifier: workspace:*
+        version: link:../packages/toggle-theme
       astro:
         specifier: ^4.3.5
         version: 4.5.9(@types/node@20.5.0)(typescript@5.4.3)
