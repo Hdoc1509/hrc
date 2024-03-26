@@ -22,12 +22,14 @@ export default defineConfig({
         },
         {
           label: "Components",
+          collapsed: true,
           autogenerate: {
             directory: "components",
           },
         },
         {
           label: "Components API",
+          collapsed: true,
           autogenerate: {
             directory: "api",
           },
