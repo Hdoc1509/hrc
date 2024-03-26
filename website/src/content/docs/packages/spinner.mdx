@@ -1,19 +1,15 @@
 ---
 title: "@hrc/spinner"
-description: Package for spinners components of <hrc />
+description: Package for spinner components of <hrc />
 ---
 
-import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Code, Tabs, TabItem } from "@astrojs/starlight/components";
 
-{/* TODO: Put description from @hrc/spinner */}
+Simple spinner components for your React app
 
-This package contains components that are used for spinners:
+_Demo here_
 
-- [`<BorderSpinner />`](/components/border-spinner)
-- [`<CircleSpinner />`](/components/circle-spinner)
-- [`<DualRingSpinner />`](/components/dual-ring-spinner)
-- [`<GrowingSpinner />`](/components/growing-spinner)
-- [`<RingSpinner />`](/components/ring-spinner)
+> Demo generated with code from [Usage](#usage) section
 
 ## Installation
 
@@ -35,3 +31,153 @@ This package contains components that are used for spinners:
   </TabItem>
 </Tabs>
 
+## Usage
+
+<Code code="// code deme here" lang="jsx" />
+
+## Props
+
+The following props are available for all spinner components:
+
+**All props are optional unless otherwise specified**
+
+`size`
+
+The size of the spinner.
+
+Type: `'small' | 'large'`
+
+---
+
+`speed`
+
+The speed of the spinner.
+
+Type: `'slow' | 'fast'`
+
+---
+
+`color`
+
+The color of the spinner.
+
+Type: `'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'`
+
+---
+
+`className`
+
+Additional class names for extending styles.
+
+Type: `string`
+
+## CSS Variables
+
+You can customize any spinner by using the following CSS variables (custom
+properties):
+
+```css
+.any-parent-of-spinner,
+.class-to-extend-styles {
+  --spinner-size: 24px;
+  --spinner-color: black; /* default color */
+  --spinner-animation-duration: 1s;
+
+  /* COLOR VARIANTS */
+  --primary: lightblue;
+  --secondary: lightgray;
+  --error: red;
+  --warning: orange;
+  --info: skyblue;
+  --success: green;
+}
+```
+
+## CSS Clasess
+
+The following css classes are used by all spinner components:
+
+`.spinner`
+
+The base styles for the spinner
+
+---
+
+`.spinner--small`
+
+The small styles for the spinner
+
+---
+
+`.spinner--large`
+
+The large styles for the spinner
+
+---
+
+`.spinner--slow`
+
+The slow styles for the spinner
+
+---
+
+`.spinner--fast`
+
+The fast styles for the spinner
+
+---
+
+`.spinner--primary`
+
+The primary styles for the spinner
+
+---
+
+`.spinner--secondary`
+
+The secondary styles for the spinner
+
+---
+
+`.spinner--error`
+
+The error styles for the spinner
+
+---
+
+`.spinner--warning`
+
+The warning styles for the spinner
+
+---
+
+`.spinner--info`
+
+The info styles for the spinner
+
+---
+
+`.spinner--success`
+
+The success styles for the spinner
+
+## Demos
+
+For examples and details on the usage of the components, see the demo pages:
+
+- [BorderSpinner](/components/border-spinner)
+- [CircleSpinner](/components/circle-spinner)
+- [DualRingSpinner](/components/dual-ring-spinner)
+- [GrowingSpinner](/components/growing-spinner)
+- [RingSpinner](/components/ring-spinner)
+
+## API
+
+See documentation below for reference to CSS classes and some details available
+for the spinner components:
+
+- [`<BorderSpinner />`](/api/border-spinner)
+- [`<CircleSpinner />`](/api/circle-spinner)
+- [`<DualRingSpinner />`](/api/dual-ring-spinner)
+- [`<GrowingSpinner />`](/api/growing-spinner)
+- [`<RingSpinner />`](/api/ring-spinner)

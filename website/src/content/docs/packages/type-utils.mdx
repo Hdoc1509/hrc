@@ -1,11 +1,14 @@
 ---
 title: "@hrc/type-utils"
-description: Package for icon component of <hrc />
+description: Package for type utils  of <hrc />
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 
-{/* TODO: Put description from @hrc/type-utils */}
+Type utilities use by the following packages of `<hrc />`:
+
+- [`@hrc/button`](/packages/button)
+- [`@hrc/input`](/packages/input)
 
 ## Installation
 
@@ -27,3 +30,30 @@ import { Tabs, TabItem } from "@astrojs/starlight/components";
   </TabItem>
 </Tabs>
 
+## Usage
+
+```ts
+import type { Simplify } from "@hrc/type-utils";
+
+type MyType = {
+  a: number;
+  b: string;
+};
+
+type AnotherType = {
+  c: boolean;
+  d: number;
+};
+
+type FlattenedType = Simplify<MyType & AnotherType>;
+```
+
+## Utilities
+
+- `Simplify` - Use to flatten the type output to improve type hints shown in
+  editors
+
+## Common Props
+
+- `Color` - Color variants
+- `Size` - Size variants
