@@ -33,8 +33,10 @@ export default defineConfig({
           },
         },
         {
-          label: "Minimizing bundle size",
-          link: "/guides/minimizing-bundle-size/",
+          label: "Guides",
+          autogenerate: {
+            directory: "guides",
+          }
         },
       ],
     }),
