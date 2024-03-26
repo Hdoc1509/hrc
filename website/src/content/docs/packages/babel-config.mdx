@@ -5,25 +5,58 @@ description: Package for create babel config for packages of <hrc />
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
 
-{/* TODO: Put description from @hrc/babel-config */}
+Create Babel config for component packages of `<hrc />`
 
 ## Installation
 
 <Tabs>
   <TabItem label="npm">
     ```bash
-    npm install @hrc/babel-config
+    npm install @hrc/babel-config babel-plugin-import
     ```
   </TabItem>
   <TabItem label="pnpm">
     ```bash
-    pnpm add @hrc/babel-config
+    pnpm add @hrc/babel-config babel-plugin-import
     ```
   </TabItem>
   <TabItem label="yarn">
     ```bash
-    yarn add @hrc/babel-config
+    yarn add @hrc/babel-config babel-plugin-import
     ```
   </TabItem>
 </Tabs>
 
+## Usage
+
+In your `.babelrc.js` file:
+
+```js
+import hrcConfig from "@hrc/babel-config";
+
+// single package
+const plugins = [
+  ...otherPlugins,
+  ...hrcConfig("input")
+];
+
+// multiple packages
+const plugins = [
+  ...otherPlugins,
+  ..hrcConfig(["button", "input"])
+];
+
+// all supported packages
+const plugins = [
+  ...otherPlugins,
+  ...hrcConfig("all")
+];
+
+module.exports = { plugins };
+```
+
+## Supported packages
+
+- [`@hrc/button`](/packages/button)
+- [`@hrc/input`](/packages/input)
+- [`@hrc/spinner`](/packages/spinner)
