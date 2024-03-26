@@ -12,24 +12,30 @@ export default defineConfig({
       sidebar: [
         {
           label: "Getting Started",
-          link: "/guides/getting-started/",
+          link: "/getting-started/",
         },
         {
           label: "Packages",
-          autogenerate: { directory: "packages" },
+          autogenerate: {
+            directory: "packages",
+          },
         },
         {
           label: "Components",
-          autogenerate: { directory: "components" },
+          autogenerate: {
+            directory: "components",
+          },
         },
         {
           label: "Components API",
-          autogenerate: { directory: "api" },
+          autogenerate: {
+            directory: "api",
+          },
         },
         {
-          label: 'Minimizing bundle size',
-          link: '/guides/minimizing-bundle-size/'
-        }
+          label: "Minimizing bundle size",
+          link: "/guides/minimizing-bundle-size/",
+        },
       ],
     }),
   ],
