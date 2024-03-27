@@ -14,10 +14,7 @@
   height: 1em;
   overflow: hidden;
   font-size: var(--icon-size, 24px) !important;
-
-  &::selection {
-    background: transparent;
-  }
+  user-select: none;
 }
 
 .material-icons {
