@@ -2,10 +2,6 @@ import { DemoDocs } from "@hrc/docs"
 import { Button, ButtonGroup, ButtonIcon } from "@lib/main";
 import { DeleteIcon, FavoriteIcon, SearchIcon } from "./Icons";
 
-export const DemoComponentTitle = ({ name }: { name: string }) => {
-  return <h2>&lt;{name} /&gt; Demo</h2>;
-};
-
 export const Demo = () => {
   return (
     <>
