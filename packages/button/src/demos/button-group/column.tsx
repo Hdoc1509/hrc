@@ -6,7 +6,7 @@ export function ButtonGroupColumn() {
   return (
     <>
       {colors.map((color) => (
-        <>
+        <div key={`button-group-column-${color}`}>
           <ButtonGroup
             key={`button-group-column-${color}-default`}
             color={color}
@@ -36,7 +36,7 @@ export function ButtonGroupColumn() {
             <Button>Two</Button>
             <Button>Three</Button>
           </ButtonGroup>
-        </>
+        </div>
       ))}
     </>
   );

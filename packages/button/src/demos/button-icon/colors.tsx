@@ -14,7 +14,7 @@ export function ButtonIconColors() {
   return (
     <>
       {(Object.keys(Icons) as (keyof typeof Icons)[]).map((color) => (
-        <>
+        <div key={`button-icon-${color}`}>
           <ButtonIcon key={`button-icon-${color}-default`} color={color}>
             {Icons[color]}
           </ButtonIcon>
@@ -32,7 +32,7 @@ export function ButtonIconColors() {
           >
             {Icons[color]}
           </ButtonIcon>
-        </>
+        </div>
       ))}
     </>
   );

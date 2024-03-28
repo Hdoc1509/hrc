@@ -15,21 +15,15 @@ export function ButtonColors() {
   return (
     <>
       {colors.map((color) => (
-        <>
-          <Button key={`button-${color}-default`} color={color}>
-            {toTitleCase(color)}
-          </Button>
-          <Button
-            key={`button-${color}-outline`}
-            color={color}
-            variant="outline"
-          >
+        <div key={`button-${color}`}>
+          <Button color={color}>{toTitleCase(color)}</Button>
+          <Button color={color} variant="outline">
             Outline
           </Button>
-          <Button key={`button-${color}-text`} color={color} variant="text">
+          <Button color={color} variant="text">
             Text
           </Button>
-        </>
+        </div>
       ))}
     </>
   );

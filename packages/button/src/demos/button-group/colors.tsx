@@ -13,31 +13,23 @@ export function ButtonGroupColors() {
   return (
     <>
       {colors.map((color) => (
-        <>
-          <ButtonGroup key={`button-group-${color}-default`} color={color}>
+        <div key={`button-group-${color}`}>
+          <ButtonGroup color={color}>
             <Button>One</Button>
             <Button>Two</Button>
             <Button>Three</Button>
           </ButtonGroup>
-          <ButtonGroup
-            key={`button-group-${color}-outline`}
-            color={color}
-            variant="outline"
-          >
+          <ButtonGroup color={color} variant="outline">
             <Button>One</Button>
             <Button>Two</Button>
             <Button>Three</Button>
           </ButtonGroup>
-          <ButtonGroup
-            key={`button-group-${color}-text`}
-            color={color}
-            variant="text"
-          >
+          <ButtonGroup color={color} variant="text">
             <Button>One</Button>
             <Button>Two</Button>
             <Button>Three</Button>
           </ButtonGroup>
-        </>
+        </div>
       ))}
     </>
   );

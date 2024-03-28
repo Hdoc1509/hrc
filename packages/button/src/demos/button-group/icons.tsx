@@ -20,7 +20,7 @@ const Group = () => {
 
 export function ButtonGroupWithIcons() {
   return (
-    <>
+    <div>
       <ButtonGroup color="success">
         <Group />
       </ButtonGroup>
@@ -30,6 +30,6 @@ export function ButtonGroupWithIcons() {
       <ButtonGroup color="success" variant="text">
         <Group />
       </ButtonGroup>
-    </>
+    </div>
   );
 }

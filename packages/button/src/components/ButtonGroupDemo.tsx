@@ -5,15 +5,15 @@ export const ButtonGroupDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="ButtonGroup" />
-      <DemoDocs layout="grid" cols={2}>
+      <DemoDocs layout="grid" cols={1} innerFlow="row">
         <h3>Default</h3>
         <Demos.ButtonGroupDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3}>
+      <DemoDocs layout="grid" cols={1} innerFlow="row">
         <h3>Colors</h3>
         <Demos.ButtonGroupColors />
       </DemoDocs>
-      <DemoDocs layout="row" className="button--primary">
+      <DemoDocs layout="row">
         <h3>Sizes</h3>
         <Demos.ButtonGroupSizes />
       </DemoDocs>

@@ -9,7 +9,7 @@ export const ButtonIconDemo = () => {
         <h3>Default</h3>
         <Demos.ButtonIconDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={9}>
+      <DemoDocs layout="grid" cols={2}>
         <h3>Colors</h3>
         <Demos.ButtonIconColors />
       </DemoDocs>
@@ -17,7 +17,7 @@ export const ButtonIconDemo = () => {
         <h3>Sizes</h3>
         <Demos.ButtonIconSizes />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={5} className="button--success">
+      <DemoDocs layout="grid" cols={5}>
         <h3>Rounded</h3>
         <Demos.ButtonIconRounded />
       </DemoDocs>
