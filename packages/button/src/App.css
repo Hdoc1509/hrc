@@ -24,3 +24,25 @@
   border: 1px solid red;
   padding-block: 16px;
 }
+
+.button-default :last-child {
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+}
+
+.button-colors > div,
+.button-icon-colors > div {
+  display: grid;
+  gap: inherit;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-group-colors > div {
+  display: grid;
+  gap: inherit;
+}
+
+.button-group-column > div {
+  display: flex;
+  gap: inherit;
+}

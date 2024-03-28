@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from "@lib/main";
 
 export function ButtonGroupDefault() {
   return (
-    <div>
+    <>
       <ButtonGroup>
         <Button>One</Button>
         <Button>Two</Button>
@@ -26,6 +26,6 @@ export function ButtonGroupDefault() {
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
-    </div>
+    </>
   );
 }

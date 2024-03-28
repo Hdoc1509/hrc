@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from "@lib/main";
 
 export function ButtonGroupSizes() {
   return (
-    <div>
+    <>
       <ButtonGroup size="small" color="primary">
         <Button>One</Button>
         <Button>Two</Button>
@@ -18,6 +18,6 @@ export function ButtonGroupSizes() {
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
-    </div>
+    </>
   );
 }

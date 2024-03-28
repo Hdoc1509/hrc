@@ -5,23 +5,23 @@ export const ButtonGroupDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="ButtonGroup" />
-      <DemoDocs layout="grid" cols={1} innerFlow="row">
+      <DemoDocs className="button-group-default">
         <h3>Default</h3>
         <Demos.ButtonGroupDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={1} innerFlow="row">
+      <DemoDocs className="button-group-colors">
         <h3>Colors</h3>
         <Demos.ButtonGroupColors />
       </DemoDocs>
-      <DemoDocs layout="row">
+      <DemoDocs className="button-group-sizes">
         <h3>Sizes</h3>
         <Demos.ButtonGroupSizes />
       </DemoDocs>
-      <DemoDocs layout="row">
+      <DemoDocs className="button-group-column">
         <h3>Column</h3>
         <Demos.ButtonGroupColumn />
       </DemoDocs>
-      <DemoDocs layout="row">
+      <DemoDocs>
         <h3>With icons</h3>
         <Demos.ButtonGroupWithIcons />
       </DemoDocs>

@@ -5,11 +5,11 @@ export const ButtonDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="Button" />
-      <DemoDocs layout="grid" cols={2}>
+      <DemoDocs layout="grid" cols={3} className="button-default">
         <h3>Default</h3>
         <Demos.ButtonDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={1} innerCols={3}>
+      <DemoDocs layout="grid" cols={1} className="button-colors">
         <h3>Colors</h3>
         <Demos.ButtonColors />
       </DemoDocs>
