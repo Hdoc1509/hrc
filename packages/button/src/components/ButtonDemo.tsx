@@ -1,21 +1,5 @@
-import { DemoDocs } from "@hrc/docs"
-import { Icon } from "@hrc/material-icons";
-import { Button } from "@lib/main";
-import { CloseIcon, DeleteIcon, FavoriteIcon } from "./Icons";
-
-const ColorExample = (props: React.ComponentProps<typeof Button>) => {
-  return (
-    <>
-      <Button {...props} />
-      <Button variant="outline" {...props}>
-        Outline
-      </Button>
-      <Button variant="text" {...props}>
-        Text
-      </Button>
-    </>
-  );
-};
+import { DemoDocs } from "@hrc/docs";
+import * as Demos from "../demos";
 
 export const ButtonDemo = () => {
   return (
@@ -23,48 +7,23 @@ export const ButtonDemo = () => {
       <DemoDocs.TitleComponent name="Button" />
       <DemoDocs layout="grid" cols={4}>
         <h3>Default</h3>
-        <ColorExample />
-        <Button disabled>Disabled</Button>
+        <Demos.ButtonDefault />
       </DemoDocs>
       <DemoDocs layout="grid">
         <h3>Colors</h3>
-        <ColorExample color="primary">Primary</ColorExample>
-        <ColorExample color="secondary">Secondary</ColorExample>
-        <ColorExample color="error">Error</ColorExample>
-        <ColorExample color="info">Info</ColorExample>
-        <ColorExample color="warning">Warning</ColorExample>
-        <ColorExample color="success">Succes</ColorExample>
+        <Demos.ButtonColors />
       </DemoDocs>
-      <DemoDocs layout="row" className="button--primary">
+      <DemoDocs layout="row">
         <h3>Sizes</h3>
-        <Button size="small">Small</Button>
-        <Button />
-        <Button size="large">Large</Button>
+        <Demos.ButtonSizes />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={5} className="button--secondary">
+      <DemoDocs layout="grid" cols={5}>
         <h3>Rounded</h3>
-        <Button roundedSide="top">Top rounded</Button>
-        <Button roundedSide="bottom">Bottom rounded</Button>
-        <Button roundedSide="left">Left rounded</Button>
-        <Button roundedSide="right">Right rounded</Button>
-        <Button fullRounded>Full rounded</Button>
+        <Demos.ButtonRounded />
       </DemoDocs>
-      <DemoDocs layout="grid" className="button--error">
+      <DemoDocs layout="grid">
         <h3>With icons</h3>
-        <Button iconStart={<Icon name="delete" />}>Delete</Button>
-        <Button iconEnd={<DeleteIcon />}>Delete</Button>
-        <Button iconStart={<Icon name="close" />} variant="outline">
-          Close
-        </Button>
-        <Button iconEnd={<CloseIcon />} variant="outline">
-          Close
-        </Button>
-        <Button iconStart={<Icon name="favorite" />} variant="text">
-          Favorite
-        </Button>
-        <Button iconEnd={<FavoriteIcon />} variant="text">
-          Favorite
-        </Button>
+        <Demos.ButtonWithIcons />
       </DemoDocs>
     </DemoDocs>
   );
