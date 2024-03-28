@@ -3,3 +3,7 @@ export { ButtonColors } from "./button/colors";
 export { ButtonSizes } from "./button/sizes";
 export { ButtonRounded } from "./button/rounded";
 export { ButtonWithIcons } from "./button/icons";
+export { ButtonIconDefault } from "./button-icon/default";
+export { ButtonIconColors } from "./button-icon/colors";
+export { ButtonIconSizes } from "./button-icon/sizes";
+export { ButtonIconRounded } from "./button-icon/rounded";
