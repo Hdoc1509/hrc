@@ -54,6 +54,7 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     flex-direction: column;
 
     > * + * {
+      border-color: transparent;
       border-top: 1px solid $divider-color;
     }
 
