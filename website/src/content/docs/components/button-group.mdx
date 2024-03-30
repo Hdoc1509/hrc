@@ -5,6 +5,7 @@ description: React ButtonGroup component of <hrc />
 
 import { Code } from "@astrojs/starlight/components";
 import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
 import * as Demos from "@demos/hrc-button"
 import defaultCode from "@demos/hrc-button/button-group/default.tsx?raw"
 import colorsCode from "@demos/hrc-button/button-group/colors.tsx?raw"
@@ -19,10 +20,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonGroupDefault />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={defaultCode} lang="tsx" title="button-group-default.tsx" />
-</details>
+<SourceCode code={defaultCode} title="button-group-default.tsx" />
 
 ## Colors
 
@@ -30,10 +28,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonGroupColors />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={colorsCode} lang="tsx" title="button-group-colors.tsx" />
-</details>
+<SourceCode code={colorsCode} title="button-group-colors.tsx" />
 
 ## Sizes
 
@@ -41,10 +36,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonGroupSizes />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={sizesCode} lang="tsx" title="button-group-sizes.tsx" />
-</details>
+<SourceCode code={sizesCode} title="button-group-sizes.tsx" />
 
 ## Column
 
@@ -52,10 +44,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonGroupColumn />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={columnCode} lang="tsx" title="button-group-column.tsx" />
-</details>
+<SourceCode code={columnCode} title="button-group-column.tsx" />
 
 ## With icons
 
@@ -63,10 +52,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonGroupWithIcons />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={iconsCode} lang="tsx" title="button-group-with-icons.tsx" />
-</details>
+<SourceCode code={iconsCode} title="button-group-with-icons.tsx" />
 
 ## API
 

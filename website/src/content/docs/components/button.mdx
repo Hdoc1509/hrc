@@ -5,6 +5,7 @@ description: React Button component of <hrc />
 
 import { Code } from "@astrojs/starlight/components";
 import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
 import * as Demos from "@demos/hrc-button"
 import defaultCode from "@demos/hrc-button/button/default.tsx?raw"
 import colorsCode from "@demos/hrc-button/button/colors.tsx?raw"
@@ -19,10 +20,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonDefault />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={defaultCode} lang="tsx" title="button-default.tsx" />
-</details>
+<SourceCode code={defaultCode} title="button-default.tsx" />
 
 ## Colors
 
@@ -30,10 +28,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonColors />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={colorsCode} lang="tsx" title="button-colors.tsx" />
-</details>
+<SourceCode code={colorsCode} title="button-colors.tsx" />
 
 ## Sizes
 
@@ -41,10 +36,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonSizes />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={sizesCode} lang="tsx" title="button-sizes.tsx" />
-</details>
+<SourceCode code={sizesCode} title="button-sizes.tsx" />
 
 ## Rounded
 
@@ -52,10 +44,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonRounded />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={roundedCode} lang="tsx" title="button-rounded.tsx" />
-</details>
+<SourceCode code={roundedCode} title="button-rounded.tsx" />
 
 ## Icons
 
@@ -63,10 +52,7 @@ import '@demos/hrc-button/styles.css'
   <Demos.ButtonWithIcons />
 </Demo>
 
-<details>
-  <summary>Show code</summary>
-  <Code code={iconsCode} lang="tsx" title="button-with-icons.tsx" />
-</details>
+<SourceCode code={iconsCode} title="button-with-icons.tsx" />
 
 ## API
 
