@@ -3,6 +3,67 @@ title: ButtonGroup
 description: React ButtonGroup component of <hrc />
 ---
 
-<!-- TODO: Get docs from @hrc/button -->
+import { Code } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo.tsx"
+import * as Demos from "@demos/hrc-button"
+import defaultCode from "@demos/hrc-button/button-group/default.tsx?raw"
+import colorsCode from "@demos/hrc-button/button-group/colors.tsx?raw"
+import sizesCode from "@demos/hrc-button/button-group/sizes.tsx?raw"
+import columnCode from "@demos/hrc-button/button-group/column.tsx?raw"
+import iconsCode from "@demos/hrc-button/button-group/icons.tsx?raw"
+import '@demos/hrc-button/styles.css'
 
-WIP
+## Default button group
+
+<Demo className="button-group-default">
+  <Demos.ButtonGroupDefault />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={defaultCode} lang="tsx" title="button-group-default.tsx" />
+</details>
+
+## Colors
+
+<Demo className="button-group-colors">
+  <Demos.ButtonGroupColors />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={colorsCode} lang="tsx" title="button-group-colors.tsx" />
+</details>
+
+## Sizes
+
+<Demo>
+  <Demos.ButtonGroupSizes />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={sizesCode} lang="tsx" title="button-group-sizes.tsx" />
+</details>
+
+## Column
+
+<Demo className="button-group-column">
+  <Demos.ButtonGroupColumn />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={columnCode} lang="tsx" title="button-group-column.tsx" />
+</details>
+
+## With icons
+
+<Demo>
+  <Demos.ButtonGroupWithIcons />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={iconsCode} lang="tsx" title="button-group-with-icons.tsx" />
+</details>
