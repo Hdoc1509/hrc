@@ -27,7 +27,7 @@
 
 .button-default :last-child {
   grid-column: 2 / 3;
-  grid-row: 3 / 3;
+  grid-row: 2 / 2;
 }
 
 .button-colors > div,
