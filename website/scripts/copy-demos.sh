@@ -10,7 +10,8 @@ for pkg in "${PKGS[@]}"; do
 
   echo "Copying demos for ${pkg_name}..."
 
-  cp --recursive --update "${pkg_dir}"/src/demos "${pkg_demo_target}"
+  cp --recursive --update --no-target-directory \
+    "${pkg_dir}"/src/demos "${pkg_demo_target}"
 
   find "${pkg_demo_target}" -type f -print0 |
     xargs -0 sed -i "1 s/@lib\/main/@hrc\/${pkg}/"
