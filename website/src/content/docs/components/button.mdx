@@ -1,0 +1,72 @@
+---
+title: Button
+description: React Button component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { ButtonDefault } from "@demos/hrc-button/button/default.tsx"
+import { ButtonColors } from "@demos/hrc-button/button/colors.tsx"
+import { ButtonSizes } from "@demos/hrc-button/button/sizes.tsx"
+import { ButtonRounded } from "@demos/hrc-button/button/rounded.tsx"
+import { ButtonWithIcons } from "@demos/hrc-button/button/icons.tsx"
+import { Demo } from "@components/Demo.tsx"
+import defaultCode from "@demos/hrc-button/button/default.tsx?raw"
+import colorsCode from "@demos/hrc-button/button/colors.tsx?raw"
+import sizesCode from "@demos/hrc-button/button/sizes.tsx?raw"
+import roundedCode from "@demos/hrc-button/button/rounded.tsx?raw"
+import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
+
+## Default button
+
+<Demo layout="grid" cols={3}>
+  <ButtonDefault />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={defaultCode} lang="tsx" title="button-default.tsx" />
+</details>
+
+## Colors
+
+<Demo layout="grid" cols={1}>
+  <ButtonColors />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={colorsCode} lang="tsx" title="button-colors.tsx" />
+</details>
+
+## Sizes
+
+<Demo layout="row">
+  <ButtonSizes />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={sizesCode} lang="tsx" title="button-sizes.tsx" />
+</details>
+
+## Rounded
+
+<Demo layout="grid" cols={1}>
+  <ButtonRounded />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={roundedCode} lang="tsx" title="button-rounded.tsx" />
+</details>
+
+## Icons
+
+<Demo layout="grid" cols={2}>
+  <ButtonWithIcons />
+</Demo>
+
+<details>
+  <summary>Show code</summary>
+  <Code code={iconsCode} lang="tsx" title="button-with-icons.tsx" />
+</details>
