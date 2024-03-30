@@ -18,5 +18,3 @@ for pkg in "${PKGS[@]}"; do
 
   echo "Copied demos for ${pkg_name}"
 done
-
-find "${demos_dir}" -type f -name "index.tsx" -delete
