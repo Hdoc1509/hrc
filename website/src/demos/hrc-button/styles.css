@@ -4,7 +4,7 @@
   grid-row: 2 / 2;
 }
 
-[data-theme="dark"] .button-default {
+[data-theme="dark"] {
   --button-outline-color: var(--sl-color-gray-1);
   --button-outline-bg-hover: var(--sl-color-gray-5);
 }
