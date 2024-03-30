@@ -9,8 +9,3 @@
 .demo.demo  * {
   margin: 0;
 }
-
-[data-theme="dark"] .button-default {
-  --button-outline-color: var(--sl-color-gray-2);
-  --button-outline-bg-hover: var(--sl-color-gray-5);
-}
