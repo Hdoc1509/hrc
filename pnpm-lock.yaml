@@ -338,6 +338,9 @@ importers:
       '@hrc/toggle-theme':
         specifier: workspace:*
         version: link:../packages/toggle-theme
+      '@material-design-icons/font':
+        specifier: 0.14.13
+        version: 0.14.13
       astro:
         specifier: ^4.3.5
         version: 4.5.9(@types/node@20.5.0)(typescript@5.4.3)
@@ -1758,6 +1761,10 @@ packages:
   /@material-design-icons/font@0.14.11:
     resolution: {integrity: sha512-s9L+2pgNPSNlmvVf17ST7A5D9QnU2bikHfL/08Huf4Q0haw+DkaZCyiLLXyaECnD1Kyzl66a6WqPeqfGtgj4sQ==}
     dev: true
+
+  /@material-design-icons/font@0.14.13:
+    resolution: {integrity: sha512-qU5Zms9VUdxxq4oC7lY+Eibz+O6YjmctGZKToUfqQOC4qVkbUNksu+0UizFBdbtx8euERZ3GGcFoN6F9LeXSMw==}
+    dev: false
 
   /@mdx-js/mdx@3.0.1:
     resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}

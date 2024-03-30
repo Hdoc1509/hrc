@@ -8,6 +8,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "<hrc />",
+      customCss: [
+        '@material-design-icons/font/index.css'
+      ],
       social: {
         github: "https://github.com/Hdoc1509/hrc",
       },

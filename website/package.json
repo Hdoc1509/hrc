@@ -20,6 +20,7 @@
     "@hrc/material-icons": "workspace:*",
     "@hrc/spinner": "workspace:*",
     "@hrc/toggle-theme": "workspace:*",
+    "@material-design-icons/font": "0.14.13",
     "astro": "^4.3.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
