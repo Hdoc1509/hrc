@@ -3,5 +3,9 @@ import type { ComponentProps } from "react";
 import "./Demo.css";
 
 export const Demo = (props: ComponentProps<typeof DemoDocs>) => {
-  return <DemoDocs {...props} className="demo" />;
+  return (
+    <DemoDocs className="demo">
+      <DemoDocs {...props} />
+    </DemoDocs>
+  );
 };
