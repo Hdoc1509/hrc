@@ -4,11 +4,7 @@ description: React Button component of <hrc />
 ---
 
 import { Code } from "@astrojs/starlight/components";
-import { ButtonDefault } from "@demos/hrc-button/button/default.tsx"
-import { ButtonColors } from "@demos/hrc-button/button/colors.tsx"
-import { ButtonSizes } from "@demos/hrc-button/button/sizes.tsx"
-import { ButtonRounded } from "@demos/hrc-button/button/rounded.tsx"
-import { ButtonWithIcons } from "@demos/hrc-button/button/icons.tsx"
+import * as Demos from "@demos/hrc-button"
 import { Demo } from "@components/Demo.tsx"
 import defaultCode from "@demos/hrc-button/button/default.tsx?raw"
 import colorsCode from "@demos/hrc-button/button/colors.tsx?raw"
@@ -19,7 +15,7 @@ import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
 ## Default button
 
 <Demo layout="grid" cols={3}>
-  <ButtonDefault />
+  <Demos.ButtonDefault />
 </Demo>
 
 <details>
@@ -30,7 +26,7 @@ import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
 ## Colors
 
 <Demo layout="grid" cols={1}>
-  <ButtonColors />
+  <Demos.ButtonColors />
 </Demo>
 
 <details>
@@ -41,7 +37,7 @@ import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
 ## Sizes
 
 <Demo layout="row">
-  <ButtonSizes />
+  <Demos.ButtonSizes />
 </Demo>
 
 <details>
@@ -52,7 +48,7 @@ import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
 ## Rounded
 
 <Demo layout="grid" cols={1}>
-  <ButtonRounded />
+  <Demos.ButtonRounded />
 </Demo>
 
 <details>
@@ -63,7 +59,7 @@ import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
 ## Icons
 
 <Demo layout="grid" cols={2}>
-  <ButtonWithIcons />
+  <Demos.ButtonWithIcons />
 </Demo>
 
 <details>
