@@ -11,10 +11,12 @@ import colorsCode from "@demos/hrc-button/button/colors.tsx?raw"
 import sizesCode from "@demos/hrc-button/button/sizes.tsx?raw"
 import roundedCode from "@demos/hrc-button/button/rounded.tsx?raw"
 import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
+// TODO: Add file @demos/hrc-button/styles.css
+import '@hrc/button/src/App.css'
 
 ## Default button
 
-<Demo layout="grid" cols={3}>
+<Demo layout="grid" cols={3} className="button-default">
   <Demos.ButtonDefault />
 </Demo>
 
@@ -25,7 +27,7 @@ import iconsCode from "@demos/hrc-button/button/icons.tsx?raw"
 
 ## Colors
 
-<Demo layout="grid" cols={1}>
+<Demo layout="grid" cols={1} className="button-colors">
   <Demos.ButtonColors />
 </Demo>
 
