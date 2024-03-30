@@ -16,6 +16,7 @@
     "@astrojs/react": "^3.1.0",
     "@astrojs/starlight": "^0.21.2",
     "@hrc/button": "workspace:*",
+    "@hrc/docs": "workspace:*",
     "@hrc/input": "workspace:*",
     "@hrc/material-icons": "workspace:*",
     "@hrc/spinner": "workspace:*",

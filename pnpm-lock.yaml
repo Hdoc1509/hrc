@@ -326,6 +326,9 @@ importers:
       '@hrc/button':
         specifier: workspace:*
         version: link:../packages/button
+      '@hrc/docs':
+        specifier: workspace:*
+        version: link:../packages/docs
       '@hrc/input':
         specifier: workspace:*
         version: link:../packages/input

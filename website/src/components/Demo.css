@@ -1,0 +1,11 @@
+.demo {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 24px;
+}
+[data-theme="dark"] .demo {
+  background-color: var(--sl-color-gray-6);
+}
+.demo.demo  * {
+  margin: 0;
+}
