@@ -9,8 +9,3 @@
 .demo.demo  * {
   margin: 0;
 }
-
-details summary {
-  cursor: pointer;
-  user-select: none;
-}

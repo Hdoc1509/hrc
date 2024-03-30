@@ -1,0 +1,17 @@
+---
+import { Code } from "@astrojs/starlight/components"
+
+const { code, title } = Astro.props
+---
+
+<details>
+  <summary>Show code</summary>
+  <Code code={code} lang="tsx" title={title} />
+</details>
+
+<style>
+  summary {
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
