@@ -1,5 +1,5 @@
 import { DemoDocs } from "@hrc/docs";
-import { GrowingSpinner } from "@lib/main";
+import * as Demos from "../demos";
 
 export const GrowingSpinnerDemo = () => {
   return (
@@ -7,28 +7,19 @@ export const GrowingSpinnerDemo = () => {
       <DemoDocs.TitleComponent name="GrowingSpinner" />
       <DemoDocs layout="row">
         <h3>Default</h3>
-        <GrowingSpinner />
+        <Demos.GrowingSpinnerDefault />
       </DemoDocs>
       <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>
-        <GrowingSpinner color="primary" />
-        <GrowingSpinner color="secondary" />
-        <GrowingSpinner color="error" />
-        <GrowingSpinner color="info" />
-        <GrowingSpinner color="warning" />
-        <GrowingSpinner color="success" />
+        <Demos.GrowingSpinnerColors />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Sizes</h3>
-        <GrowingSpinner color="error" size="small" />
-        <GrowingSpinner color="error" />
-        <GrowingSpinner color="error" size="large" />
+        <Demos.GrowingSpinnerSizes />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Speeds</h3>
-        <GrowingSpinner color="warning" speed="slow" />
-        <GrowingSpinner color="warning" />
-        <GrowingSpinner color="warning" speed="fast" />
+        <Demos.GrowingSpinnerSpeeds />
       </DemoDocs>
     </DemoDocs>
   );

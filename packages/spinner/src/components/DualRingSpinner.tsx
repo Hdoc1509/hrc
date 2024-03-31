@@ -1,5 +1,5 @@
 import { DemoDocs } from "@hrc/docs";
-import { DualRingSpinner } from "@lib/main";
+import * as Demos from '../demos'
 
 export const DualRingSpinnerDemo = () => {
   return (
@@ -7,28 +7,19 @@ export const DualRingSpinnerDemo = () => {
       <DemoDocs.TitleComponent name="DualRingSpinner" />
       <DemoDocs layout="row">
         <h3>Default</h3>
-        <DualRingSpinner />
+        <Demos.DualRingSpinnerDefault />
       </DemoDocs>
       <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>
-        <DualRingSpinner color="primary" />
-        <DualRingSpinner color="secondary" />
-        <DualRingSpinner color="error" />
-        <DualRingSpinner color="info" />
-        <DualRingSpinner color="warning" />
-        <DualRingSpinner color="success" />
+        <Demos.DualRingSpinnerColors />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Sizes</h3>
-        <DualRingSpinner color="info" size="small" />
-        <DualRingSpinner color="info" />
-        <DualRingSpinner color="info" size="large" />
+        <Demos.DualRingSpinnerSizes />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Speeds</h3>
-        <DualRingSpinner color="success" speed="slow" />
-        <DualRingSpinner color="success" />
-        <DualRingSpinner color="success" speed="fast" />
+        <Demos.DualRingSpinnerSpeeds />
       </DemoDocs>
     </DemoDocs>
   );

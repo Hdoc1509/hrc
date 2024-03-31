@@ -1,5 +1,5 @@
 import { DemoDocs } from "@hrc/docs";
-import { CircleSpinner } from "@lib/main";
+import * as Demos from "../demos";
 
 export const CircleSpinnerDemo = () => {
   return (
@@ -7,30 +7,20 @@ export const CircleSpinnerDemo = () => {
       <DemoDocs.TitleComponent name="CircleSpinner" />
       <DemoDocs layout="row">
         <h3>Default</h3>
-        <CircleSpinner />
+        <Demos.CircleSpinnerDefault />
       </DemoDocs>
       <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>
-        <CircleSpinner color="primary" />
-        <CircleSpinner color="secondary" />
-        <CircleSpinner color="error" />
-        <CircleSpinner color="info" />
-        <CircleSpinner color="warning" />
-        <CircleSpinner color="success" />
+        <Demos.CircleSpinnerColors />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Sizes</h3>
-        <CircleSpinner color="primary" size="small" />
-        <CircleSpinner color="primary" />
-        <CircleSpinner color="primary" size="large" />
+        <Demos.CircleSpinnerSizes />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Speeds</h3>
-        <CircleSpinner color="secondary" speed="slow" />
-        <CircleSpinner color="secondary" />
-        <CircleSpinner color="secondary" speed="fast" />
+        <Demos.CircleSpinnerSpeeds />
       </DemoDocs>
     </DemoDocs>
   );
 };
-
