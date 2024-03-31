@@ -26,12 +26,14 @@ To develop a given package:
 
 - You should use a prefix for the new branch name:
 
+  - `build/` for build related changes
   - `feat/` for new features
   - `fix/` for bug fixes
   - `docs/` for documentation only changes
-  - `refactor/` for code refactoring
+  - `refactor/` for code that neither fixes a bug nor adds a feature
   - `perf/` for performance improvements
-  - `chore/` for changes that don't fit in any other category
+  - `chore/` for changes related to the project configuration or dependencies
+    that are not related to build process
 
 - If adding a new feature:
 
