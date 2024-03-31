@@ -1,5 +1,5 @@
 import { DemoDocs } from "@hrc/docs";
-import { BorderSpinner } from "@lib/main";
+import * as Demos from "../demos";
 
 export const BorderSpinnerDemo = () => {
   return (
@@ -7,28 +7,19 @@ export const BorderSpinnerDemo = () => {
       <DemoDocs.TitleComponent name="BorderSpinner" />
       <DemoDocs layout="row">
         <h3>Default</h3>
-        <BorderSpinner />
+        <Demos.BorderSpinnerDefault />
       </DemoDocs>
       <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>
-        <BorderSpinner color="primary" />
-        <BorderSpinner color="secondary" />
-        <BorderSpinner color="error" />
-        <BorderSpinner color="info" />
-        <BorderSpinner color="warning" />
-        <BorderSpinner color="success" />
+        <Demos.BorderSpinnerColors />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Sizes</h3>
-        <BorderSpinner color="error" size="small" />
-        <BorderSpinner color="error" />
-        <BorderSpinner color="error" size="large" />
+        <Demos.BorderSpinnerSizes />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Speeds</h3>
-        <BorderSpinner color="warning" speed="slow" />
-        <BorderSpinner color="warning" />
-        <BorderSpinner color="warning" speed="fast" />
+        <Demos.BorderSpinnerSpeeds />
       </DemoDocs>
     </DemoDocs>
   );
