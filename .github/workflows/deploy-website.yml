@@ -44,7 +44,7 @@ jobs:
         run: pnpm nx build @hrc/website
 
       - name: Upload artifact
-        uses: action/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./website/dist
 
