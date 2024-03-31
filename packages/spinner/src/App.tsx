@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <Demo />
-      <RingSpinnerDemo />
       <BorderSpinnerDemo />
-      <DualRingSpinnerDemo />
       <CircleSpinnerDemo />
+      <DualRingSpinnerDemo />
       <GrowingSpinnerDemo />
+      <RingSpinnerDemo />
     </>
   );
 }
