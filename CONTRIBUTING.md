@@ -11,8 +11,8 @@ git clone https://github.com/Hdoc1509/hrc.git --depth=1 react-components
 ```
 
 The repo is a monorepo using [`pnpm workspaces`](https://pnpm.io/workspaces),
-[`nx`](https://nx.dev) and [`changesets`](https://github.com/changesets/changesets)
-for manage packages.
+[`nx`](https://nx.dev) and
+[`changesets`](https://github.com/changesets/changesets) for manage packages.
 
 To develop a given package:
 
@@ -22,7 +22,7 @@ To develop a given package:
 
 ## Pull Request Guidelines
 
-- Create a new branch from `main` and merge back against `main`.
+- Create a new branch from `main` and merge back against `main`
 
 - You should use a prefix for the new branch name:
 
@@ -38,14 +38,15 @@ To develop a given package:
 - If adding a new feature:
 
   - Provide a convincing reason for the new feature, you should open a
-    suggestion issue first and have it approved before working on it.
+    suggestion issue first and have it approved before working on it
 
 - If fixing a bug:
 
-  - Add `(fix #xxxx[,#xxxx])` (#xxxx is the issue id) in your PR title.
-  - Provide a detailed explanation of the bug.
+  - Add `(fix #xxxx[,#xxxx])` (#xxxx is the issue id) in your PR title
+  - Provide a detailed explanation of the bug
 
 - It's OK to have multiple small commits as you work on the PR - Github can
-  automatically squash them before merging.
+  automatically squash them before merging
 
-- Commit messages must follow the [commit message convention](./.github/commit-convention.md).
+- Commit messages must follow the
+  [commit message convention](./.github/commit-convention.md)
