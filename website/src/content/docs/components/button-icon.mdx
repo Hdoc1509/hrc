@@ -1,0 +1,53 @@
+---
+title: ButtonIcon
+description: React ButtonIcon component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
+import * as Demos from "@demos/hrc-button"
+import defaultCode from "@demos/hrc-button/button-icon/default.tsx?raw"
+import colorsCode from "@demos/hrc-button/button-icon/colors.tsx?raw"
+import sizesCode from "@demos/hrc-button/button-icon/sizes.tsx?raw"
+import roundedCode from "@demos/hrc-button/button-icon/rounded.tsx?raw"
+import '@demos/hrc-button/styles.css'
+
+## Default button
+
+<Demo layout="row">
+  <Demos.ButtonIconDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="button-icon-default.tsx" />
+
+## Colors
+
+<Demo layout="grid" cols={2} className="button-icon-colors">
+  <Demos.ButtonIconColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="button-icon-colors.tsx" />
+
+## Sizes
+
+<Demo layout="row">
+  <Demos.ButtonIconSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="button-icon-sizes.tsx" />
+
+## Rounded
+
+<Demo layout="grid" cols={5}>
+  <Demos.ButtonIconRounded />
+</Demo>
+
+<SourceCode code={roundedCode} title="button-icon-rounded.tsx" />
+
+## API
+
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for `<ButtonIcon />`:
+
+- [`<ButtonIcon />`](/api/button-icon)
