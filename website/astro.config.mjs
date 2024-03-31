@@ -5,6 +5,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://Hdoc1509.github.io",
+  base: "/hrc",
   integrations: [
     starlight({
       title: "<hrc />",
