@@ -16,13 +16,37 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout repo
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v2
+      # TODO: Use again once it has better support for monorepos
+      # Follow https://github.com/withastro/action/issues/32
+      # - name: Install, build, and upload your site
+      #   uses: withastro/action@v2
+      #   with:
+      #     path: ./website
+      #     package-manager: pnpm@latest
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          path: ./website
-          package-manager: pnpm@latest
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Set up Pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build website
+        run: pnpm nx build @hrc/website
+
+      - name: Upload artifact
+        uses: action/upload-pages-artifact@v3
+        with:
+          path: ./website/dist
 
   deploy:
     needs: build
