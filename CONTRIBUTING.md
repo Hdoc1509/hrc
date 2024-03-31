@@ -22,11 +22,6 @@ To develop a given package:
 
 ## Pull Request Guidelines
 
-- This monorepo has two primary work branches: `main` and `dev`.
-
-  - `main` is the base branch and it is used for production.
-  - `dev` is the branch for development.
-
 - Create a new branch from `main` and merge back against `main`.
 
 - You should use a prefix for the new branch name:
