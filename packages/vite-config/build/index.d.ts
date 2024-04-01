@@ -16,7 +16,7 @@ declare const config: {
         "@scss": string;
         "@lib": string;
     };
-    entries: (dirname: string) => {
+    entries: () => {
         [key: string]: string;
         main: string;
     };

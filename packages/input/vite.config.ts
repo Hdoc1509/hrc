@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: config.entries(__dirname),
+      entry: config.entries(),
       formats: ["es"],
     },
     copyPublicDir: false,

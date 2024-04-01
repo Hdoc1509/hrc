@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
   build: {
     lib: {
-      entry: config.entries(__dirname),
+      entry: config.entries(),
       formats: ["es"],
     },
     copyPublicDir: false,

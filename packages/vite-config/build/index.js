@@ -16,9 +16,9 @@ const config = {
         "@scss": resolve(dirname, "lib/scss"),
         "@lib": resolve(dirname, "lib"),
     }),
-    entries: (dirname) => ({
+    entries: () => ({
         main: "lib/main.ts",
-        ...scanEntries(`${dirname}/lib/components`),
+        ...scanEntries("lib/components"),
     }),
 };
 export default config;
