@@ -24,8 +24,11 @@ const config = {
     "@scss": resolve(dirname, "lib/scss"),
     "@lib": resolve(dirname, "lib"),
   }),
-  entries: (): { main: string; [key: string]: string } => ({
+  entries: (
+    extraEntries: Record<string, string> = {},
+  ): { main: string; [key: string]: string } => ({
     main: "lib/main.ts",
+      ...extraEntries,
     ...scanEntries("lib/components"),
   }),
 };

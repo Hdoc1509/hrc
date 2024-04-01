@@ -16,7 +16,7 @@ declare const config: {
         "@scss": string;
         "@lib": string;
     };
-    entries: () => {
+    entries: (extraEntries?: Record<string, string>) => {
         [key: string]: string;
         main: string;
     };

@@ -16,8 +16,9 @@ const config = {
         "@scss": resolve(dirname, "lib/scss"),
         "@lib": resolve(dirname, "lib"),
     }),
-    entries: () => ({
+    entries: (extraEntries = {}) => ({
         main: "lib/main.ts",
+        ...extraEntries,
         ...scanEntries("lib/components"),
     }),
 };
