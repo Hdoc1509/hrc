@@ -8,14 +8,25 @@ type RollupOptions = {
   extraDeps?: string | string[];
 };
 
-// TODO: Export newConfig as .mjs file
-//   Follow https://github.com/vitejs/vite/issues/5370#issuecomment-1950402860
+/**
+ * Vite config
+ */
 export const newConfig = {
+  /**
+   * Set build options
+   * - `lib.entry` and `lib.formats`
+   * */
   build: ({
     extraDeps,
     extraEntries,
   }: {
+    /** Set extra external dependencies
+     * It already includes `react` and `react/jsx-runtime`
+     */
     extraDeps?: string | string[];
+    /** Set extra entries
+     * `main` is already set
+     */
     extraEntries?: Record<string, string>;
   } = {}) => ({
     lib: {
@@ -39,6 +50,10 @@ export const newConfig = {
       },
     },
   }),
+  /**
+   * Set resolve options
+   * Currently is only used for aliases
+   * */
   resolve: (dirname: string) => ({
     alias: {
       "@scss": resolve(dirname, "lib/scss"),

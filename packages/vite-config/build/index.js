@@ -1,8 +1,13 @@
 import { scanEntries } from "./scan.js";
 import { resolve } from "path";
-// TODO: Export newConfig as .mjs file
-//   Follow https://github.com/vitejs/vite/issues/5370#issuecomment-1950402860
+/**
+ * Vite config
+ */
 export const newConfig = {
+    /**
+     * Set build options
+     * - `lib.entry` and `lib.formats`
+     * */
     build: ({ extraDeps, extraEntries, } = {}) => ({
         lib: {
             entry: {
@@ -25,6 +30,10 @@ export const newConfig = {
             },
         },
     }),
+    /**
+     * Set resolve options
+     * Currently is only used for aliases
+     * */
     resolve: (dirname) => ({
         alias: {
             "@scss": resolve(dirname, "lib/scss"),

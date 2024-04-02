@@ -4,9 +4,22 @@ type RollupOptions = {
      */
     extraDeps?: string | string[];
 };
+/**
+ * Vite config
+ */
 export declare const newConfig: {
+    /**
+     * Set build options
+     * - `lib.entry` and `lib.formats`
+     * */
     build: ({ extraDeps, extraEntries, }?: {
+        /** Set extra external dependencies
+         * It already includes `react` and `react/jsx-runtime`
+         */
         extraDeps?: string | string[];
+        /** Set extra entries
+         * `main` is already set
+         */
         extraEntries?: Record<string, string>;
     }) => {
         lib: {
@@ -25,6 +38,10 @@ export declare const newConfig: {
             };
         };
     };
+    /**
+     * Set resolve options
+     * Currently is only used for aliases
+     * */
     resolve: (dirname: string) => {
         alias: {
             "@scss": string;
