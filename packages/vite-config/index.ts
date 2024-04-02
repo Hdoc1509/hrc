@@ -1,13 +1,6 @@
 import { scanEntries } from "./scan.js";
 import { resolve } from "path";
 
-type RollupOptions = {
-  /** Set extra external dependencies
-   * It already includes `react` and `react/jsx-runtime`
-   */
-  extraDeps?: string | string[];
-};
-
 type BuildOptions = {
   /** Set extra external dependencies
    * It already includes `react` and `react/jsx-runtime`
@@ -73,30 +66,3 @@ export const newConfig = {
     },
   }),
 };
-
-const config = {
-  rollupOptions: ({ extraDeps }: RollupOptions = {}) => ({
-    external: [
-      "react",
-      "react/jsx-runtime",
-      ...(extraDeps ? [extraDeps].flat() : []),
-    ],
-    output: {
-      assetFileNames: "css/[name][extname]",
-      entryFileNames: "[name].js",
-    },
-  }),
-  alias: (dirname: string) => ({
-    "@scss": resolve(dirname, "lib/scss"),
-    "@lib": resolve(dirname, "lib"),
-  }),
-  entries: (
-    extraEntries: Record<string, string> = {},
-  ): { main: string; [key: string]: string } => ({
-    main: "lib/main.ts",
-      ...extraEntries,
-    ...scanEntries("lib/components"),
-  }),
-};
-
-export default config;
