@@ -8,12 +8,12 @@ export const newConfig = {
      * Set build options
      * - `lib.entry` and `lib.formats`
      * */
-    build: ({ extraDeps, extraEntries, } = {}) => ({
+    build: ({ extraDeps, extraEntries, componentsDir, } = {}) => ({
         lib: {
             entry: {
                 main: "lib/main.ts",
                 ...extraEntries,
-                ...scanEntries("lib/components"),
+                ...(componentsDir ? scanEntries("lib/components") : {}),
             },
             formats: ["es"],
         },

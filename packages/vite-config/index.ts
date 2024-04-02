@@ -19,6 +19,7 @@ export const newConfig = {
   build: ({
     extraDeps,
     extraEntries,
+    componentsDir,
   }: {
     /** Set extra external dependencies
      * It already includes `react` and `react/jsx-runtime`
@@ -28,12 +29,19 @@ export const newConfig = {
      * `main` is already set
      */
     extraEntries?: Record<string, string>;
+    /** Set entries based on `lib/components` directory structure
+     *
+     * If `true`, it will scan `lib/components` and add entries based on:
+     * 1: **If found a file**, use `filename` without extension as entry name
+     * 2: **If found a directory**, use `directoryname` as entry name
+     */
+    componentsDir?: boolean;
   } = {}) => ({
     lib: {
       entry: {
         main: "lib/main.ts",
         ...extraEntries,
-        ...scanEntries("lib/components"),
+        ...(componentsDir ? scanEntries("lib/components") : {}),
       } as { main: string; [key: string]: string },
       formats: ["es"] as ["es"],
     },

@@ -12,7 +12,7 @@ export declare const newConfig: {
      * Set build options
      * - `lib.entry` and `lib.formats`
      * */
-    build: ({ extraDeps, extraEntries, }?: {
+    build: ({ extraDeps, extraEntries, componentsDir, }?: {
         /** Set extra external dependencies
          * It already includes `react` and `react/jsx-runtime`
          */
@@ -21,6 +21,13 @@ export declare const newConfig: {
          * `main` is already set
          */
         extraEntries?: Record<string, string>;
+        /** Set entries based on `lib/components` directory structure
+         *
+         * If `true`, it will scan `lib/components` and add entries based on:
+         * 1: **If found a file**, use `filename` without extension as entry name
+         * 2: **If found a directory**, use `directoryname` as entry name
+         */
+        componentsDir?: boolean;
     }) => {
         lib: {
             entry: {
