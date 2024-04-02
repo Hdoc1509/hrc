@@ -7,9 +7,12 @@ export const getTheme = (): Theme => {
     return savedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
+  const userTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
+
+  saveTheme(userTheme);
+  return userTheme;
 };
 
 export const saveTheme = (theme: Theme) => {
