@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Theme, getTheme, toggleTheme } from "./utils";
 import "./ThemeButton.scss";
 
-type ThemeButtonProps = {
+type Props = {
   lightElement: React.ReactNode;
   darkElement: React.ReactNode;
   fullRounded?: boolean;
@@ -12,7 +12,7 @@ export const ThemeButton = ({
   darkElement,
   lightElement,
   fullRounded = false,
-}: ThemeButtonProps): JSX.Element => {
+}: Props): JSX.Element => {
   const [theme, setTheme] = useState<Theme>(getTheme());
 
   const handleToggleTheme = () => {
