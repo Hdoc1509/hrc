@@ -1,9 +1,3 @@
-type RollupOptions = {
-    /** Set extra external dependencies
-     * It already includes `react` and `react/jsx-runtime`
-     */
-    extraDeps?: string | string[];
-};
 type BuildOptions = {
     /** Set extra external dependencies
      * It already includes `react` and `react/jsx-runtime`
@@ -24,7 +18,7 @@ type BuildOptions = {
 /**
  * Vite config
  */
-export declare const newConfig: {
+declare const config: {
     /**
      * Set build options:
      * - `lib.entry`
@@ -61,23 +55,6 @@ export declare const newConfig: {
             "@scss": string;
             "@lib": string;
         };
-    };
-};
-declare const config: {
-    rollupOptions: ({ extraDeps }?: RollupOptions) => {
-        external: string[];
-        output: {
-            assetFileNames: string;
-            entryFileNames: string;
-        };
-    };
-    alias: (dirname: string) => {
-        "@scss": string;
-        "@lib": string;
-    };
-    entries: (extraEntries?: Record<string, string>) => {
-        [key: string]: string;
-        main: string;
     };
 };
 export default config;

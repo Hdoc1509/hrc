@@ -22,7 +22,7 @@ type BuildOptions = {
 /**
  * Vite config
  */
-export const newConfig = {
+const config = {
   /**
    * Set build options:
    * - `lib.entry`
@@ -66,3 +66,5 @@ export const newConfig = {
     },
   }),
 };
+
+export default config;
