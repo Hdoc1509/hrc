@@ -4,6 +4,23 @@ type RollupOptions = {
      */
     extraDeps?: string | string[];
 };
+type BuildOptions = {
+    /** Set extra external dependencies
+     * It already includes `react` and `react/jsx-runtime`
+     */
+    extraDeps?: string | string[];
+    /** Set extra entries
+     * `main` is already set
+     */
+    extraEntries?: Record<string, string>;
+    /** Set entries based on `lib/components` directory structure
+     *
+     * If `true`, it will scan `lib/components` and add entries based on:
+     * 1: **If found a file**, use `filename` without extension as entry name
+     * 2: **If found a directory**, use `directoryname` as entry name
+     */
+    componentsDir?: boolean;
+};
 /**
  * Vite config
  */
@@ -17,23 +34,7 @@ export declare const newConfig: {
      * - `rollupOptions.output.assetFileNames`
      * - `rollupOptions.output.entryFileNames`
      * */
-    build: ({ extraDeps, extraEntries, componentsDir, }?: {
-        /** Set extra external dependencies
-         * It already includes `react` and `react/jsx-runtime`
-         */
-        extraDeps?: string | string[];
-        /** Set extra entries
-         * `main` is already set
-         */
-        extraEntries?: Record<string, string>;
-        /** Set entries based on `lib/components` directory structure
-         *
-         * If `true`, it will scan `lib/components` and add entries based on:
-         * 1: **If found a file**, use `filename` without extension as entry name
-         * 2: **If found a directory**, use `directoryname` as entry name
-         */
-        componentsDir?: boolean;
-    }) => {
+    build: ({ extraDeps, extraEntries, componentsDir }?: BuildOptions) => {
         lib: {
             entry: {
                 [key: string]: string;

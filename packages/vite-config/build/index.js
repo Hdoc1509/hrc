@@ -13,7 +13,7 @@ export const newConfig = {
      * - `rollupOptions.output.assetFileNames`
      * - `rollupOptions.output.entryFileNames`
      * */
-    build: ({ extraDeps, extraEntries, componentsDir, } = {}) => ({
+    build: ({ extraDeps, extraEntries, componentsDir } = {}) => ({
         lib: {
             entry: {
                 main: "lib/main.ts",
