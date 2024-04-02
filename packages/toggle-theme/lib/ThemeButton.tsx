@@ -11,7 +11,7 @@ type Props = {
 export const ThemeButton = ({
   darkElement,
   lightElement,
-  fullRounded = false,
+  fullRounded,
 }: Props): JSX.Element => {
   const [theme, setTheme] = useState<Theme>(getTheme());
 
