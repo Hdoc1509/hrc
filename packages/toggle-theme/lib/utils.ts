@@ -20,7 +20,7 @@ export const saveTheme = (theme: Theme) => {
 };
 
 export const applyTheme = (theme: Theme) => {
-  document.body.dataset.theme = theme;
+  document.documentElement.dataset.theme = theme;
 };
 
 export const toggleTheme = (): Theme => {

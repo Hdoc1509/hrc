@@ -11,7 +11,7 @@
   --icon-size: 256px;
 }
 
-body[data-theme="dark"] .theme-button {
+[data-theme="dark"] .theme-button {
   --button-bg-hover: #3f3f3f;
   --button-bg-active: #595959;
 }
