@@ -46,6 +46,7 @@
     "clsx": "^2.0.0"
   },
   "devDependencies": {
+    "@hrc/vite-config": "workspace:*",
     "@material-design-icons/font": "0.14.10",
     "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",
@@ -58,8 +59,8 @@
     "vite-plugin-lib-inject-css": "2.0.0"
   },
   "peerDependencies": {
-    "@types/react": "^17.0.0 || ^18.0.0",
     "@material-design-icons/font": "^0.14.0",
+    "@types/react": "^17.0.0 || ^18.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   }
