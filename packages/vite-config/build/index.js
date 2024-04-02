@@ -5,8 +5,13 @@ import { resolve } from "path";
  */
 export const newConfig = {
     /**
-     * Set build options
-     * - `lib.entry` and `lib.formats`
+     * Set build options:
+     * - `lib.entry`
+     * - `lib.formats`
+     * - `copyPublicDir`
+     * - `rollupOptions.external`
+     * - `rollupOptions.output.assetFileNames`
+     * - `rollupOptions.output.entryFileNames`
      * */
     build: ({ extraDeps, extraEntries, componentsDir, } = {}) => ({
         lib: {
@@ -32,7 +37,8 @@ export const newConfig = {
     }),
     /**
      * Set resolve options
-     * Currently is only used for aliases
+     *
+     * _Currently is only used for aliases_
      * */
     resolve: (dirname) => ({
         alias: {
