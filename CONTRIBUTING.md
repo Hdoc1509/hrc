@@ -19,6 +19,7 @@ To develop a given package:
 1. Run `pnpm i` in root folder
 2. Run `pnpm nx dev --open @hrc/[package-name]` in root folder
 3. Run `pnpm changeset` in root folder for track changes of a package
+4. Commit your changes including the generated `changeset`'s
 
 ## Pull Request Guidelines
 
