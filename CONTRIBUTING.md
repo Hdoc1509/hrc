@@ -51,3 +51,19 @@ To develop a given package:
 
 - Commit messages must follow the
   [commit message convention](./.github/commit-convention.md)
+
+## Labels
+
+Be sure to  use the correct labels for your PR / issue:
+
+  <!-- label-color: #D4CEC2 -->
+
+  - `package: [package-name]`
+    - Example: `package: button`
+
+  <!-- label-color: #A6C9A4 -->
+
+  - `component: [component-name]`
+    - Example: `component: RingSpinner`
+
+You can also use the [default labels provided by Github](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#about-default-labels)
