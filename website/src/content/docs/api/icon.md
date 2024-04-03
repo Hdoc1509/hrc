@@ -1,7 +1,5 @@
 ---
 title: Icon API
-sidebar:
-  label: Icon
 description: API reference docs for the React Icon component
 ---
 

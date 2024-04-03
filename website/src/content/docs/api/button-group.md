@@ -1,7 +1,5 @@
 ---
 title: ButtonGroup API
-sidebar:
-  label: ButtonGroup
 description: API reference docs for the React ButtonGroup component
 ---
 

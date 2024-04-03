@@ -1,7 +1,5 @@
 ---
 title: CircleSpinner API
-sidebar:
-  label: CircleSpinner
 description: API reference docs for the React CircleSpinner component
 ---
 

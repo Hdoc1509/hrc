@@ -1,7 +1,5 @@
 ---
 title: ThemeButton API
-sidebar:
-  label: ThemeButton
 description: API reference docs for the React ThemeButton component
 ---
 
