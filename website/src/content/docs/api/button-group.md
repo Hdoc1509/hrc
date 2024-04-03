@@ -90,7 +90,7 @@ following CSS variables (custom properties):
 ```
 
 Additionally, it can use the same
-[CSS Variables of `<Button />`](/api/button#css-variables) to customize the
+[CSS Variables of `<Button />`](../button#css-variables) to customize the
 styles of the buttons.
 
 ## CSS Classes
@@ -120,7 +120,7 @@ Styles for column direction.
 ---
 
 The `<ButtonGroup />` component uses the following
-[CSS Clasess of `<Button />`](/api/button#css-classes) to set the styles of the
+[CSS Clasess of `<Button />`](../button#css-classes) to set the styles of the
 group:
 
 - **`.button--no-shadow`**
@@ -129,7 +129,7 @@ group:
 ---
 
 The `<ButtonGroup />` component uses the following
-[CSS classes of `<Button />`](/api/button#css-classes) to set the styles of the
+[CSS classes of `<Button />`](../button#css-classes) to set the styles of the
 buttons:
 
 - **`.button--outline`**
