@@ -15,6 +15,10 @@ import '@demos/hrc-button/styles.css'
 
 ## Default button
 
+Use the `variant` prop to change the visual aspect of the button.
+
+Also, using the `disabled` prop will change the appearance of the button.
+
 <Demo layout="row">
   <Demos.ButtonIconDefault />
 </Demo>
@@ -22,6 +26,8 @@ import '@demos/hrc-button/styles.css'
 <SourceCode code={defaultCode} title="button-icon-default.tsx" />
 
 ## Colors
+
+Use the `color` prop to change the color of the button.
 
 <Demo layout="grid" cols={2} className="button-icon-colors">
   <Demos.ButtonIconColors />
@@ -31,6 +37,8 @@ import '@demos/hrc-button/styles.css'
 
 ## Sizes
 
+Set the `size` prop to change the size of the button.
+
 <Demo layout="row">
   <Demos.ButtonIconSizes />
 </Demo>
@@ -38,6 +46,9 @@ import '@demos/hrc-button/styles.css'
 <SourceCode code={sizesCode} title="button-icon-sizes.tsx" />
 
 ## Rounded
+
+Add the `roundedSide` prop or set the `fullRounded` prop to change the button's
+border radius.
 
 <Demo layout="grid" cols={5}>
   <Demos.ButtonIconRounded />
