@@ -1,4 +1,4 @@
-@use "@hrc/sass-utils" as mono;
+@use "@hrc/sass-utils" as hrc;
 
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {
@@ -28,7 +28,7 @@
     --icon-size: 1em;
   }
 
-  @include color-variants(mono.$colors);
+  @include color-variants(hrc.$colors);
 
   &--disabled {
     --icon-color: var(--icon-color-disabled, rgba(0, 0, 0, 0.26));

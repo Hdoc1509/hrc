@@ -1,6 +1,7 @@
-@use "@hrc/sass-utils/colors" as *;
+@use "@hrc/sass-utils" as hrc;
 
 .checkbox {
+  // TODO: Use internal css variables as in @hrc/spinner
   display: grid;
   place-items: center; /* Is this necessary? */
 
@@ -17,23 +18,24 @@
     background-color: var(--checkbox-bg-hover, rgb(0, 0, 0, 0.1));
   }
 
+  // TODO: Use mixin to generate color variants
   &--primary {
-    --checkbox-checked-color: var(--primary, #{$primary});
+    --checkbox-checked-color: var(--primary, #{hrc.$primary});
   }
   &--secondary {
-    --checkbox-checked-color: var(--secondary, #{$secondary});
+    --checkbox-checked-color: var(--secondary, #{hrc.$secondary});
   }
   &--error {
-    --checkbox-checked-color: var(--error, #{$error});
+    --checkbox-checked-color: var(--error, #{hrc.$error});
   }
   &--info {
-    --checkbox-checked-color: var(--info, #{$info});
+    --checkbox-checked-color: var(--info, #{hrc.$info});
   }
   &--warning {
-    --checkbox-checked-color: var(--warning, #{$warning});
+    --checkbox-checked-color: var(--warning, #{hrc.$warning});
   }
   &--success {
-    --checkbox-checked-color: var(--success, #{$success});
+    --checkbox-checked-color: var(--success, #{hrc.$success});
   }
 
   &--disabled {

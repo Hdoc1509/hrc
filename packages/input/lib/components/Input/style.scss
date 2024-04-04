@@ -1,7 +1,8 @@
-@use "@hrc/sass-utils/colors" as *;
+@use "@hrc/sass-utils" as hrc;
 @use "@scss/colors" as *;
 
 .input {
+  // TODO: Use internal css variables as in @hrc/spinner
   display: flex;
   gap: var(--input-gap, 14px);
 
@@ -21,17 +22,17 @@
   }
 
   &:focus-within {
-    --input-border-color: var(--input-border-color-focus, #{$primary});
-    outline-color: var(--input-border-color-focus, #{$primary});
+    --input-border-color: var(--input-border-color-focus, #{hrc.$primary});
+    outline-color: var(--input-border-color-focus, #{hrc.$primary});
   }
 
   &--error,
   &--error:hover,
   &--error:focus-within {
-    --input-border-color: var(--error, #{$error});
+    --input-border-color: var(--error, #{hrc.$error});
   }
   &--error:focus-within {
-    outline-color: var(--error, #{$error});
+    outline-color: var(--error, #{hrc.$error});
   }
 
   &--disabled {
@@ -53,6 +54,7 @@
     width: 100%;
   }
 
+  // TODO: Use sass parent selector
   .input__inner {
     width: 100%;
     // flex-shrink: 1;
@@ -72,6 +74,7 @@
     }
   }
 
+  // TODO: Use `> :not(.input__inner)`
   > :not(input) {
     flex-shrink: 0;
   }

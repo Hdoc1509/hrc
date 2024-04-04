@@ -1,7 +1,8 @@
-@use "@hrc/sass-utils/colors" as *;
+@use "@hrc/sass-utils" as hrc;
 @use "@scss/colors" as *;
 
 .textarea {
+  // TODO: Use internal css variables as in @hrc/spinner
   width: 200px;
   background-color: var(--textarea-bg, transparent);
   border: 1px solid var(--textarea-border-color, $input-border-color);
@@ -24,17 +25,20 @@
   }
 
   &:focus {
-    --textarea-border-color: var(--textarea-border-color-focus, #{$primary});
-    outline-color: var(--textarea-border-color-focus, #{$primary});
+    --textarea-border-color: var(
+      --textarea-border-color-focus,
+      #{hrc.$primary}
+    );
+    outline-color: var(--textarea-border-color-focus, #{hrc.$primary});
   }
 
   &--error,
   &--error:hover,
   &--error:focus {
-    --textarea-border-color: var(--error, #{$error});
+    --textarea-border-color: var(--error, #{hrc.$error});
   }
   &--error:focus {
-    outline-color: var(--error, #{$error});
+    outline-color: var(--error, #{hrc.$error});
   }
 
   &:disabled {

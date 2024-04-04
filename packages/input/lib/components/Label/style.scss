@@ -1,7 +1,8 @@
-@use "@hrc/sass-utils/colors" as *;
+@use "@hrc/sass-utils" as hrc;
 @use "@scss/colors" as *;
 
 .label {
+  // TODO: Use internal css variables as in @hrc/spinner
   display: inline-flex;
   flex-direction: column;
   gap: 4px;
@@ -12,7 +13,7 @@
   color: var(--label-text, $label-text);
 
   &:focus-within:not(&--checkbox) {
-    --label-text: var(--label-text-focus, #{$primary});
+    --label-text: var(--label-text-focus, #{hrc.$primary});
   }
 
   &--checkbox {
@@ -23,8 +24,8 @@
   }
 
   &--error {
-    --label-text: var(--error, #{$error});
-    --label-text-focus: var(--error, #{$error});
+    --label-text: var(--error, #{hrc.$error});
+    --label-text-focus: var(--error, #{hrc.$error});
   }
 
   &--disabled {

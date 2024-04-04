@@ -1,4 +1,4 @@
-@use "@hrc/sass-utils" as *;
+@use "@hrc/sass-utils" as hrc;
 @use "@scss" as *;
 
 $divider-color: var(--button-divider-color, var(--button-bg-hover));
@@ -26,10 +26,10 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     --button-shadow: none;
 
     &:first-child {
-      @include border-left-rounded($button-radius);
+      @include hrc.border-left-rounded($button-radius);
     }
     &:last-child {
-      @include border-right-rounded($button-radius);
+      @include hrc.border-right-rounded($button-radius);
     }
 
     & + * {
@@ -59,10 +59,10 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     }
 
     > :first-child {
-      @include border-top-rounded($button-radius);
+      @include hrc.border-top-rounded($button-radius);
     }
     > :last-child {
-      @include border-bottom-rounded($button-radius);
+      @include hrc.border-bottom-rounded($button-radius);
     }
 
     &.button--disabled > * {

@@ -1,4 +1,4 @@
-@use "@hrc/sass-utils" as *;
+@use "@hrc/sass-utils" as hrc;
 @use "@scss" as *;
 
 .button {
@@ -29,7 +29,7 @@
     --button-bg: var(--button-bg-hover, #{$button-bg-hover});
   }
 
-  @include color-variants($colors);
+  @include color-variants(hrc.$colors);
 
   &:disabled,
   &--disabled {
@@ -54,7 +54,7 @@
     --__padding-y: 12px;
   }
 
-  @include border-rounded-variants($button-radius);
+  @include hrc.border-rounded-variants($button-radius);
   &--full-rounded {
     border-radius: 9999px;
   }
