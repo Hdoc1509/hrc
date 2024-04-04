@@ -31,5 +31,8 @@
     "sass": "1.74.1",
     "sharp": "^0.32.5",
     "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@hrc/sass-utils": "workspace:*"
   }
 }
