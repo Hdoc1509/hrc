@@ -14,6 +14,13 @@ Simple and extensible components for your React app.
 | [@hrc/type-utils](packages/type-utils)         | [![npm](https://img.shields.io/npm/v/%40hrc%2Ftype-utils?label=%20)](packages/type-utils/CHANGELOG.md)         |
 | [@hrc/babel-config](packages/babel-config)     | [![npm](https://img.shields.io/npm/v/%40hrc%2Fbabel-config?label=%20)](packages/babel-config/CHANGELOG.md)     |
 
+## Internal packages
+
+- [@hrc/docs](packages/docs) - React component for documentation purposes
+- [@hrc/sass-utils](packages/sass-utils) - Sass utilities: variables and mixins
+- [@hrc/vite-config](packages/vite-config) - Shared config for Vite, including
+  [Vite Libray Mode](https://vitejs.dev/guide/build#library-mode)
+
 ## Contribution
 
 See [Contributing guide](CONTRIBUTING.md)
