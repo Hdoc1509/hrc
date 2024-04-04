@@ -2,5 +2,39 @@
 title: Customize Theme
 description: How to modify the default theme of <hrc />
 ---
+import { Aside } from "@astrojs/starlight/components"
 
-WIP
+Each component of `<hrc />` handles its own CSS variables, but you can use the
+following to customize its color variants:
+
+```css
+:root {
+  /* COLOR =
+      primary |
+      secondary |
+      error |
+      warning |
+      info |
+      success
+  */
+  --[COLOR]: <color>; /* main */
+  --[COLOR]-hover: <color>;
+  --[COLOR]-text: <color>;
+  --[COLOR]-transparent: <color>;
+
+
+  /* EXAMPLE */
+  --primary: lightblue;
+  --seconday-hover: lightgray;
+  --error-transparent: #ff0000a6;
+  --warning-text: black;
+  --info: skyblue;
+  --success-hover: darkgreen;
+}
+```
+
+<Aside>
+  Not all components uses all of the above CSS variables.
+
+  Be sure to check the api of each component for the available CSS variables.
+</Aside>

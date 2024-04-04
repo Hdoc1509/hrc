@@ -5,4 +5,36 @@ sidebar:
   order: 1
 ---
 
-WIP
+import { Aside } from "@astrojs/starlight/components"
+import { ColorPallete } from "@components/ColorPallete.tsx"
+
+The theme of `<hrc />` is based on [CSS variables with fallback
+values](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#custom_property_fallback_values).
+
+## Colors
+
+The default theme uses the following colors:
+
+### primary
+
+<ColorPallete color="primary" />
+
+### secondary
+
+<ColorPallete color="secondary" />
+
+### Error
+
+<ColorPallete color="error" />
+
+### Warning
+
+<ColorPallete color="warning" />
+
+### Info
+
+<ColorPallete color="info" />
+
+### Success
+
+<ColorPallete color="success" />

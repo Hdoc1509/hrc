@@ -1,0 +1,63 @@
+@use "@mono/ui/scss" as mono;
+
+@mixin color-variants() {
+  @each $color, $_ in mono.$colors {
+    $name: map-get(mono.$colors, $color);
+
+    &[data-color="#{$color}"] {
+      &[data-variant="main"] {
+        --color-hex: "#{map-get($name, main)}";
+        --pallete-color: #{map-get($name, main)};
+      }
+
+      &[data-variant="hover"] {
+        --color-hex: "#{map-get($name, hover)}";
+        --pallete-color: #{map-get($name, hover)};
+      }
+
+      &[data-variant="text"] {
+        --color-hex: "#{map-get($name, text)}";
+        --pallete-color: #{map-get($name, text)};
+      }
+
+      &[data-variant="transparent"] {
+        --color-hex: "#{ie-hex-str(map-get($name, transparent))}";
+        --pallete-color: #{map-get($name, transparent)};
+      }
+    }
+  }
+}
+
+.color-pallete {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+
+  &.color-pallete * {
+    margin: 0;
+  }
+
+  &__variant {
+    display: flex;
+    gap: 2ch;
+    align-items: center;
+
+    @include color-variants();
+  }
+
+  &__color {
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: var(--pallete-color);
+  }
+
+  &__info {
+    font-weight: bold;
+
+    &::after {
+      // NOTE: pseudo-elements are not selectable
+      content: var(--color-hex);
+    }
+  }
+}
