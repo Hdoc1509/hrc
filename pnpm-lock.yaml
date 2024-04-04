@@ -88,15 +88,15 @@ importers:
       '@hrc/material-icons':
         specifier: workspace:*
         version: link:../material-icons
+      '@hrc/sass-utils':
+        specifier: workspace:*
+        version: link:../../libs/ui
       '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
       '@material-design-icons/font':
         specifier: 0.14.10
         version: 0.14.10
-      '@mono/ui':
-        specifier: workspace:*
-        version: link:../../libs/ui
       '@vitejs/plugin-react-swc':
         specifier: 3.3.2
         version: 3.3.2(vite@4.4.5)
@@ -143,15 +143,15 @@ importers:
       '@hrc/material-icons':
         specifier: workspace:*
         version: link:../material-icons
+      '@hrc/sass-utils':
+        specifier: workspace:*
+        version: link:../../libs/ui
       '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
       '@material-design-icons/font':
         specifier: 0.14.10
         version: 0.14.10
-      '@mono/ui':
-        specifier: workspace:*
-        version: link:../../libs/ui
       '@vitejs/plugin-react-swc':
         specifier: 3.3.2
         version: 3.3.2(vite@4.4.5)
@@ -189,15 +189,15 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
     devDependencies:
+      '@hrc/sass-utils':
+        specifier: workspace:*
+        version: link:../../libs/ui
       '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
       '@material-design-icons/font':
         specifier: 0.14.10
         version: 0.14.10
-      '@mono/ui':
-        specifier: workspace:*
-        version: link:../../libs/ui
       '@vitejs/plugin-react-swc':
         specifier: 3.3.2
         version: 3.3.2(vite@4.4.5)
@@ -235,12 +235,12 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
     devDependencies:
+      '@hrc/sass-utils':
+        specifier: workspace:*
+        version: link:../../libs/ui
       '@hrc/vite-config':
         specifier: workspace:*
         version: link:../vite-config
-      '@mono/ui':
-        specifier: workspace:*
-        version: link:../../libs/ui
       '@vitejs/plugin-react-swc':
         specifier: 3.3.2
         version: 3.3.2(vite@4.4.5)
@@ -350,9 +350,6 @@ importers:
       '@material-design-icons/font':
         specifier: 0.14.13
         version: 0.14.13
-      '@mono/ui':
-        specifier: workspace:*
-        version: link:../libs/ui
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.0.0
         version: 6.0.0(@typescript-eslint/parser@6.0.0)(eslint@8.45.0)(typescript@5.4.3)

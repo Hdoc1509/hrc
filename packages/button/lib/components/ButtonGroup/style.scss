@@ -1,4 +1,4 @@
-@use "@mono/ui/scss" as *;
+@use "@hrc/sass-utils/scss" as *;
 @use "@scss" as *;
 
 $divider-color: var(--button-divider-color, var(--button-bg-hover));

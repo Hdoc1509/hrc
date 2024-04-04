@@ -52,8 +52,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@hrc/sass-utils": "workspace:*",
     "@hrc/vite-config": "workspace:*",
-    "@mono/ui": "workspace:*",
     "@vitejs/plugin-react-swc": "3.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
