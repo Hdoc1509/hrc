@@ -1,8 +1,8 @@
-@use "@hrc/sass-utils" as mono;
+@use "@hrc/sass-utils" as hrc;
 
 @mixin color-variants() {
-  @each $color, $_ in mono.$colors {
-    $name: map-get(mono.$colors, $color);
+  @each $color, $_ in hrc.$colors {
+    $name: map-get(hrc.$colors, $color);
 
     &[data-color="#{$color}"] {
       &[data-variant="main"] {
