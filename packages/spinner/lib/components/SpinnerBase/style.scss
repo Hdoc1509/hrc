@@ -1,4 +1,4 @@
-@use "@hrc/sass-utils/scss" as mono;
+@use "@hrc/sass-utils" as mono;
 @use "@scss/variables" as *;
 
 @mixin color-variants($colors) {

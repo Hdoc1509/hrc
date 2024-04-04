@@ -1,4 +1,4 @@
-@use "@mono/ui/scss" as mono;
+@use "@hrc/sass-utils" as mono;
 
 @mixin color-variants() {
   @each $color, $_ in mono.$colors {
