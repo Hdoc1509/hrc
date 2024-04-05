@@ -6,7 +6,7 @@ PKGS=(button)
 for pkg in "${PKGS[@]}"; do
   pkg_dir="../packages/${pkg}"
   pkg_name=$(jq '.name' "${pkg_dir}"/package.json)
-  pkg_demo_target="${demos_dir}/hrc-${pkg}"
+  pkg_demo_target="${demos_dir}/${pkg}"
 
   echo "Copying demos for ${pkg_name}..."
 
