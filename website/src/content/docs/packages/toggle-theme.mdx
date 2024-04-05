@@ -3,14 +3,18 @@ title: "@hrc/toggle-theme"
 description: Package for toggle theme component of <hrc />
 ---
 
-import { Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Aside, Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { ThemeButtonDemo } from "@demos/toggle-theme";
+import { Demo } from "@components/Demo";
+import demoCode from "@demos/toggle-theme/index.tsx?raw";
+import stylesCode from "@demos/toggle-theme/styles.css?raw";
 import pkg from "@hrc/toggle-theme/package.json";
 
 <p>{pkg.description}</p>
 
-{/* TODO: Put demo as jsx from @hrc/toggle-them */}
-
-_Demo here_
+<Demo>
+  <ThemeButtonDemo client:only="react" />
+</Demo>
 
 > Demo generated with code from [Usage](#usage) section
 
@@ -36,7 +40,25 @@ _Demo here_
 
 ## Usage
 
-<Code code="// code deme here" lang="jsx" />
+<Code code={demoCode} lang="jsx" title="Demo.tsx" />
+<Code code={stylesCode} lang="css" title="styles.css" />
+
+<Aside type="caution">
+  This component is designed to be used in a React project. It is just used here
+  to show the usage of the component.
+
+  Although the component is used to handle the theme of this website, it is not
+  the best way to do so, as this is an Astro project. It required to use a
+  [`client directive`](https://docs.astro.build/en/reference/directives-reference/)
+  in order to work, causing the component to delay its initial rendering.
+
+  I recommend to use a native Astro component for Astro projects.
+
+  You can check out the following:
+    - [Theme Toggle from Astro docs](https://docs.astro.build/en/tutorial/6-islands/2/)
+    - [ThemeProvider from Starlight](https://starlight.astro.build/reference/overrides/#themeprovider)
+    - [ThemeSelect from Starlight](https://starlight.astro.build/reference/overrides/#themeselect)
+</Aside>
 
 ## Demos
 
