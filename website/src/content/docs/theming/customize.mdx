@@ -2,7 +2,6 @@
 title: Customize Theme
 description: How to modify the default theme of <hrc />
 ---
-import { Aside } from "@astrojs/starlight/components"
 
 Each component of `<hrc />` handles its own CSS variables, but you can use the
 following to customize its color variants:
@@ -26,8 +25,8 @@ following to customize its color variants:
 }
 ```
 
-<Aside>
+:::note
   Not all components uses all of the above CSS variables.
 
   Be sure to check the api of each component for the available CSS variables.
-</Aside>
+:::

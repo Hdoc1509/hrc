@@ -3,7 +3,7 @@ title: "@hrc/toggle-theme"
 description: Package for toggle theme component of <hrc />
 ---
 
-import { Aside, Code, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Code, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 import { ThemeButtonDemo } from "@demos/toggle-theme";
 import { Demo } from "@components/Demo";
 import demoCode from "@demos/toggle-theme/index.tsx?raw";
@@ -18,13 +18,13 @@ import pkg from "@hrc/toggle-theme/package.json";
 
 > Demo generated with code from [Usage](#usage) section
 
-<Aside>
-  This component handles the theme of this website.
-</Aside>
-<Aside type="caution" title="It does not sync with theme button of website">
-  As this is an isolated component, it does not share its state with other
-  components.
-</Aside>
+:::note
+This component handles the theme of this website.
+:::
+:::caution[It does not sync with theme button of website]
+As this is an isolated component, it does not share its state with other
+components.
+:::
 
 ## Installation
 
@@ -65,7 +65,7 @@ import pkg from "@hrc/toggle-theme/package.json";
 
 </Steps>
 
-<Aside type="caution">
+:::caution
   As this is an Astro project, this component required to use a
   [`client directive`](https://docs.astro.build/en/reference/directives-reference/)
   in order to work and it can cause to delay its initial rendering.
@@ -75,7 +75,7 @@ import pkg from "@hrc/toggle-theme/package.json";
     - [Theme Toggle from Astro docs](https://docs.astro.build/en/tutorial/6-islands/2/)
     - [ThemeProvider from Starlight](https://starlight.astro.build/reference/overrides/#themeprovider)
     - [ThemeSelect from Starlight](https://starlight.astro.build/reference/overrides/#themeselect)
-</Aside>
+:::
 
 ## Demos
 
