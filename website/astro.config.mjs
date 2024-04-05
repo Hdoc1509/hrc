@@ -10,8 +10,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "<hrc />",
+      components: {
+        ThemeProvider: "./src/components/ThemeProvider.astro",
+        ThemeSelect: "./src/components/ThemeSelect.astro"
+      },
       customCss: [
-        '@material-design-icons/font/index.css'
+        '@material-design-icons/font/index.css',
+        "@demos/toggle-theme/styles.css",
       ],
       social: {
         github: "https://github.com/Hdoc1509/hrc",
