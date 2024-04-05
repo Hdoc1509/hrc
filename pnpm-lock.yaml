@@ -341,6 +341,9 @@ importers:
       '@hrc/material-icons':
         specifier: workspace:*
         version: link:../packages/material-icons
+      '@hrc/sass-utils':
+        specifier: workspace:*
+        version: link:../packages/sass-utils
       '@hrc/spinner':
         specifier: workspace:*
         version: link:../packages/spinner
@@ -377,10 +380,6 @@ importers:
       typescript:
         specifier: ^5.4.3
         version: 5.4.3
-    devDependencies:
-      '@hrc/sass-utils':
-        specifier: workspace:*
-        version: link:../packages/sass-utils
 
 packages:
 

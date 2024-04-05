@@ -19,6 +19,7 @@
     "@hrc/docs": "workspace:*",
     "@hrc/input": "workspace:*",
     "@hrc/material-icons": "workspace:*",
+    "@hrc/sass-utils": "workspace:*",
     "@hrc/spinner": "workspace:*",
     "@hrc/toggle-theme": "workspace:*",
     "@material-design-icons/font": "0.14.13",
@@ -31,8 +32,5 @@
     "sass": "1.74.1",
     "sharp": "^0.32.5",
     "typescript": "^5.4.3"
-  },
-  "devDependencies": {
-    "@hrc/sass-utils": "workspace:*"
   }
 }
