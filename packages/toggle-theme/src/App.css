@@ -6,16 +6,11 @@
 
 /* Example for overide default colors */
 .theme-button {
-  --button-bg-hover: transparent;
   --button-bg-active: #e6e6e6;
-  --icon-size: 256px;
+  --icon-size: 36px;
 }
 
 [data-theme="dark"] .theme-button {
   --button-bg-hover: #3f3f3f;
   --button-bg-active: #595959;
-}
-
-.dark-icon {
-  color: skyblue;
 }
