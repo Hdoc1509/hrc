@@ -3,7 +3,7 @@ title: "@hrc/toggle-theme"
 description: Package for toggle theme component of <hrc />
 ---
 
-import { Aside, Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Aside, Code, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 import { ThemeButtonDemo } from "@demos/toggle-theme";
 import { Demo } from "@components/Demo";
 import demoCode from "@demos/toggle-theme/index.tsx?raw";
@@ -48,8 +48,22 @@ import pkg from "@hrc/toggle-theme/package.json";
 
 ## Usage
 
-<Code code={demoCode} lang="jsx" title="Demo.tsx" />
-<Code code={stylesCode} lang="css" title="styles.css" />
+<Steps>
+
+1. Import `load-theme.js` in your `index.html`:
+
+   ```html
+   <script
+     type="module"
+     src="node_modules/@hrc/toggle-theme/dist/load-theme.js"
+   ></script>
+   ```
+2. Then use the component in your project:
+
+   <Code code={demoCode} lang="jsx" title="Demo.tsx" />
+   <Code code={stylesCode} lang="css" title="styles.css" />
+
+</Steps>
 
 <Aside type="caution">
   As this is an Astro project, this component required to use a
