@@ -18,7 +18,7 @@
     border-radius: 50%;
   }
 
-  body[data-theme="dark"] & {
+  [data-theme="dark"] & {
     --button-bg-hover: #3f3f3f;
     --button-bg-active: #595959;
   }
