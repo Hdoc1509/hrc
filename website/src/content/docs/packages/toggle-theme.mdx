@@ -44,17 +44,12 @@ import pkg from "@hrc/toggle-theme/package.json";
 <Code code={stylesCode} lang="css" title="styles.css" />
 
 <Aside type="caution">
-  This component is designed to be used in a React project. It is just used here
-  to show the usage of the component.
-
-  Although the component is used to handle the theme of this website, it is not
-  the best way to do so, as this is an Astro project. It required to use a
+  As this is an Astro project, this component required to use a
   [`client directive`](https://docs.astro.build/en/reference/directives-reference/)
-  in order to work, causing the component to delay its initial rendering.
+  in order to work and it can cause to delay its initial rendering.
 
-  I recommend to use a native Astro component for Astro projects.
-
-  You can check out the following:
+  If you want to avoid the possibility of a delay in an Astro project, you can
+  check out the following resources:
     - [Theme Toggle from Astro docs](https://docs.astro.build/en/tutorial/6-islands/2/)
     - [ThemeProvider from Starlight](https://starlight.astro.build/reference/overrides/#themeprovider)
     - [ThemeSelect from Starlight](https://starlight.astro.build/reference/overrides/#themeselect)
