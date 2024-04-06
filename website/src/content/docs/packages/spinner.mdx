@@ -4,11 +4,16 @@ description: Package for spinner components of <hrc />
 ---
 
 import { Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { PackageDemo } from "@demos/spinner/package.tsx";
+import { Demo } from "@components/Demo.tsx";
+import demoCode from "@demos/spinner/package.tsx?raw";
 import pkg from "@hrc/spinner/package.json";
 
 <p>{pkg.description}</p>
 
-_Demo here_
+<Demo layout="row">
+  <PackageDemo />
+</Demo>
 
 > Demo generated with code from [Usage](#usage) section
 
@@ -34,11 +39,11 @@ _Demo here_
 
 ## Usage
 
-<Code code="// code deme here" lang="jsx" />
+<Code code={demoCode} lang="jsx" />
 
 ## Props
 
-The following props are available for all spinner components:
+**The following props are available for all spinner components:**
 
 **All props are optional unless otherwise specified**
 
