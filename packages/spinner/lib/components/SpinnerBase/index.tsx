@@ -19,7 +19,7 @@ export const SpinnerBase = ({
   name,
 }: React.PropsWithChildren<Props>): JSX.Element => {
   const spinnerClass = clsx(
-    ["spinner", name],
+    [name, "spinner"],
     {
       [`spinner--${color}`]: color,
       [`spinner--${size}`]: size,
