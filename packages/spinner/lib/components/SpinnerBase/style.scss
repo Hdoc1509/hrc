@@ -1,5 +1,5 @@
 @use "@hrc/sass-utils" as hrc;
-@use "@scss/variables" as *;
+@use "@scss" as *;
 
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {

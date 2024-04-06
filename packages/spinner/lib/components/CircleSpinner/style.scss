@@ -1,5 +1,5 @@
 // Taken and adapted from https://github.com/loadingio/css-spinner
-@use "@scss/variables" as * with (
+@use "@scss" as * with (
   $speed: 2.4s
 );
 

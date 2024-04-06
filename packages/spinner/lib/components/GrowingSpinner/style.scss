@@ -1,5 +1,5 @@
 // Taken and adapted from https://github.com/twbs/bootstrap
-@use "@scss/variables" as * with (
+@use "@scss" as * with (
   $speed: 1s
 );
 .growing-spinner {
