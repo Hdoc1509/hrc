@@ -1,4 +1,5 @@
-// Taken and adapted from https://github.com/loadingio/css-spinner
+// Taken and adapted from:
+// https://github.com/loadingio/css-spinner/blob/master/src/circle/index.styl
 @use "@scss" as * with (
   $speed: 2.4s
 );

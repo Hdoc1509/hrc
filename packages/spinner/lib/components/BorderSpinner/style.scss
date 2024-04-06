@@ -1,4 +1,6 @@
-// Taken and adapted from https://github.com/twbs/bootstrap
+// Taken and adapted from:
+// https://github.com/twbs/bootstrap/blob/main/scss/_spinners.scss
+
 .border-spinner {
   border: calc(var(--_size) * 0.1) solid var(--_color);
   border-radius: 50%;

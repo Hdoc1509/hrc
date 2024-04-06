@@ -1,4 +1,6 @@
-// Taken and adapted from https://github.com/loadingio/css-spinner
+// Taken and adapted from:
+// https://github.com/loadingio/css-spinner/blob/master/src/dual-ring/index.styl
+
 .dual-ring-spinner {
   border: calc(var(--_size) * 0.1) solid transparent;
   border-radius: 50%;
