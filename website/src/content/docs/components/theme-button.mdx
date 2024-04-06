@@ -1,0 +1,62 @@
+---
+title: ThemeButton
+description: React ThemeButton component of <hrc />
+---
+
+import { Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo";
+import { ParagraphLight, ParagraphDark } from "@demos/toggle-theme/approaches";
+import lightStyles from "@demos/toggle-theme/Light.scss?raw";
+import lightCode from "@demos/toggle-theme/ParagraphLight.tsx?raw";
+import darkStyles from "@demos/toggle-theme/Dark.scss?raw";
+import darkCode from "@demos/toggle-theme/ParagraphDark.tsx?raw";
+import toggle from "@demos/toggle-theme/ThemeToggle.tsx?raw";
+import toggleStyles from "@demos/toggle-theme/ThemeToggle.scss?raw";
+
+## Light Mode First
+
+With this approach, you declare your `light` colors first and then use
+`[data-theme="dark"]` to set your `dark` colors.
+
+<Tabs>
+  <TabItem label="Light.scss">
+    <Code code={lightStyles} lang="css" />
+  </TabItem>
+  <TabItem label="ParagraphLight.tsx">
+    <Code code={lightCode} lang="tsx" />
+  </TabItem>
+  <TabItem label="ThemeToggle.tsx">
+    <Code code={toggle} lang="tsx" />
+  </TabItem>
+  <TabItem label="ThemeToggle.scss">
+    <Code code={toggleStyles} lang="css" />
+  </TabItem>
+</Tabs>
+
+<Demo>
+  <ParagraphLight client:only="react" />
+</Demo>
+
+## Dark Mode First
+
+With this approach, you declare your `dark` colors first and then use
+`[data-theme="light"]` to set your `light` colors.
+
+<Tabs>
+  <TabItem label="Dark.scss">
+    <Code code={darkStyles} lang="css" />
+  </TabItem>
+  <TabItem label="ParagraphDark.tsx">
+    <Code code={darkCode} lang="tsx" />
+  </TabItem>
+  <TabItem label="ThemeToggle.tsx">
+    <Code code={toggle} lang="tsx" />
+  </TabItem>
+  <TabItem label="ThemeToggle.scss">
+    <Code code={toggleStyles} lang="css" />
+  </TabItem>
+</Tabs>
+
+<Demo>
+  <ParagraphDark client:only="react" />
+</Demo>

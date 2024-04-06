@@ -1,0 +1,8 @@
+[data-theme="light"] [class*="paragraph"] .theme-button {
+  color: currentColor;
+  --button-bg-hover: rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] [class*="paragraph"] .theme-button {
+  color: currentColor;
+  --button-bg-hover: rgba(0, 0, 0, 0.2);
+}

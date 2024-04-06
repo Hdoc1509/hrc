@@ -1,0 +1,15 @@
+:root {
+  --dark-bg: #b36200;
+  --dark-text: #111;
+}
+[data-theme="light"] {
+  --dark-bg: transparent;
+  --dark-text: #ff8c00;
+}
+
+.dark-paragraph {
+  background-color: var(--dark-bg);
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--dark-text);
+}
