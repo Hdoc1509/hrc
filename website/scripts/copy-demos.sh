@@ -1,7 +1,7 @@
 demos_dir=./src/demos
 # demos_dir=./demos-test
 # PKGS=(button input material-icons spinner toggle-theme)
-PKGS=(button toggle-theme)
+PKGS=(button spinner toggle-theme)
 
 for pkg in "${PKGS[@]}"; do
   pkg_dir="../packages/${pkg}"
