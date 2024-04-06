@@ -1,6 +1,5 @@
 import { ThemeButton } from "@hrc/toggle-theme";
 import { Icon } from "@hrc/material-icons";
-import './styles.css';
 
 const Light = () => {
   return (
