@@ -1,7 +1,7 @@
-import { ThemeToggle } from "./ThemeToggle.tsx";
+import ThemeToggle from "./Toggle.tsx";
 import './Dark.scss';
 
-export function ParagraphDark() {
+export function DarkFirst() {
   return (
     <section className="dark-paragraph">
       <ThemeToggle />

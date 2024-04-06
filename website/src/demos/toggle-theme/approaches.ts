@@ -1,2 +1,2 @@
-export { ParagraphLight } from "./ParagraphLight";
-export { ParagraphDark } from "./ParagraphDark";
+export { LightFirst } from "./LightFirst";
+export { DarkFirst } from "./DarkFirst";

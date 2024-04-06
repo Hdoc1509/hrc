@@ -1,7 +1,7 @@
-import { ThemeToggle } from "./ThemeToggle.tsx";
+import ThemeToggle from "./Toggle.tsx";
 import "./Light.scss";
 
-export function ParagraphLight() {
+export function LightFirst() {
   return (
     <section className="light-paragraph">
       <ThemeToggle />
