@@ -1,0 +1,59 @@
+---
+title: GrowingSpinner
+description: React GrowingSpinner component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
+import * as Demos from "@demos/spinner"
+import defaultCode from "@demos/spinner/growing-spinner/default.tsx?raw"
+import colorsCode from "@demos/spinner/growing-spinner/colors.tsx?raw"
+import sizesCode from "@demos/spinner/growing-spinner/sizes.tsx?raw"
+import speedsCode from "@demos/spinner/growing-spinner/speeds.tsx?raw"
+
+## Default border spinner
+
+<Demo layout="row">
+  <Demos.GrowingSpinnerDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="growing-spinner-default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the spinner.
+
+<Demo layout="grid" cols={3}>
+  <Demos.GrowingSpinnerColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="growing-spinner-colors.tsx" />
+
+## Sizes
+
+Set the `size` prop to change the size of the spinner.
+
+<Demo layout="row">
+  <Demos.GrowingSpinnerSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="growing-spinner-sizes.tsx" />
+
+## Speeds
+
+Set the `speed` prop to change the speed of the spinner.
+
+<Demo layout="row">
+  <Demos.GrowingSpinnerSpeeds />
+</Demo>
+
+<SourceCode code={speedsCode} title="growing-spinner-speeds.tsx" />
+
+## API
+
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for `<GrowingSpinner />`:
+
+- [`<GrowingSpinner />`](/hrc/api/growing-spinner)
+
