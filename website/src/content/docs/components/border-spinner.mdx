@@ -1,0 +1,58 @@
+---
+title: BorderSpinner
+description: React BorderSpinner component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
+import * as Demos from "@demos/spinner"
+import defaultCode from "@demos/spinner/border-spinner/default.tsx?raw"
+import colorsCode from "@demos/spinner/border-spinner/colors.tsx?raw"
+import sizesCode from "@demos/spinner/border-spinner/sizes.tsx?raw"
+import speedsCode from "@demos/spinner/border-spinner/speeds.tsx?raw"
+
+## Default border spinner
+
+<Demo layout="row">
+  <Demos.BorderSpinnerDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="border-spinner-default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the spinner.
+
+<Demo layout="grid" cols={3}>
+  <Demos.BorderSpinnerColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="border-spinner-colors.tsx" />
+
+## Sizes
+
+Set the `size` prop to change the size of the spinner.
+
+<Demo layout="row">
+  <Demos.BorderSpinnerSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="border-spinner-sizes.tsx" />
+
+## Speeds
+
+Set the `speed` prop to change the speed of the spinner.
+
+<Demo layout="row">
+  <Demos.BorderSpinnerSpeeds />
+</Demo>
+
+<SourceCode code={speedsCode} title="border-spinner-speeds.tsx" />
+
+## API
+
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for `<BorderSpinner />`:
+
+- [`<BorderSpinner />`](/hrc/api/border-spinner)
