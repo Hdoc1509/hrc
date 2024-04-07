@@ -73,6 +73,24 @@ components.
      </TabItem>
    </Tabs>
 
+3. Add your styles:
+
+   ```css
+   :root {
+     --bg-color: #fff;
+     --text-color: #17181c;
+   }
+   [data-theme="dark"] {
+     --bg-color: #17181c;
+     --text-color: #fff;
+   }
+
+   body {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+   }
+   ```
+
 </Steps>
 
 :::caution
