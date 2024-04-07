@@ -1,0 +1,58 @@
+---
+title: RingSpinner
+description: React RingSpinner component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
+import * as Demos from "@demos/spinner"
+import defaultCode from "@demos/spinner/ring-spinner/default.tsx?raw"
+import colorsCode from "@demos/spinner/ring-spinner/colors.tsx?raw"
+import sizesCode from "@demos/spinner/ring-spinner/sizes.tsx?raw"
+import speedsCode from "@demos/spinner/ring-spinner/speeds.tsx?raw"
+
+## Default border spinner
+
+<Demo layout="row">
+  <Demos.RingSpinnerDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="ring-spinner-default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the spinner.
+
+<Demo layout="grid" cols={3}>
+  <Demos.RingSpinnerColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="ring-spinner-colors.tsx" />
+
+## Sizes
+
+Set the `size` prop to change the size of the spinner.
+
+<Demo layout="row">
+  <Demos.RingSpinnerSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="ring-spinner-sizes.tsx" />
+
+## Speeds
+
+Set the `speed` prop to change the speed of the spinner.
+
+<Demo layout="row">
+  <Demos.RingSpinnerSpeeds />
+</Demo>
+
+<SourceCode code={speedsCode} title="ring-spinner-speeds.tsx" />
+
+## API
+
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for `<RingSpinner />`:
+
+- [`<RingSpinner />`](/hrc/api/ring-spinner)
