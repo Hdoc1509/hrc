@@ -71,6 +71,14 @@ Type: `'top' | 'bottom' | 'left' | 'right'`
 
 ---
 
+**`fullRounded`**
+
+Whether to make the button full rounded.
+
+Type: `boolean`
+
+---
+
 **`className`**
 
 Additional class names for extending styles.
