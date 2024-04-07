@@ -6,7 +6,7 @@ description: API reference docs for the React DualRingSpinner component
 ## Import
 
 ```js
-import { RingSpinner } from "@hrc/spinner";
+import { DualRingSpinner } from "@hrc/spinner";
 ```
 
 ## Props
@@ -21,9 +21,9 @@ import { RingSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`ring-spinner`**
+**`dual-ring-spinner`**
 
-The base styles for `<RingSpinner />` component.
+The base styles for `<DualRingSpinner />` component.
 
 ---
 
