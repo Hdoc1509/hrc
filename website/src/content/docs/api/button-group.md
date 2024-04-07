@@ -118,7 +118,7 @@ Styles for column direction.
 
 ---
 
-**Additionally, is uses the following [CSS Classes of `<Button
+**Additionally, it uses the following [CSS Classes of `<Button
 />`](../button#css-classes) to set the styles of the group:**
 
 - **`.button--no-shadow`**
