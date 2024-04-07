@@ -1,0 +1,58 @@
+---
+title: CircleSpinner
+description: React CircleSpinner component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo } from "@components/Demo.tsx"
+import SourceCode from "@components/SourceCode.astro"
+import * as Demos from "@demos/spinner"
+import defaultCode from "@demos/spinner/circle-spinner/default.tsx?raw"
+import colorsCode from "@demos/spinner/circle-spinner/colors.tsx?raw"
+import sizesCode from "@demos/spinner/circle-spinner/sizes.tsx?raw"
+import speedsCode from "@demos/spinner/circle-spinner/speeds.tsx?raw"
+
+## Default border spinner
+
+<Demo layout="row">
+  <Demos.CircleSpinnerDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="circle-spinner-default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the spinner.
+
+<Demo layout="grid" cols={3}>
+  <Demos.CircleSpinnerColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="circle-spinner-colors.tsx" />
+
+## Sizes
+
+Set the `size` prop to change the size of the spinner.
+
+<Demo layout="row">
+  <Demos.CircleSpinnerSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="circle-spinner-sizes.tsx" />
+
+## Speeds
+
+Set the `speed` prop to change the speed of the spinner.
+
+<Demo layout="row">
+  <Demos.CircleSpinnerSpeeds />
+</Demo>
+
+<SourceCode code={speedsCode} title="circle-spinner-speeds.tsx" />
+
+## API
+
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for `<CircleSpinner />`:
+
+- [`<CircleSpinner />`](/hrc/api/circle-spinner)
