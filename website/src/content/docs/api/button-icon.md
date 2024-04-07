@@ -14,7 +14,7 @@ import { ButtonIcon } from "@hrc/button";
 **It receives the same [props of `<Button />`](../button#props) except
 `iconStart` and `iconEnd`.**
 
-**Additionally, it can receive all attributes of a `button` element**
+**Additionally, it can receive all attributes/props of a `button` element**
 
 **`children` (required)**
 
@@ -34,5 +34,5 @@ Stylize the button to fit an icon.
 
 ---
 
-Additionally, the `<ButtonIcon />` component uses the same
-[CSS Classes of `<Button/>`](../button#css-classes)
+**Additionally, it uses the same [CSS Classes of `<Button
+/>`](../button#css-classes)**
