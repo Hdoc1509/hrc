@@ -3,6 +3,29 @@
 .demo .button-default :last-child {
   grid-row: 2 / 2;
 }
+.demo .button-group-with-icons :last-child {
+  grid-column: 1 / -1;
+  justify-content: center;
+}
+
+.demo .button-group-default,
+.demo .button-group-colors,
+.demo .button-group-column,
+.demo .button-group-with-icons {
+  --demo-columns: 2;
+}
+@media (max-width: 767px) {
+  .demo .button-group-default,
+  .demo .button-group-colors,
+  .demo .button-group-with-icons {
+    --demo-columns: 1;
+  }
+}
+@media (max-width: 879px) {
+  .demo .button-group-column {
+    --demo-columns: 1;
+  }
+}
 
 [data-theme="dark"] {
   --button-outline-color: var(--sl-color-gray-1);
