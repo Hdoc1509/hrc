@@ -3,7 +3,8 @@
 @use "@scss" as * with (
   $speed: 1s
 );
-.growing-spinner {
+
+.growing-spinner.spinner {
   --_speed: #{$spinner-speed};
 
   background-color: var(--_color);
@@ -11,9 +12,7 @@
   opacity: 0;
   animation: growing-spinner var(--_speed) linear infinite;
 
-  &.spinner {
-    @include speed-variants();
-  }
+  @include speed-variants();
 }
 
 @keyframes growing-spinner {
