@@ -8,19 +8,24 @@
   justify-content: center;
 }
 
-.demo .button-group-default,
-.demo .button-group-colors,
-.demo .button-group-column,
-.demo .button-group-with-icons {
+.demo .responsive-group {
   --demo-columns: 2;
 }
 @media (max-width: 767px) {
-  .demo .button-group-default,
-  .demo .button-group-colors,
-  .demo .button-group-with-icons {
+  .demo .responsive-group {
     --demo-columns: 1;
   }
 }
+
+.with-inner-grid > div {
+  display: grid;
+  gap: inherit;
+}
+.with-inner-flex > div {
+  display: flex;
+  gap: inherit;
+}
+
 @media (max-width: 879px) {
   .demo .button-group-column {
     --demo-columns: 1;
