@@ -1,8 +1,10 @@
 @use "@hrc/sass-utils" as hrc;
 @use "@scss" as *;
 
+// TODO: Use internal variables
+//   --_bg, --_bg-hover, --_text, --_outline, --_outline-bg-hover, --_shadow
 .button {
-  --__padding-y: 8px;
+  --_p-y: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: var(--button-justify-content, center);
@@ -12,10 +14,7 @@
   border-radius: $button-radius;
   box-shadow: $button-shadow;
   background-color: var(--button-bg, $button-bg);
-  padding: var(
-    --button-padding,
-    var(--__padding-y) calc(var(--__padding-y) * 2)
-  );
+  padding: var(--button-padding, var(--_p-y) calc(var(--_p-y) * 2));
 
   font-family: var(--button-font-family, sans-serif);
   font-size: var(--button-font-size, 14px);
@@ -48,10 +47,10 @@
   }
 
   &--small {
-    --__padding-y: 6px;
+    --_p-y: 6px;
   }
   &--large {
-    --__padding-y: 12px;
+    --_p-y: 12px;
   }
 
   @include hrc.border-rounded-variants($button-radius);

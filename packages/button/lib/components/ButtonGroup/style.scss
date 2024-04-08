@@ -14,10 +14,10 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
   }
 
   &--small > .button {
-    --__padding-y: 6px;
+    --_p-y: 6px;
   }
   &--large > .button {
-    --__padding-y: 12px;
+    --_p-y: 12px;
   }
 
   > .button {
