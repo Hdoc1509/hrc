@@ -13,14 +13,14 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     --button-divider-color: var(--button-outline-color);
   }
 
-  &--small > * {
+  &--small > .button {
     --__padding-y: 6px;
   }
-  &--large > * {
+  &--large > .button {
     --__padding-y: 12px;
   }
 
-  > * {
+  > .button {
     border-radius: 0;
     border: 1px solid var(--button-bg, $button-bg);
     --button-shadow: none;
@@ -53,15 +53,15 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
   &--column {
     flex-direction: column;
 
-    > * + * {
+    > .button + * {
       border-color: transparent;
       border-top: 1px solid $divider-color;
     }
 
-    > :first-child {
+    > .button:first-child {
       @include hrc.border-top-rounded($button-radius);
     }
-    > :last-child {
+    > .button:last-child {
       @include hrc.border-bottom-rounded($button-radius);
     }
 

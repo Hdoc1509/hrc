@@ -1,10 +1,9 @@
-.button--icon {
+.button--icon.button {
   padding: var(--button-padding, 8px);
-
-  &.button--small {
-    --button-padding: 6px;
-  }
-  &.button--large {
-    --button-padding: 12px;
-  }
+}
+.button--icon.button--small {
+  --button-padding: 6px;
+}
+.button--icon.button--large {
+  --button-padding: 12px;
 }
