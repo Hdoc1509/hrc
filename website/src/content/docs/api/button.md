@@ -15,9 +15,13 @@ import { Button } from "@hrc/button";
 
 **Additionally, it can receive all attributes/props of a `button` element.**
 
+<!-- TODO: Reorganize props
+  1. props that are directly related
+  2. props for elements  -->
+
 **`variant`**
 
-The variant of the button.
+The aspect variant of the button.
 
 Type: `'outline' | 'text'`
 
@@ -49,7 +53,7 @@ Type: `ReactNode`
 
 **`size`**
 
-Size for the button.
+The size variant of the button.
 
 Type: `'small' | 'large'`
 
@@ -65,7 +69,7 @@ Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
 
 **`roundedSide`**
 
-The side of the button to round.
+The rounded variant of the button.
 
 Type: `'top' | 'bottom' | 'left' | 'right'`
 
@@ -73,7 +77,7 @@ Type: `'top' | 'bottom' | 'left' | 'right'`
 
 **`fullRounded`**
 
-Whether to make the button full rounded.
+The full rounded variant of the button.
 
 Type: `boolean`
 
@@ -180,58 +184,60 @@ Styles for the `success` variant.
 
 **`.button--no-shadow`**
 
-Styles for no shadow variant.
+Styles for the `no shadow` variant.
 
 ---
 
 **`.button--small`**
 
-Styles for `small` size variant.
+Styles for the `small` size variant.
 
 ---
 
 **`.button--large`**
 
-Styles for `large` size variant.
+Styles for the `large` size variant.
 
 ---
 
+<!-- TODO: Reorganize rounded variants. Follow clockwise from top -->
+
 **`.button--top-rounded`**
 
-Styles for top-rounded variant.
+Styles for the `top` rounded variant.
 
 ---
 
 **`.button--bottom-rounded`**
 
-Styles for bottom-rounded variant.
+Styles for the `bottom` rounded variant.
 
 ---
 
 **`.button--left-rounded`**
 
-Styles for left-rounded variant.
+Styles for the `left` rounded variant.
 
 ---
 
 **`.button--right-rounded`**
 
-Styles for right-rounded variant.
+Styles for the `right` rounded variant.
 
 ---
 
 **`.button--full-rounded`**
 
-Styles for full-rounded variant.
+Styles for the `full` rounded variant.
 
 ---
 
 **`.button--outline`**
 
-Styles for `outline` variant.
+Styles for the `outline` aspect variant.
 
 ---
 
 **`.button--text`**
 
-Styles for `text` variant.
+Styles for the `text` aspect variant.

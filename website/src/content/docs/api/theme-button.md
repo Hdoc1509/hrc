@@ -65,4 +65,4 @@ The base styles for `<ThemeButton />` component.
 
 **`theme-button--full-rounded`**
 
-Styles for the `fullRounded` variant.
+Styles for the `full-rounded` variant.

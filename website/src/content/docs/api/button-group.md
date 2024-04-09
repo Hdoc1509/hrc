@@ -15,6 +15,8 @@ import { ButtonGroup } from "@hrc/button";
 
 **Additionally, it can receive all attributes/props of a `div` element.**
 
+<!-- TODO: Mark as required -->
+
 **`children`**
 
 The children of the button group. These should be `<Button />` or `<ButtonIcon />`.
@@ -33,7 +35,7 @@ Type: `boolean`
 
 **`size`**
 
-Size for the buttons in the group.
+The size variant of the buttons in the group.
 
 Type: `'small' | 'large'`
 
@@ -49,7 +51,7 @@ Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
 
 **`variant`**
 
-The variant of the buttons in the group.
+The aspect variant of the buttons in the group.
 
 Type: `'outline' | 'text'`
 
@@ -102,19 +104,19 @@ The base styles for `<ButtonGroup />` component.
 
 **`.button-group--small`**
 
-Styles for small variant.
+Styles for the `small` size variant.
 
 ---
 
 **`.button-group--large`**
 
-Styles for large variant.
+Styles for the `large` size variant.
 
 ---
 
 **`.button-group--column`**
 
-Styles for column direction.
+Styles for the `column` direction variant.
 
 ---
 

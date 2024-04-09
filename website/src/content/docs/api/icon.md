@@ -23,7 +23,7 @@ Type: `string`
 
 **`variant`**
 
-The variant of the icon.
+The aspect variant of the icon.
 
 Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 
@@ -39,7 +39,7 @@ Type: `boolean`
 
 **`color`**
 
-The color of the icon.
+The color variant of the icon.
 
 Type: `'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'`
 
@@ -47,7 +47,7 @@ Type: `'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'`
 
 **`size`**
 
-The size of the icon.
+The size variant of the icon.
 
 Type: `'small' | 'large' | 'extra-large' | 'inherit'`
 
