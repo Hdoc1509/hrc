@@ -19,13 +19,14 @@
 }
 
 .material-icons {
-  // TODO: Add size extra-large from:
-  // https://developers.google.com/fonts/docs/material_icons#sizing
   &--small {
     --icon-size: var(--icon-small, 18px);
   }
   &--large {
     --icon-size: var(--icon-large, 36px);
+  }
+  &--extra-large {
+    --icon-size: var(--icon-extra-large, 48px);
   }
   &--inherit {
     --icon-size: 1em;

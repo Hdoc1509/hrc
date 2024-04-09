@@ -4,7 +4,7 @@ import "./Icon.scss";
 
 export type IconProps = {
   variant?: "outlined" | "round" | "sharp" | "two-tone";
-  size?: "small" | "large" | "inherit";
+  size?: "small" | "large" | "extra-large" | "inherit";
   name: MaterialIcon;
   color?: "primary" | "secondary" | "error" | "warning" | "info" | "success";
   className?: string;
