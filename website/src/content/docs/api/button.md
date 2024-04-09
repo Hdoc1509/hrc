@@ -160,15 +160,15 @@ Styles for the `error` color variant.
 
 ---
 
-**`.button--info`**
-
-Styles for the `info` color variant.
-
----
-
 **`.button--warning`**
 
 Styles for the `warning` color variant.
+
+---
+
+**`.button--info`**
+
+Styles for the `info` color variant.
 
 ---
 

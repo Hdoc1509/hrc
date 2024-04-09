@@ -21,11 +21,11 @@ Type: `string`
 
 ---
 
-**`variant`**
+**`color`**
 
-The aspect variant of the icon.
+The color variant of the icon.
 
-Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
+Type: `'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'`
 
 ---
 
@@ -37,19 +37,19 @@ Type: `boolean`
 
 ---
 
-**`color`**
-
-The color variant of the icon.
-
-Type: `'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'`
-
----
-
 **`size`**
 
 The size variant of the icon.
 
 Type: `'small' | 'large' | 'extra-large' | 'inherit'`
+
+---
+
+**`variant`**
+
+The aspect variant of the icon.
+
+Type: `'outlined' | 'round' | 'sharp' | 'two-tone'`
 
 ---
 
@@ -93,36 +93,6 @@ The base styles for `<Icon />` component.
 
 ---
 
-**`material-icons-outlined`**
-
-Styles for the `outlined` variant.
-
----
-
-**`material-icons-round`**
-
-Styles for the `round` variant.
-
----
-
-**`material-icons-sharp`**
-
-Styles for the `sharp` variant.
-
----
-
-**`material-icons-two-tone`**
-
-Styles for the `two-tone` variant.
-
----
-
-**`material-icons--disabled`**
-
-Styles for the `disabled` state.
-
----
-
 **`material-icons--primary`**
 
 Styles for the `primary` color variant.
@@ -159,6 +129,12 @@ Styles for the `success` variant.
 
 ---
 
+**`material-icons--disabled`**
+
+Styles for the `disabled` state.
+
+---
+
 **`material-icons--small`**
 
 Styles for `small` size variant.
@@ -180,3 +156,27 @@ Styles for `extra-large` size variant.
 **`material-icons--inherit`**
 
 Styles for `inherit` size variant. The font size is inherited from the parent.
+
+---
+
+**`material-icons-outlined`**
+
+Styles for the `outlined` variant.
+
+---
+
+**`material-icons-round`**
+
+Styles for the `round` variant.
+
+---
+
+**`material-icons-sharp`**
+
+Styles for the `sharp` variant.
+
+---
+
+**`material-icons-two-tone`**
+
+Styles for the `two-tone` variant.
