@@ -1,0 +1,127 @@
+---
+title: Minimizing bundle size
+description: A guide to minimizing bundle size of <hrc /> components
+---
+
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+
+The following packages exports multiple components:
+
+- [`@hrc/button`](/hrc/packages/button)
+- [`@hrc/input`](/hrc/packages/input)
+- [`@hrc/spinner`](/hrc/packages/spinner)
+
+The default entry point for the previous packages includes CSS for all of its
+component. You have two options to reduce the bundle size:
+
+## Option 1: Use path imports
+
+```diff lang="js"
+- import { Button, ButtonIcon } from "@hrc/button";
+- import { Input, Checkbox } from "@hrc/input";
++ import { Button } from "@hrc/button/dist/Button";
++ import { ButtonIcon } from "@hrc/button/dist/ButtonIcon";
++ import { Input } from "@hrc/input/dist/Input";
++ import { Checkbox } from "@hrc/input/dist/Checkbox";
+```
+
+## Option 2: Use [`babel`](https://babeljs.io/) with [`babel-plugin-import`](https://github.com/umijs/babel-plugin-import)
+
+<Steps>
+
+1. [Setup `babel`](https://babeljs.io/setup) in your project.
+
+2. Install `babel-plugin-import`:
+
+   <Tabs>
+     <TabItem label="npm">
+       ```bash
+       npm install babel-plugin-import
+       ```
+     </TabItem>
+     <TabItem label="pnpm">
+       ```bash
+       pnpm add babel-plugin-import
+       ```
+     </TabItem>
+     <TabItem label="yarn">
+       ```bash
+       yarn add babel-plugin-import
+       ```
+     </TabItem>
+   </Tabs>
+
+3. Create a `.babelrc.js` in the root directory of your project.
+
+4. Setup `babel-plugin-import` in your `.babelrc.js` file:
+
+   ### Manual Setup
+
+   ```js
+   const plugins = [
+     ...otherPlugins,
+     [
+       "import",
+       {
+         libraryName: "@hrc/button",
+         libraryDirectory: "dist",
+         camel2DashComponentName: false,
+         transformToDefaultImport: false,
+       },
+       "@hrc/button",
+     ],
+     [
+       "import",
+       {
+         libraryName: "@hrc/input",
+         libraryDirectory: "dist",
+         camel2DashComponentName: false,
+         transformToDefaultImport: false,
+       },
+       "@hrc/input",
+     ]
+   ];
+
+   module.exports = { plugins };
+   ```
+
+   ### Automatic Setup with [`@hrc/babel-config`](/hrc/packages/babel-config)
+
+   <Steps>
+
+   1. Install `@hrc/babel-config`:
+
+      <Tabs>
+        <TabItem label="npm">
+          ```bash
+          npm install @hrc/babel-config
+          ```
+        </TabItem>
+        <TabItem label="pnpm">
+          ```bash
+          pnpm add @hrc/babel-config
+          ```
+        </TabItem>
+        <TabItem label="yarn">
+          ```bash
+          yarn add @hrc/babel-config
+          ```
+        </TabItem>
+      </Tabs>
+
+   2. Write the following code in your `.babelrc.js` file:
+
+      ```js
+      import hrcConfig from "@hrc/babel-config";
+
+      const plugins = [
+        ...otherPlugins,
+        ...hrcConfig(["button", "input"]),
+      ];
+
+      module.exports = { plugins };
+      ```
+
+   </Steps>
+
+</Steps>
