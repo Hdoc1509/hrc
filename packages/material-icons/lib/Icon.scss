@@ -3,13 +3,14 @@
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {
     &--#{$color} {
-      --icon-color: var(--#{$color}, #{map-get($colors, $color, main)});
+      --_color: var(--#{$color}, #{map-get($colors, $color, main)});
     }
   }
 }
 
 [class*="material-icons"] {
-  color: var(--icon-color, inherit);
+  --_color: var(--icon-color, inherit);
+  color: var(--_color);
   width: 1em;
   height: 1em;
   overflow: hidden;
@@ -33,6 +34,6 @@
   @include color-variants(hrc.$colors);
 
   &--disabled {
-    --icon-color: var(--icon-color-disabled, rgba(0, 0, 0, 0.26));
+    --_color: var(--icon-color-disabled, rgba(0, 0, 0, 0.26));
   }
 }
