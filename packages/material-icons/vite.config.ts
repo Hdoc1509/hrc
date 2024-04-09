@@ -12,4 +12,5 @@ export default defineConfig({
     dts({ include: ["lib"], rollupTypes: true }),
   ],
   build: config.build({ extraDeps: "clsx" }),
+  resolve: config.resolve(__dirname),
 });
