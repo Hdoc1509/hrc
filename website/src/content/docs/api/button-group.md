@@ -15,9 +15,7 @@ import { ButtonGroup } from "@hrc/button";
 
 **Additionally, it can receive all attributes/props of a `div` element.**
 
-<!-- TODO: Mark as required -->
-
-**`children`**
+**`children` (required)**
 
 The children of the button group. These should be `<Button />` or `<ButtonIcon />`.
 
