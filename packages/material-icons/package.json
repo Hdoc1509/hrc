@@ -46,6 +46,7 @@
     "clsx": "^2.0.0"
   },
   "devDependencies": {
+    "@hrc/docs": "workspace:*",
     "@hrc/sass-utils": "workspace:*",
     "@hrc/vite-config": "workspace:*",
     "@material-design-icons/font": "0.14.10",
