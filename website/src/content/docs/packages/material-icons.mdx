@@ -3,7 +3,7 @@ title: "@hrc/material-icons"
 description: Package for icon component of <hrc />
 ---
 
-import { Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Code, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 import { PackageDemo } from "@demos/material-icons";
 import { Demo } from "@components/Demo";
 import demoCode from "@demos/material-icons/package.tsx?raw";
@@ -22,24 +22,37 @@ import pkg from "@hrc/material-icons/package.json";
 <Tabs>
   <TabItem label="npm">
     ```bash
-    npm install @hrc/material-icons
+    npm install @hrc/material-icons @material-design-icons/font
     ```
   </TabItem>
   <TabItem label="pnpm">
     ```bash
-    pnpm add @hrc/material-icons
+    pnpm add @hrc/material-icons @material-design-icons/font
     ```
   </TabItem>
   <TabItem label="yarn">
     ```bash
-    yarn add @hrc/material-icons
+    yarn add @hrc/material-icons @material-design-icons/font
     ```
   </TabItem>
 </Tabs>
 
 ## Usage
 
-<Code code={demoCode} lang="jsx" />
+<Steps>
+
+1. Import `@material-design-icons/font` in your entry file (example:
+   `src/main.jsx` in [`Vite`](https://vitejs.dev)):
+
+   ```js
+   import "@material-design-icons/font";
+   ```
+
+2. Use the component in your project:
+
+   <Code code={demoCode} lang="jsx" />
+
+</Steps>
 
 ## Demos
 
