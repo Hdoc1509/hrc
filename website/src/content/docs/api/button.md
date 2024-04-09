@@ -15,9 +15,45 @@ import { Button } from "@hrc/button";
 
 **Additionally, it can receive all attributes/props of a `button` element.**
 
-<!-- TODO: Reorganize props
-  1. props that are directly related
-  2. props for elements  -->
+**`color`**
+
+The color variant of the button.
+
+Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
+
+---
+
+**`disableShadow`**
+
+Whether the shadow is disabled.
+
+Type: `boolean`
+
+---
+
+**`fullRounded`**
+
+The full rounded variant of the button.
+
+Type: `boolean`
+
+---
+
+**`roundedSide`**
+
+The rounded variant of the button.
+
+Type: `'top' | 'bottom' | 'left' | 'right'`
+
+---
+
+**`size`**
+
+The size variant of the button.
+
+Type: `'small' | 'large'`
+
+---
 
 **`variant`**
 
@@ -27,11 +63,11 @@ Type: `'outline' | 'text'`
 
 ---
 
-**`disableShadow`**
+**`className`**
 
-Whether the shadow is disabled.
+Additional class names for extending styles.
 
-Type: `boolean`
+Type: `string`
 
 ---
 
@@ -48,46 +84,6 @@ Type: `ReactNode`
 Icon placed after the text.
 
 Type: `ReactNode`
-
----
-
-**`size`**
-
-The size variant of the button.
-
-Type: `'small' | 'large'`
-
----
-
-**`color`**
-
-The color variant of the button.
-
-Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
-
----
-
-**`roundedSide`**
-
-The rounded variant of the button.
-
-Type: `'top' | 'bottom' | 'left' | 'right'`
-
----
-
-**`fullRounded`**
-
-The full rounded variant of the button.
-
-Type: `boolean`
-
----
-
-**`className`**
-
-Additional class names for extending styles.
-
-Type: `string`
 
 ## CSS Variables
 
@@ -200,11 +196,15 @@ Styles for the `large` size variant.
 
 ---
 
-<!-- TODO: Reorganize rounded variants. Follow clockwise from top -->
-
 **`.button--top-rounded`**
 
 Styles for the `top` rounded variant.
+
+---
+
+**`.button--right-rounded`**
+
+Styles for the `right` rounded variant.
 
 ---
 
@@ -217,12 +217,6 @@ Styles for the `bottom` rounded variant.
 **`.button--left-rounded`**
 
 Styles for the `left` rounded variant.
-
----
-
-**`.button--right-rounded`**
-
-Styles for the `right` rounded variant.
 
 ---
 
