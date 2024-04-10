@@ -13,6 +13,10 @@ export const ButtonGroupDemo = () => {
         <h3>Colors</h3>
         <Demos.ButtonGroupColors />
       </DemoDocs>
+      <DemoDocs className="with-toggle">
+        <h3>Disabled</h3>
+        <Demos.ButtonGroupDisabled />
+      </DemoDocs>
       <DemoDocs>
         <h3>Sizes</h3>
         <Demos.ButtonGroupSizes />

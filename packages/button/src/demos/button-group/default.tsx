@@ -20,12 +20,6 @@ export function ButtonGroupDefault() {
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
-
-      <ButtonGroup disabled>
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup>
     </>
   );
 }

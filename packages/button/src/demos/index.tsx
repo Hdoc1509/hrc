@@ -13,6 +13,7 @@ export { ButtonIconRounded } from "./button-icon/rounded";
 
 export { ButtonGroupDefault } from "./button-group/default";
 export { ButtonGroupColors } from "./button-group/colors";
+export { ButtonGroupDisabled } from "./button-group/disabled";
 export { ButtonGroupSizes } from "./button-group/sizes";
 export { ButtonGroupColumn } from "./button-group/column";
 export { ButtonGroupWithIcons } from "./button-group/icons";
