@@ -11,12 +11,6 @@
   grid-column: 1 / -1;
   justify-content: center;
 }
-/* TODO: Reorganize ButtonGroup disabled demo from @hrc/button */
-/*
-* default warning
-* outline outline-info
-* text    text-success
-*/
 .demo .responsive-group {
   --demo-columns: 2;
 }

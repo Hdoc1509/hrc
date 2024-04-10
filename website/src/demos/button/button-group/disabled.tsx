@@ -30,17 +30,18 @@ export function ButtonGroupDisabled() {
       <ButtonGroup disabled={disabled}>
         <Group />
       </ButtonGroup>
-      <ButtonGroup variant="outline" disabled={disabled}>
-        <Group />
-      </ButtonGroup>
-      <ButtonGroup variant="text" disabled={disabled}>
-        <Group />
-      </ButtonGroup>
-
       <ButtonGroup color="warning" disabled={disabled}>
         <Group />
       </ButtonGroup>
+
+      <ButtonGroup variant="outline" disabled={disabled}>
+        <Group />
+      </ButtonGroup>
       <ButtonGroup color="info" variant="outline" disabled={disabled}>
+        <Group />
+      </ButtonGroup>
+
+      <ButtonGroup variant="text" disabled={disabled}>
         <Group />
       </ButtonGroup>
       <ButtonGroup color="success" variant="text" disabled={disabled}>
