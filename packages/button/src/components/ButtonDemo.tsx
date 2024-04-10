@@ -5,13 +5,17 @@ export const ButtonDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="Button" />
-      <DemoDocs layout="grid" cols={3} className="button-default">
+      <DemoDocs layout="grid" cols={3}>
         <h3>Default</h3>
         <Demos.ButtonDefault />
       </DemoDocs>
       <DemoDocs layout="grid" cols={1} className="button-colors">
         <h3>Colors</h3>
         <Demos.ButtonColors />
+      </DemoDocs>
+      <DemoDocs layout="grid" cols={3} className="with-toggle">
+        <h3>Disabled</h3>
+        <Demos.ButtonDisabled />
       </DemoDocs>
       <DemoDocs layout="row">
         <h3>Sizes</h3>
