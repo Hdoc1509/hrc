@@ -7,6 +7,7 @@ export { ButtonWithIcons } from "./button/icons";
 
 export { ButtonIconDefault } from "./button-icon/default";
 export { ButtonIconColors } from "./button-icon/colors";
+export { ButtonIconDisabled } from "./button-icon/disabled";
 export { ButtonIconSizes } from "./button-icon/sizes";
 export { ButtonIconRounded } from "./button-icon/rounded";
 

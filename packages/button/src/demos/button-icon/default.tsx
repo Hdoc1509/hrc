@@ -13,9 +13,6 @@ export function ButtonIconDefault() {
       <ButtonIcon variant="text">
         <Icon name="people" />
       </ButtonIcon>
-      <ButtonIcon disabled>
-        <Icon name="people" />
-      </ButtonIcon>
     </>
   );
 }
