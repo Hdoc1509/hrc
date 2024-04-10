@@ -14,7 +14,7 @@ for pkg in "${PKGS[@]}"; do
     "${pkg_dir}"/src/demos "${pkg_demo_target}"
 
   find "${pkg_demo_target}" -type f -print0 |
-    xargs -0 sed -i "1 s/@lib\/main/@hrc\/${pkg}/"
+    xargs -0 sed -i "s/@lib\/main/@hrc\/${pkg}/"
 
   echo "Copied demos for ${pkg_name}"
 done
