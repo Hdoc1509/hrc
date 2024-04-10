@@ -9,6 +9,7 @@ import SourceCode from "@components/SourceCode.astro"
 import * as Demos from "@demos/button"
 import defaultCode from "@demos/button/button/default.tsx?raw"
 import colorsCode from "@demos/button/button/colors.tsx?raw"
+import disabledCode from "@demos/button/button/disabled.tsx?raw"
 import sizesCode from "@demos/button/button/sizes.tsx?raw"
 import roundedCode from "@demos/button/button/rounded.tsx?raw"
 import iconsCode from "@demos/button/button/icons.tsx?raw"
@@ -17,8 +18,6 @@ import '@demos/button/styles.css'
 ## Default button
 
 Use the `variant` prop to change the visual aspect of the button.
-
-Also, using the `disabled` prop will change the button's appearance.
 
 <Demo layout="grid" cols={3} className="button-default">
   <Demos.ButtonDefault />
@@ -35,6 +34,15 @@ Use the `color` prop to change the color of the button.
 </Demo>
 
 <SourceCode code={colorsCode} title="button-colors.tsx" />
+
+## Disabled
+
+Add the `disabled` prop to disable the button. The `disabled` variant has a
+higher priority than the `color` variant.
+
+<Demo layout="grid" cols={3} className="with-toggle">
+  <Demos.ButtonDisabled client:load />
+</Demo>
 
 ## Sizes
 

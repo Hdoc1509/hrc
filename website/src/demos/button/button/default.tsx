@@ -6,7 +6,6 @@ export function ButtonDefault() {
       <Button />
       <Button variant="outline">Outline</Button>
       <Button variant="text">Text</Button>
-      <Button disabled>Disabled</Button>
     </>
   );
 }

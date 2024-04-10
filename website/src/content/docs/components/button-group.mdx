@@ -9,6 +9,7 @@ import SourceCode from "@components/SourceCode.astro"
 import * as Demos from "@demos/button"
 import defaultCode from "@demos/button/button-group/default.tsx?raw"
 import colorsCode from "@demos/button/button-group/colors.tsx?raw"
+import disabledCode from "@demos/button/button-group/disabled.tsx?raw"
 import sizesCode from "@demos/button/button-group/sizes.tsx?raw"
 import columnCode from "@demos/button/button-group/column.tsx?raw"
 import iconsCode from "@demos/button/button-group/icons.tsx?raw"
@@ -18,9 +19,7 @@ import '@demos/button/styles.css'
 
 Use the `variant` prop to change the visual aspect of the button group.
 
-Also, using the `disabled` prop will change the appearance of the buttons.
-
-<Demo layout="grid" className="responsive-group">
+<Demo layout="grid" className="responsive-group with-last-centered">
   <Demos.ButtonGroupDefault />
 </Demo>
 
@@ -35,6 +34,15 @@ Use the `color` prop to change the color of the button group.
 </Demo>
 
 <SourceCode code={colorsCode} title="button-group-colors.tsx" />
+
+## Disabled
+
+Add the `disabled` prop to disable the buttons of the group. The `disabled`
+variant has a higher priority than the `color` variant.
+
+<Demo layout="grid" className="responsive-group with-toggle">
+  <Demos.ButtonGroupDisabled client:load />
+</Demo>
 
 ## Sizes
 
@@ -61,7 +69,7 @@ Add the `column` prop to display the button group in a column layout.
 Use the [`<ButtonIcon />`](../button-icon)  component to display icons in the
 button group.
 
-<Demo layout="grid" className="button-group-with-icons responsive-group">
+<Demo layout="grid" className="responsive-group with-last-centered">
   <Demos.ButtonGroupWithIcons />
 </Demo>
 

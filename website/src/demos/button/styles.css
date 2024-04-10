@@ -1,13 +1,22 @@
 @import "@hrc/button/src/demos.css";
 
-.demo .button-default :last-child {
-  grid-row: 2 / 2;
+.demo .with-toggle * {
+  grid-column: auto;
 }
-.demo .button-group-with-icons :last-child {
+.demo .with-toggle :first-child {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.demo .with-last-centered :last-child {
   grid-column: 1 / -1;
   justify-content: center;
 }
-
+/* TODO: Reorganize ButtonGroup disabled demo from @hrc/button */
+/*
+* default warning
+* outline outline-info
+* text    text-success
+*/
 .demo .responsive-group {
   --demo-columns: 2;
 }
