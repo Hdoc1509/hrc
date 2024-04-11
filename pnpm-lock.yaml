@@ -118,12 +118,6 @@ importers:
 
   packages/docs:
     dependencies:
-      '@hrc/button':
-        specifier: workspace:*
-        version: link:../button
-      '@hrc/material-icons':
-        specifier: workspace:*
-        version: link:../material-icons
       clsx:
         specifier: '*'
         version: 2.0.0

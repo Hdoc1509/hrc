@@ -1,6 +1,3 @@
-import { Button } from "@hrc/button";
-import { Icon } from "@hrc/material-icons";
-
 type Props = {
   disabled: boolean;
   setter: (disabled: boolean) => void;
@@ -8,14 +5,13 @@ type Props = {
 
 export function ToggleDisabled({ disabled, setter }: Props) {
   return (
-    <div>
-      <Button
-        color={disabled ? "info" : undefined}
-        onClick={() => setter(!disabled)}
-      >
-        {disabled ? <Icon name="toggle_on" /> : <Icon name="toggle_off" />}
-        Disabled
-      </Button>
-    </div>
+    <label>
+      <input
+        type="checkbox"
+        checked={disabled}
+        onChange={(e) => setter(e.target.checked)}
+      />
+      Disabled
+    </label>
   );
 }
