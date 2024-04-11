@@ -6,12 +6,14 @@ description: React ButtonIcon component of <hrc />
 import { Code } from "@astrojs/starlight/components";
 import { Demo } from "@components/Demo.tsx"
 import SourceCode from "@components/SourceCode.astro"
+import MultiSourceCode from "@components/MultiSourceCode.astro"
 import * as Demos from "@demos/button"
 import defaultCode from "@demos/button/button-icon/default.tsx?raw"
 import colorsCode from "@demos/button/button-icon/colors.tsx?raw"
 import disabledCode from "@demos/button/button-icon/disabled.tsx?raw"
 import sizesCode from "@demos/button/button-icon/sizes.tsx?raw"
 import roundedCode from "@demos/button/button-icon/rounded.tsx?raw"
+import toggleCode from "@hrc/docs/src/ToggleDisabled.tsx?raw"
 import '@demos/button/styles.css'
 
 ## Default button
@@ -43,7 +45,10 @@ higher priority than the `color` variant.
   <Demos.ButtonIconDisabled client:load />
 </Demo>
 
-<SourceCode code={disabledCode} title="button-icon-disabled.tsx" />
+<MultiSourceCode sources={[
+  { code: disabledCode, title: "button-icon-disabled.tsx" },
+  { code: toggleCode, title: "ToggleDisabled.tsx" },
+]} />
 
 ## Sizes
 
