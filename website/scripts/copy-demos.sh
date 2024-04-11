@@ -2,6 +2,7 @@ demos_dir=./src/demos
 # demos_dir=./demos-test
 # PKGS=(button input material-icons spinner toggle-theme)
 PKGS=(button material-icons spinner toggle-theme)
+pkgs_count="${#PKGS[@]}"
 
 for pkg in "${PKGS[@]}"; do
   pkg_dir="../packages/${pkg}"
@@ -17,4 +18,8 @@ for pkg in "${PKGS[@]}"; do
     xargs -0 sed -i "s/@lib\/main/@hrc\/${pkg}/"
 
   echo "Copied demos for ${pkg_name}"
+
+  if [ ! "${pkg}" == "${PKGS[$((pkgs_count - 1))]}" ]; then
+    echo
+  fi
 done
