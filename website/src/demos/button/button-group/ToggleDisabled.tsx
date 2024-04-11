@@ -1,1 +1,1 @@
-export { ToggleDisabled } from "@hrc/docs";
+export { ToggleDisabled } from "@components/ToggleDisabled.tsx";

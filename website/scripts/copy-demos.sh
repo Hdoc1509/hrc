@@ -23,3 +23,7 @@ for pkg in "${PKGS[@]}"; do
     echo
   fi
 done
+
+# Replace import path of <ToggleDisabled /> with local component
+find "${demos_dir}" -name ToggleDisabled.tsx -print0 |
+  xargs -0 sed -i "s/@hrc\/docs/@components\/ToggleDisabled.tsx/"
