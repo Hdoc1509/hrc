@@ -1,21 +1,14 @@
 import { useState } from "react";
-import { Button, ButtonIcon } from "@lib/main";
+import { ButtonIcon } from "@lib/main";
 import { Icon } from "@hrc/material-icons";
+import { ToggleDisabled } from "@hrc/docs";
 
 export function ButtonIconDisabled() {
   const [disabled, setDisabled] = useState(false);
 
   return (
     <>
-      <div>
-        <Button
-          color={disabled ? "info" : undefined}
-          onClick={() => setDisabled(!disabled)}
-        >
-          {disabled ? <Icon name="toggle_on" /> : <Icon name="toggle_off" />}
-          Disabled
-        </Button>
-      </div>
+      <ToggleDisabled disabled={disabled} setter={setDisabled} />
 
       <ButtonIcon disabled={disabled}>
         <Icon name="list" />
