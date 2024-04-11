@@ -5,6 +5,7 @@ interface Props {
   sources: {
     code: string,
     title: string
+    lang?: string
   }[]
 }
 
@@ -17,7 +18,7 @@ const { sources } = Astro.props
   <Tabs>
     {sources.map(source => (
       <TabItem label={source.title}>
-        <Code code={source.code} lang="tsx" />
+        <Code code={source.code} lang={source.lang ?? "tsx"} />
       </TabItem>
     ))}
   </Tabs>
