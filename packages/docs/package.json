@@ -5,6 +5,8 @@
   "type": "module",
   "main": "./src/main.tsx",
   "peerDependencies": {
+    "@hrc/button": "workspace:*",
+    "@hrc/material-icons": "workspace:*",
     "clsx": "*"
   }
 }
