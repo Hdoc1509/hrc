@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ButtonIcon } from "@lib/main";
 import { Icon } from "@hrc/material-icons";
-import { ToggleDisabled } from "@hrc/docs";
+import { ToggleDisabled } from "./ToggleDisabled";
 
 export function ButtonIconDisabled() {
   const [disabled, setDisabled] = useState(false);

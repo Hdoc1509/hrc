@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@lib/main";
-import { ToggleDisabled } from "@hrc/docs";
+import { ToggleDisabled } from "./ToggleDisabled";
 
 export function ButtonDisabled() {
   const [disabled, setDisabled] = useState(false);

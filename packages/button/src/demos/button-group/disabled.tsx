@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, ButtonGroup } from "@lib/main";
-import { ToggleDisabled } from "@hrc/docs";
+import { ToggleDisabled } from "./ToggleDisabled";
 
 const Group = () => {
   return (
