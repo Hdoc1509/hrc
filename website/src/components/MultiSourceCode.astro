@@ -4,7 +4,7 @@ import { Code, Tabs, TabItem } from "@astrojs/starlight/components"
 interface Props {
   sources: {
     code: string,
-    label: string
+    title: string
   }[]
 }
 
@@ -16,7 +16,7 @@ const { sources } = Astro.props
 
   <Tabs>
     {sources.map(source => (
-      <TabItem label={source.label}>
+      <TabItem label={source.title}>
         <Code code={source.code} lang="tsx" />
       </TabItem>
     ))}
