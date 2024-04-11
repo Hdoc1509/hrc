@@ -16,7 +16,7 @@ Simple and extensible components for your React app.
 
 ## Internal packages
 
-- [@hrc/docs](packages/docs) - React component for documentation purposes
+- [@hrc/docs](packages/docs) - React components for documentation purposes
 - [@hrc/sass-utils](packages/sass-utils) - Sass utilities: variables and mixins
 - [@hrc/vite-config](packages/vite-config) - Shared config for Vite, including
   [Vite Libray Mode](https://vitejs.dev/guide/build#library-mode)
