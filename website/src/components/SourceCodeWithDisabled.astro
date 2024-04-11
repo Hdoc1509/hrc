@@ -1,0 +1,11 @@
+---
+import MultiSourceCode from "./MultiSourceCode.astro"
+import toggleCode from "@components/ToggleDisabled.tsx?raw"
+
+const { code, title } = Astro.props
+---
+
+<MultiSourceCode sources={[
+  { code, title },
+  { code: toggleCode, title: "ToggleDisabled.tsx" }
+]} />
