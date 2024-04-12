@@ -1,6 +1,6 @@
 import { Icon } from "@hrc/material-icons";
 import { ThemeButton } from "@hrc/toggle-theme";
-import "./Toggle.scss";
+import "./Toggle.css";
 
 export default function ThemeToggle() {
   return (

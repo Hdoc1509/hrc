@@ -1,5 +1,5 @@
 import ThemeToggle from "./Toggle.tsx";
-import "./Light.scss";
+import "./Light.css";
 
 export function LightFirst() {
   return (

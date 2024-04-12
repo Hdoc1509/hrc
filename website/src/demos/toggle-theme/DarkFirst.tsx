@@ -1,5 +1,5 @@
 import ThemeToggle from "./Toggle.tsx";
-import './Dark.scss';
+import './Dark.css';
 
 export function DarkFirst() {
   return (
