@@ -15,21 +15,11 @@ export function ButtonIconColors() {
     <>
       {(Object.keys(Icons) as (keyof typeof Icons)[]).map((color) => (
         <div key={`button-icon-${color}`}>
-          <ButtonIcon key={`button-icon-${color}-default`} color={color}>
+          <ButtonIcon color={color}>{Icons[color]}</ButtonIcon>
+          <ButtonIcon color={color} variant="outline">
             {Icons[color]}
           </ButtonIcon>
-          <ButtonIcon
-            key={`button-icon-${color}-outline`}
-            color={color}
-            variant="outline"
-          >
-            {Icons[color]}
-          </ButtonIcon>
-          <ButtonIcon
-            key={`button-icon-${color}-text`}
-            color={color}
-            variant="text"
-          >
+          <ButtonIcon color={color} variant="text">
             {Icons[color]}
           </ButtonIcon>
         </div>
