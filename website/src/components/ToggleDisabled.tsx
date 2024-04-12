@@ -13,10 +13,9 @@ export function ToggleDisabled({ disabled, setter }: Props) {
         color={disabled ? "info" : undefined}
         onClick={() => setter(!disabled)}
       >
-        {disabled ? <Icon name="toggle_on" /> : <Icon name="toggle_off" />}
+        <Icon name={disabled ? "toggle_on" : "toggle_off"} />
         Disabled
       </Button>
     </div>
   );
 }
-
