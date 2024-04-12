@@ -1,9 +1,9 @@
-import { ThemeButtonDemo } from "./demos";
+import { PackageDemo } from "./demos";
 import "./App.css";
 
 function App() {
   return (
-    <ThemeButtonDemo />
+    <PackageDemo />
   );
 }
 
