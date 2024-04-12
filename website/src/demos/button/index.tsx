@@ -1,3 +1,5 @@
+export { PackageDemo } from "./package";
+
 export { ButtonDefault } from "./button/default";
 export { ButtonColors } from "./button/colors";
 export { ButtonDisabled } from "./button/disabled";
