@@ -17,7 +17,7 @@ npm install @hrc/spinner
 ## Usage
 
 ```js
-import { RingSpinner } from "@hrc/spinner";
+import { DualRingSpinner, GrowingSpinner, RingSpinner } from "@hrc/spinner";
 
 function App() {
   return (
