@@ -1,5 +1,5 @@
 import { DemoDocs } from "@hrc/docs";
-import { PackageDemo } from "../demos/package";
+import { PackageDemo } from "../demos";
 
 export const Demo = () => {
   return (
