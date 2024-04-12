@@ -3,6 +3,7 @@ import { Icon } from "../lib/main";
 import { Demo } from "./components/Demo";
 import { IconDemo } from "./components/IconDemo";
 import "./App.css";
+import "./demos.css";
 
 function App() {
   const [isDisabled, setIsDisabled] = useState(false);

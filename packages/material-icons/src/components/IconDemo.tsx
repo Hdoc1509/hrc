@@ -13,6 +13,10 @@ export function IconDemo() {
         <h3>Colors</h3>
         <Demos.IconColors />
       </DemoDocs>
+      <DemoDocs layout="row" className="with-toggle">
+        <h3>Disabled</h3>
+        <Demos.IconDisabled />
+      </DemoDocs>
       <DemoDocs layout="row">
         <h3>Sizes</h3>
         <Demos.IconSizes />

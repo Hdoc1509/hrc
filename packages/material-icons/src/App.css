@@ -18,3 +18,7 @@
 .inherit-size {
   font-size: 10rem;
 }
+
+.with-toggle :nth-child(2) {
+  width: 100%;
+}
