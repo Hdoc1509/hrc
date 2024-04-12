@@ -52,38 +52,18 @@ function App() {
 Finally, you will need to add your styles manually:
 
 ```css
-body {
-  background-color: var(--bg-color, #fff);
-  color: var(--text-color, #000);
-}
-
-.my-class {
-  color: var(--my-text-color, #000);
-}
-
-/* FOR LIGHT THEME: */
-/* This is usually unnecessary. */
-[data-theme="light"] {
+:root {
   --bg-color: #fff;
-  --text-color: #000;
-  --my-text-color: #000;
+  --text-color: #17181c;
 }
-[data-theme="light"] .my-class {
-  --my-text-color: #000;
-  /* or */
-  color: #000;
+[datat-theme="dark"] {
+  --bg-color: #17181c;
+  --text-color: #fff;
 }
 
-/* FOR DARK THEME: */
-[data-theme="dark"] {
-  --bg-color: #242424;
-  --text-color: #fff;
-  --my-text-color: #fff;
-}
-[data-theme="dark"] .my-class {
-  --my-text-color: #fff;
-  /* or */
-  color: #fff;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 ```
 
