@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
-  "description": "Create Babel config for component packages of @hrc/monorepo",
+  "description": "Create a Babel config for component packages of <hrc />",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
