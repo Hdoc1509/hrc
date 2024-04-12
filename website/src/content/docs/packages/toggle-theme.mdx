@@ -5,7 +5,7 @@ description: Package for toggle theme component of <hrc />
 
 import { Code, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 import { Demo } from "@components";
-import { ThemeButtonDemo } from "@demos/toggle-theme";
+import { PackageDemo } from "@demos/toggle-theme";
 import demoCode from "@demos/toggle-theme/index.tsx?raw";
 import stylesCode from "@demos/toggle-theme/styles.css?raw";
 import pkg from "@hrc/toggle-theme/package.json";
@@ -13,7 +13,7 @@ import pkg from "@hrc/toggle-theme/package.json";
 <p>{pkg.description}</p>
 
 <Demo>
-  <ThemeButtonDemo client:only="react" />
+  <PackageDemo client:only="react" />
 </Demo>
 
 > Demo generated with code from [Usage](#usage) section
