@@ -10,10 +10,6 @@
 
 Simple button components for your React app
 
-![Buttons screenshot](https://github.com/Hdoc1509/react-components/assets/72316111/f6ea1b00-a905-4bbf-97d8-81291b22303f)
-
-> Demo generated with code from [Usage](#usage) section
-
 ## Installation
 
 ```bash
@@ -48,74 +44,6 @@ function App() {
 }
 ```
 
-## API
+## Documentation
 
-See documentation below for reference to all of the props, classes and CSS
-variables (custom properties) available for the following components:
-
-- [`<Button />`](docs/Button.md)
-- [`<ButtonIcon />`](docs/ButtonIcon.md)
-- [`<ButtonGroup />`](docs/ButtonGroup.md)
-
-## Reducing Build Size
-
-The default entry point includes CSS for all of the components. You have two
-options to reduce the build size:
-
-### Option 1: Use path imports
-
-```diff
-- import { Button, ButtonIcon } from "@hrc/button";
-+ import { Button } from "@hrc/button/dist/Button";
-+ import { ButtonIcon } from "@hrc/button/dist/ButtonIcon";
-```
-
-### Option 2: Use [`babel`](https://babeljs.io/) with [`babel-plugin-import`](https://github.com/umijs/babel-plugin-import)
-
-1. [Setup `babel`](https://babeljs.io/setup) with your project.
-
-1. Install the plugin with the following command:
-
-   ```bash
-   npm install -D babel-plugin-import
-   ```
-
-1. Create a `.babelrc.js` file in the root directory of your project.
-
-#### Manual Setup
-
-```js
-const plugins = [
-  ...otherPlugins,
-  [
-    "import",
-    {
-      libraryName: "@hrc/button",
-      libraryDirectory: "dist",
-      camel2DashComponentName: false,
-      transformToDefaultImport: false,
-    },
-    "@hrc/button",
-  ],
-];
-
-module.exports = { plugins };
-```
-
-#### Automatic Setup with [`@hrc/babel-config`](https://www.npmjs.com/package/@hrc/babel-config)
-
-Install the package with the following command:
-
-```bash
-npm install -D @hrc/babel-config
-```
-
-Then, write the following code in your `.babelrc.js` file:
-
-```js
-import hrcConfig from "@hrc/babel-config";
-
-const plugins = [...otherPlugins, ...hrcConfig("button")];
-
-module.exports = { plugins };
-```
+- [Package Documentation](https://hdoc1509.github.io/hrc/packages/button/)

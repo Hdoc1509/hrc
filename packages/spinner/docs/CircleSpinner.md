@@ -1,3 +1,0 @@
-## BorderSpinner API
-
-WIP

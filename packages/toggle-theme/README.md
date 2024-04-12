@@ -10,8 +10,6 @@
 
 Simple component for toggle between `light` and `dark` theme in your React app.
 
-![Theme Button gif](https://github.com/Hdoc1509/react-components/assets/72316111/53cf9717-472c-41f5-95df-260d3dda009a)
-
 - It saves the theme in `localStorage` with the key `theme`.
 - If there is no theme in `localStorage`, the default is the user's preferred
   theme.
@@ -89,57 +87,6 @@ body {
 }
 ```
 
-## Props
+## Documentation
 
-`lightElement`
-
-Element to render when the theme is `light`.
-
-Type: `ReactNode`
-
----
-
-`darkElement`
-
-Element to render when the theme is `dark`.
-
-Type: `ReactNode`
-
----
-
-`fullRounded`
-
-Whether to render the button with rounded corners as a circle.
-
-Type: `boolean`
-
-## CSS classes
-
-`theme-button`
-
-Default class name
-
----
-
-`theme-button--full-rounded`
-
-Styles the button as a circle when `fullRounded=true`
-
-## Customization
-
-You can customize the background color of the button with the following CSS custom properties:
-
-```css
-.theme-button {
-  --button-bg: #fff;
-  --button-bg-hover: #eee;
-  --button-bg-active: #ddd;
-}
-
-/* The same custom properties applies for dark theme. */
-[data-theme="dark"] .theme-button {
-  --button-bg: #333;
-  --button-bg-hover: #444;
-  --button-bg-active: #555;
-}
-```
+- [Package Documentation](https://hdoc1509.github.io/hrc/packages/toggle-theme/)

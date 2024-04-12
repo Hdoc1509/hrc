@@ -1,7 +1,7 @@
 # @hrc/babel-config
 
-Create Babel config for [component packages](https://github.com/Hdoc1509/hrc#packages)
-of [@hrc/monorepo](https://github.com/Hdoc1509/hrc)
+Create a Babel config for component packages of [`<hrc
+/>`](https://hdoc1509.github.io/hrc/)
 
 ## Installation
 
@@ -28,8 +28,6 @@ const plugins = [...otherPlugins, ...hrcConfig("all")];
 module.exports = { plugins };
 ```
 
-## Supported packages
+## Documentation
 
-- [`@hrc/button`](https://www.npmjs.com/package/@hrc/button)
-- [`@hrc/input`](https://www.npmjs.com/package/@hrc/input)
-- [`@hrc/spinner`](https://www.npmjs.com/package/@hrc/spinner)
+- [Package Documentation](https://hdoc1509.github.io/hrc/packages/babel-config)

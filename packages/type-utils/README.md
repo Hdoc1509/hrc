@@ -1,7 +1,10 @@
 # @hrc/type-utils
 
-Type utilities used by [component packages](https://github.com/Hdoc1509/hrc#packages)
-of [@hrc/monorepo](https://github.com/Hdoc1509/hrc)
+Type utilities used by the following packages of [`<hrc
+/>`](https://hdoc1509.github.io/hrc/):
+
+- [`@hrc/button`](https://hdoc1509.github.io/hrc/packages/button)
+- [`@hrc/input`](https://hdoc1509.github.io/hrc/packages/input)
 
 ## Installation
 
@@ -27,17 +30,6 @@ type AnotherType = {
 type FlattenedType = Simplify<MyType & AnotherType>;
 ```
 
-## API
+## Documentation
 
-### Utilities
-
-- [`Simplify`](./src/simplify.d.ts) - Use to flatten the type output to improve
-  type hints shown in editors.
-
-### Common Props
-
-These are [`common props`](./src/common-props.d.ts) that can be used in any
-component.
-
-- `Color` - Color variants
-- `Size` - Size variants
+- [Package Documentation](https://hdoc1509.github.io/hrc/packages/type-utils)
