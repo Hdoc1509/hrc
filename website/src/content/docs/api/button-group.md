@@ -69,6 +69,14 @@ Whether the buttons in the group are in a column direction.
 
 Type: `boolean`
 
+---
+
+**`className`**
+
+Additional class names for extending styles.
+
+Type: `string`
+
 ## CSS Variables
 
 You can customize the style of `<ButtonGroup />` component by using the
