@@ -3,6 +3,11 @@
   border-radius: 0.5rem;
   padding: 24px;
 }
+@media (max-width: 767px) {
+  .demo {
+    padding: 16px;
+  }
+}
 [data-theme="dark"] .demo {
   background-color: var(--sl-color-gray-6);
 }
