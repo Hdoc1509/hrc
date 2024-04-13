@@ -1,11 +1,11 @@
 # @hrc/material-icons
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hrc/material-icons">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2Fmaterial-icons">
-  </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2Fmaterial-icons">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Fmaterial-icons">
+
+[![version](https://img.shields.io/npm/v/%40hrc%2Fmaterial-icons)](https://www.npmjs.com/package/@hrc/material-icons)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2Fmaterial-icons)
+![npm downloads](https://img.shields.io/npm/dm/%40hrc%2Fmaterial-icons)
+
 </p>
 
 Simple component for Material Design Icons font in your React app.

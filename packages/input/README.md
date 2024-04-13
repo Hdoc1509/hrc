@@ -1,11 +1,11 @@
 # @hrc/input
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hrc/input">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2Finput">
-  </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2Finput">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Finput">
+
+[![version](https://img.shields.io/npm/v/%40hrc%2Finput)](https://www.npmjs.com/package/@hrc/input)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2Finput)
+![npm downloads](https://img.shields.io/npm/dm/%40hrc%2Finput)
+
 </p>
 
 Simple input components for your React app

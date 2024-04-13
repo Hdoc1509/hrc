@@ -9,11 +9,11 @@ to: packages/<%= name %>/README.md
 # <%= PackageName %>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/<%= PackageName %>">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2F<%= name %>">
-  </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2F<%= name %>">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2F<%= name %>">
+
+[![version](https://img.shields.io/npm/v/%40hrc%2F<%= name %>)](https://www.npmjs.com/package/@hrc/<%= name %>)
+![bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2F<%= name %>)
+![downloads](https://img.shields.io/npm/dm/%40hrc%2F<%= name %>)
+
 </p>
 
 <%= description %>

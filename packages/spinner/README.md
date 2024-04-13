@@ -1,11 +1,11 @@
 # @hrc/spinner
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@hrc/spinner">
-    <img alt="npm" src="https://img.shields.io/npm/v/%40hrc%2Fspinner">
-  </a>
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/%40hrc%2Fspinner">
-  <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Fspinner">
+
+[![version](https://img.shields.io/npm/v/%40hrc%2Fspinner)](https://www.npmjs.com/package/@hrc/spinner)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2Fspinner)
+![npm downloads](https://img.shields.io/npm/dm/%40hrc%2Fspinner)
+
 </p>
 
 Simple spinner components for your React app
