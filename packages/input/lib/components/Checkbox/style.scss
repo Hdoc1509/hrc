@@ -1,7 +1,14 @@
 @use "@hrc/sass-utils" as hrc;
 
+@mixin color-variants($colors) {
+  @each $color, $_ in $colors {
+    &--#{$color} {
+      --_checked-color: var(--#{$color}, #{map-get($colors, $color, main)});
+    }
+  }
+}
+
 .checkbox {
-  // TODO: Use internal css variables as in @hrc/spinner
   --_checked-color: var(--checkbox-checked-color, currentColor);
   display: grid;
   place-items: center; /* Is this necessary? */
@@ -18,25 +25,7 @@
     background-color: var(--checkbox-bg-hover, rgb(0, 0, 0, 0.1));
   }
 
-  // TODO: Use mixin to generate color variants
-  &--primary {
-    --_checked-color: var(--primary, #{hrc.$primary});
-  }
-  &--secondary {
-    --_checked-color: var(--secondary, #{hrc.$secondary});
-  }
-  &--error {
-    --_checked-color: var(--error, #{hrc.$error});
-  }
-  &--info {
-    --_checked-color: var(--info, #{hrc.$info});
-  }
-  &--warning {
-    --_checked-color: var(--warning, #{hrc.$warning});
-  }
-  &--success {
-    --_checked-color: var(--success, #{hrc.$success});
-  }
+  @include color-variants(hrc.$colors);
 
   &--disabled {
     pointer-events: none;
