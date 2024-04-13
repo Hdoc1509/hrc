@@ -1,8 +1,6 @@
 @use "@hrc/sass-utils" as hrc;
 @use "@scss" as *;
 
-// TODO: Use internal variables
-//   --_bg, --_bg-hover, --_text, --_outline, --_outline-bg-hover, --_shadow
 .button {
   --_p-y: 8px;
   display: inline-flex;
