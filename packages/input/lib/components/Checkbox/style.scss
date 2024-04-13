@@ -5,6 +5,7 @@
   display: grid;
   place-items: center; /* Is this necessary? */
 
+  box-sizing: border-box;
   border-radius: 50%;
   padding: var(--checkbox-padding, 0.5rem);
 
