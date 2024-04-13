@@ -2,6 +2,7 @@
 
 .checkbox {
   // TODO: Use internal css variables as in @hrc/spinner
+  --_checked-color: var(--checkbox-checked-color, currentColor);
   display: grid;
   place-items: center; /* Is this necessary? */
 
@@ -19,30 +20,28 @@
 
   // TODO: Use mixin to generate color variants
   &--primary {
-    --checkbox-checked-color: var(--primary, #{hrc.$primary});
+    --_checked-color: var(--primary, #{hrc.$primary});
   }
   &--secondary {
-    --checkbox-checked-color: var(--secondary, #{hrc.$secondary});
+    --_checked-color: var(--secondary, #{hrc.$secondary});
   }
   &--error {
-    --checkbox-checked-color: var(--error, #{hrc.$error});
+    --_checked-color: var(--error, #{hrc.$error});
   }
   &--info {
-    --checkbox-checked-color: var(--info, #{hrc.$info});
+    --_checked-color: var(--info, #{hrc.$info});
   }
   &--warning {
-    --checkbox-checked-color: var(--warning, #{hrc.$warning});
+    --_checked-color: var(--warning, #{hrc.$warning});
   }
   &--success {
-    --checkbox-checked-color: var(--success, #{hrc.$success});
+    --_checked-color: var(--success, #{hrc.$success});
   }
 
   &--disabled {
     pointer-events: none;
-    --checkbox-checked-color: var(
-      --checkbox-color-disabled,
-      rgba(0, 0, 0, 0.4)
-    );
+    // NOTE: can this be `currentColor`?
+    --_checked-color: var(--checkbox-color-disabled, rgba(0, 0, 0, 0.4));
     color: var(--checkbox-color-disabled, rgba(0, 0, 0, 0.4));
   }
 
@@ -76,7 +75,7 @@
     }
     > :last-child {
       display: var(--__icon-checked-display, none);
-      color: var(--checkbox-checked-color, currentColor);
+      color: var(--_checked-color);
     }
 
     > * {
