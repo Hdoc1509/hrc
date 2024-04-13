@@ -1,5 +1,11 @@
 # @hrc/spinner
 
+## 0.3.1
+
+### Patch Changes
+
+- 97518a4: Move `@hrc/docs` to `devDependencies`
+
 ## 0.3.0
 
 ### Minor Changes
