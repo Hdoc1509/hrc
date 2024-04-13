@@ -3,11 +3,21 @@ title: Getting started
 description: A guide to getting started with <hrc />
 ---
 
-**`<hrc />`** is a set of React components libraries that are used for building web
-applications with React.
+**`<hrc />`** is a set of libraries for building Web applications with
+[React](https://react.dev/).
 
-WIP
+## Components
 
-## Further reading
+- [`@hrc/button`](/hrc/packages/button)
+- [`@hrc/input`](/hrc/packages/input)
+- [`@hrc/material-icons`](/hrc/packages/material-icons)
+- [`@hrc/spinner`](/hrc/packages/spinner)
+- [`@hrc/toggle-theme`](/hrc/packages/toggle-theme)
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+## Utilities
+
+- [`@hrc/type-utils`](/hrc/packages/type-utils)
+
+## Configuration
+
+- [`@hrc/babel-config`](/hrc/packages/babel-config)
