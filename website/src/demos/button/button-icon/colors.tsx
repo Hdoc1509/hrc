@@ -10,10 +10,12 @@ const Icons = {
   success: <Icon name="check" />,
 };
 
+const colors = Object.keys(Icons) as (keyof typeof Icons)[];
+
 export function ButtonIconColors() {
   return (
     <>
-      {(Object.keys(Icons) as (keyof typeof Icons)[]).map((color) => (
+      {colors.map((color) => (
         <div key={`button-icon-${color}`}>
           <ButtonIcon color={color}>{Icons[color]}</ButtonIcon>
           <ButtonIcon color={color} variant="outline">
