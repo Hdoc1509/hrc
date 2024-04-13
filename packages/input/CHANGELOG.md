@@ -1,5 +1,18 @@
 # @hrc/input
 
+## 0.9.0
+
+### Minor Changes
+
+- e8348ed: Add `@types/react` to peer dependencies
+- 62693bf: Remove `width` and `height` css rules from `<Checkbox />`
+- b20f2fa: Set `box-sizing` to `<Checkbox />`
+
+### Patch Changes
+
+- Updated dependencies [043a4d4]
+  - @hrc/type-utils@1.1.2
+
 ## 0.8.1
 
 ### Patch Changes

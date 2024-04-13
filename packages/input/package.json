@@ -1,7 +1,7 @@
 {
   "name": "@hrc/input",
   "private": false,
-  "version": "0.8.1",
+  "version": "0.9.0",
   "type": "module",
   "license": "MIT",
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
@@ -48,7 +48,7 @@
     "checkbox"
   ],
   "dependencies": {
-    "@hrc/type-utils": "workspace:^1.1.1",
+    "@hrc/type-utils": "workspace:^1.1.2",
     "clsx": "^2.0.0"
   },
   "peerDependencies": {

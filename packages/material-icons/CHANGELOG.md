@@ -1,5 +1,17 @@
 # @hrc/material-icons
 
+## 2.3.0
+
+### Minor Changes
+
+- e8348ed: Add `@types/react` to peer dependencies
+- e6ca94d: Add `extra-large` size
+- da8aa6b: Set `user-select: none` to prevent icon from highlighting
+
+### Patch Changes
+
+- 043a4d4: Update package homepage
+
 ## 2.2.1
 
 ### Patch Changes

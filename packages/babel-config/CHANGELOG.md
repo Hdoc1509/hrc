@@ -1,5 +1,15 @@
 # @hrc/babel-config
 
+## 1.1.0
+
+### Minor Changes
+
+- d76e78b: Add support for `@hrc/spinner`
+
+### Patch Changes
+
+- 043a4d4: Update package homepage
+
 ## 1.0.0
 
 ### Major Changes

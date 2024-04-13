@@ -1,5 +1,20 @@
 # @hrc/spinner
 
+## 0.3.0
+
+### Minor Changes
+
+- b2ac6b7: Add `<GrowingSpinner />` component
+- 01d738e: Add `<CircleSpinner />` component
+- e8348ed: Add `@types/react` to peer dependencies
+- fe9bc42: Remove usage of margin from `<RingSpinner />`
+- 92d8f83: Add `<DualRingSpinner />` component
+- 0c24ada: Add `<BorderSpinner />` component
+
+### Patch Changes
+
+- 043a4d4: Update package homepage
+
 ## 0.2.1
 
 ### Patch Changes

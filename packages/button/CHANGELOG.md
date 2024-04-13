@@ -1,5 +1,18 @@
 # @hrc/button
 
+## 2.6.0
+
+### Minor Changes
+
+- e8348ed: Add `@types/react` to peer dependencies
+
+### Patch Changes
+
+- 4cde046: Set correct border color of `column` variant of `<ButtonGroup />`
+- 043a4d4: Update package homepage
+- Updated dependencies [043a4d4]
+  - @hrc/type-utils@1.1.2
+
 ## 2.5.0
 
 ### Minor Changes

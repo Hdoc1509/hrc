@@ -1,5 +1,18 @@
 # @hrc/toggle-theme
 
+## 2.2.0
+
+### Minor Changes
+
+- fd0ac9a: Apply theme to `document.documentElement` instead of `document.body`
+- 94bbdb9: Save user's preferred theme when getting theme
+- e8348ed: Add `@types/react` to peer dependencies
+- 06a15f3: Use colors with opacity for `hover` and `active` styles
+
+### Patch Changes
+
+- 043a4d4: Update package homepage
+
 ## 2.1.6
 
 ### Patch Changes

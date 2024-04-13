@@ -1,5 +1,11 @@
 # @hrc/type-utils
 
+## 1.1.2
+
+### Patch Changes
+
+- 043a4d4: Update package homepage
+
 ## 1.1.1
 
 ### Patch Changes
