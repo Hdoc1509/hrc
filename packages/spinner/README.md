@@ -8,6 +8,8 @@
   <img alt="npm" src="https://img.shields.io/npm/dm/%40hrc%2Fspinner">
 </p>
 
+Simple spinner components for your React app
+
 ## Installation
 
 ```bash
