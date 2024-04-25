@@ -1,5 +1,5 @@
-export { RingSpinner } from "./components/RingSpinner";
-export { BorderSpinner } from "./components/BorderSpinner";
-export { DualRingSpinner } from "./components/DualRingSpinner";
-export { CircleSpinner } from "./components/CircleSpinner";
-export { GrowingSpinner } from "./components/GrowingSpinner";
+export { RingSpinner } from "./RingSpinner";
+export { BorderSpinner } from "./BorderSpinner";
+export { DualRingSpinner } from "./DualRingSpinner";
+export { CircleSpinner } from "./CircleSpinner";
+export { GrowingSpinner } from "./GrowingSpinner";
