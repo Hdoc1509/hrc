@@ -11,6 +11,6 @@ export default defineConfig({
     libInjectCss(),
     dts({ include: ["lib"], rollupTypes: true }),
   ],
-  build: config.build({ extraDeps: "clsx" }),
+  build: config.build(__dirname, { extraDeps: "clsx" }),
   resolve: config.resolve(__dirname),
 });
