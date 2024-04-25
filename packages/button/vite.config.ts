@@ -7,6 +7,6 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
-  build: config.build({ extraDeps: "clsx", componentsDir: true }),
+  build: config.build(__dirname, { extraDeps: "clsx" }),
   resolve: config.resolve(__dirname),
 });
