@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "typescript": "*"
+  },
+  "dependencies": {
+    "glob": "10.3.10"
   }
 }

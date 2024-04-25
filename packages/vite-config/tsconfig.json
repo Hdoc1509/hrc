@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
-    "moduleResolution": "Bundler",
+    // for types of glob.d.ts
+    "moduleResolution": "NodeNext",
     "target": "ESNext",
+    // allow usage of import.meta
+    "module": "ESNext",
     "declaration": true,
     "outDir": "build"
   },
