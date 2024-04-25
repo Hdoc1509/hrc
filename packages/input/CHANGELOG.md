@@ -1,5 +1,11 @@
 # @hrc/input
 
+## 0.9.1
+
+### Patch Changes
+
+- cc824e0: Generate declaration files in the same folder of its `js` files
+
 ## 0.9.0
 
 ### Minor Changes

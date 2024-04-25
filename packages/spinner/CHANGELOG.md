@@ -1,5 +1,11 @@
 # @hrc/spinner
 
+## 0.3.2
+
+### Patch Changes
+
+- 7fa36f3: Generate declaration files in the same folder of its `js` files
+
 ## 0.3.1
 
 ### Patch Changes

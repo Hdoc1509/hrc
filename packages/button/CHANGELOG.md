@@ -1,5 +1,11 @@
 # @hrc/button
 
+## 2.6.1
+
+### Patch Changes
+
+- 060fbf9: Generate declaration files in the same folder of its `js` files
+
 ## 2.6.0
 
 ### Minor Changes
