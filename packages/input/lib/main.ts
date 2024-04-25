@@ -1,3 +1,3 @@
-export { Input } from "./components/Input";
-export { Textarea } from "./components/Textarea";
-export { Checkbox } from "./components/Checkbox";
+export { Input } from "./Input";
+export { Textarea } from "./Textarea";
+export { Checkbox } from "./Checkbox";

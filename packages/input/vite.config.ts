@@ -11,9 +11,9 @@ export default defineConfig({
     libInjectCss(),
     dts({
       include: ["lib"],
-      exclude: ["lib/components/Icons.tsx", "lib/components/Label/index.tsx"],
+      exclude: ["lib/Icons.tsx", "lib/Label/index.tsx"],
     }),
   ],
-  build: config.build({ extraDeps: "clsx", componentsDir: true }),
+  build: config.build(__dirname, { extraDeps: "clsx" }),
   resolve: config.resolve(__dirname),
 });
