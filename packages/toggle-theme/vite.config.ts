@@ -11,6 +11,8 @@ export default defineConfig({
     libInjectCss(),
     dts({ include: "lib/{main.ts,ThemeButton.tsx}" }),
   ],
-  build: config.build({ extraEntries: { "load-theme": "lib/load-theme.ts" } }),
+  build: config.build(__dirname, {
+    extraEntries: { "load-theme": "lib/load-theme.ts" },
+  }),
   resolve: config.resolve(__dirname),
 });
