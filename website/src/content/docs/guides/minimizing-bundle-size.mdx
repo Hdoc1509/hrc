@@ -87,41 +87,41 @@ component. You have two options to reduce the bundle size:
 
    ### Automatic Setup with [`@hrc/babel-config`](/hrc/packages/babel-config)
 
-   <Steps>
+</Steps>
 
-   1. Install `@hrc/babel-config`:
+<Steps>
 
-      <Tabs>
-        <TabItem label="npm">
-          ```bash
-          npm install -D @hrc/babel-config
-          ```
-        </TabItem>
-        <TabItem label="pnpm">
-          ```bash
-          pnpm add -D @hrc/babel-config
-          ```
-        </TabItem>
-        <TabItem label="yarn">
-          ```bash
-          yarn add -D @hrc/babel-config
-          ```
-        </TabItem>
-      </Tabs>
+1. Install `@hrc/babel-config`:
 
-   2. Write the following code in your `.babelrc.js` file:
+   <Tabs>
+     <TabItem label="npm">
+       ```bash
+       npm install -D @hrc/babel-config
+       ```
+     </TabItem>
+     <TabItem label="pnpm">
+       ```bash
+       pnpm add -D @hrc/babel-config
+       ```
+     </TabItem>
+     <TabItem label="yarn">
+       ```bash
+       yarn add -D @hrc/babel-config
+       ```
+     </TabItem>
+   </Tabs>
 
-      ```js
-      import hrcConfig from "@hrc/babel-config";
+2. Write the following code in your `.babelrc.js` file:
 
-      const plugins = [
-        ...otherPlugins,
-        ...hrcConfig(["button", "input"]),
-      ];
+   ```js
+   import hrcConfig from "@hrc/babel-config";
 
-      module.exports = { plugins };
-      ```
+   const plugins = [
+     ...otherPlugins,
+     ...hrcConfig(["button", "input"]),
+   ];
 
-   </Steps>
+   module.exports = { plugins };
+   ```
 
 </Steps>
