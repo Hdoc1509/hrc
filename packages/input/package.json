@@ -41,10 +41,10 @@
     "react",
     "react-component",
     "react-input",
-    "react-textarea",
-    "react-checkbox",
     "input",
+    "react-textarea",
     "textarea",
+    "react-checkbox",
     "checkbox"
   ],
   "dependencies": {
