@@ -6,7 +6,7 @@
   --_radius: #{$button-radius};
   display: inline-flex;
   align-items: center;
-  justify-content: var(--button-justify-content, center);
+  justify-content: var(--button-justify, center);
   gap: var(--button-gap, 8px);
 
   border: none;
