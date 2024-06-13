@@ -12,6 +12,7 @@
 .App {
   display: grid;
   gap: 16px;
+  font-family: sans-serif;
 }
 
 .button-error {

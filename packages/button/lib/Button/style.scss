@@ -15,7 +15,7 @@
   background-color: var(--button-bg, $button-bg);
   padding: var(--button-padding, var(--_p-y) calc(var(--_p-y) * 2));
 
-  font-family: var(--button-font-family, sans-serif);
+  font-family: var(--button-font-family, inherit);
   font-size: var(--button-font-size, 14px);
   font-weight: var(--button-font-weight, 500);
   color: var(--button-text, $button-text);
