@@ -23,9 +23,12 @@
   &--rounded-right {
     @include border-rounded-right($radius);
   }
-  // should this variant be part of the mixin?
+  // should the following variants be part of the mixin?
   &--rounded-full {
     border-radius: 9999px;
+  }
+  &--rounded-none {
+    border-radius: 0;
   }
 }
 
