@@ -26,10 +26,10 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     --button-shadow: none;
 
     &:first-child {
-      @include hrc.border-left-rounded($button-radius);
+      @include hrc.border-rounded-left($button-radius);
     }
     &:last-child {
-      @include hrc.border-right-rounded($button-radius);
+      @include hrc.border-rounded-right($button-radius);
     }
 
     & + * {
@@ -59,10 +59,10 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     }
 
     > .button:first-child {
-      @include hrc.border-top-rounded($button-radius);
+      @include hrc.border-rounded-top($button-radius);
     }
     > .button:last-child {
-      @include hrc.border-bottom-rounded($button-radius);
+      @include hrc.border-rounded-bottom($button-radius);
     }
 
     &.button--disabled > * {

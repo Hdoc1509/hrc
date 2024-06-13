@@ -54,9 +54,6 @@
   }
 
   @include hrc.border-rounded-variants(var(--_radius));
-  &--full-rounded {
-    border-radius: 9999px;
-  }
 
   &--outline,
   &--text {

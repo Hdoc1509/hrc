@@ -10,8 +10,7 @@ export type ButtonProps = Simplify<
     iconEnd?: React.ReactNode;
     size?: Size;
     color?: Color;
-    roundedSide?: "top" | "bottom" | "left" | "right";
-    fullRounded?: boolean;
+    rounded?: "top" | "bottom" | "left" | "right" | "full";
   } & React.ComponentProps<"button">
 >;
 
@@ -24,8 +23,7 @@ export const Button = ({
   color,
   className,
   children,
-  roundedSide,
-  fullRounded,
+  rounded,
   ...restProps
 }: ButtonProps): JSX.Element => {
   const buttonClass = clsx(
@@ -35,8 +33,7 @@ export const Button = ({
       ["button--no-shadow"]: disableShadow,
       [`button--${size}`]: size,
       [`button--${color}`]: color,
-      [`button--${roundedSide}-rounded`]: roundedSide,
-      "button--full-rounded": fullRounded,
+      [`button--rounded-${rounded}`]: rounded,
     },
     className,
   );
