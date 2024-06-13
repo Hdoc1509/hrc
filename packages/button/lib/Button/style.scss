@@ -20,6 +20,7 @@
   color: var(--button-text, $button-text);
 
   transition: background-color 0.2s ease;
+  cursor: pointer;
 
   &:hover,
   &:focus {
