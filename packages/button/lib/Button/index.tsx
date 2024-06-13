@@ -10,7 +10,7 @@ export type ButtonProps = Simplify<
     iconEnd?: React.ReactNode;
     size?: Size;
     color?: Color;
-    rounded?: "top" | "bottom" | "left" | "right" | "full";
+    rounded?: "top" | "bottom" | "left" | "right" | "full" | "none";
   } & React.ComponentProps<"button">
 >;
 

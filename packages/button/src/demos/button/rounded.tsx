@@ -18,6 +18,9 @@ export function ButtonRounded() {
       <Button color="secondary" rounded="full">
         Full rounded
       </Button>
+      <Button color="secondary" rounded="none">
+        No rounded
+      </Button>
     </>
   );
 }

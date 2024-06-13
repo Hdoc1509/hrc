@@ -7,13 +7,16 @@ export function ButtonIconRounded() {
       <ButtonIcon color="success" rounded="top">
         <Icon name="adb" />
       </ButtonIcon>
-      <ButtonIcon color="success" rounded="bottom">
-        <Icon name="adb" />
-      </ButtonIcon>
       <ButtonIcon color="success" rounded="left">
         <Icon name="adb" />
       </ButtonIcon>
       <ButtonIcon color="success" rounded="right">
+        <Icon name="adb" />
+      </ButtonIcon>
+      <ButtonIcon color="success" rounded="bottom">
+        <Icon name="adb" />
+      </ButtonIcon>
+      <ButtonIcon color="success" rounded="none">
         <Icon name="adb" />
       </ButtonIcon>
       <ButtonIcon color="success" rounded="full">

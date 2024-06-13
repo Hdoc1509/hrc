@@ -21,7 +21,7 @@ export const ButtonIconDemo = () => {
         <h3>Sizes</h3>
         <Demos.ButtonIconSizes />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={5}>
+      <DemoDocs layout="grid" cols={3}>
         <h3>Rounded</h3>
         <Demos.ButtonIconRounded />
       </DemoDocs>
