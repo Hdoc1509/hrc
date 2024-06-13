@@ -28,6 +28,7 @@ export const ThemeButton = ({
         fullRounded ? " theme-button--full-rounded" : ""
       }`}
       onClick={handleToggleTheme}
+      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? lightElement : darkElement}
     </button>
