@@ -4,16 +4,13 @@ import { ButtonProps } from "../Button";
 import "./style.scss";
 
 type Props = Simplify<
-  Pick<
-    ButtonProps,
-    "disableShadow" | "size" | "color" | "variant" | "disabled"
-  > & {
+  Pick<ButtonProps, "noShadow" | "size" | "color" | "variant" | "disabled"> & {
     column?: boolean;
   } & React.ComponentProps<"div">
 >;
 
 export const ButtonGroup = ({
-  disableShadow,
+  noShadow,
   size,
   color,
   variant,
@@ -28,7 +25,7 @@ export const ButtonGroup = ({
       [`button-group--${size}`]: size,
       "button-group--column": column,
       [`button--${variant}`]: variant,
-      "button--no-shadow": disableShadow,
+      "button--no-shadow": noShadow,
       [`button--${color}`]: color,
       "button--disabled": disabled,
     },

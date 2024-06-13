@@ -5,7 +5,7 @@ import "./style.scss";
 export type ButtonProps = Simplify<
   {
     variant?: "outline" | "text";
-    disableShadow?: boolean;
+    noShadow?: boolean;
     iconStart?: React.ReactNode;
     iconEnd?: React.ReactNode;
     size?: Size;
@@ -16,7 +16,7 @@ export type ButtonProps = Simplify<
 
 export const Button = ({
   variant,
-  disableShadow,
+  noShadow,
   iconStart,
   iconEnd,
   size,
@@ -30,7 +30,7 @@ export const Button = ({
     "button",
     {
       [`button--${variant}`]: variant,
-      ["button--no-shadow"]: disableShadow,
+      ["button--no-shadow"]: noShadow,
       [`button--${size}`]: size,
       [`button--${color}`]: color,
       [`button--rounded-${rounded}`]: rounded,
