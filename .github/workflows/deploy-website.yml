@@ -15,40 +15,23 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-      # TODO: Use again once it has better support for monorepos
-      # Follow https://github.com/withastro/action/issues/32
-      # - name: Install, build, and upload your site
-      #   uses: withastro/action@v2
-      #   with:
-      #     path: ./website
-      #     package-manager: pnpm@latest
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
 
       - name: Set up Pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 8
-          run_install: false
 
-      - name: Get Pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup Pnpm cache
-        uses: actions/cache@v4
+      - name: Set up Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v4
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          node-version: ${{matrix.node-version}}
+          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
