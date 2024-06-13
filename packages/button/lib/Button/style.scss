@@ -3,13 +3,14 @@
 
 .button {
   --_p-y: 8px;
+  --_radius: #{$button-radius};
   display: inline-flex;
   align-items: center;
   justify-content: var(--button-justify-content, center);
   gap: var(--button-gap, 8px);
 
   border: none;
-  border-radius: $button-radius;
+  border-radius: var(--_radius);
   box-shadow: $button-shadow;
   background-color: var(--button-bg, $button-bg);
   padding: var(--button-padding, var(--_p-y) calc(var(--_p-y) * 2));
@@ -52,7 +53,7 @@
     --_p-y: 12px;
   }
 
-  @include hrc.border-rounded-variants($button-radius);
+  @include hrc.border-rounded-variants(var(--_radius));
   &--full-rounded {
     border-radius: 9999px;
   }
