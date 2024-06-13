@@ -57,6 +57,7 @@
   }
 
   &::placeholder {
+    opacity: 1;
     color: var(--placeholder-color, $input-border-color);
   }
 }
