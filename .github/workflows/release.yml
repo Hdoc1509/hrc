@@ -1,0 +1,31 @@
+# based on https://github.com/vitejs/vite/blob/main/.github/workflows/release-tag.yml
+name: GitHub release tag
+
+on:
+  push:
+    tags:
+      - "@hrc/*" # matches @hrc/package-name
+
+jobs:
+  release:
+    if: github.repository == 'Hdoc1509/hrc'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get package name for tag
+        id: tag
+        run: |
+          pkg_name="${GITHUB_REF_NAME%@*}"
+          echo "pkg_name=$pkg_name" >> $GITHUB_OUTPUT
+
+      - name: Create release
+        if: steps.tag.outputs.pkg_name
+        id: release_tag
+        uses: yyx990803/release-tag@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          body: |
+            Please refer to [CHANGELOG.md](https://github.com/Hdoc1509/hrc/blob/main/packages/${{ steps.tag.outputs.pkg_name }}/CHANGELOG.md) for details.
