@@ -1,27 +1,27 @@
-@mixin border-left-rounded($radius) {
+@mixin border-rounded-left($radius) {
   border-radius: $radius 0 0 $radius;
 }
-@mixin border-right-rounded($radius) {
+@mixin border-rounded-right($radius) {
   border-radius: 0 $radius $radius 0;
 }
-@mixin border-top-rounded($radius) {
+@mixin border-rounded-top($radius) {
   border-radius: $radius $radius 0 0;
 }
-@mixin border-bottom-rounded($radius) {
+@mixin border-rounded-bottom($radius) {
   border-radius: 0 0 $radius $radius;
 }
 @mixin border-rounded-variants($radius) {
-  &--top-rounded {
-    @include border-top-rounded($radius);
+  &--rounded-top {
+    @include border-rounded-top($radius);
   }
-  &--bottom-rounded {
-    @include border-bottom-rounded($radius);
+  &--rounded-bottom {
+    @include border-rounded-bottom($radius);
   }
-  &--left-rounded {
-    @include border-left-rounded($radius);
+  &--rounded-left {
+    @include border-rounded-left($radius);
   }
-  &--right-rounded {
-    @include border-right-rounded($radius);
+  &--rounded-right {
+    @include border-rounded-right($radius);
   }
 }
 
