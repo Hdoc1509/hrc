@@ -23,6 +23,10 @@
   &--rounded-right {
     @include border-rounded-right($radius);
   }
+  // should this variant be part of the mixin?
+  &--rounded-full {
+    border-radius: 9999px;
+  }
 }
 
 @mixin debug {
