@@ -1,6 +1,5 @@
-import { glob } from "glob";
-import { extname, relative, resolve } from "path";
-import { fileURLToPath } from "url";
+import { resolve } from "path";
+import { createInputEntries } from "./scan.js";
 
 type BuildOptions = {
   /** Set extra external dependencies
@@ -42,16 +41,7 @@ const config = {
         "react/jsx-runtime",
         ...(extraDeps ? [extraDeps].flat() : []),
       ],
-      // Taken and adapted from:
-      // https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma#split-up-the-css
-      input: Object.fromEntries(
-        glob.sync(`${resolve(dirname)}/lib/**/*.{ts,tsx}`).map((file) => [
-          // entry point name
-          relative("lib", file.slice(0, file.length - extname(file).length)),
-          // entry point path
-          fileURLToPath(new URL(file, import.meta.url)),
-        ]),
-      ),
+      input: createInputEntries(dirname),
       output: {
         assetFileNames: "css/[name][extname]",
         entryFileNames: "[name].js",
