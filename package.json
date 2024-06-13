@@ -9,6 +9,7 @@
     "pkg:publish": "nx run-many -t build --exclude @hrc/website && changeset publish"
   },
   "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
+  "packageManager": "pnpm@8.15.4",
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "2.26.2",
