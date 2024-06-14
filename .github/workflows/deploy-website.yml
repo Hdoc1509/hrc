@@ -2,7 +2,8 @@ name: Deploy Website
 
 on:
   push:
-    branches: [master]
+    tags:
+      - "@hrc/*" # matches @hrc/package-name
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
@@ -13,17 +14,33 @@ permissions:
   id-token: write
 
 jobs:
-  changed-files:
-    name: Get changed files
-    outputs:
-      files: ${{ steps.filter.outputs.any_changed }}
+  # based on https://stackoverflow.com/a/72959712
+  check-branch:
     runs-on: ubuntu-latest
+    outputs:
+      branch: ${{ steps.check_step.outputs.branch }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
+      - name: Get current branch
+        id: check_step
+        run: |
+          raw=$(git branch -r --contains ${{ github.ref }})
+          branch=${raw##*/}
+          echo "{name}=branch" >> $GITHUB_OUTPUT
+          echo "current branch: $branch"
+
+  changed-files:
+    needs: check-branch
+    name: Get changed files
+    if: ${{ needs.check-branch.outputs.branch == 'master' }}
+    outputs:
+      files: ${{ steps.filter.outputs.any_changed }}
+    runs-on: ubuntu-latest
+    steps:
       - uses: tj-actions/changed-files@v44
         id: filter
         with:
