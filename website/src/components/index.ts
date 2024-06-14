@@ -7,3 +7,5 @@ export { default as SourceCode } from "./SourceCode.astro";
 export { default as SourceCodeWithDisabled } from "./SourceCodeWithDisabled.astro";
 // @ts-ignore
 export { default as MultiSourceCode } from "./MultiSourceCode.astro";
+// @ts-ignore
+export { default as InstallCommand } from "./InstallCommand.astro";

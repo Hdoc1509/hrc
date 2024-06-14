@@ -1,0 +1,26 @@
+---
+import { Tabs, TabItem, Code } from "@astrojs/starlight/components"
+
+const managers = ["npm", "pnpm", "yarn"]
+const commands = ["install", "add", "add"]
+const args: string[] = []
+
+const { packages, isDev } = Astro.props
+
+const packagesList = packages.join(" ")
+if (isDev) args.push("-D")
+
+function createCode(manager: string, index: number) {
+  return args.length === 0
+    ? `${manager} ${commands[index]} ${packagesList}`
+    : `${manager} ${commands[index]} ${args.join(" ")} ${packagesList}`;
+}
+---
+
+<Tabs>
+  {managers.map((manager,idx) => (
+    <TabItem label={manager}>
+      <Code lang="bash" code={createCode(manager, idx)} />
+    </TabItem>
+  ))}
+</Tabs>
