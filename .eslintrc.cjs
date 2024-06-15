@@ -5,9 +5,6 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended",
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: {
@@ -17,17 +14,26 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh"],
-  rules: {
-    "react-refresh/only-export-components": [
-      "warn",
-      { allowConstantExport: true },
-    ],
-  },
-  settings: {
-    react: { version: "detect" },
-  },
+  plugins: ["@typescript-eslint"],
   overrides: [
+    {
+      files: ["*.tsx"],
+      extends: [
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:react-hooks/recommended",
+      ],
+      plugins: ["react-refresh"],
+      rules: {
+        "react-refresh/only-export-components": [
+          "warn",
+          { allowConstantExport: true },
+        ],
+      },
+      settings: {
+        react: { version: "detect" },
+      },
+    },
     {
       files: ["*.astro"],
       extends: ["plugin:astro/recommended"],
