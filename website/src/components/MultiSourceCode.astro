@@ -1,14 +1,6 @@
 ---
 import { Code, Tabs, TabItem } from "@astrojs/starlight/components"
 
-interface Props {
-  sources: {
-    code: string,
-    title: string
-    lang?: string
-  }[]
-}
-
 const { sources } = Astro.props
 ---
 
@@ -16,6 +8,7 @@ const { sources } = Astro.props
   <summary>Show code</summary>
 
   <Tabs>
+    <!-- @ts-ignore -->
     {sources.map(source => (
       <TabItem label={source.title}>
         <Code code={source.code} lang={source.lang ?? "tsx"} />

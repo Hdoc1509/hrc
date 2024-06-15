@@ -2,10 +2,6 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
-  ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: {
     ecmaVersion: "latest",
@@ -13,9 +9,16 @@ module.exports = {
     project: "./tsconfig.json",
     tsconfigRootDir: __dirname,
   },
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
   overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      extends: [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended-type-checked",
+      ],
+      plugins: ["@typescript-eslint"],
+      parser: "@typescript-eslint/parser",
+    },
     {
       files: ["*.tsx"],
       extends: [
@@ -38,10 +41,6 @@ module.exports = {
       files: ["*.astro"],
       extends: ["plugin:astro/recommended"],
       parser: "astro-eslint-parser",
-      parserOptions: {
-        parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".astro"],
-      },
     },
   ],
 };
