@@ -24,8 +24,6 @@ Import `@material-design-icons/font` in your entry file (example: src/main.jsx i
 import "@material-design-icons/font";
 ```
 
-<!-- TODO: Add this info message to website -->
-
 > :information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
 
 Then, in your `App.jsx` or another file:
