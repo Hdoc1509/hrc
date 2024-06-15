@@ -12,6 +12,7 @@ module.exports = {
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
+      excludedFiles: ["./website/src/env.d.ts"],
       extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended-type-checked",
