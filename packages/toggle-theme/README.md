@@ -1,12 +1,12 @@
 # @hrc/toggle-theme
 
-<p align="center">
+<div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Ftoggle-theme)](https://www.npmjs.com/package/@hrc/toggle-theme)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2Ftoggle-theme)
 ![npm downloads](https://img.shields.io/npm/dm/%40hrc%2Ftoggle-theme)
 
-</p>
+</div>
 
 Simple component for toggle between `light` and `dark` theme in your React app.
 

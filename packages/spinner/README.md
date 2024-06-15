@@ -1,12 +1,12 @@
 # @hrc/spinner
 
-<p align="center">
+<div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Fspinner)](https://www.npmjs.com/package/@hrc/spinner)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2Fspinner)
 ![npm downloads](https://img.shields.io/npm/dm/%40hrc%2Fspinner)
 
-</p>
+</div>
 
 Simple spinner components for your React app
 

@@ -1,12 +1,12 @@
 # @hrc/button
 
-<p align="center">
+<div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Fbutton)](https://www.npmjs.com/package/@hrc/button)
 ![bundle size](https://img.shields.io/bundlephobia/minzip/%40hrc%2Fbutton)
 ![downloads](https://img.shields.io/npm/dm/%40hrc%2Fbutton)
 
-</p>
+</div>
 
 Simple button components for your React app
 
