@@ -16,7 +16,7 @@ permissions:
 jobs:
   # based on https://stackoverflow.com/a/72959712
   check-branch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       branch: ${{ steps.check_step.outputs.branch }}
     steps:
@@ -35,7 +35,7 @@ jobs:
 
   build:
     needs: check-branch
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: ${{ needs.check-branch.outputs.branch == 'master' }}
     strategy:
       matrix:
@@ -68,7 +68,7 @@ jobs:
 
   deploy:
     needs: [check-branch, build]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: ${{ needs.check-branch.outputs.files == 'master' }}
     environment:
       name: github-pages
