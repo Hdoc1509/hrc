@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - uses: tj-actions/changed-files@44
+      - uses: tj-actions/changed-files@v44
         id: filter
         # based on https://github.com/vitejs/vite/blob/main/.github/workflows/ci.yml#L59
         with:
