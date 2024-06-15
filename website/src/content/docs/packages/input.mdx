@@ -3,7 +3,8 @@ title: "@hrc/input"
 description: Package for input components of <hrc />
 ---
 
-import { Code, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Code } from "@astrojs/starlight/components";
+import { InstallCommand } from "@components";
 import pkg from "@hrc/input/package.json";
 
 <p>{pkg.description}</p>
@@ -16,23 +17,7 @@ _Demo here_
 
 ## Installation
 
-<Tabs>
-  <TabItem label="npm">
-    ```bash
-    npm install @hrc/input
-    ```
-  </TabItem>
-  <TabItem label="pnpm">
-    ```bash
-    pnpm add @hrc/input
-    ```
-  </TabItem>
-  <TabItem label="yarn">
-    ```bash
-    yarn add @hrc/input
-    ```
-  </TabItem>
-</Tabs>
+<InstallCommand packages={["@hrc/input"]} />
 
 ## Usage
 

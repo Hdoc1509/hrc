@@ -3,8 +3,8 @@ title: "@hrc/toggle-theme"
 description: Package for toggle theme component of <hrc />
 ---
 
-import { Code, Steps, Tabs, TabItem } from "@astrojs/starlight/components";
-import { Demo } from "@components";
+import { Code, Steps } from "@astrojs/starlight/components";
+import { Demo, InstallCommand } from "@components";
 import { PackageDemo } from "@demos/toggle-theme";
 import demoCode from "@demos/toggle-theme/package.tsx?raw";
 import stylesCode from "@demos/toggle-theme/styles.css?raw";
@@ -29,23 +29,7 @@ components.
 
 ## Installation
 
-<Tabs>
-  <TabItem label="npm">
-    ```bash
-    npm install @hrc/toggle-theme
-    ```
-  </TabItem>
-  <TabItem label="pnpm">
-    ```bash
-    pnpm add @hrc/toggle-theme
-    ```
-  </TabItem>
-  <TabItem label="yarn">
-    ```bash
-    yarn add @hrc/toggle-theme
-    ```
-  </TabItem>
-</Tabs>
+<InstallCommand packages={["@hrc/toggle-theme"]} />
 
 ## Usage
 

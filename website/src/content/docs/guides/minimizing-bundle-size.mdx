@@ -3,7 +3,8 @@ title: Minimizing bundle size
 description: A guide to minimizing bundle size of <hrc /> components
 ---
 
-import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
+import { InstallCommand } from "@components";
 
 The following packages exports multiple components:
 
@@ -33,23 +34,7 @@ component. You have two options to reduce the bundle size:
 
 2. Install `babel-plugin-import`:
 
-   <Tabs>
-     <TabItem label="npm">
-       ```bash
-       npm install -D babel-plugin-import
-       ```
-     </TabItem>
-     <TabItem label="pnpm">
-       ```bash
-       pnpm add -D babel-plugin-import
-       ```
-     </TabItem>
-     <TabItem label="yarn">
-       ```bash
-       yarn add -D babel-plugin-import
-       ```
-     </TabItem>
-   </Tabs>
+   <InstallCommand packages={["babel-plugin-import"]} isDev />
 
 3. Create a `.babelrc.js` in the root directory of your project.
 
@@ -93,23 +78,7 @@ component. You have two options to reduce the bundle size:
 
 1. Install `@hrc/babel-config`:
 
-   <Tabs>
-     <TabItem label="npm">
-       ```bash
-       npm install -D @hrc/babel-config
-       ```
-     </TabItem>
-     <TabItem label="pnpm">
-       ```bash
-       pnpm add -D @hrc/babel-config
-       ```
-     </TabItem>
-     <TabItem label="yarn">
-       ```bash
-       yarn add -D @hrc/babel-config
-       ```
-     </TabItem>
-   </Tabs>
+   <InstallCommand packages={["@hrc/babel-config"]} isDev />
 
 2. Write the following code in your `.babelrc.js` file:
 
