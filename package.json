@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "clean": "npkill",
-    "lint": "eslint --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "gen": "hygen package new",
     "pkg:release": "changeset version",
     "pkg:publish": "nx run-many -t build --exclude @hrc/website && changeset publish"
