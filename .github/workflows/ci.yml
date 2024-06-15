@@ -11,8 +11,29 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint:
+  changed-files:
     runs-on: ubuntu-22.04
+    outputs:
+      files: ${{ steps.filter.outputs.only_changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: tj-actions/changed-files@44
+        id: filter
+        # based on https://github.com/vitejs/vite/blob/main/.github/workflows/ci.yml#L59
+        with:
+          files: |
+            _templates/**
+            website/**
+            .github/**
+            !.github/workflows/ci.yml
+            **.md
+
+  lint:
+    needs: changed-files
+    runs-on: ubuntu-22.04
+    if: ${{ needs.changed-files.outputs.files != 'true' }}
     strategy:
       matrix:
         node-version: [20]
