@@ -27,4 +27,15 @@ module.exports = {
   settings: {
     react: { version: "detect" },
   },
+  overrides: [
+    {
+      files: ["*.astro"],
+      extends: ["plugin:astro/recommended"],
+      parser: "astro-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
+      },
+    },
+  ],
 };
