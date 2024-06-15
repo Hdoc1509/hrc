@@ -4,19 +4,22 @@ import { Icon } from "@hrc/material-icons";
 export function ButtonIconRounded() {
   return (
     <>
-      <ButtonIcon color="success" roundedSide="top">
+      <ButtonIcon color="success" rounded="top">
         <Icon name="adb" />
       </ButtonIcon>
-      <ButtonIcon color="success" roundedSide="bottom">
+      <ButtonIcon color="success" rounded="left">
         <Icon name="adb" />
       </ButtonIcon>
-      <ButtonIcon color="success" roundedSide="left">
+      <ButtonIcon color="success" rounded="right">
         <Icon name="adb" />
       </ButtonIcon>
-      <ButtonIcon color="success" roundedSide="right">
+      <ButtonIcon color="success" rounded="bottom">
         <Icon name="adb" />
       </ButtonIcon>
-      <ButtonIcon color="success" fullRounded>
+      <ButtonIcon color="success" rounded="none">
+        <Icon name="adb" />
+      </ButtonIcon>
+      <ButtonIcon color="success" rounded="full">
         <Icon name="adb" />
       </ButtonIcon>
     </>
