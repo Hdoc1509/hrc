@@ -1,5 +1,12 @@
 # @hrc/monorepo
 
+<div align="center">
+
+[![CI](https://github.com/Hdoc1509/hrc/actions/workflows/ci.yml/badge.svg)](https://github.com/Hdoc1509/hrc/actions/workflows/ci.yml)
+[![Deploy Website](https://github.com/Hdoc1509/hrc/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/Hdoc1509/hrc/actions/workflows/deploy-website.yml)
+
+</div>
+
 Simple and extensible components for your React app.
 
 ## Packages
