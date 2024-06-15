@@ -15,6 +15,7 @@
     "@astrojs/check": "^0.5.10",
     "@astrojs/react": "^3.1.0",
     "@astrojs/starlight": "^0.21.2",
+    "@astrojs/ts-plugin": "^1.8.0",
     "@hrc/button": "workspace:*",
     "@hrc/docs": "workspace:*",
     "@hrc/input": "workspace:*",
