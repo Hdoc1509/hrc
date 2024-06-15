@@ -33,24 +33,10 @@ jobs:
           echo "{name}=branch" >> $GITHUB_OUTPUT
           echo "current branch: $branch"
 
-  changed-files:
-    needs: check-branch
-    name: Get changed files
-    if: ${{ needs.check-branch.outputs.branch == 'master' }}
-    outputs:
-      files: ${{ steps.filter.outputs.any_changed }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: tj-actions/changed-files@v44
-        id: filter
-        with:
-          files: |
-            website/**
-
   build:
-    needs: changed-files
+    needs: check-branch
     runs-on: ubuntu-latest
-    if: ${{ needs.changed-files.outputs.files == 'true' }}
+    if: ${{ needs.check-branch.outputs.branch == 'master' }}
     strategy:
       matrix:
         node-version: [20]
@@ -78,9 +64,9 @@ jobs:
           path: ./website/dist
 
   deploy:
-    needs: [changed-files, build]
+    needs: [check-branch, build]
     runs-on: ubuntu-latest
-    if: ${{ needs.changed-files.outputs.files == 'true' }}
+    if: ${{ needs.check-branch.outputs.files == 'master' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
