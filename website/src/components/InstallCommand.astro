@@ -3,17 +3,17 @@ import { Tabs, TabItem, Code } from "@astrojs/starlight/components"
 
 const managers = ["npm", "pnpm", "yarn"]
 const commands = ["install", "add", "add"]
-const args: string[] = []
+const options: string[] = []
 
 const { packages, isDev } = Astro.props
 
 const packagesList = packages.join(" ")
-if (isDev) args.push("-D")
+if (isDev) options.push("-D")
 
 function createCode(manager: string, index: number) {
-  return args.length === 0
+  return options.length === 0
     ? `${manager} ${commands[index]} ${packagesList}`
-    : `${manager} ${commands[index]} ${args.join(" ")} ${packagesList}`;
+    : `${manager} ${commands[index]} ${options.join(" ")} ${packagesList}`;
 }
 ---
 
