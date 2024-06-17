@@ -19,24 +19,24 @@ npm install @hrc/button
 ## Usage
 
 ```js
-import { DeleteIcon, FavoriteIcon, SearchIcon } from "third-party-package";
 import { Button, ButtonIcon, ButtonGroup } from "@hrc/button";
+import { Icon } from "@hrc/material-icons";
 
-function App() {
+export function PackageDemo() {
   return (
     <>
-      <Button size="large" color="primary" iconEnd={<DeleteIcon />}>
+      <Button size="large" color="primary" iconEnd={<Icon name="delete" />}>
         Delete
       </Button>
       <ButtonIcon color="error">
-        <FavoriteIcon />
+        <Icon name="favorite" />
       </ButtonIcon
       <ButtonGroup>
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
         <ButtonIcon>
-          <SearchIcon />
+          <Icon name="search" />
         </ButtonIcon>
       </ButtonGroup>
     </>
