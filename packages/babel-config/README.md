@@ -6,7 +6,7 @@ Create a Babel config for component packages of [`<hrc
 ## Installation
 
 ```bash
-npm install @hrc/babel-config babel-plugin-import
+npm install -D @hrc/babel-config babel-plugin-import
 ```
 
 ## Usage
