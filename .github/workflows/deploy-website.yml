@@ -69,7 +69,7 @@ jobs:
   deploy:
     needs: [check-branch, build]
     runs-on: ubuntu-22.04
-    if: ${{ needs.check-branch.outputs.files == 'master' }}
+    if: ${{ needs.check-branch.outputs.branch == 'master' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
