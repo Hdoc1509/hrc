@@ -22,50 +22,61 @@ npm install @hrc/toggle-theme
 
 ## Usage
 
-First, import `load-theme.js` in your `index.html`:
+1. Import `load-theme.js` in your `index.html`:
 
-```html
-<script
-  type="module"
-  src="/path/to/@hrc/toggle-theme/dist/load-theme.js"
-></script>
-```
+   ```html
+   <script
+     type="module"
+     src="/path/to/@hrc/toggle-theme/dist/load-theme.js"
+   ></script>
+   ```
 
-Then, in your `App.jsx` or another file:
+2. Then, use the component in your project:
 
-```js
-import { ThemeButton } from "@hrc/toggle-theme";
+   ```js
+   import { ThemeButton } from "@hrc/toggle-theme";
+   import { Icon } from "@hrc/material-icons";
 
-function App() {
-  return (
-    <>
-      <ThemeButton
-        lightElement={<span>Light</span>}
-        darkElement={<span>Dark</span>}
-        fullRounded
-      />
-    </>
-  );
-}
-```
+   const Light = () => {
+     return (
+       <>
+         <Icon name="light_mode" size="large" color="warning" />
+         <span>Light</span>
+       </>
+     );
+   };
 
-Finally, you will need to add your styles manually:
+   const Dark = () => {
+     return (
+       <>
+         <Icon name="dark_mode" size="large" color="info" />
+         <span>Dark</span>
+       </>
+     );
+   };
 
-```css
-:root {
-  --bg-color: #fff;
-  --text-color: #17181c;
-}
-[datat-theme="dark"] {
-  --bg-color: #17181c;
-  --text-color: #fff;
-}
+   export function PackageDemo() {
+     return <ThemeButton lightElement={<Light />} darkElement={<Dark />} />;
+   }
+   ```
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-```
+3. Add your styles:
+
+   ```css
+   :root {
+     --bg-color: #fff;
+     --text-color: #17181c;
+   }
+   [data-theme="dark"] {
+     --bg-color: #17181c;
+     --text-color: #fff;
+   }
+
+   body {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+   }
+   ```
 
 ## Documentation
 
