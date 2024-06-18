@@ -3,7 +3,7 @@ name: Deploy Website
 on:
   push:
     tags:
-      - "@hrc/*" # matches @hrc/package-name
+      - "@hrc/website"
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
