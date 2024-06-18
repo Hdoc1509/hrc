@@ -12,9 +12,9 @@
     "copy-demos": "bash ./scripts/copy-demos.sh"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/react": "^3.1.0",
-    "@astrojs/starlight": "^0.21.2",
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/react": "^3.6.0",
+    "@astrojs/starlight": "^0.24.2",
     "@astrojs/ts-plugin": "^1.8.0",
     "@hrc/button": "workspace:*",
     "@hrc/docs": "workspace:*",
@@ -24,7 +24,7 @@
     "@hrc/spinner": "workspace:*",
     "@hrc/toggle-theme": "workspace:*",
     "@material-design-icons/font": "0.14.13",
-    "astro": "^4.3.5",
+    "astro": "^4.10.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.74.1",
