@@ -21,7 +21,7 @@ npm install @hrc/spinner
 ```js
 import { DualRingSpinner, GrowingSpinner, RingSpinner } from "@hrc/spinner";
 
-function App() {
+export function PackageDemo() {
   return (
     <>
       <RingSpinner size="large" color="primary" />
