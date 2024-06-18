@@ -18,27 +18,32 @@ npm install @hrc/material-icons @material-design-icons/font
 
 ## Usage
 
-Import `@material-design-icons/font` in your entry file (example: src/main.jsx in Vite):
+1. Import `@material-design-icons/font` in your entry file (example:
+   `src/main.jsx` in [Vite](https://vitejs.dev/)):
 
-```js
-import "@material-design-icons/font";
-```
+   ```js
+   import "@material-design-icons/font";
+   ```
 
-> :information_source: Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
+   > [!NOTE]
+   > Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
 
-Then, in your `App.jsx` or another file:
+2. Then, in your `App.jsx` or another file:
 
-```js
-import { Icon } from "@hrc/material-icons";
+   ```js
+   import { Icon } from "@hrc/material-icons";
 
-function App() {
-  return (
-    <>
-      <Icon name="shopping_cart" size="large" variant="outlined" />
-    </>
-  );
-}
-```
+   export function PackageDemo() {
+     return (
+       <>
+         <Icon name="lock" variant="outlined" size="small" />
+         <Icon name="favorite" color="error" />
+         <Icon name="face" color="secondary" />
+         <Icon name="description" color="primary" size="large" />
+       </>
+     );
+   }
+   ```
 
 ## Documentation
 
