@@ -3,8 +3,8 @@ name: GitHub release tag
 
 on:
   push:
-    tags:
-      - "@hrc/*" # matches @hrc/package-name
+    tags-ignore:
+      - "@hrc/website" # exclude website
 
 jobs:
   release:
