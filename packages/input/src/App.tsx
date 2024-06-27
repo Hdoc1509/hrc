@@ -1,5 +1,5 @@
 import { Icon } from "@hrc/material-icons";
-import { Input, Textarea, Checkbox } from "../lib/main";
+import { Input, Textarea, Checkbox } from "@lib/main";
 import "./App.css";
 
 const toggleTheme = () => {
