@@ -14,19 +14,19 @@
   width: 1em;
   height: 1em;
   overflow: hidden;
-  font-size: var(--icon-size, 24px) !important;
+  font-size: var(--icon-size, 1.5rem) !important;
   user-select: none;
 }
 
 .material-icons {
   &--small {
-    --icon-size: var(--icon-small, 18px);
+    --icon-size: var(--icon-small, 1.125rem);
   }
   &--large {
-    --icon-size: var(--icon-large, 36px);
+    --icon-size: var(--icon-large, 2.25rem);
   }
   &--extra-large {
-    --icon-size: var(--icon-extra-large, 48px);
+    --icon-size: var(--icon-extra-large, 3rem);
   }
   &--inherit {
     --icon-size: 1em;
