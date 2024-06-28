@@ -16,3 +16,4 @@ export { TextareaAutosize } from "./textarea/autosize";
 export { CheckboxDefault } from "./checkbox/default";
 export { CheckboxColors } from "./checkbox/colors";
 export { CheckboxDisabled } from "./checkbox/disabled";
+export { CheckboxSizes } from "./checkbox/size";
