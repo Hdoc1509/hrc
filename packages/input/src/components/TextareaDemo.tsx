@@ -17,6 +17,10 @@ export const TextareaDemo = () => {
         <h3>With Helper Text</h3>
         <Demos.TextareaWithHelperText />
       </DemoDocs>
+      <DemoDocs>
+        <h3>With Error</h3>
+        <Demos.TextareaWithError />
+      </DemoDocs>
     </DemoDocs>
   );
 };

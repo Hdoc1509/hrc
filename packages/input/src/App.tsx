@@ -1,5 +1,5 @@
 import { Icon } from "@hrc/material-icons";
-import { Textarea, Checkbox } from "@lib/main";
+import { Checkbox } from "@lib/main";
 import { Demo } from "./components/Demo";
 import { InputDemo } from "./components/InputDemo";
 import { TextareaDemo } from "./components/TextareaDemo";
@@ -10,16 +10,6 @@ const toggleTheme = () => {
     document.body.dataset.theme === "dark" ? "light" : "dark";
 };
 
-const focusedProps = {
-  className: "focused",
-  labelClassName: "focused",
-};
-
-const sharedProps = {
-  helperText: "Helper text",
-  placeholder: "Placeholder",
-};
-
 function App() {
   return (
     <>
@@ -27,22 +17,6 @@ function App() {
       <Demo />
       <InputDemo />
       <TextareaDemo />
-      <div className="input-grid">
-        <Textarea label="Textarea" {...sharedProps} />
-        <Textarea
-          label="Textarea focused"
-          placeholder={sharedProps.placeholder}
-          autosize
-          {...focusedProps}
-        />
-        <Textarea label="Textarea error" {...sharedProps} error />
-        <Textarea
-          label="Textarea error focused"
-          placeholder={sharedProps.placeholder}
-          error
-          {...focusedProps}
-        />
-      </div>
       <div className="input-grid">
         <Checkbox label="Small checkbox" size="small" />
         <Checkbox
