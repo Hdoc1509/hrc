@@ -6,37 +6,6 @@
   padding: 1rem;
 }
 
-.input-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 1rem;
-  margin-block: 1rem;
-}
-
-.input-wrapper.focused {
-  outline-color: var(--input-border-color);
-}
-.textarea.focused {
-  outline-color: var(--textarea-border-color);
-}
-
-.label.focused:not(.label--error) {
-  --label-text: var(--primary);
-  --input-border-color: var(--primary);
-  --textarea-border-color: var(--primary);
-  --helper-text-color: var(--primary);
-}
-
-.my-checkbox-label {
-  --label-font-size: 1.25rem;
-  --checkbox-color: var(--primary);
-}
-
-.my-checkbox {
-  --checkbox-bg-hover: lightblue;
-}
-
 .package-demo.demo-docs {
   grid-template-columns: unset;
   gap: 8px;

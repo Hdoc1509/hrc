@@ -1,5 +1,3 @@
-import { Icon } from "@hrc/material-icons";
-import { Checkbox } from "@lib/main";
 import { Demo } from "./components/Demo";
 import { InputDemo } from "./components/InputDemo";
 import { TextareaDemo } from "./components/TextareaDemo";
@@ -19,15 +17,6 @@ function App() {
       <InputDemo />
       <TextareaDemo />
       <CheckboxDemo />
-      <div className="input-grid">
-        <Checkbox
-          label="Bigger checkbox"
-          labelClassName="my-checkbox-label"
-          icon={<Icon name="thumb_up" variant="outlined" />}
-          iconChecked={<Icon name="thumb_up" />}
-          size="large"
-        />
-      </div>
     </>
   );
 }
