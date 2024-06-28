@@ -21,6 +21,10 @@ export const CheckboxDemo = () => {
         <h3>Sizes</h3>
         <Demos.CheckboxSizes />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={2}>
+        <h3>Icon</h3>
+        <Demos.CheckboxIcon />
+      </DemoDocs>
     </DemoDocs>
   );
 };

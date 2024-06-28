@@ -17,3 +17,4 @@ export { CheckboxDefault } from "./checkbox/default";
 export { CheckboxColors } from "./checkbox/colors";
 export { CheckboxDisabled } from "./checkbox/disabled";
 export { CheckboxSizes } from "./checkbox/size";
+export { CheckboxIcon } from "./checkbox/icon";
