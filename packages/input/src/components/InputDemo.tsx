@@ -25,6 +25,10 @@ export const InputDemo = () => {
         <h3>With Helper Text</h3>
         <Demos.InputWithHelperText />
       </DemoDocs>
+      <DemoDocs>
+        <h3>With Error</h3>
+        <Demos.InputWithError />
+      </DemoDocs>
     </DemoDocs>
   );
 };
