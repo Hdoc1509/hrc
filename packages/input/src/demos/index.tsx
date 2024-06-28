@@ -12,3 +12,5 @@ export { TextareaDisabled } from "./textarea/disabled";
 export { TextareaWithHelperText } from "./textarea/helper-text";
 export { TextareaWithError } from "./textarea/error";
 export { TextareaAutosize } from "./textarea/autosize";
+
+export { CheckboxDefault } from "./checkbox/default";

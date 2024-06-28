@@ -59,3 +59,12 @@
 .input-sizes {
   width: 100%;
 }
+
+.checkbox-default .label--checkbox {
+  margin-inline: auto;
+}
+
+.checkbox-default :nth-child(4),
+.checkbox-default :nth-child(5) {
+  grid-column: 1 / 3;
+}

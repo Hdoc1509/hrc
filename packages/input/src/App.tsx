@@ -3,6 +3,7 @@ import { Checkbox } from "@lib/main";
 import { Demo } from "./components/Demo";
 import { InputDemo } from "./components/InputDemo";
 import { TextareaDemo } from "./components/TextareaDemo";
+import { CheckboxDemo } from "./components/CheckboxDemo";
 import "./App.css";
 
 const toggleTheme = () => {
@@ -17,6 +18,7 @@ function App() {
       <Demo />
       <InputDemo />
       <TextareaDemo />
+      <CheckboxDemo />
       <div className="input-grid">
         <Checkbox label="Small checkbox" size="small" />
         <Checkbox
