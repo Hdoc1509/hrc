@@ -21,6 +21,10 @@ export const InputDemo = () => {
         <h3>With Icons</h3>
         <Demos.InputWithIcons />
       </DemoDocs>
+      <DemoDocs>
+        <h3>With Helper Text</h3>
+        <Demos.InputWithHelperText />
+      </DemoDocs>
     </DemoDocs>
   );
 };
