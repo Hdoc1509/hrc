@@ -9,6 +9,10 @@ export const TextareaDemo = () => {
         <h3>Default</h3>
         <Demos.TextareaDefault />
       </DemoDocs>
+      <DemoDocs>
+        <h3>Disabled</h3>
+        <Demos.TextareaDisabled />
+      </DemoDocs>
     </DemoDocs>
   );
 };

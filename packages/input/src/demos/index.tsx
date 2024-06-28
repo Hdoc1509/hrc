@@ -8,3 +8,4 @@ export { InputWithHelperText } from "./input/helper-text";
 export { InputWithError } from "./input/error";
 
 export { TextareaDefault } from "./textarea/default";
+export { TextareaDisabled } from "./textarea/disabled";
