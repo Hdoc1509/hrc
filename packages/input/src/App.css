@@ -37,16 +37,6 @@
   --checkbox-bg-hover: lightblue;
 }
 
-.colored-checkboxes {
-  --checkbox-size: 1.25rem;
-}
-.colored-checkboxes .label {
-  --label-font-size: 1.25rem;
-}
-.colored-checkboxes .label:nth-child(5) {
-  grid-column: 2 / 3;
-}
-
 .package-demo.demo-docs {
   grid-template-columns: unset;
   gap: 8px;

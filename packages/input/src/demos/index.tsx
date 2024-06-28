@@ -14,3 +14,4 @@ export { TextareaWithError } from "./textarea/error";
 export { TextareaAutosize } from "./textarea/autosize";
 
 export { CheckboxDefault } from "./checkbox/default";
+export { CheckboxColors } from "./checkbox/colors";

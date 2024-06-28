@@ -9,6 +9,10 @@ export const CheckboxDemo = () => {
         <h3>Default</h3>
         <Demos.CheckboxDefault />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={2}>
+        <h3>Colors</h3>
+        <Demos.CheckboxColors />
+      </DemoDocs>
     </DemoDocs>
   );
 };

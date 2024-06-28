@@ -36,14 +36,6 @@ function App() {
         />
         <Checkbox label="Disabled checkbox" disabled />
       </div>
-      <div className="input-grid colored-checkboxes">
-        <Checkbox label="Primary" color="primary" defaultChecked />
-        <Checkbox label="Secondary" color="secondary" defaultChecked />
-        <Checkbox label="Error" color="error" defaultChecked />
-        <Checkbox label="Info" color="info" defaultChecked />
-        <Checkbox label="Warning" color="warning" defaultChecked />
-        <Checkbox label="Success" color="success" defaultChecked />
-      </div>
     </>
   );
 }
