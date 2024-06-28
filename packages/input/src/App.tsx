@@ -1,5 +1,5 @@
 import { Icon } from "@hrc/material-icons";
-import { Input, Textarea, Checkbox } from "@lib/main";
+import { Textarea, Checkbox } from "@lib/main";
 import { Demo } from "./components/Demo";
 import { InputDemo } from "./components/InputDemo";
 import "./App.css";
@@ -25,62 +25,6 @@ function App() {
       <button onClick={toggleTheme}>toggle theme</button>
       <Demo />
       <InputDemo />
-      <div className="input-grid">
-        <Input label="Small" size="small" {...sharedProps} />
-        <Input
-          label="Normal"
-          iconStart={<Icon name="people" />}
-          {...sharedProps}
-        />
-        <Input
-          label="Focused"
-          iconEnd={<Icon name="phone" />}
-          {...sharedProps}
-          {...focusedProps}
-        />
-        <Input
-          label="Disabled"
-          disabled
-          iconEnd={<Icon name="phone" disabled />}
-          required
-          {...sharedProps}
-        />
-      </div>
-      <div className="input-grid">
-        <Input
-          label="Error"
-          size="small"
-          placeholder={sharedProps.placeholder}
-          error
-        />
-        <Input
-          label="Error"
-          iconStart={<Icon name="lock" />}
-          placeholder={sharedProps.placeholder}
-          error
-        />
-        <Input
-          label="Error focused"
-          iconEnd={<Icon name="account_circle" />}
-          placeholder={sharedProps.placeholder}
-          {...focusedProps}
-          error
-        />
-        <Input
-          label="Error disabled"
-          iconEnd={<Icon name="account_circle" disabled />}
-          placeholder={sharedProps.placeholder}
-          error
-          disabled
-          required
-        />
-      </div>
-      <Input
-        label="Full width"
-        iconStart={<Icon name="question_answer" />}
-        placeholder={sharedProps.placeholder}
-        fullWidth
-      />
       <div className="input-grid">
         <Textarea label="Textarea" {...sharedProps} />
         <Textarea
