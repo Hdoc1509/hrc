@@ -5,7 +5,7 @@
   // TODO: Use internal css variables as in @hrc/spinner
   display: inline-flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.25rem;
 
   font-family: var(--label-font-family, sans-serif);
   font-size: var(--label-font-size, 0.75rem);
