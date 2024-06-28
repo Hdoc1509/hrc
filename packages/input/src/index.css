@@ -31,8 +31,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 
@@ -44,8 +42,6 @@ button {
   display: block;
   position: relative;
 
-  inset: 0;
-  margin-block: 2rem;
   margin-inline: auto;
   padding: 8px;
 }
