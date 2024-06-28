@@ -13,6 +13,10 @@ export const InputDemo = () => {
         <h3>Disabled</h3>
         <Demos.InputDisabled />
       </DemoDocs>
+      <DemoDocs className="input-sizes">
+        <h3>Sizes</h3>
+        <Demos.InputSizes />
+      </DemoDocs>
     </DemoDocs>
   );
 };

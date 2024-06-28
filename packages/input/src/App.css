@@ -53,3 +53,7 @@
 .package-demo .input {
   margin-bottom: 8px;
 }
+
+.input-sizes {
+  width: 100%;
+}
