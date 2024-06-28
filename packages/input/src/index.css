@@ -49,3 +49,8 @@ button {
   margin-inline: auto;
   padding: 8px;
 }
+
+h2,
+h3 {
+  text-align: center;
+}
