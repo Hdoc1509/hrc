@@ -11,7 +11,7 @@ export function TextareaWithError() {
         error
       />
       <Textarea
-        label="Error and Disabled"
+        label="Error (disabled)"
         placeholder="Hello world"
         helperText="Helper text"
         disabled

@@ -19,7 +19,7 @@ export function InputWithError() {
         error
       />
       <Input
-        label="Error"
+        label="Error (disabled)"
         placeholder="Hello world"
         helperText="Invalid entry"
         iconEnd={<Icon name="description" disabled />}
