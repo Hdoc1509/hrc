@@ -1,6 +1,6 @@
-import { ToggleDisabled } from "@hrc/docs";
-import { Input } from "@lib/main";
 import { useState } from "react";
+import { Input } from "@lib/main";
+import { ToggleDisabled } from "./ToggleDisabled";
 
 export function InputDisabled() {
   const [disabled, setDisabled] = useState(false);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Checkbox } from "@lib/main";
-import { ToggleDisabled } from "@hrc/docs";
+import { ToggleDisabled } from "./ToggleDisabled"
 
 export function CheckboxDisabled() {
   const [disabled, setDisabled] = useState(false);

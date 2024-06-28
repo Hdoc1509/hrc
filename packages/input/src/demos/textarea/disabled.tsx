@@ -1,6 +1,6 @@
-import { ToggleDisabled } from "@hrc/docs";
-import { Textarea } from "@lib/main";
 import { useState } from "react";
+import { Textarea } from "@lib/main";
+import { ToggleDisabled } from "./ToggleDisabled";
 
 export function TextareaDisabled() {
   const [disabled, setDisabled] = useState(false);
