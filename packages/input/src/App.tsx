@@ -3,6 +3,7 @@ import { InputDemo } from "./components/InputDemo";
 import { TextareaDemo } from "./components/TextareaDemo";
 import { CheckboxDemo } from "./components/CheckboxDemo";
 import "./App.css";
+import "./demos.css";
 
 const toggleTheme = () => {
   document.body.dataset.theme =
