@@ -1,5 +1,6 @@
 import { Icon } from "@hrc/material-icons";
 import { Input, Textarea, Checkbox } from "@lib/main";
+import { Demo } from "./components/Demo";
 import "./App.css";
 
 const toggleTheme = () => {
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <button onClick={toggleTheme}>toggle theme</button>
+      <Demo />
       <div className="input-grid">
         <Input label="Small" size="small" {...sharedProps} />
         <Input
