@@ -17,6 +17,10 @@ export const InputDemo = () => {
         <h3>Sizes</h3>
         <Demos.InputSizes />
       </DemoDocs>
+      <DemoDocs>
+        <h3>With Icons</h3>
+        <Demos.InputWithIcons />
+      </DemoDocs>
     </DemoDocs>
   );
 };
