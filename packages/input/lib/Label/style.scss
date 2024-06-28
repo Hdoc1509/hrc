@@ -12,11 +12,11 @@
   font-weight: var(--label-font-weight, 400);
   color: var(--label-text, $label-text);
 
-  &:focus-within:not(&--checkbox) {
+  &:focus-within:not(&--row) {
     --label-text: var(--label-text-focus, #{hrc.$primary});
   }
 
-  &--checkbox {
+  &--row {
     --label-font-size: 1rem;
     align-items: center;
     flex-direction: row;

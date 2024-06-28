@@ -38,7 +38,7 @@ export const Checkbox = ({
   );
 
   return (
-    <Label disabled={disabled} className={labelClassName} checkbox>
+    <Label disabled={disabled} className={labelClassName} row>
       <div className={wrapperClass}>
         <input
           {...restProps}

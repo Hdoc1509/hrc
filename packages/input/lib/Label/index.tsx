@@ -5,7 +5,7 @@ type Props = {
   className?: string;
   error?: boolean;
   fullwidth?: boolean;
-  checkbox?: boolean;
+  row?: boolean;
   disabled?: boolean;
 };
 
@@ -13,7 +13,7 @@ export const Label = ({
   className,
   error,
   fullwidth,
-  checkbox,
+  row,
   disabled,
   children,
 }: React.PropsWithChildren<Props>) => {
@@ -22,7 +22,7 @@ export const Label = ({
     {
       "label--error": error,
       "label--fullwidth": fullwidth,
-      "label--checkbox": checkbox,
+      "label--row": row,
       "label--disabled": disabled,
     },
     className,

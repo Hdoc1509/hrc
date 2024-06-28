@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.checkbox-default .label--checkbox {
+.checkbox-default .label--row {
   margin-inline: auto;
 }
 .checkbox-default :nth-child(4),
