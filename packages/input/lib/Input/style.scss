@@ -4,7 +4,7 @@
 .input {
   // TODO: Use internal css variables as in @hrc/spinner
   display: flex;
-  gap: var(--input-gap, 14px);
+  gap: var(--input-gap, 0.5rem);
 
   width: 200px;
   background-color: var(--input-bg, transparent);
