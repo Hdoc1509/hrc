@@ -9,6 +9,10 @@ export const InputDemo = () => {
         <h3>Default</h3>
         <Demos.InputDefault />
       </DemoDocs>
+      <DemoDocs>
+        <h3>Disabled</h3>
+        <Demos.InputDisabled />
+      </DemoDocs>
     </DemoDocs>
   );
 };
