@@ -13,6 +13,10 @@ export const CheckboxDemo = () => {
         <h3>Colors</h3>
         <Demos.CheckboxColors />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={2} className="checkbox-disabled">
+        <h3>Disabled</h3>
+        <Demos.CheckboxDisabled />
+      </DemoDocs>
     </DemoDocs>
   );
 };

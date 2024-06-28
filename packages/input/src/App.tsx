@@ -20,13 +20,6 @@ function App() {
       <TextareaDemo />
       <CheckboxDemo />
       <div className="input-grid">
-        <Checkbox label="Small checkbox" size="small" />
-        <Checkbox
-          label="Checkbox checked"
-          icon={<Icon name="check_box_outline_blank" />}
-          iconChecked={<Icon name="check_box" />}
-          defaultChecked
-        />
         <Checkbox
           label="Bigger checkbox"
           labelClassName="my-checkbox-label"
@@ -34,7 +27,6 @@ function App() {
           iconChecked={<Icon name="thumb_up" />}
           size="large"
         />
-        <Checkbox label="Disabled checkbox" disabled />
       </div>
     </>
   );

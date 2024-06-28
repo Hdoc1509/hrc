@@ -53,8 +53,16 @@
 .checkbox-default .label--checkbox {
   margin-inline: auto;
 }
-
 .checkbox-default :nth-child(4),
 .checkbox-default :nth-child(5) {
   grid-column: 1 / 3;
+}
+
+.checkbox-disabled * {
+  margin-inline: auto;
+}
+.checkbox-disabled label:not([class]),
+.checkbox-disabled :nth-child(5),
+.checkbox-disabled :nth-child(6) {
+  grid-column: 1 / -1;
 }
