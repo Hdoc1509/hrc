@@ -5,7 +5,7 @@ import { Color, Simplify, Size } from "@hrc/type-utils";
 import { InputProps } from "../Input";
 import "./style.scss";
 
-type Props = Simplify<
+export type CheckboxProps = Simplify<
   {
     icon?: React.ReactNode;
     iconChecked?: React.ReactNode;
@@ -26,7 +26,7 @@ export const Checkbox = ({
   disabled,
   required,
   ...restProps
-}: Props): JSX.Element => {
+}: CheckboxProps): JSX.Element => {
   const wrapperClass = clsx(
     "checkbox",
     {
