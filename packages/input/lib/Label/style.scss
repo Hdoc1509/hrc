@@ -17,10 +17,12 @@
   }
 
   &--row {
-    --label-font-size: 1rem;
     align-items: center;
     flex-direction: row;
     justify-content: start;
+  }
+  &--checkbox {
+    --label-font-size: 1rem;
     cursor: pointer;
   }
 

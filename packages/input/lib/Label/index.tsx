@@ -5,6 +5,7 @@ type Props = {
   className?: string;
   error?: boolean;
   fullwidth?: boolean;
+  checkbox?: boolean;
   row?: boolean;
   disabled?: boolean;
 };
@@ -13,6 +14,7 @@ export const Label = ({
   className,
   error,
   fullwidth,
+  checkbox,
   row,
   disabled,
   children,
@@ -22,7 +24,8 @@ export const Label = ({
     {
       "label--error": error,
       "label--fullwidth": fullwidth,
-      "label--row": row,
+      "label--row": checkbox ?? row,
+      "label--checkbox": checkbox,
       "label--disabled": disabled,
     },
     className,
