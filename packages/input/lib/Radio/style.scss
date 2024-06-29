@@ -1,0 +1,57 @@
+@use "@hrc/sass-utils" as hrc;
+@use "../Checkbox/style.scss" as *; // mixin color-variants
+
+.radio {
+  --_checked-color: var(--radio-checked-color, currentColor);
+  display: grid;
+  place-items: center;
+
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: var(--radio-padding, 0.5rem);
+
+  font-size: var(--radio-size, 1rem);
+  color: var(--radio-color, #333);
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--radio-bg-hover, rgb(0 0 0 / 10%));
+  }
+
+  @include color-variants(hrc.$colors);
+
+  &__inner {
+    grid-area: 1 / 1;
+    margin: 0;
+    opacity: 0;
+    cursor: inherit;
+
+    &:checked + .radio__icon {
+      --_icon-display: none;
+      --_icon-checked-display: inline;
+    }
+  }
+
+  &__icon {
+    grid-area: 1 / 1;
+    display: flex;
+
+    > :first-child {
+      display: var(--_icon-display, inline);
+    }
+    > :last-child {
+      display: var(--_icon-checked-display, none);
+      color: var(--_checked-color);
+    }
+
+    > * {
+      font-size: 1.5em !important;
+    }
+
+    > svg {
+      fill: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+  }
+}

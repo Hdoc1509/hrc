@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: start;
   }
-  &--checkbox {
+  &--checkbox, &--radio {
     --label-font-size: 1rem;
     cursor: pointer;
   }
