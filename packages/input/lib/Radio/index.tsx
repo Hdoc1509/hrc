@@ -1,12 +1,13 @@
 import clsx from "clsx";
 import { Label } from "../Label";
 import { RadioChecked, RadioUnchecked } from "../Icons";
+import { Simplify } from "@hrc/type-utils";
 import { CheckboxProps } from "../Checkbox";
 import "./style.scss";
 
-type Props = Omit<CheckboxProps, "label" | "icon" | "iconChecked"> & {
-  label: string;
-};
+type Props = Simplify<
+  Omit<CheckboxProps, "label" | "icon" | "iconChecked"> & { label: string }
+>;
 
 export const Radio = ({
   label,
