@@ -37,10 +37,10 @@ export const Radio = ({
           disabled={disabled}
           required={required}
         />
-      </span>
-      <span className="radio__icon">
-        <RadioUnchecked />
-        <RadioChecked />
+        <span className="radio__icon">
+          <RadioUnchecked />
+          <RadioChecked />
+        </span>
       </span>
       {required ? `${label} *` : label}
     </Label>
