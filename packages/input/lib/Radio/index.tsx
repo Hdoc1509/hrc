@@ -5,7 +5,7 @@ import { Simplify } from "@hrc/type-utils";
 import { CheckboxProps } from "../Checkbox";
 import "./style.scss";
 
-type Props = Simplify<
+export type RadioProps = Simplify<
   Omit<CheckboxProps, "label" | "icon" | "iconChecked"> & { label: string }
 >;
 
@@ -18,7 +18,7 @@ export const Radio = ({
   disabled,
   required,
   ...restProps
-}: Props) => {
+}: RadioProps) => {
   const wrapperClass = clsx(
     "radio",
     {
