@@ -1,15 +1,6 @@
 import { clsx } from "clsx";
+import { LabelProps } from "./types";
 import "./style.scss";
-
-type Props = {
-  className?: string;
-  error?: boolean;
-  fullwidth?: boolean;
-  checkbox?: boolean;
-  radio?: boolean;
-  row?: boolean;
-  disabled?: boolean;
-};
 
 export const Label = ({
   className,
@@ -20,7 +11,7 @@ export const Label = ({
   row,
   disabled,
   children,
-}: React.PropsWithChildren<Props>) => {
+}: React.PropsWithChildren<LabelProps>) => {
   const labelClass = clsx(
     "label",
     {

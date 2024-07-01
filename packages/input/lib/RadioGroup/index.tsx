@@ -1,20 +1,7 @@
 import clsx from "clsx";
-import { Simplify } from "@hrc/type-utils";
-import { Radio, RadioProps } from "../Radio";
+import { Radio } from "../Radio";
+import { RadioGroupProps } from "./types";
 import "./style.scss";
-
-export type RadioOption = { label: string; value: string };
-
-type Props = Simplify<
-  {
-    options: RadioOption[];
-    name: string;
-    value?: string;
-    onChange?: (value: string) => void;
-    row?: boolean;
-  } & Pick<RadioProps, "color" | "form" | "defaultValue"> &
-    Omit<React.ComponentProps<"div">, "onChange" | "defaultValue">
->;
 
 export const RadioGroup = ({
   options,
@@ -27,7 +14,7 @@ export const RadioGroup = ({
   row,
   onChange,
   ...restProps
-}: Props) => {
+}: RadioGroupProps) => {
   const groupClass = clsx(
     "radio-group",
     {

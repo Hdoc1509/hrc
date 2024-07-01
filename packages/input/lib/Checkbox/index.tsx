@@ -1,19 +1,8 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
 import { CheckboxIcon, CheckboxIconChecked } from "../Icons";
-import { Color, Simplify, Size } from "@hrc/type-utils";
-import { InputProps } from "../Input";
+import { CheckboxProps } from "./types";
 import "./style.scss";
-
-export type CheckboxProps = Simplify<
-  {
-    icon?: React.ReactNode;
-    iconChecked?: React.ReactNode;
-    size?: Size;
-    color?: Color;
-  } & Pick<InputProps, "label" | "labelClassName"> &
-    Omit<React.ComponentProps<"input">, "size" | "color" | "type">
->;
 
 export const Checkbox = ({
   label,

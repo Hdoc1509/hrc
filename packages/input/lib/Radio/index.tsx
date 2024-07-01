@@ -1,13 +1,8 @@
 import clsx from "clsx";
 import { Label } from "../Label";
 import { RadioChecked, RadioUnchecked } from "../Icons";
-import { Simplify } from "@hrc/type-utils";
-import { CheckboxProps } from "../Checkbox";
+import { RadioProps } from "./types";
 import "./style.scss";
-
-export type RadioProps = Simplify<
-  Omit<CheckboxProps, "label" | "icon" | "iconChecked"> & { label: string }
->;
 
 export const Radio = ({
   label,
