@@ -3,9 +3,11 @@ import { Simplify } from "@hrc/type-utils";
 import { Radio, RadioProps } from "../Radio";
 import "./style.scss";
 
+export type RadioOption = { label: string; value: string };
+
 type Props = Simplify<
   {
-    options: string[];
+    options: RadioOption[];
     name: string;
     value?: string;
     onChange?: (value: string) => void;
@@ -37,7 +39,7 @@ export const RadioGroup = ({
 
   return (
     <div {...restProps} className={groupClass}>
-      {options.map((label, idx) => (
+      {options.map(({ label, value: optionValue }, idx) => (
         <Radio
           key={label}
           label={label}
@@ -47,7 +49,7 @@ export const RadioGroup = ({
             label === value || label === defaultValue || idx === 0
           }
           onChange={onChange ? () => onChange(label) : undefined}
-          value={label}
+          value={optionValue}
           color={color}
         />
       ))}
