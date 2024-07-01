@@ -9,6 +9,10 @@ export const RadioDemo = () => {
         <h3>Default</h3>
         <Demos.RadioDefault />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={2}>
+        <h3>Colors</h3>
+        <Demos.RadioColors />
+      </DemoDocs>
     </DemoDocs>
   );
 };
