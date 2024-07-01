@@ -14,7 +14,6 @@ type Props = Simplify<
     Omit<React.ComponentProps<"div">, "onChange" | "defaultValue">
 >;
 
-// TODO: if receives children render them instead of options
 export const RadioGroup = ({
   options,
   name,
@@ -38,13 +37,15 @@ export const RadioGroup = ({
 
   return (
     <div {...restProps} className={groupClass}>
-      {options.map((label) => (
+      {options.map((label, idx) => (
         <Radio
           key={label}
           label={label}
           name={name}
           form={form}
-          defaultChecked={label === value || label === defaultValue}
+          defaultChecked={
+            label === value || label === defaultValue || idx === 0
+          }
           onChange={onChange ? () => onChange(label) : undefined}
           value={label}
           color={color}
