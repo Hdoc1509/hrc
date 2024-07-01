@@ -17,6 +17,10 @@ export const RadioDemo = () => {
         <h3>Disabled</h3>
         <Demos.RadioDisabled />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={3}>
+        <h3>Sizes</h3>
+        <Demos.RadioSizes />
+      </DemoDocs>
     </DemoDocs>
   );
 };

@@ -22,3 +22,4 @@ export { CheckboxIcon } from "./checkbox/icon";
 export { RadioDefault } from "./radio/default";
 export { RadioColors } from "./radio/colors";
 export { RadioDisabled } from "./radio/disabled";
+export { RadioSizes } from "./radio/size";
