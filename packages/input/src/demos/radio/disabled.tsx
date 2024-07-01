@@ -10,7 +10,12 @@ export function RadioDisabled() {
       <ToggleDisabled disabled={disabled} setter={setDisabled} />
 
       <Radio label="Write a story" name="radio-disabled" disabled={disabled} />
-      <Radio label="Read a story" name="radio-disabled" disabled={disabled} />
+      <Radio
+        label="Read a story"
+        name="radio-disabled"
+        disabled={disabled}
+        defaultChecked
+      />
     </>
   );
 }
