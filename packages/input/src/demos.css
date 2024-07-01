@@ -19,10 +19,12 @@
   grid-column: 1 / 3;
 }
 
-.checkbox-disabled * {
+.checkbox-disabled > *,
+.radio-disabled > * {
   margin-inline: auto;
 }
 .checkbox-disabled label:not([class]),
+.radio-disabled label:not([class]),
 .checkbox-disabled :nth-child(5),
 .checkbox-disabled :nth-child(6) {
   grid-column: 1 / -1;
