@@ -25,6 +25,14 @@
     --_checked-color: currentColor;
     color: var(--radio-color-disabled, rgba(0, 0, 0, 0.4));
   }
+
+  &--small {
+    --radio-size: 0.75rem;
+  }
+  &--large {
+    --radio-size: 1.25rem;
+  }
+
   &__inner {
     grid-area: 1 / 1;
     margin: 0;
