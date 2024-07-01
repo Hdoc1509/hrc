@@ -3,26 +3,30 @@ import { Simplify } from "@hrc/type-utils";
 import { Radio, RadioProps } from "../Radio";
 import "./style.scss";
 
-type Props<T> = Simplify<
+type Props = Simplify<
   {
-    options: readonly T[];
+    options: string[];
     name: string;
+    value?: string;
+    onChange?: (value: string) => void;
     row?: boolean;
   } & Pick<RadioProps, "color" | "form" | "defaultValue"> &
-    React.ComponentProps<"div">
+    Omit<React.ComponentProps<"div">, "onChange" | "defaultValue">
 >;
 
 // TODO: if receives children render them instead of options
-export const RadioGroup = <T extends string>({
+export const RadioGroup = ({
   options,
   name,
   form,
+  value,
   defaultValue,
   className,
   color,
   row,
+  onChange,
   ...restProps
-}: Props<T>) => {
+}: Props) => {
   const groupClass = clsx(
     "radio-group",
     {
@@ -40,7 +44,8 @@ export const RadioGroup = <T extends string>({
           label={label}
           name={name}
           form={form}
-          defaultChecked={label === defaultValue}
+          defaultChecked={label === value || label === defaultValue}
+          onChange={onChange ? () => onChange(label) : undefined}
           value={label}
           color={color}
         />
