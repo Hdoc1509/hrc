@@ -26,15 +26,13 @@ export const RadioGroup = ({
 
   return (
     <div {...restProps} className={groupClass}>
-      {options.map(({ label, value: optionValue }, idx) => (
+      {options.map(({ label, value: optionValue }) => (
         <Radio
           key={clsx(form, name, label, optionValue)}
           label={label}
           name={name}
           form={form}
-          defaultChecked={
-            optionValue === value || optionValue === defaultValue || idx === 0
-          }
+          defaultChecked={optionValue === value || optionValue === defaultValue}
           onChange={onChange ? () => onChange(optionValue) : undefined}
           value={optionValue}
           color={color}
