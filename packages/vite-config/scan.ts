@@ -6,7 +6,7 @@ import { extname, relative, resolve } from "path";
 // https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma#split-up-the-css
 export const createInputEntries = (dirname: string) => {
   const files = globSync(`${resolve(dirname)}/lib/**/*.{ts,tsx}`, {
-    ignore: `${resolve(dirname)}/lib/*/types.ts`,
+    ignore: `${resolve(dirname)}/lib/**/types.ts`,
   });
   return Object.fromEntries(
     files.map((file) => [
