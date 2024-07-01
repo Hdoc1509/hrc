@@ -20,6 +20,11 @@
 
   @include color-variants(hrc.$colors);
 
+  &--disabled {
+    pointer-events: none;
+    --_checked-color: currentColor;
+    color: var(--radio-color-disabled, rgba(0, 0, 0, 0.4));
+  }
   &__inner {
     grid-area: 1 / 1;
     margin: 0;
