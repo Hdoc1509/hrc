@@ -15,8 +15,13 @@ export function RadioColors() {
   return (
     <>
       {colors.map((color) => (
-        <div key={`checkbox-${color}`}>
-          <Radio color={color} label={`${toTitleCase(color)}`} defaultChecked />
+        <div key={`radio-colors-${color}`}>
+          <Radio
+            name={`radio-colors-${color}`}
+            color={color}
+            label={`${toTitleCase(color)}`}
+            defaultChecked
+          />
         </div>
       ))}
     </>
