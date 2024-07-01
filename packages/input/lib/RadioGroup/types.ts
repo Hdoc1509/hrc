@@ -4,11 +4,10 @@ import { RadioProps } from "../Radio/types";
 export type RadioGroupProps = Simplify<
   {
     options: RadioOption[];
-    name: string;
     value?: string;
     onChange?: (value: string) => void;
     row?: boolean;
-  } & Pick<RadioProps, "color" | "form" | "defaultValue"> &
+  } & Pick<RadioProps, "color" | "form" | "name" | "defaultValue"> &
     Omit<React.ComponentProps<"div">, "onChange" | "defaultValue">
 >;
 
