@@ -33,9 +33,9 @@ export const RadioGroup = ({
           name={name}
           form={form}
           defaultChecked={
-            label === value || label === defaultValue || idx === 0
+            optionValue === value || optionValue === defaultValue || idx === 0
           }
-          onChange={onChange ? () => onChange(label) : undefined}
+          onChange={onChange ? () => onChange(optionValue) : undefined}
           value={optionValue}
           color={color}
         />
