@@ -3,6 +3,7 @@ import { InputDemo } from "./components/InputDemo";
 import { TextareaDemo } from "./components/TextareaDemo";
 import { CheckboxDemo } from "./components/CheckboxDemo";
 import { RadioDemo } from "./components/RadioDemo";
+import { RadioGroupDemo } from "./components/RadioGroupDemo";
 import "./App.css";
 import "./demos.css";
 
@@ -20,6 +21,7 @@ function App() {
       <TextareaDemo />
       <CheckboxDemo />
       <RadioDemo />
+      <RadioGroupDemo />
     </>
   );
 }
