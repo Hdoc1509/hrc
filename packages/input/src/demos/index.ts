@@ -25,3 +25,4 @@ export { RadioDisabled } from "./radio/disabled";
 export { RadioSizes } from "./radio/size";
 
 export { RadioGroupDefault } from "./radio-group/default";
+export { RadioGroupColors } from "./radio-group/colors";
