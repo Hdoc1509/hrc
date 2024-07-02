@@ -3,4 +3,4 @@ export { Textarea } from "./Textarea";
 export { Checkbox } from "./Checkbox";
 export { Radio } from "./Radio";
 export { RadioGroup } from "./RadioGroup";
-export type { RadioOption } from "./RadioGroup/types";
+export type { RadioOption, RadioGroupOption } from "./RadioGroup/types";

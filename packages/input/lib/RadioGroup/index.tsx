@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import { Radio } from "../Radio";
-import { RadioGroupProps } from "./types";
+import { RadioGroupProps, RadioOption } from "./types";
 import "./style.scss";
 
-export const RadioGroup = ({
+export const RadioGroup = <T extends RadioOption>({
   options,
   name,
   form,
@@ -15,7 +15,7 @@ export const RadioGroup = ({
   row,
   onChange,
   ...restProps
-}: RadioGroupProps) => {
+}: RadioGroupProps<T>) => {
   const groupClass = clsx(
     "radio-group",
     {
