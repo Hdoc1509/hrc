@@ -26,3 +26,4 @@ export { RadioSizes } from "./radio/size";
 
 export { RadioGroupDefault } from "./radio-group/default";
 export { RadioGroupColors } from "./radio-group/colors";
+export { RadioGroupRow } from "./radio-group/row";
