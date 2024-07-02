@@ -1,7 +1,10 @@
 export type Theme = "light" | "dark";
 
 export const getTheme = (): Theme => {
-  const savedTheme = localStorage.getItem("theme");
+  const savedTheme = (() => {
+    if (typeof localStorage !== "undefined")
+      return localStorage.getItem("theme");
+  })();
 
   if (savedTheme === "light" || savedTheme === "dark") {
     return savedTheme;
@@ -16,7 +19,7 @@ export const getTheme = (): Theme => {
 };
 
 export const saveTheme = (theme: Theme) => {
-  localStorage.setItem("theme", theme);
+  window.localStorage.setItem("theme", theme);
 };
 
 export const applyTheme = (theme: Theme) => {
