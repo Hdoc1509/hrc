@@ -7,7 +7,7 @@ export type RadioGroupProps = Simplify<
     value?: string;
     onChange?: (value: string) => void;
     row?: boolean;
-  } & Pick<RadioProps, "color" | "form" | "name" | "defaultValue"> &
+  } & Pick<RadioProps, "color" | "form" | "name" | "defaultValue" | "size"> &
     Omit<React.ComponentProps<"div">, "onChange" | "defaultValue">
 >;
 

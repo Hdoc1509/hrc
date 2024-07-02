@@ -11,6 +11,7 @@ export const RadioGroup = ({
   defaultValue,
   className,
   color,
+  size,
   row,
   onChange,
   ...restProps
@@ -36,6 +37,7 @@ export const RadioGroup = ({
           onChange={onChange ? () => onChange(optionValue) : undefined}
           value={optionValue}
           color={color}
+          size={size}
         />
       ))}
     </div>
