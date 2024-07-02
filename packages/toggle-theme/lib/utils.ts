@@ -34,3 +34,7 @@ export const toggleTheme = (): Theme => {
 
   return newTheme;
 };
+
+export const loadTheme = () => {
+  applyTheme(getTheme());
+};
