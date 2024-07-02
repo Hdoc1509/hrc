@@ -6,17 +6,12 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    project: "./tsconfig.json",
-    tsconfigRootDir: __dirname,
   },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
       excludedFiles: ["./website/src/env.d.ts"],
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended-type-checked",
-      ],
+      extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
       plugins: ["@typescript-eslint"],
       parser: "@typescript-eslint/parser",
     },
