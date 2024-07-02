@@ -17,6 +17,10 @@ export const RadioGroupDemo = () => {
         <h3>Row</h3>
         <Demos.RadioGroupRow />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={1}>
+        <h3>Controlled</h3>
+        <Demos.RadioGroupControlled />
+      </DemoDocs>
     </DemoDocs>
   );
 };
