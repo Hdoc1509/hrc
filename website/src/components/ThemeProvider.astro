@@ -1,1 +1,25 @@
-<script is:inline type="module" src="https://cdn.jsdelivr.net/npm/@hrc/toggle-theme@2.2.0/dist/load-theme.js" crossorigin="anonymous"></script>
+<!--
+Taken from:
+https://docs.astro.build/en/tutorial/6-islands/2/#add-client-side-interactivity
+-->
+<!--
+TODO:
+  - add this script as an Astro component to @hrc/toggle-theme
+  OR
+  - adapt this script to work with @hrc/toggle-theme
+-->
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  })();
+
+  document.documentElement.dataset.theme = theme;
+
+  window.localStorage.setItem('theme', theme);
+</script>
