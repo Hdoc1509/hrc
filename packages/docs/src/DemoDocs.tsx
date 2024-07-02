@@ -2,7 +2,7 @@ import clsx from "clsx";
 import "./DemoDocs.scss";
 
 const TitleComponent = ({ name }: { name: string }) => {
-  return <h2>&lt;{name} /&gt; Demo</h2>;
+  return <h2>{`<${name} /> Demo`}</h2>;
 };
 
 type Props = (
