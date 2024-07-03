@@ -43,6 +43,18 @@ components.
      src="node_modules/@hrc/toggle-theme/dist/load-theme.js"
    ></script>
    ```
+
+   If you are using [Astro](https://astro.build/), you can use `loadTheme` util
+   in your layout:
+
+   ```astro
+   <script>
+     import { loadTheme } from "@hrc/toggle-theme";
+
+     loadTheme();
+   </script>
+   ```
+
 2. Then use the component in your project:
 
    <Code code={demoCode} lang="jsx" />
