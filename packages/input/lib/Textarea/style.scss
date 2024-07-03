@@ -32,12 +32,12 @@
     outline-color: var(--textarea-border-color-focus, #{hrc.$primary});
   }
 
-  &--error,
-  &--error:hover,
-  &--error:focus {
+  &--with-error,
+  &--with-error:hover,
+  &--with-error:focus {
     --textarea-border-color: var(--error, #{hrc.$error});
   }
-  &--error:focus {
+  &--with-error:focus {
     outline-color: var(--error, #{hrc.$error});
   }
 

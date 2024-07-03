@@ -19,7 +19,7 @@ export const Textarea = ({
   const textareaClass = clsx(
     "textarea",
     {
-      "textarea--error": error,
+      "textarea--with-error": error,
       "textarea--fullwidth": fullWidth,
     },
     className,
