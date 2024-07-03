@@ -9,6 +9,7 @@ export const Textarea = ({
   labelClassName,
   className,
   error,
+  color,
   helperText,
   fullWidth,
   required,
@@ -21,6 +22,7 @@ export const Textarea = ({
     {
       "textarea--with-error": error,
       "textarea--fullwidth": fullWidth,
+      [`textarea--${color}`]: color,
     },
     className,
   );

@@ -1,6 +1,17 @@
 @use "@hrc/sass-utils" as hrc;
 @use "@scss/colors" as *;
 
+@mixin color-variants($colors) {
+  @each $color, $_ in $colors {
+    &--#{$color} {
+      --textarea-border-color-focus: var(
+        --#{$color},
+        #{map-get($colors, $color, main)}
+      );
+    }
+  }
+}
+
 .textarea {
   // TODO: Use internal css variables as in @hrc/spinner
   width: 200px;
@@ -31,6 +42,8 @@
     );
     outline-color: var(--textarea-border-color-focus, #{hrc.$primary});
   }
+
+  @include color-variants(hrc.$colors);
 
   &--with-error,
   &--with-error:hover,
