@@ -1,4 +1,4 @@
-import { Simplify } from "@hrc/type-utils";
+import { Color, Simplify } from "@hrc/type-utils";
 
 export type InputProps = Simplify<
   Partial<{
@@ -8,6 +8,7 @@ export type InputProps = Simplify<
     helperText: string;
     fullWidth: boolean;
     size: "small";
+    color: Color;
     iconStart: React.ReactNode;
     iconEnd: React.ReactNode;
   }> &

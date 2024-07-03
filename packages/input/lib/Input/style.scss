@@ -1,6 +1,17 @@
 @use "@hrc/sass-utils" as hrc;
 @use "@scss/colors" as *;
 
+@mixin color-variants($colors) {
+  @each $color, $_ in $colors {
+    &--#{$color} {
+      --input-border-color-focus: var(
+        --#{$color},
+        #{map-get($colors, $color, main)}
+      );
+    }
+  }
+}
+
 .input {
   // TODO: Use internal css variables as in @hrc/spinner
   display: flex;
@@ -27,6 +38,8 @@
     --input-border-color: var(--input-border-color-focus, #{hrc.$primary});
     outline-color: var(--input-border-color-focus, #{hrc.$primary});
   }
+
+  @include color-variants(hrc.$colors);
 
   &--with-error,
   &--with-error:hover,
