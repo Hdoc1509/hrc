@@ -28,12 +28,12 @@
     outline-color: var(--input-border-color-focus, #{hrc.$primary});
   }
 
-  &--error,
-  &--error:hover,
-  &--error:focus-within {
+  &--with-error,
+  &--with-error:hover,
+  &--with-error:focus-within {
     --input-border-color: var(--error, #{hrc.$error});
   }
-  &--error:focus-within {
+  &--with-error:focus-within {
     outline-color: var(--error, #{hrc.$error});
   }
 

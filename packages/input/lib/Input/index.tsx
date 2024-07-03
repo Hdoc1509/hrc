@@ -20,7 +20,7 @@ export const Input = ({
   const inputWrapperClass = clsx(
     "input",
     {
-      "input--error": error,
+      "input--with-error": error,
       "input--disabled": disabled,
       [`input--${size}`]: size,
       "input--fullwidth": fullWidth,
