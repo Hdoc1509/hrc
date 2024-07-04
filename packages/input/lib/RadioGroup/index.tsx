@@ -15,9 +15,10 @@ export const RadioGroup = <T extends RadioOption>({
   color,
   size,
   row,
+  children,
   onChange,
   ...restProps
-}: RadioGroupProps<T>) => {
+}: React.PropsWithChildren<RadioGroupProps<T>>) => {
   const groupClass = clsx(
     "radio-group",
     {
@@ -43,13 +44,14 @@ export const RadioGroup = <T extends RadioOption>({
   return (
     <RadioGroupContext.Provider value={groupContext}>
       <div {...restProps} className={groupClass}>
-        {options.map(({ label, value: optionValue }) => (
-          <Radio
-            key={clsx(form, name, label, optionValue)}
-            label={label}
-            value={optionValue}
-          />
-        ))}
+        {children ??
+          options?.map(({ label, value: optionValue }) => (
+            <Radio
+              key={clsx(form, name, label, optionValue)}
+              label={label}
+              value={optionValue}
+            />
+          ))}
       </div>
     </RadioGroupContext.Provider>
   );

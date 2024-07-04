@@ -3,7 +3,7 @@ import { RadioProps } from "../Radio/types";
 
 export type RadioGroupProps<T extends RadioOption> = Simplify<
   {
-    options: readonly T[];
+    options?: readonly T[];
     name: string;
     value?: T["value"];
     defaultValue?: T["value"];
