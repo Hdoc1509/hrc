@@ -20,6 +20,7 @@ export function RadioColors() {
             name={`radio-colors-${color}`}
             color={color}
             label={`${toTitleCase(color)}`}
+            value={color}
             defaultChecked
           />
         </div>
