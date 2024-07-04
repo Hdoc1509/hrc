@@ -32,7 +32,8 @@ export const RadioGroup = <T extends RadioOption>({
       name,
       value,
       defaultValue,
-      onChange,
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
+        onChange?.(e.target.value),
       color,
       size,
     }),
@@ -46,15 +47,7 @@ export const RadioGroup = <T extends RadioOption>({
           <Radio
             key={clsx(form, name, label, optionValue)}
             label={label}
-            name={name}
-            form={form}
-            defaultChecked={
-              optionValue === value || optionValue === defaultValue
-            }
-            onChange={onChange ? () => onChange(optionValue) : undefined}
             value={optionValue}
-            color={color}
-            size={size}
           />
         ))}
       </div>
