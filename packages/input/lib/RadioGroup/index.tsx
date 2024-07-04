@@ -19,7 +19,6 @@ export const RadioGroup = <T extends RadioOption>({
   const groupClass = clsx(
     "radio-group",
     {
-      [`radio-group--${color}`]: color,
       "radio-group--row": row,
     },
     className,
