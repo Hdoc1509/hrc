@@ -1,5 +1,7 @@
+import { useMemo } from "react";
 import clsx from "clsx";
 import { Radio } from "../Radio";
+import { RadioGroupContext } from "./context";
 import { RadioGroupProps, RadioOption } from "./types";
 import "./style.scss";
 
@@ -24,21 +26,38 @@ export const RadioGroup = <T extends RadioOption>({
     className,
   );
 
+  const groupContext = useMemo(
+    () => ({
+      form,
+      name,
+      value,
+      defaultValue,
+      onChange,
+      color,
+      size,
+    }),
+    [color, defaultValue, form, name, onChange, size, value],
+  );
+
   return (
-    <div {...restProps} className={groupClass}>
-      {options.map(({ label, value: optionValue }) => (
-        <Radio
-          key={clsx(form, name, label, optionValue)}
-          label={label}
-          name={name}
-          form={form}
-          defaultChecked={optionValue === value || optionValue === defaultValue}
-          onChange={onChange ? () => onChange(optionValue) : undefined}
-          value={optionValue}
-          color={color}
-          size={size}
-        />
-      ))}
-    </div>
+    <RadioGroupContext.Provider value={groupContext}>
+      <div {...restProps} className={groupClass}>
+        {options.map(({ label, value: optionValue }) => (
+          <Radio
+            key={clsx(form, name, label, optionValue)}
+            label={label}
+            name={name}
+            form={form}
+            defaultChecked={
+              optionValue === value || optionValue === defaultValue
+            }
+            onChange={onChange ? () => onChange(optionValue) : undefined}
+            value={optionValue}
+            color={color}
+            size={size}
+          />
+        ))}
+      </div>
+    </RadioGroupContext.Provider>
   );
 };
