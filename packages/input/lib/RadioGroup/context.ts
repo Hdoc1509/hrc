@@ -1,12 +1,10 @@
 import { createContext, useContext } from "react";
-import { RadioProps } from "../Radio/types";
 import { RadioGroupProps, RadioOption } from "./types";
 
 export type RadioGroupContextValue = Pick<
   RadioGroupProps<RadioOption>,
-  "form" | "name" | "value" | "defaultValue" | "color" | "size"
-> &
-  Pick<RadioProps, "onChange">;
+  "form" | "name" | "value" | "defaultValue" | "onChange" | "color" | "size"
+>;
 
 export const RadioGroupContext = createContext<RadioGroupContextValue | null>(
   null,

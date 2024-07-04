@@ -50,7 +50,7 @@ export const Radio = ({
           name={name ?? group?.name}
           form={form ?? group?.form}
           value={value}
-          onChange={onChange ?? group?.onChange}
+          onChange={onChange ?? ((e) => group?.onChange?.(e.target.value))}
           defaultChecked={isDefaultChecked}
         />
         <span className="radio__icon">

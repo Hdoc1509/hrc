@@ -33,8 +33,7 @@ export const RadioGroup = <T extends RadioOption>({
       name,
       value,
       defaultValue,
-      onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
-        onChange?.(e.target.value),
+      onChange,
       color,
       size,
     }),
