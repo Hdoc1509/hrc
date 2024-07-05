@@ -25,6 +25,10 @@ export const RadioGroupDemo = () => {
         <h3>Type-safe</h3>
         <Demos.RadioGroupTypeSafe />
       </DemoDocs>
+      <DemoDocs layout="grid" cols={2}>
+        <h3>{`<Radio /> children`}</h3>
+        <Demos.RadioGroupRadioChildren />
+      </DemoDocs>
     </DemoDocs>
   );
 };

@@ -29,3 +29,4 @@ export { RadioGroupColors } from "./radio-group/colors";
 export { RadioGroupRow } from "./radio-group/row";
 export { RadioGroupControlled } from "./radio-group/controlled";
 export { RadioGroupTypeSafe } from "./radio-group/type-safe";
+export { RadioGroupRadioChildren } from "./radio-group/radio-children";
