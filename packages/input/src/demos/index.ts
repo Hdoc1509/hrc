@@ -18,13 +18,13 @@ export { TextareaAutosize } from "./textarea/autosize";
 export { CheckboxDefault } from "./checkbox/default";
 export { CheckboxColors } from "./checkbox/colors";
 export { CheckboxDisabled } from "./checkbox/disabled";
-export { CheckboxSizes } from "./checkbox/size";
+export { CheckboxSizes } from "./checkbox/sizes";
 export { CheckboxIcon } from "./checkbox/icon";
 
 export { RadioDefault } from "./radio/default";
 export { RadioColors } from "./radio/colors";
 export { RadioDisabled } from "./radio/disabled";
-export { RadioSizes } from "./radio/size";
+export { RadioSizes } from "./radio/sizes";
 
 export { RadioGroupDefault } from "./radio-group/default";
 export { RadioGroupColors } from "./radio-group/colors";
