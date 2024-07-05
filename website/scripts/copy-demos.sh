@@ -1,7 +1,6 @@
 demos_dir=./src/demos
 # demos_dir=./demos-test
-# PKGS=(button input material-icons spinner toggle-theme)
-PKGS=(button material-icons spinner toggle-theme)
+PKGS=(button input material-icons spinner toggle-theme)
 last_pkg="${PKGS[-1]}"
 
 for pkg in "${PKGS[@]}"; do
