@@ -4,14 +4,14 @@ export function TextareaWithError() {
   return (
     <>
       <Textarea
-        label="Error"
+        label="With error"
         placeholder="Hello world"
         helperText="Invalid entry"
         required
         error
       />
       <Textarea
-        label="Error (disabled)"
+        label="With error (disabled)"
         placeholder="Hello world"
         helperText="Helper text"
         disabled
