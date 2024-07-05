@@ -1,4 +1,4 @@
-import { RadioGroup } from "@lib/RadioGroup";
+import { RadioGroup } from "@lib/main";
 
 export const RadioGroupDefault = () => {
   return (
