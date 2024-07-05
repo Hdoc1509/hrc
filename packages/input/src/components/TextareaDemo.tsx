@@ -10,6 +10,10 @@ export const TextareaDemo = () => {
         <Demos.TextareaDefault />
       </DemoDocs>
       <DemoDocs>
+        <h3>Colors</h3>
+        <Demos.TextareaColors />
+      </DemoDocs>
+      <DemoDocs>
         <h3>Autosize</h3>
         <Demos.TextareaAutosize />
       </DemoDocs>
