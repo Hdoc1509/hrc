@@ -1,8 +1,8 @@
 @use "@hrc/sass-utils" as hrc;
-@use "../Checkbox/style.scss" as *; // mixin color-variants
+@use "../Checkbox/style" as *; // mixin color-variants
 
 .radio {
-  --_checked-color: var(--radio-checked-color, currentColor);
+  --_checked-color: var(--radio-checked-color, #{hrc.$primary});
   display: grid;
   place-items: center;
 
