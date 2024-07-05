@@ -12,7 +12,7 @@
   font-weight: var(--label-font-weight, 400);
   color: var(--label-text, $label-text);
 
-  &:focus-within:not(&--row) {
+  &:focus-within:not(&--checkbox, &--radio) {
     --label-text: var(--label-text-focus, #{hrc.$primary});
   }
 
