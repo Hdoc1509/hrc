@@ -1,4 +1,4 @@
-import { RadioGroup } from "@lib/RadioGroup";
+import { RadioGroup } from "@hrc/input";
 
 export const RadioGroupDefault = () => {
   return (
