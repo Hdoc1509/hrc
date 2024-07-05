@@ -23,9 +23,9 @@
   --label-text-focus: #769aff;
   --placeholder-color: #fff;
   --input-text: #fff;
-  --input-bg-disabled: transparent;
   --input-border-color-hover: #fff;
   --input-border-color-disabled: rgba(255, 255, 255, 0.3);
+  --textarea-border-color-hover: #fff;
 }
 
 body {
