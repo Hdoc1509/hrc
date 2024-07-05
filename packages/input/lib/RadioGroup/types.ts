@@ -15,5 +15,8 @@ export type RadioGroupProps<T extends RadioOption, V extends string> = Simplify<
 
 export type RadioOption = { label: string; value: string };
 
-export type RadioGroupOption<T extends readonly RadioOption[]> =
-  T[number]["value"];
+export type RadioGroupOption<T> = T extends readonly RadioOption[]
+  ? T[number]["value"]
+  : T extends Record<string, string>
+  ? T[keyof T]
+  : never;
