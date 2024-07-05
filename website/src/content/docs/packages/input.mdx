@@ -4,14 +4,17 @@ description: Package for input components of <hrc />
 ---
 
 import { Code } from "@astrojs/starlight/components";
-import { InstallCommand } from "@components";
+import { Demo, InstallCommand } from "@components";
+import { PackageDemo } from "@demos/input";
+import demoCode from '@demos/input/package.tsx?raw';
 import pkg from "@hrc/input/package.json";
+import "@hrc/input/src/demos.css";
 
 <p>{pkg.description}</p>
 
-_Demo here_
-
-{/* TODO: Put demo as jsx from @hrc/input */}
+<Demo layout="grid" cols={1} className="package-demo">
+  <PackageDemo client:load />
+</Demo>
 
 > Demo generated with code from [Usage](#usage) section
 
@@ -21,7 +24,7 @@ _Demo here_
 
 ## Usage
 
-<Code code="// code deme here" lang="jsx" />
+<Code code={demoCode} lang="jsx" />
 
 ## Demos
 
@@ -29,6 +32,8 @@ For examples and details on the usage of the components, see the demo pages:
 
 - [Checkbox](/hrc/components/checkbox)
 - [Input](/hrc/components/input)
+- [Radio](/hrc/components/radio)
+- [RadioGroup](/hrc/components/radio-group)
 - [Textarea](/hrc/components/textarea)
 
 ## API
@@ -38,4 +43,6 @@ variables (custom properties) available for input components:
 
 - [`<Checkbox />`](/hrc/api/checkbox)
 - [`<Input />`](/hrc/api/input)
+- [`<Radio />`](/hrc/api/radio)
+- [`<RadioGroup />`](/hrc/api/radio-group)
 - [`<Textarea />`](/hrc/api/textarea)
