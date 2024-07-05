@@ -45,3 +45,15 @@
 .checkbox-disabled :nth-child(6) {
   grid-column: 1 / -1;
 }
+
+[data-theme="dark"] {
+  /* Custom colors */
+  --label-text: #ddd;
+  --label-text-hover: #fff;
+  --label-text-focus: #769aff;
+  --checkbox-color: #fff;
+  --input-text: #fff;
+  --input-border-color-hover: #fff;
+  --input-border-color-disabled: rgba(255, 255, 255, 0.3);
+  --textarea-border-color-hover: #fff;
+}

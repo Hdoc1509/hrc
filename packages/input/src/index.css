@@ -16,16 +16,6 @@
 [data-theme="dark"] {
   --color-bg: #242424;
   --color-text: #fff;
-
-  /* Custom colors */
-  --label-text: #ddd;
-  --label-text-hover: #fff;
-  --label-text-focus: #769aff;
-  --placeholder-color: #fff;
-  --input-text: #fff;
-  --input-border-color-hover: #fff;
-  --input-border-color-disabled: rgba(255, 255, 255, 0.3);
-  --textarea-border-color-hover: #fff;
 }
 
 body {
