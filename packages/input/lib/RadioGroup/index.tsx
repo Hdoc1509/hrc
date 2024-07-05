@@ -9,6 +9,7 @@ export const RadioGroup = <T extends RadioOption, V extends string>({
   options,
   name,
   form,
+  disabled,
   value,
   defaultValue,
   className,
@@ -30,6 +31,7 @@ export const RadioGroup = <T extends RadioOption, V extends string>({
   const groupContext = useMemo(
     () => ({
       form,
+      disabled,
       name,
       value,
       defaultValue,
@@ -37,7 +39,7 @@ export const RadioGroup = <T extends RadioOption, V extends string>({
       color,
       size,
     }),
-    [color, defaultValue, form, name, onChange, size, value],
+    [color, defaultValue, form, name, onChange, size, value, disabled],
   );
 
   return (

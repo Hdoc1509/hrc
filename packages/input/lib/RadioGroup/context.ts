@@ -4,7 +4,14 @@ import { RadioGroupProps, RadioOption } from "./types";
 export type RadioGroupContextValue = Pick<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   RadioGroupProps<RadioOption, any>,
-  "form" | "name" | "value" | "defaultValue" | "onChange" | "color" | "size"
+  | "form"
+  | "name"
+  | "value"
+  | "defaultValue"
+  | "onChange"
+  | "color"
+  | "size"
+  | "disabled"
 >;
 
 export const RadioGroupContext = createContext<RadioGroupContextValue | null>(
