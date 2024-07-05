@@ -1,13 +1,13 @@
 import { Simplify } from "@hrc/type-utils";
 import { RadioProps } from "../Radio/types";
 
-export type RadioGroupProps<T extends RadioOption> = Simplify<
+export type RadioGroupProps<T extends RadioOption, V extends string> = Simplify<
   {
     options?: readonly T[];
     name: string;
-    value?: T["value"];
+    value?: V;
     defaultValue?: T["value"];
-    onChange?: (value: T["value"]) => void;
+    onChange?: (value: V) => void;
     row?: boolean;
   } & Pick<RadioProps, "color" | "form" | "size"> &
     Omit<React.ComponentProps<"div">, "onChange" | "defaultValue">

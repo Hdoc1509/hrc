@@ -5,7 +5,7 @@ import { RadioGroupContext } from "./context";
 import { RadioGroupProps, RadioOption } from "./types";
 import "./style.scss";
 
-export const RadioGroup = <T extends RadioOption>({
+export const RadioGroup = <T extends RadioOption, V extends string>({
   options,
   name,
   form,
@@ -18,7 +18,7 @@ export const RadioGroup = <T extends RadioOption>({
   children,
   onChange,
   ...restProps
-}: React.PropsWithChildren<RadioGroupProps<T>>) => {
+}: React.PropsWithChildren<RadioGroupProps<T, V>>) => {
   const groupClass = clsx(
     "radio-group",
     {
