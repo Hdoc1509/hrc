@@ -8,10 +8,10 @@ import "./style.scss";
 export const Radio = ({
   label,
   labelClassName,
-  size,
-  color,
+  size: sizeProp,
+  color: colorProp,
   className,
-  disabled,
+  disabled: disabledProp,
   required,
   name,
   form,
@@ -22,7 +22,9 @@ export const Radio = ({
 }: RadioProps) => {
   const group = useRadioGroupContext();
 
-  const isDisabled = disabled ?? group?.disabled;
+  const size = sizeProp ?? group?.size;
+  const color = colorProp ?? group?.color;
+  const disabled = disabledProp ?? group?.disabled;
   let isDefaultChecked = defaultChecked;
 
   if ((group?.defaultValue != null || group?.value != null) && value != null) {
@@ -32,15 +34,15 @@ export const Radio = ({
   const wrapperClass = clsx(
     "radio",
     {
-      [`radio--${size ?? group?.size}`]: size ?? group?.size,
-      "radio--disabled": isDisabled,
-      [`radio--${color ?? group?.color}`]: color ?? group?.color,
+      [`radio--${size}`]: size,
+      "radio--disabled": disabled,
+      [`radio--${color}`]: color,
     },
     className,
   );
 
   return (
-    <Label disabled={isDisabled} className={labelClassName} radio>
+    <Label disabled={disabled} className={labelClassName} radio>
       <span className={wrapperClass}>
         <input
           {...restProps}
