@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { Label } from "../Label";
 import { InputProps } from "./types";
-import "./style.scss"
+import "./style.scss";
 
 export const Input = ({
   label,
@@ -31,7 +31,12 @@ export const Input = ({
   );
 
   return (
-    <Label error={error} fullwidth={fullWidth} className={labelClassName}>
+    <Label
+      color={color}
+      error={error}
+      fullwidth={fullWidth}
+      className={labelClassName}
+    >
       {required && label ? `${label} *` : label}
       <div className={inputWrapperClass}>
         {iconStart}

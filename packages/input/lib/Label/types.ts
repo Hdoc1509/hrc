@@ -1,3 +1,5 @@
+import { Color } from "@hrc/type-utils";
+
 export type LabelProps = {
   className?: string;
   error?: boolean;
@@ -6,4 +8,5 @@ export type LabelProps = {
   radio?: boolean;
   row?: boolean;
   disabled?: boolean;
+  color?: Color;
 };

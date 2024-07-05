@@ -1,6 +1,14 @@
 @use "@hrc/sass-utils" as hrc;
 @use "@scss/colors" as *;
 
+@mixin color-variants($colors) {
+  @each $color, $_ in $colors {
+    &--#{$color}:not(&--checkbox, &--radio) {
+      --label-text-focus: var(--#{$color}, #{map-get($colors, $color, main)});
+    }
+  }
+}
+
 .label {
   // TODO: Use internal css variables as in @hrc/spinner
   display: inline-flex;
@@ -15,6 +23,8 @@
   &:focus-within:not(&--checkbox, &--radio) {
     --label-text: var(--label-text-focus, #{hrc.$primary});
   }
+
+  @include color-variants(hrc.$colors);
 
   &--row {
     align-items: center;
