@@ -22,6 +22,7 @@ export const Radio = ({
 }: RadioProps) => {
   const group = useRadioGroupContext();
 
+  const isDisabled = disabled ?? group?.disabled;
   let isDefaultChecked = defaultChecked;
 
   if ((group?.defaultValue != null || group?.value != null) && value != null) {
@@ -32,14 +33,14 @@ export const Radio = ({
     "radio",
     {
       [`radio--${size ?? group?.size}`]: size ?? group?.size,
-      "radio--disabled": disabled,
+      "radio--disabled": isDisabled,
       [`radio--${color ?? group?.color}`]: color ?? group?.color,
     },
     className,
   );
 
   return (
-    <Label disabled={disabled} className={labelClassName} radio>
+    <Label disabled={isDisabled} className={labelClassName} radio>
       <span className={wrapperClass}>
         <input
           {...restProps}
