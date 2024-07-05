@@ -1,6 +1,7 @@
 export { PackageDemo } from "./package";
 
 export { InputDefault } from "./input/default";
+export { InputColors } from "./input/colors";
 export { InputDisabled } from "./input/disabled";
 export { InputSizes } from "./input/sizes";
 export { InputWithIcons } from "./input/icons";

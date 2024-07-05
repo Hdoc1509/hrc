@@ -10,6 +10,10 @@ export const InputDemo = () => {
         <Demos.InputDefault />
       </DemoDocs>
       <DemoDocs>
+        <h3>Colors</h3>
+        <Demos.InputColors />
+      </DemoDocs>
+      <DemoDocs>
         <h3>Disabled</h3>
         <Demos.InputDisabled />
       </DemoDocs>
