@@ -15,7 +15,7 @@ export const Label = ({
   const labelClass = clsx(
     "label",
     {
-      "label--error": error,
+      "label--with-error": error,
       "label--fullwidth": fullwidth,
       "label--row": checkbox ?? radio ?? row,
       "label--checkbox": checkbox,
