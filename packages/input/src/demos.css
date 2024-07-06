@@ -49,8 +49,6 @@
   --secondary: #648391;
 
   /* Custom colors */
-  --icon-color: var(--text);
-
   --label-text: var(--text);
   --label-text-hover: var(--text);
   --label-text-focus: var(--text-focus);
