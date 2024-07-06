@@ -55,6 +55,7 @@
   --label-text-disabled: var(--text-disabled);
 
   --checkbox-color: var(--text);
+  --checkbox-color-disabled: var(--text-disabled);
 
   --radio-color: var(--text);
   --radio-color-disabled: var(--text-disabled);
