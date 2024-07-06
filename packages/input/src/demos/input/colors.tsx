@@ -15,16 +15,15 @@ export function InputColors() {
   return (
     <>
       {colors.map((color) => (
-        <div key={`input-${color}`}>
-          <Input
-            color={color}
-            label={`${toTitleCase(color)}`}
-            placeholder="Hello world"
-            // the following classnames are only for demo purposes
-            className="input--focused"
-            labelClassName="label--focused"
-          />
-        </div>
+        <Input
+          key={`input-${color}`}
+          color={color}
+          label={`${toTitleCase(color)}`}
+          placeholder="Hello world"
+          // the following classnames are only for demo purposes
+          className="input--focused"
+          labelClassName="label--focused"
+        />
       ))}
     </>
   );
