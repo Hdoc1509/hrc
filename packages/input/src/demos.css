@@ -1,3 +1,8 @@
+.demo-docs--grid.with-toggle > label:not([class]) {
+  grid-column: 1 / -1;
+  /* text-align: center; */
+}
+
 .package-demo.demo-docs {
   grid-template-columns: unset;
   gap: 8px;
@@ -27,19 +32,14 @@
   color: var(--label-text-focus);
 }
 
-.checkbox-default .label--row {
-  margin-inline: auto;
-}
 .checkbox-default :nth-last-child(-n + 2) {
   grid-column: 1 / -1;
 }
-
+.checkbox-default > *,
 .checkbox-disabled > *,
 .radio-disabled > * {
   margin-inline: auto;
 }
-.checkbox-disabled label:not([class]),
-.radio-disabled label:not([class]),
 .checkbox-disabled :nth-last-child(-n + 2) {
   grid-column: 1 / -1;
 }

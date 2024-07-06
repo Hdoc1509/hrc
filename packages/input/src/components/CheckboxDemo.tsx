@@ -13,7 +13,11 @@ export const CheckboxDemo = () => {
         <h3>Colors</h3>
         <Demos.CheckboxColors />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={2} className="checkbox-disabled">
+      <DemoDocs
+        layout="grid"
+        cols={2}
+        className="checkbox-disabled with-toggle"
+      >
         <h3>Disabled</h3>
         <Demos.CheckboxDisabled />
       </DemoDocs>

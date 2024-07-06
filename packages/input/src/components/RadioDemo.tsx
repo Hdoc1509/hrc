@@ -13,7 +13,7 @@ export const RadioDemo = () => {
         <h3>Colors</h3>
         <Demos.RadioColors />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={2} className="radio-disabled">
+      <DemoDocs layout="grid" cols={2} className="radio-disabled with-toggle">
         <h3>Disabled</h3>
         <Demos.RadioDisabled />
       </DemoDocs>
