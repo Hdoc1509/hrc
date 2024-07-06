@@ -32,8 +32,7 @@
 }
 
 .checkbox-default > *,
-.checkbox-disabled > *,
-.radio-disabled > * {
+.checkbox-disabled > * {
   margin-inline: auto;
 }
 .checkbox-default :nth-last-child(-n + 2),

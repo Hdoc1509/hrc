@@ -5,7 +5,7 @@ export const RadioDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="Radio" />
-      <DemoDocs layout="grid" cols={2} className="radio-default">
+      <DemoDocs>
         <h3>Default</h3>
         <Demos.RadioDefault />
       </DemoDocs>
@@ -13,7 +13,7 @@ export const RadioDemo = () => {
         <h3>Colors</h3>
         <Demos.RadioColors />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={2} className="radio-disabled with-toggle">
+      <DemoDocs>
         <h3>Disabled</h3>
         <Demos.RadioDisabled />
       </DemoDocs>
