@@ -15,19 +15,19 @@
   width: 100%;
 }
 
-.input--focused {
+.input--focused.input--focused {
   --_focus: var(--input-border-color-focus);
 }
 .textarea--focused {
   --_focus: var(--textarea-border-color-focus);
 }
-.input--focused,
+.input--focused.input--focused,
 .textarea--focused {
   border-color: var(--_focus);
   outline-color: var(--_focus);
 }
 
-.label--focused {
+.label--focused.label--focused {
   color: var(--label-text-focus);
 }
 
