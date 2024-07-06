@@ -15,6 +15,7 @@ export const RadioGroupTypeSafe = () => {
 
   return (
     <>
+      <p><strong>Controlled</strong></p>
       <RadioGroup
         name="radio-group-type-safe-controlled"
         options={options}
@@ -22,6 +23,7 @@ export const RadioGroupTypeSafe = () => {
         // also you'll have type checking for `onChange`
         onChange={setAction}
       />
+      <p><strong>Uncontrolled</strong></p>
       <RadioGroup
         name="radio-group-type-safe-uncontrolled"
         options={options}

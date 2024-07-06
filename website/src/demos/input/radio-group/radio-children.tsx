@@ -5,7 +5,8 @@ const NAMES = {
   CONTROLLED: "radio-group-children-controlled",
   UNCONTROLLED: "radio-group-children-uncontrolled",
 };
-// with a HashMap, you ensure using the correct value for `<Radio />` childrens
+// with a HashMap, you ensure using
+// the correct value for `<Radio />` childrens
 const ACTIONS = {
   SHUT_DOWN: "shut-down",
   REBOOT: "reboot",
@@ -19,11 +20,13 @@ export const RadioGroupRadioChildren = () => {
 
   return (
     <>
+      <p><strong>Controlled</strong></p>
       <RadioGroup name={NAMES.CONTROLLED} value={action} onChange={setAction}>
         <Radio label="Shut down" value={ACTIONS.SHUT_DOWN} />
         <Radio label="Reboot" value={ACTIONS.REBOOT} />
         <Radio label="Restart" value={ACTIONS.RESTART} />
       </RadioGroup>
+      <p><strong>Uncontrolled</strong></p>
       <RadioGroup name={NAMES.UNCONTROLLED} defaultValue={ACTIONS.REBOOT}>
         <Radio label="Shut down" value={ACTIONS.SHUT_DOWN} />
         <Radio label="Reboot" value={ACTIONS.REBOOT} />
