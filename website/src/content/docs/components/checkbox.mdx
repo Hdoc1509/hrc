@@ -23,6 +23,8 @@ import "@demos/input/styles.css";
 
 ## Colors
 
+Use the `color` prop to change the color of the checkbox.
+
 <Demo layout="grid" cols={2}>
   <Demos.CheckboxColors />
 </Demo>
@@ -30,6 +32,8 @@ import "@demos/input/styles.css";
 <SourceCode code={colorsCode} title="colors.tsx" />
 
 ## Disabled
+
+Add the `disabled` prop to disable the checkbox.
 
 <Demo layout="grid" cols={2} className="checkbox-disabled with-toggle">
   <Demos.CheckboxDisabled client:load />
@@ -39,6 +43,8 @@ import "@demos/input/styles.css";
 
 ## Sizes
 
+Set the `size` prop to change the size of the checkbox.
+
 <Demo layout="grid" cols={3}>
   <Demos.CheckboxSizes />
 </Demo>
@@ -46,6 +52,8 @@ import "@demos/input/styles.css";
 <SourceCode code={sizesCode} title="sizes.tsx" />
 
 ## Custom icons
+
+You can change the icons of the checkbox using the `icon` and `iconChecked` props.
 
 <Demo layout="grid" cols={2}>
   <Demos.CheckboxIcon client:load />
