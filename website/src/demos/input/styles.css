@@ -1,0 +1,6 @@
+@import "@hrc/input/src/demos.css";
+
+.checkbox-default.checkbox-default > *,
+.checkbox-disabled > astro-island > .label {
+  margin-inline: auto;
+}

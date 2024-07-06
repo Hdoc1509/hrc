@@ -1,0 +1,54 @@
+---
+title: Checkbox
+description: React Checkbox component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo, SourceCode, SourceCodeWithDisabled } from "@components";
+import * as Demos from "@demos/input";
+import defaultCode from "@demos/input/checkbox/default.tsx?raw";
+import colorsCode from "@demos/input/checkbox/colors.tsx?raw";
+import disabledCode from "@demos/input/checkbox/disabled.tsx?raw";
+import sizesCode from "@demos/input/checkbox/sizes.tsx?raw";
+import iconCode from "@demos/input/checkbox/icon.tsx?raw";
+import "@demos/input/styles.css";
+
+## Default checkbox
+
+<Demo layout="grid" cols={2} className="checkbox-default">
+  <Demos.CheckboxDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="default.tsx" />
+
+## Colors
+
+<Demo layout="grid" cols={2}>
+  <Demos.CheckboxColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="colors.tsx" />
+
+## Disabled
+
+<Demo layout="grid" cols={2} className="checkbox-disabled with-toggle">
+  <Demos.CheckboxDisabled client:load />
+</Demo>
+
+<SourceCodeWithDisabled code={disabledCode} title="disabled.tsx" />
+
+## Sizes
+
+<Demo layout="grid" cols={3}>
+  <Demos.CheckboxSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="sizes.tsx" />
+
+## Custom icons
+
+<Demo layout="grid" cols={2}>
+  <Demos.CheckboxIcon client:load />
+</Demo>
+
+<SourceCode code={iconCode} title="icon.tsx" />
