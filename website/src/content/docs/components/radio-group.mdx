@@ -1,0 +1,87 @@
+---
+title: RadioGroup
+description: React RadioGroup component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo, SourceCode, SourceCodeWithDisabled } from "@components";
+import * as Demos from "@demos/input";
+import defaultCode from "@demos/input/radio-group/default.tsx?raw";
+import colorsCode from "@demos/input/radio-group/colors.tsx?raw";
+import disabledCode from "@demos/input/radio-group/disabled.tsx?raw";
+import rowCode from "@demos/input/radio-group/row.tsx?raw";
+import controlledCode from "@demos/input/radio-group/controlled.tsx?raw";
+import typeSafeCode from "@demos/input/radio-group/type-safe.tsx?raw";
+import radioChildrenCode from "@demos/input/radio-group/radio-children.tsx?raw";
+import "@demos/input/styles.css";
+
+## Default radio
+
+<Demo>
+  <Demos.RadioGroupDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the group.
+
+<Demo layout="grid" cols={2}>
+  <Demos.RadioGroupColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="colors.tsx" />
+
+## Disabled
+
+Add the `disabled` prop to disable the group.
+
+<Demo>
+  <Demos.RadioGroupDisabled client:load />
+</Demo>
+
+<SourceCodeWithDisabled code={disabledCode} title="disabled.tsx" />
+
+## Row
+
+Use the `row` prop to display the group in a row.
+
+<Demo>
+  <Demos.RadioGroupRow />
+</Demo>
+
+<SourceCode code={rowCode} title="row.tsx" />
+
+## Controlled
+
+Use the `value` and `onChange` props to control the group.
+
+<Demo>
+  <Demos.RadioGroupControlled />
+</Demo>
+
+<SourceCode code={controlledCode} title="controlled.tsx" />
+
+## Type-safe
+
+The `RadioGroup` component is type-safe by default.
+
+Additionally, you can use the `RadioGroupOption` type utility to type-safe your
+controlled group.
+
+<Demo>
+  <Demos.RadioGroupTypeSafe />
+</Demo>
+
+<SourceCode code={typeSafeCode} title="type-safe.tsx" />
+
+## `<Radio />` children
+
+Use the `Radio` component to have granular control over the group.
+
+<Demo>
+  <Demos.RadioGroupRadioChildren />
+</Demo>
+
+<SourceCode code={radioChildrenCode} title="radio-children.tsx" />
