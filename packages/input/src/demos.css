@@ -54,6 +54,8 @@
   --label-text-focus: var(--text-focus);
   --label-text-disabled: var(--text-disabled);
 
+  --placeholder-disabled: var(--text-disabled);
+
   --checkbox-color: var(--text);
   --checkbox-color-disabled: var(--text-disabled);
 
