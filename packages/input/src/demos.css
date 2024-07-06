@@ -6,7 +6,6 @@
 .package-demo.demo-docs {
   grid-template-columns: unset;
   gap: 8px;
-  justify-content: center;
 }
 .package-demo .input {
   margin-bottom: 8px;
