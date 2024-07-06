@@ -1,0 +1,84 @@
+---
+title: Input
+description: React Input component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo, SourceCode, SourceCodeWithDisabled } from "@components";
+import * as Demos from "@demos/input";
+import defaultCode from "@demos/input/input/default.tsx?raw";
+import colorsCode from "@demos/input/input/colors.tsx?raw";
+import disabledCode from "@demos/input/input/disabled.tsx?raw";
+import errorCode from "@demos/input/input/error.tsx?raw";
+import helperTextCode from "@demos/input/input/helper-text.tsx?raw";
+import iconCode from "@demos/input/input/icons.tsx?raw";
+import sizesCode from "@demos/input/input/sizes.tsx?raw";
+import "@demos/input/styles.css";
+
+## Default input
+
+<Demo>
+  <Demos.InputDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the input.
+
+<Demo>
+  <Demos.InputColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="colors.tsx" />
+
+## Disabled
+
+Add the `disabled` prop to disable the input.
+
+<Demo>
+  <Demos.InputDisabled client:load />
+</Demo>
+
+<SourceCodeWithDisabled code={disabledCode} title="disabled.tsx" />
+
+## Sizes
+
+Set the `size` prop to change the size of the input.
+
+<Demo className="input-sizes">
+  <Demos.InputSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="sizes.tsx" />
+
+## With Icons
+
+You can add icons to the input using the `iconStart` and `iconEnd` props.
+
+<Demo>
+  <Demos.InputWithIcons />
+</Demo>
+
+<SourceCode code={iconCode} title="icons.tsx" />
+
+## With Helper Text
+
+Use the `helperText` prop to add helper text to the input.
+
+<Demo>
+  <Demos.InputWithHelperText />
+</Demo>
+
+<SourceCode code={helperTextCode} title="helper-text.tsx" />
+
+## With Error
+
+Use the `error` prop to indicate an error state.
+
+<Demo>
+  <Demos.InputWithError />
+</Demo>
+
+<SourceCode code={errorCode} title="error.tsx" />
