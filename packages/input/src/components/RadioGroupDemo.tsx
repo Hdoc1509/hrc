@@ -5,7 +5,7 @@ export const RadioGroupDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="RadioGroup" />
-      <DemoDocs layout="grid" cols={2}>
+      <DemoDocs layout="grid" cols={1}>
         <h3>Default</h3>
         <Demos.RadioGroupDefault />
       </DemoDocs>
@@ -25,11 +25,11 @@ export const RadioGroupDemo = () => {
         <h3>Controlled</h3>
         <Demos.RadioGroupControlled />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={2}>
+      <DemoDocs layout="grid" cols={1}>
         <h3>Type-safe</h3>
         <Demos.RadioGroupTypeSafe />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={2}>
+      <DemoDocs layout="grid" cols={1}>
         <h3>{`<Radio /> children`}</h3>
         <Demos.RadioGroupRadioChildren />
       </DemoDocs>
