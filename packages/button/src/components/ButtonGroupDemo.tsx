@@ -5,7 +5,7 @@ export const ButtonGroupDemo = () => {
   return (
     <DemoDocs>
       <DemoDocs.TitleComponent name="ButtonGroup" />
-      <DemoDocs className="button-group-default">
+      <DemoDocs>
         <h3>Default</h3>
         <Demos.ButtonGroupDefault />
       </DemoDocs>
@@ -13,7 +13,7 @@ export const ButtonGroupDemo = () => {
         <h3>Colors</h3>
         <Demos.ButtonGroupColors />
       </DemoDocs>
-      <DemoDocs className="with-toggle">
+      <DemoDocs>
         <h3>Disabled</h3>
         <Demos.ButtonGroupDisabled />
       </DemoDocs>
@@ -21,7 +21,7 @@ export const ButtonGroupDemo = () => {
         <h3>Sizes</h3>
         <Demos.ButtonGroupSizes />
       </DemoDocs>
-      <DemoDocs className="button-group-column">
+      <DemoDocs layout="grid" cols={3}>
         <h3>Column</h3>
         <Demos.ButtonGroupColumn />
       </DemoDocs>
