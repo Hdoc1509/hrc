@@ -40,7 +40,7 @@
     "react-config"
   ],
   "devDependencies": {
-    "typescript": "5.0.2"
+    "typescript": "5.2.2"
   },
   "peerDependencies": {
     "babel-plugin-import": "^1.13.0"
