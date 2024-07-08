@@ -9,7 +9,7 @@ export const ButtonDemo = () => {
         <h3>Default</h3>
         <Demos.ButtonDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={1} className="button-colors">
+      <DemoDocs layout="grid" cols={3}>
         <h3>Colors</h3>
         <Demos.ButtonColors />
       </DemoDocs>

@@ -9,7 +9,7 @@ export const ButtonGroupDemo = () => {
         <h3>Default</h3>
         <Demos.ButtonGroupDefault />
       </DemoDocs>
-      <DemoDocs className="button-group-colors">
+      <DemoDocs>
         <h3>Colors</h3>
         <Demos.ButtonGroupColors />
       </DemoDocs>

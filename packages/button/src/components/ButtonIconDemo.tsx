@@ -9,7 +9,7 @@ export const ButtonIconDemo = () => {
         <h3>Default</h3>
         <Demos.ButtonIconDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={2} className="button-icon-colors">
+      <DemoDocs layout="grid">
         <h3>Colors</h3>
         <Demos.ButtonIconColors />
       </DemoDocs>

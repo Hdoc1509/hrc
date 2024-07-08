@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ButtonIcon } from "@lib/main";
 import { Icon } from "@hrc/material-icons";
 
@@ -13,19 +14,15 @@ const Icons = {
 const colors = Object.keys(Icons) as (keyof typeof Icons)[];
 
 export function ButtonIconColors() {
-  return (
-    <>
-      {colors.map((color) => (
-        <div key={`button-icon-${color}`}>
-          <ButtonIcon color={color}>{Icons[color]}</ButtonIcon>
-          <ButtonIcon color={color} variant="outline">
-            {Icons[color]}
-          </ButtonIcon>
-          <ButtonIcon color={color} variant="text">
-            {Icons[color]}
-          </ButtonIcon>
-        </div>
-      ))}
-    </>
-  );
+  return colors.map((color) => (
+    <Fragment key={`button-icon-${color}`}>
+      <ButtonIcon color={color}>{Icons[color]}</ButtonIcon>
+      <ButtonIcon color={color} variant="outline">
+        {Icons[color]}
+      </ButtonIcon>
+      <ButtonIcon color={color} variant="text">
+        {Icons[color]}
+      </ButtonIcon>
+    </Fragment>
+  ));
 }

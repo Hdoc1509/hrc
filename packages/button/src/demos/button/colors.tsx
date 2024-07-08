@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Button } from "@lib/main";
 
 const colors = [
@@ -12,19 +13,15 @@ const colors = [
 const toTitleCase = (str: string) => `${str[0].toUpperCase()}${str.slice(1)}`;
 
 export function ButtonColors() {
-  return (
-    <>
-      {colors.map((color) => (
-        <div key={`button-${color}`}>
-          <Button color={color}>{toTitleCase(color)}</Button>
-          <Button color={color} variant="outline">
-            Outline
-          </Button>
-          <Button color={color} variant="text">
-            Text
-          </Button>
-        </div>
-      ))}
-    </>
-  );
+  return colors.map((color) => (
+    <Fragment key={`button-${color}`}>
+      <Button color={color}>{toTitleCase(color)}</Button>
+      <Button color={color} variant="outline">
+        Outline
+      </Button>
+      <Button color={color} variant="text">
+        Text
+      </Button>
+    </Fragment>
+  ));
 }
