@@ -1,13 +1,6 @@
 import clsx from "clsx";
-import { Simplify } from "@hrc/type-utils";
-import { ButtonProps } from "../Button";
+import type { ButtonGroupProps } from "./types";
 import "./style.scss";
-
-type Props = Simplify<
-  Pick<ButtonProps, "noShadow" | "size" | "color" | "variant" | "disabled"> & {
-    column?: boolean;
-  } & React.ComponentProps<"div">
->;
 
 export const ButtonGroup = ({
   noShadow,
@@ -18,7 +11,7 @@ export const ButtonGroup = ({
   column,
   disabled,
   ...restProps
-}: Props): JSX.Element => {
+}: ButtonGroupProps): JSX.Element => {
   const buttonGroupClass = clsx(
     "button-group",
     {

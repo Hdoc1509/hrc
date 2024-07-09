@@ -1,5 +1,6 @@
 import clsx from "clsx";
-import { Button, ButtonProps } from "../Button";
+import { Button } from "../Button";
+import type { ButtonProps } from "../Button/types";
 import type { Simplify } from "@hrc/type-utils";
 import "./style.scss";
 

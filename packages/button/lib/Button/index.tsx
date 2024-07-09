@@ -1,18 +1,6 @@
 import clsx from "clsx";
-import { Simplify, Size, Color } from "@hrc/type-utils";
+import type { ButtonProps } from "./types";
 import "./style.scss";
-
-export type ButtonProps = Simplify<
-  {
-    variant?: "outline" | "text";
-    noShadow?: boolean;
-    iconStart?: React.ReactNode;
-    iconEnd?: React.ReactNode;
-    size?: Size;
-    color?: Color;
-    rounded?: "top" | "bottom" | "left" | "right" | "full" | "none";
-  } & React.ComponentProps<"button">
->;
 
 export const Button = ({
   variant,
