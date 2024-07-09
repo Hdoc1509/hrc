@@ -13,7 +13,7 @@ export const ButtonIconDemo = () => {
         <h3>Colors</h3>
         <Demos.ButtonIconColors />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3} className="with-toggle">
+      <DemoDocs layout="grid" cols={3} withDisabled>
         <h3>Disabled</h3>
         <Demos.ButtonIconDisabled />
       </DemoDocs>

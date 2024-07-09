@@ -13,7 +13,7 @@ export const ButtonDemo = () => {
         <h3>Colors</h3>
         <Demos.ButtonColors />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3} className="with-toggle">
+      <DemoDocs layout="grid" cols={3} withDisabled>
         <h3>Disabled</h3>
         <Demos.ButtonDisabled />
       </DemoDocs>
