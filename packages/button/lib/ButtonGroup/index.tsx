@@ -1,4 +1,6 @@
+import { useMemo } from "react";
 import clsx from "clsx";
+import { ButtonGroupContext } from "./context";
 import type { ButtonGroupProps } from "./types";
 import "./style.scss";
 
@@ -25,5 +27,14 @@ export const ButtonGroup = ({
     className,
   );
 
-  return <div {...restProps} role="group" className={buttonGroupClass} />;
+  const groupContext = useMemo(
+    () => ({ color, size, variant, disabled }),
+    [color, disabled, size, variant],
+  );
+
+  return (
+    <ButtonGroupContext.Provider value={groupContext}>
+      <div {...restProps} role="group" className={buttonGroupClass} />
+    </ButtonGroupContext.Provider>
+  );
 };
