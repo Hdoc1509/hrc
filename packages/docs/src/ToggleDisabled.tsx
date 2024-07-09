@@ -5,7 +5,7 @@ type Props = {
 
 export function ToggleDisabled({ disabled, setter }: Props) {
   return (
-    <label>
+    <label className="toggle-disabled">
       <input
         type="checkbox"
         checked={disabled}
