@@ -29,7 +29,7 @@ export const Button = ({
   return (
     <button {...restProps} className={buttonClass}>
       {iconStart}
-      {children ?? "Default"}
+      {children}
       {iconEnd}
     </button>
   );

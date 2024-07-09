@@ -9,7 +9,7 @@ export function ButtonDisabled() {
     <>
       <ToggleDisabled disabled={disabled} setter={setDisabled} />
 
-      <Button disabled={disabled} />
+      <Button disabled={disabled}>Default</Button>
       <Button variant="outline" disabled={disabled}>
         Outline
       </Button>
@@ -17,12 +17,14 @@ export function ButtonDisabled() {
         Text
       </Button>
 
-      <Button color="warning" disabled={disabled} />
+      <Button color="warning" disabled={disabled}>
+        Warning
+      </Button>
       <Button color="info" variant="outline" disabled={disabled}>
-        Outline
+        Info
       </Button>
       <Button color="success" variant="text" disabled={disabled}>
-        Text
+        Success
       </Button>
     </>
   );
