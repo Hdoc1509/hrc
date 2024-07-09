@@ -19,18 +19,21 @@ type Props = (
 ) & {
   className?: string;
   children: React.ReactNode;
+  withDisabled?: boolean;
 };
 
 export const DemoDocs = ({
   layout,
   children,
   className,
+  withDisabled,
   ...props
 }: React.PropsWithChildren<Props>) => {
   const sectionClassName = clsx(
     "demo-docs",
     {
       [`demo-docs--${layout}`]: layout,
+      "demo-docs--with-disabled": withDisabled,
     },
     className,
   );

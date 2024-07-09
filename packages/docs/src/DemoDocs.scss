@@ -24,4 +24,8 @@
       grid-column: 1 / -1;
     }
   }
+
+  &--with-disabled .toggle-disabled {
+    grid-column: 1 / -1;
+  }
 }
