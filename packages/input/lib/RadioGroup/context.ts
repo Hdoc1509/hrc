@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 import { RadioGroupProps, RadioOption } from "./types";
 
-export type RadioGroupContextValue = Pick<
+type RadioGroupContextValue = Pick<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   RadioGroupProps<RadioOption, any>,
   | "form"
