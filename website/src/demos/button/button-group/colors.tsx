@@ -12,7 +12,7 @@ const colors = [
 
 export function ButtonGroupColors() {
   return colors.map((color) => (
-    <Fragment key={`button-group-${color}`}>
+    <div key={`button-group-${color}`}>
       <ButtonGroup color={color}>
         <Button>One</Button>
         <Button>Two</Button>
@@ -28,6 +28,6 @@ export function ButtonGroupColors() {
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
-    </Fragment>
+    </div>
   ));
 }

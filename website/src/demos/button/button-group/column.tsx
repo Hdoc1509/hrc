@@ -5,7 +5,7 @@ const colors = ["secondary", "error"] as const;
 
 export function ButtonGroupColumn() {
   return colors.map((color) => (
-    <Fragment key={`button-group-column-${color}`}>
+    <div key={`button-group-column-${color}`}>
       <ButtonGroup color={color} column>
         <Button>One</Button>
         <Button>Two</Button>
@@ -21,6 +21,6 @@ export function ButtonGroupColumn() {
         <Button>Two</Button>
         <Button>Three</Button>
       </ButtonGroup>
-    </Fragment>
+    </div>
   ));
 }
