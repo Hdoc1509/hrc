@@ -1,15 +1,8 @@
 @import "@hrc/button/src/demos.css";
 
-.demo .with-toggle * {
-  grid-column: auto;
-}
-.demo .with-toggle :first-child {
-  grid-column: 1 / -1;
-  text-align: center;
-}
 .demo .with-last-centered :last-child {
   grid-column: 1 / -1;
-  justify-content: center;
+  margin-inline: auto;
 }
 .demo .responsive-group {
   --demo-columns: 2;
@@ -21,15 +14,6 @@
   .demo .button-icon-colors {
     --demo-columns: 3;
   }
-}
-
-.with-inner-grid > div {
-  display: grid;
-  gap: inherit;
-}
-.with-inner-flex > div {
-  display: flex;
-  gap: inherit;
 }
 
 @media (max-width: 879px) {
