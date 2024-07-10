@@ -8,14 +8,13 @@ type Props = {
 
 export function ToggleDisabled({ disabled, setter }: Props) {
   return (
-    <div>
-      <Button
-        color={disabled ? "info" : undefined}
-        onClick={() => setter(!disabled)}
-      >
-        <Icon name={disabled ? "toggle_on" : "toggle_off"} />
-        Disabled
-      </Button>
-    </div>
+    <Button
+      color={disabled ? "info" : undefined}
+      onClick={() => setter(!disabled)}
+      className="toggle-disabled"
+    >
+      <Icon name={disabled ? "toggle_on" : "toggle_off"} />
+      Disabled
+    </Button>
   );
 }

@@ -13,3 +13,7 @@
 .demo.demo  * {
   margin: 0;
 }
+
+.demo-docs--with-disabled .toggle-disabled {
+  margin-inline: auto;
+}
