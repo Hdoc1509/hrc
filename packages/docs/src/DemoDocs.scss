@@ -25,7 +25,8 @@
     }
   }
 
-  &--with-disabled .toggle-disabled {
+  &--with-disabled .toggle-disabled.toggle-disabled {
     grid-column: 1 / -1;
+    margin-inline: auto;
   }
 }
