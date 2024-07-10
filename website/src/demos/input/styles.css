@@ -1,6 +1,0 @@
-@import "@hrc/input/src/demos.css";
-
-.checkbox-default .label,
-.checkbox-disabled .label {
-  margin-inline: auto;
-}
