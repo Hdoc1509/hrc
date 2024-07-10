@@ -12,17 +12,12 @@ const colors = [
 const toTitleCase = (str: string) => `${str[0].toUpperCase()}${str.slice(1)}`;
 
 export function CheckboxColors() {
-  return (
-    <>
-      {colors.map((color) => (
-        <div key={`checkbox-${color}`}>
-          <Checkbox
-            color={color}
-            label={`${toTitleCase(color)}`}
-            defaultChecked
-          />
-        </div>
-      ))}
-    </>
-  );
+  return colors.map((color) => (
+    <Checkbox
+      key={`checkbox-${color}`}
+      color={color}
+      label={`${toTitleCase(color)}`}
+      defaultChecked
+    />
+  ));
 }

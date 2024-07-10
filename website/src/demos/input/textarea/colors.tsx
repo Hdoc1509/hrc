@@ -12,20 +12,15 @@ const colors = [
 const toTitleCase = (str: string) => `${str[0].toUpperCase()}${str.slice(1)}`;
 
 export function TextareaColors() {
-  return (
-    <>
-      {colors.map((color) => (
-        <div key={`textarea-${color}`}>
-          <Textarea
-            color={color}
-            label={`${toTitleCase(color)}`}
-            placeholder="Hello world"
-            // the following classnames are only for demo purposes
-            className="textarea--focused"
-            labelClassName="label--focused"
-          />
-        </div>
-      ))}
-    </>
-  );
+  return colors.map((color) => (
+    <Textarea
+      key={`textarea-${color}`}
+      color={color}
+      label={`${toTitleCase(color)}`}
+      placeholder="Hello world"
+      // the following classnames are only for demo purposes
+      className="textarea--focused"
+      labelClassName="label--focused"
+    />
+  ));
 }
