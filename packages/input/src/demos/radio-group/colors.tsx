@@ -8,13 +8,13 @@ const colors = [
   "warning",
   "success",
 ] as const;
-type Color = (typeof colors)[number];
 
 const toTitleCase = (str: string) => `${str[0].toUpperCase()}${str.slice(1)}`;
 
-function Group({ color }: { color: Color }) {
-  return (
+export function RadioGroupColors() {
+  return colors.map((color) => (
     <RadioGroup
+      key={`radio-group-${color}`}
       name={`radio-group-${color}`}
       color={color}
       options={[
@@ -23,15 +23,5 @@ function Group({ color }: { color: Color }) {
       ]}
       defaultValue={color}
     />
-  );
-}
-
-export function RadioGroupColors() {
-  return (
-    <>
-      {colors.map((color) => (
-        <Group key={`radio-group-${color}`} color={color} />
-      ))}
-    </>
-  );
+  ));
 }

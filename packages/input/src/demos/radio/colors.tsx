@@ -12,19 +12,14 @@ const colors = [
 const toTitleCase = (str: string) => `${str[0].toUpperCase()}${str.slice(1)}`;
 
 export function RadioColors() {
-  return (
-    <>
-      {colors.map((color) => (
-        <div key={`radio-colors-${color}`}>
-          <Radio
-            name={`radio-colors-${color}`}
-            color={color}
-            label={`${toTitleCase(color)}`}
-            value={color}
-            defaultChecked
-          />
-        </div>
-      ))}
-    </>
-  );
+  return colors.map((color) => (
+    <Radio
+      key={`radio-colors-${color}`}
+      name={`radio-colors-${color}`}
+      color={color}
+      label={`${toTitleCase(color)}`}
+      value={color}
+      defaultChecked
+    />
+  ));
 }
