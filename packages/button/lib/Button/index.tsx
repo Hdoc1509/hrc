@@ -1,19 +1,28 @@
+import { useButtonGroupContext } from "../ButtonGroup/context";
 import clsx from "clsx";
 import type { ButtonProps } from "./types";
 import "./style.scss";
 
 export const Button = ({
-  variant,
+  variant: variantProp,
   noShadow,
   iconStart,
   iconEnd,
-  size,
-  color,
+  size: sizeProp,
+  color: colorProp,
   className,
   children,
   rounded,
+  disabled: disabledProp,
   ...restProps
 }: ButtonProps): JSX.Element => {
+  const group = useButtonGroupContext();
+
+  const variant = variantProp ?? group?.variant;
+  const size = sizeProp ?? group?.size;
+  const color = colorProp ?? group?.color;
+  const disabled = disabledProp ?? group?.disabled;
+
   const buttonClass = clsx(
     "button",
     {
@@ -27,7 +36,7 @@ export const Button = ({
   );
 
   return (
-    <button {...restProps} className={buttonClass}>
+    <button {...restProps} className={buttonClass} disabled={disabled}>
       {iconStart}
       {children}
       {iconEnd}
