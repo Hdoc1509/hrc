@@ -1,8 +1,6 @@
-.demo-docs--grid.with-toggle > label:not([class]) {
-  grid-column: 1 / -1;
-  /* text-align: center; */
+.package-demo {
+  margin-inline: auto;
 }
-
 .package-demo.demo-docs {
   grid-template-columns: unset;
   gap: 8px;
@@ -31,8 +29,8 @@
   color: var(--label-text-focus);
 }
 
-.checkbox-default > *,
-.checkbox-disabled > * {
+.checkbox-default .label,
+.checkbox-disabled .label {
   margin-inline: auto;
 }
 .checkbox-default :nth-last-child(-n + 2),

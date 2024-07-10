@@ -16,7 +16,8 @@ export const CheckboxDemo = () => {
       <DemoDocs
         layout="grid"
         cols={2}
-        className="checkbox-disabled with-toggle"
+        className="checkbox-disabled"
+        withDisabled
       >
         <h3>Disabled</h3>
         <Demos.CheckboxDisabled />
