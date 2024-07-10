@@ -18,11 +18,11 @@
 .input--focused.input--focused {
   --_focus: var(--input-border-color-focus);
 }
-.textarea--focused {
+.textarea--focused.textarea--focused {
   --_focus: var(--textarea-border-color-focus);
 }
 .input--focused.input--focused,
-.textarea--focused {
+.textarea--focused.textarea--focused {
   border-color: var(--_focus);
   outline-color: var(--_focus);
 }
