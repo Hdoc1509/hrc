@@ -9,7 +9,7 @@
   justify-content: var(--button-justify, center);
   gap: var(--button-gap, 8px);
 
-  border: none;
+  border: 1px solid var(--button-bg, $button-bg);
   border-radius: var(--_radius);
   box-shadow: $button-shadow;
   background-color: var(--button-bg, $button-bg);
@@ -67,8 +67,7 @@
     --button-shadow: none;
   }
   &--outline {
-    outline: solid 1px currentColor;
-    outline-offset: -1px;
+    border-color: currentColor;
   }
 
   > * {

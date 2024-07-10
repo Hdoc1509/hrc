@@ -22,7 +22,6 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
 
   > .button {
     border-radius: 0;
-    border: 1px solid var(--button-bg, $button-bg);
     --button-shadow: none;
 
     &:first-child {
@@ -37,24 +36,16 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     }
   }
 
-  &.button--outline {
-    outline-color: var(--button-text);
   }
-  &.button--text > * {
-    border-color: transparent;
-  }
-  &.button--outline,
-  &.button--text {
-    > * + * {
-      border-left-color: currentcolor;
-    }
+
+  & > .button--text + * {
+    border-left-color: currentcolor;
   }
 
   &--column {
     flex-direction: column;
 
     > .button + * {
-      border-color: transparent;
       border-top: 1px solid $divider-color;
     }
 
@@ -69,12 +60,13 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
       border-left-color: var(--button-bg);
     }
 
-    &.button--outline,
-    &.button--text {
-      > * {
-        border-color: transparent;
-      }
-      > * + * {
+    &.button-group--outline > .button + * {
+      border-left-color: var(--button-outline-color);
+    }
+    &.button-group--text > .button {
+      border-color: transparent;
+
+      & + * {
         border-top-color: currentcolor;
       }
     }
