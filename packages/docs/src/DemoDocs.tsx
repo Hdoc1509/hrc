@@ -28,7 +28,7 @@ export const DemoDocs = ({
   className,
   withDisabled,
   ...props
-}: React.PropsWithChildren<Props>) => {
+}: Props) => {
   const sectionClassName = clsx(
     "demo-docs",
     {
