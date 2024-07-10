@@ -6,7 +6,7 @@ export function ButtonSizes() {
       <Button color="primary" size="small">
         Small
       </Button>
-      <Button color="primary" />
+      <Button color="primary">Default</Button>
       <Button color="primary" size="large">
         Large
       </Button>
