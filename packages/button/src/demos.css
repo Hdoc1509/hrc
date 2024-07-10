@@ -1,3 +1,8 @@
-.with-toggle :nth-child(2) {
-  grid-column: 1 / -1;
+.button-group-colors > div {
+  display: grid;
+  gap: inherit;
+}
+.button-group-column > div {
+  display: flex;
+  gap: inherit;
 }
