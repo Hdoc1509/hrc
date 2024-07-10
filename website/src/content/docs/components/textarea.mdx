@@ -1,0 +1,73 @@
+---
+title: Textarea
+description: React Textarea component of <hrc />
+---
+
+import { Code } from "@astrojs/starlight/components";
+import { Demo, SourceCode, SourceCodeWithDisabled } from "@components";
+import * as Demos from "@demos/input";
+import defaultCode from "@demos/input/textarea/default.tsx?raw";
+import colorsCode from "@demos/input/textarea/colors.tsx?raw";
+import autosizeCode from "@demos/input/textarea/autosize.tsx?raw";
+import disabledCode from "@demos/input/textarea/disabled.tsx?raw";
+import helperTextCode from "@demos/input/textarea/helper-text.tsx?raw";
+import errorCode from "@demos/input/textarea/error.tsx?raw";
+import "@demos/input/styles.css";
+
+## Default textarea
+
+<Demo>
+  <Demos.TextareaDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the textarea.
+
+<Demo>
+  <Demos.TextareaColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="colors.tsx" />
+
+## Autosize
+
+Use the `autosize` prop to automatically adjust the height of the textarea to fit its content.
+
+<Demo>
+  <Demos.TextareaAutosize client:load />
+</Demo>
+
+<SourceCode code={autosizeCode} title="autosize.tsx" />
+
+## Disabled
+
+Add the `disabled` prop to disable the textarea.
+
+<Demo>
+  <Demos.TextareaDisabled client:load />
+</Demo>
+
+<SourceCodeWithDisabled code={disabledCode} title="disabled.tsx" />
+
+## With Helper Text
+
+Add the `helperText` prop to display helper text below the textarea.
+
+<Demo>
+  <Demos.TextareaWithHelperText />
+</Demo>
+
+<SourceCode code={helperTextCode} title="helper-text.tsx" />
+
+## With Error
+
+Use the `error` prop to indicate an error state.
+
+<Demo>
+  <Demos.TextareaWithError />
+</Demo>
+
+<SourceCode code={errorCode} title="error.tsx" />
