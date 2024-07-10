@@ -17,12 +17,10 @@ export const ButtonGroup = ({
   const buttonGroupClass = clsx(
     "button-group",
     {
-      [`button-group--${size}`]: size,
+      [`button-group--${variant}`]: variant,
+      "button-group--no-shadow": noShadow,
+      "button-group--disabled": disabled,
       "button-group--column": column,
-      [`button--${variant}`]: variant,
-      "button--no-shadow": noShadow,
-      [`button--${color}`]: color,
-      "button--disabled": disabled,
     },
     className,
   );

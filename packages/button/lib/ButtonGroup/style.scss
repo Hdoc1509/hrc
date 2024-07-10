@@ -9,15 +9,12 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
   border-radius: $button-radius;
   box-shadow: $button-shadow;
 
-  &.button--disabled > * {
-    --button-divider-color: var(--button-outline-color);
+  &--no-shadow {
+    --button-shadow: none;
   }
 
-  &--small > .button {
-    --_p-y: 6px;
-  }
-  &--large > .button {
-    --_p-y: 12px;
+  &--disabled > * {
+    --button-divider-color: var(--button-outline-color);
   }
 
   > .button {
@@ -36,6 +33,9 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     }
   }
 
+  &--outline,
+  &--text {
+    --button-shadow: none;
   }
 
   & > .button--text + * {
