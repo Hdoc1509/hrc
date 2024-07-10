@@ -64,8 +64,10 @@
   --input-text: var(--text);
   --input-border-color-hover: var(--text);
   --input-border-color-focus: var(--text-focus);
-
   --input-border-color-disabled: var(--text-disabled);
+
+  --textarea-text: var(--text);
   --textarea-border-color-hover: var(--text);
   --textarea-border-color-focus: var(--text-focus);
+  --textarea-border-color-disabled: var(--text-disabled);
 }
