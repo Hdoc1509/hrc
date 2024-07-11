@@ -8,13 +8,10 @@ const TitleComponent = ({ name }: { name: string }) => {
 type Props = (
   | {
       layout?: "row";
-      rowFlow?: "column";
     }
   | {
       layout: "grid";
       cols?: number;
-      innerCols?: number;
-      innerFlow?: "row";
     }
 ) & {
   className?: string;
@@ -43,9 +40,6 @@ export const DemoDocs = ({
       style={
         {
           "--demo-columns": "cols" in props ? props.cols : "",
-          "--demo-inner-columns": "innerCols" in props ? props.innerCols : "",
-          "--demo-inner-flow": "innerFlow" in props ? props.innerFlow : "",
-          "--demo-row-flow": "rowFlow" in props ? props.rowFlow : "",
         } as React.CSSProperties
       }
       className={sectionClassName}
