@@ -11,13 +11,12 @@ import { GrowingSpinner } from "@hrc/spinner";
 
 ## Props
 
-**It receives the same [general props of
-`@hrc/spinner`](/hrc/packages/spinner#props)**
+**It receives the same [props of `<SpinnerBase />`](../spinner-base#props)**
 
 ## CSS Variables
 
-**It uses the same [general CSS Variables of
-`@hrc/spinner`](/hrc/packages/spinner#css-variables)**
+**It uses the same [CSS Variables of `<SpinnerBase
+/>`](../spinner-base#css-variables)**
 
 ## CSS Classes
 
@@ -27,29 +26,25 @@ The base styles for `<GrowingSpinner />` component.
 
 ---
 
-**Additionally, it uses the same [general CSS Clasess of
-`@hrc/spinner`](/hrc/packages/spinner#css-classes)**
+**Additionally, it uses the same [CSS Classes of `<SpinnerBase
+/>`](../spinner-base#css-classes)**
 
-## Details
+## Default values
 
-**`Default speed`**
+### Speed
 
-The default speed of the spinner.
+#### Normal
 
-Value: `1s`
-
----
-
-**`Slow speed`**
-
-The slow speed of the spinner.
-
-Value: `1.25s`
+**Value:** `1s`
 
 ---
 
-**`Fast speed`**
+#### Slow
 
-The fast speed of the spinner.
+**Value:** `1.25s`
 
-Value: `0.75s`
+---
+
+#### Fast
+
+**Value:** `0.75s`
