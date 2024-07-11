@@ -19,6 +19,11 @@ type Props = (
   withDisabled?: boolean;
 };
 
+const createStyle = (props: object | Props) =>
+  ({
+    "--demo-columns": "cols" in props ? props.cols : "",
+  }) as React.CSSProperties;
+
 export const DemoDocs = ({
   layout,
   children,
@@ -36,14 +41,7 @@ export const DemoDocs = ({
   );
 
   return (
-    <section
-      style={
-        {
-          "--demo-columns": "cols" in props ? props.cols : "",
-        } as React.CSSProperties
-      }
-      className={sectionClassName}
-    >
+    <section style={createStyle(props)} className={sectionClassName}>
       {children}
     </section>
   );
