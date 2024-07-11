@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { Button, ButtonGroup } from "@lib/main";
 
 const colors = ["secondary", "error"] as const;
