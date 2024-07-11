@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { Button, ButtonGroup } from "@hrc/button";
 
 const colors = ["secondary", "error"] as const;
