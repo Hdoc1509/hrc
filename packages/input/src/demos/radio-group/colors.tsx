@@ -19,7 +19,7 @@ export function RadioGroupColors() {
       color={color}
       options={[
         { label: `${toTitleCase(color)}`, value: color },
-        { label: "Other option", value: `${color}-light` },
+        { label: "Other option", value: "other-option" },
       ]}
       defaultValue={color}
     />
