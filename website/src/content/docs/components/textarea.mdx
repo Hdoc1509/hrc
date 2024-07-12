@@ -9,6 +9,7 @@ import defaultCode from "@demos/input/textarea/default.tsx?raw";
 import colorsCode from "@demos/input/textarea/colors.tsx?raw";
 import autosizeCode from "@demos/input/textarea/autosize.tsx?raw";
 import disabledCode from "@demos/input/textarea/disabled.tsx?raw";
+import fullWidthCode from "@demos/input/textarea/full-width.tsx?raw";
 import helperTextCode from "@demos/input/textarea/helper-text.tsx?raw";
 import errorCode from "@demos/input/textarea/error.tsx?raw";
 import "@hrc/input/src/demos.css";
@@ -50,6 +51,16 @@ Add the `disabled` prop to disable the textarea.
 </Demo>
 
 <SourceCodeWithDisabled code={disabledCode} title="disabled.tsx" />
+
+## Full Width
+
+Add the `fullWidth` prop to make the textarea full width.
+
+<Demo className="textarea-fullwidth">
+  <Demos.TextareaFullWidth />
+</Demo>
+
+<SourceCode code={fullWidthCode} title="full-width.tsx" />
 
 ## With Helper Text
 
