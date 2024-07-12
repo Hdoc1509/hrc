@@ -11,6 +11,7 @@ export { InputWithError } from "./input/error";
 export { TextareaDefault } from "./textarea/default";
 export { TextareaColors } from "./textarea/colors";
 export { TextareaDisabled } from "./textarea/disabled";
+export { TextareaFullWidth } from "./textarea/full-width";
 export { TextareaWithHelperText } from "./textarea/helper-text";
 export { TextareaWithError } from "./textarea/error";
 export { TextareaAutosize } from "./textarea/autosize";
