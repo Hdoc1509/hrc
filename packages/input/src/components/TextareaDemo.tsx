@@ -21,6 +21,10 @@ export const TextareaDemo = () => {
         <h3>Disabled</h3>
         <Demos.TextareaDisabled />
       </DemoDocs>
+      <DemoDocs className="textarea-fullwidth">
+        <h3>Full Width</h3>
+        <Demos.TextareaFullWidth />
+      </DemoDocs>
       <DemoDocs>
         <h3>With Helper Text</h3>
         <Demos.TextareaWithHelperText />
