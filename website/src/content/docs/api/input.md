@@ -125,6 +125,11 @@ CSS variables (custom properties):
 }
 ```
 
+:::note
+If you want to customize the label of the input, check out the [API of internal
+`<Label />` component](../label).
+:::
+
 ## CSS Classes
 
 **`.input`**
