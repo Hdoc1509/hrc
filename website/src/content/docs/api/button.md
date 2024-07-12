@@ -15,6 +15,14 @@ import { Button } from "@hrc/button";
 
 **Additionally, it can receive all attributes/props of a `button` element.**
 
+**`children` (required)**
+
+Text to display.
+
+Type: `ReactNode`
+
+---
+
 **`color`**
 
 The color variant of the button.
@@ -23,7 +31,7 @@ Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
 
 ---
 
-**`disableShadow`**
+**`noShadow`**
 
 Whether the shadow is disabled.
 
@@ -31,19 +39,11 @@ Type: `boolean`
 
 ---
 
-**`fullRounded`**
-
-The full rounded variant of the button.
-
-Type: `boolean`
-
----
-
-**`roundedSide`**
+**`rounded`**
 
 The rounded variant of the button.
 
-Type: `'top' | 'bottom' | 'left' | 'right'`
+Type: `'top' | 'bottom' | 'left' | 'right' | 'full' | 'none'`
 
 ---
 
@@ -94,7 +94,7 @@ variables (custom properties):
 .any-parent-of-button,
 .class-to-extend-styles {
   /* NORMAL BUTTON */
-  --button-justify-content: flex-start;
+  --button-justify: flex-start;
   --button-gap: 10px;
 
   --button-bg: lightgray;
@@ -196,33 +196,39 @@ Styles for the `large` size variant.
 
 ---
 
-**`.button--top-rounded`**
+**`.button--rounded-top`**
 
 Styles for the `top` rounded variant.
 
 ---
 
-**`.button--right-rounded`**
+**`.button--rounded-right`**
 
 Styles for the `right` rounded variant.
 
 ---
 
-**`.button--bottom-rounded`**
+**`.button--rounded-bottom`**
 
 Styles for the `bottom` rounded variant.
 
 ---
 
-**`.button--left-rounded`**
+**`.button--rounded-left`**
 
 Styles for the `left` rounded variant.
 
 ---
 
-**`.button--full-rounded`**
+**`.button--rounded-full`**
 
 Styles for the `full` rounded variant.
+
+---
+
+**`.button--rounded-none`**
+
+Styles for the `none` rounded variant.
 
 ---
 

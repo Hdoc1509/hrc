@@ -23,7 +23,7 @@ Type: `ReactNode`
 
 ---
 
-**`disableShadow`**
+**`noShadow`**
 
 Whether the shadow is disabled.
 
@@ -97,9 +97,6 @@ following CSS variables (custom properties):
 }
 ```
 
-**Additionally, it can use the same [CSS Variables of `<Button
-/>`](../button#css-variables) to customize the styles of the buttons.**
-
 ## CSS Classes
 
 **`.button-group`**
@@ -108,40 +105,30 @@ The base styles for `<ButtonGroup />` component.
 
 ---
 
-**`.button-group--small`**
+**`.button-group--no-shadow`**
 
-Styles for the `small` size variant.
+Styles for the `no shadow` variant.
 
 ---
 
-**`.button-group--large`**
+**`.button-group--disabled`**
 
-Styles for the `large` size variant.
+Styles for the `disabled` variant.
+
+---
+
+**`.button-group--outline`**
+
+Styles for the `outline` aspect variant.
+
+---
+
+**`.button-group--text`**
+
+Styles for the `text` aspect variant.
 
 ---
 
 **`.button-group--column`**
 
 Styles for the `column` direction variant.
-
----
-
-**Additionally, it uses the following [CSS Classes of `<Button
-/>`](../button#css-classes) to set the styles of the group:**
-
-- **`.button--no-shadow`**
-- **`.button--disabled`**
-
----
-
-**Additionally, it uses the following [CSS Classes of `<Button
-/>`](../button#css-classes) to set the styles of the buttons:**
-
-- **`.button--outline`**
-- **`.button--text`**
-- **`.button--primary`**
-- **`.button--secondary`**
-- **`.button--error`**
-- **`.button--info`**
-- **`.button--warning`**
-- **`.button--success`**
