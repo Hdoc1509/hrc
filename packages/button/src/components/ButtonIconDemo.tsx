@@ -3,8 +3,7 @@ import * as Demos from "../demos";
 
 export const ButtonIconDemo = () => {
   return (
-    <DemoDocs>
-      <DemoDocs.TitleComponent name="ButtonIcon" />
+    <DemoDocs componentName="ButtonIcon">
       <DemoDocs layout="row">
         <h3>Default</h3>
         <Demos.ButtonIconDefault />
