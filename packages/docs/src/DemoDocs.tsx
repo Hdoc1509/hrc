@@ -1,10 +1,6 @@
 import clsx from "clsx";
 import "./DemoDocs.scss";
 
-const TitleComponent = ({ name }: { name: string }) => {
-  return <h2>{`<${name} /> Demo`}</h2>;
-};
-
 type Props = (
   | {
       layout?: "row";
@@ -17,6 +13,7 @@ type Props = (
   className?: string;
   children: React.ReactNode;
   withDisabled?: boolean;
+  componentName?: string;
 };
 
 const createStyle = (props: object | Props) =>
@@ -29,6 +26,7 @@ export const DemoDocs = ({
   children,
   className,
   withDisabled,
+  componentName,
   ...props
 }: Props) => {
   const sectionClassName = clsx(
@@ -42,9 +40,8 @@ export const DemoDocs = ({
 
   return (
     <section style={createStyle(props)} className={sectionClassName}>
+      {componentName && <h2>{`<${componentName} /> Demo`}</h2>}
       {children}
     </section>
   );
 };
-
-DemoDocs.TitleComponent = TitleComponent;
