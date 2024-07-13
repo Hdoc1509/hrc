@@ -15,6 +15,9 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+  @at-root &--row#{&}--with-disabled .toggle-disabled {
+    margin-inline: 100%;
+  }
 
   &--grid {
     display: grid;
@@ -24,8 +27,7 @@
       grid-column: 1 / -1;
     }
   }
-
-  &--with-disabled .toggle-disabled.toggle-disabled {
+  @at-root &--grid#{&}--with-disabled .toggle-disabled {
     grid-column: 1 / -1;
     margin-inline: auto;
   }
