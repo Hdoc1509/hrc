@@ -4,7 +4,7 @@ import * as Demos from "../demos";
 export const RadioGroupDemo = () => {
   return (
     <DemoDocs componentName="RadioGroup">
-      <DemoDocs layout="row">
+      <DemoDocs>
         <h3>Default</h3>
         <Demos.RadioGroupDefault />
       </DemoDocs>
