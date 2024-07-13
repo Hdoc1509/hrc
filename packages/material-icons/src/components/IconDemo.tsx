@@ -12,7 +12,7 @@ export function IconDemo() {
         <h3>Colors</h3>
         <Demos.IconColors />
       </DemoDocs>
-      <DemoDocs layout="row" className="with-toggle">
+      <DemoDocs layout="row" withDisabled>
         <h3>Disabled</h3>
         <Demos.IconDisabled />
       </DemoDocs>
