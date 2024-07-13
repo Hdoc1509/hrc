@@ -34,5 +34,4 @@ Stylize the button to fit an icon.
 
 ---
 
-**Additionally, it uses the same [CSS Classes of `<Button
-/>`](../button#css-classes)**
+**Additionally, it uses the same [CSS Classes of `<Button />`](../button#css-classes)**

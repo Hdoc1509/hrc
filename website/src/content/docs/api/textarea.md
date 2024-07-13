@@ -116,8 +116,8 @@ CSS variables (custom properties):
 ```
 
 :::note
-If you want to customize the label of the textarea, check out the [API of internal
-`<Label />` component](../label).
+If you want to customize the label of the textarea, check out the [API of
+internal `<Label />` component](../label).
 :::
 
 ## CSS Classes
