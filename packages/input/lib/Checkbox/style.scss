@@ -9,7 +9,7 @@
 }
 
 .checkbox {
-  --_checked-color: var(--checkbox-checked-color, #{hrc.$primary});
+  --_checked-color: var(--checkbox-color-checked, #{hrc.$primary});
   display: grid;
   place-items: center; /* Is this necessary? */
 

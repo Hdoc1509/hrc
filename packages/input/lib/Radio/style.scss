@@ -2,7 +2,7 @@
 @use "../Checkbox/style" as *; // mixin color-variants
 
 .radio {
-  --_checked-color: var(--radio-checked-color, #{hrc.$primary});
+  --_checked-color: var(--radio-color-checked, #{hrc.$primary});
   display: grid;
   place-items: center;
 
