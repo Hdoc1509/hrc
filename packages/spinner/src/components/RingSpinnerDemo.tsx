@@ -3,8 +3,7 @@ import * as Demos from '../demos'
 
 export const RingSpinnerDemo = () => {
   return (
-    <DemoDocs>
-      <DemoDocs.TitleComponent name="RingSpinner" />
+    <DemoDocs componentName="RingSpinner">
       <DemoDocs layout="row">
         <h3>Default</h3>
         <Demos.RingSpinnerDefault />

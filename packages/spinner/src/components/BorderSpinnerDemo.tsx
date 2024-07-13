@@ -3,8 +3,7 @@ import * as Demos from "../demos";
 
 export const BorderSpinnerDemo = () => {
   return (
-    <DemoDocs>
-      <DemoDocs.TitleComponent name="BorderSpinner" />
+    <DemoDocs componentName="BorderSpinner">
       <DemoDocs layout="row">
         <h3>Default</h3>
         <Demos.BorderSpinnerDefault />
