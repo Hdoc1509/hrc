@@ -1,5 +1,5 @@
 .button-group-colors > div,
-.button-group-disabled > div {
+.button-group-disabled div:not([class]) {
   display: grid;
   gap: inherit;
 }
