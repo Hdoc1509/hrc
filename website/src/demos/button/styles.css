@@ -1,25 +1,7 @@
 @import "@hrc/button/src/demos.css";
 
-.demo .with-last-centered :last-child {
-  grid-column: 1 / -1;
-  margin-inline: auto;
-}
-.demo .responsive-group {
-  --demo-columns: 2;
-}
-@media (max-width: 767px) {
-  .demo .responsive-group{
-    --demo-columns: 1;
-  }
-  .demo .button-icon-colors {
-    --demo-columns: 3;
-  }
-}
-
-@media (max-width: 879px) {
-  .demo .button-group-column {
-    --demo-columns: 1;
-  }
+.button-group-disabled > astro-island {
+  gap: inherit;
 }
 
 [data-theme="dark"] {
