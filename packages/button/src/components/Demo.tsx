@@ -4,7 +4,7 @@ import { PackageDemo } from "../demos";
 export const Demo = () => {
   return (
     <DemoDocs layout="row">
-      <h2>Docs Demo</h2>
+      <h2>@hrc/button Demo</h2>
       <PackageDemo />
     </DemoDocs>
   );
