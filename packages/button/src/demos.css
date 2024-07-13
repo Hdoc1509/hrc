@@ -1,7 +1,9 @@
-.button-group-colors > div {
+.button-group-colors > div,
+.button-group-disabled > div {
   display: grid;
   gap: inherit;
 }
+.button-icon-colors > div,
 .button-group-column > div {
   display: flex;
   gap: inherit;
