@@ -8,7 +8,7 @@ export const InputDemo = () => {
         <h3>Default</h3>
         <Demos.InputDefault />
       </DemoDocs>
-      <DemoDocs>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <Demos.InputColors />
       </DemoDocs>
@@ -16,19 +16,19 @@ export const InputDemo = () => {
         <h3>Disabled</h3>
         <Demos.InputDisabled />
       </DemoDocs>
-      <DemoDocs className="input-sizes">
+      <DemoDocs layout="row" className="input-sizes">
         <h3>Sizes</h3>
         <Demos.InputSizes />
       </DemoDocs>
-      <DemoDocs>
+      <DemoDocs layout="row">
         <h3>With Icons</h3>
         <Demos.InputWithIcons />
       </DemoDocs>
-      <DemoDocs>
+      <DemoDocs layout="row" className="input-helper-text">
         <h3>With Helper Text</h3>
         <Demos.InputWithHelperText />
       </DemoDocs>
-      <DemoDocs>
+      <DemoDocs layout="row">
         <h3>With Error</h3>
         <Demos.InputWithError />
       </DemoDocs>

@@ -9,8 +9,15 @@
   margin-bottom: 8px;
 }
 
-.input-sizes, .textarea-fullwidth {
+.input-sizes {
+  align-items: flex-start;
+}
+.input-sizes,
+.textarea-fullwidth {
   width: 100%;
+}
+.input-helper-text {
+  align-items: flex-start;
 }
 
 .input--focused.input--focused {

@@ -8,7 +8,7 @@ export const TextareaDemo = () => {
         <h3>Default</h3>
         <Demos.TextareaDefault />
       </DemoDocs>
-      <DemoDocs>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <Demos.TextareaColors />
       </DemoDocs>
@@ -28,7 +28,7 @@ export const TextareaDemo = () => {
         <h3>With Helper Text</h3>
         <Demos.TextareaWithHelperText />
       </DemoDocs>
-      <DemoDocs>
+      <DemoDocs layout="row">
         <h3>With Error</h3>
         <Demos.TextareaWithError />
       </DemoDocs>
