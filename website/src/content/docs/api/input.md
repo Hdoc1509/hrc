@@ -23,6 +23,14 @@ Type: `'small'`
 
 ---
 
+**`color`**
+
+The color variant of the input.
+
+Type: `'primary' | 'secondary' | 'error' | 'info' | 'warning' | 'success'`
+
+---
+
 **`error`**
 
 Whether the input is in an error state.
@@ -151,6 +159,42 @@ Styles for the `error` state.
 **`.input--disabled`**
 
 Styles for the `disabled` state.
+
+---
+
+**`.input--primary`**
+
+Styles for the `primary` color variant.
+
+---
+
+**`.input--secondary`**
+
+Styles for the `secondary` color variant.
+
+---
+
+**`.input--error`**
+
+Styles for the `error` color variant.
+
+---
+
+**`.input--info`**
+
+Styles for the `info` color variant.
+
+---
+
+**`.input--warning`**
+
+Styles for the `warning` color variant.
+
+---
+
+**`.input--success`**
+
+Styles for the `success` color variant.
 
 ---
 
