@@ -3,8 +3,7 @@ import * as Demos from "../demos";
 
 export const RadioDemo = () => {
   return (
-    <DemoDocs>
-      <DemoDocs.TitleComponent name="Radio" />
+    <DemoDocs componentName="Radio">
       <DemoDocs>
         <h3>Default</h3>
         <Demos.RadioDefault />

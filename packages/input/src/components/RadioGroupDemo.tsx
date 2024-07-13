@@ -3,9 +3,8 @@ import * as Demos from "../demos";
 
 export const RadioGroupDemo = () => {
   return (
-    <DemoDocs>
-      <DemoDocs.TitleComponent name="RadioGroup" />
       <DemoDocs layout="grid" cols={1}>
+    <DemoDocs componentName="RadioGroup">
         <h3>Default</h3>
         <Demos.RadioGroupDefault />
       </DemoDocs>

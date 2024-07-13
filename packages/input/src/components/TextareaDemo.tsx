@@ -3,8 +3,7 @@ import * as Demos from "../demos";
 
 export const TextareaDemo = () => {
   return (
-    <DemoDocs>
-      <DemoDocs.TitleComponent name="Textarea" />
+    <DemoDocs componentName="Textarea">
       <DemoDocs>
         <h3>Default</h3>
         <Demos.TextareaDefault />
