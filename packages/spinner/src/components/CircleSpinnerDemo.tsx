@@ -8,7 +8,7 @@ export const CircleSpinnerDemo = () => {
         <h3>Default</h3>
         <Demos.CircleSpinnerDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3}>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <Demos.CircleSpinnerColors />
       </DemoDocs>

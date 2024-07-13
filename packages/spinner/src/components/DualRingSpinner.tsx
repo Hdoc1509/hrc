@@ -1,5 +1,5 @@
 import { DemoDocs } from "@hrc/docs";
-import * as Demos from '../demos'
+import * as Demos from "../demos";
 
 export const DualRingSpinnerDemo = () => {
   return (
@@ -8,7 +8,7 @@ export const DualRingSpinnerDemo = () => {
         <h3>Default</h3>
         <Demos.DualRingSpinnerDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3}>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <Demos.DualRingSpinnerColors />
       </DemoDocs>

@@ -8,7 +8,7 @@ export const BorderSpinnerDemo = () => {
         <h3>Default</h3>
         <Demos.BorderSpinnerDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3}>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <Demos.BorderSpinnerColors />
       </DemoDocs>

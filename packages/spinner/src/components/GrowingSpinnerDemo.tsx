@@ -8,7 +8,7 @@ export const GrowingSpinnerDemo = () => {
         <h3>Default</h3>
         <Demos.GrowingSpinnerDefault />
       </DemoDocs>
-      <DemoDocs layout="grid" cols={3}>
+      <DemoDocs layout="row">
         <h3>Colors</h3>
         <Demos.GrowingSpinnerColors />
       </DemoDocs>
