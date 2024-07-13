@@ -11,9 +11,11 @@ import { Textarea } from "@hrc/input";
 
 ## Props
 
+:::note
 **All props are optional unless otherwise specified.**
 
 **Additionally, it can receive all attributes/props of a `textarea` element.**
+:::
 
 **`autosize`**
 

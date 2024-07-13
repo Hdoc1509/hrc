@@ -10,7 +10,9 @@ components of [`@hrc/spinner`](/hrc/packages/spinner).
 
 ## Props
 
+:::note
 **All props are optional unless otherwise specified.**
+:::
 
 **`color`**
 

@@ -11,9 +11,11 @@ import { ButtonGroup } from "@hrc/button";
 
 ## Props
 
+:::note
 **All props are optional unless otherwise specified.**
 
 **Additionally, it can receive all attributes/props of a `div` element.**
+:::
 
 **`children` (required)**
 

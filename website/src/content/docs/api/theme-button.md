@@ -11,7 +11,9 @@ import { ThemeButton } from "@hrc/toggle-theme";
 
 ## Props
 
-All props are optional unless otherwise specified.
+:::note
+**All props are optional unless otherwise specified.**
+:::
 
 **`lightElement`**
 

@@ -11,10 +11,12 @@ import { ButtonIcon } from "@hrc/button";
 
 ## Props
 
+:::note
 **It receives the same [props of `<Button />`](../button#props) except
 `iconStart` and `iconEnd`.**
 
 **Additionally, it can receive all attributes/props of a `button` element**
+:::
 
 **`children` (required)**
 

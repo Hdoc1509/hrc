@@ -11,9 +11,11 @@ import { Button } from "@hrc/button";
 
 ## Props
 
+:::note
 **All props are optional unless otherwise specified.**
 
 **Additionally, it can receive all attributes/props of a `button` element.**
+:::
 
 **`children` (required)**
 

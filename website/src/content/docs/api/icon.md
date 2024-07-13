@@ -11,14 +11,19 @@ import { Icon } from "@hrc/material-icons";
 
 ## Props
 
+:::note
 **All props are optional unless otherwise specified.**
+:::
 
 **`name` (required)**
 
-The name of the icon. Find the available icons at [Google Material
-Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+The name of the icon.
 
 Type: `string`
+
+:::note
+Find the available icons at [Google Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+:::
 
 ---
 
