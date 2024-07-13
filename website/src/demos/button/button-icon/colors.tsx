@@ -15,7 +15,7 @@ const colors = Object.keys(Icons) as (keyof typeof Icons)[];
 
 export function ButtonIconColors() {
   return colors.map((color) => (
-    <Fragment key={`button-icon-${color}`}>
+    <div key={`button-icon-${color}`}>
       <ButtonIcon color={color}>{Icons[color]}</ButtonIcon>
       <ButtonIcon color={color} variant="outline">
         {Icons[color]}
@@ -23,6 +23,6 @@ export function ButtonIconColors() {
       <ButtonIcon color={color} variant="text">
         {Icons[color]}
       </ButtonIcon>
-    </Fragment>
+    </div>
   ));
 }
