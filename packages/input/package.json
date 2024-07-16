@@ -45,7 +45,9 @@
     "react-textarea",
     "textarea",
     "react-checkbox",
-    "checkbox"
+    "checkbox",
+    "react-radio",
+    "radio"
   ],
   "dependencies": {
     "@hrc/type-utils": "workspace:^1.1.2",
