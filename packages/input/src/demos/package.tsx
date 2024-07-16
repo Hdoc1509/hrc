@@ -26,7 +26,7 @@ export function PackageDemo() {
       >
         <Radio label="Daily" value="daily" />
         <Radio label="Weekly" value="weekly" />
-        <Radio label="Monthly" value="monthly" />
+        <Radio label="Bi-weekly" value="bi-weekly" />
       </RadioGroup>
     </>
   );
