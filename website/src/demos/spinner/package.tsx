@@ -1,11 +1,19 @@
-import { DualRingSpinner, GrowingSpinner, RingSpinner } from "@hrc/spinner";
+import {
+  BorderSpinner,
+  CircleSpinner,
+  DualRingSpinner,
+  GrowingSpinner,
+  RingSpinner,
+} from "@hrc/spinner";
 
 export function PackageDemo() {
   return (
     <>
-      <RingSpinner size="large" color="primary" />
-      <DualRingSpinner color="error" />
-      <GrowingSpinner />
+      <BorderSpinner size="large" color="primary" />
+      <CircleSpinner color="error" speed="slow" />
+      <DualRingSpinner size="small" />
+      <GrowingSpinner color="warning" speed="fast" />
+      <RingSpinner size="large" color="success" />
     </>
   );
 }
