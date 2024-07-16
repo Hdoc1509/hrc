@@ -24,7 +24,7 @@
   --_focus: var(--input-border-color-focus);
 }
 .textarea--focused.textarea--focused {
-  --_focus: var(--textarea-border-color-focus);
+  --_focus: var(--_border-clr-focus);
 }
 .input--focused.input--focused,
 .textarea--focused.textarea--focused {

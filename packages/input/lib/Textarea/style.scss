@@ -4,16 +4,14 @@
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {
     &--#{$color} {
-      --textarea-border-color-focus: var(
-        --#{$color},
-        #{map-get($colors, $color, main)}
-      );
+      --_border-clr-focus: var(--#{$color}, #{map-get($colors, $color, main)});
     }
   }
 }
 
 .textarea {
-  // TODO: Use internal css variables as in @hrc/spinner
+  --_border-clr-focus: var(--textarea-border-color-focus, #{hrc.$primary});
+
   width: 200px;
   background-color: var(--textarea-bg, transparent);
   border: 1px solid var(--textarea-border-color, $input-border-color);
@@ -32,15 +30,12 @@
   resize: vertical;
 
   &:hover {
-    --textarea-border-color: var(--textarea-border-color-hover, #{$label-text});
+    border-color: var(--textarea-border-color-hover, #{$label-text});
   }
 
   &:focus {
-    --textarea-border-color: var(
-      --textarea-border-color-focus,
-      #{hrc.$primary}
-    );
-    outline-color: var(--textarea-border-color-focus, #{hrc.$primary});
+    border-color: var(--_border-clr-focus);
+    outline-color: var(--_border-clr-focus);
   }
 
   @include color-variants(hrc.$colors);
@@ -48,7 +43,7 @@
   &--with-error,
   &--with-error:hover,
   &--with-error:focus {
-    --textarea-border-color: var(--error, #{hrc.$error});
+    border-color: var(--error, #{hrc.$error});
   }
   &--with-error:focus {
     outline-color: var(--error, #{hrc.$error});
@@ -56,9 +51,9 @@
 
   &:disabled {
     --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
-    --textarea-text: var(--textarea-text-disabled, #{$input-border-color});
+    color: var(--textarea-text-disabled, #{$input-border-color});
     --textarea-bg: var(--textarea-bg-disabled);
-    --textarea-border-color: var(
+    border-color: var(
       --textarea-border-color-disabled,
       #{$input-border-color-disabled}
     );
