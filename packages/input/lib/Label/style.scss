@@ -10,7 +10,6 @@
 }
 
 .label {
-  // TODO: Use internal css variables as in @hrc/spinner
   display: inline-flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -33,7 +32,7 @@
   }
   &--checkbox,
   &--radio {
-    --label-font-size: 1rem;
+    font-size: var(--label-font-size, 1rem);
     cursor: pointer;
 
     &:focus-within {
