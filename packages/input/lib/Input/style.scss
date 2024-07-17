@@ -4,16 +4,13 @@
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {
     &--#{$color} {
-      --input-border-color-focus: var(
-        --#{$color},
-        #{map-get($colors, $color, main)}
-      );
+      --_border-clr-focus: var(--#{$color}, #{map-get($colors, $color, main)});
     }
   }
 }
 
 .input {
-  // TODO: Use internal css variables as in @hrc/spinner
+  --_border-clr-focus: var(--input-border-color-focus, #{hrc.$primary});
   display: flex;
   gap: var(--input-gap, 0.5rem);
 
@@ -31,12 +28,12 @@
   cursor: text;
 
   &:hover {
-    --input-border-color: var(--input-border-color-hover, #{$label-text});
+    border-color: var(--input-border-color-hover, #{$label-text});
   }
 
   &:focus-within {
-    --input-border-color: var(--input-border-color-focus, #{hrc.$primary});
-    outline-color: var(--input-border-color-focus, #{hrc.$primary});
+    border-color: var(--_border-clr-focus);
+    outline-color: var(--_border-clr-focus);
   }
 
   @include color-variants(hrc.$colors);
@@ -44,7 +41,7 @@
   &--with-error,
   &--with-error:hover,
   &--with-error:focus-within {
-    --input-border-color: var(--error, #{hrc.$error});
+    border-color: var(--error, #{hrc.$error});
   }
   &--with-error:focus-within {
     outline-color: var(--error, #{hrc.$error});
@@ -53,9 +50,9 @@
   &--disabled {
     pointer-events: none;
     --placeholder-color: var(--placeholder-disabled, #{$placeholder-disabled});
-    --input-text: var(--input-text-disabled, #{$input-border-color});
+    color: var(--input-text-disabled, #{$input-border-color});
     --input-bg: var(--input-bg-disabled);
-    --input-border-color: var(
+    border-color: var(
       --input-border-color-disabled,
       #{$input-border-color-disabled}
     );
