@@ -30,8 +30,7 @@
 
   @include color-variants(hrc.$colors);
 
-  &:disabled,
-  &--disabled {
+  &:disabled {
     pointer-events: none;
     --button-shadow: none;
     --button-outline-color: var(

@@ -56,10 +56,6 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
       @include hrc.border-rounded-bottom($button-radius);
     }
 
-    &.button--disabled > * {
-      border-left-color: var(--button-bg);
-    }
-
     &.button-group--outline > .button + * {
       border-left-color: var(--button-outline-color);
     }
