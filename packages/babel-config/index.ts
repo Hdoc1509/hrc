@@ -1,7 +1,6 @@
 type Package = (typeof SUPPORTED_PACKAGES)[number];
 
 const SUPPORTED_PACKAGES = ["button", "input", "spinner"] as const;
-const packagesList = SUPPORTED_PACKAGES.map((pkg) => `@hrc/${pkg}`).join(", ");
 
 const logPrefix = "\n[@hrc/babel-config]";
 
@@ -35,7 +34,9 @@ const config = (packages: "all" | Package | Package[]) => {
     if (!SUPPORTED_PACKAGES.includes(pkg))
       throw new Error(
         `${logPrefix} Error: "${pkg}" package is not available` +
-          `${logPrefix} Available packages: ${packagesList}`,
+          `${logPrefix} Available packages: ${SUPPORTED_PACKAGES.map(
+            (pkg) => `"${pkg}"`,
+          ).join(", ")}`,
       );
   }
 
