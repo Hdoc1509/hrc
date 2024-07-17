@@ -7,6 +7,7 @@ const MESSAGES = {
   AVAILABLE_PACKAGES: `Available packages: ${availablePackages}`,
   ERROR: {
     ARGS: `Error: packages must be an array of strings or a string`,
+    PACKAGE_TYPE: `Error: package must be a string`,
     SELECTED_PACKAGE: (pkg: string) =>
       `Error: "${pkg}" package is not available`,
   },
@@ -17,10 +18,15 @@ const createErrorMessage = (messages: string[]) => {
 };
 
 export class ValidationError {
-  static receivedArgs(received: unknown) {
-    return new Error(
-      createErrorMessage([MESSAGES.ERROR.ARGS, `Received: ${received}`]),
-    );
+  static receivedArgs(received: unknown, options: { idx?: number } = {}) {
+    const messages = [MESSAGES.ERROR.ARGS, `Received: ${received}`];
+
+    if (options.idx != null) {
+      messages.splice(0, 1, MESSAGES.ERROR.PACKAGE_TYPE);
+      messages.push(`At index: ${options.idx}`);
+    }
+
+    return new Error(createErrorMessage(messages));
   }
 
   static selectedPackage(pkg: string) {
