@@ -1,43 +1,21 @@
-type Package = (typeof SUPPORTED_PACKAGES)[number];
-
-const SUPPORTED_PACKAGES = ["button", "input", "spinner"] as const;
-
-const logPrefix = "\n[@hrc/babel-config]";
-
-const createPackageConfig = (pkg: Package) => {
-  return [
-    "import",
-    {
-      libraryName: `@hrc/${pkg}`,
-      libraryDirectory: "dist",
-      camel2DashComponentName: false,
-      transformToDefaultImport: false,
-    },
-    `@hrc/${pkg}`,
-  ] as const;
-};
+import { SUPPORTED_PACKAGES, type Package } from "./consts.js";
+import { ValidationError } from "./errors.js";
+import { createPackageConfig } from "./package-config.js";
 
 const config = (packages: "all" | Package | Package[]) => {
   if (packages === "all") return SUPPORTED_PACKAGES.map(createPackageConfig);
 
   if (!(Array.isArray(packages) || typeof packages === "string"))
-    throw new Error(
-      `${logPrefix} Error: packages must be an array or a string`,
-    );
+    throw ValidationError.receivedArgs(packages);
 
   const parsedPackages = [packages].flat();
 
   if (parsedPackages.some((pkg) => typeof pkg !== "string"))
-    throw new Error(`${logPrefix} Error: packages must be an array of strings`);
+    throw ValidationError.receivedArgs(packages);
 
   for (const pkg of parsedPackages) {
     if (!SUPPORTED_PACKAGES.includes(pkg))
-      throw new Error(
-        `${logPrefix} Error: "${pkg}" package is not available` +
-          `${logPrefix} Available packages: ${SUPPORTED_PACKAGES.map(
-            (pkg) => `"${pkg}"`,
-          ).join(", ")}`,
-      );
+      throw ValidationError.selectedPackage(pkg);
   }
 
   return parsedPackages.map(createPackageConfig);
