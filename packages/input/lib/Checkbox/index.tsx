@@ -28,7 +28,7 @@ export const Checkbox = ({
 
   return (
     <Label disabled={disabled} className={labelClassName} checkbox>
-      <div className={wrapperClass}>
+      <span className={wrapperClass}>
         <input
           {...restProps}
           className="checkbox__inner"
@@ -40,7 +40,7 @@ export const Checkbox = ({
           {icon ?? <CheckboxIcon />}
           {iconChecked ?? <CheckboxIconChecked />}
         </span>
-      </div>
+      </span>
       {required && label ? `${label} *` : label}
     </Label>
   );

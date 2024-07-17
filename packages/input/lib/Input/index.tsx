@@ -38,7 +38,7 @@ export const Input = ({
       className={labelClassName}
     >
       {required && label ? `${label} *` : label}
-      <div className={inputWrapperClass}>
+      <span className={inputWrapperClass}>
         {iconStart}
         <input
           {...restProps}
@@ -47,7 +47,7 @@ export const Input = ({
           required={required}
         />
         {iconEnd}
-      </div>
+      </span>
       {helperText && <span className="helper-text">{helperText}</span>}
     </Label>
   );
