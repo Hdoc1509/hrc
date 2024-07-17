@@ -1,6 +1,6 @@
 import { SUPPORTED_PACKAGES } from "./consts.js";
 
-const logPrefix = "\n[@hrc/babel-config]";
+const logPrefix = "[@hrc/babel-config]";
 const availablePackages = SUPPORTED_PACKAGES.map((p) => `"${p}"`).join(", ");
 
 const MESSAGES = {
@@ -12,18 +12,23 @@ const MESSAGES = {
   },
 };
 
+const createErrorMessage = (messages: string[]) => {
+  return `\n${logPrefix}`.concat(...messages.map((m) => `\n  ${m}`));
+};
+
 export class ValidationError {
   static receivedArgs(received: unknown) {
     return new Error(
-      `${logPrefix}\n  ${MESSAGES.ERROR.ARGS}.\n  Received: ${received}`,
+      createErrorMessage([MESSAGES.ERROR.ARGS, `Received: ${received}`]),
     );
   }
 
   static selectedPackage(pkg: string) {
     return new Error(
-      `${logPrefix}\n  ${MESSAGES.ERROR.SELECTED_PACKAGE(pkg)}`.concat(
-        `\n${MESSAGES.AVAILABLE_PACKAGES}`,
-      ),
+      createErrorMessage([
+        MESSAGES.ERROR.SELECTED_PACKAGE(pkg),
+        MESSAGES.AVAILABLE_PACKAGES,
+      ]),
     );
   }
 }
