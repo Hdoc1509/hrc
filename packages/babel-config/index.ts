@@ -5,7 +5,7 @@ import { createPackageConfig } from "./package-config.js";
 const config = (packages: "all" | Package | Package[]) => {
   if (packages === "all") return SUPPORTED_PACKAGES.map(createPackageConfig);
 
-  if (!(Array.isArray(packages) || typeof packages === "string"))
+  if (!Array.isArray(packages) && typeof packages !== "string")
     throw ValidationError.receivedArgs(packages);
 
   const parsedPackages = [packages].flat();
