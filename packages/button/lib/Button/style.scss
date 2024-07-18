@@ -4,15 +4,18 @@
 .button {
   --_p-y: 8px;
   --_radius: #{$button-radius};
+  --_bg: var(--button-bg, #{$button-bg});
+  --_bg-hover: var(--button-bg-hover, #{$button-bg-hover});
+  --_text-outline: var(--button-outline-color, #{$button-text});
   display: inline-flex;
   align-items: center;
   justify-content: var(--button-justify, center);
   gap: var(--button-gap, 8px);
 
-  border: 1px solid var(--button-bg, $button-bg);
+  border: 1px solid var(--_bg);
   border-radius: var(--_radius);
   box-shadow: $button-shadow;
-  background-color: var(--button-bg, $button-bg);
+  background-color: var(--_bg);
   padding: var(--button-padding, var(--_p-y) calc(var(--_p-y) * 2));
 
   font-family: var(--button-font-family, inherit);
@@ -25,24 +28,20 @@
 
   &:hover,
   &:focus {
-    --button-bg: var(--button-bg-hover, #{$button-bg-hover});
+    --_bg: var(--_bg-hover);
   }
 
   @include color-variants(hrc.$colors);
 
   &:disabled {
     pointer-events: none;
-    --button-shadow: none;
-    --button-outline-color: var(
-      --button-outline-color-disabled,
-      #{$button-bg-hover}
-    );
-    --button-bg: var(--button-bg-disabled, #{$button-bg-disabled});
-    --button-text: var(--button-text-disabled, #{$button-text-disabled});
+    box-shadow: none;
+    --_bg: var(--button-bg-disabled, #{$button-bg-disabled});
+    color: var(--button-text-disabled, #{$button-text-disabled});
   }
 
   &--no-shadow {
-    --button-shadow: none;
+    box-shadow: none;
   }
 
   &--small {
@@ -56,14 +55,11 @@
 
   &--outline,
   &--text {
-    --button-bg: transparent;
-    --button-bg-hover: var(
-      --button-outline-bg-hover,
-      #{$button-bg-hover-outline}
-    );
+    --_bg: transparent;
+    --_bg-hover: var(--button-outline-bg-hover, #{$button-bg-hover-outline});
     --button-bg-disabled: transparent;
-    --button-text: var(--button-outline-color);
-    --button-shadow: none;
+    color: var(--_text-outline);
+    box-shadow: none;
   }
   &--outline {
     border-color: currentColor;

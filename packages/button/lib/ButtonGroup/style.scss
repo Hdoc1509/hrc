@@ -1,7 +1,7 @@
 @use "@hrc/sass-utils" as hrc;
 @use "@scss" as *;
 
-$divider-color: var(--button-divider-color, var(--button-bg-hover));
+$divider-color: var(--button-divider-color, var(--_bg-hover));
 
 .button-group {
   display: inline-flex;
@@ -10,16 +10,16 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
   box-shadow: $button-shadow;
 
   &--no-shadow {
-    --button-shadow: none;
+    box-shadow: none;
   }
 
   &--disabled > * {
-    --button-divider-color: var(--button-outline-color);
+    --button-divider-color: #{$button-bg-hover};
   }
 
   > .button {
     border-radius: 0;
-    --button-shadow: none;
+    box-shadow: none;
 
     &:first-child {
       @include hrc.border-rounded-left($button-radius);
@@ -35,7 +35,7 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
 
   &--outline,
   &--text {
-    --button-shadow: none;
+    box-shadow: none;
   }
 
   & > .button--text + * {
@@ -57,7 +57,7 @@ $divider-color: var(--button-divider-color, var(--button-bg-hover));
     }
 
     &.button-group--outline > .button + * {
-      border-left-color: var(--button-outline-color);
+      border-left-color: currentcolor;
     }
     &.button-group--text > .button {
       border-color: transparent;
