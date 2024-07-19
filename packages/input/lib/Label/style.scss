@@ -4,12 +4,13 @@
 @mixin color-variants($colors) {
   @each $color, $_ in $colors {
     &--#{$color} {
-      --label-text-focus: var(--#{$color}, #{map-get($colors, $color, main)});
+      --_text-focus: var(--#{$color}, #{map-get($colors, $color, main)});
     }
   }
 }
 
 .label {
+  --_text-focus: var(--label-text-focus, #{hrc.$primary});
   display: inline-flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -20,7 +21,7 @@
   color: var(--label-text, $label-text);
 
   &:focus-within {
-    color: var(--label-text-focus, #{hrc.$primary});
+    color: var(--_text-focus);
   }
 
   @include color-variants(hrc.$colors);
@@ -41,12 +42,12 @@
   }
 
   &--with-error {
-    --label-text: var(--error, #{hrc.$error});
-    --label-text-focus: var(--error, #{hrc.$error});
+    color: var(--error, #{hrc.$error});
+    --_text-focus: var(--error, #{hrc.$error});
   }
 
   &--disabled {
-    --label-text: var(--label-text-disabled, rgba(0, 0, 0, 0.4));
+    color: var(--label-text-disabled, rgba(0, 0, 0, 0.4));
     pointer-events: none;
   }
 

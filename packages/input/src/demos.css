@@ -28,7 +28,7 @@
 }
 
 .label--focused.label--focused {
-  color: var(--label-text-focus);
+  color: var(--_text-focus);
 }
 
 .checkbox-default .label,
