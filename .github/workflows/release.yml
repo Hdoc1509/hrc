@@ -3,8 +3,8 @@ name: GitHub release tag
 
 on:
   push:
-    tags-ignore:
-      - "@hrc/website" # exclude website
+    tags:
+      - "@hrc/*"
 
 jobs:
   release:
