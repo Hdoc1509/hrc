@@ -19,6 +19,9 @@ jobs:
     outputs:
       files: ${{ steps.filter.outpus.only_changed }}
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - uses: tj-actions/changed-files@v44
         id: filter
         with:
