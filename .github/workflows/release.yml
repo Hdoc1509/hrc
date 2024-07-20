@@ -31,4 +31,4 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           body: |
-            Please refer to [CHANGELOG.md](https://github.com/Hdoc1509/hrc/blob/main/packages/${{ steps.tag.outputs.pkg_name }}/CHANGELOG.md) for details.
+            Please refer to [CHANGELOG.md](https://github.com/Hdoc1509/hrc/blob/${{ github.ref_name }}/packages/${{ steps.tag.outputs.pkg_name }}/CHANGELOG.md) for details.
