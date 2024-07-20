@@ -6,6 +6,8 @@ description: A guide to minimizing bundle size of <hrc /> components
 import { Steps } from "@astrojs/starlight/components";
 import { InstallCommand } from "@components";
 
+export const tabKey = "minimize-bundle-size";
+
 The following packages exports multiple components:
 
 - [`@hrc/button`](/hrc/packages/button)
@@ -34,7 +36,7 @@ component. You have two options to reduce the bundle size:
 
 2. Install `babel-plugin-import`:
 
-   <InstallCommand packages={["babel-plugin-import"]} isDev />
+   <InstallCommand packages={["babel-plugin-import"]} syncKey={tabKey} isDev />
 
 3. Create a `.babelrc.js` in the root directory of your project.
 
@@ -78,7 +80,7 @@ component. You have two options to reduce the bundle size:
 
 1. Install `@hrc/babel-config`:
 
-   <InstallCommand packages={["@hrc/babel-config"]} isDev />
+   <InstallCommand packages={["@hrc/babel-config"]} syncKey={tabKey} isDev />
 
 2. Write the following code in your `.babelrc.js` file:
 
