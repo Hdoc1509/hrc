@@ -2,8 +2,7 @@ name: Deploy Website
 
 on:
   push:
-    tags:
-      - "@hrc/*"
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
@@ -15,9 +14,21 @@ permissions:
   id-token: write
 
 jobs:
+  changed-files:
+    runs-on: ubuntu-22.04
+    outputs:
+      files: ${{ steps.filter.outpus.only_changed }}
+    steps:
+      - uses: tj-actions/changed-files@v44
+        id: filter
+        with:
+          files: |
+            website/CHANGELOG.md
+
   build:
+    needs: changed-files
     # prevents this job from running on forks
-    if: github.repository == 'Hdoc1509/hrc'
+    if: github.repository == 'Hdoc1509/hrc' && needs.changed-files.outputs.files == 'true'
     runs-on: ubuntu-22.04
     strategy:
       matrix:
