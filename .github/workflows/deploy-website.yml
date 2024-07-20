@@ -3,7 +3,8 @@ name: Deploy Website
 on:
   push:
     tags:
-      - "@hrc/website"
+      - "@hrc/*"
+
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
@@ -14,29 +15,10 @@ permissions:
   id-token: write
 
 jobs:
-  # based on https://stackoverflow.com/a/72959712
-  check-branch:
-    runs-on: ubuntu-22.04
-    outputs:
-      branch: ${{ steps.check_step.outputs.branch }}
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Get current branch
-        id: check_step
-        run: |
-          raw=$(git branch -r --contains ${{ github.ref }})
-          branch=${raw##*/}
-          echo "{name}=branch" >> $GITHUB_OUTPUT
-          echo "current branch: $branch"
-
   build:
-    needs: check-branch
+    # prevents this job from running on forks
+    if: github.repository == 'Hdoc1509/hrc'
     runs-on: ubuntu-22.04
-    if: ${{ needs.check-branch.outputs.branch == 'master' }}
     strategy:
       matrix:
         node-version: [20]
@@ -67,9 +49,8 @@ jobs:
           path: ./website/dist
 
   deploy:
-    needs: [check-branch, build]
+    needs: [build]
     runs-on: ubuntu-22.04
-    if: ${{ needs.check-branch.outputs.branch == 'master' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
