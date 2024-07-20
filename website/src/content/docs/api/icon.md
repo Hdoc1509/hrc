@@ -167,22 +167,22 @@ Styles for `inherit` size variant. The font size is inherited from the parent.
 
 **`material-icons-outlined`**
 
-Styles for the `outlined` variant.
+Styles for the `outlined` aspect variant.
 
 ---
 
 **`material-icons-round`**
 
-Styles for the `round` variant.
+Styles for the `round` aspect variant.
 
 ---
 
 **`material-icons-sharp`**
 
-Styles for the `sharp` variant.
+Styles for the `sharp` aspect variant.
 
 ---
 
 **`material-icons-two-tone`**
 
-Styles for the `two-tone` variant.
+Styles for the `two-tone` aspect variant.
