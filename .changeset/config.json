@@ -7,7 +7,10 @@
   "access": "public",
   "baseBranch": "master",
   "updateInternalDependencies": "patch",
-  "ignore": [],
+  "ignore": ["@hrc/website"],
+  "privatePackages": {
+    "version": false
+  },
   "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
     "onlyUpdatePeerDependentsWhenOutOfRange": true,
     "updateInternalDependents": "always"
