@@ -86,7 +86,7 @@ CSS variables (custom properties):
   --checkbox-size: 24px;
 
   --checkbox-color: #000;
-  --checkbox-checked-color: lightblue;
+  --checkbox-color-checked: lightblue;
   --checkbox-color-disabled: rgba(0, 0, 0, 0.26);
 
   /* COLOR VARIANTS */

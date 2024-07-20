@@ -78,7 +78,7 @@ variables (custom properties):
   --radio-size: 24px;
 
   --radio-color: #000;
-  --radio-checked-color: lightblue;
+  --radio-color-checked: lightblue;
   --radio-color-disabled: rgba(0, 0, 0, 0.26);
 
   /* COLOR VARIANTS */
