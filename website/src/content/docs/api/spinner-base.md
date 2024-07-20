@@ -46,8 +46,8 @@ Type: `string`
 
 ## CSS Variables
 
-You can customize the styles fo any spinner component by using the following CSS
-variables (custom properties):
+You can customize the styles for any spinner component by using the following
+CSS variables (custom properties):
 
 ```css
 .any-parent-of-spinner,
@@ -100,7 +100,7 @@ Styles for the `warning` color variant.
 
 **`.spinner--info`**
 
-Styles fot the `info` color variant.
+Styles for the `info` color variant.
 
 ---
 
