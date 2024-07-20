@@ -1,5 +1,75 @@
 # @hrc/input
 
+## 1.0.0
+
+**This release contains backwards-incompatible changes**. To avoid picking up
+releases like this, you should set a exact version or use a version range syntax
+that only accepts patch upgrades, i.e. `^0.7.0` or `~0.7.0`, in your
+`package.json`
+
+### Major Changes
+
+- dfaa1d1: First stable release.
+
+  - Updated package keywords
+
+### Minor Changes
+
+- 3ec43d1: Renamed classname for error state of `<Input />`.
+
+  #### Migrating
+
+  - `.input--error` -> `.input--with-error`
+
+  #### Why?
+
+  This change will avoid conflicts with the future `.input-error` class that will
+  be used in color variants.
+
+- a3c8b44: Add `<Radio />` component
+- 490d90b: Add color variants for `<Textarea />`
+- cc0b01c: Rename css variablest to set checked colors of `<Checkbox />` and `<Radio />`.
+
+  #### Migrating
+
+  ```diff
+  .my-checkbox {
+  - --checkbox-checked-color: var(--color-primary);
+  + --checkbox-color-checked: var(--color-primary);
+  }
+
+  .my-radio {
+  - --radio-checked-color: var(--color-primary);
+  + --radio-color-checked: var(--color-primary);
+  }
+  ```
+
+  #### Why?
+
+  It's more consistent to use the same prefix for set colors.
+
+- ec7912f: Rename classname for error state of `<Textarea />`.
+
+  #### Migrating
+
+  - `.textarea--error` -> `.textarea--with-error`
+
+  #### Why?
+
+  This change will avoid conflicts with the future `.textarea--error` class that
+  will be used in color variants.
+
+- b39638b: Use same padding for `<Input />` and `<Textarea />`
+- 1f34b51: Add color variants for `<Input />`
+- c8e603b: Add `cursor: pointer` to `<Checkbox />`
+- 5b4b978: Add `<RadioGroup />` component
+- badca28: Add color variants for internal `<Label />` component
+- b3d7284: Set `cursor: text` to wrapper in `<Input />`
+
+### Patch Changes
+
+- 4b9d648: Disable pointer events of `<Label />` when disabled
+
 ## 0.9.1
 
 ### Patch Changes

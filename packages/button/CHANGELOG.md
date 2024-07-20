@@ -1,5 +1,89 @@
 # @hrc/button
 
+## 3.0.0
+
+### Major Changes
+
+- 3883533: Rename css variable to set `justify-content`
+
+  #### Migrating
+
+  ```diff
+  .my-selector {
+  - --button-justify-content: flex-start;
+  + --button-justify: flex-start;
+  }
+  ```
+
+- 5c0b82f: Remove default text for `<Button />`
+
+  #### Migrating
+
+  ```diff
+  - <Button color="primary">
+  + <Button color="primary">Default</Button>
+  ```
+
+  #### Why?
+
+  This change makes `<Button />` to be used as a regular HTML `button` element.
+
+- 01009d6: Change way of handling rounded variants
+
+  - removed `roundedSide` and `fullRounded` prop from `<Button />` and `<ButtonIcon />`
+  - added `rounded` prop
+
+  #### Migrating
+
+  1. Remove `roundedSide` and `fullRounded` props from `<Button />` and `<ButtonIcon />`
+  2. Use `rounded` prop instead
+
+  ```diff
+  function App() {
+    return (
+      <>
+  -     <Button roundedSize="left">Left</Button>
+  -     <Button roundedSize="top">Top</Button>
+  -     <Button fullRounded>Full</Button>
+  +     <BUtton rounded="left">Left</Button>
+  +     <Button rounded="top">Top</Button>
+  +     <Button rounded="full">Full</Button>
+      </>
+    );
+  }
+  ```
+
+- a3f0e42: Rename prop to disable shadow
+
+  #### Migrating
+
+  ```diff
+  function App() {
+    return (
+      <>
+  -     <Button disableShadow>No shadow</Button>
+  +     <Button noShadow>No shadow</Button>
+      </>
+    );
+  }
+  ```
+
+  #### Why?
+
+  It was renamed to match its corresponding class: `.button--no-shadow`
+
+### Minor Changes
+
+- fb270a5: Allow font family inheritance by default
+- a937b74: Prevent any direct chidlren of `<Button />` from shrinking
+- 0a975e0: Add `none` rounded variant
+- 5d41ccc: Add `cursor: pointer` to `<Button />`'
+- 078dfa7: Removed `--button-outline-color-disabled` variable.
+
+  #### Why?
+
+  It's not neccessary since `outline` variant relies on text color.
+
 ## 2.6.1
 
 ### Patch Changes

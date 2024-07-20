@@ -1,5 +1,11 @@
 # @hrc/babel-config
 
+## 1.2.0
+
+### Minor Changes
+
+- b302498: Remove scope from message of avaiable packages
+
 ## 1.1.0
 
 ### Minor Changes

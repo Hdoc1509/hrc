@@ -1,5 +1,12 @@
 # @hrc/toggle-theme
 
+## 2.3.0
+
+### Minor Changes
+
+- a7b3bd9: Add util `loadTheme()`
+- dd00b3c: Add aria label
+
 ## 2.2.0
 
 ### Minor Changes
