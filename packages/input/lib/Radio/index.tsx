@@ -26,10 +26,10 @@ export const Radio = ({
   const size = sizeProp ?? group?.size;
   const color = colorProp ?? group?.color;
   const disabled = disabledProp ?? group?.disabled;
-  let isDefaultChecked = checked ?? defaultChecked;
+  let isChecked = checked ?? defaultChecked;
 
   if ((group?.defaultValue != null || group?.value != null) && value != null) {
-    isDefaultChecked = group.defaultValue === value || group.value === value;
+    isChecked = group.defaultValue === value || group.value === value;
   }
 
   const wrapperClass = clsx(
@@ -44,10 +44,8 @@ export const Radio = ({
 
   const checkedProp =
     onChange != null || group?.onChange != null
-      ? {
-          checked: isDefaultChecked || false,
-        }
-      : { defaultChecked: isDefaultChecked };
+      ? { checked: isChecked || false }
+      : { defaultChecked: isChecked };
 
   return (
     <Label disabled={disabled} className={labelClassName} radio>
