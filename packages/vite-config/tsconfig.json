@@ -6,7 +6,7 @@
     // allow usage of import.meta
     "module": "ESNext",
     "declaration": true,
-    "outDir": "build"
+    "outDir": "dist"
   },
   "include": ["index.ts"]
 }
