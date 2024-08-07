@@ -28,9 +28,8 @@ export const Radio = ({
   const disabled = disabledProp ?? group?.disabled;
   let isChecked = checked ?? defaultChecked;
 
-  if ((group?.defaultValue != null || group?.value != null) && value != null) {
+  if (group?.defaultValue != null || group?.value != null)
     isChecked = group.defaultValue === value || group.value === value;
-  }
 
   const wrapperClass = clsx(
     "radio",
