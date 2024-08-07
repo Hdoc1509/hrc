@@ -10,7 +10,7 @@
     "dev": "tsc --watch --project tsconfig.json"
   },
   "devDependencies": {
-    "typescript": "*"
+    "typescript": "5.2.2"
   },
   "dependencies": {
     "glob": "10.3.10"
