@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 concurrency:
   group: ${{ github.head_ref || github.ref_name }}
@@ -48,3 +48,22 @@ jobs:
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint
+
+  type-check:
+    needs: changed-files
+    runs-on: ubuntu-22.04
+    if: ${{ needs.changed-files.outputs.files != 'true' }}
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node-version}}
+          cache: "pnpm"
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run type-check

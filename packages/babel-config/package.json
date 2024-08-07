@@ -19,7 +19,8 @@
   },
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "dev": "tsc --watch --project tsconfig.json"
+    "dev": "tsc --watch --project tsconfig.json",
+    "type-check": "tsc --noEmit --project tsconfig.json"
   },
   "repository": {
     "type": "git",
