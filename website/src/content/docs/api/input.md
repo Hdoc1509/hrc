@@ -117,6 +117,7 @@ CSS variables (custom properties):
   --input-border-color-focus: lightblue;
   --input-border-color-disabled: rgba(0, 0, 0, 0.26);
 
+  --input-font-family: "Roboto";
   --input-font-size: 16px;
   --input-font-weight: 600;
   --input-text: #000;
