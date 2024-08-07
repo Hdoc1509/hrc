@@ -28,7 +28,7 @@ that only accepts patch upgrades, i.e. `^0.7.0` or `~0.7.0`, in your
 
 - a3c8b44: Add `<Radio />` component
 - 490d90b: Add color variants for `<Textarea />`
-- cc0b01c: Rename css variablest to set checked colors of `<Checkbox />` and `<Radio />`.
+- cc0b01c: Rename css variables to set checked colors of `<Checkbox />`
 
   #### Migrating
 
@@ -36,11 +36,6 @@ that only accepts patch upgrades, i.e. `^0.7.0` or `~0.7.0`, in your
   .my-checkbox {
   - --checkbox-checked-color: var(--color-primary);
   + --checkbox-color-checked: var(--color-primary);
-  }
-
-  .my-radio {
-  - --radio-checked-color: var(--color-primary);
-  + --radio-color-checked: var(--color-primary);
   }
   ```
 
