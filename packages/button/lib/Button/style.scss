@@ -26,9 +26,20 @@
   transition: background-color 0.2s ease;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
     --_bg: var(--_bg-hover);
+  }
+
+  @supports selector(:focus-visible) {
+    outline: none;
+
+    &:focus-visible {
+      --_bg: var(--_bg-hover);
+
+      &.button {
+        box-shadow: $button-shadow-focus-visible;
+      }
+    }
   }
 
   @include color-variants(hrc.$colors);

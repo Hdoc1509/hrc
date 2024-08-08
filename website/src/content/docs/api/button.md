@@ -112,7 +112,9 @@ variables (custom properties):
 
   --button-padding: 10px;
   --button-radius: 10px;
+
   --button-shadow: 0 0 0 1px black;
+  --button-shadow-focus-visible: 0 0 0 1px gray;
 
   /* COLOR VARIANTS: primary | secondary | error | info | warning | success */
   /* --[color]: <color> */

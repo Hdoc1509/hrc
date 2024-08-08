@@ -21,6 +21,10 @@ $divider-color: var(--button-divider-color, var(--_bg-hover));
     border-radius: 0;
     box-shadow: none;
 
+    &:focus-visible {
+      z-index: 1;
+    }
+
     &:first-child {
       @include hrc.border-rounded-left($button-radius);
     }
