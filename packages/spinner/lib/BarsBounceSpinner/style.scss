@@ -2,12 +2,11 @@
 // https://github.com/loadingio/css-spinner/blob/master/src/facebook/index.styl
 
 .bars-bounce-spinner {
-  --_gap: calc(var(--_size) / 10);
-  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 
   div {
-    display: inline-block;
-    position: absolute;
     width: calc(var(--_size) / 5);
 
     background-color: var(--_color);
@@ -16,15 +15,12 @@
     box-sizing: border-box;
 
     &:nth-child(1) {
-      left: calc(var(--_gap) * 1);
       animation-delay: calc(-0.25 * var(--_speed));
     }
     &:nth-child(2) {
-      left: calc(var(--_gap) * 4);
       animation-delay: calc(-0.1 * var(--_speed));
     }
     &:nth-child(3) {
-      left: calc(var(--_gap) * 7);
       animation-delay: 0s;
     }
   }
