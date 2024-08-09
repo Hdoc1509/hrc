@@ -1,0 +1,71 @@
+// Taken and adapted from:
+// https://github.com/loadingio/css-spinner/blob/master/src/roller/index.styl
+@use "sass:math";
+@use "@scss" as * with (
+  $size: 50px
+);
+
+$d-angle: 15deg;
+$o-angle: 90deg - $d-angle * 8 * 0.5;
+
+.roller-spinner.spinner {
+  --_size: #{$spinner-size};
+  --_ball-size: calc(var(--_size) * 0.09);
+  --_radius: calc(var(--_size) * 0.4);
+  position: relative;
+
+  div,
+  div:after {
+    box-sizing: border-box;
+  }
+
+  div {
+    animation: roller-spinner var(--_speed) cubic-bezier(0.5, 0, 0.5, 1)
+      infinite;
+    transform-origin: calc(var(--_size) * 0.5) calc(var(--_size) * 0.5);
+
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+
+      width: var(--_ball-size);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: var(--_color);
+      // NOTE: how can I remove usage of margin?
+      margin: calc(var(--_ball-size) * -0.5) 0 0 calc(var(--_ball-size) * -0.5);
+    }
+
+    @for $key from 1 through 8 {
+      &:nth-child(#{$key}) {
+        animation-delay: calc(-0.03 * $key * var(--_speed));
+      }
+      &:nth-child(#{$key}):after {
+        top: calc(
+          math.sin($o-angle + $d-angle * $key) *
+            var(--_radius) +
+            var(--_size) *
+            0.5
+        );
+        left: calc(
+          math.cos($o-angle + $d-angle * $key) *
+            var(--_radius) +
+            var(--_size) *
+            0.5
+        );
+      }
+    }
+  }
+
+  @include size-variants();
+}
+
+@keyframes roller-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

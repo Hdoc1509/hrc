@@ -5,3 +5,4 @@ export { DualRingSpinner } from "./DualRingSpinner";
 export { GrowingSpinner } from "./GrowingSpinner";
 export { HeartSpinner } from "./HeartSpinner";
 export { RingSpinner } from "./RingSpinner";
+export { RollerSpinner } from "./RollerSpinner";
