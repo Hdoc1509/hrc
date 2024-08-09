@@ -66,4 +66,5 @@ jobs:
           node-version: ${{matrix.node-version}}
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
+      - run: pnpm nx build @hrc/material-icons
       - run: pnpm run type-check
