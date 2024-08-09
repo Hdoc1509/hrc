@@ -1,6 +1,6 @@
-export { RingSpinner } from "./RingSpinner";
 export { BorderSpinner } from "./BorderSpinner";
-export { DualRingSpinner } from "./DualRingSpinner";
 export { CircleSpinner } from "./CircleSpinner";
+export { DualRingSpinner } from "./DualRingSpinner";
 export { GrowingSpinner } from "./GrowingSpinner";
 export { HeartSpinner } from "./HeartSpinner";
+export { RingSpinner } from "./RingSpinner";
