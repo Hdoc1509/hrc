@@ -4,7 +4,7 @@
     "moduleResolution": "NodeNext",
     "target": "ESNext",
     // allow usage of import.meta
-    "module": "ESNext",
+    "module": "NodeNext",
     "declaration": true,
     "outDir": "dist"
   },
