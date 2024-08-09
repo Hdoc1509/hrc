@@ -1,3 +1,4 @@
+export { BarsBounceSpinner } from "./BarsBounceSpinner";
 export { BorderSpinner } from "./BorderSpinner";
 export { CircleSpinner } from "./CircleSpinner";
 export { DualRingSpinner } from "./DualRingSpinner";
