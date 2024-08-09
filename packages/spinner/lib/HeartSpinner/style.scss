@@ -17,7 +17,7 @@
     top: calc(var(--_size) * 0.35);
     left: calc(var(--_size) * 0.35);
 
-    width: calc(var(--_size) * 0.4);
+    width: calc(var(--_size) * 0.5);
     aspect-ratio: 1;
     background-color: var(--_color);
 
@@ -30,7 +30,7 @@
     display: block;
     position: absolute;
 
-    width: calc(var(--_size) * 0.4);
+    width: calc(var(--_size) * 0.5);
     aspect-ratio: 1;
     background-color: var(--_color);
   }
