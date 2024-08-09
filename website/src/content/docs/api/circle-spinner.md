@@ -19,7 +19,7 @@ import { CircleSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`circle-spinner`**
+**`.circle-spinner`**
 
 The base styles for `<CircleSpinner />` component.
 

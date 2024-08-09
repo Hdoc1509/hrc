@@ -19,7 +19,7 @@ import { BorderSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`border-spinner`**
+**`.border-spinner`**
 
 The base styles for `<BorderSpinner />` component.
 

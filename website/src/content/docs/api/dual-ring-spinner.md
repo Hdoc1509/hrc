@@ -19,7 +19,7 @@ import { DualRingSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`dual-ring-spinner`**
+**`.dual-ring-spinner`**
 
 The base styles for `<DualRingSpinner />` component.
 

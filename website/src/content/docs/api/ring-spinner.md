@@ -19,7 +19,7 @@ import { RingSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`ring-spinner`**
+**`.ring-spinner`**
 
 The base styles for `<RingSpinner />` component.
 

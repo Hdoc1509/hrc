@@ -19,7 +19,7 @@ import { GrowingSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`growing-spinner`**
+**`.growing-spinner`**
 
 The base styles for `<GrowingSpinner />` component.
 
