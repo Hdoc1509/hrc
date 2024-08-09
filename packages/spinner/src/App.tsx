@@ -1,9 +1,9 @@
 import { Demo } from "./components/Demo";
-import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
 import { BorderSpinnerDemo } from "./components/BorderSpinnerDemo";
-import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
 import { CircleSpinnerDemo } from "./components/CircleSpinnerDemo";
+import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
+import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
 import "./App.css";
 
 function App() {
