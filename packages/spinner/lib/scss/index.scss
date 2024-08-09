@@ -10,6 +10,15 @@ $spinner-speed: var(--spinner-animation-duration, $speed);
 
 $spinner-color: var(--spinner-color, currentcolor);
 
+@mixin size-variants() {
+  &--small {
+    --_size: #{$size-small};
+  }
+  &--large {
+    --_size: #{$size-large};
+  }
+}
+
 @mixin speed-variants() {
   &--slow {
     --_speed: #{$speed-slow};

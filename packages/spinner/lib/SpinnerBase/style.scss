@@ -20,13 +20,7 @@
   width: var(--_size);
   aspect-ratio: 1;
 
-  &--small {
-    --_size: #{$size-small};
-  }
-  &--large {
-    --_size: #{$size-large};
-  }
-
+  @include size-variants();
   @include speed-variants();
   @include color-variants(hrc.$colors);
 }
