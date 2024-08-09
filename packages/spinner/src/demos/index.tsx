@@ -20,6 +20,11 @@ export { GrowingSpinnerColors } from "./growing-spinner/colors";
 export { GrowingSpinnerSizes } from "./growing-spinner/sizes";
 export { GrowingSpinnerSpeeds } from "./growing-spinner/speeds";
 
+export { HeartSpinnerDefault } from "./heart-spinner/default";
+export { HeartSpinnerColors } from "./heart-spinner/colors";
+export { HeartSpinnerSizes } from "./heart-spinner/sizes";
+export { HeartSpinnerSpeeds } from "./heart-spinner/speeds";
+
 export { RingSpinnerDefault } from "./ring-spinner/default";
 export { RingSpinnerColors } from "./ring-spinner/colors";
 export { RingSpinnerSizes } from "./ring-spinner/sizes";

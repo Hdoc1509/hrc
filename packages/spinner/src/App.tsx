@@ -3,6 +3,7 @@ import { BorderSpinnerDemo } from "./components/BorderSpinnerDemo";
 import { CircleSpinnerDemo } from "./components/CircleSpinnerDemo";
 import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
+import { HeartSpinnerDemo } from "./components/HeartSpinnerDemo";
 import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
       <CircleSpinnerDemo />
       <DualRingSpinnerDemo />
       <GrowingSpinnerDemo />
+      <HeartSpinnerDemo />
       <RingSpinnerDemo />
     </>
   );
