@@ -1,4 +1,5 @@
 import { Demo } from "./components/Demo";
+import { BarsBounceSpinnerDemo } from "./components/BarsBounceSpinnerDemo";
 import { BorderSpinnerDemo } from "./components/BorderSpinnerDemo";
 import { CircleSpinnerDemo } from "./components/CircleSpinnerDemo";
 import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Demo />
+      <BarsBounceSpinnerDemo />
       <BorderSpinnerDemo />
       <CircleSpinnerDemo />
       <DualRingSpinnerDemo />

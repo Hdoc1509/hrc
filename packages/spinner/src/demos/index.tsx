@@ -1,5 +1,10 @@
 export { PackageDemo } from "./package";
 
+export { BarsBounceSpinnerDefault } from "./bars-bounce-spinner/default";
+export { BarsBounceSpinnerColors } from "./bars-bounce-spinner/colors";
+export { BarsBounceSpinnerSizes } from "./bars-bounce-spinner/sizes";
+export { BarsBounceSpinnerSpeeds } from "./bars-bounce-spinner/speeds";
+
 export { BorderSpinnerDefault } from "./border-spinner/default";
 export { BorderSpinnerColors } from "./border-spinner/colors";
 export { BorderSpinnerSizes } from "./border-spinner/sizes";
