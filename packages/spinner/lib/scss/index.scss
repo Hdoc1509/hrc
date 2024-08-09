@@ -1,4 +1,4 @@
-$size: 40px;
+$size: 40px !default;
 $size-small: $size * 0.75;
 $size-large: $size * 1.25;
 $spinner-size: var(--spinner-size, $size);
