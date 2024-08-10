@@ -12,7 +12,6 @@
     background-color: var(--_color);
     animation: bars-bounce-spinner var(--_speed) cubic-bezier(0, 0.5, 0.5, 1)
       infinite;
-    box-sizing: border-box;
 
     &:nth-child(1) {
       animation-delay: calc(-0.25 * var(--_speed));

@@ -10,11 +10,6 @@ $o-angle: 90deg - $d-angle * 8 * 0.5;
   --_radius: calc(var(--_size) * 0.45);
   position: relative;
 
-  div,
-  div:after {
-    box-sizing: border-box;
-  }
-
   div {
     animation: roller-spinner var(--_speed) cubic-bezier(0.5, 0, 0.5, 1)
       infinite;

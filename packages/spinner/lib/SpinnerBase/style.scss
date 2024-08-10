@@ -23,4 +23,10 @@
   @include size-variants();
   @include speed-variants();
   @include color-variants(hrc.$colors);
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
 }
