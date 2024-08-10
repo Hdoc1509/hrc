@@ -10,8 +10,8 @@ $o-angle: 90deg - $d-angle * 8 * 0.5;
 
 .roller-spinner.spinner {
   --_size: #{$spinner-size};
-  --_ball-size: calc(var(--_size) * 0.09);
-  --_radius: calc(var(--_size) * 0.4);
+  --_ball-size: calc(var(--_size) * 0.1);
+  --_radius: calc(var(--_size) * 0.45);
   position: relative;
 
   div,
@@ -33,7 +33,6 @@ $o-angle: 90deg - $d-angle * 8 * 0.5;
       aspect-ratio: 1;
       border-radius: 50%;
       background-color: var(--_color);
-      // NOTE: how can I remove usage of margin?
       margin: calc(var(--_ball-size) * -0.5) 0 0 calc(var(--_ball-size) * -0.5);
     }
 
