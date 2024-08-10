@@ -6,6 +6,7 @@ import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
 import { HeartSpinnerDemo } from "./components/HeartSpinnerDemo";
 import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
+import { RollerSpinnerDemo } from "./components/RollerSpinnerDemo";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <GrowingSpinnerDemo />
       <HeartSpinnerDemo />
       <RingSpinnerDemo />
+      <RollerSpinnerDemo />
     </>
   );
 }
