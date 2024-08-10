@@ -3,6 +3,7 @@ export { BarsBounce2Spinner } from "./BarsBounce2Spinner";
 export { BorderSpinner } from "./BorderSpinner";
 export { CircleSpinner } from "./CircleSpinner";
 export { DualRingSpinner } from "./DualRingSpinner";
+export { EllipsisSpinner } from "./EllipsisSpinner";
 export { GrowingSpinner } from "./GrowingSpinner";
 export { HeartSpinner } from "./HeartSpinner";
 export { RingSpinner } from "./RingSpinner";
