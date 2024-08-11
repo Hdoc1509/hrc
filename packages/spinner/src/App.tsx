@@ -3,7 +3,7 @@ import { BarsBounceSpinnerDemo } from "./components/BarsBounceSpinnerDemo";
 import { BarsBounce2SpinnerDemo } from "./components/BarsBounce2SpinnerDemo";
 import { BorderSpinnerDemo } from "./components/BorderSpinnerDemo";
 import { CircleSpinnerDemo } from "./components/CircleSpinnerDemo";
-import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
+import { DualRingSpinnerDemo } from "./components/DualRingSpinnerDemo";
 import { EllipsisSpinnerDemo } from "./components/EllipsisSpinnerDemo";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
 import { HeartSpinnerDemo } from "./components/HeartSpinnerDemo";
