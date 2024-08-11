@@ -1,0 +1,18 @@
+// Taken and adapted from:
+// https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L16
+.rotate-plane-spinner {
+  background-color: var(--_color);
+  animation: rotate-plane-spinner var(--_speed) ease-in-out infinite;
+}
+
+@keyframes rotate-plane-spinner {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
