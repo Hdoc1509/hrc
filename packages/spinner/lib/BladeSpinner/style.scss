@@ -1,0 +1,42 @@
+// Taken and adapted from:
+// https://github.com/loadingio/css-spinner/blob/master/src/spinner/index.styl
+.blade-spinner {
+  --_radius: calc(var(--_size) * 0.35);
+  --_height: calc(var(--_size) * 0.3);
+  --_width: calc(var(--_size) * 0.08);
+  position: relative;
+  color: var(--_color);
+
+  div {
+    transform-origin: calc(var(--_size) * 0.5) calc(var(--_size) * 0.5);
+    animation: blade-spinner var(--_speed) linear infinite;
+
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: calc(var(--_size) * 0.5 - var(--_radius) - var(--_height) * 0.5);
+      left: calc(var(--_size) * 0.5 - var(--_width) * 0.5);
+      width: var(--_width);
+      height: var(--_height);
+      border-radius: 20%;
+      background: var(--_color);
+    }
+
+    @for $angle from 0 through 11 {
+      &:nth-child(#{$angle + 1}) {
+        transform: rotate(calc($angle * 30deg));
+        animation-delay: calc(var(--_speed) * (-1 * (11 - $angle) / 12));
+      }
+    }
+  }
+}
+
+@keyframes blade-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
