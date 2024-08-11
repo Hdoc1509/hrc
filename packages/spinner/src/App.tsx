@@ -8,6 +8,7 @@ import { EllipsisSpinnerDemo } from "./components/EllipsisSpinnerDemo";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
 import { HeartSpinnerDemo } from "./components/HeartSpinnerDemo";
 import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
+import { RippleSpinnerDemo } from "./components/RippleSpinnerDemo";
 import { RollerSpinnerDemo } from "./components/RollerSpinnerDemo";
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
       <EllipsisSpinnerDemo />
       <GrowingSpinnerDemo />
       <HeartSpinnerDemo />
+      <RippleSpinnerDemo />
       <RingSpinnerDemo />
       <RollerSpinnerDemo />
     </>

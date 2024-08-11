@@ -45,6 +45,11 @@ export { RingSpinnerColors } from "./ring-spinner/colors";
 export { RingSpinnerSizes } from "./ring-spinner/sizes";
 export { RingSpinnerSpeeds } from "./ring-spinner/speeds";
 
+export { RippleSpinnerDefault } from "./ripple-spinner/default";
+export { RippleSpinnerColors } from "./ripple-spinner/colors";
+export { RippleSpinnerSizes } from "./ripple-spinner/sizes";
+export { RippleSpinnerSpeeds } from "./ripple-spinner/speeds";
+
 export { RollerSpinnerDefault } from "./roller-spinner/default";
 export { RollerSpinnerColors } from "./roller-spinner/colors";
 export { RollerSpinnerSizes } from "./roller-spinner/sizes";
