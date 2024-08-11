@@ -10,6 +10,11 @@ export { BarsBounce2SpinnerColors } from "./bars-bounce-2-spinner/colors";
 export { BarsBounce2SpinnerSizes } from "./bars-bounce-2-spinner/sizes";
 export { BarsBounce2SpinnerSpeeds } from "./bars-bounce-2-spinner/speeds";
 
+export { BladeSpinnerDefault } from "./blade-spinner/default";
+export { BladeSpinnerColors } from "./blade-spinner/colors";
+export { BladeSpinnerSizes } from "./blade-spinner/sizes";
+export { BladeSpinnerSpeeds } from "./blade-spinner/speeds";
+
 export { BorderSpinnerDefault } from "./border-spinner/default";
 export { BorderSpinnerColors } from "./border-spinner/colors";
 export { BorderSpinnerSizes } from "./border-spinner/sizes";
