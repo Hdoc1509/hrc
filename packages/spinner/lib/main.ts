@@ -7,4 +7,5 @@ export { EllipsisSpinner } from "./EllipsisSpinner";
 export { GrowingSpinner } from "./GrowingSpinner";
 export { HeartSpinner } from "./HeartSpinner";
 export { RingSpinner } from "./RingSpinner";
+export { RippleSpinner } from "./RippleSpinner";
 export { RollerSpinner } from "./RollerSpinner";

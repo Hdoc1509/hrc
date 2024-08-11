@@ -1,0 +1,56 @@
+// Taken and adapted from:
+// https://github.com/loadingio/css-spinner/blob/master/src/ripple/index.styl
+@use "@scss" as * with (
+  $speed: 1s
+);
+
+.ripple-spinner.spinner {
+  --_speed: #{$spinner-speed};
+  --_border-size: calc(var(--_size) * 0.05);
+  position: relative;
+
+  @include speed-variants();
+
+  div {
+    position: absolute;
+
+    aspect-ratio: 1;
+    border: var(--_border-size) solid var(--_color);
+    border-radius: 50%;
+    opacity: 1;
+
+    animation: ripple-spinner var(--_speed) cubic-bezier(0, 0.2, 0.8, 1)
+      infinite;
+
+    &:nth-child(2) {
+      animation-delay: calc(var(--_speed) * -0.5);
+    }
+  }
+}
+
+@keyframes ripple-spinner {
+  0% {
+    top: calc(var(--_size) * 0.5 - var(--_border-size));
+    left: calc(var(--_size) * 0.5 - var(--_border-size));
+    width: calc(var(--_border-size) * 2);
+    opacity: 0;
+  }
+  4.9% {
+    top: calc(var(--_size) * 0.5 - var(--_border-size));
+    left: calc(var(--_size) * 0.5 - var(--_border-size));
+    width: calc(var(--_border-size) * 2);
+    opacity: 0;
+  }
+  5% {
+    top: calc(var(--_size) * 0.5 - var(--_border-size));
+    left: calc(var(--_size) * 0.5 - var(--_border-size));
+    width: calc(var(--_border-size) * 2);
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: var(--_size);
+    opacity: 0;
+  }
+}
