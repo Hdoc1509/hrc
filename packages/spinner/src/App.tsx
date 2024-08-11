@@ -4,6 +4,7 @@ import { BarsBounce2SpinnerDemo } from "./components/BarsBounce2SpinnerDemo";
 import { BorderSpinnerDemo } from "./components/BorderSpinnerDemo";
 import { CircleSpinnerDemo } from "./components/CircleSpinnerDemo";
 import { DualRingSpinnerDemo } from "./components/DualRingSpinner";
+import { EllipsisSpinnerDemo } from "./components/EllipsisSpinnerDemo";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
 import { HeartSpinnerDemo } from "./components/HeartSpinnerDemo";
 import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
@@ -19,6 +20,7 @@ function App() {
       <BorderSpinnerDemo />
       <CircleSpinnerDemo />
       <DualRingSpinnerDemo />
+      <EllipsisSpinnerDemo />
       <GrowingSpinnerDemo />
       <HeartSpinnerDemo />
       <RingSpinnerDemo />

@@ -25,6 +25,11 @@ export { DualRingSpinnerColors } from "./dual-ring-spinner/colors";
 export { DualRingSpinnerSizes } from "./dual-ring-spinner/sizes";
 export { DualRingSpinnerSpeeds } from "./dual-ring-spinner/speeds";
 
+export { EllipsisSpinnerDefault } from "./ellipsis-spinner/default";
+export { EllipsisSpinnerColors } from "./ellipsis-spinner/colors";
+export { EllipsisSpinnerSizes } from "./ellipsis-spinner/sizes";
+export { EllipsisSpinnerSpeeds } from "./ellipsis-spinner/speeds";
+
 export { GrowingSpinnerDefault } from "./growing-spinner/default";
 export { GrowingSpinnerColors } from "./growing-spinner/colors";
 export { GrowingSpinnerSizes } from "./growing-spinner/sizes";
