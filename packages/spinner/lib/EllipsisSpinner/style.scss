@@ -6,9 +6,8 @@
 
 .ellipsis-spinner.spinner {
   --_speed: #{$spinner-speed};
-  --_ball-size: calc(var(--_size) / 6);
-  // TODO: try to remove usage of gap
-  --_gap: calc(var(--_size) / 10);
+  --_ball-size: calc(var(--_size) / 5);
+  // ball[space]ball[space]ball -> space = ball-size -> 5 balls as width
   position: relative;
 
   @include speed-variants();
@@ -25,19 +24,17 @@
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 
     &:nth-child(1) {
-      left: var(--_gap);
       animation: ellipsis-spinner-child-1 var(--_speed) infinite;
     }
     &:nth-child(2) {
-      left: var(--_gap);
       animation: ellipsis-spinner-child-2 var(--_speed) infinite;
     }
     &:nth-child(3) {
-      left: calc(var(--_gap) * 4);
+      left: calc(var(--_ball-size) * 2);
       animation: ellipsis-spinner-child-2 var(--_speed) infinite;
     }
     &:nth-child(4) {
-      left: calc(var(--_gap) * 7);
+      left: calc(var(--_ball-size) * 4);
       animation: ellipsis-spinner-child-3 var(--_speed) infinite;
     }
   }
@@ -53,10 +50,10 @@
 }
 @keyframes ellipsis-spinner-child-2 {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate(calc(var(--_gap) * 3), 0);
+    transform: translateX(calc(var(--_ball-size) * 2));
   }
 }
 @keyframes ellipsis-spinner-child-3 {
