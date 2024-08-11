@@ -4,7 +4,7 @@
   $speed: 0.6s
 );
 
-.ellipsis-spinner {
+.ellipsis-spinner.spinner {
   --_speed: #{$spinner-speed};
   --_ball-size: calc(var(--_size) / 6);
   // TODO: try to remove usage of gap
