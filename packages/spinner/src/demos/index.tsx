@@ -59,3 +59,8 @@ export { RollerSpinnerDefault } from "./roller-spinner/default";
 export { RollerSpinnerColors } from "./roller-spinner/colors";
 export { RollerSpinnerSizes } from "./roller-spinner/sizes";
 export { RollerSpinnerSpeeds } from "./roller-spinner/speeds";
+
+export { RotatePlaneSpinnerDefault } from "./rotate-plane-spinner/default";
+export { RotatePlaneSpinnerColors } from "./rotate-plane-spinner/colors";
+export { RotatePlaneSpinnerSizes } from "./rotate-plane-spinner/sizes";
+export { RotatePlaneSpinnerSpeeds } from "./rotate-plane-spinner/speeds";
