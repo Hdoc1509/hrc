@@ -1,0 +1,41 @@
+// Taken and adapted from:
+// https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L147
+.bars-wave-spinner {
+  display: inline-flex;
+  justify-content: space-between;
+
+  div {
+    width: 15%;
+    height: 100%;
+
+    background-color: var(--_color);
+    animation: bars-wave-spinner var(--_speed) ease-in-out infinite;
+
+    &:nth-child(1) {
+      animation-delay: calc(var(--_speed) / -1);
+    }
+    &:nth-child(2) {
+      animation-delay: calc(var(--_speed) / -1.0909090909);
+    }
+    &:nth-child(3) {
+      animation-delay: calc(var(--_speed) / -1.2);
+    }
+    &:nth-child(4) {
+      animation-delay: calc(var(--_speed) / -1.3333333333);
+    }
+    &:nth-child(5) {
+      animation-delay: calc(var(--_speed) / -1.4999999999);
+    }
+  }
+}
+
+@keyframes bars-wave-spinner {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}

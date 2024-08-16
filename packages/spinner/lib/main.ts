@@ -1,5 +1,6 @@
 export { BarsBounceSpinner } from "./BarsBounceSpinner";
 export { BarsBounce2Spinner } from "./BarsBounce2Spinner";
+export { BarsWaveSpinner } from "./BarsWaveSpinner";
 export { BladeSpinner } from "./BladeSpinner";
 export { BorderSpinner } from "./BorderSpinner";
 export { ChaseSpinner } from "./ChaseSpinner";
