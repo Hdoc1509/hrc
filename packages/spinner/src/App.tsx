@@ -5,6 +5,7 @@ import { BladeSpinnerDemo } from "./components/BladeSpinnerDemo";
 import { BorderSpinnerDemo } from "./components/BorderSpinnerDemo";
 import { ChaseSpinnerDemo } from "./components/ChaseSpinnerDemo";
 import { CircleSpinnerDemo } from "./components/CircleSpinnerDemo";
+import { DoubleGrowingSpinnerDemo } from "./components/DoubleGrowingSpinnerDemo";
 import { DualRingSpinnerDemo } from "./components/DualRingSpinnerDemo";
 import { EllipsisSpinnerDemo } from "./components/EllipsisSpinnerDemo";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
@@ -25,6 +26,7 @@ function App() {
       <BorderSpinnerDemo />
       <ChaseSpinnerDemo />
       <CircleSpinnerDemo />
+      <DoubleGrowingSpinnerDemo />
       <DualRingSpinnerDemo />
       <EllipsisSpinnerDemo />
       <GrowingSpinnerDemo />
