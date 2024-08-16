@@ -1,0 +1,43 @@
+// Taken and adapted from:
+// https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L108
+@use "@scss" as * with (
+  $speed: 2s
+);
+
+.double-growing-spinner.spinner {
+  --_speed: #{$spinner-speed};
+  position: relative;
+
+  @include speed-variants();
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--_color);
+
+    opacity: 0.6;
+
+    animation: double-growing-spinner var(--_speed)
+      cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+
+    &:nth-child(2) {
+      animation-delay: calc(var(--_speed) / -2);
+    }
+  }
+}
+
+@keyframes double-growing-spinner {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  45%,
+  55% {
+    transform: scale(1);
+  }
+}
