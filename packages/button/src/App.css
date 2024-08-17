@@ -4,11 +4,6 @@
   text-align: center;
 }
 
-[data-theme="dark"] .button {
-  --error: #d93025;
-  --button-color-disabled: #5f6368;
-}
-
 .App {
   display: grid;
   gap: 16px;
