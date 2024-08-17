@@ -7,6 +7,7 @@ import {
   ChaseSpinner,
   ChasingDotsSpinner,
   CircleSpinner,
+  CubeGridSpinner,
   DoubleGrowingSpinner,
   DualCubeSpinner,
   DualRingSpinner,
@@ -32,18 +33,19 @@ export function PackageDemo() {
       <ChaseSpinner color="warning" speed="slow" />
       <ChasingDotsSpinner color="success" size="large" />
       <CircleSpinner />
-      <DoubleGrowingSpinner color="primary" size="small" />
-      <DualCubeSpinner color="secondary" speed="fast" />
-      <DualRingSpinner color="error" />
-      <EllipsisSpinner color="info" speed="slow" />
-      <GrowingEllipsisSpinner color="warning" size="large" />
-      <GrowingSpinner color="success" />
-      <HeartSpinner size="small" />
-      <RingSpinner color="primary" speed="fast" />
-      <RippleSpinner color="secondary" />
-      <RollerSpinner color="error" speed="slow" />
-      <Roller2Spinner color="info" size="large" />
-      <RotatePlaneSpinner color="warning" />
+      <CubeGridSpinner color="primary" size="small" />
+      <DoubleGrowingSpinner color="secondary" speed="fast" />
+      <DualCubeSpinner color="error" />
+      <DualRingSpinner color="info" speed="slow" />
+      <EllipsisSpinner color="warning" size="large" />
+      <GrowingEllipsisSpinner color="success" />
+      <GrowingSpinner size="small" />
+      <HeartSpinner color="primary" speed="fast" />
+      <RingSpinner color="secondary" />
+      <RippleSpinner color="error" speed="slow" />
+      <RollerSpinner color="info" size="large" />
+      <Roller2Spinner color="warning" />
+      <RotatePlaneSpinner color="success" size="small" />
     </>
   );
 }
