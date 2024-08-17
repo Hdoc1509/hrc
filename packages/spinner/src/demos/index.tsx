@@ -35,6 +35,11 @@ export { ChaseSpinnerColors } from "./chase-spinner/colors";
 export { ChaseSpinnerSizes } from "./chase-spinner/sizes";
 export { ChaseSpinnerSpeeds } from "./chase-spinner/speeds";
 
+export { DualCubeSpinnerDefault } from "./dual-cube-spinner/default";
+export { DualCubeSpinnerColors } from "./dual-cube-spinner/colors";
+export { DualCubeSpinnerSizes } from "./dual-cube-spinner/sizes";
+export { DualCubeSpinnerSpeeds } from "./dual-cube-spinner/speeds";
+
 export { DualRingSpinnerDefault } from "./dual-ring-spinner/default";
 export { DualRingSpinnerColors } from "./dual-ring-spinner/colors";
 export { DualRingSpinnerSizes } from "./dual-ring-spinner/sizes";
