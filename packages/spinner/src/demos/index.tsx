@@ -60,6 +60,11 @@ export { EllipsisSpinnerColors } from "./ellipsis-spinner/colors";
 export { EllipsisSpinnerSizes } from "./ellipsis-spinner/sizes";
 export { EllipsisSpinnerSpeeds } from "./ellipsis-spinner/speeds";
 
+export { GrowingEllipsisSpinnerDefault } from "./growing-ellipsis-spinner/default";
+export { GrowingEllipsisSpinnerColors } from "./growing-ellipsis-spinner/colors";
+export { GrowingEllipsisSpinnerSizes } from "./growing-ellipsis-spinner/sizes";
+export { GrowingEllipsisSpinnerSpeeds } from "./growing-ellipsis-spinner/speeds";
+
 export { GrowingSpinnerDefault } from "./growing-spinner/default";
 export { GrowingSpinnerColors } from "./growing-spinner/colors";
 export { GrowingSpinnerSizes } from "./growing-spinner/sizes";

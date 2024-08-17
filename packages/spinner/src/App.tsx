@@ -11,6 +11,7 @@ import { DoubleGrowingSpinnerDemo } from "./components/DoubleGrowingSpinnerDemo"
 import { DualCubeSpinnerDemo } from "./components/DualCubeSpinnerDemo";
 import { DualRingSpinnerDemo } from "./components/DualRingSpinnerDemo";
 import { EllipsisSpinnerDemo } from "./components/EllipsisSpinnerDemo";
+import { GrowingEllipsisSpinnerDemo } from "./components/GrowingEllipsisSpinnerDemo";
 import { GrowingSpinnerDemo } from "./components/GrowingSpinnerDemo";
 import { HeartSpinnerDemo } from "./components/HeartSpinnerDemo";
 import { RingSpinnerDemo } from "./components/RingSpinnerDemo";
@@ -35,6 +36,7 @@ function App() {
       <DualCubeSpinnerDemo />
       <DualRingSpinnerDemo />
       <EllipsisSpinnerDemo />
+      <GrowingEllipsisSpinnerDemo />
       <GrowingSpinnerDemo />
       <HeartSpinnerDemo />
       <RingSpinnerDemo />
