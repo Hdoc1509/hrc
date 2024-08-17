@@ -1,0 +1,8 @@
+@use "@hrc/sass-utils/dev-app";
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --button-outline-color: hsl(224, 20%, 94%);
+    --button-outline-bg-hover: hsl(224, 10%, 23%);
+  }
+}
