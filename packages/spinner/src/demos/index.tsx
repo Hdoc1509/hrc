@@ -90,6 +90,11 @@ export { RollerSpinnerColors } from "./roller-spinner/colors";
 export { RollerSpinnerSizes } from "./roller-spinner/sizes";
 export { RollerSpinnerSpeeds } from "./roller-spinner/speeds";
 
+export { Roller2SpinnerDefault } from "./roller-2-spinner/default";
+export { Roller2SpinnerColors } from "./roller-2-spinner/colors";
+export { Roller2SpinnerSizes } from "./roller-2-spinner/sizes";
+export { Roller2SpinnerSpeeds } from "./roller-2-spinner/speeds";
+
 export { RotatePlaneSpinnerDefault } from "./rotate-plane-spinner/default";
 export { RotatePlaneSpinnerColors } from "./rotate-plane-spinner/colors";
 export { RotatePlaneSpinnerSizes } from "./rotate-plane-spinner/sizes";
