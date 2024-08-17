@@ -30,6 +30,11 @@ export { CircleSpinnerColors } from "./circle-spinner/colors";
 export { CircleSpinnerSizes } from "./circle-spinner/sizes";
 export { CircleSpinnerSpeeds } from "./circle-spinner/speeds";
 
+export { CubeGridSpinnerDefault } from "./cube-grid-spinner/default";
+export { CubeGridSpinnerColors } from "./cube-grid-spinner/colors";
+export { CubeGridSpinnerSizes } from "./cube-grid-spinner/sizes";
+export { CubeGridSpinnerSpeeds } from "./cube-grid-spinner/speeds";
+
 export { ChaseSpinnerDefault } from "./chase-spinner/default";
 export { ChaseSpinnerColors } from "./chase-spinner/colors";
 export { ChaseSpinnerSizes } from "./chase-spinner/sizes";
