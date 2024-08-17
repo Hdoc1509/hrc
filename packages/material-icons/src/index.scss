@@ -1,0 +1,6 @@
+@use "@hrc/sass-utils/dev-app";
+@use "colors" as *;
+
+:root {
+  @include dark-mode-colors;
+}
