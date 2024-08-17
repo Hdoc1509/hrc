@@ -4,8 +4,8 @@ export function BorderSpinnerSizes() {
   return (
     <>
       <BorderSpinner color="primary" size="small" />
-      <BorderSpinner color="primary" />
-      <BorderSpinner color="primary" size="large" />
+      <BorderSpinner color="secondary" />
+      <BorderSpinner color="error" size="large" />
     </>
   );
 }

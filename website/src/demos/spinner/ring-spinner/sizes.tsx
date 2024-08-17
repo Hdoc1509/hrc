@@ -3,8 +3,8 @@ import { RingSpinner } from "@hrc/spinner";
 export function RingSpinnerSizes() {
   return (
     <>
-      <RingSpinner color="error" size="small" />
-      <RingSpinner color="error" />
+      <RingSpinner color="primary" size="small" />
+      <RingSpinner color="secondary" />
       <RingSpinner color="error" size="large" />
     </>
   );

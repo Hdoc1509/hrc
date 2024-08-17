@@ -3,9 +3,9 @@ import { BorderSpinner } from "@hrc/spinner";
 export function BorderSpinnerSpeeds() {
   return (
     <>
-      <BorderSpinner color="secondary" speed="slow" />
-      <BorderSpinner color="secondary" />
-      <BorderSpinner color="secondary" speed="fast" />
+      <BorderSpinner color="info" speed="slow" />
+      <BorderSpinner color="warning" />
+      <BorderSpinner color="success" speed="fast" />
     </>
   );
 }

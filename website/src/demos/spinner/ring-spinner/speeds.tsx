@@ -4,8 +4,8 @@ export function RingSpinnerSpeeds() {
   return (
     <>
       <RingSpinner color="info" speed="slow" />
-      <RingSpinner color="info" />
-      <RingSpinner color="info" speed="fast" />
+      <RingSpinner color="warning" />
+      <RingSpinner color="success" speed="fast" />
     </>
   );
 }
