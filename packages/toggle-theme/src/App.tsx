@@ -1,5 +1,4 @@
 import { PackageDemo } from "./demos";
-import "./App.css";
 
 function App() {
   return (

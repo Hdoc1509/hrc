@@ -4,6 +4,7 @@
   min-height: 100vh;
 }
 
-.theme-button {
-  --icon-size: 36px;
+[data-theme="dark"] {
+  color-scheme: dark;
+  background-color: #242424;
 }
