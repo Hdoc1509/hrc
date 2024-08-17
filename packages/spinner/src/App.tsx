@@ -20,7 +20,6 @@ import { RippleSpinnerDemo } from "./components/RippleSpinnerDemo";
 import { RollerSpinnerDemo } from "./components/RollerSpinnerDemo";
 import { Roller2SpinnerDemo } from "./components/Roller2SpinnerDemo";
 import { RotatePlaneSpinnerDemo } from "./components/RotatePlaneSpinnerDemo";
-import "./App.css";
 
 function App() {
   return (
