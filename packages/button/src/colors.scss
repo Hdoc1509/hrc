@@ -1,0 +1,4 @@
+@mixin dark-mode-colors {
+  --button-outline-color: hsl(224, 20%, 94%);
+  --button-outline-bg-hover: hsl(224, 10%, 23%);
+}
