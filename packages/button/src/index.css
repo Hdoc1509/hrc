@@ -12,6 +12,8 @@
     color-scheme: dark;
     /* taken from website */
     --bg: hsl(224, 14%, 16%);
+    --button-outline-color: hsl(224, 20%, 94%);
+    --button-outline-bg-hover: hsl(224, 10%, 23%);
   }
 }
 

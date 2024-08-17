@@ -7,12 +7,12 @@ import "./demos.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Demo />
       <ButtonDemo />
       <ButtonIconDemo />
       <ButtonGroupDemo />
-    </div>
+    </>
   );
 }
 

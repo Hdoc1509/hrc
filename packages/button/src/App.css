@@ -3,22 +3,3 @@
   margin: 0 auto;
   text-align: center;
 }
-
-.App {
-  display: grid;
-  gap: 16px;
-  font-family: sans-serif;
-}
-
-.debug {
-  border: 1px solid red;
-  padding-block: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .App {
-    /* taken from website */
-    --button-outline-color: hsl(224, 20%, 94%);
-    --button-outline-bg-hover: hsl(224, 10%, 23%);
-  }
-}
