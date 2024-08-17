@@ -4,17 +4,3 @@
   padding: 2rem;
   text-align: center;
 }
-
-.icon-container {
-  --icon-color: blue;
-}
-
-.my-container-with-custom-color {
-  --error: salmon;
-  --icon-color-disabled: gray;
-  margin-bottom: 30px;
-}
-
-.inherit-size {
-  font-size: 10rem;
-}
