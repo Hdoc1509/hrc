@@ -6,6 +6,7 @@ export { BorderSpinner } from "./BorderSpinner";
 export { ChaseSpinner } from "./ChaseSpinner";
 export { ChasingDotsSpinner } from "./ChasingDotsSpinner";
 export { CircleSpinner } from "./CircleSpinner";
+export { CubeGridSpinner } from "./CubeGridSpinner";
 export { DualCubeSpinner } from "./DualCubeSpinner";
 export { DualRingSpinner } from "./DualRingSpinner";
 export { DoubleGrowingSpinner } from "./DoubleGrowingSpinner";
