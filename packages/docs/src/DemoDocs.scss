@@ -5,6 +5,12 @@
   flex-direction: column;
   gap: 16px;
 
+  padding: 1rem;
+
+  .demo-docs {
+    padding: 0;
+  }
+
   h2,
   h3 {
     width: 100%;
