@@ -3,11 +3,3 @@
   margin: 0 auto;
   text-align: center;
 }
-
-/* TODO: add to @hrc/docs */
-.demo-docs {
-  padding: 1rem;
-}
-.demo-docs .demo-docs {
-  padding: 0;
-}
