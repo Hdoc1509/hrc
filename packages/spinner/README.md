@@ -19,14 +19,52 @@ npm install @hrc/spinner
 ## Usage
 
 ```js
-import { DualRingSpinner, GrowingSpinner, RingSpinner } from "@hrc/spinner";
+import {
+  BarsBounce2Spinner,
+  BarsBounceSpinner,
+  BarsWaveSpinner,
+  BladeSpinner,
+  BorderSpinner,
+  ChaseSpinner,
+  ChasingDotsSpinner,
+  CircleSpinner,
+  DoubleGrowingSpinner,
+  DualCubeSpinner,
+  DualRingSpinner,
+  EllipsisSpinner,
+  GrowingEllipsisSpinner,
+  GrowingSpinner,
+  HeartSpinner,
+  RingSpinner,
+  RippleSpinner,
+  Roller2Spinner,
+  RollerSpinner,
+  RotatePlaneSpinner,
+} from "@hrc/spinner";
 
 export function PackageDemo() {
   return (
     <>
-      <RingSpinner size="large" color="primary" />
+      <BarsBounceSpinner size="large" />
+      <BarsBounce2Spinner color="primary" />
+      <BarsWaveSpinner color="secondary" size="small" />
+      <BladeSpinner color="error" speed="fast" />
+      <BorderSpinner color="info" />
+      <ChaseSpinner color="warning" speed="slow" />
+      <ChasingDotsSpinner color="success" size="large" />
+      <CircleSpinner />
+      <DoubleGrowingSpinner color="primary" size="small" />
+      <DualCubeSpinner color="secondary" speed="fast" />
       <DualRingSpinner color="error" />
-      <GrowingSpinner />
+      <EllipsisSpinner color="info" speed="slow" />
+      <GrowingEllipsisSpinner color="warning" size="large" />
+      <GrowingSpinner color="success" />
+      <HeartSpinner size="small" />
+      <RingSpinner color="primary" speed="fast" />
+      <RippleSpinner color="secondary" />
+      <RollerSpinner color="error" speed="slow" />
+      <Roller2Spinner color="info" size="large" />
+      <RotatePlaneSpinner color="warning" />
     </>
   );
 }
