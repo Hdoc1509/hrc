@@ -4,3 +4,8 @@
 :root {
   @include dark-mode-colors;
 }
+
+body {
+  display: grid;
+  place-items: center;
+}
