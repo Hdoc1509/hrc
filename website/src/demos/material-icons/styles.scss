@@ -1,0 +1,5 @@
+@use "@hrc/material-icons/src/colors" as *;
+
+[data-theme="dark"] {
+  @include dark-mode-colors;
+}
