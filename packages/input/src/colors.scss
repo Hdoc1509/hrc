@@ -1,0 +1,24 @@
+@mixin dark-mode-colors {
+  --text: #ddd;
+  --text-disabled: rgba(255, 255, 255, 0.3);
+
+  --label-text: var(--text);
+  --label-text-hover: var(--text);
+  --label-text-disabled: var(--text-disabled);
+
+  --placeholder-disabled: var(--text-disabled);
+
+  --checkbox-color: var(--text);
+  --checkbox-color-disabled: var(--text-disabled);
+
+  --radio-color: var(--text);
+  --radio-color-disabled: var(--text-disabled);
+
+  --input-text: var(--text);
+  --input-border-color-hover: var(--text);
+  --input-border-color-disabled: var(--text-disabled);
+
+  --textarea-text: var(--text);
+  --textarea-border-color-hover: var(--text);
+  --textarea-border-color-disabled: var(--text-disabled);
+}
