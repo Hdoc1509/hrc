@@ -30,7 +30,7 @@ Type: `ReactNode`
 
 ## CSS Classes
 
-**`button--icon`**
+**`.button--icon`**
 
 Stylize the button to fit an icon.
 
