@@ -1,0 +1,6 @@
+@use "@hrc/input/src/colors" as *;
+@import "@hrc/input/src/demos.css";
+
+[data-theme="dark"] {
+  @include dark-mode-colors;
+}
