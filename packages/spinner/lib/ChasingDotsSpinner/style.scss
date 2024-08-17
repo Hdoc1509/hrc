@@ -1,0 +1,52 @@
+// Taken and adapted from:
+// https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L240
+@use "@scss" as * with (
+  $speed: 1.8s
+);
+
+.chasing-dots-spinner.spinner {
+  --_speed: #{$spinner-speed};
+  position: relative;
+
+  animation: chasing-dots-spinner var(--_speed) linear infinite;
+
+  @include speed-variants();
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--_color);
+
+    animation: chasing-dots-spinner-dot calc(var(--_speed) * 1.1111111112)
+      ease-in-out infinite;
+
+    &:nth-child(2) {
+      top: auto;
+      bottom: 0;
+      animation-delay: calc(var(--_speed) / -1.8);
+    }
+  }
+}
+
+@keyframes chasing-dots-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes chasing-dots-spinner-dot {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

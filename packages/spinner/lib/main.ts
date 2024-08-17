@@ -4,6 +4,7 @@ export { BarsWaveSpinner } from "./BarsWaveSpinner";
 export { BladeSpinner } from "./BladeSpinner";
 export { BorderSpinner } from "./BorderSpinner";
 export { ChaseSpinner } from "./ChaseSpinner";
+export { ChasingDotsSpinner } from "./ChasingDotsSpinner";
 export { CircleSpinner } from "./CircleSpinner";
 export { DualCubeSpinner } from "./DualCubeSpinner";
 export { DualRingSpinner } from "./DualRingSpinner";
