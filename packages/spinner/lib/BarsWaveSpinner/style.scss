@@ -1,7 +1,7 @@
 // Taken and adapted from:
 // https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L147
 .bars-wave-spinner {
-  display: inline-flex;
+  display: inline-flex !important;
   justify-content: space-between;
 
   div {

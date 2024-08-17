@@ -2,7 +2,7 @@
 // https://github.com/loadingio/css-spinner/blob/master/src/facebook/index.styl
 
 .bars-bounce-spinner {
-  display: inline-flex;
+  display: inline-flex !important;
   justify-content: space-between;
   align-items: center;
 
