@@ -16,4 +16,5 @@ export { HeartSpinner } from "./HeartSpinner";
 export { RingSpinner } from "./RingSpinner";
 export { RippleSpinner } from "./RippleSpinner";
 export { RollerSpinner } from "./RollerSpinner";
+export { Roller2Spinner } from "./Roller2Spinner";
 export { RotatePlaneSpinner } from "./RotatePlaneSpinner";

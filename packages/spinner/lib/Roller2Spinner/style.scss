@@ -1,0 +1,55 @@
+// Taken and adapted from:
+// https://github.com/loadingio/css-spinner/blob/master/src/default/index.styl
+@use "sass:math";
+
+$angles: 0deg, 30deg, 60deg, 90deg, 120deg, 150deg, 180deg, 210deg, 240deg,
+  270deg, 300deg, 330deg;
+
+.roller-2-spinner {
+  --_ball-size: calc(var(--_size) * 0.1);
+  --_radius: calc(var(--_size) * 0.45);
+  position: relative;
+
+  div {
+    position: absolute;
+
+    width: var(--_ball-size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--_color);
+
+    animation: roller-2-spinner var(--_speed) linear infinite;
+
+    @for $i from 1 through length($angles) {
+      $angle: nth($angles, $i);
+
+      &:nth-child(#{$i}) {
+        animation-delay: calc(var(--_speed) * (($i - 1) * -1 / 12));
+        top: calc(
+          (var(--_size) - var(--_ball-size)) *
+            0.5 +
+            math.sin(-1 * $angle) *
+            var(--_radius)
+        );
+        left: calc(
+          (var(--_size) - var(--_ball-size)) *
+            0.5 +
+            math.cos(-1 * $angle) *
+            var(--_radius)
+        );
+      }
+    }
+  }
+}
+
+@keyframes roller-2-spinner {
+  0%,
+  20%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
