@@ -10,6 +10,7 @@ export { DualCubeSpinner } from "./DualCubeSpinner";
 export { DualRingSpinner } from "./DualRingSpinner";
 export { DoubleGrowingSpinner } from "./DoubleGrowingSpinner";
 export { EllipsisSpinner } from "./EllipsisSpinner";
+export { GrowingEllipsisSpinner } from "./GrowingEllipsisSpinner";
 export { GrowingSpinner } from "./GrowingSpinner";
 export { HeartSpinner } from "./HeartSpinner";
 export { RingSpinner } from "./RingSpinner";
