@@ -10,12 +10,6 @@
   font-family: sans-serif;
 }
 
-.button-error {
-  --button-radius: 10px;
-  --button-padding: 16px;
-  margin-inline: auto;
-}
-
 .debug {
   border: 1px solid red;
   padding-block: 16px;

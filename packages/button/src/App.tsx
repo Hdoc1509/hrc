@@ -1,7 +1,3 @@
-import { useState } from "react";
-import { Icon } from "@hrc/material-icons";
-import { Button } from "@lib/main";
-import { ErrorOutlineIcon } from "./components/Icons";
 import { Demo } from "./components/Demo";
 import { ButtonDemo } from "./components/ButtonDemo";
 import { ButtonIconDemo } from "./components/ButtonIconDemo";
@@ -10,26 +6,8 @@ import "./App.css";
 import "./demos.css";
 
 function App() {
-  const [error, setError] = useState(false);
-
-  const toggleError = () => setError(!error);
-
   return (
     <div className="App">
-      <Button
-        className="button-error"
-        onClick={toggleError}
-        iconEnd={<ErrorOutlineIcon />}
-      >
-        Toggle error - svg
-      </Button>
-      <Button
-        className="button-error"
-        onClick={toggleError}
-        iconEnd={<Icon name="error_outline" />}
-      >
-        Toggle error - @hrc/material-icons
-      </Button>
       <Demo />
       <ButtonDemo />
       <ButtonIconDemo />
