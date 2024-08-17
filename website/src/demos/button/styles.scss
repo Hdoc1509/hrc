@@ -1,3 +1,4 @@
+@use "@hrc/button/src/colors" as *;
 @import "@hrc/button/src/demos.css";
 
 .button-group-disabled > astro-island {
@@ -5,6 +6,5 @@
 }
 
 [data-theme="dark"] {
-  --button-outline-color: var(--sl-color-gray-1);
-  --button-outline-bg-hover: var(--sl-color-gray-5);
+  @include dark-mode-colors;
 }
