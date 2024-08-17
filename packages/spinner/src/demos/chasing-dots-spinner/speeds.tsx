@@ -4,8 +4,8 @@ export function ChasingDotsSpinnerSpeeds() {
   return (
     <>
       <ChasingDotsSpinner color="info" speed="slow" />
-      <ChasingDotsSpinner color="info" />
-      <ChasingDotsSpinner color="info" speed="fast" />
+      <ChasingDotsSpinner color="warning" />
+      <ChasingDotsSpinner color="success" speed="fast" />
     </>
   );
 }

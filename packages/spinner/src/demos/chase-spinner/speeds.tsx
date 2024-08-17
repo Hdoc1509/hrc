@@ -4,8 +4,8 @@ export function ChaseSpinnerSpeeds() {
   return (
     <>
       <ChaseSpinner color="info" speed="slow" />
-      <ChaseSpinner color="info" />
-      <ChaseSpinner color="info" speed="fast" />
+      <ChaseSpinner color="warning" />
+      <ChaseSpinner color="success" speed="fast" />
     </>
   );
 }

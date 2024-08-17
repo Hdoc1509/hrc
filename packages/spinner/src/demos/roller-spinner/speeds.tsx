@@ -4,8 +4,8 @@ export function RollerSpinnerSpeeds() {
   return (
     <>
       <RollerSpinner color="info" speed="slow" />
-      <RollerSpinner color="info" />
-      <RollerSpinner color="info" speed="fast" />
+      <RollerSpinner color="warning" />
+      <RollerSpinner color="success" speed="fast" />
     </>
   );
 }

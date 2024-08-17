@@ -3,8 +3,8 @@ import { RotatePlaneSpinner } from "@lib/main";
 export function RotatePlaneSpinnerSizes() {
   return (
     <>
-      <RotatePlaneSpinner color="error" size="small" />
-      <RotatePlaneSpinner color="error" />
+      <RotatePlaneSpinner color="primary" size="small" />
+      <RotatePlaneSpinner color="secondary" />
       <RotatePlaneSpinner color="error" size="large" />
     </>
   );

@@ -3,8 +3,8 @@ import { ChaseSpinner } from "@lib/main";
 export function ChaseSpinnerSizes() {
   return (
     <>
-      <ChaseSpinner color="error" size="small" />
-      <ChaseSpinner color="error" />
+      <ChaseSpinner color="primary" size="small" />
+      <ChaseSpinner color="secondary" />
       <ChaseSpinner color="error" size="large" />
     </>
   );

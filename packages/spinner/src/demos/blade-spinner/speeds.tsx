@@ -3,9 +3,9 @@ import { BladeSpinner } from "@lib/main";
 export function BladeSpinnerSpeeds() {
   return (
     <>
-      <BladeSpinner color="secondary" speed="slow" />
-      <BladeSpinner color="secondary" />
-      <BladeSpinner color="secondary" speed="fast" />
+      <BladeSpinner color="info" speed="slow" />
+      <BladeSpinner color="warning" />
+      <BladeSpinner color="success" speed="fast" />
     </>
   );
 }

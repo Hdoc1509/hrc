@@ -4,8 +4,8 @@ export function RippleSpinnerSpeeds() {
   return (
     <>
       <RippleSpinner color="info" speed="slow" />
-      <RippleSpinner color="info" />
-      <RippleSpinner color="info" speed="fast" />
+      <RippleSpinner color="warning" />
+      <RippleSpinner color="success" speed="fast" />
     </>
   );
 }

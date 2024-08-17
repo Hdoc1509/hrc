@@ -3,9 +3,9 @@ import { EllipsisSpinner } from "@lib/main";
 export function EllipsisSpinnerSizes() {
   return (
     <>
-      <EllipsisSpinner color="warning" size="small" />
-      <EllipsisSpinner color="warning" />
-      <EllipsisSpinner color="warning" size="large" />
+      <EllipsisSpinner color="primary" size="small" />
+      <EllipsisSpinner color="secondary" />
+      <EllipsisSpinner color="error" size="large" />
     </>
   );
 }

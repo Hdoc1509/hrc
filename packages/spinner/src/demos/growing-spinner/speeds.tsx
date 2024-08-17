@@ -3,9 +3,9 @@ import { GrowingSpinner } from "@lib/main";
 export function GrowingSpinnerSpeeds() {
   return (
     <>
-      <GrowingSpinner color="secondary" speed="slow" />
-      <GrowingSpinner color="secondary" />
-      <GrowingSpinner color="secondary" speed="fast" />
+      <GrowingSpinner color="info" speed="slow" />
+      <GrowingSpinner color="warning" />
+      <GrowingSpinner color="success" speed="fast" />
     </>
   );
 }

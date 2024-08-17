@@ -4,8 +4,8 @@ export function HeartSpinnerSizes() {
   return (
     <>
       <HeartSpinner color="primary" size="small" />
-      <HeartSpinner color="primary" />
-      <HeartSpinner color="primary" size="large" />
+      <HeartSpinner color="secondary" />
+      <HeartSpinner color="error" size="large" />
     </>
   );
 }

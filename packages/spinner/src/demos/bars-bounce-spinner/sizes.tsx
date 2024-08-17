@@ -4,8 +4,8 @@ export function BarsBounceSpinnerSizes() {
   return (
     <>
       <BarsBounceSpinner color="primary" size="small" />
-      <BarsBounceSpinner color="primary" />
-      <BarsBounceSpinner color="primary" size="large" />
+      <BarsBounceSpinner color="secondary" />
+      <BarsBounceSpinner color="error" size="large" />
     </>
   );
 }
