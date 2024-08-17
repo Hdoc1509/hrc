@@ -20,3 +20,11 @@
   border: 1px solid red;
   padding-block: 16px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .App {
+    /* taken from website */
+    --button-outline-color: hsl(224, 20%, 94%);
+    --button-outline-bg-hover: hsl(224, 10%, 23%);
+  }
+}

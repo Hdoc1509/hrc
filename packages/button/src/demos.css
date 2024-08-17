@@ -1,4 +1,3 @@
-/* TODO: move dark-mode styles from website to this file */
 .button-group-colors > div,
 .button-group-disabled div:not([class]) {
   display: grid;
