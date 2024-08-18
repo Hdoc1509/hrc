@@ -6,7 +6,6 @@
 
 .double-growing-spinner.spinner {
   --_speed: #{$spinner-speed};
-  position: relative;
 
   @include speed-variants();
 

@@ -8,7 +8,6 @@ $angles: 0deg, 30deg, 60deg, 90deg, 120deg, 150deg, 180deg, 210deg, 240deg,
 .roller-2-spinner {
   --_ball-size: calc(var(--_size) * 0.1);
   --_radius: calc(var(--_size) * 0.45);
-  position: relative;
 
   div {
     position: absolute;

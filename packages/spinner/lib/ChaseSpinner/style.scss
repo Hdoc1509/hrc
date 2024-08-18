@@ -7,7 +7,6 @@
 .chase-spinner.spinner {
   --_speed: #{$spinner-speed};
 
-  position: relative;
   animation: chase-spinner var(--_speed) linear both infinite;
 
   @include speed-variants();

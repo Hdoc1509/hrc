@@ -6,9 +6,8 @@
 
 .ellipsis-spinner.spinner {
   --_speed: #{$spinner-speed};
-  --_ball-size: calc(var(--_size) / 5);
   // ball[space]ball[space]ball -> space = ball-size -> 5 balls as width
-  position: relative;
+  --_ball-size: calc(var(--_size) / 5);
 
   @include speed-variants();
 

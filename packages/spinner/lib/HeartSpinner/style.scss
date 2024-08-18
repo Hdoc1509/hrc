@@ -1,8 +1,6 @@
 // Taken and adapted from:
 // https://github.com/loadingio/css-spinner/blob/master/src/heart/index.styl
 .heart-spinner {
-  position: relative;
-
   transform: rotate(45deg);
   transform-origin: calc(var(--_size) * 0.5) calc(var(--_size) * 0.5);
 

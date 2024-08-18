@@ -15,6 +15,7 @@
   --_color: #{$spinner-color};
 
   display: inline-block;
+  position: relative;
 
   box-sizing: border-box;
   width: var(--_size);

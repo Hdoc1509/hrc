@@ -6,7 +6,6 @@
 
 .chasing-dots-spinner.spinner {
   --_speed: #{$spinner-speed};
-  position: relative;
 
   animation: chasing-dots-spinner var(--_speed) linear infinite;
 
