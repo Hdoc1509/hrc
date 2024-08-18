@@ -13,20 +13,12 @@
     background-color: var(--_color);
     animation: bars-wave-spinner var(--_speed) ease-in-out infinite;
 
-    &:nth-child(1) {
-      animation-delay: calc(var(--_speed) / ($speed / -1.2s));
-    }
-    &:nth-child(2) {
-      animation-delay: calc(var(--_speed) / ($speed / -1.1s));
-    }
-    &:nth-child(3) {
-      animation-delay: calc(var(--_speed) / ($speed / -1s));
-    }
-    &:nth-child(4) {
-      animation-delay: calc(var(--_speed) / ($speed / -0.9s));
-    }
-    &:nth-child(5) {
-      animation-delay: calc(var(--_speed) / ($speed / -0.8s));
+    @for $i from 1 through 5 {
+      $divider: $speed / (-1.3s + $i * 0.1s);
+
+      &:nth-child(#{$i}) {
+        animation-delay: calc(var(--_speed) / $divider);
+      }
     }
   }
 }
