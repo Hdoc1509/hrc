@@ -1,0 +1,56 @@
+---
+title: BladeSpinner
+description: React BladeSpinner component of <hrc />
+---
+
+import { Demo, SourceCode } from "@components";
+import * as Demos from "@demos/spinner";
+import defaultCode from "@demos/spinner/blade-spinner/default.tsx?raw";
+import colorsCode from "@demos/spinner/blade-spinner/colors.tsx?raw";
+import sizesCode from "@demos/spinner/blade-spinner/sizes.tsx?raw";
+import speedsCode from "@demos/spinner/blade-spinner/speeds.tsx?raw";
+
+## Default spinner
+
+<Demo layout="row">
+  <Demos.BladeSpinnerDefault />
+</Demo>
+
+<SourceCode code={defaultCode} title="default.tsx" />
+
+## Colors
+
+Use the `color` prop to change the color of the spinner.
+
+<Demo layout="row">
+  <Demos.BladeSpinnerColors />
+</Demo>
+
+<SourceCode code={colorsCode} title="colors.tsx" />
+
+## Sizes
+
+Set the `size` prop to change the size of the spinner.
+
+<Demo layout="row">
+  <Demos.BladeSpinnerSizes />
+</Demo>
+
+<SourceCode code={sizesCode} title="sizes.tsx" />
+
+## Speeds
+
+Set the `speed` prop to change the speed of the spinner.
+
+<Demo layout="row">
+  <Demos.BladeSpinnerSpeeds />
+</Demo>
+
+<SourceCode code={speedsCode} title="speeds.tsx" />
+
+## API
+
+See documentation below for reference to all of the props, classes and CSS
+variables (custom properties) available for `<BladeSpinner />`:
+
+- [`<BladeSpinner />`](/hrc/api/blade-spinner)
