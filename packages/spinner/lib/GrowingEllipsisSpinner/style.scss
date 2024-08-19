@@ -6,7 +6,7 @@
 
 .growing-ellipsis-spinner.spinner {
   --_speed: #{$spinner-speed};
-  display: inline-flex;
+  --_display: inline-flex;
   justify-content: space-between;
   align-items: center;
 

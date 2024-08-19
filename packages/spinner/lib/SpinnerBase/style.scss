@@ -14,7 +14,7 @@
   --_speed: #{$spinner-speed};
   --_color: #{$spinner-color};
 
-  display: inline-block;
+  display: var(--_display, inline-block);
   position: relative;
 
   box-sizing: border-box;

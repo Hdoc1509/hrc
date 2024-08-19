@@ -2,7 +2,7 @@
 // https://github.com/vineethtrv/css-loader/blob/master/js/loaders/line.js#L285
 
 .bars-bounce-2-spinner {
-  display: inline-flex !important;
+  --_display: inline-flex;
   justify-content: space-between;
   align-items: center;
 

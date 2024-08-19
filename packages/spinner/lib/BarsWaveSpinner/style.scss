@@ -3,7 +3,7 @@
 @use "@scss" as *;
 
 .bars-wave-spinner {
-  display: inline-flex !important;
+  --_display: inline-flex;
   justify-content: space-between;
 
   div {
