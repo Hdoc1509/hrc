@@ -4,7 +4,7 @@
   $speed: 1.3s
 );
 
-.cube-grid-spinner {
+.cube-grid-spinner.spinner {
   --_speed: #{$spinner-speed};
 
   @include speed-variants();
