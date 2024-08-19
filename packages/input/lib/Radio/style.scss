@@ -35,9 +35,6 @@
 
   &__inner {
     grid-area: 1 / 1;
-    margin: 0;
-    opacity: 0;
-    cursor: inherit;
 
     &:checked + .radio__icon {
       --_icon-display: none;

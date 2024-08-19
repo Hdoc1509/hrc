@@ -35,6 +35,7 @@ export const Checkbox = ({
           type="checkbox"
           disabled={disabled}
           required={required}
+          hidden
         />
         <span className="checkbox__icon">
           {icon ?? <CheckboxIcon />}
