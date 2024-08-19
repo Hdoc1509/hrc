@@ -1,14 +1,12 @@
 ---
-title: BarsBounceSpinner API
-description: API reference docs for the React BarsBounceSpinner component
-sidebar:
-  order: 1
+title: BarsBounce2Spinner API
+description: API reference docs for the React BarsBounce2Spinner component
 ---
 
 ## Import
 
 ```js
-import { BarsBounceSpinner } from "@hrc/spinner";
+import { BarsBounce2Spinner } from "@hrc/spinner";
 ```
 
 ## Props
@@ -21,9 +19,9 @@ import { BarsBounceSpinner } from "@hrc/spinner";
 
 ## CSS Classes
 
-**`.bars-bounce-spinner`**
+**`.bars-bounce-2-spinner`**
 
-The base styles for `<BarsBounceSpinner />` component.
+The base styles for `<BarsBounce2Spinner />` component.
 
 ---
 
