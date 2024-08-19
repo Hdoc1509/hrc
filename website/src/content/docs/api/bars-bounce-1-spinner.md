@@ -1,8 +1,6 @@
 ---
 title: BarsBounceSpinner API
 description: API reference docs for the React BarsBounceSpinner component
-sidebar:
-  order: 1
 ---
 
 ## Import
