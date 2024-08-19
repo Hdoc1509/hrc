@@ -1,5 +1,6 @@
 // Taken and adapted from:
 // https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L45
+@use "sass:math";
 @use "@scss" as * with (
   $speed: 2.5s
 );
@@ -32,7 +33,7 @@
     }
 
     @for $i from 1 through 6 {
-      $divider: $speed / (-1.2s + $i * 0.1s);
+      $divider: math.div($speed, -1.2s + $i * 0.1s);
 
       &:nth-child(#{$i}),
       &:nth-child(#{$i}):before {

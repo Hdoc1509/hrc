@@ -1,5 +1,6 @@
 // Taken and adapted from:
 // https://github.com/tobiasahlin/SpinKit/blob/master/spinkit.css#L147
+@use "sass:math";
 @use "@scss" as *;
 
 .bars-wave-spinner {
@@ -14,7 +15,7 @@
     animation: bars-wave-spinner var(--_speed) ease-in-out infinite;
 
     @for $i from 1 through 5 {
-      $divider: $speed / (-1.3s + $i * 0.1s);
+      $divider: math.div($speed, -1.3s + $i * 0.1s);
 
       &:nth-child(#{$i}) {
         animation-delay: calc(var(--_speed) / $divider);
