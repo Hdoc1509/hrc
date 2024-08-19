@@ -21,10 +21,10 @@
     animation: growing-ellipsis-spinner var(--_speed) ease-in-out infinite;
 
     &:nth-child(1) {
-      animation-delay: calc(var(--_speed) * -0.2285714286);
+      animation-delay: calc(var(--_speed) * (-0.32s / $speed));
     }
     &:nth-child(2) {
-      animation-delay: calc(var(--_speed) * -0.1142857148);
+      animation-delay: calc(var(--_speed) * (-0.16s / $speed));
     }
   }
 }
