@@ -18,32 +18,25 @@
 
     animation: cube-grid-spinner var(--_speed) ease-in-out infinite;
 
-    &:nth-child(1) {
-      animation-delay: calc(var(--_speed) * (0.2s / $speed));
-    }
-    &:nth-child(2) {
-      animation-delay: calc(var(--_speed) * (0.3s / $speed));
-    }
-    &:nth-child(3) {
-      animation-delay: calc(var(--_speed) * (0.4s / $speed));
-    }
-    &:nth-child(4) {
-      animation-delay: calc(var(--_speed) * (0.1s / $speed));
-    }
-    &:nth-child(5) {
-      animation-delay: calc(var(--_speed) * (0.2s / $speed));
-    }
-    &:nth-child(6) {
-      animation-delay: calc(var(--_speed) * (0.3s / $speed));
-    }
-    &:nth-child(7) {
-      animation-delay: 0s;
-    }
-    &:nth-child(8) {
-      animation-delay: calc(var(--_speed) * (0.1s / $speed));
-    }
-    &:nth-child(9) {
-      animation-delay: calc(var(--_speed) * (0.2s / $speed));
+    $start: 0.2s;
+    $step: 0.1s;
+    $dividend: 0;
+
+    @for $i from 1 through 9 {
+      @if $i < 4 {
+        $dividend: $start + $step * ($i - 1); // 0.2s - 0.4s
+      } @else if $i < 7 {
+        $dividend: $start + $step * ($i - 5); // 0.1s - 0.3s
+      } @else {
+        $dividend: $start + $step * ($i - 9); // 0s - 0.2s
+      }
+
+      // 0s is the default. not needed
+      @if $i != 7 {
+        &:nth-child(#{$i}) {
+          animation-delay: calc(var(--_speed) * ($dividend / $speed));
+        }
+      }
     }
   }
 }
