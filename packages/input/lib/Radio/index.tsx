@@ -60,7 +60,6 @@ export const Radio = ({
           form={form ?? group?.form}
           value={value}
           onChange={onChange ?? ((e) => group?.onChange?.(e.target.value))}
-          hidden
         />
         <span className="radio__icon">
           <RadioUnchecked />
