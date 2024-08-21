@@ -3,6 +3,11 @@
 Create a Babel config for component packages of [`<hrc
 />`](https://hdoc1509.github.io/hrc/) to reduce bundle size.
 
+> [!NOTE]
+> If your project supports [`Vite`](https://vitejs.dev/), you can use
+> [`vite-plugin-hrc-import`](https://hdoc1509.github.io/hrc/packages/vite-plugin-hrc-import)
+> instead.
+
 ## Installation
 
 ```bash
