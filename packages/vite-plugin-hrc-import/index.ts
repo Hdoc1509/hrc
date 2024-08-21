@@ -1,5 +1,6 @@
 // based on https://github.com/LiJiahaoCoder/vitejs-plugin-antd-import
-const HRC_IMPORT_PATH_REGEXP = /import {[\w,\s]+} from ('|")@hrc\/\w+('|");?/g;
+const HRC_IMPORT_PATH_REGEXP =
+  /import {[\w,\s]+} from ('|")@hrc\/(button|input|spinner)('|");?/g;
 
 const transformImportPath = (name: string, packageName: string) =>
   `import {${name}} from "${packageName}/dist/${name}";`;
