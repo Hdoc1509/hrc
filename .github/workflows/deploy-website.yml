@@ -17,7 +17,7 @@ jobs:
   changed-files:
     runs-on: ubuntu-22.04
     outputs:
-      files: ${{ steps.filter.outpus.only_changed }}
+      files: ${{ steps.filter.outpus.any_changed }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -27,6 +27,7 @@ jobs:
         with:
           files: |
             website/CHANGELOG.md
+            website/package.json
 
   build:
     needs: changed-files
