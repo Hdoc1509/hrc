@@ -14,9 +14,26 @@ permissions:
   id-token: write
 
 jobs:
+  changed-files:
+    runs-on: ubuntu-22.04
+    outputs:
+      files: ${{ steps.filter.outpus.any_changed }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - uses: tj-actions/changed-files@v44
+        id: filter
+        with:
+          files: |
+            website/CHANGELOG.md
+            website/package.json
+            .github/workflows/deploy-website.yml
+
   build:
+    needs: changed-files
     # prevents this job from running on forks
-    if: github.repository == 'Hdoc1509/hrc'
+    if: github.repository == 'Hdoc1509/hrc' && needs.changed-files.outputs.files == 'true'
     runs-on: ubuntu-22.04
     strategy:
       matrix:
