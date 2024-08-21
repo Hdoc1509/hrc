@@ -1,0 +1,33 @@
+---
+title: "vite-plugin-hrc-import"
+description: Automatically use path import for components of <hrc /> packages to reduce bundle size
+---
+
+import { InstallCommand } from "@components";
+
+Automatically use path import for components of `<hrc />` packages to reduce bundle size.
+
+:::note
+If your project doesn't support [`Vite`](https://vitejs.dev/), you can use
+[`@hrc/babel-config`](../babel-config) instead.
+:::
+
+## Installation
+
+<InstallCommand packages={["vite-plugin-hrc-import"]} isDev />
+
+## Usage
+
+In your `vite.config.js` file:
+
+```js
+import hrcImportPlugin from "vite-plugin-hrc-import";
+
+export default {
+  plugins: [hrcImportPlugin()],
+};
+```
+
+## Related guides
+
+- [Minimizing bundle size](/hrc/guides/minimizing-bundle-size)
