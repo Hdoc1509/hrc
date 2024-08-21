@@ -1,0 +1,47 @@
+{
+  "name": "vite-plugin-hrc-import",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "Héctor Ochoa <hector.ochoa.dev@gmail.com>",
+  "description": "Automatically use path import for components of <hrc /> packages to reduce bundle size",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=13.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsc --watch --project tsconfig.json",
+    "type-check": "tsc --noEmit --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hdoc1509/hrc.git",
+    "directory": "packages/vite-plugin-hrc-import"
+  },
+  "bugs": {
+    "url": "https://github.com/Hdoc1509/hrc/issues"
+  },
+  "homepage": "https://hdoc1509.github.io/hrc/packages/vite-plugin-hrc-import",
+  "keywords": [
+    "config",
+    "plugin",
+    "import",
+    "vite",
+    "vite-config",
+    "vite-plugin",
+    "hrc",
+    "hrc-config"
+  ],
+  "devDependencies": {
+    "typescript": "5.2.2"
+  }
+}

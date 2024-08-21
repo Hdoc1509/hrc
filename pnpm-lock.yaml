@@ -328,6 +328,12 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
+  packages/vite-plugin-hrc-import:
+    devDependencies:
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
   website:
     dependencies:
       '@astrojs/check':
