@@ -5,6 +5,7 @@ on:
   push:
     tags:
       - "@hrc/**"
+      - "vite-plugin-hrc-**"
 
 jobs:
   release:
