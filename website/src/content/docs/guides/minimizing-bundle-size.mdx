@@ -28,7 +28,32 @@ component. You have two options to reduce the bundle size:
 + import { Checkbox } from "@hrc/input/dist/Checkbox";
 ```
 
-## Option 2: Use [`babel`](https://babeljs.io/) with [`babel-plugin-import`](https://github.com/umijs/babel-plugin-import)
+## Option 2: Use [`vite-plugin-hrc-import`](/hrc/packages/vite-plugin-hrc-import)
+
+:::note
+If your project does not support [`Vite`](https://vitejs.dev/), jump to [Option
+3](#option-3-use-babel-with-babel-plugin-import)
+:::
+
+<Steps>
+
+   1. Install `vite-plugin-hrc-import`:
+
+      <InstallCommand packages={["vite-plugin-hrc-import"]} syncKey={tabKey} isDev />
+
+   2. Write the following code in your `vite.config.js` file:
+
+      ```js
+      import hrcImportPlugin from "vite-plugin-hrc-import";
+
+      export default {
+        plugins: [hrcImportPlugin()],
+      };
+      ```
+
+</Steps>
+
+## Option 3: Use [`babel`](https://babeljs.io/) with [`babel-plugin-import`](https://github.com/umijs/babel-plugin-import)
 
 <Steps>
 
