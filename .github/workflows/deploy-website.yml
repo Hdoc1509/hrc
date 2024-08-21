@@ -28,6 +28,7 @@ jobs:
           files: |
             website/CHANGELOG.md
             website/package.json
+            .github/workflows/deploy-website.yml
 
   build:
     needs: changed-files
