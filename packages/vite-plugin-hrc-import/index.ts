@@ -1,3 +1,5 @@
+import type { Plugin } from "vite";
+
 // based on https://github.com/LiJiahaoCoder/vitejs-plugin-antd-import
 const HRC_IMPORT_PATH_REGEXP =
   /import {[\w,\s]+} from ('|")@hrc\/(button|input|spinner)('|");?/g;
@@ -33,11 +35,11 @@ const transformCode = (code: string, fileName: string) => {
   return transformedImports.concat(code.replace(HRC_IMPORT_PATH_REGEXP, ""));
 };
 
-export default function hrcImportPlugin() {
+export default function hrcImportPlugin(): Plugin {
   return {
     name: "vite-plugin-hrc-import",
     enforce: "pre",
-    transform(code: string, fileName: string) {
+    transform(code, fileName) {
       return transformCode(code, fileName);
     },
   };
