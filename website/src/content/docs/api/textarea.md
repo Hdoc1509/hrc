@@ -99,6 +99,7 @@ CSS variables (custom properties):
   --textarea-border-color-focus: lightblue;
   --textarea-border-color-disabled: rgba(0, 0, 0, 0.26);
 
+  --textarea-font-family: "Roboto";
   --textarea-font-size: 16px;
   --textarea-font-weight: 600;
   --textarea-text: #000;
