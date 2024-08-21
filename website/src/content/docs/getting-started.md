@@ -21,3 +21,4 @@ with [React](https://react.dev/).
 ## Configuration
 
 - [`@hrc/babel-config`](/hrc/packages/babel-config)
+- [`vite-plugin-hrc-import`](/hrc/packages/vite-plugin-hrc-import)
