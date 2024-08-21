@@ -1,5 +1,11 @@
 # @hrc/babel-config
 
+## 1.2.1
+
+### Patch Changes
+
+- cd97f7d: Update package description
+
 ## 1.2.0
 
 ### Minor Changes

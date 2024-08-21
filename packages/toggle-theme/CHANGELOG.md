@@ -1,5 +1,11 @@
 # @hrc/toggle-theme
 
+## 2.3.1
+
+### Patch Changes
+
+- b781d65: Add usage of `loadTheme()` util in README
+
 ## 2.3.0
 
 ### Minor Changes

@@ -1,5 +1,17 @@
 # @hrc/input
 
+## 1.1.0
+
+### Minor Changes
+
+- 8ef351d: Add css variable to set font family of `<Input />`
+- bb81bae: Allow font family inheritance of internal `<Label />` by default
+- 556b68e: Add css variable to set font family of `<Textarea />`
+
+### Patch Changes
+
+- 4acc0c3: Use `checked` prop with controlled `<Radio />`
+
 ## 1.0.0
 
 **This release contains backwards-incompatible changes**. To avoid picking up

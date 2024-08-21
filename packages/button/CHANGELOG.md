@@ -1,5 +1,12 @@
 # @hrc/button
 
+## 3.1.0
+
+### Minor Changes
+
+- f6b879b: Use `:focus-visible`
+- 2348428: Set correct border color of `column` variant of `<ButtonGroup />` (again)
+
 ## 3.0.0
 
 ### Major Changes
