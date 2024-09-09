@@ -4,8 +4,7 @@ name: GitHub release tag
 on:
   push:
     tags:
-      - "@hrc/**"
-      - "vite-plugin-hrc-**"
+      - "**"
 
 permissions:
   contents: write
