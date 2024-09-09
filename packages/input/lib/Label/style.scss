@@ -13,7 +13,8 @@
   --_text-focus: var(--label-text-focus, #{hrc.$primary});
   display: inline-flex;
   flex-direction: column;
-  gap: 0.25rem;
+  justify-content: var(--label-justify);
+  gap: var(--label-gap, 0.25rem);
 
   font-family: var(--label-font-family, inherit);
   font-size: var(--label-font-size, 0.75rem);

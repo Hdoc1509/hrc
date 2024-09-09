@@ -16,6 +16,9 @@ Variables (custom properties):
 ```css
 .any-parent-of-label,
 .class-to-extend-styles {
+  --label-justify: flex-start;
+  --label-gap: 8px;
+
   --label-font-family: "Roboto";
   --label-font-size: 14px;
   --label-font-weight: 600;
