@@ -1,5 +1,20 @@
 # @hrc/input
 
+## 1.2.0
+
+### Minor Changes
+
+- 40e34c5: Add css variables to handle flexbox layout of `<Label />`:
+
+  - `--label-justify`
+  - `--label-gap`
+
+### Patch Changes
+
+- 785d25a: Update package description
+- Updated dependencies [785d25a]
+  - @hrc/type-utils@1.1.3
+
 ## 1.1.0
 
 ### Minor Changes

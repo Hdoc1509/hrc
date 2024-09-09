@@ -1,5 +1,12 @@
 # @hrc/button
 
+## 3.1.1
+
+### Patch Changes
+
+- Updated dependencies [785d25a]
+  - @hrc/type-utils@1.1.3
+
 ## 3.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @hrc/type-utils
 
+## 1.1.3
+
+### Patch Changes
+
+- 785d25a: Update package description
+
 ## 1.1.2
 
 ### Patch Changes

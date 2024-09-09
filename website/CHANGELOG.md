@@ -1,5 +1,14 @@
 # @hrc/website
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [40e34c5]
+- Updated dependencies [785d25a]
+  - @hrc/input@1.2.0
+  - @hrc/button@3.1.1
+
 ## 0.0.3
 
 ### Patch Changes
