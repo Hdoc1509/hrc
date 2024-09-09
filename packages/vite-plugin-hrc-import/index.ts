@@ -3,6 +3,13 @@ import type { Plugin } from "vite";
 // based on https://github.com/LiJiahaoCoder/vitejs-plugin-antd-import
 const HRC_IMPORT_PATH_REGEXP =
   /import {[\w,\s]+} from ('|")@hrc\/(button|input|spinner)('|");?/g;
+const COMMENT_MULTILINE__REGEXP = /\/\*.*\*\/\s/g;
+const COMMENT_SINGLE_LINE__REGEXP = /\/\/.*/;
+
+const sanitizeComments = (code: string) =>
+  code
+    .replace(COMMENT_MULTILINE__REGEXP, "")
+    .replace(COMMENT_SINGLE_LINE__REGEXP, "");
 
 const transformImportPath = (name: string, packageName: string) =>
   `import {${name}} from "${packageName}/dist/${name}";`;
@@ -24,7 +31,8 @@ const transformImportLine = (importLine: string, fileName: string) => {
 };
 
 const transformCode = (code: string, fileName: string) => {
-  const importLines = code.match(HRC_IMPORT_PATH_REGEXP);
+  const sanitizedCode = sanitizeComments(code);
+  const importLines = sanitizedCode.match(HRC_IMPORT_PATH_REGEXP);
 
   if (importLines == null) return null;
 
@@ -32,7 +40,9 @@ const transformCode = (code: string, fileName: string) => {
     .map((line) => transformImportLine(line, fileName))
     .join("\n");
 
-  return transformedImports.concat(code.replace(HRC_IMPORT_PATH_REGEXP, ""));
+  return transformedImports.concat(
+    sanitizedCode.replace(HRC_IMPORT_PATH_REGEXP, ""),
+  );
 };
 
 export default function hrcImportPlugin(): Plugin {
