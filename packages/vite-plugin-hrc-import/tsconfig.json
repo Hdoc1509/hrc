@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "moduleResolution": "Bundler",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "target": "ESNext",
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "skipLibCheck": true
   },
   "include": ["index.ts"]
 }
