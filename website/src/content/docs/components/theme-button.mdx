@@ -72,6 +72,46 @@ Only use this approach if your theme is not loaded as fast as you want it to be,
 because `<ThemeButton />` component also loads the theme in its intial render.
 :::
 
+## Custom key for `localStorage`
+
+Use the `customKey` prop to set a custom key for `localStorage` to store the
+theme.
+
+```jsx
+export function WithCustomKeyDemo() {
+  return (
+    <ThemeButton
+      customKey="my-custom-key"
+      lightElement={{/* element for light mode */}}
+      darkElement={{/* element for dark mode */}}
+    />
+  );
+}
+```
+
+:::caution
+If you are [loading the theme on page load](#load-theme-on-page-load), you
+should use `loadTheme()` util with the same custom key.
+
+- In your `index.html` or respective entry point:
+
+  ```html
+  <script type="module">
+    import { loadTheme } from "@hrc/toggle-theme";
+
+    loadTheme("my-custom-key");
+  </script>
+  ```
+
+- In your `Astro` layout:
+
+  ```jsx
+  import { loadTheme } from "@hrc/toggle-theme";
+
+  loadTheme("my-custom-key");
+  ```
+:::
+
 ## API
 
 See documentation below for reference to all of the props, classes and CSS
