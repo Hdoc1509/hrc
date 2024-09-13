@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { applyTheme, getTheme, saveTheme } from "./utils";
-import type { Theme } from "./consts";
+import { THEME, type Theme } from "./consts";
 import "./ThemeButton.scss";
 
 type Props = {
@@ -17,7 +17,7 @@ export const ThemeButton = ({
   const [theme, setTheme] = useState<Theme>(getTheme);
 
   const handleToggleTheme = () =>
-    setTheme((theme) => (theme === "light" ? "dark" : "light"));
+    setTheme((theme) => (theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT));
 
   useEffect(() => {
     applyTheme(theme);
@@ -30,9 +30,11 @@ export const ThemeButton = ({
         fullRounded ? " theme-button--full-rounded" : ""
       }`}
       onClick={handleToggleTheme}
-      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+      aria-label={`Switch to ${
+        theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT
+      } mode`}
     >
-      {theme === "light" ? lightElement : darkElement}
+      {theme === THEME.LIGHT ? lightElement : darkElement}
     </button>
   );
 };

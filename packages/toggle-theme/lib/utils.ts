@@ -1,4 +1,4 @@
-import { STORAGE_KEY, type Theme } from "./consts";
+import { STORAGE_KEY, THEME, type Theme } from "./consts";
 
 export const getTheme = (): Theme => {
   const savedTheme = (() => {
@@ -6,13 +6,13 @@ export const getTheme = (): Theme => {
       return localStorage.getItem(STORAGE_KEY);
   })();
 
-  if (savedTheme === "light" || savedTheme === "dark") {
+  if (savedTheme === THEME.LIGHT || savedTheme === THEME.DARK) {
     return savedTheme;
   }
 
   const userTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+    ? THEME.DARK
+    : THEME.LIGHT;
 
   saveTheme(userTheme);
   return userTheme;
