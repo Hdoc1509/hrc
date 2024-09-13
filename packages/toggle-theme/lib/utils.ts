@@ -1,4 +1,4 @@
-export type Theme = "light" | "dark";
+import type { Theme } from "./consts";
 
 export const getTheme = (): Theme => {
   const savedTheme = (() => {

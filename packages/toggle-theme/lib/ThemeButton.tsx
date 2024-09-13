@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Theme, applyTheme, getTheme, saveTheme } from "./utils";
+import { applyTheme, getTheme, saveTheme } from "./utils";
+import type { Theme } from "./consts";
 import "./ThemeButton.scss";
 
 type Props = {
