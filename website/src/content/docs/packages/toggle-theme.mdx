@@ -34,31 +34,11 @@ components.
 
 <Steps>
 
-1. Import `load-theme.js` in your `index.html`:
-
-   ```html
-   <script
-     type="module"
-     src="node_modules/@hrc/toggle-theme/dist/load-theme.js"
-   ></script>
-   ```
-
-   If you are using [Astro](https://astro.build/), you can use `loadTheme` util
-   in your layout:
-
-   ```html
-   <script>
-     import { loadTheme } from "@hrc/toggle-theme";
-
-     loadTheme();
-   </script>
-   ```
-
-2. Then use the component in your project:
+1. Use the component in your project:
 
    <Code code={demoCode} lang="jsx" />
 
-3. Add your styles:
+2. Add your styles:
 
    ```css
    :root {
