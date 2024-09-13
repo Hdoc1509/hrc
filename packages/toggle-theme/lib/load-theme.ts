@@ -1,3 +1,3 @@
-import { applyTheme, getTheme } from "./utils";
+import { loadTheme } from "./utils";
 
-applyTheme(getTheme());
+loadTheme();
