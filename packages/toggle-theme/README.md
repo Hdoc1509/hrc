@@ -10,9 +10,9 @@
 
 Simple component for toggle between `light` and `dark` theme in your React app.
 
-- It saves the theme in `localStorage` with the key `theme`.
+- It saves the theme in `localStorage` with the key `theme` by default
 - If there is no theme in `localStorage`, the default is the user's preferred
-  theme.
+  theme
 
 ## Installation
 
@@ -22,27 +22,7 @@ npm install @hrc/toggle-theme
 
 ## Usage
 
-1. Import `load-theme.js` in your `index.html`:
-
-   ```html
-   <script
-     type="module"
-     src="/path/to/@hrc/toggle-theme/dist/load-theme.js"
-   ></script>
-   ```
-
-   If you are using [Astro](https://astro.build/), you can use `loadTheme` util
-   in your layout:
-
-   ```html
-   <script>
-     import { loadTheme } from "@hrc/toggle-theme";
-
-     loadTheme();
-   </script>
-   ```
-
-2. Then, use the component in your project:
+1. Use the component in your project:
 
    ```js
    import { ThemeButton } from "@hrc/toggle-theme";
@@ -71,7 +51,7 @@ npm install @hrc/toggle-theme
    }
    ```
 
-3. Add your styles:
+2. Add your styles:
 
    ```css
    :root {
