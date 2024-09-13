@@ -7,22 +7,24 @@ type Props = {
   lightElement: React.ReactNode;
   darkElement: React.ReactNode;
   fullRounded?: boolean;
+  customKey?: string;
 };
 
 export const ThemeButton = ({
   darkElement,
   lightElement,
   fullRounded,
+  customKey,
 }: Props): JSX.Element => {
-  const [theme, setTheme] = useState<Theme>(getTheme);
+  const [theme, setTheme] = useState<Theme>(() => getTheme(customKey));
 
   const handleToggleTheme = () =>
     setTheme((theme) => (theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT));
 
   useEffect(() => {
     applyTheme(theme);
-    saveTheme(theme);
-  }, [theme]);
+    saveTheme(theme, customKey);
+  }, [customKey, theme]);
 
   return (
     <button
