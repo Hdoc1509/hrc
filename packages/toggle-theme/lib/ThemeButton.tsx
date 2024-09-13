@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Theme, getTheme, toggleTheme } from "./utils";
+import { useEffect, useState } from "react";
+import { Theme, applyTheme, getTheme, saveTheme } from "./utils";
 import "./ThemeButton.scss";
 
 type Props = {
@@ -15,12 +15,13 @@ export const ThemeButton = ({
 }: Props): JSX.Element => {
   const [theme, setTheme] = useState<Theme>(getTheme);
 
-  const handleToggleTheme = () => {
-    const newTheme = toggleTheme();
+  const handleToggleTheme = () =>
+    setTheme((theme) => (theme === "light" ? "dark" : "light"));
 
-    // setTheme(toggleTheme());
-    setTheme(newTheme);
-  };
+  useEffect(() => {
+    applyTheme(theme);
+    saveTheme(theme);
+  }, [theme]);
 
   return (
     <button
