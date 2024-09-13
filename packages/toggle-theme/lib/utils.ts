@@ -26,15 +26,6 @@ export const applyTheme = (theme: Theme) => {
   document.documentElement.dataset.theme = theme;
 };
 
-export const toggleTheme = (): Theme => {
-  const newTheme = getTheme() === "light" ? "dark" : "light";
-
-  applyTheme(newTheme);
-  saveTheme(newTheme);
-
-  return newTheme;
-};
-
 export const loadTheme = () => {
   applyTheme(getTheme());
 };
