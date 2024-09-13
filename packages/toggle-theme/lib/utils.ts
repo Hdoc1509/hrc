@@ -1,9 +1,9 @@
 import { STORAGE_KEY, THEME, type Theme } from "./consts";
 
-export const getTheme = (): Theme => {
+export const getTheme = (customKey?: string): Theme => {
   const savedTheme = (() => {
     if (typeof localStorage !== "undefined")
-      return localStorage.getItem(STORAGE_KEY);
+      return localStorage.getItem(customKey ?? STORAGE_KEY);
   })();
 
   if (savedTheme === THEME.LIGHT || savedTheme === THEME.DARK) {
@@ -18,14 +18,14 @@ export const getTheme = (): Theme => {
   return userTheme;
 };
 
-export const saveTheme = (theme: Theme) => {
-  window.localStorage.setItem(STORAGE_KEY, theme);
+export const saveTheme = (theme: Theme, customKey?: string) => {
+  window.localStorage.setItem(customKey ?? STORAGE_KEY, theme);
 };
 
 export const applyTheme = (theme: Theme) => {
   document.documentElement.dataset.theme = theme;
 };
 
-export const loadTheme = () => {
-  applyTheme(getTheme());
+export const loadTheme = (customKey?: string) => {
+  applyTheme(getTheme(customKey));
 };
