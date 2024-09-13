@@ -7,9 +7,8 @@ import { Code, Steps } from "@astrojs/starlight/components";
 import { Demo, InstallCommand } from "@components";
 import { PackageDemo } from "@demos/toggle-theme";
 import demoCode from "@demos/toggle-theme/package.tsx?raw";
-import pkg from "@hrc/toggle-theme/package.json";
 
-<p>{pkg.description}</p>
+Simple component for toggle between `light` and `dark` theme in your React app.
 
 <Demo>
   <PackageDemo client:only="react" />
