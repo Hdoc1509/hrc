@@ -6,7 +6,7 @@
 
 - 9e05954: Set correct text color of `<Input />` when disabled
 
-  Bug introcuced by 9415484
+  Bug introcuced by 94154841781a49222aa97bf6a4edc72320817966
 
 ## 1.2.0
 
