@@ -1,5 +1,13 @@
 # @hrc/input
 
+## 1.2.1
+
+### Patch Changes
+
+- 9e05954: Set correct text color of `<Input />` when disabled
+
+  Bug introcuced by 9415484
+
 ## 1.2.0
 
 ### Minor Changes

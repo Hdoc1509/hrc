@@ -1,5 +1,15 @@
 # @hrc/website
 
+## 0.0.5
+
+### Patch Changes
+
+- Updated dependencies [9e05954]
+- Updated dependencies [34d102c]
+- Updated dependencies [217d093]
+  - @hrc/input@1.2.1
+  - @hrc/toggle-theme@2.4.0
+
 ## 0.0.4
 
 ### Patch Changes
