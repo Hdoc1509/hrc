@@ -1,1 +1,1 @@
-export { ToggleDisabled } from "@components/ToggleDisabled.tsx";
+export { ToggleDisabled } from "@/components/ToggleDisabled.tsx";

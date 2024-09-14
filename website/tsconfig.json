@@ -14,8 +14,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@components": ["src/components/index.ts"],
-      "@components/*": ["src/components/*"],
+      // TODO: use @/demos instead of @demos
       "@demos/*": ["src/demos/*"]
     },
     "outDir": "dist"
