@@ -39,7 +39,7 @@
 
 **This release contains backwards-incompatible changes**. To avoid picking up
 releases like this, you should set a exact version or use a version range syntax
-that only accepts patch upgrades, i.e. `^0.7.0` or `~0.7.0`, in your
+that only accepts patch upgrades, i.e. `^0.9.0` or `~0.9.0`, in your
 `package.json`
 
 ### Major Changes
