@@ -140,7 +140,7 @@
 
 ### Patch Changes
 
-- 6844207: Handle sizes for <ButtonIcon /> correctly
+- 6844207: Handle sizes for `<ButtonIcon />` correctly
 - Updated dependencies [f431f53]
 - Updated dependencies [5aac604]
   - @hdoc-react/type-utils@1.1.0
