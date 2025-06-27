@@ -89,14 +89,14 @@
 ### Minor Changes
 
 - fb270a5: Allow font family inheritance by default
-- a937b74: Prevent any direct chidlren of `<Button />` from shrinking
+- a937b74: Prevent any direct children of `<Button />` from shrinking
 - 0a975e0: Add `none` rounded variant
 - 5d41ccc: Add `cursor: pointer` to `<Button />`'
 - 078dfa7: Removed `--button-outline-color-disabled` variable.
 
   #### Why?
 
-  It's not neccessary since `outline` variant relies on text color.
+  It's not necessary since `outline` variant relies on text color.
 
 ## 2.6.1
 
@@ -121,7 +121,7 @@
 
 ### Minor Changes
 
-- a55ee83: Add explicite return type to `<ButtonGroup />`
+- a55ee83: Add explicit return type to `<ButtonGroup />`
 
 ### Patch Changes
 
