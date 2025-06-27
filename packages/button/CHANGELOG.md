@@ -52,20 +52,20 @@
   1. Remove `roundedSide` and `fullRounded` props from `<Button />` and `<ButtonIcon />`
   2. Use `rounded` prop instead
 
-  ```diff
-  function App() {
-    return (
-      <>
-  -     <Button roundedSize="left">Left</Button>
-  -     <Button roundedSize="top">Top</Button>
-  -     <Button fullRounded>Full</Button>
-  +     <BUtton rounded="left">Left</Button>
-  +     <Button rounded="top">Top</Button>
-  +     <Button rounded="full">Full</Button>
-      </>
-    );
-  }
-  ```
+     ```diff
+     function App() {
+       return (
+         <>
+     -     <Button roundedSize="left">Left</Button>
+     -     <Button roundedSize="top">Top</Button>
+     -     <Button fullRounded>Full</Button>
+     +     <Button rounded="left">Left</Button>
+     +     <Button rounded="top">Top</Button>
+     +     <Button rounded="full">Full</Button>
+         </>
+       );
+     }
+     ```
 
 - a3f0e42: Rename prop to disable shadow
 
@@ -230,31 +230,31 @@
 
   1. Rename `color` prop from `danger` to `error`
 
-  ```diff
-  function App() {
-    return (
-      <>
-  -     <Button text="Delete" color="danger" />
-  +     <Button text="Delete" color="error" />
-      </>
-    );
-  }
-  ```
+     ```diff
+     function App() {
+       return (
+         <>
+     -     <Button text="Delete" color="danger" />
+     +     <Button text="Delete" color="error" />
+         </>
+       );
+     }
+     ```
 
   2. Rename css custom properties of `--danger` to `--error`
 
-  ```diff
-  .my-selector {
-  - --danger: red;
-  - --danger-hover: darkred;
-  - --danger-text: white;
-  - --danger-transparent: rgba(255, 0, 0, 0.5);
-  + --error: red;
-  + --error-hover: darkred;
-  + --error-text: white;
-  + --error-transparent: rgba(255, 0, 0, 0.5);
-  }
-  ```
+     ```diff
+     .my-selector {
+     - --danger: red;
+     - --danger-hover: darkred;
+     - --danger-text: white;
+     - --danger-transparent: rgba(255, 0, 0, 0.5);
+     + --error: red;
+     + --error-hover: darkred;
+     + --error-text: white;
+     + --error-transparent: rgba(255, 0, 0, 0.5);
+     }
+     ```
 
 - 2a65b92: Changed way of handling icons
 
@@ -273,22 +273,22 @@
   2. Remove every `iconVariant`
   3. Remove `icon` from `<ButtonIcon />` and use `children`
 
-  ```diff
-  + import { SearchIcon, DeleteIcon } from "third-party-package";
+     ```diff
+     + import { SearchIcon, DeleteIcon } from "third-party-package";
 
-  function App() {
-    return (
-      <>
-  -     <Button text="Search" iconStart="search" />
-  +     <Button text="Search" iconStart={<SearchIcon />} />
-  -     <ButtonIcon icon="delete" />
-  +     <ButtonIcon>
-  +       <DeleteIcon />
-  +     </ButtonIcon>
-      </>
-    );
-  }
-  ```
+     function App() {
+       return (
+         <>
+     -     <Button text="Search" iconStart="search" />
+     +     <Button text="Search" iconStart={<SearchIcon />} />
+     -     <ButtonIcon icon="delete" />
+     +     <ButtonIcon>
+     +       <DeleteIcon />
+     +     </ButtonIcon>
+         </>
+       );
+     }
+     ```
 
 - a7573a3: Rename css custom property for change text color
 
