@@ -26,7 +26,7 @@ npm install @hrc/material-icons @material-design-icons/font
    ```
 
    > [!NOTE]
-   > Check [@material-design-icons/font docs](https://www.npmjs.com/package/@material-design-icons/font#usage) for more info.
+   > Check [@material-design-icons/font docs][mdi-font-docs] for more info.
 
 2. Then, in your `App.jsx` or another file:
 
@@ -48,3 +48,5 @@ npm install @hrc/material-icons @material-design-icons/font
 ## Documentation
 
 - [Package Documentation](https://hdoc1509.github.io/hrc/packages/material-icons/)
+
+[mdi-font-docs]: https://www.npmjs.com/package/@material-design-icons/font#usage
