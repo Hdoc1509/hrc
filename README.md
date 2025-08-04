@@ -1,5 +1,6 @@
 # @hrc/monorepo
 
+<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![CI](https://github.com/Hdoc1509/hrc/actions/workflows/ci.yml/badge.svg)](https://github.com/Hdoc1509/hrc/actions/workflows/ci.yml)

@@ -1,5 +1,6 @@
 # @hrc/button
 
+<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Fbutton)](https://www.npmjs.com/package/@hrc/button)
