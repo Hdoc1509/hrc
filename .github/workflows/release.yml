@@ -23,7 +23,7 @@ jobs:
           # @hrc/package-name@1.2.3 -> package-name
           pkg_name="${GITHUB_REF_NAME%@*}" # truncates from last '@'
           pkg_name_without_scope="${pkg_name#*/}" # truncates until first '/'
-          echo "pkg_name=$pkg_name_without_scope" >> $GITHUB_OUTPUT
+          echo "pkg_name=$pkg_name_without_scope" >> "$GITHUB_OUTPUT"
 
       - name: Create release
         if: steps.tag.outputs.pkg_name
