@@ -125,7 +125,7 @@
 
   1. Replace `--hover-light-bg-color` and `--hover-dark-bg-color` with `--button-bg-hover`
   2. Replace `--active-light-bg-color` and `--active-dark-bg-color` with `--button-bg-active`
-  3. For change background color on dark mode you can use the folloing:
+  3. For change background color on dark mode you can use the following:
 
   ```css
   [data-theme="dark"] .theme-button {
