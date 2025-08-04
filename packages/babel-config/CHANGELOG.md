@@ -10,7 +10,7 @@
 
 ### Minor Changes
 
-- b302498: Remove scope from message of avaiable packages
+- b302498: Remove scope from message of available packages
 
 ## 1.1.0
 
