@@ -59,14 +59,16 @@ components.
 </Steps>
 
 :::note
-  As this is an Astro project, [this component](https://github.com/Hdoc1509/hrc/blob/master/website/src/components/ThemeSelect.astro)
-  required to use a [`client directive`](https://docs.astro.build/en/reference/directives-reference/)
-  in order to work and it can cause a minimal delay in its initial rendering.
+As this is an Astro project, [`<ThemeSelect />` component of this
+website][ThemeSelect] required to use a [`client directive`][client-directive]
+in order to work and it can cause a minimal delay in its initial rendering.
 
-  If you want to avoid the possibility of this delay, you can check out the
-  following resources:
-    - [Theme Toggle from Astro docs](https://docs.astro.build/en/tutorial/6-islands/2/)
-    - [ThemeSelect from Starlight](https://starlight.astro.build/reference/overrides/#themeselect)
+If you want to avoid the possibility of this delay, you can check out the
+following resources:
+
+- [Theme Toggle from Astro docs](https://docs.astro.build/en/tutorial/6-islands/2/)
+- [ThemeSelect from Starlight](https://starlight.astro.build/reference/overrides/#themeselect)
+
 :::
 
 ## Demos
@@ -81,3 +83,6 @@ See documentation below for reference to all of the props, classes and CSS
 variables (custom properties) available for toggle theme component:
 
 - [`<ThemeButton />`](/hrc/api/theme-button)
+
+[ThemeSelect]: https://github.com/Hdoc1509/hrc/blob/master/website/src/components/ThemeSelect.astro
+[client-directive]: https://docs.astro.build/en/reference/directives-reference/
