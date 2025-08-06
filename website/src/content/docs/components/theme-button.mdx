@@ -80,7 +80,7 @@ because `<ThemeButton />` component also loads the theme in its intial render.
 Use the `customKey` prop to set a custom key for `localStorage` to store the
 theme.
 
-```jsx
+```js
 export function WithCustomKeyDemo() {
   return (
     <ThemeButton
@@ -108,7 +108,7 @@ should use `loadTheme()` util with the same custom key.
 
 - In your `Astro` layout:
 
-  ```jsx
+  ```js
   import { loadTheme } from "@hrc/toggle-theme";
 
   loadTheme("my-custom-key");
