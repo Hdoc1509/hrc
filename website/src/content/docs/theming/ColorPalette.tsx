@@ -1,4 +1,4 @@
-import "./ColorPallete.scss";
+import "./ColorPalette.scss";
 
 const colors = [
   "primary",
@@ -17,21 +17,21 @@ type VariantProps = { color: ColorVariants; variant: Variants };
 const Variant = ({ color, variant }: VariantProps) => {
   return (
     <div
-      className="color-pallete__variant"
+      className="color-palette__variant"
       data-variant={variant}
       data-color={color}
     >
-      <div className="color-pallete__color"></div>
-      <div className="color-pallete__info">
+      <div className="color-palette__color"></div>
+      <div className="color-palette__info">
         <p>{variant}</p>
       </div>
     </div>
   );
 };
 
-export const ColorPallete = ({ color }: { color: ColorVariants }) => {
+export const ColorPalette = ({ color }: { color: ColorVariants }) => {
   return (
-    <div className="color-pallete">
+    <div className="color-palette">
       <Variant color={color} variant="main" />
       <Variant color={color} variant="hover" />
       <Variant color={color} variant="text" />
