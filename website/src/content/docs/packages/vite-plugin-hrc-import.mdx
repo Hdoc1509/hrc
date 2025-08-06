@@ -5,6 +5,8 @@ description: Automatically use path import for components of <hrc /> packages to
 
 import { InstallCommand } from "@/components";
 
+export const packageName = "vite-plugin-hrc-import";
+
 Automatically use path import for components of `<hrc />` packages to reduce bundle size.
 
 :::note
@@ -14,7 +16,7 @@ If your project doesn't support [`Vite`](https://vitejs.dev/), you can use
 
 ## Installation
 
-<InstallCommand packages={["vite-plugin-hrc-import"]} isDev />
+<InstallCommand packages={[packageName]} isDev />
 
 ## Usage
 

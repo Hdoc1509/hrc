@@ -12,6 +12,19 @@ import darkCode from "@/demos/toggle-theme/DarkFirst.tsx?raw";
 import toggle from "@/demos/toggle-theme/Toggle.tsx?raw";
 import toggleStyles from "@/demos/toggle-theme/Toggle.css?raw";
 
+export const lightSources = [
+  { code: lightStyles, title: "Light.css", lang: "css" },
+  { code: lightCode, title: "LightFirst.tsx" },
+  { code: toggle, title: "Toggle.tsx" },
+  { code: toggleStyles, title: "Toggle.css", lang: "css" },
+];
+export const darkSources = [
+  { code: darkStyles, title: "Dark.css", lang: "css" },
+  { code: darkCode, title: "DarkFirst.tsx" },
+  { code: toggle, title: "Toggle.tsx" },
+  { code: toggleStyles, title: "Toggle.css", lang: "css" },
+];
+
 ## Light Mode First
 
 With this approach, you declare your `light` colors first and then use
@@ -21,12 +34,7 @@ With this approach, you declare your `light` colors first and then use
   <LightFirst client:only="react" />
 </Demo>
 
-<MultiSourceCode sources={[
-  { code: lightStyles, title: "Light.css", lang: "css" },
-  { code: lightCode, title: "LightFirst.tsx" },
-  { code: toggle, title: "Toggle.tsx" },
-  { code: toggleStyles, title: "Toggle.css", lang: "css" },
-]} />
+<MultiSourceCode sources={lightSources} />
 
 ## Dark Mode First
 
@@ -37,12 +45,7 @@ With this approach, you declare your `dark` colors first and then use
   <DarkFirst client:only="react" />
 </Demo>
 
-<MultiSourceCode sources={[
-  { code: darkStyles, title: "Dark.css", lang: "css" },
-  { code: darkCode, title: "DarkFirst.tsx" },
-  { code: toggle, title: "Toggle.tsx" },
-  { code: toggleStyles, title: "Toggle.css", lang: "css" },
-]} />
+<MultiSourceCode sources={darkSources} />
 
 ## Load theme on page load
 

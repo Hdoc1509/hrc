@@ -9,6 +9,8 @@ import { PackageDemo } from "@/demos/material-icons";
 import demoCode from "@/demos/material-icons/package.tsx?raw";
 import pkg from "@hrc/material-icons/package.json";
 
+export const packages = [pkg.name, "@material-design-icons/font"];
+
 <p>{pkg.description}</p>
 
 <Demo layout="row">
@@ -19,9 +21,7 @@ import pkg from "@hrc/material-icons/package.json";
 
 ## Installation
 
-<InstallCommand
-  packages={["@hrc/material-icons", "@material-design-icons/font"]}
-/>
+<InstallCommand packages={packages} />
 
 ## Usage
 

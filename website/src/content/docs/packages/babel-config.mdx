@@ -5,6 +5,8 @@ description: Package for create babel config for packages of <hrc /> to reduce b
 
 import { InstallCommand } from "@/components";
 
+export const packages = ["@hrc/babel-config", "babel-plugin-import"];
+
 Create Babel config for component packages of `<hrc />` to reduce bundle size.
 
 :::note
@@ -14,7 +16,7 @@ If your project supports [`Vite`](https://vitejs.dev/), you can use
 
 ## Installation
 
-<InstallCommand packages={["@hrc/babel-config", "babel-plugin-import"]} isDev />
+<InstallCommand packages={packages} isDev />
 
 ## Usage
 
