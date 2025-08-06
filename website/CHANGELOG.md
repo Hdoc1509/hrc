@@ -1,5 +1,11 @@
 # @hrc/website
 
+## 0.0.6
+
+### Patch Changes
+
+- f1a8c75: Correct some typos
+
 ## 0.0.5
 
 ### Patch Changes
