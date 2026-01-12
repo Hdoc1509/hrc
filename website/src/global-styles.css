@@ -1,21 +1,18 @@
-.showcase-wrapper {
+.button-showcase {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
-.showcase,
-.showcase > .button {
+.button-showcase > *,
+.button-showcase > .button-group > * {
   margin: 0 !important;
 }
-.button.showcase {
-  --primary: var(--sl-color-text-accent);
+
+[data-theme="dark"] .input-showcase {
+  --input-text: #ddd;
 }
-.button.showcase:not(.button--outline) {
-  --button-bg-hover: #3d50f5;
-  color: var(--sl-color-black);
-}
-.button.showcase:not(.button--outline):hover {
-  color: var(--sl-color-white);
+[data-theme="dark"] .input-showcase .input:not(:focus-within) svg {
+  color: #ddd;
 }
