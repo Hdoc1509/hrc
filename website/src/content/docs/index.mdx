@@ -21,7 +21,20 @@ hero:
       link: https://github.com/Hdoc1509/hrc
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+import { ButtonShowcase } from "@/components/showcase/Button";
+
+## +30 components to choose from
+
+<CardGrid stagger>
+  <Card title="Buttons">
+    <ButtonShowcase />
+  </Card>
+  <Card title="Inputs">@hrc/input</Card>
+  <Card title="Spinners">@hrc/spinner</Card>
+  <Card title="Icons">@hrc/material-icons</Card>
+  <LinkCard title="And more..." href="/hrc/getting-started/" />
+</CardGrid>
 
 ## Principles
 

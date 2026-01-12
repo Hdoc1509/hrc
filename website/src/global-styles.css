@@ -1,0 +1,21 @@
+.showcase-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.showcase,
+.showcase > .button {
+  margin: 0 !important;
+}
+.button.showcase {
+  --primary: var(--sl-color-text-accent);
+}
+.button.showcase:not(.button--outline) {
+  --button-bg-hover: #3d50f5;
+  color: var(--sl-color-black);
+}
+.button.showcase:not(.button--outline):hover {
+  color: var(--sl-color-white);
+}
