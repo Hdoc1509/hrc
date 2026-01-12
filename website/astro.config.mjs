@@ -10,12 +10,15 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "<hrc />",
+      logo: {
+        src: "/public/favicon.svg",
+      },
       components: {
         ThemeProvider: "./src/components/ThemeProvider.astro",
-        ThemeSelect: "./src/components/ThemeSelect.astro"
+        ThemeSelect: "./src/components/ThemeSelect.astro",
       },
       customCss: [
-        '@material-design-icons/font/index.css',
+        "@material-design-icons/font/index.css",
         "./src/demos/toggle-theme/styles.css",
       ],
       social: {
