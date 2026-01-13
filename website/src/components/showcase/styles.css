@@ -5,8 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.button-showcase > *,
-.button-showcase > .button-group > * {
+.button-showcase * {
   margin: 0 !important;
 }
 .button-showcase .button-group {
@@ -21,9 +20,7 @@
 }
 .input-showcase > :first-child {
   margin-bottom: 0.75rem;
-}
-.input-showcase > :first-child .input__inner {
-  font-size: 1rem;
+  --input-font-size: 1rem;
 }
 [data-theme="dark"] .input-showcase,
 [data-theme="dark"] .spinner-showcase {
@@ -31,9 +28,6 @@
   --input-border-color-hover: #ddd;
   --label-text: #ddd;
   --checkbox-color: #ddd;
-}
-[data-theme="dark"] .input-showcase .input:not(:focus-within) svg {
-  color: #ddd;
 }
 
 .spinner-showcase {
