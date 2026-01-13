@@ -33,7 +33,7 @@ jobs:
   lint:
     needs: changed-files
     runs-on: ubuntu-22.04
-    if: ${{ needs.changed-files.outputs.files != 'true' }}
+    if: needs.changed-files.outputs.files != 'true'
     strategy:
       matrix:
         node-version: [20]
@@ -44,6 +44,7 @@ jobs:
           version: 8
       - uses: actions/setup-node@v4
         with:
+          # TODO: use `node-version-file: .nvmrc`
           node-version: ${{matrix.node-version}}
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
@@ -52,7 +53,7 @@ jobs:
   type-check:
     needs: changed-files
     runs-on: ubuntu-22.04
-    if: ${{ needs.changed-files.outputs.files != 'true' }}
+    if: needs.changed-files.outputs.files != 'true'
     strategy:
       matrix:
         node-version: [20]
