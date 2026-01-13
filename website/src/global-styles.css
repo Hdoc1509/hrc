@@ -52,3 +52,12 @@
 .spinner-showcase[data-pause="true"] .chase-spinner *::before {
   animation-play-state: paused !important;
 }
+
+.icon-showcase {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 1.5rem 1rem;
+
+  --icon-size: 2rem;
+}

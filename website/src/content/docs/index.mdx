@@ -25,6 +25,7 @@ import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 import { ButtonShowcase } from "@/components/showcase/button";
 import { InputShowcase } from "@/components/showcase/input";
 import { SpinnerShowcase } from "@/components/showcase/spinner";
+import { IconShowcase } from "@/components/showcase/icon";
 
 ## +30 components to choose from
 
@@ -38,7 +39,9 @@ import { SpinnerShowcase } from "@/components/showcase/spinner";
   <Card title="Spinners">
     <SpinnerShowcase client:load />
   </Card>
-  <Card title="Font Icons">@hrc/material-icons</Card>
+  <Card title="Font Icons">
+    <IconShowcase />
+  </Card>
   <LinkCard title="And more..." href="/hrc/getting-started/" />
 </CardGrid>
 
