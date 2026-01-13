@@ -16,7 +16,8 @@
   --button-font-size: 1rem;
 }
 
-.input-showcase * {
+.input-showcase *,
+.spinner-showcase * {
   margin-top: 0 !important;
 }
 .input-showcase > :first-child {
@@ -25,7 +26,8 @@
 .input-showcase > :first-child .input__inner {
   font-size: 1rem;
 }
-[data-theme="dark"] .input-showcase {
+[data-theme="dark"] .input-showcase,
+[data-theme="dark"] .spinner-showcase {
   --input-text: #ddd;
   --input-border-color-hover: #ddd;
   --label-text: #ddd;
@@ -33,4 +35,21 @@
 }
 [data-theme="dark"] .input-showcase .input:not(:focus-within) svg {
   color: #ddd;
+}
+
+.spinner-showcase {
+  --spinner-size: 2.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.spinner-showcase .label--checkbox {
+  width: 100%;
+  justify-content: center;
+}
+.spinner-showcase[data-pause="true"] *,
+.spinner-showcase[data-pause="true"] .chase-spinner *::before {
+  animation-play-state: paused !important;
 }
