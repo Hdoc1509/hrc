@@ -20,7 +20,6 @@ export default defineConfig({
       customCss: [
         "@material-design-icons/font/index.css",
         "./src/demos/toggle-theme/styles.css",
-        "./src/global-styles.css",
       ],
       social: {
         github: "https://github.com/Hdoc1509/hrc",
