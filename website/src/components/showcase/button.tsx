@@ -1,19 +1,17 @@
 import { Button, ButtonGroup, ButtonIcon } from "@hrc/button";
-import { CommentIcon, HeartIcon, PencilIcon } from "../Icons";
+import { CommentIcon, HeartIcon, PencilIcon, StarIcon } from "../Icons";
 
 export function ButtonShowcase() {
   return (
     <div className="button-showcase">
-      <Button className="showcase" color="primary" rounded="full">
+      <Button color="primary" rounded="full">
         Primary
       </Button>
-      <Button
-        className="showcase"
-        color="warning"
-        variant="outline"
-        rounded="full"
-      >
+      <Button color="warning" variant="outline" rounded="full">
         Outline
+      </Button>
+      <Button color="success" variant="text" rounded="full">
+        Text
       </Button>
       <ButtonGroup variant="outline" color="info">
         <ButtonIcon>
@@ -24,6 +22,9 @@ export function ButtonShowcase() {
         </ButtonIcon>
         <ButtonIcon>
           <PencilIcon />
+        </ButtonIcon>
+        <ButtonIcon>
+          <StarIcon />
         </ButtonIcon>
       </ButtonGroup>
     </div>
