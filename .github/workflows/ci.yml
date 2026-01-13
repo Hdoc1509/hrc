@@ -34,9 +34,6 @@ jobs:
     needs: changed-files
     runs-on: ubuntu-22.04
     if: needs.changed-files.outputs.files != 'true'
-    strategy:
-      matrix:
-        node-version: [20]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
@@ -44,8 +41,7 @@ jobs:
           version: 8
       - uses: actions/setup-node@v4
         with:
-          # TODO: use `node-version-file: .nvmrc`
-          node-version: ${{matrix.node-version}}
+          node-version-file: .nvmrc
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint
@@ -54,9 +50,6 @@ jobs:
     needs: changed-files
     runs-on: ubuntu-22.04
     if: needs.changed-files.outputs.files != 'true'
-    strategy:
-      matrix:
-        node-version: [20]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
@@ -64,7 +57,7 @@ jobs:
           version: 8
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{matrix.node-version}}
+          node-version-file: .nvmrc
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
       - run: pnpm nx build @hrc/material-icons
