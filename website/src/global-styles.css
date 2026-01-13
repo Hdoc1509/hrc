@@ -16,8 +16,20 @@
   --button-font-size: 1rem;
 }
 
+.input-showcase * {
+  margin-top: 0 !important;
+}
+.input-showcase > :first-child {
+  margin-bottom: 0.75rem;
+}
+.input-showcase > :first-child .input__inner {
+  font-size: 1rem;
+}
 [data-theme="dark"] .input-showcase {
   --input-text: #ddd;
+  --input-border-color-hover: #ddd;
+  --label-text: #ddd;
+  --checkbox-color: #ddd;
 }
 [data-theme="dark"] .input-showcase .input:not(:focus-within) svg {
   color: #ddd;
