@@ -22,7 +22,8 @@ The name of the icon.
 Type: `string`
 
 :::note
-Find the available icons at [Google Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+Find the available icons at [Material Design
+Icons](https://marella.github.io/material-design-icons/demo/font/)
 :::
 
 ---
