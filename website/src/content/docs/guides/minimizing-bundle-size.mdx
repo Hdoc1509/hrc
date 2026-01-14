@@ -78,8 +78,8 @@ If your project does not support [`Vite`](https://vitejs.dev/), use [Option
    import hrcConfig from "@hrc/babel-config";
 
    const plugins = [
-     ...otherPlugins,
-     ...hrcConfig(["button", "input"])
+     // otherPlugins,
+     ...hrcConfig(["button", "input"]),
    ];
 
    module.exports = { plugins };
