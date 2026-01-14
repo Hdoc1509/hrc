@@ -80,14 +80,13 @@ because `<ThemeButton />` component also loads the theme in its initial render.
 Use the `customKey` prop to set a custom key for `localStorage` to store the
 theme.
 
-{/* prettier-ignore */}
 ```js
 export function WithCustomKeyDemo() {
   return (
     <ThemeButton
       customKey="my-custom-key"
-      lightElement={{/* element for light mode */}}
-      darkElement={{/* element for dark mode */}}
+      lightElement={<LightElement />}
+      darkElement={<DarkElement />}
     />
   );
 }
