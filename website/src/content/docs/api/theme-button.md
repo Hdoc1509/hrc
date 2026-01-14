@@ -15,7 +15,7 @@ import { ThemeButton } from "@hrc/toggle-theme";
 **All props are optional unless otherwise specified.**
 :::
 
-**`lightElement`**
+**`lightElement` (required)**
 
 Element to render when the theme is `light`.
 
@@ -23,7 +23,7 @@ Type: `ReactNode`
 
 ---
 
-**`darkElement`**
+**`darkElement` (required)**
 
 Element to render when the theme is `dark`.
 
