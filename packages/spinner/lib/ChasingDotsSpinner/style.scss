@@ -29,7 +29,7 @@
     &:nth-child(2) {
       top: auto;
       bottom: 0;
-      animation-delay: calc(var(--_speed) / ($speed / 1s));
+      animation-delay: calc(var(--_speed) / ($speed / -1s));
     }
   }
 }
