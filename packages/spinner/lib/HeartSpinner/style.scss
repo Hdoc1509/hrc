@@ -15,24 +15,25 @@
 
     animation: heart-spinner var(--_speed) infinite
       cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  div:after,
-  div:before {
-    content: " ";
-    display: block;
-    position: absolute;
 
-    width: calc(var(--_size) * 0.5);
-    aspect-ratio: 1;
-    background-color: var(--_color);
-  }
-  div:after {
-    top: calc(var(--_size) * -0.3);
-    border-radius: 50% 50% 0 0;
-  }
-  div:before {
-    left: calc(var(--_size) * -0.3);
-    border-radius: 50% 0 0 50%;
+    &:before,
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+
+      width: calc(var(--_size) * 0.5);
+      aspect-ratio: 1;
+      background-color: var(--_color);
+    }
+    &:before {
+      left: calc(var(--_size) * -0.3);
+      border-radius: 50% 0 0 50%;
+    }
+    &:after {
+      top: calc(var(--_size) * -0.3);
+      border-radius: 50% 50% 0 0;
+    }
   }
 }
 
