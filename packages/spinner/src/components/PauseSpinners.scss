@@ -1,0 +1,12 @@
+.pause-spinners[data-paused="true"] ~ .spinner {
+  animation-play-state: paused !important;
+
+  & * {
+    animation-play-state: paused !important;
+
+    &::before,
+    &::after {
+      animation-play-state: paused !important;
+    }
+  }
+}
