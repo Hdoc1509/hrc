@@ -4,13 +4,11 @@ import { CommentIcon, HeartIcon, PencilIcon, StarIcon } from "../Icons";
 export function ButtonShowcase() {
   return (
     <div className="button-showcase">
-      <Button color="primary" rounded="full">
-        Primary
-      </Button>
-      <Button color="warning" variant="outline" rounded="full">
+      <Button color="primary">Primary</Button>
+      <Button color="warning" variant="outline">
         Outline
       </Button>
-      <Button color="success" variant="text" rounded="full">
+      <Button color="success" variant="text">
         Text
       </Button>
       <ButtonGroup variant="outline" color="info">
