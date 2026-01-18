@@ -1,9 +1,9 @@
 ---
 title: Getting started
-description: A guide to getting started with <hrc />
+description: A guide to getting started with hrc
 ---
 
-**`<hrc />`** is a collection of simple libraries for building Web Applications
+**`hrc`** is a collection of simple libraries for building Web Applications
 with [React](https://react.dev/).
 
 ## Components

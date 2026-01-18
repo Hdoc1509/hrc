@@ -1,6 +1,6 @@
 # Docs
 
-This is the website of [`<hrc />`](https://hdoc1509.github.io/hrc/).
+This is the website of [`hrc`](https://hdoc1509.github.io/hrc/).
 
 To start the development server, run from repository root:
 

@@ -1,6 +1,5 @@
-# @hrc/monorepo
+# hrc
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![CI](https://github.com/Hdoc1509/hrc/actions/workflows/ci.yml/badge.svg)](https://github.com/Hdoc1509/hrc/actions/workflows/ci.yml)
@@ -37,3 +36,5 @@ See [Contributing guide](CONTRIBUTING.md)
 ## License
 
 [MIT](LICENSE)
+
+<!-- markdownlint-disable-file MD033 -->
