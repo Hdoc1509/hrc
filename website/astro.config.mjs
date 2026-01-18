@@ -9,9 +9,9 @@ export default defineConfig({
   base: "/hrc",
   integrations: [
     starlight({
-      title: "<hrc />",
+      title: "hrc",
       logo: {
-        src: "/public/favicon.svg",
+        src: "/public/hrc-logo.svg",
       },
       components: {
         ThemeProvider: "./src/components/ThemeProvider.astro",
