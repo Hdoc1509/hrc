@@ -18,26 +18,25 @@ npm install -D @hrc/babel-config babel-plugin-import
 
 In your `.babelrc.js` file:
 
-<!-- prettier-ignore -->
 ```js
 import hrcConfig from "@hrc/babel-config";
 
 // single package
 const plugins = [
-  ...otherPlugins,
-  ...hrcConfig("input")
+  // ...otherPlugins,
+  ...hrcConfig("input"),
 ];
 
 // multiple packages
 const plugins = [
-  ...otherPlugins,
-  ...hrcConfig(["button", "input"])
+  // ...otherPlugins,
+  ...hrcConfig(["button", "input"]),
 ];
 
 // all supported packages
 const plugins = [
-  ...otherPlugins,
-  ...hrcConfig("all")
+  // ...otherPlugins,
+  ...hrcConfig("all"),
 ];
 
 module.exports = { plugins };
