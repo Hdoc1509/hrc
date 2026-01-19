@@ -11,7 +11,7 @@ export default defineConfig({
     starlight({
       title: "hrc",
       logo: {
-        src: "/public/hrc-logo.svg",
+        src: "./src/assets/hrc-logo.svg",
       },
       components: {
         ThemeProvider: "./src/components/ThemeProvider.astro",
