@@ -7,7 +7,7 @@
 
 </div>
 
-Simple and extensible components for your React app.
+Simple and extensible components with minimalistic design.
 
 ## Packages
 
