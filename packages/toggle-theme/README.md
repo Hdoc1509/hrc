@@ -1,6 +1,5 @@
 # @hrc/toggle-theme
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Ftoggle-theme)](https://www.npmjs.com/package/@hrc/toggle-theme)
@@ -73,3 +72,5 @@ npm install @hrc/toggle-theme
 ## Documentation
 
 - [Package Documentation](https://hdoc1509.github.io/hrc/packages/toggle-theme/)
+
+<!-- markdownlint-disable-file MD033 -->

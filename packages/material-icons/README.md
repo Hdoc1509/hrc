@@ -1,6 +1,5 @@
 # @hrc/material-icons
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Fmaterial-icons)](https://www.npmjs.com/package/@hrc/material-icons)
@@ -51,3 +50,5 @@ npm install @hrc/material-icons @material-design-icons/font
 - [Package Documentation](https://hdoc1509.github.io/hrc/packages/material-icons/)
 
 [mdi-font-docs]: https://www.npmjs.com/package/@material-design-icons/font#usage
+
+<!-- markdownlint-disable-file MD033 -->

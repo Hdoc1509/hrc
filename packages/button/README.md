@@ -1,6 +1,5 @@
 # @hrc/button
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Fbutton)](https://www.npmjs.com/package/@hrc/button)
@@ -9,7 +8,7 @@
 
 </div>
 
-Simple button components for your React app
+Simple button components for your React app.
 
 ## Installation
 
@@ -48,3 +47,5 @@ export function PackageDemo() {
 ## Documentation
 
 - [Package Documentation](https://hdoc1509.github.io/hrc/packages/button/)
+
+<!-- markdownlint-disable-file MD033 -->

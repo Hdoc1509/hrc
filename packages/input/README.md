@@ -1,6 +1,5 @@
 # @hrc/input
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Finput)](https://www.npmjs.com/package/@hrc/input)
@@ -9,7 +8,7 @@
 
 </div>
 
-Simple input components for your React app
+Simple input components for your React app.
 
 ## Installation
 
@@ -58,3 +57,5 @@ export function PackageDemo() {
 ## Documentation
 
 - [Package Documentation](https://hdoc1509.github.io/hrc/packages/input)
+
+<!-- markdownlint-disable-file MD033 -->

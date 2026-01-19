@@ -1,6 +1,5 @@
 # @hrc/spinner
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 [![version](https://img.shields.io/npm/v/%40hrc%2Fspinner)](https://www.npmjs.com/package/@hrc/spinner)
@@ -9,7 +8,7 @@
 
 </div>
 
-Simple spinner components for your React app
+Simple spinner components for your React app.
 
 ## Installation
 
@@ -48,3 +47,5 @@ export function PackageDemo() {
 ## Documentation
 
 - [Package documentation](https://hdoc1509.github.io/hrc/packages/spinner/)
+
+<!-- markdownlint-disable-file MD033 -->
