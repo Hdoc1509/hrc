@@ -14,7 +14,7 @@
   "sideEffets": [
     "**/*.css"
   ],
-  "enginges": {
+  "engines": {
     "node": ">=13.2.0"
   },
   "publishConfig": {
