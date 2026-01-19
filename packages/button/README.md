@@ -31,7 +31,7 @@ export function PackageDemo() {
       </Button>
       <ButtonIcon color="error">
         <Icon name="favorite" />
-      </ButtonIcon
+      </ButtonIcon>
       <ButtonGroup>
         <Button>One</Button>
         <Button>Two</Button>
