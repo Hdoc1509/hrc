@@ -9,7 +9,7 @@ Type utilities used by the following packages of
 ## Installation
 
 ```bash
-npm install @hrc/type-utils
+npm install -D @hrc/type-utils
 ```
 
 ## Usage
