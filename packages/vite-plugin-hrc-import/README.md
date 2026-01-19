@@ -1,7 +1,7 @@
 # vite-plugin-hrc-import
 
-Automatically use path import for components of [`<hrc
-/>`](https://hdoc1509.github.io/hrc/getting-started/#components) packages to
+Automatically use path import for components of
+[`hrc`](https://hdoc1509.github.io/hrc/getting-started/#components) packages to
 reduce bundle size.
 
 > [!NOTE]

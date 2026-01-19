@@ -1,7 +1,7 @@
 # @hrc/type-utils
 
-Type utilities used by the following packages of [`<hrc
-/>`](https://hdoc1509.github.io/hrc/):
+Type utilities used by the following packages of
+[`hrc`](https://hdoc1509.github.io/hrc/):
 
 - [`@hrc/button`](https://hdoc1509.github.io/hrc/packages/button)
 - [`@hrc/input`](https://hdoc1509.github.io/hrc/packages/input)

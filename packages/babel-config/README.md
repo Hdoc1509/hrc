@@ -1,7 +1,7 @@
 # @hrc/babel-config
 
-Create a Babel config for component packages of [`<hrc
-/>`](https://hdoc1509.github.io/hrc/) to reduce bundle size.
+Create a `Babel` config for component packages of
+[`hrc`](https://hdoc1509.github.io/hrc/) to reduce bundle size.
 
 > [!NOTE]
 > If your project supports [`Vite`](https://vitejs.dev/), you can use
