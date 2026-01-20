@@ -1,5 +1,16 @@
 # @hrc/website
 
+## 0.0.7
+
+### Patch Changes
+
+- Update favicon ([`04dccbf`](https://github.com/Hdoc1509/hrc/commit/04dccbf5b43bd8f2b5ef1a52846b7407eb94aad0))
+
+- Updated dependencies [[`06802a8`](https://github.com/Hdoc1509/hrc/commit/06802a8c25402093d7b0bda7484fbac488760fb5), [`4720d74`](https://github.com/Hdoc1509/hrc/commit/4720d74d05829f611c322ea480618e9a1fa8aa0f), [`1349189`](https://github.com/Hdoc1509/hrc/commit/1349189fe33807f4be439922123f77cd21525902)]:
+  - @hrc/spinner@0.4.1
+  - @hrc/button@3.1.2
+  - @hrc/input@1.2.2
+
 ## 0.0.6
 
 ### Patch Changes

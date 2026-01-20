@@ -1,5 +1,15 @@
 # @hrc/spinner
 
+## 0.4.1
+
+### Patch Changes
+
+- Apply correct animation to `<ChasingDotsSpinner />` ([`06802a8`](https://github.com/Hdoc1509/hrc/commit/06802a8c25402093d7b0bda7484fbac488760fb5))
+
+- Set `engines` field of package.json correctly ([`4720d74`](https://github.com/Hdoc1509/hrc/commit/4720d74d05829f611c322ea480618e9a1fa8aa0f))
+
+- Set correct `animation-delay` for `<ChasingDotsSpinner />` ([`1349189`](https://github.com/Hdoc1509/hrc/commit/1349189fe33807f4be439922123f77cd21525902))
+
 ## 0.4.0
 
 ### Minor Changes

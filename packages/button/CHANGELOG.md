@@ -1,5 +1,14 @@
 # @hrc/button
 
+## 3.1.2
+
+### Patch Changes
+
+- Set `engines` field of package.json correctly ([`4720d74`](https://github.com/Hdoc1509/hrc/commit/4720d74d05829f611c322ea480618e9a1fa8aa0f))
+
+- Updated dependencies [[`6dc471b`](https://github.com/Hdoc1509/hrc/commit/6dc471bb5658803b513a602185d6abea96104c88)]:
+  - @hrc/type-utils@1.1.4
+
 ## 3.1.1
 
 ### Patch Changes

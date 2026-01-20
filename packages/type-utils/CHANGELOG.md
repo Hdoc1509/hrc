@@ -1,5 +1,11 @@
 # @hrc/type-utils
 
+## 1.1.4
+
+### Patch Changes
+
+- Ensure descriptions with new branding name will be published ([`6dc471b`](https://github.com/Hdoc1509/hrc/commit/6dc471bb5658803b513a602185d6abea96104c88))
+
 ## 1.1.3
 
 ### Patch Changes
