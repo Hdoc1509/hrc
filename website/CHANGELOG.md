@@ -1,5 +1,11 @@
 # @hrc/website
 
+## 0.0.10
+
+### Patch Changes
+
+- Use recommended size for OpenGraph image ([`1a038ba`](https://github.com/Hdoc1509/hrc/commit/1a038babf3643b239c0582dfd695e6a431cca230))
+
 ## 0.0.9
 
 ### Patch Changes
