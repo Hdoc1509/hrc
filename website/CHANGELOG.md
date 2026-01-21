@@ -1,5 +1,13 @@
 # @hrc/website
 
+## 0.0.8
+
+### Patch Changes
+
+- Add OpenGraph image ([`7e46510`](https://github.com/Hdoc1509/hrc/commit/7e46510704659cfb713637de3319f07b6888be50))
+
+- Update meta description ([`98d3f39`](https://github.com/Hdoc1509/hrc/commit/98d3f396f80abcb7534c200accad3edd44e9bed4))
+
 ## 0.0.7
 
 ### Patch Changes
