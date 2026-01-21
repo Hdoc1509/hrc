@@ -32,7 +32,7 @@ export default defineConfig({
           attrs: {
             property: "og:image",
             // NOTE: update `v` param when updating the image
-            content: `${site}/hrc/og.png?v=1`,
+            content: `${site}/hrc/og.png?v=1.1`,
           },
         },
         {
