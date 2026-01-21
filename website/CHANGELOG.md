@@ -1,5 +1,11 @@
 # @hrc/website
 
+## 0.0.9
+
+### Patch Changes
+
+- Set correct url for OpenGraph image ([`54d8a55`](https://github.com/Hdoc1509/hrc/commit/54d8a5501d83176cb8a452d41adff41367ea7289))
+
 ## 0.0.8
 
 ### Patch Changes
