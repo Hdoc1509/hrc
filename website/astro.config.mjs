@@ -3,9 +3,11 @@ import starlight from "@astrojs/starlight";
 
 import react from "@astrojs/react";
 
+const site = "https://Hdoc1509.github.io";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://Hdoc1509.github.io",
+  site,
   base: "/hrc",
   integrations: [
     starlight({
@@ -24,6 +26,23 @@ export default defineConfig({
       social: {
         github: "https://github.com/Hdoc1509/hrc",
       },
+      head: [
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            // NOTE: update `v` param when updating the image
+            content: `${site}/og.png?v=1`,
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:alt",
+            content: "Build your React app with hrc",
+          },
+        },
+      ],
       sidebar: [
         {
           label: "Getting Started",
