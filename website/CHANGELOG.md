@@ -1,5 +1,11 @@
 # @hrc/website
 
+## 0.0.11
+
+### Patch Changes
+
+- Improve OpenGraph image ([`8a7ed47`](https://github.com/Hdoc1509/hrc/commit/8a7ed47ac18b0b90b700d6b44366d962afbfa543))
+
 ## 0.0.10
 
 ### Patch Changes
