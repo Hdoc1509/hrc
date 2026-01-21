@@ -1,5 +1,11 @@
 # @hrc/website
 
+## 0.0.12
+
+### Patch Changes
+
+- Simplify content of OpenGraph image ([`11875fa`](https://github.com/Hdoc1509/hrc/commit/11875fa41aad7dc841b4ffcd6ab3c299ca0d0a2f))
+
 ## 0.0.11
 
 ### Patch Changes
